@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Se connecter — OptimCE — Guides utilisateur</title>
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Synchronise the saved language preference with the file we just loaded.
+        // The user landed on this <locale>.html either by clicking a link rewritten
+        // to honour their preference or by direct entry — either way, that's the
+        // current truth.
+        try { localStorage.setItem("oce-lang", "fr"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.html" aria-label="OptimCE — Guides utilisateur">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.html">
+            <span class="i18n-fr">OptimCE — Guides utilisateur</span>
+            <span class="i18n-en">OptimCE — User guides</span>
+        </a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html"><span class="i18n-fr">Accueil</span><span class="i18n-en">Home</span></a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../account/index.html">
+                <span class="i18n-fr">Compte</span>
+                <span class="i18n-en">Account</span>
+            </a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">
+                <span class="i18n-fr">Se connecter</span>
+                <span class="i18n-en">Sign in</span>
+            </span>
+        </nav>
+
+        <div class="steppy-header-actions">
+            <nav class="steppy-locale-switch" aria-label="Language">
+                <ul>
+                    <li>
+                        <span aria-current="true">Français</span>
+                    </li>
+                    <li>
+                        <a href="./en.html">English</a>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="steppy-onboarding-strip" aria-label="Progression Premiers pas">
+        <span class="steppy-onboarding-strip-progress">
+            <a href="../getting-started/index.html">
+                <span class="i18n-fr">Premiers pas</span>
+                <span class="i18n-en">Getting started</span>
+            </a>
+            <span class="steppy-onboarding-strip-position">
+                <span class="i18n-fr">Étape 1 sur 10</span>
+                <span class="i18n-en">Step 1 of 10</span>
+            </span>
+        </span>
+        <span class="steppy-onboarding-strip-nav">
+            <span class="steppy-onboarding-prev steppy-onboarding-disabled" aria-disabled="true">
+                <span class="i18n-fr">‹ Démarrer</span>
+                <span class="i18n-en">‹ Start</span>
+            </span>
+            <a class="steppy-onboarding-next" href="../profile-update/fr.html?onboarding=1">
+                <span class="i18n-fr">Mettre à jour son profil ›</span>
+                <span class="i18n-en">Update your profile ›</span>
+            </a>
+        </span>
+    </nav>
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Se connecter</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Ouvrir l'application</span>
+        </h2>
+        <div class="steppy-step-subtitle">Accès à OptimCE CRM</div>
+        <div class="steppy-step-content">Ouvrez l'application OptimCE CRM dans votre navigateur — la page d'accueil propose un bouton de connexion.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/auth-login/fr/desktop/step-01.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Lancer la connexion</span>
+        </h2>
+        <div class="steppy-step-subtitle">Accès à OptimCE CRM</div>
+        <div class="steppy-step-content">Cliquez sur le bouton « Se connecter » pour être redirigé vers le formulaire de Keycloak.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/auth-login/fr/desktop/step-02.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Saisir vos identifiants</span>
+        </h2>
+        <div class="steppy-step-subtitle">Connexion à Keycloak</div>
+        <div class="steppy-step-content">Renseignez votre nom d'utilisateur et votre mot de passe Keycloak. Ces identifiants sont gérés par le serveur d'authentification, pas par OptimCE.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/auth-login/fr/desktop/step-04-a.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Ouvrir le profil</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Dans la barre latérale de gauche, cliquez sur « Profil » pour afficher la page de votre compte personnel.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/auth-login/fr/desktop/step-09.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Profil affiché</span>
+        </h2>
+        <div class="steppy-step-subtitle">Arrivée sur le profil</div>
+        <div class="steppy-step-content">Votre profil est bien affiché : informations personnelles, avatar et carte de compte sont chargés depuis le CRM.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/auth-login/fr/desktop/step-16.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Se connecter</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Ouvrir l'application</span>
+        </h2>
+        <div class="steppy-step-subtitle">Accès à OptimCE CRM</div>
+        <div class="steppy-step-content">Ouvrez l'application OptimCE CRM dans votre navigateur — la page d'accueil propose un bouton de connexion.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/auth-login/fr/mobile/step-01.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Lancer la connexion</span>
+        </h2>
+        <div class="steppy-step-subtitle">Accès à OptimCE CRM</div>
+        <div class="steppy-step-content">Cliquez sur le bouton « Se connecter » pour être redirigé vers le formulaire de Keycloak.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/auth-login/fr/mobile/step-02.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Saisir vos identifiants</span>
+        </h2>
+        <div class="steppy-step-subtitle">Connexion à Keycloak</div>
+        <div class="steppy-step-content">Renseignez votre nom d'utilisateur et votre mot de passe Keycloak. Ces identifiants sont gérés par le serveur d'authentification, pas par OptimCE.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/auth-login/fr/mobile/step-04-a.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Ouvrir le profil</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Touchez l'icône du menu en haut à gauche pour ouvrir le tiroir de navigation, puis « Profil » pour afficher votre compte personnel.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/auth-login/fr/mobile/step-12.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Profil affiché</span>
+        </h2>
+        <div class="steppy-step-subtitle">Arrivée sur le profil</div>
+        <div class="steppy-step-content">Votre profil est bien affiché : informations personnelles, avatar et carte de compte sont chargés depuis le CRM.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/auth-login/fr/mobile/step-16.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p><span class="i18n-fr">Généré par Steppy.</span><span class="i18n-en">Generated by Steppy.</span></p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/auth-login/fr/desktop/step-01.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/auth-login/fr/desktop/step-01.png", "subtitle": "Acc\u00e8s \u00e0 OptimCE CRM", "text": "Ouvrez l\u0027application OptimCE CRM dans votre navigateur \u2014 la page d\u0027accueil propose un bouton de connexion.", "title": "Ouvrir l\u0027application", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 48.375, "width": 190.015625, "x": 1008.984375, "y": 527.5625}, "selector": "[data-testid=\"auth-page__button--login\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48.375, "width": 190.015625, "x": 1008.984375, "y": 527.5625}, "selector": "[data-testid=\"auth-page__button--login\"]"}}, "screenshot": "../assets/auth-login/fr/desktop/step-02.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/auth-login/fr/desktop/step-02.png", "subtitle": "Acc\u00e8s \u00e0 OptimCE CRM", "text": "Cliquez sur le bouton \u00ab Se connecter \u00bb pour \u00eatre redirig\u00e9 vers le formulaire de Keycloak.", "title": "Lancer la connexion", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 48, "width": 452, "x": 494, "y": 486.9375}, "selector": "[id=\"username\"]", "value": "demo"}, {"bbox": {"height": 48, "width": 452, "x": 494, "y": 559.9375}, "selector": "[id=\"password\"]", "value": "demo"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 48, "width": 452, "x": 494, "y": 486.9375}, "selector": "[id=\"username\"]", "value": "demo"}, {"bbox": {"height": 48, "width": 452, "x": 494, "y": 559.9375}, "selector": "[id=\"password\"]", "value": "demo"}]}, "screenshot": "../assets/auth-login/fr/desktop/step-04-a.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/auth-login/fr/desktop/step-04-a.png", "subtitle": "Connexion \u00e0 Keycloak", "text": "Renseignez votre nom d\u0027utilisateur et votre mot de passe Keycloak. Ces identifiants sont g\u00e9r\u00e9s par le serveur d\u0027authentification, pas par OptimCE.", "title": "Saisir vos identifiants", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 243, "x": 8, "y": 119.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 243, "x": 8, "y": 119.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"}}, "screenshot": "../assets/auth-login/fr/desktop/step-09.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/auth-login/fr/desktop/step-09.png", "subtitle": "Navigation", "text": "Dans la barre lat\u00e9rale de gauche, cliquez sur \u00ab Profil \u00bb pour afficher la page de votre compte personnel.", "title": "Ouvrir le profil", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/auth-login/fr/desktop/step-16.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/auth-login/fr/desktop/step-16.png", "subtitle": "Arriv\u00e9e sur le profil", "text": "Votre profil est bien affich\u00e9 : informations personnelles, avatar et carte de compte sont charg\u00e9s depuis le CRM.", "title": "Profil affich\u00e9", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/auth-login/fr/mobile/step-01.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/auth-login/fr/mobile/step-01.png", "subtitle": "Acc\u00e8s \u00e0 OptimCE CRM", "text": "Ouvrez l\u0027application OptimCE CRM dans votre navigateur \u2014 la page d\u0027accueil propose un bouton de connexion.", "title": "Ouvrir l\u0027application", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 48.375, "width": 190.015625, "x": 99.984375, "y": 744.078125}, "selector": "[data-testid=\"auth-page__button--login\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48.375, "width": 190.015625, "x": 99.984375, "y": 744.078125}, "selector": "[data-testid=\"auth-page__button--login\"]"}}, "screenshot": "../assets/auth-login/fr/mobile/step-02.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/auth-login/fr/mobile/step-02.png", "subtitle": "Acc\u00e8s \u00e0 OptimCE CRM", "text": "Cliquez sur le bouton \u00ab Se connecter \u00bb pour \u00eatre redirig\u00e9 vers le formulaire de Keycloak.", "title": "Lancer la connexion", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 48, "width": 358, "x": 16, "y": 458.9375}, "selector": "[id=\"username\"]", "value": "demo"}, {"bbox": {"height": 48, "width": 358, "x": 16, "y": 531.9375}, "selector": "[id=\"password\"]", "value": "demo"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 48, "width": 358, "x": 16, "y": 458.9375}, "selector": "[id=\"username\"]", "value": "demo"}, {"bbox": {"height": 48, "width": 358, "x": 16, "y": 531.9375}, "selector": "[id=\"password\"]", "value": "demo"}]}, "screenshot": "../assets/auth-login/fr/mobile/step-04-a.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/auth-login/fr/mobile/step-04-a.png", "subtitle": "Connexion \u00e0 Keycloak", "text": "Renseignez votre nom d\u0027utilisateur et votre mot de passe Keycloak. Ces identifiants sont g\u00e9r\u00e9s par le serveur d\u0027authentification, pas par OptimCE.", "title": "Saisir vos identifiants", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 284, "x": 8, "y": 119.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 284, "x": 8, "y": 119.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"}}, "screenshot": "../assets/auth-login/fr/mobile/step-12.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/auth-login/fr/mobile/step-12.png", "subtitle": "Navigation", "text": "Touchez l\u0027ic\u00f4ne du menu en haut \u00e0 gauche pour ouvrir le tiroir de navigation, puis \u00ab Profil \u00bb pour afficher votre compte personnel.", "title": "Ouvrir le profil", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/auth-login/fr/mobile/step-16.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/auth-login/fr/mobile/step-16.png", "subtitle": "Arriv\u00e9e sur le profil", "text": "Votre profil est bien affich\u00e9 : informations personnelles, avatar et carte de compte sont charg\u00e9s depuis le CRM.", "title": "Profil affich\u00e9", "viewport": {"height": 900, "width": 1440}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

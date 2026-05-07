@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Créer une clé (assistant) — OptimCE — Guides utilisateur</title>
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Synchronise the saved language preference with the file we just loaded.
+        // The user landed on this <locale>.html either by clicking a link rewritten
+        // to honour their preference or by direct entry — either way, that's the
+        // current truth.
+        try { localStorage.setItem("oce-lang", "fr"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.html" aria-label="OptimCE — Guides utilisateur">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.html">
+            <span class="i18n-fr">OptimCE — Guides utilisateur</span>
+            <span class="i18n-en">OptimCE — User guides</span>
+        </a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html"><span class="i18n-fr">Accueil</span><span class="i18n-en">Home</span></a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../keys/index.html">
+                <span class="i18n-fr">Clés</span>
+                <span class="i18n-en">Allocation keys</span>
+            </a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">
+                <span class="i18n-fr">Créer une clé (assistant)</span>
+                <span class="i18n-en">Create an allocation key (wizard)</span>
+            </span>
+        </nav>
+
+        <div class="steppy-header-actions">
+            <nav class="steppy-locale-switch" aria-label="Language">
+                <ul>
+                    <li>
+                        <span aria-current="true">Français</span>
+                    </li>
+                    <li>
+                        <a href="./en.html">English</a>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="steppy-onboarding-strip" aria-label="Progression Premiers pas">
+        <span class="steppy-onboarding-strip-progress">
+            <a href="../getting-started/index.html">
+                <span class="i18n-fr">Premiers pas</span>
+                <span class="i18n-en">Getting started</span>
+            </a>
+            <span class="steppy-onboarding-strip-position">
+                <span class="i18n-fr">Étape 5 sur 10</span>
+                <span class="i18n-en">Step 5 of 10</span>
+            </span>
+        </span>
+        <span class="steppy-onboarding-strip-nav">
+            <a class="steppy-onboarding-prev" href="../community-activate/fr.html?onboarding=1">
+                <span class="i18n-fr">‹ Activer une communauté</span>
+                <span class="i18n-en">‹ Activate a community</span>
+            </a>
+            <a class="steppy-onboarding-next" href="../member-create/fr.html?onboarding=1">
+                <span class="i18n-fr">Créer un membre ›</span>
+                <span class="i18n-en">Create a member ›</span>
+            </a>
+        </span>
+    </nav>
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Créer une clé (assistant)</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Ouvrir le menu de création</span>
+        </h2>
+        <div class="steppy-step-subtitle">Création d'une clé</div>
+        <div class="steppy-step-content">Cliquez sur la flèche du bouton « Ajouter » pour révéler les modes de création — la grille libre ou l'assistant pas-à-pas.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/desktop/step-17.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Lancer l'assistant</span>
+        </h2>
+        <div class="steppy-step-subtitle">Création d'une clé</div>
+        <div class="steppy-step-content">Sélectionnez « Ajouter une clé standard » pour démarrer l'assistant pas-à-pas, qui guide la configuration en quatre étapes.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/desktop/step-18.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Nombre de consommateurs</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 1/4 — Consommateurs</div>
+        <div class="steppy-step-content">Indiquez combien de consommateurs se partageront l'énergie. Ce nombre conditionne la taille des itérations générées par l'assistant — ici trois.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/desktop/step-20.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Valider l'étape</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 1/4 — Consommateurs</div>
+        <div class="steppy-step-content">Cliquez sur « Valider » pour confirmer le nombre de consommateurs et passer à l'étape suivante.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/desktop/step-21-a.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Nommer les consommateurs</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 2/4 — Noms</div>
+        <div class="steppy-step-content">Saisissez un nom pour chacun des trois consommateurs (Cons1, Cons2, Cons3). Ces noms seront repris dans toutes les itérations qui suivent.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/desktop/step-23-a.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Valider les noms</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 2/4 — Noms</div>
+        <div class="steppy-step-content">Cliquez sur « Valider » pour figer les noms des consommateurs et accéder à la configuration des itérations.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/desktop/step-24.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Choisir le mode prorata</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 3/4 — Itérations</div>
+        <div class="steppy-step-content">Sélectionnez « Prorata » pour cette première itération : l'énergie sera répartie automatiquement entre les consommateurs selon leur consommation réelle.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/desktop/step-26.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Allouer 70%</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 3/4 — Itérations</div>
+        <div class="steppy-step-content">Saisissez 70 dans le champ de pondération : cette itération recevra 70% de l'énergie disponible. Le total devra atteindre 100% pour valider l'étape.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/desktop/step-27.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Itération suivante générée</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 3/4 — Itérations</div>
+        <div class="steppy-step-content">L'assistant détecte que le total reste sous 100% et ajoute automatiquement une deuxième itération à configurer. Il continuera tant que la somme ne sera pas atteinte.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/desktop/step-28.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Mode prorata (itération 2)</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 3/4 — Itérations</div>
+        <div class="steppy-step-content">Sélectionnez à nouveau « Prorata » pour la deuxième itération : la même logique de répartition automatique s'appliquera.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/desktop/step-30.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Allouer 30%</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 3/4 — Itérations</div>
+        <div class="steppy-step-content">Saisissez 30 pour cette deuxième itération : la somme avec les 70% précédents atteint 100% et débloque la finalisation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/desktop/step-31.png" alt="Step 11" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>Valider les itérations</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 3/4 — Itérations</div>
+        <div class="steppy-step-content">Cliquez sur « Valider » : la somme atteint 100% et l'assistant ouvre la dernière étape de finalisation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/desktop/step-32-a.png" alt="Step 12" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="13">
+        <h2>
+            <span class="steppy-step-number">13</span>
+            <span>Identifier la clé</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 4/4 — Finalisation</div>
+        <div class="steppy-step-content">Donnez un nom et une description à la nouvelle clé de répartition. Ces informations apparaîtront dans la liste des clés et facilitent sa réutilisation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/desktop/step-34-a.png" alt="Step 13" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="14">
+        <h2>
+            <span class="steppy-step-number">14</span>
+            <span>Soumettre l'assistant</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 4/4 — Finalisation</div>
+        <div class="steppy-step-content">Validez l'assistant pour générer la grille complète : une page de revue s'ouvre afin de relire la configuration avant l'enregistrement définitif.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/desktop/step-35.png" alt="Step 14" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="15">
+        <h2>
+            <span class="steppy-step-number">15</span>
+            <span>Enregistrer la clé</span>
+        </h2>
+        <div class="steppy-step-subtitle">Validation finale</div>
+        <div class="steppy-step-content">Cliquez sur « Créer » pour enregistrer la clé. La grille pré-remplie par l'assistant est envoyée telle quelle au CRM.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/desktop/step-37.png" alt="Step 15" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="16">
+        <h2>
+            <span class="steppy-step-number">16</span>
+            <span>Clé créée</span>
+        </h2>
+        <div class="steppy-step-subtitle">Confirmation</div>
+        <div class="steppy-step-content">La nouvelle clé « E2E wizard key » apparaît dans la liste des clés de répartition de la communauté, prête à être associée à une opération de partage.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/desktop/step-39.png" alt="Step 16" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Créer une clé (assistant)</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Ouvrir le menu de création</span>
+        </h2>
+        <div class="steppy-step-subtitle">Création d'une clé</div>
+        <div class="steppy-step-content">Cliquez sur la flèche du bouton « Ajouter » pour révéler les modes de création — la grille libre ou l'assistant pas-à-pas.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/mobile/step-17.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Lancer l'assistant</span>
+        </h2>
+        <div class="steppy-step-subtitle">Création d'une clé</div>
+        <div class="steppy-step-content">Sélectionnez « Ajouter une clé standard » pour démarrer l'assistant pas-à-pas, qui guide la configuration en quatre étapes.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/mobile/step-18.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Nombre de consommateurs</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 1/4 — Consommateurs</div>
+        <div class="steppy-step-content">Indiquez combien de consommateurs se partageront l'énergie. Ce nombre conditionne la taille des itérations générées par l'assistant — ici trois.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/mobile/step-20.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Valider l'étape</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 1/4 — Consommateurs</div>
+        <div class="steppy-step-content">Cliquez sur « Valider » pour confirmer le nombre de consommateurs et passer à l'étape suivante.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/mobile/step-21.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Nommer les consommateurs</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 2/4 — Noms</div>
+        <div class="steppy-step-content">Saisissez un nom pour chacun des trois consommateurs (Cons1, Cons2, Cons3). Ces noms seront repris dans toutes les itérations qui suivent.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/mobile/step-23-a.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Valider les noms</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 2/4 — Noms</div>
+        <div class="steppy-step-content">Cliquez sur « Valider » pour figer les noms des consommateurs et accéder à la configuration des itérations.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/mobile/step-24.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Choisir le mode prorata</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 3/4 — Itérations</div>
+        <div class="steppy-step-content">Sélectionnez « Prorata » pour cette première itération : l'énergie sera répartie automatiquement entre les consommateurs selon leur consommation réelle.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/mobile/step-26.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Allouer 70%</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 3/4 — Itérations</div>
+        <div class="steppy-step-content">Saisissez 70 dans le champ de pondération : cette itération recevra 70% de l'énergie disponible. Le total devra atteindre 100% pour valider l'étape.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/mobile/step-27.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Itération suivante générée</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 3/4 — Itérations</div>
+        <div class="steppy-step-content">L'assistant détecte que le total reste sous 100% et ajoute automatiquement une deuxième itération à configurer. Il continuera tant que la somme ne sera pas atteinte.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/mobile/step-28.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Mode prorata (itération 2)</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 3/4 — Itérations</div>
+        <div class="steppy-step-content">Sélectionnez à nouveau « Prorata » pour la deuxième itération : la même logique de répartition automatique s'appliquera.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/mobile/step-30.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Allouer 30%</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 3/4 — Itérations</div>
+        <div class="steppy-step-content">Saisissez 30 pour cette deuxième itération : la somme avec les 70% précédents atteint 100% et débloque la finalisation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/mobile/step-31.png" alt="Step 11" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>Valider les itérations</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 3/4 — Itérations</div>
+        <div class="steppy-step-content">Cliquez sur « Valider » : la somme atteint 100% et l'assistant ouvre la dernière étape de finalisation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/mobile/step-32.png" alt="Step 12" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="13">
+        <h2>
+            <span class="steppy-step-number">13</span>
+            <span>Identifier la clé</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 4/4 — Finalisation</div>
+        <div class="steppy-step-content">Donnez un nom et une description à la nouvelle clé de répartition. Ces informations apparaîtront dans la liste des clés et facilitent sa réutilisation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/mobile/step-34-a.png" alt="Step 13" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="14">
+        <h2>
+            <span class="steppy-step-number">14</span>
+            <span>Soumettre l'assistant</span>
+        </h2>
+        <div class="steppy-step-subtitle">Étape 4/4 — Finalisation</div>
+        <div class="steppy-step-content">Validez l'assistant pour générer la grille complète : une page de revue s'ouvre afin de relire la configuration avant l'enregistrement définitif.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/mobile/step-35.png" alt="Step 14" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="15">
+        <h2>
+            <span class="steppy-step-number">15</span>
+            <span>Enregistrer la clé</span>
+        </h2>
+        <div class="steppy-step-subtitle">Validation finale</div>
+        <div class="steppy-step-content">Cliquez sur « Créer » pour enregistrer la clé. La grille pré-remplie par l'assistant est envoyée telle quelle au CRM.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/mobile/step-37.png" alt="Step 15" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="16">
+        <h2>
+            <span class="steppy-step-number">16</span>
+            <span>Clé créée</span>
+        </h2>
+        <div class="steppy-step-subtitle">Confirmation</div>
+        <div class="steppy-step-content">La nouvelle clé « E2E wizard key » apparaît dans la liste des clés de répartition de la communauté, prête à être associée à une opération de partage.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-wizard/fr/mobile/step-39.png" alt="Step 16" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p><span class="i18n-fr">Généré par Steppy.</span><span class="i18n-en">Generated by Steppy.</span></p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 42, "x": 1327, "y": 52}, "selector": "[data-testid=\"keys-list__btn--add\"] .p-splitbutton-dropdown"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 42, "x": 1327, "y": 52}, "selector": "[data-testid=\"keys-list__btn--add\"] .p-splitbutton-dropdown"}, "value": null}, "screenshot": "../assets/key-create-wizard/fr/desktop/step-17.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/key-create-wizard/fr/desktop/step-17.png", "subtitle": "Cr\u00e9ation d\u0027une cl\u00e9", "text": "Cliquez sur la fl\u00e8che du bouton \u00ab Ajouter \u00bb pour r\u00e9v\u00e9ler les modes de cr\u00e9ation \u2014 la grille libre ou l\u0027assistant pas-\u00e0-pas.", "title": "Ouvrir le menu de cr\u00e9ation", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 202.203125, "x": 1229.078125, "y": 101}, "selector": ".p-tieredmenu [role=\"menuitem\"], .p-menu [role=\"menuitem\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 202.203125, "x": 1229.078125, "y": 101}, "selector": ".p-tieredmenu [role=\"menuitem\"], .p-menu [role=\"menuitem\"]"}, "value": null}, "screenshot": "../assets/key-create-wizard/fr/desktop/step-18.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/key-create-wizard/fr/desktop/step-18.png", "subtitle": "Cr\u00e9ation d\u0027une cl\u00e9", "text": "S\u00e9lectionnez \u00ab Ajouter une cl\u00e9 standard \u00bb pour d\u00e9marrer l\u0027assistant pas-\u00e0-pas, qui guide la configuration en quatre \u00e9tapes.", "title": "Lancer l\u0027assistant", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 448, "x": 137, "y": 352}, "selector": "[data-testid=\"key-creation__input--nb-consumers\"] input"}, "value": "3"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 448, "x": 137, "y": 352}, "selector": "[data-testid=\"key-creation__input--nb-consumers\"] input"}, "value": "3"}, "screenshot": "../assets/key-create-wizard/fr/desktop/step-20.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/key-create-wizard/fr/desktop/step-20.png", "subtitle": "\u00c9tape 1/4 \u2014 Consommateurs", "text": "Indiquez combien de consommateurs se partageront l\u0027\u00e9nergie. Ce nombre conditionne la taille des it\u00e9rations g\u00e9n\u00e9r\u00e9es par l\u0027assistant \u2014 ici trois.", "title": "Nombre de consommateurs", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": null, "selector": "[data-testid=\"key-creation__btn--step0-validate\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": null, "selector": "[data-testid=\"key-creation__btn--step0-validate\"]"}}, "screenshot": "../assets/key-create-wizard/fr/desktop/step-21-a.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/key-create-wizard/fr/desktop/step-21-a.png", "subtitle": "\u00c9tape 1/4 \u2014 Consommateurs", "text": "Cliquez sur \u00ab Valider \u00bb pour confirmer le nombre de consommateurs et passer \u00e0 l\u0027\u00e9tape suivante.", "title": "Valider l\u0027\u00e9tape", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 401.65625, "x": 137, "y": 352}, "selector": "[data-testid=\"key-creation__input--consumer-name--0\"]", "value": "Cons1"}, {"bbox": {"height": 42, "width": 401.671875, "x": 554.65625, "y": 352}, "selector": "[data-testid=\"key-creation__input--consumer-name--1\"]", "value": "Cons2"}, {"bbox": {"height": 42, "width": 401.65625, "x": 972.328125, "y": 352}, "selector": "[data-testid=\"key-creation__input--consumer-name--2\"]", "value": "Cons3"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 401.65625, "x": 137, "y": 352}, "selector": "[data-testid=\"key-creation__input--consumer-name--0\"]", "value": "Cons1"}, {"bbox": {"height": 42, "width": 401.671875, "x": 554.65625, "y": 352}, "selector": "[data-testid=\"key-creation__input--consumer-name--1\"]", "value": "Cons2"}, {"bbox": {"height": 42, "width": 401.65625, "x": 972.328125, "y": 352}, "selector": "[data-testid=\"key-creation__input--consumer-name--2\"]", "value": "Cons3"}]}, "screenshot": "../assets/key-create-wizard/fr/desktop/step-23-a.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/key-create-wizard/fr/desktop/step-23-a.png", "subtitle": "\u00c9tape 2/4 \u2014 Noms", "text": "Saisissez un nom pour chacun des trois consommateurs (Cons1, Cons2, Cons3). Ces noms seront repris dans toutes les it\u00e9rations qui suivent.", "title": "Nommer les consommateurs", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 99.875, "x": 1294.125, "y": 434}, "selector": "[data-testid=\"key-creation__btn--step1-validate\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 99.875, "x": 1294.125, "y": 434}, "selector": "[data-testid=\"key-creation__btn--step1-validate\"]"}}, "screenshot": "../assets/key-create-wizard/fr/desktop/step-24.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/key-create-wizard/fr/desktop/step-24.png", "subtitle": "\u00c9tape 2/4 \u2014 Noms", "text": "Cliquez sur \u00ab Valider \u00bb pour figer les noms des consommateurs et acc\u00e9der \u00e0 la configuration des it\u00e9rations.", "title": "Valider les noms", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 20, "x": 135, "y": 357}, "selector": "[data-testid=\"key-creation__radio--type-prorata--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 20, "x": 135, "y": 357}, "selector": "[data-testid=\"key-creation__radio--type-prorata--0\"]"}}, "screenshot": "../assets/key-create-wizard/fr/desktop/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/key-create-wizard/fr/desktop/step-26.png", "subtitle": "\u00c9tape 3/4 \u2014 It\u00e9rations", "text": "S\u00e9lectionnez \u00ab Prorata \u00bb pour cette premi\u00e8re it\u00e9ration : l\u0027\u00e9nergie sera r\u00e9partie automatiquement entre les consommateurs selon leur consommation r\u00e9elle.", "title": "Choisir le mode prorata", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 611, "x": 762, "y": 353}, "selector": "[data-testid=\"key-creation__input--inj-percentage--0\"] input"}, "value": "70"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 611, "x": 762, "y": 353}, "selector": "[data-testid=\"key-creation__input--inj-percentage--0\"] input"}, "value": "70"}, "screenshot": "../assets/key-create-wizard/fr/desktop/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/key-create-wizard/fr/desktop/step-27.png", "subtitle": "\u00c9tape 3/4 \u2014 It\u00e9rations", "text": "Saisissez 70 dans le champ de pond\u00e9ration : cette it\u00e9ration recevra 70% de l\u0027\u00e9nergie disponible. Le total devra atteindre 100% pour valider l\u0027\u00e9tape.", "title": "Allouer 70%", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 99.875, "x": 1294.125, "y": 436}, "selector": "[data-testid=\"key-creation__btn--step2-validate\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 99.875, "x": 1294.125, "y": 436}, "selector": "[data-testid=\"key-creation__btn--step2-validate\"]"}}, "screenshot": "../assets/key-create-wizard/fr/desktop/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/key-create-wizard/fr/desktop/step-28.png", "subtitle": "\u00c9tape 3/4 \u2014 It\u00e9rations", "text": "L\u0027assistant d\u00e9tecte que le total reste sous 100% et ajoute automatiquement une deuxi\u00e8me it\u00e9ration \u00e0 configurer. Il continuera tant que la somme ne sera pas atteinte.", "title": "It\u00e9ration suivante g\u00e9n\u00e9r\u00e9e", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 20, "x": 135, "y": 559}, "selector": "[data-testid=\"key-creation__radio--type-prorata--1\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 20, "x": 135, "y": 559}, "selector": "[data-testid=\"key-creation__radio--type-prorata--1\"]"}}, "screenshot": "../assets/key-create-wizard/fr/desktop/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/key-create-wizard/fr/desktop/step-30.png", "subtitle": "\u00c9tape 3/4 \u2014 It\u00e9rations", "text": "S\u00e9lectionnez \u00e0 nouveau \u00ab Prorata \u00bb pour la deuxi\u00e8me it\u00e9ration : la m\u00eame logique de r\u00e9partition automatique s\u0027appliquera.", "title": "Mode prorata (it\u00e9ration 2)", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 611, "x": 762, "y": 555}, "selector": "[data-testid=\"key-creation__input--inj-percentage--1\"] input"}, "value": "30"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 611, "x": 762, "y": 555}, "selector": "[data-testid=\"key-creation__input--inj-percentage--1\"] input"}, "value": "30"}, "screenshot": "../assets/key-create-wizard/fr/desktop/step-31.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/key-create-wizard/fr/desktop/step-31.png", "subtitle": "\u00c9tape 3/4 \u2014 It\u00e9rations", "text": "Saisissez 30 pour cette deuxi\u00e8me it\u00e9ration : la somme avec les 70% pr\u00e9c\u00e9dents atteint 100% et d\u00e9bloque la finalisation.", "title": "Allouer 30%", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": null, "selector": "[data-testid=\"key-creation__btn--step2-validate\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": null, "selector": "[data-testid=\"key-creation__btn--step2-validate\"]"}}, "screenshot": "../assets/key-create-wizard/fr/desktop/step-32-a.png", "viewport": {"height": 900, "width": 1440}}], "index": 12, "screenshot": "../assets/key-create-wizard/fr/desktop/step-32-a.png", "subtitle": "\u00c9tape 3/4 \u2014 It\u00e9rations", "text": "Cliquez sur \u00ab Valider \u00bb : la somme atteint 100% et l\u0027assistant ouvre la derni\u00e8re \u00e9tape de finalisation.", "title": "Valider les it\u00e9rations", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 1237, "x": 137, "y": 352}, "selector": "[data-testid=\"key-creation__input--key-name\"]", "value": "E2E wizard key"}, {"bbox": {"height": 114, "width": 1237, "x": 137, "y": 440}, "selector": "[data-testid=\"key-creation__textarea--key-description\"]", "value": "A demo key created via the step-by-step wizard"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 1237, "x": 137, "y": 352}, "selector": "[data-testid=\"key-creation__input--key-name\"]", "value": "E2E wizard key"}, {"bbox": {"height": 114, "width": 1237, "x": 137, "y": 440}, "selector": "[data-testid=\"key-creation__textarea--key-description\"]", "value": "A demo key created via the step-by-step wizard"}]}, "screenshot": "../assets/key-create-wizard/fr/desktop/step-34-a.png", "viewport": {"height": 900, "width": 1440}}], "index": 13, "screenshot": "../assets/key-create-wizard/fr/desktop/step-34-a.png", "subtitle": "\u00c9tape 4/4 \u2014 Finalisation", "text": "Donnez un nom et une description \u00e0 la nouvelle cl\u00e9 de r\u00e9partition. Ces informations appara\u00eetront dans la liste des cl\u00e9s et facilitent sa r\u00e9utilisation.", "title": "Identifier la cl\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 100.875, "x": 1273.125, "y": 582}, "selector": "[data-testid=\"key-creation__btn--step3-submit\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 100.875, "x": 1273.125, "y": 582}, "selector": "[data-testid=\"key-creation__btn--step3-submit\"]"}}, "screenshot": "../assets/key-create-wizard/fr/desktop/step-35.png", "viewport": {"height": 900, "width": 1440}}], "index": 14, "screenshot": "../assets/key-create-wizard/fr/desktop/step-35.png", "subtitle": "\u00c9tape 4/4 \u2014 Finalisation", "text": "Validez l\u0027assistant pour g\u00e9n\u00e9rer la grille compl\u00e8te : une page de revue s\u0027ouvre afin de relire la configuration avant l\u0027enregistrement d\u00e9finitif.", "title": "Soumettre l\u0027assistant", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 49, "width": 100.609375, "x": 703.6875, "y": 815}, "selector": "[data-testid=\"key-update__btn--submit\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 49, "width": 100.609375, "x": 703.6875, "y": 815}, "selector": "[data-testid=\"key-update__btn--submit\"]"}}, "screenshot": "../assets/key-create-wizard/fr/desktop/step-37.png", "viewport": {"height": 900, "width": 1440}}], "index": 15, "screenshot": "../assets/key-create-wizard/fr/desktop/step-37.png", "subtitle": "Validation finale", "text": "Cliquez sur \u00ab Cr\u00e9er \u00bb pour enregistrer la cl\u00e9. La grille pr\u00e9-remplie par l\u0027assistant est envoy\u00e9e telle quelle au CRM.", "title": "Enregistrer la cl\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-wizard/fr/desktop/step-39.png", "viewport": {"height": 900, "width": 1440}}], "index": 16, "screenshot": "../assets/key-create-wizard/fr/desktop/step-39.png", "subtitle": "Confirmation", "text": "La nouvelle cl\u00e9 \u00ab E2E wizard key \u00bb appara\u00eet dans la liste des cl\u00e9s de r\u00e9partition de la communaut\u00e9, pr\u00eate \u00e0 \u00eatre associ\u00e9e \u00e0 une op\u00e9ration de partage.", "title": "Cl\u00e9 cr\u00e9\u00e9e", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 42, "x": 139.921875, "y": 239}, "selector": "[data-testid=\"keys-list__btn--add\"] .p-splitbutton-dropdown"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 42, "x": 139.921875, "y": 239}, "selector": "[data-testid=\"keys-list__btn--add\"] .p-splitbutton-dropdown"}, "value": null}, "screenshot": "../assets/key-create-wizard/fr/mobile/step-17.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/key-create-wizard/fr/mobile/step-17.png", "subtitle": "Cr\u00e9ation d\u0027une cl\u00e9", "text": "Cliquez sur la fl\u00e8che du bouton \u00ab Ajouter \u00bb pour r\u00e9v\u00e9ler les modes de cr\u00e9ation \u2014 la grille libre ou l\u0027assistant pas-\u00e0-pas.", "title": "Ouvrir le menu de cr\u00e9ation", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 202.203125, "x": 42, "y": 288}, "selector": ".p-tieredmenu [role=\"menuitem\"], .p-menu [role=\"menuitem\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 202.203125, "x": 42, "y": 288}, "selector": ".p-tieredmenu [role=\"menuitem\"], .p-menu [role=\"menuitem\"]"}, "value": null}, "screenshot": "../assets/key-create-wizard/fr/mobile/step-18.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/key-create-wizard/fr/mobile/step-18.png", "subtitle": "Cr\u00e9ation d\u0027une cl\u00e9", "text": "S\u00e9lectionnez \u00ab Ajouter une cl\u00e9 standard \u00bb pour d\u00e9marrer l\u0027assistant pas-\u00e0-pas, qui guide la configuration en quatre \u00e9tapes.", "title": "Lancer l\u0027assistant", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 315, "x": 39, "y": 512}, "selector": "[data-testid=\"key-creation__input--nb-consumers\"] input"}, "value": "3"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 315, "x": 39, "y": 512}, "selector": "[data-testid=\"key-creation__input--nb-consumers\"] input"}, "value": "3"}, "screenshot": "../assets/key-create-wizard/fr/mobile/step-20.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/key-create-wizard/fr/mobile/step-20.png", "subtitle": "\u00c9tape 1/4 \u2014 Consommateurs", "text": "Indiquez combien de consommateurs se partageront l\u0027\u00e9nergie. Ce nombre conditionne la taille des it\u00e9rations g\u00e9n\u00e9r\u00e9es par l\u0027assistant \u2014 ici trois.", "title": "Nombre de consommateurs", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 99.875, "x": 274.125, "y": 594}, "selector": "[data-testid=\"key-creation__btn--step0-validate\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 99.875, "x": 274.125, "y": 594}, "selector": "[data-testid=\"key-creation__btn--step0-validate\"]"}}, "screenshot": "../assets/key-create-wizard/fr/mobile/step-21.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/key-create-wizard/fr/mobile/step-21.png", "subtitle": "\u00c9tape 1/4 \u2014 Consommateurs", "text": "Cliquez sur \u00ab Valider \u00bb pour confirmer le nombre de consommateurs et passer \u00e0 l\u0027\u00e9tape suivante.", "title": "Valider l\u0027\u00e9tape", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 315, "x": 39, "y": 470}, "selector": "[data-testid=\"key-creation__input--consumer-name--0\"]", "value": "Cons1"}, {"bbox": {"height": 42, "width": 315, "x": 39, "y": 558}, "selector": "[data-testid=\"key-creation__input--consumer-name--1\"]", "value": "Cons2"}, {"bbox": {"height": 42, "width": 315, "x": 39, "y": 646}, "selector": "[data-testid=\"key-creation__input--consumer-name--2\"]", "value": "Cons3"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 315, "x": 39, "y": 470}, "selector": "[data-testid=\"key-creation__input--consumer-name--0\"]", "value": "Cons1"}, {"bbox": {"height": 42, "width": 315, "x": 39, "y": 558}, "selector": "[data-testid=\"key-creation__input--consumer-name--1\"]", "value": "Cons2"}, {"bbox": {"height": 42, "width": 315, "x": 39, "y": 646}, "selector": "[data-testid=\"key-creation__input--consumer-name--2\"]", "value": "Cons3"}]}, "screenshot": "../assets/key-create-wizard/fr/mobile/step-23-a.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/key-create-wizard/fr/mobile/step-23-a.png", "subtitle": "\u00c9tape 2/4 \u2014 Noms", "text": "Saisissez un nom pour chacun des trois consommateurs (Cons1, Cons2, Cons3). Ces noms seront repris dans toutes les it\u00e9rations qui suivent.", "title": "Nommer les consommateurs", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 99.875, "x": 274.125, "y": 728}, "selector": "[data-testid=\"key-creation__btn--step1-validate\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 99.875, "x": 274.125, "y": 728}, "selector": "[data-testid=\"key-creation__btn--step1-validate\"]"}}, "screenshot": "../assets/key-create-wizard/fr/mobile/step-24.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/key-create-wizard/fr/mobile/step-24.png", "subtitle": "\u00c9tape 2/4 \u2014 Noms", "text": "Cliquez sur \u00ab Valider \u00bb pour figer les noms des consommateurs et acc\u00e9der \u00e0 la configuration des it\u00e9rations.", "title": "Valider les noms", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 20, "x": 37, "y": 475}, "selector": "[data-testid=\"key-creation__radio--type-prorata--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 20, "x": 37, "y": 475}, "selector": "[data-testid=\"key-creation__radio--type-prorata--0\"]"}}, "screenshot": "../assets/key-create-wizard/fr/mobile/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/key-create-wizard/fr/mobile/step-26.png", "subtitle": "\u00c9tape 3/4 \u2014 It\u00e9rations", "text": "S\u00e9lectionnez \u00ab Prorata \u00bb pour cette premi\u00e8re it\u00e9ration : l\u0027\u00e9nergie sera r\u00e9partie automatiquement entre les consommateurs selon leur consommation r\u00e9elle.", "title": "Choisir le mode prorata", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 545}, "selector": "[data-testid=\"key-creation__input--inj-percentage--0\"] input"}, "value": "70"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 545}, "selector": "[data-testid=\"key-creation__input--inj-percentage--0\"] input"}, "value": "70"}, "screenshot": "../assets/key-create-wizard/fr/mobile/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/key-create-wizard/fr/mobile/step-27.png", "subtitle": "\u00c9tape 3/4 \u2014 It\u00e9rations", "text": "Saisissez 70 dans le champ de pond\u00e9ration : cette it\u00e9ration recevra 70% de l\u0027\u00e9nergie disponible. Le total devra atteindre 100% pour valider l\u0027\u00e9tape.", "title": "Allouer 70%", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 99.875, "x": 274.125, "y": 628}, "selector": "[data-testid=\"key-creation__btn--step2-validate\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 99.875, "x": 274.125, "y": 628}, "selector": "[data-testid=\"key-creation__btn--step2-validate\"]"}}, "screenshot": "../assets/key-create-wizard/fr/mobile/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/key-create-wizard/fr/mobile/step-28.png", "subtitle": "\u00c9tape 3/4 \u2014 It\u00e9rations", "text": "L\u0027assistant d\u00e9tecte que le total reste sous 100% et ajoute automatiquement une deuxi\u00e8me it\u00e9ration \u00e0 configurer. Il continuera tant que la somme ne sera pas atteinte.", "title": "It\u00e9ration suivante g\u00e9n\u00e9r\u00e9e", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 20, "x": 37, "y": 751}, "selector": "[data-testid=\"key-creation__radio--type-prorata--1\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 20, "x": 37, "y": 751}, "selector": "[data-testid=\"key-creation__radio--type-prorata--1\"]"}}, "screenshot": "../assets/key-create-wizard/fr/mobile/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/key-create-wizard/fr/mobile/step-30.png", "subtitle": "\u00c9tape 3/4 \u2014 It\u00e9rations", "text": "S\u00e9lectionnez \u00e0 nouveau \u00ab Prorata \u00bb pour la deuxi\u00e8me it\u00e9ration : la m\u00eame logique de r\u00e9partition automatique s\u0027appliquera.", "title": "Mode prorata (it\u00e9ration 2)", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 802}, "selector": "[data-testid=\"key-creation__input--inj-percentage--1\"] input"}, "value": "30"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 802}, "selector": "[data-testid=\"key-creation__input--inj-percentage--1\"] input"}, "value": "30"}, "screenshot": "../assets/key-create-wizard/fr/mobile/step-31.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/key-create-wizard/fr/mobile/step-31.png", "subtitle": "\u00c9tape 3/4 \u2014 It\u00e9rations", "text": "Saisissez 30 pour cette deuxi\u00e8me it\u00e9ration : la somme avec les 70% pr\u00e9c\u00e9dents atteint 100% et d\u00e9bloque la finalisation.", "title": "Allouer 30%", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 99.875, "x": 274.125, "y": 762}, "selector": "[data-testid=\"key-creation__btn--step2-validate\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 99.875, "x": 274.125, "y": 762}, "selector": "[data-testid=\"key-creation__btn--step2-validate\"]"}}, "screenshot": "../assets/key-create-wizard/fr/mobile/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 12, "screenshot": "../assets/key-create-wizard/fr/mobile/step-32.png", "subtitle": "\u00c9tape 3/4 \u2014 It\u00e9rations", "text": "Cliquez sur \u00ab Valider \u00bb : la somme atteint 100% et l\u0027assistant ouvre la derni\u00e8re \u00e9tape de finalisation.", "title": "Valider les it\u00e9rations", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 315, "x": 39, "y": 470}, "selector": "[data-testid=\"key-creation__input--key-name\"]", "value": "E2E wizard key"}, {"bbox": {"height": 114, "width": 315, "x": 39, "y": 558}, "selector": "[data-testid=\"key-creation__textarea--key-description\"]", "value": "A demo key created via the step-by-step wizard"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 315, "x": 39, "y": 470}, "selector": "[data-testid=\"key-creation__input--key-name\"]", "value": "E2E wizard key"}, {"bbox": {"height": 114, "width": 315, "x": 39, "y": 558}, "selector": "[data-testid=\"key-creation__textarea--key-description\"]", "value": "A demo key created via the step-by-step wizard"}]}, "screenshot": "../assets/key-create-wizard/fr/mobile/step-34-a.png", "viewport": {"height": 900, "width": 1440}}], "index": 13, "screenshot": "../assets/key-create-wizard/fr/mobile/step-34-a.png", "subtitle": "\u00c9tape 4/4 \u2014 Finalisation", "text": "Donnez un nom et une description \u00e0 la nouvelle cl\u00e9 de r\u00e9partition. Ces informations appara\u00eetront dans la liste des cl\u00e9s et facilitent sa r\u00e9utilisation.", "title": "Identifier la cl\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 100.875, "x": 253.125, "y": 700}, "selector": "[data-testid=\"key-creation__btn--step3-submit\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 100.875, "x": 253.125, "y": 700}, "selector": "[data-testid=\"key-creation__btn--step3-submit\"]"}}, "screenshot": "../assets/key-create-wizard/fr/mobile/step-35.png", "viewport": {"height": 900, "width": 1440}}], "index": 14, "screenshot": "../assets/key-create-wizard/fr/mobile/step-35.png", "subtitle": "\u00c9tape 4/4 \u2014 Finalisation", "text": "Validez l\u0027assistant pour g\u00e9n\u00e9rer la grille compl\u00e8te : une page de revue s\u0027ouvre afin de relire la configuration avant l\u0027enregistrement d\u00e9finitif.", "title": "Soumettre l\u0027assistant", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 49, "width": 100.609375, "x": 144.6875, "y": 763}, "selector": "[data-testid=\"key-update__btn--submit\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 49, "width": 100.609375, "x": 144.6875, "y": 763}, "selector": "[data-testid=\"key-update__btn--submit\"]"}}, "screenshot": "../assets/key-create-wizard/fr/mobile/step-37.png", "viewport": {"height": 900, "width": 1440}}], "index": 15, "screenshot": "../assets/key-create-wizard/fr/mobile/step-37.png", "subtitle": "Validation finale", "text": "Cliquez sur \u00ab Cr\u00e9er \u00bb pour enregistrer la cl\u00e9. La grille pr\u00e9-remplie par l\u0027assistant est envoy\u00e9e telle quelle au CRM.", "title": "Enregistrer la cl\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-wizard/fr/mobile/step-39.png", "viewport": {"height": 900, "width": 1440}}], "index": 16, "screenshot": "../assets/key-create-wizard/fr/mobile/step-39.png", "subtitle": "Confirmation", "text": "La nouvelle cl\u00e9 \u00ab E2E wizard key \u00bb appara\u00eet dans la liste des cl\u00e9s de r\u00e9partition de la communaut\u00e9, pr\u00eate \u00e0 \u00eatre associ\u00e9e \u00e0 une op\u00e9ration de partage.", "title": "Cl\u00e9 cr\u00e9\u00e9e", "viewport": {"height": 900, "width": 1440}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

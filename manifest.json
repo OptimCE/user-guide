@@ -1,0 +1,641 @@
+{
+  "site": {
+    "title": {
+      "fr": "OptimCE — Guides utilisateur",
+      "en": "OptimCE — User guides"
+    }
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "guides": [
+    {
+      "slug": "auth-login",
+      "title": {
+        "fr": "Se connecter",
+        "en": "Sign in"
+      },
+      "modes": [
+        "stepbystep"
+      ],
+      "scenario": "auth-login.md",
+      "group": "account",
+      "onboardingIndex": 0,
+      "pages": {
+        "fr": "auth-login/fr.html",
+        "en": "auth-login/en.html"
+      }
+    },
+    {
+      "slug": "profile-update",
+      "title": {
+        "fr": "Mettre à jour son profil",
+        "en": "Update your profile"
+      },
+      "modes": [
+        "stepbystep"
+      ],
+      "scenario": "profile-update.md",
+      "group": "account",
+      "onboardingIndex": 1,
+      "pages": {
+        "fr": "profile-update/fr.html",
+        "en": "profile-update/en.html"
+      }
+    },
+    {
+      "slug": "community-activate",
+      "title": {
+        "fr": "Activer une communauté",
+        "en": "Activate a community"
+      },
+      "modes": [
+        "stepbystep"
+      ],
+      "scenario": "community-activate.md",
+      "group": "community",
+      "onboardingIndex": 3,
+      "pages": {
+        "fr": "community-activate/fr.html",
+        "en": "community-activate/en.html"
+      }
+    },
+    {
+      "slug": "community-join-inspect-key",
+      "title": {
+        "fr": "Rejoindre une communauté — vérifier la clé",
+        "en": "Join a community — verify the allocation key"
+      },
+      "modes": [
+        "stepbystep"
+      ],
+      "scenario": "community-join-inspect-key.md",
+      "group": "community",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "community-join-inspect-key/fr.html",
+        "en": "community-join-inspect-key/en.html"
+      }
+    },
+    {
+      "slug": "community-join-inspect-meter",
+      "title": {
+        "fr": "Rejoindre une communauté — vérifier le compteur",
+        "en": "Join a community — verify the meter"
+      },
+      "modes": [
+        "stepbystep"
+      ],
+      "scenario": "community-join-inspect-meter.md",
+      "group": "community",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "community-join-inspect-meter/fr.html",
+        "en": "community-join-inspect-meter/en.html"
+      }
+    },
+    {
+      "slug": "key-create-gridform",
+      "title": {
+        "fr": "Créer une clé (formulaire)",
+        "en": "Create an allocation key (form)"
+      },
+      "modes": [
+        "stepbystep"
+      ],
+      "scenario": "key-create-gridform.md",
+      "group": "keys",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "key-create-gridform/fr.html",
+        "en": "key-create-gridform/en.html"
+      }
+    },
+    {
+      "slug": "key-helper-tour",
+      "title": {
+        "fr": "Aide contextuelle — l'icône (i)",
+        "en": "Contextual help — the (i) icon"
+      },
+      "modes": [
+        "stepbystep"
+      ],
+      "scenario": "key-helper-tour.md",
+      "group": "keys",
+      "onboardingIndex": 2,
+      "pages": {
+        "fr": "key-helper-tour/fr.html",
+        "en": "key-helper-tour/en.html"
+      }
+    },
+    {
+      "slug": "key-create-wizard",
+      "title": {
+        "fr": "Créer une clé (assistant)",
+        "en": "Create an allocation key (wizard)"
+      },
+      "modes": [
+        "stepbystep"
+      ],
+      "scenario": "key-create-wizard.md",
+      "group": "keys",
+      "onboardingIndex": 4,
+      "pages": {
+        "fr": "key-create-wizard/fr.html",
+        "en": "key-create-wizard/en.html"
+      }
+    },
+    {
+      "slug": "member-create",
+      "title": {
+        "fr": "Créer un membre",
+        "en": "Create a member"
+      },
+      "modes": [
+        "stepbystep"
+      ],
+      "scenario": "community-create-member.md",
+      "group": "members",
+      "onboardingIndex": 5,
+      "pages": {
+        "fr": "member-create/fr.html",
+        "en": "member-create/en.html"
+      }
+    },
+    {
+      "slug": "member-update",
+      "title": {
+        "fr": "Modifier un membre",
+        "en": "Edit a member"
+      },
+      "modes": [
+        "stepbystep"
+      ],
+      "scenario": "member-update.md",
+      "group": "members",
+      "onboardingIndex": 6,
+      "pages": {
+        "fr": "member-update/fr.html",
+        "en": "member-update/en.html"
+      }
+    },
+    {
+      "slug": "meter-create",
+      "title": {
+        "fr": "Créer un compteur",
+        "en": "Create a meter"
+      },
+      "modes": [
+        "stepbystep"
+      ],
+      "scenario": "meter-create.md",
+      "group": "meters",
+      "onboardingIndex": 7,
+      "pages": {
+        "fr": "meter-create/fr.html",
+        "en": "meter-create/en.html"
+      }
+    },
+    {
+      "slug": "sharing-op-create",
+      "title": {
+        "fr": "Créer une opération de partage",
+        "en": "Create a sharing operation"
+      },
+      "modes": [
+        "stepbystep"
+      ],
+      "scenario": "sharing-op-create.md",
+      "group": "sharing",
+      "onboardingIndex": 8,
+      "pages": {
+        "fr": "sharing-op-create/fr.html",
+        "en": "sharing-op-create/en.html"
+      }
+    },
+    {
+      "slug": "sharing-op-inspect",
+      "title": {
+        "fr": "Inspecter une opération de partage",
+        "en": "Inspect a sharing operation"
+      },
+      "modes": [
+        "stepbystep"
+      ],
+      "scenario": "sharing-op-inspect.md",
+      "group": "sharing",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "sharing-op-inspect/fr.html",
+        "en": "sharing-op-inspect/en.html"
+      }
+    },
+    {
+      "slug": "sharing-op-set-public",
+      "title": {
+        "fr": "Rendre une opération de partage publique",
+        "en": "Make a sharing operation public"
+      },
+      "modes": [
+        "stepbystep"
+      ],
+      "scenario": "sharing-op-set-public.md",
+      "group": "sharing",
+      "onboardingIndex": 9,
+      "pages": {
+        "fr": "sharing-op-set-public/fr.html",
+        "en": "sharing-op-set-public/en.html"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "slug": "account",
+      "title": {
+        "fr": "Compte",
+        "en": "Account"
+      },
+      "description": {
+        "fr": "Connexion et gestion du profil.",
+        "en": "Sign in and manage your profile."
+      },
+      "guides": [
+        "auth-login",
+        "profile-update"
+      ],
+      "pages": {
+        "fr": "account/fr.html",
+        "en": "account/en.html"
+      }
+    },
+    {
+      "slug": "community",
+      "title": {
+        "fr": "Communauté",
+        "en": "Community"
+      },
+      "description": {
+        "fr": "Activer une communauté et inspecter les clés/compteurs partagés.",
+        "en": "Activate a community and inspect shared allocation keys and meters."
+      },
+      "guides": [
+        "community-activate",
+        "community-join-inspect-key",
+        "community-join-inspect-meter"
+      ],
+      "pages": {
+        "fr": "community/fr.html",
+        "en": "community/en.html"
+      }
+    },
+    {
+      "slug": "keys",
+      "title": {
+        "fr": "Clés",
+        "en": "Allocation keys"
+      },
+      "description": {
+        "fr": "Créer des clés de répartition (formulaire ou assistant).",
+        "en": "Create allocation keys (form or wizard)."
+      },
+      "guides": [
+        "key-create-gridform",
+        "key-helper-tour",
+        "key-create-wizard"
+      ],
+      "pages": {
+        "fr": "keys/fr.html",
+        "en": "keys/en.html"
+      }
+    },
+    {
+      "slug": "members",
+      "title": {
+        "fr": "Membres",
+        "en": "Members"
+      },
+      "description": {
+        "fr": "Gérer les membres de la communauté.",
+        "en": "Manage community members."
+      },
+      "guides": [
+        "member-create",
+        "member-update"
+      ],
+      "pages": {
+        "fr": "members/fr.html",
+        "en": "members/en.html"
+      }
+    },
+    {
+      "slug": "meters",
+      "title": {
+        "fr": "Compteurs",
+        "en": "Meters"
+      },
+      "description": {
+        "fr": "Créer et configurer des compteurs.",
+        "en": "Create and configure meters."
+      },
+      "guides": [
+        "meter-create"
+      ],
+      "pages": {
+        "fr": "meters/fr.html",
+        "en": "meters/en.html"
+      }
+    },
+    {
+      "slug": "sharing",
+      "title": {
+        "fr": "Opérations de partage",
+        "en": "Sharing operations"
+      },
+      "description": {
+        "fr": "Créer et inspecter les opérations de partage.",
+        "en": "Create and inspect sharing operations."
+      },
+      "guides": [
+        "sharing-op-create",
+        "sharing-op-inspect",
+        "sharing-op-set-public"
+      ],
+      "pages": {
+        "fr": "sharing/fr.html",
+        "en": "sharing/en.html"
+      }
+    }
+  ],
+  "onboarding": {
+    "enabled": true,
+    "title": {
+      "fr": "Premiers pas",
+      "en": "Getting started"
+    },
+    "description": {
+      "fr": "Le parcours recommandé pour configurer une communauté de A à Z.",
+      "en": "The recommended path to configure a community from end to end."
+    },
+    "guides": [
+      "auth-login",
+      "profile-update",
+      "key-helper-tour",
+      "community-activate",
+      "key-create-wizard",
+      "member-create",
+      "member-update",
+      "meter-create",
+      "sharing-op-create",
+      "sharing-op-set-public"
+    ],
+    "pages": {
+      "fr": "getting-started/fr.html",
+      "en": "getting-started/en.html"
+    }
+  },
+  "navigation": [
+    {
+      "kind": "onboarding",
+      "title": {
+        "fr": "Premiers pas",
+        "en": "Getting started"
+      },
+      "path": "/getting-started",
+      "guides": [
+        "auth-login",
+        "profile-update",
+        "key-helper-tour",
+        "community-activate",
+        "key-create-wizard",
+        "member-create",
+        "member-update",
+        "meter-create",
+        "sharing-op-create",
+        "sharing-op-set-public"
+      ]
+    },
+    {
+      "kind": "group",
+      "slug": "account",
+      "title": {
+        "fr": "Compte",
+        "en": "Account"
+      },
+      "description": {
+        "fr": "Connexion et gestion du profil.",
+        "en": "Sign in and manage your profile."
+      },
+      "path": "/account",
+      "children": [
+        {
+          "kind": "guide",
+          "slug": "auth-login",
+          "title": {
+            "fr": "Se connecter",
+            "en": "Sign in"
+          },
+          "path": "/auth-login"
+        },
+        {
+          "kind": "guide",
+          "slug": "profile-update",
+          "title": {
+            "fr": "Mettre à jour son profil",
+            "en": "Update your profile"
+          },
+          "path": "/profile-update"
+        }
+      ]
+    },
+    {
+      "kind": "group",
+      "slug": "community",
+      "title": {
+        "fr": "Communauté",
+        "en": "Community"
+      },
+      "description": {
+        "fr": "Activer une communauté et inspecter les clés/compteurs partagés.",
+        "en": "Activate a community and inspect shared allocation keys and meters."
+      },
+      "path": "/community",
+      "children": [
+        {
+          "kind": "guide",
+          "slug": "community-activate",
+          "title": {
+            "fr": "Activer une communauté",
+            "en": "Activate a community"
+          },
+          "path": "/community-activate"
+        },
+        {
+          "kind": "guide",
+          "slug": "community-join-inspect-key",
+          "title": {
+            "fr": "Rejoindre une communauté — vérifier la clé",
+            "en": "Join a community — verify the allocation key"
+          },
+          "path": "/community-join-inspect-key"
+        },
+        {
+          "kind": "guide",
+          "slug": "community-join-inspect-meter",
+          "title": {
+            "fr": "Rejoindre une communauté — vérifier le compteur",
+            "en": "Join a community — verify the meter"
+          },
+          "path": "/community-join-inspect-meter"
+        }
+      ]
+    },
+    {
+      "kind": "group",
+      "slug": "keys",
+      "title": {
+        "fr": "Clés",
+        "en": "Allocation keys"
+      },
+      "description": {
+        "fr": "Créer des clés de répartition (formulaire ou assistant).",
+        "en": "Create allocation keys (form or wizard)."
+      },
+      "path": "/keys",
+      "children": [
+        {
+          "kind": "guide",
+          "slug": "key-create-gridform",
+          "title": {
+            "fr": "Créer une clé (formulaire)",
+            "en": "Create an allocation key (form)"
+          },
+          "path": "/key-create-gridform"
+        },
+        {
+          "kind": "guide",
+          "slug": "key-helper-tour",
+          "title": {
+            "fr": "Aide contextuelle — l'icône (i)",
+            "en": "Contextual help — the (i) icon"
+          },
+          "path": "/key-helper-tour"
+        },
+        {
+          "kind": "guide",
+          "slug": "key-create-wizard",
+          "title": {
+            "fr": "Créer une clé (assistant)",
+            "en": "Create an allocation key (wizard)"
+          },
+          "path": "/key-create-wizard"
+        }
+      ]
+    },
+    {
+      "kind": "group",
+      "slug": "members",
+      "title": {
+        "fr": "Membres",
+        "en": "Members"
+      },
+      "description": {
+        "fr": "Gérer les membres de la communauté.",
+        "en": "Manage community members."
+      },
+      "path": "/members",
+      "children": [
+        {
+          "kind": "guide",
+          "slug": "member-create",
+          "title": {
+            "fr": "Créer un membre",
+            "en": "Create a member"
+          },
+          "path": "/member-create"
+        },
+        {
+          "kind": "guide",
+          "slug": "member-update",
+          "title": {
+            "fr": "Modifier un membre",
+            "en": "Edit a member"
+          },
+          "path": "/member-update"
+        }
+      ]
+    },
+    {
+      "kind": "group",
+      "slug": "meters",
+      "title": {
+        "fr": "Compteurs",
+        "en": "Meters"
+      },
+      "description": {
+        "fr": "Créer et configurer des compteurs.",
+        "en": "Create and configure meters."
+      },
+      "path": "/meters",
+      "children": [
+        {
+          "kind": "guide",
+          "slug": "meter-create",
+          "title": {
+            "fr": "Créer un compteur",
+            "en": "Create a meter"
+          },
+          "path": "/meter-create"
+        }
+      ]
+    },
+    {
+      "kind": "group",
+      "slug": "sharing",
+      "title": {
+        "fr": "Opérations de partage",
+        "en": "Sharing operations"
+      },
+      "description": {
+        "fr": "Créer et inspecter les opérations de partage.",
+        "en": "Create and inspect sharing operations."
+      },
+      "path": "/sharing",
+      "children": [
+        {
+          "kind": "guide",
+          "slug": "sharing-op-create",
+          "title": {
+            "fr": "Créer une opération de partage",
+            "en": "Create a sharing operation"
+          },
+          "path": "/sharing-op-create"
+        },
+        {
+          "kind": "guide",
+          "slug": "sharing-op-inspect",
+          "title": {
+            "fr": "Inspecter une opération de partage",
+            "en": "Inspect a sharing operation"
+          },
+          "path": "/sharing-op-inspect"
+        },
+        {
+          "kind": "guide",
+          "slug": "sharing-op-set-public",
+          "title": {
+            "fr": "Rendre une opération de partage publique",
+            "en": "Make a sharing operation public"
+          },
+          "path": "/sharing-op-set-public"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Créer une clé (formulaire) — OptimCE — Guides utilisateur</title>
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Synchronise the saved language preference with the file we just loaded.
+        // The user landed on this <locale>.html either by clicking a link rewritten
+        // to honour their preference or by direct entry — either way, that's the
+        // current truth.
+        try { localStorage.setItem("oce-lang", "fr"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.html" aria-label="OptimCE — Guides utilisateur">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.html">
+            <span class="i18n-fr">OptimCE — Guides utilisateur</span>
+            <span class="i18n-en">OptimCE — User guides</span>
+        </a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html"><span class="i18n-fr">Accueil</span><span class="i18n-en">Home</span></a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../keys/index.html">
+                <span class="i18n-fr">Clés</span>
+                <span class="i18n-en">Allocation keys</span>
+            </a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">
+                <span class="i18n-fr">Créer une clé (formulaire)</span>
+                <span class="i18n-en">Create an allocation key (form)</span>
+            </span>
+        </nav>
+
+        <div class="steppy-header-actions">
+            <nav class="steppy-locale-switch" aria-label="Language">
+                <ul>
+                    <li>
+                        <span aria-current="true">Français</span>
+                    </li>
+                    <li>
+                        <a href="./en.html">English</a>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Créer une clé (formulaire)</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Ajouter une clé</span>
+        </h2>
+        <div class="steppy-step-subtitle">Création d'une clé</div>
+        <div class="steppy-step-content">Cliquez sur « Ajouter » pour ouvrir l'éditeur de grille et créer une nouvelle clé de répartition à partir d'une page vierge.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/desktop/step-17-a.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Identifier la clé</span>
+        </h2>
+        <div class="steppy-step-subtitle">Identification de la clé</div>
+        <div class="steppy-step-content">Donnez un nom et une description à la nouvelle clé de répartition. Ces informations apparaîtront dans la liste des clés et aident à la retrouver plus tard.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/desktop/step-19-a.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Ajouter une itération</span>
+        </h2>
+        <div class="steppy-step-subtitle">Première itération</div>
+        <div class="steppy-step-content">Cliquez sur « Ajouter une itération » : la grille initialise un nouveau bloc avec un premier consommateur prêt à être édité.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/desktop/step-20.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Ajouter des consommateurs</span>
+        </h2>
+        <div class="steppy-step-subtitle">Première itération</div>
+        <div class="steppy-step-content">Cliquez sur « Ajouter un consommateur » autant de fois que nécessaire pour atteindre le nombre voulu — trois lignes dans ce scénario.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/desktop/step-22.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Configurer l'itération</span>
+        </h2>
+        <div class="steppy-step-subtitle">Première itération</div>
+        <div class="steppy-step-content">Saisissez 70% de l'énergie pour cette itération, nommez les trois consommateurs (Cons1, Cons2, Cons3) et fixez manuellement la répartition 40/40/20.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/desktop/step-23.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Ajouter une itération prorata</span>
+        </h2>
+        <div class="steppy-step-subtitle">Deuxième itération</div>
+        <div class="steppy-step-content">Cliquez sur « Ajouter une itération prorata » : les noms des consommateurs sont repris automatiquement et les pourcentages seront calculés selon la consommation réelle.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/desktop/step-24.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Définir la pondération</span>
+        </h2>
+        <div class="steppy-step-subtitle">Deuxième itération</div>
+        <div class="steppy-step-content">Saisissez 30% comme pondération de la deuxième itération afin que la somme des deux itérations atteigne 100% de l'énergie.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/desktop/step-25.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Itération recalculée</span>
+        </h2>
+        <div class="steppy-step-subtitle">Deuxième itération</div>
+        <div class="steppy-step-content">Dès que la pondération est validée (touche Entrée ou clic ailleurs), toute la deuxième itération est recalculée automatiquement selon le mode prorata.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/desktop/step-26.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Relire la configuration</span>
+        </h2>
+        <div class="steppy-step-subtitle">Validation finale</div>
+        <div class="steppy-step-content">Parcourez la grille complète pour vérifier les itérations, les noms et les pourcentages avant d'enregistrer la clé.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/desktop/step-27.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Clé créée</span>
+        </h2>
+        <div class="steppy-step-subtitle">Confirmation</div>
+        <div class="steppy-step-content">La nouvelle clé « E2E key » apparaît dans la liste des clés de répartition de la communauté, prête à être utilisée par une opération de partage.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/desktop/step-30.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Créer une clé (formulaire)</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Ajouter une clé</span>
+        </h2>
+        <div class="steppy-step-subtitle">Création d'une clé</div>
+        <div class="steppy-step-content">Cliquez sur « Ajouter » pour ouvrir l'éditeur de grille et créer une nouvelle clé de répartition à partir d'une page vierge.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/mobile/step-17.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Identifier la clé</span>
+        </h2>
+        <div class="steppy-step-subtitle">Identification de la clé</div>
+        <div class="steppy-step-content">Donnez un nom et une description à la nouvelle clé de répartition. Ces informations apparaîtront dans la liste des clés et aident à la retrouver plus tard.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/mobile/step-19-a.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Ajouter une itération</span>
+        </h2>
+        <div class="steppy-step-subtitle">Première itération</div>
+        <div class="steppy-step-content">Cliquez sur « Ajouter une itération » : la grille initialise un nouveau bloc avec un premier consommateur prêt à être édité.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/mobile/step-20.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Ajouter des consommateurs</span>
+        </h2>
+        <div class="steppy-step-subtitle">Première itération</div>
+        <div class="steppy-step-content">Cliquez sur « Ajouter un consommateur » autant de fois que nécessaire pour atteindre le nombre voulu — trois lignes dans ce scénario.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/mobile/step-22.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Configurer l'itération</span>
+        </h2>
+        <div class="steppy-step-subtitle">Première itération</div>
+        <div class="steppy-step-content">Saisissez 70% de l'énergie pour cette itération, nommez les trois consommateurs (Cons1, Cons2, Cons3) et fixez manuellement la répartition 40/40/20.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/mobile/step-23.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Ajouter une itération prorata</span>
+        </h2>
+        <div class="steppy-step-subtitle">Deuxième itération</div>
+        <div class="steppy-step-content">Cliquez sur « Ajouter une itération prorata » : les noms des consommateurs sont repris automatiquement et les pourcentages seront calculés selon la consommation réelle.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/mobile/step-24.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Définir la pondération</span>
+        </h2>
+        <div class="steppy-step-subtitle">Deuxième itération</div>
+        <div class="steppy-step-content">Saisissez 30% comme pondération de la deuxième itération afin que la somme des deux itérations atteigne 100% de l'énergie.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/mobile/step-25.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Itération recalculée</span>
+        </h2>
+        <div class="steppy-step-subtitle">Deuxième itération</div>
+        <div class="steppy-step-content">Dès que la pondération est validée (touche Entrée ou clic ailleurs), toute la deuxième itération est recalculée automatiquement selon le mode prorata.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/mobile/step-26.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Relire la configuration</span>
+        </h2>
+        <div class="steppy-step-subtitle">Validation finale</div>
+        <div class="steppy-step-content">Parcourez la grille complète pour vérifier les itérations, les noms et les pourcentages avant d'enregistrer la clé.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/mobile/step-27.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Clé créée</span>
+        </h2>
+        <div class="steppy-step-subtitle">Confirmation</div>
+        <div class="steppy-step-content">La nouvelle clé « E2E key » apparaît dans la liste des clés de répartition de la communauté, prête à être utilisée par une opération de partage.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/key-create-gridform/fr/mobile/step-30.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p><span class="i18n-fr">Généré par Steppy.</span><span class="i18n-en">Generated by Steppy.</span></p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": null, "selector": "[data-testid=\"keys-list__btn--add\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": null, "selector": "[data-testid=\"keys-list__btn--add\"]"}}, "screenshot": "../assets/key-create-gridform/fr/desktop/step-17-a.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/key-create-gridform/fr/desktop/step-17-a.png", "subtitle": "Cr\u00e9ation d\u0027une cl\u00e9", "text": "Cliquez sur \u00ab Ajouter \u00bb pour ouvrir l\u0027\u00e9diteur de grille et cr\u00e9er une nouvelle cl\u00e9 de r\u00e9partition \u00e0 partir d\u0027une page vierge.", "title": "Ajouter une cl\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 1237, "x": 137, "y": 260}, "selector": "[data-testid=\"key-update__input--name\"]", "value": "E2E key"}, {"bbox": {"height": 114, "width": 1237, "x": 137, "y": 348}, "selector": "[data-testid=\"key-update__textarea--description\"]", "value": "A demo key during the E2E test"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 1237, "x": 137, "y": 260}, "selector": "[data-testid=\"key-update__input--name\"]", "value": "E2E key"}, {"bbox": {"height": 114, "width": 1237, "x": 137, "y": 348}, "selector": "[data-testid=\"key-update__textarea--description\"]", "value": "A demo key during the E2E test"}]}, "screenshot": "../assets/key-create-gridform/fr/desktop/step-19-a.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/key-create-gridform/fr/desktop/step-19-a.png", "subtitle": "Identification de la cl\u00e9", "text": "Donnez un nom et une description \u00e0 la nouvelle cl\u00e9 de r\u00e9partition. Ces informations appara\u00eetront dans la liste des cl\u00e9s et aident \u00e0 la retrouver plus tard.", "title": "Identifier la cl\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 201.390625, "x": 131, "y": 555}, "selector": "[data-testid=\"key-update__btn--add-iteration\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 201.390625, "x": 131, "y": 555}, "selector": "[data-testid=\"key-update__btn--add-iteration\"]"}}, "screenshot": "../assets/key-create-gridform/fr/desktop/step-20.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/key-create-gridform/fr/desktop/step-20.png", "subtitle": "Premi\u00e8re it\u00e9ration", "text": "Cliquez sur \u00ab Ajouter une it\u00e9ration \u00bb : la grille initialise un nouveau bloc avec un premier consommateur pr\u00eat \u00e0 \u00eatre \u00e9dit\u00e9.", "title": "Ajouter une it\u00e9ration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 240.40625, "x": 607.5625, "y": 555}, "selector": "[data-testid=\"key-update__btn--add-consumer\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 240.40625, "x": 607.5625, "y": 555}, "selector": "[data-testid=\"key-update__btn--add-consumer\"]"}}, "screenshot": "../assets/key-create-gridform/fr/desktop/step-22.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/key-create-gridform/fr/desktop/step-22.png", "subtitle": "Premi\u00e8re it\u00e9ration", "text": "Cliquez sur \u00ab Ajouter un consommateur \u00bb autant de fois que n\u00e9cessaire pour atteindre le nombre voulu \u2014 trois lignes dans ce sc\u00e9nario.", "title": "Ajouter des consommateurs", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 249, "width": 1246, "x": 131, "y": 651}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "70% \u2014 Cons1 40 / Cons2 40 / Cons3 20"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 249, "width": 1246, "x": 131, "y": 651}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "70% \u2014 Cons1 40 / Cons2 40 / Cons3 20"}, "screenshot": "../assets/key-create-gridform/fr/desktop/step-23.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/key-create-gridform/fr/desktop/step-23.png", "subtitle": "Premi\u00e8re it\u00e9ration", "text": "Saisissez 70% de l\u0027\u00e9nergie pour cette it\u00e9ration, nommez les trois consommateurs (Cons1, Cons2, Cons3) et fixez manuellement la r\u00e9partition 40/40/20.", "title": "Configurer l\u0027it\u00e9ration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 259.171875, "x": 340.390625, "y": 523}, "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 259.171875, "x": 340.390625, "y": 523}, "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"}}, "screenshot": "../assets/key-create-gridform/fr/desktop/step-24.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/key-create-gridform/fr/desktop/step-24.png", "subtitle": "Deuxi\u00e8me it\u00e9ration", "text": "Cliquez sur \u00ab Ajouter une it\u00e9ration prorata \u00bb : les noms des consommateurs sont repris automatiquement et les pourcentages seront calcul\u00e9s selon la consommation r\u00e9elle.", "title": "Ajouter une it\u00e9ration prorata", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 351, "width": 1246, "x": 131, "y": 549}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "30%"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 351, "width": 1246, "x": 131, "y": 549}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "30%"}, "screenshot": "../assets/key-create-gridform/fr/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/key-create-gridform/fr/desktop/step-25.png", "subtitle": "Deuxi\u00e8me it\u00e9ration", "text": "Saisissez 30% comme pond\u00e9ration de la deuxi\u00e8me it\u00e9ration afin que la somme des deux it\u00e9rations atteigne 100% de l\u0027\u00e9nergie.", "title": "D\u00e9finir la pond\u00e9ration", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/fr/desktop/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/key-create-gridform/fr/desktop/step-26.png", "subtitle": "Deuxi\u00e8me it\u00e9ration", "text": "D\u00e8s que la pond\u00e9ration est valid\u00e9e (touche Entr\u00e9e ou clic ailleurs), toute la deuxi\u00e8me it\u00e9ration est recalcul\u00e9e automatiquement selon le mode prorata.", "title": "It\u00e9ration recalcul\u00e9e", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/fr/desktop/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/key-create-gridform/fr/desktop/step-27.png", "subtitle": "Validation finale", "text": "Parcourez la grille compl\u00e8te pour v\u00e9rifier les it\u00e9rations, les noms et les pourcentages avant d\u0027enregistrer la cl\u00e9.", "title": "Relire la configuration", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/fr/desktop/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/key-create-gridform/fr/desktop/step-30.png", "subtitle": "Confirmation", "text": "La nouvelle cl\u00e9 \u00ab E2E key \u00bb appara\u00eet dans la liste des cl\u00e9s de r\u00e9partition de la communaut\u00e9, pr\u00eate \u00e0 \u00eatre utilis\u00e9e par une op\u00e9ration de partage.", "title": "Cl\u00e9 cr\u00e9\u00e9e", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 144.921875, "x": 37, "y": 239}, "selector": "[data-testid=\"keys-list__btn--add\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 144.921875, "x": 37, "y": 239}, "selector": "[data-testid=\"keys-list__btn--add\"]"}}, "screenshot": "../assets/key-create-gridform/fr/mobile/step-17.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/key-create-gridform/fr/mobile/step-17.png", "subtitle": "Cr\u00e9ation d\u0027une cl\u00e9", "text": "Cliquez sur \u00ab Ajouter \u00bb pour ouvrir l\u0027\u00e9diteur de grille et cr\u00e9er une nouvelle cl\u00e9 de r\u00e9partition \u00e0 partir d\u0027une page vierge.", "title": "Ajouter une cl\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 315, "x": 39, "y": 336}, "selector": "[data-testid=\"key-update__input--name\"]", "value": "E2E key"}, {"bbox": {"height": 114, "width": 315, "x": 39, "y": 424}, "selector": "[data-testid=\"key-update__textarea--description\"]", "value": "A demo key during the E2E test"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 315, "x": 39, "y": 336}, "selector": "[data-testid=\"key-update__input--name\"]", "value": "E2E key"}, {"bbox": {"height": 114, "width": 315, "x": 39, "y": 424}, "selector": "[data-testid=\"key-update__textarea--description\"]", "value": "A demo key during the E2E test"}]}, "screenshot": "../assets/key-create-gridform/fr/mobile/step-19-a.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/key-create-gridform/fr/mobile/step-19-a.png", "subtitle": "Identification de la cl\u00e9", "text": "Donnez un nom et une description \u00e0 la nouvelle cl\u00e9 de r\u00e9partition. Ces informations appara\u00eetront dans la liste des cl\u00e9s et aident \u00e0 la retrouver plus tard.", "title": "Identifier la cl\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 201.390625, "x": 33, "y": 631}, "selector": "[data-testid=\"key-update__btn--add-iteration\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 201.390625, "x": 33, "y": 631}, "selector": "[data-testid=\"key-update__btn--add-iteration\"]"}}, "screenshot": "../assets/key-create-gridform/fr/mobile/step-20.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/key-create-gridform/fr/mobile/step-20.png", "subtitle": "Premi\u00e8re it\u00e9ration", "text": "Cliquez sur \u00ab Ajouter une it\u00e9ration \u00bb : la grille initialise un nouveau bloc avec un premier consommateur pr\u00eat \u00e0 \u00eatre \u00e9dit\u00e9.", "title": "Ajouter une it\u00e9ration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 240.40625, "x": 33, "y": 731}, "selector": "[data-testid=\"key-update__btn--add-consumer\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 240.40625, "x": 33, "y": 731}, "selector": "[data-testid=\"key-update__btn--add-consumer\"]"}}, "screenshot": "../assets/key-create-gridform/fr/mobile/step-22.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/key-create-gridform/fr/mobile/step-22.png", "subtitle": "Premi\u00e8re it\u00e9ration", "text": "Cliquez sur \u00ab Ajouter un consommateur \u00bb autant de fois que n\u00e9cessaire pour atteindre le nombre voulu \u2014 trois lignes dans ce sc\u00e9nario.", "title": "Ajouter des consommateurs", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 249, "width": 324, "x": 33, "y": 461}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "70% \u2014 Cons1 40 / Cons2 40 / Cons3 20"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 249, "width": 324, "x": 33, "y": 461}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "70% \u2014 Cons1 40 / Cons2 40 / Cons3 20"}, "screenshot": "../assets/key-create-gridform/fr/mobile/step-23.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/key-create-gridform/fr/mobile/step-23.png", "subtitle": "Premi\u00e8re it\u00e9ration", "text": "Saisissez 70% de l\u0027\u00e9nergie pour cette it\u00e9ration, nommez les trois consommateurs (Cons1, Cons2, Cons3) et fixez manuellement la r\u00e9partition 40/40/20.", "title": "Configurer l\u0027it\u00e9ration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 259.171875, "x": 33, "y": 283}, "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 259.171875, "x": 33, "y": 283}, "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"}}, "screenshot": "../assets/key-create-gridform/fr/mobile/step-24.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/key-create-gridform/fr/mobile/step-24.png", "subtitle": "Deuxi\u00e8me it\u00e9ration", "text": "Cliquez sur \u00ab Ajouter une it\u00e9ration prorata \u00bb : les noms des consommateurs sont repris automatiquement et les pourcentages seront calcul\u00e9s selon la consommation r\u00e9elle.", "title": "Ajouter une it\u00e9ration prorata", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 351, "width": 324, "x": 33, "y": 461}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "30%"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 351, "width": 324, "x": 33, "y": 461}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "30%"}, "screenshot": "../assets/key-create-gridform/fr/mobile/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/key-create-gridform/fr/mobile/step-25.png", "subtitle": "Deuxi\u00e8me it\u00e9ration", "text": "Saisissez 30% comme pond\u00e9ration de la deuxi\u00e8me it\u00e9ration afin que la somme des deux it\u00e9rations atteigne 100% de l\u0027\u00e9nergie.", "title": "D\u00e9finir la pond\u00e9ration", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/fr/mobile/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/key-create-gridform/fr/mobile/step-26.png", "subtitle": "Deuxi\u00e8me it\u00e9ration", "text": "D\u00e8s que la pond\u00e9ration est valid\u00e9e (touche Entr\u00e9e ou clic ailleurs), toute la deuxi\u00e8me it\u00e9ration est recalcul\u00e9e automatiquement selon le mode prorata.", "title": "It\u00e9ration recalcul\u00e9e", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/fr/mobile/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/key-create-gridform/fr/mobile/step-27.png", "subtitle": "Validation finale", "text": "Parcourez la grille compl\u00e8te pour v\u00e9rifier les it\u00e9rations, les noms et les pourcentages avant d\u0027enregistrer la cl\u00e9.", "title": "Relire la configuration", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/fr/mobile/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/key-create-gridform/fr/mobile/step-30.png", "subtitle": "Confirmation", "text": "La nouvelle cl\u00e9 \u00ab E2E key \u00bb appara\u00eet dans la liste des cl\u00e9s de r\u00e9partition de la communaut\u00e9, pr\u00eate \u00e0 \u00eatre utilis\u00e9e par une op\u00e9ration de partage.", "title": "Cl\u00e9 cr\u00e9\u00e9e", "viewport": {"height": 900, "width": 1440}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

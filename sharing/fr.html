@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Opérations de partage — OptimCE — Guides utilisateur</title>
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", savedTheme || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        try {
+          var savedLang = localStorage.getItem("oce-lang");
+          if (savedLang === "fr" || savedLang === "en") {
+            document.documentElement.setAttribute("lang", savedLang);
+          }
+        } catch (e) {}
+      })();
+    </script>
+</head>
+<body>
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.html" aria-label="OptimCE — Guides utilisateur">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.html">
+            <span class="i18n-fr">OptimCE — Guides utilisateur</span>
+            <span class="i18n-en">OptimCE — User guides</span>
+        </a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html"><span class="i18n-fr">Accueil</span><span class="i18n-en">Home</span></a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">
+                <span class="i18n-fr">Opérations de partage</span>
+                <span class="i18n-en">Sharing operations</span>
+            </span>
+        </nav>
+
+        <div class="steppy-header-actions">
+            <nav class="steppy-locale-switch" aria-label="Language">
+                <ul>
+                    <li><button type="button" data-set-lang="fr" aria-current="true">FR</button></li>
+                    <li><button type="button" data-set-lang="en">EN</button></li>
+                </ul>
+            </nav>
+            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="steppy-main">
+        <section class="steppy-group-page">
+            <div class="steppy-group-hero">
+                <div class="steppy-group-hero-eyebrow">
+                    <span class="i18n-fr">Module</span>
+                    <span class="i18n-en">Module</span>
+                    <span aria-hidden="true">·</span>
+                    <span>
+                        <span class="i18n-fr">3 guides</span>
+                        <span class="i18n-en">3 guides</span>
+                    </span>
+                </div>
+                <h1>
+                    <span class="i18n-fr">Opérations de partage</span>
+                    <span class="i18n-en">Sharing operations</span>
+                </h1>
+                <p>
+                    <span class="i18n-fr">Créer et inspecter les opérations de partage.</span>
+                    <span class="i18n-en">Create and inspect sharing operations.</span>
+                </p>
+            </div>
+
+            <ul class="steppy-guide-grid">
+                <li>
+                    <a href="../sharing-op-create/fr.html">
+                        <span class="steppy-guide-grid-eyebrow">
+                            <span class="i18n-fr">Guide</span>
+                            <span class="i18n-en">Guide</span>
+                        </span>
+                        <span class="steppy-guide-grid-title">
+                            <span class="i18n-fr">Créer une opération de partage</span>
+                            <span class="i18n-en">Create a sharing operation</span>
+                        </span>
+                        <span class="steppy-guide-grid-go">
+                            <span class="i18n-fr">Lire le guide</span>
+                            <span class="i18n-en">Read the guide</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../sharing-op-inspect/fr.html">
+                        <span class="steppy-guide-grid-eyebrow">
+                            <span class="i18n-fr">Guide</span>
+                            <span class="i18n-en">Guide</span>
+                        </span>
+                        <span class="steppy-guide-grid-title">
+                            <span class="i18n-fr">Inspecter une opération de partage</span>
+                            <span class="i18n-en">Inspect a sharing operation</span>
+                        </span>
+                        <span class="steppy-guide-grid-go">
+                            <span class="i18n-fr">Lire le guide</span>
+                            <span class="i18n-en">Read the guide</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../sharing-op-set-public/fr.html">
+                        <span class="steppy-guide-grid-eyebrow">
+                            <span class="i18n-fr">Guide</span>
+                            <span class="i18n-en">Guide</span>
+                        </span>
+                        <span class="steppy-guide-grid-title">
+                            <span class="i18n-fr">Rendre une opération de partage publique</span>
+                            <span class="i18n-en">Make a sharing operation public</span>
+                        </span>
+                        <span class="steppy-guide-grid-go">
+                            <span class="i18n-fr">Lire le guide</span>
+                            <span class="i18n-en">Read the guide</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="steppy-site-footer">
+        <p><span class="i18n-fr">Généré par Steppy.</span><span class="i18n-en">Generated by Steppy.</span></p>
+    </footer>
+
+    <script>
+      (function () {
+        var DEFAULT_LANG = "fr";
+        function applyLangButtons(lang) {
+          document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
+            if (btn.dataset.setLang === lang) btn.setAttribute("aria-current", "true");
+            else btn.removeAttribute("aria-current");
+          });
+        }
+        function rewriteGuideLinks(lang) {
+          var matcher = /\/([a-z]{2})\.html(\?|#|$)/;
+          document.querySelectorAll("a[href]").forEach(function (a) {
+            var href = a.getAttribute("href");
+            var m = href.match(matcher);
+            if (!m || m[1] === lang) return;
+            a.setAttribute("href", href.replace(matcher, "/" + lang + ".html$2"));
+          });
+        }
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (btn) {
+            btn.addEventListener("click", function () {
+              var current = document.documentElement.getAttribute("data-theme") || "light";
+              var next = current === "dark" ? "light" : "dark";
+              document.documentElement.setAttribute("data-theme", next);
+              try { localStorage.setItem("oce-theme", next); } catch (e) {}
+            });
+          }
+          var initialLang = document.documentElement.getAttribute("lang") || DEFAULT_LANG;
+          applyLangButtons(initialLang);
+          rewriteGuideLinks(initialLang);
+          document.querySelectorAll("[data-set-lang]").forEach(function (b) {
+            b.addEventListener("click", function () {
+              var lang = b.dataset.setLang;
+              document.documentElement.setAttribute("lang", lang);
+              applyLangButtons(lang);
+              rewriteGuideLinks(lang);
+              try { localStorage.setItem("oce-lang", lang); } catch (e) {}
+            });
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+</body>
+</html>

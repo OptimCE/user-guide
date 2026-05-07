@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rendre une opération de partage publique — OptimCE — Guides utilisateur</title>
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Synchronise the saved language preference with the file we just loaded.
+        // The user landed on this <locale>.html either by clicking a link rewritten
+        // to honour their preference or by direct entry — either way, that's the
+        // current truth.
+        try { localStorage.setItem("oce-lang", "fr"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.html" aria-label="OptimCE — Guides utilisateur">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.html">
+            <span class="i18n-fr">OptimCE — Guides utilisateur</span>
+            <span class="i18n-en">OptimCE — User guides</span>
+        </a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html"><span class="i18n-fr">Accueil</span><span class="i18n-en">Home</span></a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../sharing/index.html">
+                <span class="i18n-fr">Opérations de partage</span>
+                <span class="i18n-en">Sharing operations</span>
+            </a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">
+                <span class="i18n-fr">Rendre une opération de partage publique</span>
+                <span class="i18n-en">Make a sharing operation public</span>
+            </span>
+        </nav>
+
+        <div class="steppy-header-actions">
+            <nav class="steppy-locale-switch" aria-label="Language">
+                <ul>
+                    <li>
+                        <span aria-current="true">Français</span>
+                    </li>
+                    <li>
+                        <a href="./en.html">English</a>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="steppy-onboarding-strip" aria-label="Progression Premiers pas">
+        <span class="steppy-onboarding-strip-progress">
+            <a href="../getting-started/index.html">
+                <span class="i18n-fr">Premiers pas</span>
+                <span class="i18n-en">Getting started</span>
+            </a>
+            <span class="steppy-onboarding-strip-position">
+                <span class="i18n-fr">Étape 10 sur 10</span>
+                <span class="i18n-en">Step 10 of 10</span>
+            </span>
+        </span>
+        <span class="steppy-onboarding-strip-nav">
+            <a class="steppy-onboarding-prev" href="../sharing-op-create/fr.html?onboarding=1">
+                <span class="i18n-fr">‹ Créer une opération de partage</span>
+                <span class="i18n-en">‹ Create a sharing operation</span>
+            </a>
+            <span class="steppy-onboarding-next steppy-onboarding-disabled" aria-disabled="true">
+                <span class="i18n-fr">Terminé</span>
+                <span class="i18n-en">Finish</span>
+            </span>
+        </span>
+    </nav>
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Rendre une opération de partage publique</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Ouvrir le groupe Membres</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Dans la section « Gestion » de la barre latérale, cliquez sur « Gestion des membres » pour révéler le sous-menu contenant notamment les opérations de partage.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/desktop/step-17.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Accéder aux opérations de partage</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Dans le sous-menu, cliquez sur « Opérations de partage » pour accéder à la liste des opérations de partage d'énergie de votre communauté.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/desktop/step-18.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Ajouter une opération</span>
+        </h2>
+        <div class="steppy-step-subtitle">Création d'une opération</div>
+        <div class="steppy-step-content">Cliquez sur « Ajouter » pour ouvrir le dialogue de création d'une nouvelle opération de partage. Par défaut, toute nouvelle opération est créée en mode privé : elle n'est pas encore visible dans l'annuaire public.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/desktop/step-25.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Nommer l'opération</span>
+        </h2>
+        <div class="steppy-step-subtitle">Identification</div>
+        <div class="steppy-step-content">Saisissez un nom pour la nouvelle opération. Ce nom sera visible dans la liste de gestion et dans l'annuaire public une fois l'opération rendue publique.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/desktop/step-27.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Sélectionner le type Local</span>
+        </h2>
+        <div class="steppy-step-subtitle">Type de partage</div>
+        <div class="steppy-step-content">Sélectionnez le type « Local » pour une opération de partage au sein d'un même bâtiment. Ce type, comme les types CER et CEC, peut être rendu public pour apparaître dans l'annuaire des communautés d'énergie.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/desktop/step-28.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Saisir la commune</span>
+        </h2>
+        <div class="steppy-step-subtitle">Communes couvertes</div>
+        <div class="steppy-step-content">Tapez les premières lettres d'une commune pour voir les suggestions. La commune rattachée à l'opération sera affichée dans l'annuaire public pour aider les citoyens à trouver une initiative proche de chez eux.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/desktop/step-29.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Sélectionner Anderlecht</span>
+        </h2>
+        <div class="steppy-step-subtitle">Confirmation de la commune</div>
+        <div class="steppy-step-content">Cliquez sur la première suggestion (Anderlecht) pour l'associer à l'opération. Les communes couvertes apparaîtront dans l'annuaire public pour chaque opération publique, permettant aux citoyens de filtrer par localité.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/desktop/step-30.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Opération créée</span>
+        </h2>
+        <div class="steppy-step-subtitle">Confirmation</div>
+        <div class="steppy-step-content">La nouvelle opération « E2E Energy Sharing » apparaît dans la liste. Elle est pour l'instant en mode privé : elle n'est visible que par les gestionnaires de la communauté et n'apparaît pas encore dans l'annuaire public.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/desktop/step-33.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Ouvrir la fiche</span>
+        </h2>
+        <div class="steppy-step-subtitle">Détail de l'opération</div>
+        <div class="steppy-step-content">Cliquez sur la ligne de la nouvelle opération pour ouvrir sa fiche détaillée et accéder aux paramètres de visibilité.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/desktop/step-34.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Visibilité privée par défaut</span>
+        </h2>
+        <div class="steppy-step-subtitle">Paramètre de visibilité</div>
+        <div class="steppy-step-content">Le bouton grisé « PRIVÉ » dans l'en-tête indique que cette opération n'est pas encore visible dans l'annuaire public. Les citoyens qui cherchent une opération de partage dans leur commune ne pourront pas la trouver tant qu'elle reste privée.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/desktop/step-38.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Rendre l'opération publique</span>
+        </h2>
+        <div class="steppy-step-subtitle">Modifier la visibilité</div>
+        <div class="steppy-step-content">Cliquez sur le bouton de visibilité pour basculer l'opération en mode public. Ce changement est immédiatement enregistré : l'opération devient visible dans l'annuaire des communautés d'énergie pour tous les citoyens.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/desktop/step-39.png" alt="Step 11" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>L'opération est maintenant publique</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité confirmée</div>
+        <div class="steppy-step-content">Le bouton passe au vert et affiche « PUBLIC ». Tout citoyen peut désormais trouver cette opération dans l'annuaire des communautés d'énergie, filtrer par commune et contacter la communauté pour demander à y participer.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/desktop/step-40.png" alt="Step 12" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="13">
+        <h2>
+            <span class="steppy-step-number">13</span>
+            <span>Annuaire public des communautés</span>
+        </h2>
+        <div class="steppy-step-subtitle">Vue citoyenne</div>
+        <div class="steppy-step-content">La page « Communautés d'énergie » est accessible à tous, sans connexion requise. Elle liste les communautés qui disposent d'au moins une opération de partage publique, avec la possibilité de filtrer par commune pour découvrir une initiative locale.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/desktop/step-41.png" alt="Step 13" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="14">
+        <h2>
+            <span class="steppy-step-number">14</span>
+            <span>Développer une communauté</span>
+        </h2>
+        <div class="steppy-step-subtitle">Opérations disponibles</div>
+        <div class="steppy-step-content">Cliquez sur une communauté pour afficher ses opérations de partage publiques. Pour chaque opération, le type et les communes couvertes sont visibles — des informations essentielles pour un citoyen qui cherche une initiative proche de chez lui.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/desktop/step-43.png" alt="Step 14" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="15">
+        <h2>
+            <span class="steppy-step-number">15</span>
+            <span>L'opération apparaît dans l'annuaire</span>
+        </h2>
+        <div class="steppy-step-subtitle">Découverte citoyenne</div>
+        <div class="steppy-step-content">L'opération « E2E Energy Sharing » est maintenant visible dans l'annuaire public, avec son type et la commune d'Anderlecht. C'est exactement ce qu'un citoyen verra lorsqu'il cherchera une opération de partage d'énergie dans sa région pour rejoindre une communauté locale.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/desktop/step-45.png" alt="Step 15" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Rendre une opération de partage publique</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Ouvrir le groupe Membres</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Dans le tiroir de navigation, section « Gestion », touchez « Gestion des membres » pour révéler le sous-menu contenant les opérations de partage.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/mobile/step-21.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Accéder aux opérations de partage</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Dans le sous-menu, touchez « Opérations de partage » pour accéder à la liste des opérations de partage d'énergie de votre communauté.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/mobile/step-22.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Ajouter une opération</span>
+        </h2>
+        <div class="steppy-step-subtitle">Création d'une opération</div>
+        <div class="steppy-step-content">Cliquez sur « Ajouter » pour ouvrir le dialogue de création d'une nouvelle opération de partage. Par défaut, toute nouvelle opération est créée en mode privé : elle n'est pas encore visible dans l'annuaire public.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/mobile/step-25.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Nommer l'opération</span>
+        </h2>
+        <div class="steppy-step-subtitle">Identification</div>
+        <div class="steppy-step-content">Saisissez un nom pour la nouvelle opération. Ce nom sera visible dans la liste de gestion et dans l'annuaire public une fois l'opération rendue publique.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/mobile/step-27.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Sélectionner le type Local</span>
+        </h2>
+        <div class="steppy-step-subtitle">Type de partage</div>
+        <div class="steppy-step-content">Sélectionnez le type « Local » pour une opération de partage au sein d'un même bâtiment. Ce type, comme les types CER et CEC, peut être rendu public pour apparaître dans l'annuaire des communautés d'énergie.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/mobile/step-28.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Saisir la commune</span>
+        </h2>
+        <div class="steppy-step-subtitle">Communes couvertes</div>
+        <div class="steppy-step-content">Tapez les premières lettres d'une commune pour voir les suggestions. La commune rattachée à l'opération sera affichée dans l'annuaire public pour aider les citoyens à trouver une initiative proche de chez eux.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/mobile/step-29.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Sélectionner Anderlecht</span>
+        </h2>
+        <div class="steppy-step-subtitle">Confirmation de la commune</div>
+        <div class="steppy-step-content">Cliquez sur la première suggestion (Anderlecht) pour l'associer à l'opération. Les communes couvertes apparaîtront dans l'annuaire public pour chaque opération publique, permettant aux citoyens de filtrer par localité.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/mobile/step-30.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Opération créée</span>
+        </h2>
+        <div class="steppy-step-subtitle">Confirmation</div>
+        <div class="steppy-step-content">La nouvelle opération « E2E Energy Sharing » apparaît dans la liste. Elle est pour l'instant en mode privé : elle n'est visible que par les gestionnaires de la communauté et n'apparaît pas encore dans l'annuaire public.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/mobile/step-33.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Ouvrir la fiche</span>
+        </h2>
+        <div class="steppy-step-subtitle">Détail de l'opération</div>
+        <div class="steppy-step-content">Cliquez sur la ligne de la nouvelle opération pour ouvrir sa fiche détaillée et accéder aux paramètres de visibilité.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/mobile/step-34.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Visibilité privée par défaut</span>
+        </h2>
+        <div class="steppy-step-subtitle">Paramètre de visibilité</div>
+        <div class="steppy-step-content">Le bouton grisé « PRIVÉ » dans l'en-tête indique que cette opération n'est pas encore visible dans l'annuaire public. Les citoyens qui cherchent une opération de partage dans leur commune ne pourront pas la trouver tant qu'elle reste privée.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/mobile/step-38.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Rendre l'opération publique</span>
+        </h2>
+        <div class="steppy-step-subtitle">Modifier la visibilité</div>
+        <div class="steppy-step-content">Cliquez sur le bouton de visibilité pour basculer l'opération en mode public. Ce changement est immédiatement enregistré : l'opération devient visible dans l'annuaire des communautés d'énergie pour tous les citoyens.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/mobile/step-39.png" alt="Step 11" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>L'opération est maintenant publique</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité confirmée</div>
+        <div class="steppy-step-content">Le bouton passe au vert et affiche « PUBLIC ». Tout citoyen peut désormais trouver cette opération dans l'annuaire des communautés d'énergie, filtrer par commune et contacter la communauté pour demander à y participer.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/mobile/step-40.png" alt="Step 12" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="13">
+        <h2>
+            <span class="steppy-step-number">13</span>
+            <span>Annuaire public des communautés</span>
+        </h2>
+        <div class="steppy-step-subtitle">Vue citoyenne</div>
+        <div class="steppy-step-content">La page « Communautés d'énergie » est accessible à tous, sans connexion requise. Elle liste les communautés qui disposent d'au moins une opération de partage publique, avec la possibilité de filtrer par commune pour découvrir une initiative locale.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/mobile/step-41.png" alt="Step 13" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="14">
+        <h2>
+            <span class="steppy-step-number">14</span>
+            <span>Développer une communauté</span>
+        </h2>
+        <div class="steppy-step-subtitle">Opérations disponibles</div>
+        <div class="steppy-step-content">Cliquez sur une communauté pour afficher ses opérations de partage publiques. Pour chaque opération, le type et les communes couvertes sont visibles — des informations essentielles pour un citoyen qui cherche une initiative proche de chez lui.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/mobile/step-43.png" alt="Step 14" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="15">
+        <h2>
+            <span class="steppy-step-number">15</span>
+            <span>L'opération apparaît dans l'annuaire</span>
+        </h2>
+        <div class="steppy-step-subtitle">Découverte citoyenne</div>
+        <div class="steppy-step-content">L'opération « E2E Energy Sharing » est maintenant visible dans l'annuaire public, avec son type et la commune d'Anderlecht. C'est exactement ce qu'un citoyen verra lorsqu'il cherchera une opération de partage d'énergie dans sa région pour rejoindre une communauté locale.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/fr/mobile/step-45.png" alt="Step 15" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p><span class="i18n-fr">Généré par Steppy.</span><span class="i18n-en">Generated by Steppy.</span></p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 243, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 243, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"}}, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-17.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-17.png", "subtitle": "Navigation", "text": "Dans la section \u00ab Gestion \u00bb de la barre lat\u00e9rale, cliquez sur \u00ab Gestion des membres \u00bb pour r\u00e9v\u00e9ler le sous-menu contenant notamment les op\u00e9rations de partage.", "title": "Ouvrir le groupe Membres", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 33.5, "width": 215, "x": 36, "y": 625.5}, "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--2\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 33.5, "width": 215, "x": 36, "y": 625.5}, "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--2\"]"}}, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-18.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-18.png", "subtitle": "Navigation", "text": "Dans le sous-menu, cliquez sur \u00ab Op\u00e9rations de partage \u00bb pour acc\u00e9der \u00e0 la liste des op\u00e9rations de partage d\u0027\u00e9nergie de votre communaut\u00e9.", "title": "Acc\u00e9der aux op\u00e9rations de partage", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 103.921875, "x": 1265.078125, "y": 52}, "selector": "[data-testid=\"operations-list__btn--add\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 103.921875, "x": 1265.078125, "y": 52}, "selector": "[data-testid=\"operations-list__btn--add\"]"}}, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-25.png", "subtitle": "Cr\u00e9ation d\u0027une op\u00e9ration", "text": "Cliquez sur \u00ab Ajouter \u00bb pour ouvrir le dialogue de cr\u00e9ation d\u0027une nouvelle op\u00e9ration de partage. Par d\u00e9faut, toute nouvelle op\u00e9ration est cr\u00e9\u00e9e en mode priv\u00e9 : elle n\u0027est pas encore visible dans l\u0027annuaire public.", "title": "Ajouter une op\u00e9ration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 648.515625, "x": 395.734375, "y": 344}, "selector": "[data-testid=\"op-creation__input--name\"]"}, "value": "E2E Energy Sharing"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 648.515625, "x": 395.734375, "y": 344}, "selector": "[data-testid=\"op-creation__input--name\"]"}, "value": "E2E Energy Sharing"}, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-27.png", "subtitle": "Identification", "text": "Saisissez un nom pour la nouvelle op\u00e9ration. Ce nom sera visible dans la liste de gestion et dans l\u0027annuaire public une fois l\u0027op\u00e9ration rendue publique.", "title": "Nommer l\u0027op\u00e9ration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 56, "width": 208.171875, "x": 395.734375, "y": 428}, "selector": "[data-testid=\"op-creation__card--type--0\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 56, "width": 208.171875, "x": 395.734375, "y": 428}, "selector": "[data-testid=\"op-creation__card--type--0\"]"}, "value": null}, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-28.png", "subtitle": "Type de partage", "text": "S\u00e9lectionnez le type \u00ab Local \u00bb pour une op\u00e9ration de partage au sein d\u0027un m\u00eame b\u00e2timent. Ce type, comme les types CER et CEC, peut \u00eatre rendu public pour appara\u00eetre dans l\u0027annuaire des communaut\u00e9s d\u0027\u00e9nergie.", "title": "S\u00e9lectionner le type Local", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 24, "width": 622.515625, "x": 408.734375, "y": 535}, "selector": "#municipalities"}, "value": "Anderl"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 24, "width": 622.515625, "x": 408.734375, "y": 535}, "selector": "#municipalities"}, "value": "Anderl"}, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-29.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-29.png", "subtitle": "Communes couvertes", "text": "Tapez les premi\u00e8res lettres d\u0027une commune pour voir les suggestions. La commune rattach\u00e9e \u00e0 l\u0027op\u00e9ration sera affich\u00e9e dans l\u0027annuaire public pour aider les citoyens \u00e0 trouver une initiative proche de chez eux.", "title": "Saisir la commune", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 52, "width": 639, "x": 400.734375, "y": 575}, "selector": ".p-autocomplete-overlay [role=\"option\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 52, "width": 639, "x": 400.734375, "y": 575}, "selector": ".p-autocomplete-overlay [role=\"option\"]"}, "value": null}, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-30.png", "subtitle": "Confirmation de la commune", "text": "Cliquez sur la premi\u00e8re suggestion (Anderlecht) pour l\u0027associer \u00e0 l\u0027op\u00e9ration. Les communes couvertes appara\u00eetront dans l\u0027annuaire public pour chaque op\u00e9ration publique, permettant aux citoyens de filtrer par localit\u00e9.", "title": "S\u00e9lectionner Anderlecht", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-33.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-33.png", "subtitle": "Confirmation", "text": "La nouvelle op\u00e9ration \u00ab E2E Energy Sharing \u00bb appara\u00eet dans la liste. Elle est pour l\u0027instant en mode priv\u00e9 : elle n\u0027est visible que par les gestionnaires de la communaut\u00e9 et n\u0027appara\u00eet pas encore dans l\u0027annuaire public.", "title": "Op\u00e9ration cr\u00e9\u00e9e", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 203.96875, "width": 1280, "x": 114, "y": 256}, "selector": "[data-testid=\"operations-list__table\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 203.96875, "width": 1280, "x": 114, "y": 256}, "selector": "[data-testid=\"operations-list__table\"]"}, "value": null}, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-34.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-34.png", "subtitle": "D\u00e9tail de l\u0027op\u00e9ration", "text": "Cliquez sur la ligne de la nouvelle op\u00e9ration pour ouvrir sa fiche d\u00e9taill\u00e9e et acc\u00e9der aux param\u00e8tres de visibilit\u00e9.", "title": "Ouvrir la fiche", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-38.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-38.png", "subtitle": "Param\u00e8tre de visibilit\u00e9", "text": "Le bouton gris\u00e9 \u00ab PRIV\u00c9 \u00bb dans l\u0027en-t\u00eate indique que cette op\u00e9ration n\u0027est pas encore visible dans l\u0027annuaire public. Les citoyens qui cherchent une op\u00e9ration de partage dans leur commune ne pourront pas la trouver tant qu\u0027elle reste priv\u00e9e.", "title": "Visibilit\u00e9 priv\u00e9e par d\u00e9faut", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 85.953125, "x": 1283.046875, "y": 88}, "selector": "[data-testid=\"op-view__btn--toggle-visibility\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 85.953125, "x": 1283.046875, "y": 88}, "selector": "[data-testid=\"op-view__btn--toggle-visibility\"]"}}, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-39.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-39.png", "subtitle": "Modifier la visibilit\u00e9", "text": "Cliquez sur le bouton de visibilit\u00e9 pour basculer l\u0027op\u00e9ration en mode public. Ce changement est imm\u00e9diatement enregistr\u00e9 : l\u0027op\u00e9ration devient visible dans l\u0027annuaire des communaut\u00e9s d\u0027\u00e9nergie pour tous les citoyens.", "title": "Rendre l\u0027op\u00e9ration publique", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-40.png", "viewport": {"height": 900, "width": 1440}}], "index": 12, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-40.png", "subtitle": "Visibilit\u00e9 confirm\u00e9e", "text": "Le bouton passe au vert et affiche \u00ab PUBLIC \u00bb. Tout citoyen peut d\u00e9sormais trouver cette op\u00e9ration dans l\u0027annuaire des communaut\u00e9s d\u0027\u00e9nergie, filtrer par commune et contacter la communaut\u00e9 pour demander \u00e0 y participer.", "title": "L\u0027op\u00e9ration est maintenant publique", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-41.png", "viewport": {"height": 900, "width": 1440}}], "index": 13, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-41.png", "subtitle": "Vue citoyenne", "text": "La page \u00ab Communaut\u00e9s d\u0027\u00e9nergie \u00bb est accessible \u00e0 tous, sans connexion requise. Elle liste les communaut\u00e9s qui disposent d\u0027au moins une op\u00e9ration de partage publique, avec la possibilit\u00e9 de filtrer par commune pour d\u00e9couvrir une initiative locale.", "title": "Annuaire public des communaut\u00e9s", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 64, "width": 1278, "x": 115, "y": 225}, "selector": "[data-testid=\"public-community-list__btn--accordion--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 64, "width": 1278, "x": 115, "y": 225}, "selector": "[data-testid=\"public-community-list__btn--accordion--0\"]"}}, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-43.png", "viewport": {"height": 900, "width": 1440}}], "index": 14, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-43.png", "subtitle": "Op\u00e9rations disponibles", "text": "Cliquez sur une communaut\u00e9 pour afficher ses op\u00e9rations de partage publiques. Pour chaque op\u00e9ration, le type et les communes couvertes sont visibles \u2014 des informations essentielles pour un citoyen qui cherche une initiative proche de chez lui.", "title": "D\u00e9velopper une communaut\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-45.png", "viewport": {"height": 900, "width": 1440}}], "index": 15, "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-45.png", "subtitle": "D\u00e9couverte citoyenne", "text": "L\u0027op\u00e9ration \u00ab E2E Energy Sharing \u00bb est maintenant visible dans l\u0027annuaire public, avec son type et la commune d\u0027Anderlecht. C\u0027est exactement ce qu\u0027un citoyen verra lorsqu\u0027il cherchera une op\u00e9ration de partage d\u0027\u00e9nergie dans sa r\u00e9gion pour rejoindre une communaut\u00e9 locale.", "title": "L\u0027op\u00e9ration appara\u00eet dans l\u0027annuaire", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 284, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 284, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"}}, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-21.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-21.png", "subtitle": "Navigation", "text": "Dans le tiroir de navigation, section \u00ab Gestion \u00bb, touchez \u00ab Gestion des membres \u00bb pour r\u00e9v\u00e9ler le sous-menu contenant les op\u00e9rations de partage.", "title": "Ouvrir le groupe Membres", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 33.5, "width": 256, "x": 36, "y": 625.5}, "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--2\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 33.5, "width": 256, "x": 36, "y": 625.5}, "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--2\"]"}}, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-22.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-22.png", "subtitle": "Navigation", "text": "Dans le sous-menu, touchez \u00ab Op\u00e9rations de partage \u00bb pour acc\u00e9der \u00e0 la liste des op\u00e9rations de partage d\u0027\u00e9nergie de votre communaut\u00e9.", "title": "Acc\u00e9der aux op\u00e9rations de partage", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 103.921875, "x": 37, "y": 239}, "selector": "[data-testid=\"operations-list__btn--add\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 103.921875, "x": 37, "y": 239}, "selector": "[data-testid=\"operations-list__btn--add\"]"}}, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-25.png", "subtitle": "Cr\u00e9ation d\u0027une op\u00e9ration", "text": "Cliquez sur \u00ab Ajouter \u00bb pour ouvrir le dialogue de cr\u00e9ation d\u0027une nouvelle op\u00e9ration de partage. Par d\u00e9faut, toute nouvelle op\u00e9ration est cr\u00e9\u00e9e en mode priv\u00e9 : elle n\u0027est pas encore visible dans l\u0027annuaire public.", "title": "Ajouter une op\u00e9ration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 344.453125, "x": 22.765625, "y": 248}, "selector": "[data-testid=\"op-creation__input--name\"]"}, "value": "E2E Energy Sharing"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 344.453125, "x": 22.765625, "y": 248}, "selector": "[data-testid=\"op-creation__input--name\"]"}, "value": "E2E Energy Sharing"}, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-27.png", "subtitle": "Identification", "text": "Saisissez un nom pour la nouvelle op\u00e9ration. Ce nom sera visible dans la liste de gestion et dans l\u0027annuaire public une fois l\u0027op\u00e9ration rendue publique.", "title": "Nommer l\u0027op\u00e9ration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 56, "width": 344.453125, "x": 22.765625, "y": 332}, "selector": "[data-testid=\"op-creation__card--type--0\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 56, "width": 344.453125, "x": 22.765625, "y": 332}, "selector": "[data-testid=\"op-creation__card--type--0\"]"}, "value": null}, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-28.png", "subtitle": "Type de partage", "text": "S\u00e9lectionnez le type \u00ab Local \u00bb pour une op\u00e9ration de partage au sein d\u0027un m\u00eame b\u00e2timent. Ce type, comme les types CER et CEC, peut \u00eatre rendu public pour appara\u00eetre dans l\u0027annuaire des communaut\u00e9s d\u0027\u00e9nergie.", "title": "S\u00e9lectionner le type Local", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 24, "width": 318.453125, "x": 35.765625, "y": 575}, "selector": "#municipalities"}, "value": "Anderl"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 24, "width": 318.453125, "x": 35.765625, "y": 575}, "selector": "#municipalities"}, "value": "Anderl"}, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-29.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-29.png", "subtitle": "Communes couvertes", "text": "Tapez les premi\u00e8res lettres d\u0027une commune pour voir les suggestions. La commune rattach\u00e9e \u00e0 l\u0027op\u00e9ration sera affich\u00e9e dans l\u0027annuaire public pour aider les citoyens \u00e0 trouver une initiative proche de chez eux.", "title": "Saisir la commune", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 52, "width": 334, "x": 27.765625, "y": 615}, "selector": ".p-autocomplete-overlay [role=\"option\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 52, "width": 334, "x": 27.765625, "y": 615}, "selector": ".p-autocomplete-overlay [role=\"option\"]"}, "value": null}, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-30.png", "subtitle": "Confirmation de la commune", "text": "Cliquez sur la premi\u00e8re suggestion (Anderlecht) pour l\u0027associer \u00e0 l\u0027op\u00e9ration. Les communes couvertes appara\u00eetront dans l\u0027annuaire public pour chaque op\u00e9ration publique, permettant aux citoyens de filtrer par localit\u00e9.", "title": "S\u00e9lectionner Anderlecht", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-33.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-33.png", "subtitle": "Confirmation", "text": "La nouvelle op\u00e9ration \u00ab E2E Energy Sharing \u00bb appara\u00eet dans la liste. Elle est pour l\u0027instant en mode priv\u00e9 : elle n\u0027est visible que par les gestionnaires de la communaut\u00e9 et n\u0027appara\u00eet pas encore dans l\u0027annuaire public.", "title": "Op\u00e9ration cr\u00e9\u00e9e", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 579.9375, "width": 358, "x": 16, "y": 264}, "selector": "[data-testid=\"operations-list__table\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 579.9375, "width": 358, "x": 16, "y": 264}, "selector": "[data-testid=\"operations-list__table\"]"}, "value": null}, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-34.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-34.png", "subtitle": "D\u00e9tail de l\u0027op\u00e9ration", "text": "Cliquez sur la ligne de la nouvelle op\u00e9ration pour ouvrir sa fiche d\u00e9taill\u00e9e et acc\u00e9der aux param\u00e8tres de visibilit\u00e9.", "title": "Ouvrir la fiche", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-38.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-38.png", "subtitle": "Param\u00e8tre de visibilit\u00e9", "text": "Le bouton gris\u00e9 \u00ab PRIV\u00c9 \u00bb dans l\u0027en-t\u00eate indique que cette op\u00e9ration n\u0027est pas encore visible dans l\u0027annuaire public. Les citoyens qui cherchent une op\u00e9ration de partage dans leur commune ne pourront pas la trouver tant qu\u0027elle reste priv\u00e9e.", "title": "Visibilit\u00e9 priv\u00e9e par d\u00e9faut", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 85.953125, "x": 37, "y": 296}, "selector": "[data-testid=\"op-view__btn--toggle-visibility\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 85.953125, "x": 37, "y": 296}, "selector": "[data-testid=\"op-view__btn--toggle-visibility\"]"}}, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-39.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-39.png", "subtitle": "Modifier la visibilit\u00e9", "text": "Cliquez sur le bouton de visibilit\u00e9 pour basculer l\u0027op\u00e9ration en mode public. Ce changement est imm\u00e9diatement enregistr\u00e9 : l\u0027op\u00e9ration devient visible dans l\u0027annuaire des communaut\u00e9s d\u0027\u00e9nergie pour tous les citoyens.", "title": "Rendre l\u0027op\u00e9ration publique", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-40.png", "viewport": {"height": 900, "width": 1440}}], "index": 12, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-40.png", "subtitle": "Visibilit\u00e9 confirm\u00e9e", "text": "Le bouton passe au vert et affiche \u00ab PUBLIC \u00bb. Tout citoyen peut d\u00e9sormais trouver cette op\u00e9ration dans l\u0027annuaire des communaut\u00e9s d\u0027\u00e9nergie, filtrer par commune et contacter la communaut\u00e9 pour demander \u00e0 y participer.", "title": "L\u0027op\u00e9ration est maintenant publique", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-41.png", "viewport": {"height": 900, "width": 1440}}], "index": 13, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-41.png", "subtitle": "Vue citoyenne", "text": "La page \u00ab Communaut\u00e9s d\u0027\u00e9nergie \u00bb est accessible \u00e0 tous, sans connexion requise. Elle liste les communaut\u00e9s qui disposent d\u0027au moins une op\u00e9ration de partage publique, avec la possibilit\u00e9 de filtrer par commune pour d\u00e9couvrir une initiative locale.", "title": "Annuaire public des communaut\u00e9s", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 64, "width": 356, "x": 17, "y": 371}, "selector": "[data-testid=\"public-community-list__btn--accordion--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 64, "width": 356, "x": 17, "y": 371}, "selector": "[data-testid=\"public-community-list__btn--accordion--0\"]"}}, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-43.png", "viewport": {"height": 900, "width": 1440}}], "index": 14, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-43.png", "subtitle": "Op\u00e9rations disponibles", "text": "Cliquez sur une communaut\u00e9 pour afficher ses op\u00e9rations de partage publiques. Pour chaque op\u00e9ration, le type et les communes couvertes sont visibles \u2014 des informations essentielles pour un citoyen qui cherche une initiative proche de chez lui.", "title": "D\u00e9velopper une communaut\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-45.png", "viewport": {"height": 900, "width": 1440}}], "index": 15, "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-45.png", "subtitle": "D\u00e9couverte citoyenne", "text": "L\u0027op\u00e9ration \u00ab E2E Energy Sharing \u00bb est maintenant visible dans l\u0027annuaire public, avec son type et la commune d\u0027Anderlecht. C\u0027est exactement ce qu\u0027un citoyen verra lorsqu\u0027il cherchera une op\u00e9ration de partage d\u0027\u00e9nergie dans sa r\u00e9gion pour rejoindre une communaut\u00e9 locale.", "title": "L\u0027op\u00e9ration appara\u00eet dans l\u0027annuaire", "viewport": {"height": 900, "width": 1440}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>
