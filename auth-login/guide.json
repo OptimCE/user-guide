@@ -1,0 +1,562 @@
+{
+  "version": "1.0",
+  "slug": "auth-login",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Se connecter",
+    "en": "Sign in"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "navigate",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Ouvrez l'application OptimCE CRM dans votre navigateur — la page d'accueil propose un bouton de connexion.",
+        "en": "Open the OptimCE CRM application in your browser — the landing page exposes a login entry point."
+      },
+      "subtitle": {
+        "fr": "Accès à OptimCE CRM",
+        "en": "Accessing OptimCE CRM"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/fr/desktop/step-01.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/fr/mobile/step-01.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/en/desktop/step-01.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/en/mobile/step-01.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur le bouton « Se connecter » pour être redirigé vers le formulaire de Keycloak.",
+        "en": "Click the login button to be redirected to the Keycloak login form."
+      },
+      "subtitle": {
+        "fr": "Accès à OptimCE CRM",
+        "en": "Accessing OptimCE CRM"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/fr/desktop/step-02.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1008.984375,
+                      "y": 527.5625,
+                      "width": 190.015625,
+                      "height": 48.375
+                    },
+                    "selector": "[data-testid=\"auth-page__button--login\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/fr/mobile/step-02.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 99.984375,
+                      "y": 744.078125,
+                      "width": 190.015625,
+                      "height": 48.375
+                    },
+                    "selector": "[data-testid=\"auth-page__button--login\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/en/desktop/step-02.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1044.53125,
+                      "y": 527.5625,
+                      "width": 118.9375,
+                      "height": 48.375
+                    },
+                    "selector": "[data-testid=\"auth-page__button--login\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/en/mobile/step-02.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 135.53125,
+                      "y": 738.640625,
+                      "width": 118.9375,
+                      "height": 48.375
+                    },
+                    "selector": "[data-testid=\"auth-page__button--login\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "fill-form",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Renseignez votre nom d'utilisateur et votre mot de passe Keycloak. Ces identifiants sont gérés par le serveur d'authentification, pas par OptimCE.",
+        "en": "Fill in your Keycloak username and password. These credentials are managed by the authentication server, not by OptimCE itself."
+      },
+      "subtitle": {
+        "fr": "Connexion à Keycloak",
+        "en": "Login to Keycloak"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/fr/desktop/step-04-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 494,
+                        "y": 486.9375,
+                        "width": 452,
+                        "height": 48
+                      },
+                      "selector": "[id=\"username\"]",
+                      "value": "demo"
+                    },
+                    {
+                      "bbox": {
+                        "x": 494,
+                        "y": 559.9375,
+                        "width": 452,
+                        "height": 48
+                      },
+                      "selector": "[id=\"password\"]",
+                      "value": "demo"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/fr/mobile/step-04-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 16,
+                        "y": 458.9375,
+                        "width": 358,
+                        "height": 48
+                      },
+                      "selector": "[id=\"username\"]",
+                      "value": "demo"
+                    },
+                    {
+                      "bbox": {
+                        "x": 16,
+                        "y": 531.9375,
+                        "width": 358,
+                        "height": 48
+                      },
+                      "selector": "[id=\"password\"]",
+                      "value": "demo"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/en/desktop/step-04-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 494,
+                        "y": 465.9375,
+                        "width": 452,
+                        "height": 48
+                      },
+                      "selector": "[id=\"username\"]",
+                      "value": "demo"
+                    },
+                    {
+                      "bbox": {
+                        "x": 494,
+                        "y": 538.9375,
+                        "width": 452,
+                        "height": 48
+                      },
+                      "selector": "[id=\"password\"]",
+                      "value": "demo"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/en/mobile/step-04-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 16,
+                        "y": 437.9375,
+                        "width": 358,
+                        "height": 48
+                      },
+                      "selector": "[id=\"username\"]",
+                      "value": "demo"
+                    },
+                    {
+                      "bbox": {
+                        "x": 16,
+                        "y": 510.9375,
+                        "width": 358,
+                        "height": 48
+                      },
+                      "selector": "[id=\"password\"]",
+                      "value": "demo"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "text": {
+        "fr": "Dans la barre latérale de gauche, cliquez sur « Profil » pour afficher la page de votre compte personnel.",
+        "en": "In the left sidebar, click \"Profile\" to display your personal account page."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/fr/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 119.5,
+                      "width": 243,
+                      "height": 48
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/fr/mobile/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 119.5,
+                      "width": 284,
+                      "height": 48
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/en/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 119.5,
+                      "width": 243,
+                      "height": 48
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/en/mobile/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 119.5,
+                      "width": 284,
+                      "height": 48
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Votre profil est bien affiché : informations personnelles, avatar et carte de compte sont chargés depuis le CRM.",
+        "en": "Your profile is displayed: personal info, avatar and account card are loaded from the CRM."
+      },
+      "subtitle": {
+        "fr": "Arrivée sur le profil",
+        "en": "Landing on the profile"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/fr/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/fr/mobile/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/en/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/en/mobile/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

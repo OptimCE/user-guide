@@ -1,0 +1,608 @@
+{
+  "version": "1.0",
+  "slug": "community-info-update",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Mettre à jour les infos de la communauté",
+    "en": "Update community info"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Saisissez vos identifiants (demo / demo) dans le formulaire Keycloak, puis cliquez sur « Se connecter » pour accéder au CRM.",
+        "en": "Enter your credentials (demo / demo) in the Keycloak form, then click \"Log in\" to access the CRM."
+      },
+      "subtitle": {
+        "fr": "Authentification",
+        "en": "Authentication"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-info-update/fr/desktop/step-05.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 494,
+                      "y": 627.9375,
+                      "width": 452,
+                      "height": 50
+                    },
+                    "selector": "#kc-login"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-info-update/fr/mobile/step-05.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 599.9375,
+                      "width": 358,
+                      "height": 50
+                    },
+                    "selector": "#kc-login"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-info-update/en/desktop/step-05.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 494,
+                      "y": 606.9375,
+                      "width": 452,
+                      "height": 50
+                    },
+                    "selector": "#kc-login"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-info-update/en/mobile/step-05.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 578.9375,
+                      "width": 358,
+                      "height": 50
+                    },
+                    "selector": "#kc-login"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "wait-for",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "La page affiche les informations actuelles de la communauté : nom, description, site web et adresse du siège social. Cliquez sur **Modifier** pour passer en mode édition.",
+        "en": "The page shows the community's current information: name, description, website, and registered office address. Click **Edit** to switch to edit mode."
+      },
+      "subtitle": {
+        "fr": "Mode consultation",
+        "en": "View mode"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-info-update/fr/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-info-update/fr/mobile/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-info-update/en/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-info-update/en/mobile/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "fill-form",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Remplissez les champs : **Description**, **Site web** (URL complète commençant par https://) et les champs de l'adresse du siège social — rue, numéro, code postal et commune. Les quatre champs d'adresse doivent être renseignés ensemble ou laissés vides.",
+        "en": "Fill in the fields: **Description**, **Website** (full URL starting with https://) and the registered office address fields — street, number, postcode, and city. All four address fields must be filled together or left empty."
+      },
+      "subtitle": {
+        "fr": "Édition des données de la communauté",
+        "en": "Editing community data"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-info-update/fr/desktop/step-22-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 350,
+                        "y": 260,
+                        "width": 1024,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"community-info__input--description\"]",
+                      "value": "Communauté pilote de partage solaire renouvelable."
+                    },
+                    {
+                      "bbox": {
+                        "x": 350,
+                        "y": 414,
+                        "width": 1024,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--website\"]",
+                      "value": "https://www.test-community.be"
+                    },
+                    {
+                      "bbox": {
+                        "x": 350,
+                        "y": 490,
+                        "width": 765,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--street\"]",
+                      "value": "Rue de la Loi"
+                    },
+                    {
+                      "bbox": {
+                        "x": 1127,
+                        "y": 490,
+                        "width": 247,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--number\"]",
+                      "value": "16"
+                    },
+                    {
+                      "bbox": {
+                        "x": 350,
+                        "y": 642,
+                        "width": 333.328125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 695.328125,
+                        "y": 642,
+                        "width": 678.671875,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-info-update/fr/mobile/step-22-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 279,
+                        "width": 318,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"community-info__input--description\"]",
+                      "value": "Communauté pilote de partage solaire renouvelable."
+                    },
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 433,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--website\"]",
+                      "value": "https://www.test-community.be"
+                    },
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 509,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--street\"]",
+                      "value": "Rue de la Loi"
+                    },
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 585,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--number\"]",
+                      "value": "16"
+                    },
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 737,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 813,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-info-update/en/desktop/step-22-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 350,
+                        "y": 260,
+                        "width": 1024,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"community-info__input--description\"]",
+                      "value": "Communauté pilote de partage solaire renouvelable."
+                    },
+                    {
+                      "bbox": {
+                        "x": 350,
+                        "y": 414,
+                        "width": 1024,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--website\"]",
+                      "value": "https://www.test-community.be"
+                    },
+                    {
+                      "bbox": {
+                        "x": 350,
+                        "y": 490,
+                        "width": 765,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--street\"]",
+                      "value": "Rue de la Loi"
+                    },
+                    {
+                      "bbox": {
+                        "x": 1127,
+                        "y": 490,
+                        "width": 247,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--number\"]",
+                      "value": "16"
+                    },
+                    {
+                      "bbox": {
+                        "x": 350,
+                        "y": 642,
+                        "width": 333.328125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 695.328125,
+                        "y": 642,
+                        "width": 678.671875,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-info-update/en/mobile/step-22-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 279,
+                        "width": 318,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"community-info__input--description\"]",
+                      "value": "Communauté pilote de partage solaire renouvelable."
+                    },
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 433,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--website\"]",
+                      "value": "https://www.test-community.be"
+                    },
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 509,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--street\"]",
+                      "value": "Rue de la Loi"
+                    },
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 585,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--number\"]",
+                      "value": "16"
+                    },
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 737,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 813,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "De retour en mode consultation, la fiche affiche la description, le site web et l'adresse tels que vous les avez saisis — les modifications ont bien été enregistrées côté serveur.",
+        "en": "Back in view mode, the page shows the description, website, and address exactly as you entered them — the changes have been successfully saved server-side."
+      },
+      "subtitle": {
+        "fr": "Confirmation",
+        "en": "Confirmation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-info-update/fr/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-info-update/fr/mobile/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-info-update/en/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-info-update/en/mobile/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

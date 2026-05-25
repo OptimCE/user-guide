@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Generate keys (OLAGSA) — OptimCE — User guides</title>
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Synchronise the saved language preference with the file we just loaded.
+        // The user landed on this <locale>.html either by clicking a link rewritten
+        // to honour their preference or by direct entry — either way, that's the
+        // current truth.
+        try { localStorage.setItem("oce-lang", "en"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.html" aria-label="OptimCE — User guides">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.html">
+            <span class="i18n-fr">OptimCE — Guides utilisateur</span>
+            <span class="i18n-en">OptimCE — User guides</span>
+        </a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html"><span class="i18n-fr">Accueil</span><span class="i18n-en">Home</span></a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../key-generation/index.html">
+                <span class="i18n-fr">Génération de clés</span>
+                <span class="i18n-en">Key generation</span>
+            </a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">
+                <span class="i18n-fr">Générer des clés (OLAGSA)</span>
+                <span class="i18n-en">Generate keys (OLAGSA)</span>
+            </span>
+        </nav>
+
+        <div class="steppy-header-actions">
+            <nav class="steppy-locale-switch" aria-label="Language">
+                <ul>
+                    <li>
+                        <a href="./fr.html">Français</a>
+                    </li>
+                    <li>
+                        <span aria-current="true">English</span>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-mode-switch" aria-label="Guide mode">
+            <ul>
+                <li>
+                    <span aria-current="true">
+                        <span class="i18n-fr">Pas à pas</span>
+                        <span class="i18n-en">Step by step</span>
+                    </span>
+                </li>
+                <li>
+                    <a href="./interactive.html">
+                        <span class="i18n-fr">Interactif</span>
+                        <span class="i18n-en">Interactive</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Generate keys (OLAGSA)</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Open annexe services</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">In the sidebar's &quot;Community&quot; section, click &quot;Annexe services&quot; to access the community's active modules.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-19.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Generation module available</span>
+        </h2>
+        <div class="steppy-step-subtitle">Annexe services</div>
+        <div class="steppy-step-content">The &quot;Allocation key generation&quot; card is visible with the &quot;Activated&quot; badge. Click it to open the generation module.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-25.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Open the generation module</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Click the card to open the OLAGSA allocation key generation module.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-26.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Key generation page</span>
+        </h2>
+        <div class="steppy-step-subtitle">OLAGSA module</div>
+        <div class="steppy-step-content">The allocation key generation page displays the configuration form. Select the algorithm, fill in the parameters, and upload your data file to launch a new generation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-28.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Select the OLAGSA algorithm</span>
+        </h2>
+        <div class="steppy-step-subtitle">Configuration</div>
+        <div class="steppy-step-content">Click the &quot;Algorithm&quot; dropdown and select &quot;OLAGSA&quot;. The parameter form specific to this genetic algorithm then appears.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-29.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Name the generation and injection</span>
+        </h2>
+        <div class="steppy-step-subtitle">Configuration</div>
+        <div class="steppy-step-content">Enter a name for this generation (internal identifier) and the corresponding injection name — here &quot;Production&quot; to target production data.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-31.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Set the number of iterations</span>
+        </h2>
+        <div class="steppy-step-subtitle">Main parameters</div>
+        <div class="steppy-step-content">Enter &quot;3&quot; in the &quot;Iterations&quot; field. This parameter defines the number of independent solutions computed by the OLAGSA genetic algorithm.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-32.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Open advanced parameters</span>
+        </h2>
+        <div class="steppy-step-subtitle">OLAGSA parameters</div>
+        <div class="steppy-step-content">Click &quot;Advanced parameters&quot; to reveal the genetic algorithm's hyperparameters: population size, crossover rates, mutation rate, and more.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-33.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Genetic algorithm hyperparameters</span>
+        </h2>
+        <div class="steppy-step-subtitle">Advanced parameters</div>
+        <div class="steppy-step-content">OLAGSA's advanced parameters are displayed: generations, population size, inter-species and intra-species crossover rates, mutation rate, expected species count, and maximum generations without improvement. Default values suit most use cases.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-35.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Import the data file</span>
+        </h2>
+        <div class="steppy-step-subtitle">Input data</div>
+        <div class="steppy-step-content">Drag your CSV file into the import zone or click it to select the data file to use for generation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-36.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Launch the generation</span>
+        </h2>
+        <div class="steppy-step-subtitle">Execution</div>
+        <div class="steppy-step-content">Click &quot;Launch generation&quot; to submit the task to the OLAGSA engine. The generation immediately appears in the list with a &quot;Pending&quot; status.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-37.png" alt="Step 11" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>Generation submitted</span>
+        </h2>
+        <div class="steppy-step-subtitle">Status tracking</div>
+        <div class="steppy-step-content">The &quot;Test Run 1&quot; generation appears in the list. A pulsing orange dot indicates it is pending processing; it turns green once the OLAGSA engine has finished.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-39.png" alt="Step 12" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="13">
+        <h2>
+            <span class="steppy-step-number">13</span>
+            <span>Generation completed</span>
+        </h2>
+        <div class="steppy-step-subtitle">Status tracking</div>
+        <div class="steppy-step-content">The dot turns green — the generation is complete. The allocation keys have been computed and are ready to view by expanding the row.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-43.png" alt="Step 13" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="14">
+        <h2>
+            <span class="steppy-step-number">14</span>
+            <span>Allocation keys generated</span>
+        </h2>
+        <div class="steppy-step-subtitle">Results</div>
+        <div class="steppy-step-content">The list of computed keys appears under the generation. Each key corresponds to one optimised OLAGSA solution. Click a key to view its detailed allocation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-46.png" alt="Step 14" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="15">
+        <h2>
+            <span class="steppy-step-number">15</span>
+            <span>Key detail and per-iteration allocation</span>
+        </h2>
+        <div class="steppy-step-subtitle">Inspection</div>
+        <div class="steppy-step-content">The allocation table is shown for this key, detailing the values computed by the algorithm. The &quot;Save&quot; button lets you store this key in the Keys module.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-49.png" alt="Step 15" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="16">
+        <h2>
+            <span class="steppy-step-number">16</span>
+            <span>Save the key to the module</span>
+        </h2>
+        <div class="steppy-step-subtitle">Save</div>
+        <div class="steppy-step-content">Click &quot;Save&quot; to store this allocation key in the Keys module, where it will be accessible from the community management section.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-50.png" alt="Step 16" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="17">
+        <h2>
+            <span class="steppy-step-number">17</span>
+            <span>Confirm saving the key</span>
+        </h2>
+        <div class="steppy-step-subtitle">Save</div>
+        <div class="steppy-step-content">A confirmation dialog appears. Click the confirm button to permanently save this allocation key to the Keys module.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-52.png" alt="Step 17" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="18">
+        <h2>
+            <span class="steppy-step-number">18</span>
+            <span>Open the keys</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">In the sidebar's &quot;Management&quot; section, click &quot;Keys&quot; to display the allocation keys saved for the active community.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-56.png" alt="Step 18" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="19">
+        <h2>
+            <span class="steppy-step-number">19</span>
+            <span>Key visible in the Keys module</span>
+        </h2>
+        <div class="steppy-step-subtitle">Final result</div>
+        <div class="steppy-step-content">The key saved from the OLAGSA module now appears in the community's allocation keys list. It is available to authorised members.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/desktop/step-62.png" alt="Step 19" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Generate keys (OLAGSA)</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Open annexe services</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Tap the menu icon to open the navigation drawer, then in the &quot;Community&quot; section tap &quot;Annexe services&quot;.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-22.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Generation module available</span>
+        </h2>
+        <div class="steppy-step-subtitle">Annexe services</div>
+        <div class="steppy-step-content">The &quot;Allocation key generation&quot; card is visible with the &quot;Activated&quot; badge. Click it to open the generation module.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-25.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Open the generation module</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Click the card to open the OLAGSA allocation key generation module.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-26.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Key generation page</span>
+        </h2>
+        <div class="steppy-step-subtitle">OLAGSA module</div>
+        <div class="steppy-step-content">The allocation key generation page displays the configuration form. Select the algorithm, fill in the parameters, and upload your data file to launch a new generation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-28.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Select the OLAGSA algorithm</span>
+        </h2>
+        <div class="steppy-step-subtitle">Configuration</div>
+        <div class="steppy-step-content">Click the &quot;Algorithm&quot; dropdown and select &quot;OLAGSA&quot;. The parameter form specific to this genetic algorithm then appears.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-29.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Name the generation and injection</span>
+        </h2>
+        <div class="steppy-step-subtitle">Configuration</div>
+        <div class="steppy-step-content">Enter a name for this generation (internal identifier) and the corresponding injection name — here &quot;Production&quot; to target production data.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-31.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Set the number of iterations</span>
+        </h2>
+        <div class="steppy-step-subtitle">Main parameters</div>
+        <div class="steppy-step-content">Enter &quot;3&quot; in the &quot;Iterations&quot; field. This parameter defines the number of independent solutions computed by the OLAGSA genetic algorithm.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-32.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Open advanced parameters</span>
+        </h2>
+        <div class="steppy-step-subtitle">OLAGSA parameters</div>
+        <div class="steppy-step-content">Click &quot;Advanced parameters&quot; to reveal the genetic algorithm's hyperparameters: population size, crossover rates, mutation rate, and more.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-33.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Genetic algorithm hyperparameters</span>
+        </h2>
+        <div class="steppy-step-subtitle">Advanced parameters</div>
+        <div class="steppy-step-content">OLAGSA's advanced parameters are displayed: generations, population size, inter-species and intra-species crossover rates, mutation rate, expected species count, and maximum generations without improvement. Default values suit most use cases.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-35.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Import the data file</span>
+        </h2>
+        <div class="steppy-step-subtitle">Input data</div>
+        <div class="steppy-step-content">Drag your CSV file into the import zone or click it to select the data file to use for generation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-36.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Launch the generation</span>
+        </h2>
+        <div class="steppy-step-subtitle">Execution</div>
+        <div class="steppy-step-content">Click &quot;Launch generation&quot; to submit the task to the OLAGSA engine. The generation immediately appears in the list with a &quot;Pending&quot; status.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-37.png" alt="Step 11" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>Generation submitted</span>
+        </h2>
+        <div class="steppy-step-subtitle">Status tracking</div>
+        <div class="steppy-step-content">The &quot;Test Run 1&quot; generation appears in the list. A pulsing orange dot indicates it is pending processing; it turns green once the OLAGSA engine has finished.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-39.png" alt="Step 12" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="13">
+        <h2>
+            <span class="steppy-step-number">13</span>
+            <span>Generation completed</span>
+        </h2>
+        <div class="steppy-step-subtitle">Status tracking</div>
+        <div class="steppy-step-content">The dot turns green — the generation is complete. The allocation keys have been computed and are ready to view by expanding the row.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-43.png" alt="Step 13" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="14">
+        <h2>
+            <span class="steppy-step-number">14</span>
+            <span>Allocation keys generated</span>
+        </h2>
+        <div class="steppy-step-subtitle">Results</div>
+        <div class="steppy-step-content">The list of computed keys appears under the generation. Each key corresponds to one optimised OLAGSA solution. Click a key to view its detailed allocation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-46.png" alt="Step 14" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="15">
+        <h2>
+            <span class="steppy-step-number">15</span>
+            <span>Key detail and per-iteration allocation</span>
+        </h2>
+        <div class="steppy-step-subtitle">Inspection</div>
+        <div class="steppy-step-content">The allocation table is shown for this key, detailing the values computed by the algorithm. The &quot;Save&quot; button lets you store this key in the Keys module.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-49.png" alt="Step 15" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="16">
+        <h2>
+            <span class="steppy-step-number">16</span>
+            <span>Save the key to the module</span>
+        </h2>
+        <div class="steppy-step-subtitle">Save</div>
+        <div class="steppy-step-content">Click &quot;Save&quot; to store this allocation key in the Keys module, where it will be accessible from the community management section.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-50.png" alt="Step 16" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="17">
+        <h2>
+            <span class="steppy-step-number">17</span>
+            <span>Confirm saving the key</span>
+        </h2>
+        <div class="steppy-step-subtitle">Save</div>
+        <div class="steppy-step-content">A confirmation dialog appears. Click the confirm button to permanently save this allocation key to the Keys module.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-52.png" alt="Step 17" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="18">
+        <h2>
+            <span class="steppy-step-number">18</span>
+            <span>Open the keys</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Tap the menu icon to open the drawer, then in the &quot;Management&quot; section tap &quot;Keys&quot; to display the allocation keys.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-59.png" alt="Step 18" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="19">
+        <h2>
+            <span class="steppy-step-number">19</span>
+            <span>Key visible in the Keys module</span>
+        </h2>
+        <div class="steppy-step-subtitle">Final result</div>
+        <div class="steppy-step-content">The key saved from the OLAGSA module now appears in the community's allocation keys list. It is available to authorised members.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/en/mobile/step-62.png" alt="Step 19" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p><span class="i18n-fr">Généré par Steppy.</span><span class="i18n-en">Generated by Steppy.</span></p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 243, "x": 8, "y": 410}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 243, "x": 8, "y": 410}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"}}, "screenshot": "../assets/algorithm-generate/en/desktop/step-19.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/algorithm-generate/en/desktop/step-19.png", "subtitle": "Navigation", "text": "In the sidebar\u0027s \"Community\" section, click \"Annexe services\" to access the community\u0027s active modules.", "title": "Open annexe services", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/en/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/algorithm-generate/en/desktop/step-25.png", "subtitle": "Annexe services", "text": "The \"Allocation key generation\" card is visible with the \"Activated\" badge. Click it to open the generation module.", "title": "Generation module available", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 171, "width": 416, "x": 114, "y": 142}, "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 171, "width": 416, "x": 114, "y": 142}, "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"}}, "screenshot": "../assets/algorithm-generate/en/desktop/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/algorithm-generate/en/desktop/step-26.png", "subtitle": "Navigation", "text": "Click the card to open the OLAGSA allocation key generation module.", "title": "Open the generation module", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/en/desktop/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/algorithm-generate/en/desktop/step-28.png", "subtitle": "OLAGSA module", "text": "The allocation key generation page displays the configuration form. Select the algorithm, fill in the parameters, and upload your data file to launch a new generation.", "title": "Key generation page", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 396.65625, "x": 139, "y": 241}, "selector": "[data-testid=\"algorithm-hub__select--algorithm\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 396.65625, "x": 139, "y": 241}, "selector": "[data-testid=\"algorithm-hub__select--algorithm\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/en/desktop/step-29.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/algorithm-generate/en/desktop/step-29.png", "subtitle": "Configuration", "text": "Click the \"Algorithm\" dropdown and select \"OLAGSA\". The parameter form specific to this genetic algorithm then appears.", "title": "Select the OLAGSA algorithm", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 607, "x": 762, "y": 366}, "selector": "[data-testid=\"algorithm-hub__input--injection-name\"]"}, "value": "Production"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 607, "x": 762, "y": 366}, "selector": "[data-testid=\"algorithm-hub__input--injection-name\"]"}, "value": "Production"}, "screenshot": "../assets/algorithm-generate/en/desktop/step-31.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/algorithm-generate/en/desktop/step-31.png", "subtitle": "Configuration", "text": "Enter a name for this generation (internal identifier) and the corresponding injection name \u2014 here \"Production\" to target production data.", "title": "Name the generation and injection", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 607, "x": 139, "y": 703}, "selector": "[data-testid=\"algo-form__input--iterations\"] input"}, "value": "3"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 607, "x": 139, "y": 703}, "selector": "[data-testid=\"algo-form__input--iterations\"] input"}, "value": "3"}, "screenshot": "../assets/algorithm-generate/en/desktop/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/algorithm-generate/en/desktop/step-32.png", "subtitle": "Main parameters", "text": "Enter \"3\" in the \"Iterations\" field. This parameter defines the number of independent solutions computed by the OLAGSA genetic algorithm.", "title": "Set the number of iterations", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 138.578125, "x": 139, "y": 786.5}, "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 138.578125, "x": 139, "y": 786.5}, "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"}}, "screenshot": "../assets/algorithm-generate/en/desktop/step-33.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/algorithm-generate/en/desktop/step-33.png", "subtitle": "OLAGSA parameters", "text": "Click \"Advanced parameters\" to reveal the genetic algorithm\u0027s hyperparameters: population size, crossover rates, mutation rate, and more.", "title": "Open advanced parameters", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/en/desktop/step-35.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/algorithm-generate/en/desktop/step-35.png", "subtitle": "Advanced parameters", "text": "OLAGSA\u0027s advanced parameters are displayed: generations, population size, inter-species and intra-species crossover rates, mutation rate, expected species count, and maximum generations without improvement. Default values suit most use cases.", "title": "Genetic algorithm hyperparameters", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 128, "width": 1230, "x": 139, "y": 476}, "selector": "[data-testid=\"algorithm-hub__dropzone\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 128, "width": 1230, "x": 139, "y": 476}, "selector": "[data-testid=\"algorithm-hub__dropzone\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/en/desktop/step-36.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/algorithm-generate/en/desktop/step-36.png", "subtitle": "Input data", "text": "Drag your CSV file into the import zone or click it to select the data file to use for generation.", "title": "Import the data file", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168.046875, "x": 1200.953125, "y": 623.5}, "selector": "[data-testid=\"algorithm-hub__btn--submit\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168.046875, "x": 1200.953125, "y": 623.5}, "selector": "[data-testid=\"algorithm-hub__btn--submit\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/en/desktop/step-37.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/algorithm-generate/en/desktop/step-37.png", "subtitle": "Execution", "text": "Click \"Launch generation\" to submit the task to the OLAGSA engine. The generation immediately appears in the list with a \"Pending\" status.", "title": "Launch the generation", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 76, "width": 1280, "x": 114, "y": 803.5}, "selector": "[data-testid^=\"generation-row--\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 76, "width": 1280, "x": 114, "y": 803.5}, "selector": "[data-testid^=\"generation-row--\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/en/desktop/step-39.png", "viewport": {"height": 900, "width": 1440}}], "index": 12, "screenshot": "../assets/algorithm-generate/en/desktop/step-39.png", "subtitle": "Status tracking", "text": "The \"Test Run 1\" generation appears in the list. A pulsing orange dot indicates it is pending processing; it turns green once the OLAGSA engine has finished.", "title": "Generation submitted", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 12, "width": 12, "x": 163, "y": 835.5}, "selector": ".timeline-dot--success"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 12, "width": 12, "x": 163, "y": 835.5}, "selector": ".timeline-dot--success"}, "value": null}, "screenshot": "../assets/algorithm-generate/en/desktop/step-43.png", "viewport": {"height": 900, "width": 1440}}], "index": 13, "screenshot": "../assets/algorithm-generate/en/desktop/step-43.png", "subtitle": "Status tracking", "text": "The dot turns green \u2014 the generation is complete. The allocation keys have been computed and are ready to view by expanding the row.", "title": "Generation completed", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 64, "width": 1246, "x": 131, "y": 836.5}, "selector": "[data-testid^=\"key-row--\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 64, "width": 1246, "x": 131, "y": 836.5}, "selector": "[data-testid^=\"key-row--\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/en/desktop/step-46.png", "viewport": {"height": 900, "width": 1440}}], "index": 14, "screenshot": "../assets/algorithm-generate/en/desktop/step-46.png", "subtitle": "Results", "text": "The list of computed keys appears under the generation. Each key corresponds to one optimised OLAGSA solution. Click a key to view its detailed allocation.", "title": "Allocation keys generated", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 429, "width": 1212, "x": 148, "y": 235.5}, "selector": "[data-testid^=\"key-row__grid--\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 429, "width": 1212, "x": 148, "y": 235.5}, "selector": "[data-testid^=\"key-row__grid--\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/en/desktop/step-49.png", "viewport": {"height": 900, "width": 1440}}], "index": 15, "screenshot": "../assets/algorithm-generate/en/desktop/step-49.png", "subtitle": "Inspection", "text": "The allocation table is shown for this key, detailing the values computed by the algorithm. The \"Save\" button lets you store this key in the Keys module.", "title": "Key detail and per-iteration allocation", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 32, "x": 1288, "y": 174}, "selector": "[data-testid^=\"key-row__btn--save--\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 32, "x": 1288, "y": 174}, "selector": "[data-testid^=\"key-row__btn--save--\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/en/desktop/step-50.png", "viewport": {"height": 900, "width": 1440}}], "index": 16, "screenshot": "../assets/algorithm-generate/en/desktop/step-50.png", "subtitle": "Save", "text": "Click \"Save\" to store this allocation key in the Keys module, where it will be accessible from the community management section.", "title": "Save the key to the module", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/en/desktop/step-52.png", "viewport": {"height": 900, "width": 1440}}], "index": 17, "screenshot": "../assets/algorithm-generate/en/desktop/step-52.png", "subtitle": "Save", "text": "A confirmation dialog appears. Click the confirm button to permanently save this allocation key to the Keys module.", "title": "Confirm saving the key", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 243, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 243, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"}}, "screenshot": "../assets/algorithm-generate/en/desktop/step-56.png", "viewport": {"height": 900, "width": 1440}}], "index": 18, "screenshot": "../assets/algorithm-generate/en/desktop/step-56.png", "subtitle": "Navigation", "text": "In the sidebar\u0027s \"Management\" section, click \"Keys\" to display the allocation keys saved for the active community.", "title": "Open the keys", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/en/desktop/step-62.png", "viewport": {"height": 900, "width": 1440}}], "index": 19, "screenshot": "../assets/algorithm-generate/en/desktop/step-62.png", "subtitle": "Final result", "text": "The key saved from the OLAGSA module now appears in the community\u0027s allocation keys list. It is available to authorised members.", "title": "Key visible in the Keys module", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 284, "x": 8, "y": 410}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 284, "x": 8, "y": 410}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"}}, "screenshot": "../assets/algorithm-generate/en/mobile/step-22.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/algorithm-generate/en/mobile/step-22.png", "subtitle": "Navigation", "text": "Tap the menu icon to open the navigation drawer, then in the \"Community\" section tap \"Annexe services\".", "title": "Open annexe services", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/en/mobile/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/algorithm-generate/en/mobile/step-25.png", "subtitle": "Annexe services", "text": "The \"Allocation key generation\" card is visible with the \"Activated\" badge. Click it to open the generation module.", "title": "Generation module available", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 171, "width": 358, "x": 16, "y": 298}, "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 171, "width": 358, "x": 16, "y": 298}, "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"}}, "screenshot": "../assets/algorithm-generate/en/mobile/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/algorithm-generate/en/mobile/step-26.png", "subtitle": "Navigation", "text": "Click the card to open the OLAGSA allocation key generation module.", "title": "Open the generation module", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/en/mobile/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/algorithm-generate/en/mobile/step-28.png", "subtitle": "OLAGSA module", "text": "The allocation key generation page displays the configuration form. Select the algorithm, fill in the parameters, and upload your data file to launch a new generation.", "title": "Key generation page", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 413}, "selector": "[data-testid=\"algorithm-hub__select--algorithm\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 413}, "selector": "[data-testid=\"algorithm-hub__select--algorithm\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/en/mobile/step-29.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/algorithm-generate/en/mobile/step-29.png", "subtitle": "Configuration", "text": "Click the \"Algorithm\" dropdown and select \"OLAGSA\". The parameter form specific to this genetic algorithm then appears.", "title": "Select the OLAGSA algorithm", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 31, "y": 802}, "selector": "[data-testid=\"algorithm-hub__input--injection-name\"]"}, "value": "Production"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 31, "y": 802}, "selector": "[data-testid=\"algorithm-hub__input--injection-name\"]"}, "value": "Production"}, "screenshot": "../assets/algorithm-generate/en/mobile/step-31.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/algorithm-generate/en/mobile/step-31.png", "subtitle": "Configuration", "text": "Enter a name for this generation (internal identifier) and the corresponding injection name \u2014 here \"Production\" to target production data.", "title": "Name the generation and injection", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 31, "y": 415.796875}, "selector": "[data-testid=\"algo-form__input--iterations\"] input"}, "value": "3"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 31, "y": 415.796875}, "selector": "[data-testid=\"algo-form__input--iterations\"] input"}, "value": "3"}, "screenshot": "../assets/algorithm-generate/en/mobile/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/algorithm-generate/en/mobile/step-32.png", "subtitle": "Main parameters", "text": "Enter \"3\" in the \"Iterations\" field. This parameter defines the number of independent solutions computed by the OLAGSA genetic algorithm.", "title": "Set the number of iterations", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 138.578125, "x": 37, "y": 499.296875}, "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 138.578125, "x": 37, "y": 499.296875}, "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"}}, "screenshot": "../assets/algorithm-generate/en/mobile/step-33.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/algorithm-generate/en/mobile/step-33.png", "subtitle": "OLAGSA parameters", "text": "Click \"Advanced parameters\" to reveal the genetic algorithm\u0027s hyperparameters: population size, crossover rates, mutation rate, and more.", "title": "Open advanced parameters", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/en/mobile/step-35.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/algorithm-generate/en/mobile/step-35.png", "subtitle": "Advanced parameters", "text": "OLAGSA\u0027s advanced parameters are displayed: generations, population size, inter-species and intra-species crossover rates, mutation rate, expected species count, and maximum generations without improvement. Default values suit most use cases.", "title": "Genetic algorithm hyperparameters", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 104.796875, "width": 316, "x": 37, "y": 212}, "selector": "[data-testid=\"algorithm-hub__dropzone\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 104.796875, "width": 316, "x": 37, "y": 212}, "selector": "[data-testid=\"algorithm-hub__dropzone\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/en/mobile/step-36.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/algorithm-generate/en/mobile/step-36.png", "subtitle": "Input data", "text": "Drag your CSV file into the import zone or click it to select the data file to use for generation.", "title": "Import the data file", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 548}, "selector": "[data-testid=\"algorithm-hub__btn--submit\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 548}, "selector": "[data-testid=\"algorithm-hub__btn--submit\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/en/mobile/step-37.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/algorithm-generate/en/mobile/step-37.png", "subtitle": "Execution", "text": "Click \"Launch generation\" to submit the task to the OLAGSA engine. The generation immediately appears in the list with a \"Pending\" status.", "title": "Launch the generation", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 76, "width": 358, "x": 16, "y": 751.796875}, "selector": "[data-testid^=\"generation-row--\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 76, "width": 358, "x": 16, "y": 751.796875}, "selector": "[data-testid^=\"generation-row--\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/en/mobile/step-39.png", "viewport": {"height": 900, "width": 1440}}], "index": 12, "screenshot": "../assets/algorithm-generate/en/mobile/step-39.png", "subtitle": "Status tracking", "text": "The \"Test Run 1\" generation appears in the list. A pulsing orange dot indicates it is pending processing; it turns green once the OLAGSA engine has finished.", "title": "Generation submitted", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 12, "width": 12, "x": 65, "y": 783.796875}, "selector": ".timeline-dot--success"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 12, "width": 12, "x": 65, "y": 783.796875}, "selector": ".timeline-dot--success"}, "value": null}, "screenshot": "../assets/algorithm-generate/en/mobile/step-43.png", "viewport": {"height": 900, "width": 1440}}], "index": 13, "screenshot": "../assets/algorithm-generate/en/mobile/step-43.png", "subtitle": "Status tracking", "text": "The dot turns green \u2014 the generation is complete. The allocation keys have been computed and are ready to view by expanding the row.", "title": "Generation completed", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 64, "width": 324, "x": 33, "y": 780.796875}, "selector": "[data-testid^=\"key-row--\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 64, "width": 324, "x": 33, "y": 780.796875}, "selector": "[data-testid^=\"key-row--\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/en/mobile/step-46.png", "viewport": {"height": 900, "width": 1440}}], "index": 14, "screenshot": "../assets/algorithm-generate/en/mobile/step-46.png", "subtitle": "Results", "text": "The list of computed keys appears under the generation. Each key corresponds to one optimised OLAGSA solution. Click a key to view its detailed allocation.", "title": "Allocation keys generated", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 429, "width": 290, "x": 50, "y": 207.796875}, "selector": "[data-testid^=\"key-row__grid--\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 429, "width": 290, "x": 50, "y": 207.796875}, "selector": "[data-testid^=\"key-row__grid--\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/en/mobile/step-49.png", "viewport": {"height": 900, "width": 1440}}], "index": 15, "screenshot": "../assets/algorithm-generate/en/mobile/step-49.png", "subtitle": "Inspection", "text": "The allocation table is shown for this key, detailing the values computed by the algorithm. The \"Save\" button lets you store this key in the Keys module.", "title": "Key detail and per-iteration allocation", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 32, "x": 268, "y": 144.796875}, "selector": "[data-testid^=\"key-row__btn--save--\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 32, "x": 268, "y": 144.796875}, "selector": "[data-testid^=\"key-row__btn--save--\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/en/mobile/step-50.png", "viewport": {"height": 900, "width": 1440}}], "index": 16, "screenshot": "../assets/algorithm-generate/en/mobile/step-50.png", "subtitle": "Save", "text": "Click \"Save\" to store this allocation key in the Keys module, where it will be accessible from the community management section.", "title": "Save the key to the module", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/en/mobile/step-52.png", "viewport": {"height": 900, "width": 1440}}], "index": 17, "screenshot": "../assets/algorithm-generate/en/mobile/step-52.png", "subtitle": "Save", "text": "A confirmation dialog appears. Click the confirm button to permanently save this allocation key to the Keys module.", "title": "Confirm saving the key", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 284, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 284, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"}}, "screenshot": "../assets/algorithm-generate/en/mobile/step-59.png", "viewport": {"height": 900, "width": 1440}}], "index": 18, "screenshot": "../assets/algorithm-generate/en/mobile/step-59.png", "subtitle": "Navigation", "text": "Tap the menu icon to open the drawer, then in the \"Management\" section tap \"Keys\" to display the allocation keys.", "title": "Open the keys", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/en/mobile/step-62.png", "viewport": {"height": 900, "width": 1440}}], "index": 19, "screenshot": "../assets/algorithm-generate/en/mobile/step-62.png", "subtitle": "Final result", "text": "The key saved from the OLAGSA module now appears in the community\u0027s allocation keys list. It is available to authorised members.", "title": "Key visible in the Keys module", "viewport": {"height": 900, "width": 1440}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

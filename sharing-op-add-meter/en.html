@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add a meter to a sharing operation — OptimCE — User guides</title>
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Synchronise the saved language preference with the file we just loaded.
+        // The user landed on this <locale>.html either by clicking a link rewritten
+        // to honour their preference or by direct entry — either way, that's the
+        // current truth.
+        try { localStorage.setItem("oce-lang", "en"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.html" aria-label="OptimCE — User guides">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.html">
+            <span class="i18n-fr">OptimCE — Guides utilisateur</span>
+            <span class="i18n-en">OptimCE — User guides</span>
+        </a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html"><span class="i18n-fr">Accueil</span><span class="i18n-en">Home</span></a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../sharing/index.html">
+                <span class="i18n-fr">Opérations de partage</span>
+                <span class="i18n-en">Sharing operations</span>
+            </a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">
+                <span class="i18n-fr">Ajouter un compteur à une opération</span>
+                <span class="i18n-en">Add a meter to a sharing operation</span>
+            </span>
+        </nav>
+
+        <div class="steppy-header-actions">
+            <nav class="steppy-locale-switch" aria-label="Language">
+                <ul>
+                    <li>
+                        <a href="./fr.html">Français</a>
+                    </li>
+                    <li>
+                        <span aria-current="true">English</span>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-mode-switch" aria-label="Guide mode">
+            <ul>
+                <li>
+                    <span aria-current="true">
+                        <span class="i18n-fr">Pas à pas</span>
+                        <span class="i18n-en">Step by step</span>
+                    </span>
+                </li>
+                <li>
+                    <a href="./interactive.html">
+                        <span class="i18n-fr">Interactif</span>
+                        <span class="i18n-en">Interactive</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Add a meter to a sharing operation</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Open my communities</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">In the sidebar's profile menu, click &quot;My communities&quot; to see the list of communities you belong to.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/desktop/step-10.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Activate the community</span>
+        </h2>
+        <div class="steppy-step-subtitle">Activating the community</div>
+        <div class="steppy-step-content">Click &quot;Activate&quot; on the Test Community row to join it in your workspace. The management menu only becomes available once this step is done.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/desktop/step-18.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Open sharing operations</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Open the list of sharing operations for your community to find the one you want to attach a meter to.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/desktop/step-21.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Select an operation</span>
+        </h2>
+        <div class="steppy-step-subtitle">Selection</div>
+        <div class="steppy-step-content">Click the row of the sharing operation you want to edit to open its detail view.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/desktop/step-25.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Start adding a meter</span>
+        </h2>
+        <div class="steppy-step-subtitle">Action</div>
+        <div class="steppy-step-content">From the detail view, click &quot;Add meter&quot; to open the meter selection dialog.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/desktop/step-29.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Available meters</span>
+        </h2>
+        <div class="steppy-step-subtitle">Selection</div>
+        <div class="steppy-step-content">The dialog lists every meter in the community that is not yet attached to this sharing operation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/desktop/step-30.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Tick the meter</span>
+        </h2>
+        <div class="steppy-step-subtitle">Selection</div>
+        <div class="steppy-step-content">Tick the checkbox of the meter you want to attach. Multiple meters can be selected before submitting.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/desktop/step-31.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Start date today</span>
+        </h2>
+        <div class="steppy-step-subtitle">Activation window</div>
+        <div class="steppy-step-content">Open the calendar and pick today's date so the meter attachment takes effect immediately.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/desktop/step-32.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Confirm the addition</span>
+        </h2>
+        <div class="steppy-step-subtitle">Confirmation</div>
+        <div class="steppy-step-content">Click &quot;Validate&quot; to attach the meter. A toast notification confirms the server-side update.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/desktop/step-33.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Meter attached</span>
+        </h2>
+        <div class="steppy-step-subtitle">Verification</div>
+        <div class="steppy-step-content">Back on the detail view, the newly attached meter appears immediately in the &quot;Now&quot; tab of meters tied to the operation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/desktop/step-36.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Add a meter to a sharing operation</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Open my communities</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Tap the menu icon to open the navigation drawer, then &quot;My communities&quot; to see the list of communities you belong to.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/mobile/step-13.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Activate the community</span>
+        </h2>
+        <div class="steppy-step-subtitle">Activating the community</div>
+        <div class="steppy-step-content">On the Test Community card, tap &quot;Activate&quot; to join it in your workspace. The management menu only becomes available once this step is done.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/mobile/step-19.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Open sharing operations</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Open the list of sharing operations for your community to find the one you want to attach a meter to.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/mobile/step-21.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Select an operation</span>
+        </h2>
+        <div class="steppy-step-subtitle">Selection</div>
+        <div class="steppy-step-content">Tap the card of the sharing operation you want to edit to open its detail view.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/mobile/step-26.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Start adding a meter</span>
+        </h2>
+        <div class="steppy-step-subtitle">Action</div>
+        <div class="steppy-step-content">From the detail view, click &quot;Add meter&quot; to open the meter selection dialog.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/mobile/step-29.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Available meters</span>
+        </h2>
+        <div class="steppy-step-subtitle">Selection</div>
+        <div class="steppy-step-content">The dialog lists every meter in the community that is not yet attached to this sharing operation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/mobile/step-30.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Tick the meter</span>
+        </h2>
+        <div class="steppy-step-subtitle">Selection</div>
+        <div class="steppy-step-content">Tick the checkbox of the meter you want to attach. Multiple meters can be selected before submitting.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/mobile/step-31.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Start date today</span>
+        </h2>
+        <div class="steppy-step-subtitle">Activation window</div>
+        <div class="steppy-step-content">Open the calendar and pick today's date so the meter attachment takes effect immediately.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/mobile/step-32.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Confirm the addition</span>
+        </h2>
+        <div class="steppy-step-subtitle">Confirmation</div>
+        <div class="steppy-step-content">Click &quot;Validate&quot; to attach the meter. A toast notification confirms the server-side update.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/mobile/step-33.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Meter attached</span>
+        </h2>
+        <div class="steppy-step-subtitle">Verification</div>
+        <div class="steppy-step-content">Back on the detail view, the card of the newly attached meter appears immediately in the &quot;Now&quot; tab of meters tied to the operation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/en/mobile/step-37.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p><span class="i18n-fr">Généré par Steppy.</span><span class="i18n-en">Generated by Steppy.</span></p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 243, "x": 8, "y": 219.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 243, "x": 8, "y": 219.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"}}, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-10.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-10.png", "subtitle": "Navigation", "text": "In the sidebar\u0027s profile menu, click \"My communities\" to see the list of communities you belong to.", "title": "Open my communities", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 96.171875, "x": 1046.984375, "y": 317}, "selector": "[data-testid=\"user-communities__button--activate-desktop--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 96.171875, "x": 1046.984375, "y": 317}, "selector": "[data-testid=\"user-communities__button--activate-desktop--0\"]"}}, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-18.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-18.png", "subtitle": "Activating the community", "text": "Click \"Activate\" on the Test Community row to join it in your workspace. The management menu only becomes available once this step is done.", "title": "Activate the community", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-21.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-21.png", "subtitle": "Navigation", "text": "Open the list of sharing operations for your community to find the one you want to attach a meter to.", "title": "Open sharing operations", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 51.65625, "width": 1280, "x": 114, "y": 305}, "selector": "[data-testid=\"operations-list__row--desktop--1\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 51.65625, "width": 1280, "x": 114, "y": 305}, "selector": "[data-testid=\"operations-list__row--desktop--1\"]"}}, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-25.png", "subtitle": "Selection", "text": "Click the row of the sharing operation you want to edit to open its detail view.", "title": "Select an operation", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 21, "width": 122.71875, "x": 1001, "y": 316.5}, "selector": "[data-testid=\"op-view__btn--add-meter\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 21, "width": 122.71875, "x": 1001, "y": 316.5}, "selector": "[data-testid=\"op-view__btn--add-meter\"]"}}, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-29.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-29.png", "subtitle": "Action", "text": "From the detail view, click \"Add meter\" to open the meter selection dialog.", "title": "Start adding a meter", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-30.png", "subtitle": "Selection", "text": "The dialog lists every meter in the community that is not yet attached to this sharing operation.", "title": "Available meters", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-31.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-31.png", "subtitle": "Selection", "text": "Tick the checkbox of the meter you want to attach. Multiple meters can be selected before submitting.", "title": "Tick the meter", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 247, "x": 596.5, "y": 542.5}, "selector": "[data-testid=\"op-add-meter__datepicker--start-date\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 247, "x": 596.5, "y": 542.5}, "selector": "[data-testid=\"op-add-meter__datepicker--start-date\"]"}, "value": null}, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-32.png", "subtitle": "Activation window", "text": "Open the calendar and pick today\u0027s date so the meter attachment takes effect immediately.", "title": "Start date today", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-33.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-33.png", "subtitle": "Confirmation", "text": "Click \"Validate\" to attach the meter. A toast notification confirms the server-side update.", "title": "Confirm the addition", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-36.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-36.png", "subtitle": "Verification", "text": "Back on the detail view, the newly attached meter appears immediately in the \"Now\" tab of meters tied to the operation.", "title": "Meter attached", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 284, "x": 8, "y": 219.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 284, "x": 8, "y": 219.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"}}, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-13.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-13.png", "subtitle": "Navigation", "text": "Tap the menu icon to open the navigation drawer, then \"My communities\" to see the list of communities you belong to.", "title": "Open my communities", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 96.171875, "x": 33, "y": 614.65625}, "selector": "[data-testid=\"user-communities__button--activate-mobile--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 96.171875, "x": 33, "y": 614.65625}, "selector": "[data-testid=\"user-communities__button--activate-mobile--0\"]"}}, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-19.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-19.png", "subtitle": "Activating the community", "text": "On the Test Community card, tap \"Activate\" to join it in your workspace. The management menu only becomes available once this step is done.", "title": "Activate the community", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-21.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-21.png", "subtitle": "Navigation", "text": "Open the list of sharing operations for your community to find the one you want to attach a meter to.", "title": "Open sharing operations", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 193.3125, "width": 358, "x": 16, "y": 562}, "selector": "[data-testid=\"operations-list__card--mobile--1\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 193.3125, "width": 358, "x": 16, "y": 562}, "selector": "[data-testid=\"operations-list__card--mobile--1\"]"}}, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-26.png", "subtitle": "Selection", "text": "Tap the card of the sharing operation you want to edit to open its detail view.", "title": "Select an operation", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 21, "width": 122.71875, "x": 39, "y": 411.5}, "selector": "[data-testid=\"op-view__btn--add-meter\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 21, "width": 122.71875, "x": 39, "y": 411.5}, "selector": "[data-testid=\"op-view__btn--add-meter\"]"}}, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-29.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-29.png", "subtitle": "Action", "text": "From the detail view, click \"Add meter\" to open the meter selection dialog.", "title": "Start adding a meter", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-30.png", "subtitle": "Selection", "text": "The dialog lists every meter in the community that is not yet attached to this sharing operation.", "title": "Available meters", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-31.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-31.png", "subtitle": "Selection", "text": "Tick the checkbox of the meter you want to attach. Multiple meters can be selected before submitting.", "title": "Tick the meter", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 364, "x": 13, "y": 570}, "selector": "[data-testid=\"op-add-meter__datepicker--start-date\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 364, "x": 13, "y": 570}, "selector": "[data-testid=\"op-add-meter__datepicker--start-date\"]"}, "value": null}, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-32.png", "subtitle": "Activation window", "text": "Open the calendar and pick today\u0027s date so the meter attachment takes effect immediately.", "title": "Start date today", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-33.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-33.png", "subtitle": "Confirmation", "text": "Click \"Validate\" to attach the meter. A toast notification confirms the server-side update.", "title": "Confirm the addition", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-37.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-37.png", "subtitle": "Verification", "text": "Back on the detail view, the card of the newly attached meter appears immediately in the \"Now\" tab of meters tied to the operation.", "title": "Meter attached", "viewport": {"height": 900, "width": 1440}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

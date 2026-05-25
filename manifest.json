@@ -23,7 +23,8 @@
         "en": "Sign in"
       },
       "modes": [
-        "stepbystep"
+        "stepbystep",
+        "interactive"
       ],
       "scenario": "auth-login.md",
       "group": "account",
@@ -40,7 +41,8 @@
         "en": "Update your profile"
       },
       "modes": [
-        "stepbystep"
+        "stepbystep",
+        "interactive"
       ],
       "scenario": "profile-update.md",
       "group": "account",
@@ -57,7 +59,8 @@
         "en": "Activate a community"
       },
       "modes": [
-        "stepbystep"
+        "stepbystep",
+        "interactive"
       ],
       "scenario": "community-activate.md",
       "group": "community",
@@ -74,7 +77,8 @@
         "en": "Join a community — verify the allocation key"
       },
       "modes": [
-        "stepbystep"
+        "stepbystep",
+        "interactive"
       ],
       "scenario": "community-join-inspect-key.md",
       "group": "community",
@@ -91,7 +95,8 @@
         "en": "Join a community — verify the meter"
       },
       "modes": [
-        "stepbystep"
+        "stepbystep",
+        "interactive"
       ],
       "scenario": "community-join-inspect-meter.md",
       "group": "community",
@@ -108,7 +113,8 @@
         "en": "Create an allocation key (form)"
       },
       "modes": [
-        "stepbystep"
+        "stepbystep",
+        "interactive"
       ],
       "scenario": "key-create-gridform.md",
       "group": "keys",
@@ -125,7 +131,8 @@
         "en": "Contextual help — the (i) icon"
       },
       "modes": [
-        "stepbystep"
+        "stepbystep",
+        "interactive"
       ],
       "scenario": "key-helper-tour.md",
       "group": "keys",
@@ -142,7 +149,8 @@
         "en": "Create an allocation key (wizard)"
       },
       "modes": [
-        "stepbystep"
+        "stepbystep",
+        "interactive"
       ],
       "scenario": "key-create-wizard.md",
       "group": "keys",
@@ -159,7 +167,8 @@
         "en": "Create a member"
       },
       "modes": [
-        "stepbystep"
+        "stepbystep",
+        "interactive"
       ],
       "scenario": "community-create-member.md",
       "group": "members",
@@ -176,7 +185,8 @@
         "en": "Edit a member"
       },
       "modes": [
-        "stepbystep"
+        "stepbystep",
+        "interactive"
       ],
       "scenario": "member-update.md",
       "group": "members",
@@ -193,7 +203,8 @@
         "en": "Create a meter"
       },
       "modes": [
-        "stepbystep"
+        "stepbystep",
+        "interactive"
       ],
       "scenario": "meter-create.md",
       "group": "meters",
@@ -210,7 +221,8 @@
         "en": "Create a sharing operation"
       },
       "modes": [
-        "stepbystep"
+        "stepbystep",
+        "interactive"
       ],
       "scenario": "sharing-op-create.md",
       "group": "sharing",
@@ -227,7 +239,8 @@
         "en": "Inspect a sharing operation"
       },
       "modes": [
-        "stepbystep"
+        "stepbystep",
+        "interactive"
       ],
       "scenario": "sharing-op-inspect.md",
       "group": "sharing",
@@ -244,7 +257,8 @@
         "en": "Make a sharing operation public"
       },
       "modes": [
-        "stepbystep"
+        "stepbystep",
+        "interactive"
       ],
       "scenario": "sharing-op-set-public.md",
       "group": "sharing",
@@ -252,6 +266,186 @@
       "pages": {
         "fr": "sharing-op-set-public/fr.html",
         "en": "sharing-op-set-public/en.html"
+      }
+    },
+    {
+      "slug": "key-update",
+      "title": {
+        "fr": "Modifier une clé de répartition",
+        "en": "Edit an allocation key"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "key-update.md",
+      "group": "keys",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "key-update/fr.html",
+        "en": "key-update/en.html"
+      }
+    },
+    {
+      "slug": "meter-update",
+      "title": {
+        "fr": "Modifier un compteur",
+        "en": "Edit a meter"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "meter-update.md",
+      "group": "meters",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "meter-update/fr.html",
+        "en": "meter-update/en.html"
+      }
+    },
+    {
+      "slug": "meter-data-update",
+      "title": {
+        "fr": "Modifier les données du compteur",
+        "en": "Update meter data"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "meter-data-update.md",
+      "group": "meters",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "meter-data-update/fr.html",
+        "en": "meter-data-update/en.html"
+      }
+    },
+    {
+      "slug": "community-info-update",
+      "title": {
+        "fr": "Mettre à jour les infos de la communauté",
+        "en": "Update community info"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "community-info-update.md",
+      "group": "community",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "community-info-update/fr.html",
+        "en": "community-info-update/en.html"
+      }
+    },
+    {
+      "slug": "sharing-op-add-meter",
+      "title": {
+        "fr": "Ajouter un compteur à une opération",
+        "en": "Add a meter to a sharing operation"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "sharing-operation-add-meter.md",
+      "group": "sharing",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "sharing-op-add-meter/fr.html",
+        "en": "sharing-op-add-meter/en.html"
+      }
+    },
+    {
+      "slug": "annexes-subscribe",
+      "title": {
+        "fr": "S'abonner à un service annexe",
+        "en": "Subscribe to an annexe service"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "annexes-services-subscribe.md",
+      "group": "annexes-subscriptions",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "annexes-subscribe/fr.html",
+        "en": "annexes-subscribe/en.html"
+      }
+    },
+    {
+      "slug": "annexes-unsubscribe",
+      "title": {
+        "fr": "Se désabonner d'un service annexe",
+        "en": "Unsubscribe from an annexe service"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "annexes-services-unsubscribe.md",
+      "group": "annexes-subscriptions",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "annexes-unsubscribe/fr.html",
+        "en": "annexes-unsubscribe/en.html"
+      }
+    },
+    {
+      "slug": "algorithm-generate",
+      "title": {
+        "fr": "Générer des clés (OLAGSA)",
+        "en": "Generate keys (OLAGSA)"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "algorithm-generate.md",
+      "group": "key-generation",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "algorithm-generate/fr.html",
+        "en": "algorithm-generate/en.html"
+      }
+    },
+    {
+      "slug": "algorithm-delete-key",
+      "title": {
+        "fr": "Supprimer une clé générée",
+        "en": "Delete a generated key"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "algorithm-delete-key.md",
+      "group": "key-generation",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "algorithm-delete-key/fr.html",
+        "en": "algorithm-delete-key/en.html"
+      }
+    },
+    {
+      "slug": "algorithm-delete-generation",
+      "title": {
+        "fr": "Supprimer une génération",
+        "en": "Delete a generation"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "algorithm-delete-generation.md",
+      "group": "key-generation",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "algorithm-delete-generation/fr.html",
+        "en": "algorithm-delete-generation/en.html"
       }
     }
   ],
@@ -288,7 +482,8 @@
       "guides": [
         "community-activate",
         "community-join-inspect-key",
-        "community-join-inspect-meter"
+        "community-join-inspect-meter",
+        "community-info-update"
       ],
       "pages": {
         "fr": "community/fr.html",
@@ -308,7 +503,8 @@
       "guides": [
         "key-create-gridform",
         "key-helper-tour",
-        "key-create-wizard"
+        "key-create-wizard",
+        "key-update"
       ],
       "pages": {
         "fr": "keys/fr.html",
@@ -345,7 +541,9 @@
         "en": "Create and configure meters."
       },
       "guides": [
-        "meter-create"
+        "meter-create",
+        "meter-update",
+        "meter-data-update"
       ],
       "pages": {
         "fr": "meters/fr.html",
@@ -365,11 +563,67 @@
       "guides": [
         "sharing-op-create",
         "sharing-op-inspect",
-        "sharing-op-set-public"
+        "sharing-op-set-public",
+        "sharing-op-add-meter"
       ],
       "pages": {
         "fr": "sharing/fr.html",
         "en": "sharing/en.html"
+      }
+    },
+    {
+      "slug": "annexes",
+      "title": {
+        "fr": "Services annexes",
+        "en": "Annexe services"
+      },
+      "description": {
+        "fr": "Gérer les abonnements aux services annexes et générer des clés via l'algorithme OLAGSA.",
+        "en": "Manage annexe service subscriptions and generate allocation keys via the OLAGSA algorithm."
+      },
+      "guides": [],
+      "pages": {
+        "fr": "annexes/fr.html",
+        "en": "annexes/en.html"
+      }
+    },
+    {
+      "slug": "annexes-subscriptions",
+      "title": {
+        "fr": "Abonnements",
+        "en": "Subscriptions"
+      },
+      "description": {
+        "fr": "S'abonner ou se désabonner d'un service annexe.",
+        "en": "Subscribe or unsubscribe from an annexe service."
+      },
+      "guides": [
+        "annexes-subscribe",
+        "annexes-unsubscribe"
+      ],
+      "pages": {
+        "fr": "annexes-subscriptions/fr.html",
+        "en": "annexes-subscriptions/en.html"
+      }
+    },
+    {
+      "slug": "key-generation",
+      "title": {
+        "fr": "Génération de clés",
+        "en": "Key generation"
+      },
+      "description": {
+        "fr": "Générer et gérer des clés de répartition via l'algorithme OLAGSA.",
+        "en": "Generate and manage allocation keys via the OLAGSA algorithm."
+      },
+      "guides": [
+        "algorithm-generate",
+        "algorithm-delete-key",
+        "algorithm-delete-generation"
+      ],
+      "pages": {
+        "fr": "key-generation/fr.html",
+        "en": "key-generation/en.html"
       }
     }
   ],
@@ -493,6 +747,15 @@
             "en": "Join a community — verify the meter"
           },
           "path": "/community-join-inspect-meter"
+        },
+        {
+          "kind": "guide",
+          "slug": "community-info-update",
+          "title": {
+            "fr": "Mettre à jour les infos de la communauté",
+            "en": "Update community info"
+          },
+          "path": "/community-info-update"
         }
       ]
     },
@@ -535,6 +798,15 @@
             "en": "Create an allocation key (wizard)"
           },
           "path": "/key-create-wizard"
+        },
+        {
+          "kind": "guide",
+          "slug": "key-update",
+          "title": {
+            "fr": "Modifier une clé de répartition",
+            "en": "Edit an allocation key"
+          },
+          "path": "/key-update"
         }
       ]
     },
@@ -592,6 +864,24 @@
             "en": "Create a meter"
           },
           "path": "/meter-create"
+        },
+        {
+          "kind": "guide",
+          "slug": "meter-update",
+          "title": {
+            "fr": "Modifier un compteur",
+            "en": "Edit a meter"
+          },
+          "path": "/meter-update"
+        },
+        {
+          "kind": "guide",
+          "slug": "meter-data-update",
+          "title": {
+            "fr": "Modifier les données du compteur",
+            "en": "Update meter data"
+          },
+          "path": "/meter-data-update"
         }
       ]
     },
@@ -634,6 +924,105 @@
             "en": "Make a sharing operation public"
           },
           "path": "/sharing-op-set-public"
+        },
+        {
+          "kind": "guide",
+          "slug": "sharing-op-add-meter",
+          "title": {
+            "fr": "Ajouter un compteur à une opération",
+            "en": "Add a meter to a sharing operation"
+          },
+          "path": "/sharing-op-add-meter"
+        }
+      ]
+    },
+    {
+      "kind": "group",
+      "slug": "annexes",
+      "title": {
+        "fr": "Services annexes",
+        "en": "Annexe services"
+      },
+      "description": {
+        "fr": "Gérer les abonnements aux services annexes et générer des clés via l'algorithme OLAGSA.",
+        "en": "Manage annexe service subscriptions and generate allocation keys via the OLAGSA algorithm."
+      },
+      "path": "/annexes",
+      "children": [
+        {
+          "kind": "group",
+          "slug": "annexes-subscriptions",
+          "title": {
+            "fr": "Abonnements",
+            "en": "Subscriptions"
+          },
+          "description": {
+            "fr": "S'abonner ou se désabonner d'un service annexe.",
+            "en": "Subscribe or unsubscribe from an annexe service."
+          },
+          "path": "/annexes-subscriptions",
+          "children": [
+            {
+              "kind": "guide",
+              "slug": "annexes-subscribe",
+              "title": {
+                "fr": "S'abonner à un service annexe",
+                "en": "Subscribe to an annexe service"
+              },
+              "path": "/annexes-subscribe"
+            },
+            {
+              "kind": "guide",
+              "slug": "annexes-unsubscribe",
+              "title": {
+                "fr": "Se désabonner d'un service annexe",
+                "en": "Unsubscribe from an annexe service"
+              },
+              "path": "/annexes-unsubscribe"
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "slug": "key-generation",
+          "title": {
+            "fr": "Génération de clés",
+            "en": "Key generation"
+          },
+          "description": {
+            "fr": "Générer et gérer des clés de répartition via l'algorithme OLAGSA.",
+            "en": "Generate and manage allocation keys via the OLAGSA algorithm."
+          },
+          "path": "/key-generation",
+          "children": [
+            {
+              "kind": "guide",
+              "slug": "algorithm-generate",
+              "title": {
+                "fr": "Générer des clés (OLAGSA)",
+                "en": "Generate keys (OLAGSA)"
+              },
+              "path": "/algorithm-generate"
+            },
+            {
+              "kind": "guide",
+              "slug": "algorithm-delete-key",
+              "title": {
+                "fr": "Supprimer une clé générée",
+                "en": "Delete a generated key"
+              },
+              "path": "/algorithm-delete-key"
+            },
+            {
+              "kind": "guide",
+              "slug": "algorithm-delete-generation",
+              "title": {
+                "fr": "Supprimer une génération",
+                "en": "Delete a generation"
+              },
+              "path": "/algorithm-delete-generation"
+            }
+          ]
         }
       ]
     }

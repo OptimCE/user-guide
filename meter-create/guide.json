@@ -1,0 +1,1700 @@
+{
+  "version": "1.0",
+  "slug": "meter-create",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Créer un compteur",
+    "en": "Create a meter"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur « Ajouter » pour ouvrir le formulaire de création d'un nouveau compteur rattaché à la communauté active.",
+        "en": "Click \"Add\" to open the form that creates a new meter attached to the active community."
+      },
+      "subtitle": {
+        "fr": "Création d'un compteur",
+        "en": "Creating a meter"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1265.078125,
+                      "y": 52,
+                      "width": 103.921875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meters-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 103.921875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meters-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1288.96875,
+                      "y": 52,
+                      "width": 80.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meters-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 80.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meters-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "fill-form",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Renseignez l'adresse d'installation, l'EAN unique du point de comptage et le numéro physique du compteur. Ces champs sont indispensables pour identifier l'appareil.",
+        "en": "Fill in the installation address, the unique EAN of the metering point and the physical meter number. These fields are required to identify the device."
+      },
+      "subtitle": {
+        "fr": "Identification du compteur",
+        "en": "Meter identification"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/desktop/step-19-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 407,
+                        "y": 276,
+                        "width": 412,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--street\"]",
+                      "value": "Rue de l’Énergie"
+                    },
+                    {
+                      "bbox": {
+                        "x": 835,
+                        "y": 276,
+                        "width": 198,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--address-number\"]",
+                      "value": "42"
+                    },
+                    {
+                      "bbox": {
+                        "x": 407,
+                        "y": 352,
+                        "width": 198,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--box-number\"]",
+                      "value": "1"
+                    },
+                    {
+                      "bbox": {
+                        "x": 621,
+                        "y": 352,
+                        "width": 198,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--postcode\"]",
+                      "value": "4000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 407,
+                        "y": 428,
+                        "width": 412,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--city\"]",
+                      "value": "Liège"
+                    },
+                    {
+                      "bbox": {
+                        "x": 407,
+                        "y": 561,
+                        "width": 305,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--ean\"]",
+                      "value": "541449123456789012"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 561,
+                        "width": 305,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--meter-number\"]",
+                      "value": "M-E2E-1"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/mobile/step-19-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": -16.625,
+                        "y": 256.203125,
+                        "width": 423.265625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--street\"]",
+                      "value": "Rue de l’Énergie"
+                    },
+                    {
+                      "bbox": {
+                        "x": -16.625,
+                        "y": 332.203125,
+                        "width": 423.265625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--address-number\"]",
+                      "value": "42"
+                    },
+                    {
+                      "bbox": {
+                        "x": -16.625,
+                        "y": 408.203125,
+                        "width": 423.265625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--box-number\"]",
+                      "value": "1"
+                    },
+                    {
+                      "bbox": {
+                        "x": -16.625,
+                        "y": 484.203125,
+                        "width": 423.265625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--postcode\"]",
+                      "value": "4000"
+                    },
+                    {
+                      "bbox": {
+                        "x": -16.625,
+                        "y": 561.203125,
+                        "width": 423.265625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--city\"]",
+                      "value": "Liège"
+                    },
+                    {
+                      "bbox": {
+                        "x": -16.625,
+                        "y": 694.203125,
+                        "width": 423.265625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--ean\"]",
+                      "value": "541449123456789012"
+                    },
+                    {
+                      "bbox": {
+                        "x": -16.625,
+                        "y": 770.203125,
+                        "width": 423.265625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--meter-number\"]",
+                      "value": "M-E2E-1"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/desktop/step-19-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 407,
+                        "y": 276,
+                        "width": 412,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--street\"]",
+                      "value": "Rue de l’Énergie"
+                    },
+                    {
+                      "bbox": {
+                        "x": 835,
+                        "y": 276,
+                        "width": 198,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--address-number\"]",
+                      "value": "42"
+                    },
+                    {
+                      "bbox": {
+                        "x": 407,
+                        "y": 352,
+                        "width": 198,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--box-number\"]",
+                      "value": "1"
+                    },
+                    {
+                      "bbox": {
+                        "x": 621,
+                        "y": 352,
+                        "width": 198,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--postcode\"]",
+                      "value": "4000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 407,
+                        "y": 428,
+                        "width": 412,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--city\"]",
+                      "value": "Liège"
+                    },
+                    {
+                      "bbox": {
+                        "x": 407,
+                        "y": 561,
+                        "width": 305,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--ean\"]",
+                      "value": "541449123456789012"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 561,
+                        "width": 305,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--meter-number\"]",
+                      "value": "M-E2E-1"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/mobile/step-19-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 28.78125,
+                        "y": 256.203125,
+                        "width": 332.4375,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--street\"]",
+                      "value": "Rue de l’Énergie"
+                    },
+                    {
+                      "bbox": {
+                        "x": 28.78125,
+                        "y": 332.203125,
+                        "width": 332.4375,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--address-number\"]",
+                      "value": "42"
+                    },
+                    {
+                      "bbox": {
+                        "x": 28.78125,
+                        "y": 408.203125,
+                        "width": 332.4375,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--box-number\"]",
+                      "value": "1"
+                    },
+                    {
+                      "bbox": {
+                        "x": 28.78125,
+                        "y": 484.203125,
+                        "width": 332.4375,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--postcode\"]",
+                      "value": "4000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 28.78125,
+                        "y": 561.203125,
+                        "width": 332.4375,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--city\"]",
+                      "value": "Liège"
+                    },
+                    {
+                      "bbox": {
+                        "x": 28.78125,
+                        "y": 694.203125,
+                        "width": 332.4375,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--ean\"]",
+                      "value": "541449123456789012"
+                    },
+                    {
+                      "bbox": {
+                        "x": 28.78125,
+                        "y": 770.203125,
+                        "width": 332.4375,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--meter-number\"]",
+                      "value": "M-E2E-1"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Sélectionnez le nombre de phases, la fréquence de relevé et le groupe tarifaire — ces choix conditionnent la modélisation des consommations du compteur.",
+        "en": "Select the phase count, reading frequency and tarif group — these choices drive how the meter's consumption is modelled."
+      },
+      "subtitle": {
+        "fr": "Caractéristiques techniques",
+        "en": "Technical characteristics"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 835,
+                      "y": 651,
+                      "width": 198,
+                      "height": 46
+                    },
+                    "selector": "[data-testid=\"meter-creation__radio-card--tarif-group--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/mobile/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": -16.625,
+                      "y": 735.203125,
+                      "width": 423.265625,
+                      "height": 46
+                    },
+                    "selector": "[data-testid=\"meter-creation__radio-card--tarif-group--1\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 835,
+                      "y": 651,
+                      "width": 198,
+                      "height": 46
+                    },
+                    "selector": "[data-testid=\"meter-creation__radio-card--tarif-group--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/mobile/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 28.78125,
+                      "y": 735.203125,
+                      "width": 332.4375,
+                      "height": 46
+                    },
+                    "selector": "[data-testid=\"meter-creation__radio-card--tarif-group--1\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "fill-form",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Décrivez la puissance de prélèvement, la capacité totale de génération et l'ampérage du compteur. Ces valeurs alimentent les calculs de répartition des opérations de partage.",
+        "en": "Describe the sampling power, total generating capacity and amperage of the meter. These values feed the allocation calculations for sharing operations."
+      },
+      "subtitle": {
+        "fr": "Caractéristiques énergétiques",
+        "en": "Energy characteristics"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/desktop/step-25-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 407,
+                        "y": 244,
+                        "width": 626,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"meter-creation__textarea--description\"]",
+                      "value": "Compteur créé par le scénario E2E"
+                    },
+                    {
+                      "bbox": {
+                        "x": 407,
+                        "y": 467,
+                        "width": 198,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--sampling-power\"]",
+                      "value": "5"
+                    },
+                    {
+                      "bbox": {
+                        "x": 621,
+                        "y": 467,
+                        "width": 198,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--total-generating-capacity\"]",
+                      "value": "3"
+                    },
+                    {
+                      "bbox": {
+                        "x": 835,
+                        "y": 451,
+                        "width": 198,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--amperage\"]",
+                      "value": "40"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/mobile/step-25-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": -16.625,
+                        "y": 241.203125,
+                        "width": 423.265625,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"meter-creation__textarea--description\"]",
+                      "value": "Compteur créé par le scénario E2E"
+                    },
+                    {
+                      "bbox": {
+                        "x": -16.625,
+                        "y": 448.203125,
+                        "width": 423.265625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--sampling-power\"]",
+                      "value": "5"
+                    },
+                    {
+                      "bbox": {
+                        "x": -16.625,
+                        "y": 526.203125,
+                        "width": 423.265625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--total-generating-capacity\"]",
+                      "value": "3"
+                    },
+                    {
+                      "bbox": {
+                        "x": -16.625,
+                        "y": 604.203125,
+                        "width": 423.265625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--amperage\"]",
+                      "value": "40"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/desktop/step-25-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 407,
+                        "y": 244,
+                        "width": 626,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"meter-creation__textarea--description\"]",
+                      "value": "Compteur créé par le scénario E2E"
+                    },
+                    {
+                      "bbox": {
+                        "x": 407,
+                        "y": 467,
+                        "width": 198,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--sampling-power\"]",
+                      "value": "5"
+                    },
+                    {
+                      "bbox": {
+                        "x": 621,
+                        "y": 467,
+                        "width": 198,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--total-generating-capacity\"]",
+                      "value": "3"
+                    },
+                    {
+                      "bbox": {
+                        "x": 835,
+                        "y": 451,
+                        "width": 198,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--amperage\"]",
+                      "value": "40"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/mobile/step-25-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 28.78125,
+                        "y": 241.203125,
+                        "width": 332.4375,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"meter-creation__textarea--description\"]",
+                      "value": "Compteur créé par le scénario E2E"
+                    },
+                    {
+                      "bbox": {
+                        "x": 28.78125,
+                        "y": 448.203125,
+                        "width": 332.4375,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--sampling-power\"]",
+                      "value": "5"
+                    },
+                    {
+                      "bbox": {
+                        "x": 28.78125,
+                        "y": 526.203125,
+                        "width": 332.4375,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--total-generating-capacity\"]",
+                      "value": "3"
+                    },
+                    {
+                      "bbox": {
+                        "x": 28.78125,
+                        "y": 604.203125,
+                        "width": 332.4375,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-creation__input--amperage\"]",
+                      "value": "40"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Sélectionnez la filière de production, le statut d'injection et le gestionnaire de réseau de distribution (GRD) auquel le compteur est raccordé.",
+        "en": "Select the production chain, injection status and distribution grid operator (DSO) the meter connects to."
+      },
+      "subtitle": {
+        "fr": "Configuration réseau",
+        "en": "Grid configuration"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 835,
+                      "y": 549,
+                      "width": 198,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-creation__select--grd\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/mobile/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": -16.625,
+                      "y": 441.203125,
+                      "width": 423.265625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-creation__select--grd\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 835,
+                      "y": 549,
+                      "width": 198,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-creation__select--grd\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/mobile/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 28.78125,
+                      "y": 441.203125,
+                      "width": 332.4375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-creation__select--grd\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Choisissez le tarif (simple ou bi-horaire), le type de client (résidentiel, professionnel) et le membre de la communauté propriétaire du compteur.",
+        "en": "Pick the rate (simple or dual), the client type (residential, business) and the community member who owns the meter."
+      },
+      "subtitle": {
+        "fr": "Affectation du membre",
+        "en": "Member assignment"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 407,
+                      "y": 649,
+                      "width": 305,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-creation__select--member\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/mobile/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": -16.625,
+                      "y": 520.203125,
+                      "width": 423.265625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-creation__select--member\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 407,
+                      "y": 649,
+                      "width": 305,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-creation__select--member\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/mobile/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 28.78125,
+                      "y": 520.203125,
+                      "width": 332.4375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-creation__select--member\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Choisissez la date à partir de laquelle le compteur sera considéré comme actif dans la communauté. Avant cette date, il n'apparaîtra pas dans les calculs.",
+        "en": "Pick the date from which the meter is considered active in the community. Before that date, the meter is excluded from any calculations."
+      },
+      "subtitle": {
+        "fr": "Date d'activation",
+        "en": "Activation date"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 728,
+                      "y": 649,
+                      "width": 305,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-creation__datepicker--start-date\"]"
+                  },
+                  "value": "demain"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/mobile/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": -16.625,
+                      "y": 596.203125,
+                      "width": 423.265625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-creation__datepicker--start-date\"]"
+                  },
+                  "value": "demain"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 728,
+                      "y": 649,
+                      "width": 305,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-creation__datepicker--start-date\"]"
+                  },
+                  "value": "demain"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 28.78125,
+                      "y": 596.203125,
+                      "width": 332.4375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-creation__datepicker--start-date\"]"
+                  },
+                  "value": "demain"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur « Valider » : le formulaire complet est envoyé au CRM, qui crée le compteur et le rattache à la communauté active.",
+        "en": "Click \"Validate\" — the full form is submitted to the CRM, which creates the meter and links it to the active community."
+      },
+      "subtitle": {
+        "fr": "Enregistrement",
+        "en": "Saving"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 932.125,
+                      "y": 744,
+                      "width": 100.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-creation__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/mobile/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 305.765625,
+                      "y": 691.203125,
+                      "width": 100.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-creation__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 924.015625,
+                      "y": 744,
+                      "width": 108.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-creation__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/mobile/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 252.234375,
+                      "y": 691.203125,
+                      "width": 108.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-creation__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "fill",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 800,
+      "text": {
+        "fr": "Saisissez l'EAN du compteur dans la barre de recherche pour filtrer la liste et retrouver immédiatement le compteur nouvellement créé.",
+        "en": "Type the meter's EAN into the search bar to filter the list and immediately locate the newly created meter."
+      },
+      "subtitle": {
+        "fr": "Vérification dans la liste",
+        "en": "Verifying in the list"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 299,
+                      "y": 181,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meters-list__input--search\"] input"
+                  },
+                  "value": "541449123456789012"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/mobile/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 181,
+                      "y": 357,
+                      "width": 176,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meters-list__input--search\"] input"
+                  },
+                  "value": "541449123456789012"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 299,
+                      "y": 181,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meters-list__input--search\"] input"
+                  },
+                  "value": "541449123456789012"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/mobile/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 181,
+                      "y": 357,
+                      "width": 176,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meters-list__input--search\"] input"
+                  },
+                  "value": "541449123456789012"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-10",
+      "index": 10,
+      "action": "custom",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Le compteur « 541449123456789012 » apparaît dans le tableau filtré : la création est confirmée et la fiche est accessible depuis la liste.",
+        "en": "The meter \"541449123456789012\" appears in the filtered table — the creation is confirmed and the detail page is reachable from the list."
+      },
+      "subtitle": {
+        "fr": "Vérification dans la liste",
+        "en": "Verifying in the list"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/mobile/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/mobile/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-11",
+      "index": 11,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur la ligne du compteur pour ouvrir sa fiche détaillée et accéder aux onglets de consultation des consommations.",
+        "en": "Click the meter row to open its detail page and reach the tabs that browse the consumption data."
+      },
+      "subtitle": {
+        "fr": "Ouverture de la fiche",
+        "en": "Opening the detail"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 122
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/mobile/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 521,
+                      "width": 358,
+                      "height": 322.65625
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 122
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/mobile/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 521,
+                      "width": 358,
+                      "height": 322.65625
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-12",
+      "index": 12,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "La fiche détaillée reprend l'EAN du nouveau compteur et propose les onglets de consultation : données actuelles, historiques, futures et consommation.",
+        "en": "The detail page shows the new meter's EAN and exposes the browsing tabs: actual, historical, future and consumption data."
+      },
+      "subtitle": {
+        "fr": "Détail du compteur",
+        "en": "Meter detail"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/desktop/step-42.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/fr/mobile/step-42.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/desktop/step-42.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-create/en/mobile/step-42.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

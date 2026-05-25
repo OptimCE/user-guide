@@ -1,0 +1,1502 @@
+{
+  "version": "1.0",
+  "slug": "community-create-member",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Créer un membre",
+    "en": "Create a member"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "text": {
+        "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Mes communautés » pour voir la liste des communautés où vous êtes inscrit·e.",
+        "en": "In the sidebar's profile menu, click \"My communities\" to see the list of communities you belong to."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 243,
+                      "height": 48
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/mobile/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 284,
+                      "height": 48
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 243,
+                      "height": 48
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/mobile/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 284,
+                      "height": 48
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "text": {
+        "fr": "Dans la section « Gestion », cliquez sur « Gestion des membres » pour révéler le sous-menu (membres, compteurs, opérations de partage).",
+        "en": "In the \"Management\" section, click \"Members\" to reveal the submenu (members, meters, sharing operations)."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 550.5,
+                      "width": 243,
+                      "height": 48
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/mobile/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 550.5,
+                      "width": 284,
+                      "height": 48
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 550.5,
+                      "width": 243,
+                      "height": 48
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 550.5,
+                      "width": 284,
+                      "height": 48
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "text": {
+        "fr": "Dans le sous-menu, cliquez sur « Membres » : c'est le point de départ pour ajouter une nouvelle personne à la communauté.",
+        "en": "In the submenu, click \"Members\" — this is the starting point for adding a new person to the community."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 606.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/mobile/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 606.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 606.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/mobile/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 606.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur « Ajouter un membre » en haut de la liste pour ouvrir l'assistant de création en quatre étapes.",
+        "en": "Click \"Add member\" at the top of the list to open the four-step creation wizard."
+      },
+      "subtitle": {
+        "fr": "Ajout d'un membre",
+        "en": "Adding a member"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 736.171875,
+                      "y": 52,
+                      "width": 103.921875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/mobile/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 840.28125,
+                      "y": 52,
+                      "width": 80.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Sélectionnez « Particulier » pour créer un membre individuel. L'option « Entreprise » est réservée aux personnes morales et demandera des champs différents par la suite.",
+        "en": "Select \"Individual\" to create a personal member. The \"Company\" option is reserved for legal entities and asks for different fields later."
+      },
+      "subtitle": {
+        "fr": "Étape 1 — Type",
+        "en": "Step 1 — Type"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 464,
+                      "y": 451,
+                      "width": 248,
+                      "height": 62
+                    },
+                    "selector": "[data-testid=\"new-member-type__card--individual\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/mobile/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": -61,
+                      "y": 384,
+                      "width": 512,
+                      "height": 62
+                    },
+                    "selector": "[data-testid=\"new-member-type__card--individual\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 464,
+                      "y": 451,
+                      "width": 248,
+                      "height": 62
+                    },
+                    "selector": "[data-testid=\"new-member-type__card--individual\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": -61,
+                      "y": 384,
+                      "width": 512,
+                      "height": 62
+                    },
+                    "selector": "[data-testid=\"new-member-type__card--individual\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "fill-form",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Saisissez le numéro national, le nom, le prénom, l'adresse e-mail et le numéro de téléphone du nouveau membre. Tous ces champs sont obligatoires pour valider l'étape.",
+        "en": "Enter the national number, last name, first name, email address and phone number of the new member. All these fields are required to move past this step."
+      },
+      "subtitle": {
+        "fr": "Étape 2 — Identité",
+        "en": "Step 2 — Identity"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/desktop/step-35-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 356.25,
+                        "y": 362.5,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--nrn\"]",
+                      "value": "85.06.22-456.78"
+                    },
+                    {
+                      "bbox": {
+                        "x": 356.25,
+                        "y": 438.5,
+                        "width": 355.75,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--surname\"]",
+                      "value": "E2EUser"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 438.5,
+                        "width": 355.75,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--name\"]",
+                      "value": "Testy"
+                    },
+                    {
+                      "bbox": {
+                        "x": 356.25,
+                        "y": 514.5,
+                        "width": 355.75,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--email\"]",
+                      "value": "e2e-testy@test.com"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 514.5,
+                        "width": 355.75,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--phone\"]",
+                      "value": "0412345678"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/mobile/step-35-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 242.5,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--nrn\"]",
+                      "value": "85.06.22-456.78"
+                    },
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 318.5,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--surname\"]",
+                      "value": "E2EUser"
+                    },
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 394.5,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--name\"]",
+                      "value": "Testy"
+                    },
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 470.5,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--email\"]",
+                      "value": "e2e-testy@test.com"
+                    },
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 546.5,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--phone\"]",
+                      "value": "0412345678"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/desktop/step-35-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 374.484375,
+                        "y": 362.5,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--nrn\"]",
+                      "value": "85.06.22-456.78"
+                    },
+                    {
+                      "bbox": {
+                        "x": 374.484375,
+                        "y": 438.5,
+                        "width": 337.515625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--surname\"]",
+                      "value": "E2EUser"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 438.5,
+                        "width": 337.515625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--name\"]",
+                      "value": "Testy"
+                    },
+                    {
+                      "bbox": {
+                        "x": 374.484375,
+                        "y": 514.5,
+                        "width": 337.515625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--email\"]",
+                      "value": "e2e-testy@test.com"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 514.5,
+                        "width": 337.515625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--phone\"]",
+                      "value": "0412345678"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/mobile/step-35-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 242.5,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--nrn\"]",
+                      "value": "85.06.22-456.78"
+                    },
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 318.5,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--surname\"]",
+                      "value": "E2EUser"
+                    },
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 394.5,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--name\"]",
+                      "value": "Testy"
+                    },
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 470.5,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--email\"]",
+                      "value": "e2e-testy@test.com"
+                    },
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 546.5,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--phone\"]",
+                      "value": "0412345678"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "fill-form",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Complétez l'adresse du domicile : rue, numéro, code postal et ville. Si l'adresse de facturation est identique, cochez la case « Même adresse » à l'étape suivante pour la réutiliser automatiquement.",
+        "en": "Fill in the home address: street, number, postcode and city. If the billing address is identical, tick the \"Same address\" checkbox right after to reuse it automatically."
+      },
+      "subtitle": {
+        "fr": "Étape 3 — Adresse",
+        "en": "Step 3 — Address"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/desktop/step-38-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 356.25,
+                        "y": 312,
+                        "width": 479.65625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-street\"]",
+                      "value": "Rue de Test"
+                    },
+                    {
+                      "bbox": {
+                        "x": 851.90625,
+                        "y": 312,
+                        "width": 231.828125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-number\"]",
+                      "value": "42"
+                    },
+                    {
+                      "bbox": {
+                        "x": 604.078125,
+                        "y": 388,
+                        "width": 231.828125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 851.90625,
+                        "y": 388,
+                        "width": 231.828125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/mobile/step-38-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 257.203125,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-street\"]",
+                      "value": "Rue de Test"
+                    },
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 333.203125,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-number\"]",
+                      "value": "42"
+                    },
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 485.203125,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 561.203125,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/desktop/step-38-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 374.484375,
+                        "y": 312,
+                        "width": 455.34375,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-street\"]",
+                      "value": "Rue de Test"
+                    },
+                    {
+                      "bbox": {
+                        "x": 845.828125,
+                        "y": 312,
+                        "width": 219.671875,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-number\"]",
+                      "value": "42"
+                    },
+                    {
+                      "bbox": {
+                        "x": 610.15625,
+                        "y": 388,
+                        "width": 219.671875,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 845.828125,
+                        "y": 388,
+                        "width": 219.671875,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/mobile/step-38-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 257.203125,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-street\"]",
+                      "value": "Rue de Test"
+                    },
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 333.203125,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-number\"]",
+                      "value": "42"
+                    },
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 485.203125,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 561.203125,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "fill",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Saisissez l'IBAN du membre : il est utilisé pour les remboursements liés aux opérations de partage. Le format est validé en temps réel.",
+        "en": "Enter the member's IBAN — it is used for refunds tied to sharing operations. The format is validated as you type."
+      },
+      "subtitle": {
+        "fr": "Étape 4 — Banque",
+        "en": "Step 4 — Banking"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/desktop/step-42.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 356.25,
+                      "y": 468.5,
+                      "width": 448,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"
+                  },
+                  "value": "BE68539007547034"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/mobile/step-42.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": -168.75,
+                      "y": 440.5,
+                      "width": 448,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"
+                  },
+                  "value": "BE68539007547034"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/desktop/step-42.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 374.484375,
+                      "y": 468.5,
+                      "width": 448,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"
+                  },
+                  "value": "BE68539007547034"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/mobile/step-42.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": -150.515625,
+                      "y": 440.5,
+                      "width": 448,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"
+                  },
+                  "value": "BE68539007547034"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "custom",
+      "interactive": false,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur « Valider » pour envoyer le formulaire au CRM. Le membre est créé immédiatement et associé à la communauté active.",
+        "en": "Click \"Submit\" to send the form to the CRM. The member is created immediately and attached to the active community."
+      },
+      "subtitle": {
+        "fr": "Confirmation",
+        "en": "Confirmation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/desktop/step-43.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/mobile/step-43.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/desktop/step-43.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/mobile/step-43.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-10",
+      "index": 10,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Une fenêtre propose d'enchaîner avec la création d'un compteur. Choisissez « Non » pour terminer ici — vous pourrez toujours ajouter un compteur plus tard depuis la fiche du membre.",
+        "en": "A dialog offers to chain into meter creation. Pick \"No\" to stop here — you can always add a meter later from the member's detail page."
+      },
+      "subtitle": {
+        "fr": "Boîte de dialogue",
+        "en": "Confirmation dialog"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/desktop/step-45.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 839.1875,
+                      "y": 485,
+                      "width": 65.171875,
+                      "height": 42
+                    },
+                    "selector": "button.p-confirmdialog-reject-button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/mobile/step-45.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 236.21875,
+                      "y": 465,
+                      "width": 65.171875,
+                      "height": 42
+                    },
+                    "selector": "button.p-confirmdialog-reject-button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/desktop/step-45.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 808.96875,
+                      "y": 485,
+                      "width": 55.828125,
+                      "height": 42
+                    },
+                    "selector": "button.p-confirmdialog-reject-button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/mobile/step-45.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 247.953125,
+                      "y": 465,
+                      "width": 55.828125,
+                      "height": 42
+                    },
+                    "selector": "button.p-confirmdialog-reject-button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-11",
+      "index": 11,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "La fiche du nouveau membre s'affiche : son nom complet apparaît dans l'en-tête et toutes les informations saisies sont visibles. Le membre est désormais utilisable dans les opérations de partage.",
+        "en": "The new member's detail page is now visible: their full name shows in the header and every field you entered is rendered. The member is ready to use in sharing operations."
+      },
+      "subtitle": {
+        "fr": "Confirmation",
+        "en": "Confirmation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/desktop/step-51.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/fr/mobile/step-51.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/desktop/step-51.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/en/mobile/step-51.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

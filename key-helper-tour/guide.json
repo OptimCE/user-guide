@@ -1,0 +1,282 @@
+{
+  "version": "1.0",
+  "slug": "key-helper-tour",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Aide contextuelle — l'icône (i)",
+    "en": "Contextual help — the (i) icon"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Dans l'application, certains champs ou colonnes affichent une icône ⓘ. C'est le signe qu'une explication supplémentaire est disponible — il vous suffit de cliquer dessus pour la lire.",
+        "en": "Throughout the app, some fields or columns display an ⓘ icon. This signals that extra information is available — just click it to read the explanation."
+      },
+      "subtitle": {
+        "fr": "Aide contextuelle",
+        "en": "Contextual help"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-helper-tour/fr/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-helper-tour/fr/mobile/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-helper-tour/en/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-helper-tour/en/mobile/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur l'icône ⓘ pour obtenir plus d'informations sur ce champ. Une infobulle s'affiche avec le titre et la description complète.",
+        "en": "Click the ⓘ icon to get more information about that field. A popover appears with the title and full description."
+      },
+      "subtitle": {
+        "fr": "Aide contextuelle",
+        "en": "Contextual help"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-helper-tour/fr/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 231.546875,
+                      "y": 358.75,
+                      "width": 24,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"header-helper__btn--help\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-helper-tour/fr/mobile/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 129.546875,
+                      "y": 564.75,
+                      "width": 24,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"header-helper__btn--help\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-helper-tour/en/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 237.984375,
+                      "y": 358.75,
+                      "width": 24,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"header-helper__btn--help\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-helper-tour/en/mobile/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 129.984375,
+                      "y": 564.75,
+                      "width": 24,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"header-helper__btn--help\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "text": {
+        "fr": "L'infobulle donne le nom du champ et son explication détaillée. Vous pouvez ainsi comprendre la signification de chaque valeur sans quitter la page. Cette icône ⓘ est disponible partout où elle apparaît dans l'application.",
+        "en": "The popover shows the field name and its full explanation, letting you understand what each value means without leaving the page. The ⓘ icon works the same way wherever you see it in the app."
+      },
+      "subtitle": {
+        "fr": "Aide contextuelle",
+        "en": "Contextual help"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-helper-tour/fr/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-helper-tour/fr/mobile/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-helper-tour/en/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-helper-tour/en/mobile/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

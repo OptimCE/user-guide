@@ -1,0 +1,864 @@
+{
+  "version": "1.0",
+  "slug": "key-update",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Modifier une clé de répartition",
+    "en": "Edit an allocation key"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "navigate",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Depuis le menu Gestion, ouvrez la liste des clés de répartition de la communauté pour retrouver celle à modifier.",
+        "en": "From the Management menu, open the community's allocation keys list to find the one you want to modify."
+      },
+      "subtitle": {
+        "fr": "Point de départ",
+        "en": "Starting point"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/fr/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/fr/mobile/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/en/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/en/mobile/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur la ligne de la clé que vous souhaitez modifier pour ouvrir sa fiche détaillée.",
+        "en": "Click the row of the key you want to modify to open its detail page."
+      },
+      "subtitle": {
+        "fr": "Choix de la clé",
+        "en": "Pick the key"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/fr/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 305,
+                      "width": 1280,
+                      "height": 45
+                    },
+                    "selector": "[data-testid=\"keys-list__row--desktop--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 486,
+                      "width": 358,
+                      "height": 130
+                    },
+                    "selector": "[data-testid=\"keys-list__row--mobile--1\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/en/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 305,
+                      "width": 1280,
+                      "height": 45
+                    },
+                    "selector": "[data-testid=\"keys-list__row--desktop--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 486,
+                      "width": 358,
+                      "height": 130
+                    },
+                    "selector": "[data-testid=\"keys-list__row--mobile--1\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur « Modifier » : la clé s'ouvre dans le même éditeur que celui utilisé pour la création, mais pré-rempli avec les valeurs existantes.",
+        "en": "Click \"Update\" — the key opens in the same editor used for creation, pre-filled with the existing values."
+      },
+      "subtitle": {
+        "fr": "Mode modification",
+        "en": "Edit mode"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 948.203125,
+                      "y": 84,
+                      "width": 145.28125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-view__btn--update\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 251,
+                      "width": 145.28125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-view__btn--update\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1029.0625,
+                      "y": 84,
+                      "width": 103.078125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-view__btn--update\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 251,
+                      "width": 103.078125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-view__btn--update\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "fill-form",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Modifiez le nom et la description pour refléter le nouvel usage de la clé. Ces champs apparaissent dans la liste et facilitent sa recherche.",
+        "en": "Edit the name and description to reflect the key's new purpose. These fields appear in the list and make it easier to find."
+      },
+      "subtitle": {
+        "fr": "Identification",
+        "en": "Identification"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/fr/desktop/step-22-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 260,
+                        "width": 1237,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-update__input--name\"]",
+                      "value": "Key 1 (updated)"
+                    },
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 348,
+                        "width": 1237,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-update__textarea--description\"]",
+                      "value": "Updated description after E2E modification"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/fr/mobile/step-22-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 0,
+                        "width": 315,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-update__input--name\"]",
+                      "value": "Key 1 (updated)"
+                    },
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 88,
+                        "width": 315,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-update__textarea--description\"]",
+                      "value": "Updated description after E2E modification"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/en/desktop/step-22-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 260,
+                        "width": 1237,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-update__input--name\"]",
+                      "value": "Key 1 (updated)"
+                    },
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 348,
+                        "width": 1237,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-update__textarea--description\"]",
+                      "value": "Updated description after E2E modification"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/en/mobile/step-22-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 0,
+                        "width": 315,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-update__input--name\"]",
+                      "value": "Key 1 (updated)"
+                    },
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 88,
+                        "width": 315,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-update__textarea--description\"]",
+                      "value": "Updated description after E2E modification"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Double-cliquez sur les pourcentages des consommateurs pour les modifier — ici on passe de 50/50 à 60/40. La somme par itération doit toujours faire 100%.",
+        "en": "Double-click the consumer percentages to edit them — here we move from 50/50 to 60/40. The per-iteration total must still equal 100%."
+      },
+      "subtitle": {
+        "fr": "Répartition",
+        "en": "Allocation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 651,
+                      "width": 1246,
+                      "height": 249
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "60 / 40"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/fr/mobile/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 523,
+                      "width": 324,
+                      "height": 249
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "60 / 40"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 651,
+                      "width": 1246,
+                      "height": 249
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "60 / 40"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/en/mobile/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 523,
+                      "width": 324,
+                      "height": 249
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "60 / 40"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Relisez la grille complète : nom, description et nouveaux pourcentages doivent correspondre à l'intention avant l'enregistrement.",
+        "en": "Scan the whole grid: name, description and the new percentages must match what you intended before you save."
+      },
+      "subtitle": {
+        "fr": "Validation finale",
+        "en": "Final review"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/fr/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/fr/mobile/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/en/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/en/mobile/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur le bouton d'enregistrement : l'application valide les pourcentages et renvoie vers la liste des clés.",
+        "en": "Click the save button — the app validates the percentages and redirects you back to the keys list."
+      },
+      "subtitle": {
+        "fr": "Sauvegarde",
+        "en": "Persist"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/fr/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 703.6875,
+                      "y": 815,
+                      "width": 100.609375,
+                      "height": 49
+                    },
+                    "selector": "[data-testid=\"key-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/fr/mobile/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 144.6875,
+                      "y": 795,
+                      "width": 100.609375,
+                      "height": 49
+                    },
+                    "selector": "[data-testid=\"key-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/en/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 699.125,
+                      "y": 815,
+                      "width": 109.734375,
+                      "height": 49
+                    },
+                    "selector": "[data-testid=\"key-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/en/mobile/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 140.125,
+                      "y": 795,
+                      "width": 109.734375,
+                      "height": 49
+                    },
+                    "selector": "[data-testid=\"key-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "La fiche détaillée affiche désormais la nouvelle description : la clé a bien été mise à jour côté serveur.",
+        "en": "The detail page now shows the new description — the key has been successfully updated on the server."
+      },
+      "subtitle": {
+        "fr": "Confirmation",
+        "en": "Confirmation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/fr/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/fr/mobile/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/en/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/en/mobile/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

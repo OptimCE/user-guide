@@ -1,0 +1,860 @@
+{
+  "version": "1.0",
+  "slug": "sharing-op-create",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Créer une opération de partage",
+    "en": "Create a sharing operation"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur « Ajouter » pour ouvrir le dialogue de création d'une nouvelle opération de partage au sein de la communauté active.",
+        "en": "Click \"Add\" to open the dialog that creates a new sharing operation inside the active community."
+      },
+      "subtitle": {
+        "fr": "Création d'une opération",
+        "en": "Creating an operation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/fr/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1265.078125,
+                      "y": 52,
+                      "width": 103.921875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"operations-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/fr/mobile/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 103.921875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"operations-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/en/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1288.96875,
+                      "y": 52,
+                      "width": 80.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"operations-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/en/mobile/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 80.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"operations-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "fill",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Saisissez un nom évocateur pour la nouvelle opération de partage. Ce nom apparaîtra dans la liste et dans toutes les références à cette opération.",
+        "en": "Type a meaningful name for the new sharing operation. This name appears in the list and in every reference to the operation."
+      },
+      "subtitle": {
+        "fr": "Identification de l'opération",
+        "en": "Operation identification"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/fr/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 395.734375,
+                      "y": 344,
+                      "width": 648.515625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-creation__input--name\"]"
+                  },
+                  "value": "E2E Sharing Op"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/fr/mobile/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 22.765625,
+                      "y": 248,
+                      "width": 344.453125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-creation__input--name\"]"
+                  },
+                  "value": "E2E Sharing Op"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/en/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 441.234375,
+                      "y": 344,
+                      "width": 557.53125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-creation__input--name\"]"
+                  },
+                  "value": "E2E Sharing Op"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/en/mobile/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 64.96875,
+                      "y": 248,
+                      "width": 260.046875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-creation__input--name\"]"
+                  },
+                  "value": "E2E Sharing Op"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Sélectionnez la carte « Local » pour indiquer que le partage se fait au sein d'un même bâtiment, par opposition à un partage à distance via le réseau public.",
+        "en": "Pick the \"Local\" card to indicate that sharing happens inside a single building, as opposed to remote sharing across the public grid."
+      },
+      "subtitle": {
+        "fr": "Type de partage",
+        "en": "Sharing type"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/fr/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 395.734375,
+                      "y": 428,
+                      "width": 208.171875,
+                      "height": 56
+                    },
+                    "selector": "[data-testid=\"op-creation__card--type--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/fr/mobile/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 22.765625,
+                      "y": 332,
+                      "width": 344.453125,
+                      "height": 56
+                    },
+                    "selector": "[data-testid=\"op-creation__card--type--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/en/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 441.234375,
+                      "y": 428,
+                      "width": 177.84375,
+                      "height": 56
+                    },
+                    "selector": "[data-testid=\"op-creation__card--type--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/en/mobile/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 64.96875,
+                      "y": 332,
+                      "width": 260.046875,
+                      "height": 56
+                    },
+                    "selector": "[data-testid=\"op-creation__card--type--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Tapez les premières lettres du nom d'une commune (par exemple « Anderl ») dans le champ « Communes couvertes » pour ouvrir la liste des suggestions correspondantes.",
+        "en": "Type the first letters of a municipality name (e.g. \"Anderl\") in the \"Covered municipalities\" field to open the list of matching suggestions."
+      },
+      "subtitle": {
+        "fr": "Communes couvertes",
+        "en": "Covered municipalities"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 408.734375,
+                      "y": 535,
+                      "width": 622.515625,
+                      "height": 24
+                    },
+                    "selector": "#municipalities"
+                  },
+                  "value": "Anderl"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 35.765625,
+                      "y": 575,
+                      "width": 318.453125,
+                      "height": 24
+                    },
+                    "selector": "#municipalities"
+                  },
+                  "value": "Anderl"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 454.234375,
+                      "y": 535,
+                      "width": 531.53125,
+                      "height": 24
+                    },
+                    "selector": "#municipalities"
+                  },
+                  "value": "Anderl"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 77.96875,
+                      "y": 575,
+                      "width": 234.046875,
+                      "height": 24
+                    },
+                    "selector": "#municipalities"
+                  },
+                  "value": "Anderl"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur la première suggestion (« Anderlecht ») pour l'ajouter à la liste des communes couvertes par l'opération de partage.",
+        "en": "Click the first suggestion (\"Anderlecht\") to add it to the list of municipalities covered by the sharing operation."
+      },
+      "subtitle": {
+        "fr": "Confirmation de la commune",
+        "en": "Confirming the municipality"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/fr/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 400.734375,
+                      "y": 575,
+                      "width": 639,
+                      "height": 52
+                    },
+                    "selector": ".p-autocomplete-overlay [role=\"option\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/fr/mobile/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 27.765625,
+                      "y": 615,
+                      "width": 334,
+                      "height": 52
+                    },
+                    "selector": ".p-autocomplete-overlay [role=\"option\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/en/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 446.234375,
+                      "y": 575,
+                      "width": 548,
+                      "height": 52
+                    },
+                    "selector": ".p-autocomplete-overlay [role=\"option\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/en/mobile/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 69.96875,
+                      "y": 615,
+                      "width": 250,
+                      "height": 52
+                    },
+                    "selector": ".p-autocomplete-overlay [role=\"option\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "custom",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "La nouvelle opération « E2E Sharing Op » apparaît dans la liste des opérations de partage de la communauté, prête à être éditée et activée.",
+        "en": "The new \"E2E Sharing Op\" shows up in the community's sharing operations list, ready to be edited and activated."
+      },
+      "subtitle": {
+        "fr": "Confirmation",
+        "en": "Confirmation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/fr/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/fr/mobile/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/en/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/en/mobile/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur la ligne de la nouvelle opération pour ouvrir sa fiche détaillée et accéder à ses paramètres complets.",
+        "en": "Click the new operation's row to open its detail page and access the full set of parameters."
+      },
+      "subtitle": {
+        "fr": "Ouverture de la fiche",
+        "en": "Opening the detail"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/fr/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 203.96875
+                    },
+                    "selector": "[data-testid=\"operations-list__table\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/fr/mobile/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 264,
+                      "width": 358,
+                      "height": 579.9375
+                    },
+                    "selector": "[data-testid=\"operations-list__table\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/en/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 203.96875
+                    },
+                    "selector": "[data-testid=\"operations-list__table\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/en/mobile/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 264,
+                      "width": 358,
+                      "height": 579.9375
+                    },
+                    "selector": "[data-testid=\"operations-list__table\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "L'en-tête de la fiche reprend le nom de l'opération que vous venez de créer — il sert de fil conducteur dans toutes les vues qui la référencent.",
+        "en": "The detail page header echoes the name of the operation you just created — it serves as the anchor across every view that references it."
+      },
+      "subtitle": {
+        "fr": "Détail de l'opération",
+        "en": "Operation detail"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/fr/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/fr/mobile/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/en/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/en/mobile/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

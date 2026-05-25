@@ -1,0 +1,1096 @@
+{
+  "version": "1.0",
+  "slug": "key-create-gridform",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Créer une clé (formulaire)",
+    "en": "Create an allocation key (form)"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur « Ajouter » pour ouvrir l'éditeur de grille et créer une nouvelle clé de répartition à partir d'une page vierge.",
+        "en": "Click \"Add\" to open the grid editor and create a new allocation key from a blank page."
+      },
+      "subtitle": {
+        "fr": "Création d'une clé",
+        "en": "Creating a key"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1224.078125,
+                      "y": 52,
+                      "width": 144.921875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"keys-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 144.921875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"keys-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1247.96875,
+                      "y": 52,
+                      "width": 121.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"keys-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 121.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"keys-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "fill-form",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Donnez un nom et une description à la nouvelle clé de répartition. Ces informations apparaîtront dans la liste des clés et aident à la retrouver plus tard.",
+        "en": "Give the new allocation key a name and a description. This metadata appears in the key list and makes it easier to find later."
+      },
+      "subtitle": {
+        "fr": "Identification de la clé",
+        "en": "Key identification"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/desktop/step-19-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 260,
+                        "width": 1237,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-update__input--name\"]",
+                      "value": "E2E key"
+                    },
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 348,
+                        "width": 1237,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-update__textarea--description\"]",
+                      "value": "A demo key during the E2E test"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/mobile/step-19-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 336,
+                        "width": 315,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-update__input--name\"]",
+                      "value": "E2E key"
+                    },
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 424,
+                        "width": 315,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-update__textarea--description\"]",
+                      "value": "A demo key during the E2E test"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/desktop/step-19-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 260,
+                        "width": 1237,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-update__input--name\"]",
+                      "value": "E2E key"
+                    },
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 348,
+                        "width": 1237,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-update__textarea--description\"]",
+                      "value": "A demo key during the E2E test"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/mobile/step-19-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 336,
+                        "width": 315,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-update__input--name\"]",
+                      "value": "E2E key"
+                    },
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 424,
+                        "width": 315,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-update__textarea--description\"]",
+                      "value": "A demo key during the E2E test"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur « Ajouter une itération » : la grille initialise un nouveau bloc avec un premier consommateur prêt à être édité.",
+        "en": "Click \"Add iteration\" — the grid spawns a fresh iteration block with an initial consumer row ready to edit."
+      },
+      "subtitle": {
+        "fr": "Première itération",
+        "en": "First iteration"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 555,
+                      "width": 201.390625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-iteration\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 631,
+                      "width": 201.390625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-iteration\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 555,
+                      "width": 168,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-iteration\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 631,
+                      "width": 168,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-iteration\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur « Ajouter un consommateur » autant de fois que nécessaire pour atteindre le nombre voulu — trois lignes dans ce scénario.",
+        "en": "Click \"Add consumer\" as many times as needed to reach the desired count — three rows in this scenario."
+      },
+      "subtitle": {
+        "fr": "Première itération",
+        "en": "First iteration"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 607.5625,
+                      "y": 555,
+                      "width": 240.40625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-consumer\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/mobile/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 731,
+                      "width": 240.40625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-consumer\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 535.84375,
+                      "y": 555,
+                      "width": 168.421875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-consumer\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/mobile/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 731,
+                      "width": 168.421875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-consumer\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Saisissez 70% de l'énergie pour cette itération, nommez les trois consommateurs (Cons1, Cons2, Cons3) et fixez manuellement la répartition 40/40/20.",
+        "en": "Set 70% of the energy for this iteration, name the three consumers (Cons1, Cons2, Cons3) and manually split the share 40/40/20."
+      },
+      "subtitle": {
+        "fr": "Première itération",
+        "en": "First iteration"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 651,
+                      "width": 1246,
+                      "height": 249
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "70% — Cons1 40 / Cons2 40 / Cons3 20"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/mobile/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 461,
+                      "width": 324,
+                      "height": 249
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "70% — Cons1 40 / Cons2 40 / Cons3 20"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 651,
+                      "width": 1246,
+                      "height": 249
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "70% — Cons1 40 / Cons2 40 / Cons3 20"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/mobile/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 461,
+                      "width": 324,
+                      "height": 249
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "70% — Cons1 40 / Cons2 40 / Cons3 20"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur « Ajouter une itération prorata » : les noms des consommateurs sont repris automatiquement et les pourcentages seront calculés selon la consommation réelle.",
+        "en": "Click \"Add prorata iteration\" — consumer names are carried over automatically and the percentages will be computed from actual consumption."
+      },
+      "subtitle": {
+        "fr": "Deuxième itération",
+        "en": "Second iteration"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 340.390625,
+                      "y": 523,
+                      "width": 259.171875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/mobile/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 283,
+                      "width": 259.171875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 307,
+                      "y": 523,
+                      "width": 220.84375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/mobile/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 283,
+                      "width": 220.84375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Saisissez 30% comme pondération de la deuxième itération afin que la somme des deux itérations atteigne 100% de l'énergie.",
+        "en": "Type 30% as the weight of the second iteration so the two iterations together reach 100% of the energy."
+      },
+      "subtitle": {
+        "fr": "Deuxième itération",
+        "en": "Second iteration"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 549,
+                      "width": 1246,
+                      "height": 351
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "30%"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/mobile/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 461,
+                      "width": 324,
+                      "height": 351
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "30%"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 549,
+                      "width": 1246,
+                      "height": 351
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "30%"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/mobile/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 461,
+                      "width": 324,
+                      "height": 351
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "30%"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "custom",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Dès que la pondération est validée (touche Entrée ou clic ailleurs), toute la deuxième itération est recalculée automatiquement selon le mode prorata.",
+        "en": "As soon as the weight is committed (Enter or clicking outside the cell), the whole second iteration is recomputed automatically in prorata mode."
+      },
+      "subtitle": {
+        "fr": "Deuxième itération",
+        "en": "Second iteration"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/mobile/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Parcourez la grille complète pour vérifier les itérations, les noms et les pourcentages avant d'enregistrer la clé.",
+        "en": "Scan the full grid to confirm the iterations, names and percentages before saving the key."
+      },
+      "subtitle": {
+        "fr": "Validation finale",
+        "en": "Final review"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/mobile/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/mobile/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-10",
+      "index": 10,
+      "action": "custom",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "La nouvelle clé « E2E key » apparaît dans la liste des clés de répartition de la communauté, prête à être utilisée par une opération de partage.",
+        "en": "The new \"E2E key\" shows up in the community's allocation keys list, ready to be used by a sharing operation."
+      },
+      "subtitle": {
+        "fr": "Confirmation",
+        "en": "Confirmation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/fr/mobile/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

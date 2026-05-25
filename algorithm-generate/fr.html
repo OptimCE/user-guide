@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Générer des clés (OLAGSA) — OptimCE — Guides utilisateur</title>
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Synchronise the saved language preference with the file we just loaded.
+        // The user landed on this <locale>.html either by clicking a link rewritten
+        // to honour their preference or by direct entry — either way, that's the
+        // current truth.
+        try { localStorage.setItem("oce-lang", "fr"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.html" aria-label="OptimCE — Guides utilisateur">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.html">
+            <span class="i18n-fr">OptimCE — Guides utilisateur</span>
+            <span class="i18n-en">OptimCE — User guides</span>
+        </a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html"><span class="i18n-fr">Accueil</span><span class="i18n-en">Home</span></a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../key-generation/index.html">
+                <span class="i18n-fr">Génération de clés</span>
+                <span class="i18n-en">Key generation</span>
+            </a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">
+                <span class="i18n-fr">Générer des clés (OLAGSA)</span>
+                <span class="i18n-en">Generate keys (OLAGSA)</span>
+            </span>
+        </nav>
+
+        <div class="steppy-header-actions">
+            <nav class="steppy-locale-switch" aria-label="Language">
+                <ul>
+                    <li>
+                        <span aria-current="true">Français</span>
+                    </li>
+                    <li>
+                        <a href="./en.html">English</a>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-mode-switch" aria-label="Guide mode">
+            <ul>
+                <li>
+                    <span aria-current="true">
+                        <span class="i18n-fr">Pas à pas</span>
+                        <span class="i18n-en">Step by step</span>
+                    </span>
+                </li>
+                <li>
+                    <a href="./interactive.html">
+                        <span class="i18n-fr">Interactif</span>
+                        <span class="i18n-en">Interactive</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Générer des clés (OLAGSA)</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Ouvrir les services annexes</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Dans la section « Communauté » de la barre latérale, cliquez sur « Services annexes » pour accéder aux modules actifs de la communauté.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-19.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Module de génération disponible</span>
+        </h2>
+        <div class="steppy-step-subtitle">Services annexes</div>
+        <div class="steppy-step-content">La carte « Génération de clés de répartition » est visible avec le badge « Activé ». Cliquez dessus pour ouvrir le module de génération.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-25.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Ouvrir le module de génération</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Cliquez sur la carte pour ouvrir le module de génération de clés de répartition OLAGSA.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-26.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Page de génération de clés</span>
+        </h2>
+        <div class="steppy-step-subtitle">Module OLAGSA</div>
+        <div class="steppy-step-content">La page de génération de clés de répartition s'affiche avec le formulaire de configuration. Sélectionnez l'algorithme, renseignez les paramètres et importez votre fichier de données pour lancer une nouvelle génération.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-28.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Sélectionner l'algorithme OLAGSA</span>
+        </h2>
+        <div class="steppy-step-subtitle">Configuration</div>
+        <div class="steppy-step-content">Cliquez sur le menu déroulant « Algorithme » et sélectionnez « OLAGSA ». Le formulaire de paramètres propres à cet algorithme génétique s'affiche alors.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-29.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Nommer la génération et l'injection</span>
+        </h2>
+        <div class="steppy-step-subtitle">Configuration</div>
+        <div class="steppy-step-content">Saisissez un nom pour cette génération (identifiant interne) et le nom de l'injection correspondante — ici « Production » pour cibler les données de production.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-31.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Définir le nombre d'itérations</span>
+        </h2>
+        <div class="steppy-step-subtitle">Paramètres principaux</div>
+        <div class="steppy-step-content">Saisissez « 3 » dans le champ « Itérations ». Ce paramètre définit le nombre de solutions indépendantes calculées par l'algorithme génétique OLAGSA.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-32.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Ouvrir les paramètres avancés</span>
+        </h2>
+        <div class="steppy-step-subtitle">Paramètres OLAGSA</div>
+        <div class="steppy-step-content">Cliquez sur « Paramètres avancés » pour afficher les hyperparamètres de l'algorithme génétique : taille de population, taux de croisement, taux de mutation, etc.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-33.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Hyperparamètres de l'algorithme génétique</span>
+        </h2>
+        <div class="steppy-step-subtitle">Paramètres avancés</div>
+        <div class="steppy-step-content">Les paramètres avancés d'OLAGSA s'affichent : générations, taille de population, taux de croisement inter-espèces et intra-espèces, taux de mutation, nombre d'espèces attendues et nombre maximum de générations sans amélioration. Les valeurs par défaut conviennent pour la plupart des usages.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-35.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Importer le fichier de données</span>
+        </h2>
+        <div class="steppy-step-subtitle">Données d'entrée</div>
+        <div class="steppy-step-content">Glissez votre fichier CSV dans la zone d'import ou cliquez dessus pour sélectionner le fichier de données à utiliser pour la génération.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-36.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Lancer la génération</span>
+        </h2>
+        <div class="steppy-step-subtitle">Exécution</div>
+        <div class="steppy-step-content">Cliquez sur « Lancer la génération » pour soumettre la tâche au moteur OLAGSA. La génération apparaît immédiatement dans la liste avec le statut « En attente ».</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-37.png" alt="Step 11" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>Génération soumise</span>
+        </h2>
+        <div class="steppy-step-subtitle">Suivi du statut</div>
+        <div class="steppy-step-content">La génération « Test Run 1 » apparaît dans la liste. Un point orange clignotant indique qu'elle est en attente de traitement ; il devient vert dès que le moteur OLAGSA a terminé.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-39.png" alt="Step 12" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="13">
+        <h2>
+            <span class="steppy-step-number">13</span>
+            <span>Génération terminée avec succès</span>
+        </h2>
+        <div class="steppy-step-subtitle">Suivi du statut</div>
+        <div class="steppy-step-content">Le point passe au vert : la génération est terminée. Les clés de répartition ont été calculées et sont prêtes à être consultées en déroulant la ligne.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-43.png" alt="Step 13" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="14">
+        <h2>
+            <span class="steppy-step-number">14</span>
+            <span>Clés de répartition générées</span>
+        </h2>
+        <div class="steppy-step-subtitle">Résultats</div>
+        <div class="steppy-step-content">La liste des clés calculées apparaît sous la génération. Chaque clé correspond à une solution OLAGSA optimisée. Cliquez sur une clé pour afficher sa répartition détaillée.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-46.png" alt="Step 14" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="15">
+        <h2>
+            <span class="steppy-step-number">15</span>
+            <span>Détail de la clé et répartition par itération</span>
+        </h2>
+        <div class="steppy-step-subtitle">Inspection</div>
+        <div class="steppy-step-content">Le tableau de répartition s'affiche pour cette clé, détaillant les valeurs calculées par l'algorithme. Le bouton « Enregistrer » permet de sauvegarder cette clé dans le module Clés.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-49.png" alt="Step 15" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="16">
+        <h2>
+            <span class="steppy-step-number">16</span>
+            <span>Enregistrer la clé dans le module</span>
+        </h2>
+        <div class="steppy-step-subtitle">Sauvegarde</div>
+        <div class="steppy-step-content">Cliquez sur « Enregistrer » pour sauvegarder cette clé de répartition dans le module Clés, où elle sera accessible depuis la gestion de la communauté.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-50.png" alt="Step 16" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="17">
+        <h2>
+            <span class="steppy-step-number">17</span>
+            <span>Confirmer l'enregistrement</span>
+        </h2>
+        <div class="steppy-step-subtitle">Sauvegarde</div>
+        <div class="steppy-step-content">Une fenêtre de confirmation s'affiche. Cliquez sur le bouton de validation pour enregistrer définitivement cette clé de répartition dans le module Clés.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-52.png" alt="Step 17" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="18">
+        <h2>
+            <span class="steppy-step-number">18</span>
+            <span>Ouvrir les clés</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Dans la section « Gestion » de la barre latérale, cliquez sur « Clés » pour afficher les clés de répartition enregistrées pour la communauté active.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-56.png" alt="Step 18" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="19">
+        <h2>
+            <span class="steppy-step-number">19</span>
+            <span>Clé visible dans le module Clés</span>
+        </h2>
+        <div class="steppy-step-subtitle">Résultat final</div>
+        <div class="steppy-step-content">La clé enregistrée depuis le module OLAGSA apparaît maintenant dans la liste des clés de répartition de la communauté. Elle est disponible pour les membres autorisés.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/desktop/step-62.png" alt="Step 19" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Générer des clés (OLAGSA)</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Ouvrir les services annexes</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Touchez l'icône du menu pour ouvrir le tiroir de navigation, puis dans la section « Communauté » touchez « Services annexes ».</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-22.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Module de génération disponible</span>
+        </h2>
+        <div class="steppy-step-subtitle">Services annexes</div>
+        <div class="steppy-step-content">La carte « Génération de clés de répartition » est visible avec le badge « Activé ». Cliquez dessus pour ouvrir le module de génération.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-25.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Ouvrir le module de génération</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Cliquez sur la carte pour ouvrir le module de génération de clés de répartition OLAGSA.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-26.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Page de génération de clés</span>
+        </h2>
+        <div class="steppy-step-subtitle">Module OLAGSA</div>
+        <div class="steppy-step-content">La page de génération de clés de répartition s'affiche avec le formulaire de configuration. Sélectionnez l'algorithme, renseignez les paramètres et importez votre fichier de données pour lancer une nouvelle génération.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-28.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Sélectionner l'algorithme OLAGSA</span>
+        </h2>
+        <div class="steppy-step-subtitle">Configuration</div>
+        <div class="steppy-step-content">Cliquez sur le menu déroulant « Algorithme » et sélectionnez « OLAGSA ». Le formulaire de paramètres propres à cet algorithme génétique s'affiche alors.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-29.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Nommer la génération et l'injection</span>
+        </h2>
+        <div class="steppy-step-subtitle">Configuration</div>
+        <div class="steppy-step-content">Saisissez un nom pour cette génération (identifiant interne) et le nom de l'injection correspondante — ici « Production » pour cibler les données de production.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-31.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Définir le nombre d'itérations</span>
+        </h2>
+        <div class="steppy-step-subtitle">Paramètres principaux</div>
+        <div class="steppy-step-content">Saisissez « 3 » dans le champ « Itérations ». Ce paramètre définit le nombre de solutions indépendantes calculées par l'algorithme génétique OLAGSA.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-32.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Ouvrir les paramètres avancés</span>
+        </h2>
+        <div class="steppy-step-subtitle">Paramètres OLAGSA</div>
+        <div class="steppy-step-content">Cliquez sur « Paramètres avancés » pour afficher les hyperparamètres de l'algorithme génétique : taille de population, taux de croisement, taux de mutation, etc.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-33.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Hyperparamètres de l'algorithme génétique</span>
+        </h2>
+        <div class="steppy-step-subtitle">Paramètres avancés</div>
+        <div class="steppy-step-content">Les paramètres avancés d'OLAGSA s'affichent : générations, taille de population, taux de croisement inter-espèces et intra-espèces, taux de mutation, nombre d'espèces attendues et nombre maximum de générations sans amélioration. Les valeurs par défaut conviennent pour la plupart des usages.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-35.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Importer le fichier de données</span>
+        </h2>
+        <div class="steppy-step-subtitle">Données d'entrée</div>
+        <div class="steppy-step-content">Glissez votre fichier CSV dans la zone d'import ou cliquez dessus pour sélectionner le fichier de données à utiliser pour la génération.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-36.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Lancer la génération</span>
+        </h2>
+        <div class="steppy-step-subtitle">Exécution</div>
+        <div class="steppy-step-content">Cliquez sur « Lancer la génération » pour soumettre la tâche au moteur OLAGSA. La génération apparaît immédiatement dans la liste avec le statut « En attente ».</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-37.png" alt="Step 11" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>Génération soumise</span>
+        </h2>
+        <div class="steppy-step-subtitle">Suivi du statut</div>
+        <div class="steppy-step-content">La génération « Test Run 1 » apparaît dans la liste. Un point orange clignotant indique qu'elle est en attente de traitement ; il devient vert dès que le moteur OLAGSA a terminé.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-39.png" alt="Step 12" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="13">
+        <h2>
+            <span class="steppy-step-number">13</span>
+            <span>Génération terminée avec succès</span>
+        </h2>
+        <div class="steppy-step-subtitle">Suivi du statut</div>
+        <div class="steppy-step-content">Le point passe au vert : la génération est terminée. Les clés de répartition ont été calculées et sont prêtes à être consultées en déroulant la ligne.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-43.png" alt="Step 13" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="14">
+        <h2>
+            <span class="steppy-step-number">14</span>
+            <span>Clés de répartition générées</span>
+        </h2>
+        <div class="steppy-step-subtitle">Résultats</div>
+        <div class="steppy-step-content">La liste des clés calculées apparaît sous la génération. Chaque clé correspond à une solution OLAGSA optimisée. Cliquez sur une clé pour afficher sa répartition détaillée.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-46.png" alt="Step 14" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="15">
+        <h2>
+            <span class="steppy-step-number">15</span>
+            <span>Détail de la clé et répartition par itération</span>
+        </h2>
+        <div class="steppy-step-subtitle">Inspection</div>
+        <div class="steppy-step-content">Le tableau de répartition s'affiche pour cette clé, détaillant les valeurs calculées par l'algorithme. Le bouton « Enregistrer » permet de sauvegarder cette clé dans le module Clés.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-49.png" alt="Step 15" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="16">
+        <h2>
+            <span class="steppy-step-number">16</span>
+            <span>Enregistrer la clé dans le module</span>
+        </h2>
+        <div class="steppy-step-subtitle">Sauvegarde</div>
+        <div class="steppy-step-content">Cliquez sur « Enregistrer » pour sauvegarder cette clé de répartition dans le module Clés, où elle sera accessible depuis la gestion de la communauté.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-50.png" alt="Step 16" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="17">
+        <h2>
+            <span class="steppy-step-number">17</span>
+            <span>Confirmer l'enregistrement</span>
+        </h2>
+        <div class="steppy-step-subtitle">Sauvegarde</div>
+        <div class="steppy-step-content">Une fenêtre de confirmation s'affiche. Cliquez sur le bouton de validation pour enregistrer définitivement cette clé de répartition dans le module Clés.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-52.png" alt="Step 17" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="18">
+        <h2>
+            <span class="steppy-step-number">18</span>
+            <span>Ouvrir les clés</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Touchez l'icône du menu pour ouvrir le tiroir, puis dans la section « Gestion » touchez « Clés » pour afficher les clés de répartition.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-59.png" alt="Step 18" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="19">
+        <h2>
+            <span class="steppy-step-number">19</span>
+            <span>Clé visible dans le module Clés</span>
+        </h2>
+        <div class="steppy-step-subtitle">Résultat final</div>
+        <div class="steppy-step-content">La clé enregistrée depuis le module OLAGSA apparaît maintenant dans la liste des clés de répartition de la communauté. Elle est disponible pour les membres autorisés.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/fr/mobile/step-62.png" alt="Step 19" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p><span class="i18n-fr">Généré par Steppy.</span><span class="i18n-en">Generated by Steppy.</span></p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 243, "x": 8, "y": 410}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 243, "x": 8, "y": 410}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"}}, "screenshot": "../assets/algorithm-generate/fr/desktop/step-19.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/algorithm-generate/fr/desktop/step-19.png", "subtitle": "Navigation", "text": "Dans la section \u00ab Communaut\u00e9 \u00bb de la barre lat\u00e9rale, cliquez sur \u00ab Services annexes \u00bb pour acc\u00e9der aux modules actifs de la communaut\u00e9.", "title": "Ouvrir les services annexes", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/fr/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/algorithm-generate/fr/desktop/step-25.png", "subtitle": "Services annexes", "text": "La carte \u00ab G\u00e9n\u00e9ration de cl\u00e9s de r\u00e9partition \u00bb est visible avec le badge \u00ab Activ\u00e9 \u00bb. Cliquez dessus pour ouvrir le module de g\u00e9n\u00e9ration.", "title": "Module de g\u00e9n\u00e9ration disponible", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 171, "width": 416, "x": 114, "y": 142}, "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 171, "width": 416, "x": 114, "y": 142}, "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"}}, "screenshot": "../assets/algorithm-generate/fr/desktop/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/algorithm-generate/fr/desktop/step-26.png", "subtitle": "Navigation", "text": "Cliquez sur la carte pour ouvrir le module de g\u00e9n\u00e9ration de cl\u00e9s de r\u00e9partition OLAGSA.", "title": "Ouvrir le module de g\u00e9n\u00e9ration", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/fr/desktop/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/algorithm-generate/fr/desktop/step-28.png", "subtitle": "Module OLAGSA", "text": "La page de g\u00e9n\u00e9ration de cl\u00e9s de r\u00e9partition s\u0027affiche avec le formulaire de configuration. S\u00e9lectionnez l\u0027algorithme, renseignez les param\u00e8tres et importez votre fichier de donn\u00e9es pour lancer une nouvelle g\u00e9n\u00e9ration.", "title": "Page de g\u00e9n\u00e9ration de cl\u00e9s", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 396.65625, "x": 139, "y": 241}, "selector": "[data-testid=\"algorithm-hub__select--algorithm\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 396.65625, "x": 139, "y": 241}, "selector": "[data-testid=\"algorithm-hub__select--algorithm\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/fr/desktop/step-29.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/algorithm-generate/fr/desktop/step-29.png", "subtitle": "Configuration", "text": "Cliquez sur le menu d\u00e9roulant \u00ab Algorithme \u00bb et s\u00e9lectionnez \u00ab OLAGSA \u00bb. Le formulaire de param\u00e8tres propres \u00e0 cet algorithme g\u00e9n\u00e9tique s\u0027affiche alors.", "title": "S\u00e9lectionner l\u0027algorithme OLAGSA", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 607, "x": 762, "y": 366}, "selector": "[data-testid=\"algorithm-hub__input--injection-name\"]"}, "value": "Production"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 607, "x": 762, "y": 366}, "selector": "[data-testid=\"algorithm-hub__input--injection-name\"]"}, "value": "Production"}, "screenshot": "../assets/algorithm-generate/fr/desktop/step-31.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/algorithm-generate/fr/desktop/step-31.png", "subtitle": "Configuration", "text": "Saisissez un nom pour cette g\u00e9n\u00e9ration (identifiant interne) et le nom de l\u0027injection correspondante \u2014 ici \u00ab Production \u00bb pour cibler les donn\u00e9es de production.", "title": "Nommer la g\u00e9n\u00e9ration et l\u0027injection", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 607, "x": 139, "y": 703}, "selector": "[data-testid=\"algo-form__input--iterations\"] input"}, "value": "3"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 607, "x": 139, "y": 703}, "selector": "[data-testid=\"algo-form__input--iterations\"] input"}, "value": "3"}, "screenshot": "../assets/algorithm-generate/fr/desktop/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/algorithm-generate/fr/desktop/step-32.png", "subtitle": "Param\u00e8tres principaux", "text": "Saisissez \u00ab 3 \u00bb dans le champ \u00ab It\u00e9rations \u00bb. Ce param\u00e8tre d\u00e9finit le nombre de solutions ind\u00e9pendantes calcul\u00e9es par l\u0027algorithme g\u00e9n\u00e9tique OLAGSA.", "title": "D\u00e9finir le nombre d\u0027it\u00e9rations", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 135.296875, "x": 139, "y": 786.5}, "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 135.296875, "x": 139, "y": 786.5}, "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"}}, "screenshot": "../assets/algorithm-generate/fr/desktop/step-33.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/algorithm-generate/fr/desktop/step-33.png", "subtitle": "Param\u00e8tres OLAGSA", "text": "Cliquez sur \u00ab Param\u00e8tres avanc\u00e9s \u00bb pour afficher les hyperparam\u00e8tres de l\u0027algorithme g\u00e9n\u00e9tique : taille de population, taux de croisement, taux de mutation, etc.", "title": "Ouvrir les param\u00e8tres avanc\u00e9s", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/fr/desktop/step-35.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/algorithm-generate/fr/desktop/step-35.png", "subtitle": "Param\u00e8tres avanc\u00e9s", "text": "Les param\u00e8tres avanc\u00e9s d\u0027OLAGSA s\u0027affichent : g\u00e9n\u00e9rations, taille de population, taux de croisement inter-esp\u00e8ces et intra-esp\u00e8ces, taux de mutation, nombre d\u0027esp\u00e8ces attendues et nombre maximum de g\u00e9n\u00e9rations sans am\u00e9lioration. Les valeurs par d\u00e9faut conviennent pour la plupart des usages.", "title": "Hyperparam\u00e8tres de l\u0027algorithme g\u00e9n\u00e9tique", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 128, "width": 1230, "x": 139, "y": 476}, "selector": "[data-testid=\"algorithm-hub__dropzone\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 128, "width": 1230, "x": 139, "y": 476}, "selector": "[data-testid=\"algorithm-hub__dropzone\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/fr/desktop/step-36.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/algorithm-generate/fr/desktop/step-36.png", "subtitle": "Donn\u00e9es d\u0027entr\u00e9e", "text": "Glissez votre fichier CSV dans la zone d\u0027import ou cliquez dessus pour s\u00e9lectionner le fichier de donn\u00e9es \u00e0 utiliser pour la g\u00e9n\u00e9ration.", "title": "Importer le fichier de donn\u00e9es", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 197.890625, "x": 1171.109375, "y": 624}, "selector": "[data-testid=\"algorithm-hub__btn--submit\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 197.890625, "x": 1171.109375, "y": 624}, "selector": "[data-testid=\"algorithm-hub__btn--submit\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/fr/desktop/step-37.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/algorithm-generate/fr/desktop/step-37.png", "subtitle": "Ex\u00e9cution", "text": "Cliquez sur \u00ab Lancer la g\u00e9n\u00e9ration \u00bb pour soumettre la t\u00e2che au moteur OLAGSA. La g\u00e9n\u00e9ration appara\u00eet imm\u00e9diatement dans la liste avec le statut \u00ab En attente \u00bb.", "title": "Lancer la g\u00e9n\u00e9ration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 76, "width": 1280, "x": 114, "y": 804}, "selector": "[data-testid^=\"generation-row--\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 76, "width": 1280, "x": 114, "y": 804}, "selector": "[data-testid^=\"generation-row--\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/fr/desktop/step-39.png", "viewport": {"height": 900, "width": 1440}}], "index": 12, "screenshot": "../assets/algorithm-generate/fr/desktop/step-39.png", "subtitle": "Suivi du statut", "text": "La g\u00e9n\u00e9ration \u00ab Test Run 1 \u00bb appara\u00eet dans la liste. Un point orange clignotant indique qu\u0027elle est en attente de traitement ; il devient vert d\u00e8s que le moteur OLAGSA a termin\u00e9.", "title": "G\u00e9n\u00e9ration soumise", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 12, "width": 12, "x": 163, "y": 836}, "selector": ".timeline-dot--success"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 12, "width": 12, "x": 163, "y": 836}, "selector": ".timeline-dot--success"}, "value": null}, "screenshot": "../assets/algorithm-generate/fr/desktop/step-43.png", "viewport": {"height": 900, "width": 1440}}], "index": 13, "screenshot": "../assets/algorithm-generate/fr/desktop/step-43.png", "subtitle": "Suivi du statut", "text": "Le point passe au vert : la g\u00e9n\u00e9ration est termin\u00e9e. Les cl\u00e9s de r\u00e9partition ont \u00e9t\u00e9 calcul\u00e9es et sont pr\u00eates \u00e0 \u00eatre consult\u00e9es en d\u00e9roulant la ligne.", "title": "G\u00e9n\u00e9ration termin\u00e9e avec succ\u00e8s", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 64, "width": 1246, "x": 131, "y": 837}, "selector": "[data-testid^=\"key-row--\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 64, "width": 1246, "x": 131, "y": 837}, "selector": "[data-testid^=\"key-row--\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/fr/desktop/step-46.png", "viewport": {"height": 900, "width": 1440}}], "index": 14, "screenshot": "../assets/algorithm-generate/fr/desktop/step-46.png", "subtitle": "R\u00e9sultats", "text": "La liste des cl\u00e9s calcul\u00e9es appara\u00eet sous la g\u00e9n\u00e9ration. Chaque cl\u00e9 correspond \u00e0 une solution OLAGSA optimis\u00e9e. Cliquez sur une cl\u00e9 pour afficher sa r\u00e9partition d\u00e9taill\u00e9e.", "title": "Cl\u00e9s de r\u00e9partition g\u00e9n\u00e9r\u00e9es", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 429, "width": 1212, "x": 148, "y": 235}, "selector": "[data-testid^=\"key-row__grid--\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 429, "width": 1212, "x": 148, "y": 235}, "selector": "[data-testid^=\"key-row__grid--\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/fr/desktop/step-49.png", "viewport": {"height": 900, "width": 1440}}], "index": 15, "screenshot": "../assets/algorithm-generate/fr/desktop/step-49.png", "subtitle": "Inspection", "text": "Le tableau de r\u00e9partition s\u0027affiche pour cette cl\u00e9, d\u00e9taillant les valeurs calcul\u00e9es par l\u0027algorithme. Le bouton \u00ab Enregistrer \u00bb permet de sauvegarder cette cl\u00e9 dans le module Cl\u00e9s.", "title": "D\u00e9tail de la cl\u00e9 et r\u00e9partition par it\u00e9ration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 32, "x": 1288, "y": 173.5}, "selector": "[data-testid^=\"key-row__btn--save--\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 32, "x": 1288, "y": 173.5}, "selector": "[data-testid^=\"key-row__btn--save--\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/fr/desktop/step-50.png", "viewport": {"height": 900, "width": 1440}}], "index": 16, "screenshot": "../assets/algorithm-generate/fr/desktop/step-50.png", "subtitle": "Sauvegarde", "text": "Cliquez sur \u00ab Enregistrer \u00bb pour sauvegarder cette cl\u00e9 de r\u00e9partition dans le module Cl\u00e9s, o\u00f9 elle sera accessible depuis la gestion de la communaut\u00e9.", "title": "Enregistrer la cl\u00e9 dans le module", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/fr/desktop/step-52.png", "viewport": {"height": 900, "width": 1440}}], "index": 17, "screenshot": "../assets/algorithm-generate/fr/desktop/step-52.png", "subtitle": "Sauvegarde", "text": "Une fen\u00eatre de confirmation s\u0027affiche. Cliquez sur le bouton de validation pour enregistrer d\u00e9finitivement cette cl\u00e9 de r\u00e9partition dans le module Cl\u00e9s.", "title": "Confirmer l\u0027enregistrement", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 243, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 243, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"}}, "screenshot": "../assets/algorithm-generate/fr/desktop/step-56.png", "viewport": {"height": 900, "width": 1440}}], "index": 18, "screenshot": "../assets/algorithm-generate/fr/desktop/step-56.png", "subtitle": "Navigation", "text": "Dans la section \u00ab Gestion \u00bb de la barre lat\u00e9rale, cliquez sur \u00ab Cl\u00e9s \u00bb pour afficher les cl\u00e9s de r\u00e9partition enregistr\u00e9es pour la communaut\u00e9 active.", "title": "Ouvrir les cl\u00e9s", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/fr/desktop/step-62.png", "viewport": {"height": 900, "width": 1440}}], "index": 19, "screenshot": "../assets/algorithm-generate/fr/desktop/step-62.png", "subtitle": "R\u00e9sultat final", "text": "La cl\u00e9 enregistr\u00e9e depuis le module OLAGSA appara\u00eet maintenant dans la liste des cl\u00e9s de r\u00e9partition de la communaut\u00e9. Elle est disponible pour les membres autoris\u00e9s.", "title": "Cl\u00e9 visible dans le module Cl\u00e9s", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 284, "x": 8, "y": 410}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 284, "x": 8, "y": 410}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"}}, "screenshot": "../assets/algorithm-generate/fr/mobile/step-22.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/algorithm-generate/fr/mobile/step-22.png", "subtitle": "Navigation", "text": "Touchez l\u0027ic\u00f4ne du menu pour ouvrir le tiroir de navigation, puis dans la section \u00ab Communaut\u00e9 \u00bb touchez \u00ab Services annexes \u00bb.", "title": "Ouvrir les services annexes", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/fr/mobile/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/algorithm-generate/fr/mobile/step-25.png", "subtitle": "Services annexes", "text": "La carte \u00ab G\u00e9n\u00e9ration de cl\u00e9s de r\u00e9partition \u00bb est visible avec le badge \u00ab Activ\u00e9 \u00bb. Cliquez dessus pour ouvrir le module de g\u00e9n\u00e9ration.", "title": "Module de g\u00e9n\u00e9ration disponible", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 171, "width": 358, "x": 16, "y": 318}, "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 171, "width": 358, "x": 16, "y": 318}, "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"}}, "screenshot": "../assets/algorithm-generate/fr/mobile/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/algorithm-generate/fr/mobile/step-26.png", "subtitle": "Navigation", "text": "Cliquez sur la carte pour ouvrir le module de g\u00e9n\u00e9ration de cl\u00e9s de r\u00e9partition OLAGSA.", "title": "Ouvrir le module de g\u00e9n\u00e9ration", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/fr/mobile/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/algorithm-generate/fr/mobile/step-28.png", "subtitle": "Module OLAGSA", "text": "La page de g\u00e9n\u00e9ration de cl\u00e9s de r\u00e9partition s\u0027affiche avec le formulaire de configuration. S\u00e9lectionnez l\u0027algorithme, renseignez les param\u00e8tres et importez votre fichier de donn\u00e9es pour lancer une nouvelle g\u00e9n\u00e9ration.", "title": "Page de g\u00e9n\u00e9ration de cl\u00e9s", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 413}, "selector": "[data-testid=\"algorithm-hub__select--algorithm\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 413}, "selector": "[data-testid=\"algorithm-hub__select--algorithm\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/fr/mobile/step-29.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/algorithm-generate/fr/mobile/step-29.png", "subtitle": "Configuration", "text": "Cliquez sur le menu d\u00e9roulant \u00ab Algorithme \u00bb et s\u00e9lectionnez \u00ab OLAGSA \u00bb. Le formulaire de param\u00e8tres propres \u00e0 cet algorithme g\u00e9n\u00e9tique s\u0027affiche alors.", "title": "S\u00e9lectionner l\u0027algorithme OLAGSA", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 31, "y": 802}, "selector": "[data-testid=\"algorithm-hub__input--injection-name\"]"}, "value": "Production"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 31, "y": 802}, "selector": "[data-testid=\"algorithm-hub__input--injection-name\"]"}, "value": "Production"}, "screenshot": "../assets/algorithm-generate/fr/mobile/step-31.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/algorithm-generate/fr/mobile/step-31.png", "subtitle": "Configuration", "text": "Saisissez un nom pour cette g\u00e9n\u00e9ration (identifiant interne) et le nom de l\u0027injection correspondante \u2014 ici \u00ab Production \u00bb pour cibler les donn\u00e9es de production.", "title": "Nommer la g\u00e9n\u00e9ration et l\u0027injection", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 31, "y": 400.796875}, "selector": "[data-testid=\"algo-form__input--iterations\"] input"}, "value": "3"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 31, "y": 400.796875}, "selector": "[data-testid=\"algo-form__input--iterations\"] input"}, "value": "3"}, "screenshot": "../assets/algorithm-generate/fr/mobile/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/algorithm-generate/fr/mobile/step-32.png", "subtitle": "Param\u00e8tres principaux", "text": "Saisissez \u00ab 3 \u00bb dans le champ \u00ab It\u00e9rations \u00bb. Ce param\u00e8tre d\u00e9finit le nombre de solutions ind\u00e9pendantes calcul\u00e9es par l\u0027algorithme g\u00e9n\u00e9tique OLAGSA.", "title": "D\u00e9finir le nombre d\u0027it\u00e9rations", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 135.296875, "x": 37, "y": 484.296875}, "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 135.296875, "x": 37, "y": 484.296875}, "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"}}, "screenshot": "../assets/algorithm-generate/fr/mobile/step-33.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/algorithm-generate/fr/mobile/step-33.png", "subtitle": "Param\u00e8tres OLAGSA", "text": "Cliquez sur \u00ab Param\u00e8tres avanc\u00e9s \u00bb pour afficher les hyperparam\u00e8tres de l\u0027algorithme g\u00e9n\u00e9tique : taille de population, taux de croisement, taux de mutation, etc.", "title": "Ouvrir les param\u00e8tres avanc\u00e9s", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/fr/mobile/step-35.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/algorithm-generate/fr/mobile/step-35.png", "subtitle": "Param\u00e8tres avanc\u00e9s", "text": "Les param\u00e8tres avanc\u00e9s d\u0027OLAGSA s\u0027affichent : g\u00e9n\u00e9rations, taille de population, taux de croisement inter-esp\u00e8ces et intra-esp\u00e8ces, taux de mutation, nombre d\u0027esp\u00e8ces attendues et nombre maximum de g\u00e9n\u00e9rations sans am\u00e9lioration. Les valeurs par d\u00e9faut conviennent pour la plupart des usages.", "title": "Hyperparam\u00e8tres de l\u0027algorithme g\u00e9n\u00e9tique", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 104.796875, "width": 316, "x": 37, "y": 197}, "selector": "[data-testid=\"algorithm-hub__dropzone\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 104.796875, "width": 316, "x": 37, "y": 197}, "selector": "[data-testid=\"algorithm-hub__dropzone\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/fr/mobile/step-36.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/algorithm-generate/fr/mobile/step-36.png", "subtitle": "Donn\u00e9es d\u0027entr\u00e9e", "text": "Glissez votre fichier CSV dans la zone d\u0027import ou cliquez dessus pour s\u00e9lectionner le fichier de donn\u00e9es \u00e0 utiliser pour la g\u00e9n\u00e9ration.", "title": "Importer le fichier de donn\u00e9es", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 511.5}, "selector": "[data-testid=\"algorithm-hub__btn--submit\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 511.5}, "selector": "[data-testid=\"algorithm-hub__btn--submit\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/fr/mobile/step-37.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/algorithm-generate/fr/mobile/step-37.png", "subtitle": "Ex\u00e9cution", "text": "Cliquez sur \u00ab Lancer la g\u00e9n\u00e9ration \u00bb pour soumettre la t\u00e2che au moteur OLAGSA. La g\u00e9n\u00e9ration appara\u00eet imm\u00e9diatement dans la liste avec le statut \u00ab En attente \u00bb.", "title": "Lancer la g\u00e9n\u00e9ration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 76, "width": 358, "x": 16, "y": 752.296875}, "selector": "[data-testid^=\"generation-row--\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 76, "width": 358, "x": 16, "y": 752.296875}, "selector": "[data-testid^=\"generation-row--\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/fr/mobile/step-39.png", "viewport": {"height": 900, "width": 1440}}], "index": 12, "screenshot": "../assets/algorithm-generate/fr/mobile/step-39.png", "subtitle": "Suivi du statut", "text": "La g\u00e9n\u00e9ration \u00ab Test Run 1 \u00bb appara\u00eet dans la liste. Un point orange clignotant indique qu\u0027elle est en attente de traitement ; il devient vert d\u00e8s que le moteur OLAGSA a termin\u00e9.", "title": "G\u00e9n\u00e9ration soumise", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 12, "width": 12, "x": 65, "y": 784.296875}, "selector": ".timeline-dot--success"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 12, "width": 12, "x": 65, "y": 784.296875}, "selector": ".timeline-dot--success"}, "value": null}, "screenshot": "../assets/algorithm-generate/fr/mobile/step-43.png", "viewport": {"height": 900, "width": 1440}}], "index": 13, "screenshot": "../assets/algorithm-generate/fr/mobile/step-43.png", "subtitle": "Suivi du statut", "text": "Le point passe au vert : la g\u00e9n\u00e9ration est termin\u00e9e. Les cl\u00e9s de r\u00e9partition ont \u00e9t\u00e9 calcul\u00e9es et sont pr\u00eates \u00e0 \u00eatre consult\u00e9es en d\u00e9roulant la ligne.", "title": "G\u00e9n\u00e9ration termin\u00e9e avec succ\u00e8s", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 64, "width": 324, "x": 33, "y": 781.296875}, "selector": "[data-testid^=\"key-row--\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 64, "width": 324, "x": 33, "y": 781.296875}, "selector": "[data-testid^=\"key-row--\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/fr/mobile/step-46.png", "viewport": {"height": 900, "width": 1440}}], "index": 14, "screenshot": "../assets/algorithm-generate/fr/mobile/step-46.png", "subtitle": "R\u00e9sultats", "text": "La liste des cl\u00e9s calcul\u00e9es appara\u00eet sous la g\u00e9n\u00e9ration. Chaque cl\u00e9 correspond \u00e0 une solution OLAGSA optimis\u00e9e. Cliquez sur une cl\u00e9 pour afficher sa r\u00e9partition d\u00e9taill\u00e9e.", "title": "Cl\u00e9s de r\u00e9partition g\u00e9n\u00e9r\u00e9es", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 429, "width": 290, "x": 50, "y": 207.296875}, "selector": "[data-testid^=\"key-row__grid--\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 429, "width": 290, "x": 50, "y": 207.296875}, "selector": "[data-testid^=\"key-row__grid--\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/fr/mobile/step-49.png", "viewport": {"height": 900, "width": 1440}}], "index": 15, "screenshot": "../assets/algorithm-generate/fr/mobile/step-49.png", "subtitle": "Inspection", "text": "Le tableau de r\u00e9partition s\u0027affiche pour cette cl\u00e9, d\u00e9taillant les valeurs calcul\u00e9es par l\u0027algorithme. Le bouton \u00ab Enregistrer \u00bb permet de sauvegarder cette cl\u00e9 dans le module Cl\u00e9s.", "title": "D\u00e9tail de la cl\u00e9 et r\u00e9partition par it\u00e9ration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 32, "x": 268, "y": 144.296875}, "selector": "[data-testid^=\"key-row__btn--save--\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 32, "x": 268, "y": 144.296875}, "selector": "[data-testid^=\"key-row__btn--save--\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/fr/mobile/step-50.png", "viewport": {"height": 900, "width": 1440}}], "index": 16, "screenshot": "../assets/algorithm-generate/fr/mobile/step-50.png", "subtitle": "Sauvegarde", "text": "Cliquez sur \u00ab Enregistrer \u00bb pour sauvegarder cette cl\u00e9 de r\u00e9partition dans le module Cl\u00e9s, o\u00f9 elle sera accessible depuis la gestion de la communaut\u00e9.", "title": "Enregistrer la cl\u00e9 dans le module", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/fr/mobile/step-52.png", "viewport": {"height": 900, "width": 1440}}], "index": 17, "screenshot": "../assets/algorithm-generate/fr/mobile/step-52.png", "subtitle": "Sauvegarde", "text": "Une fen\u00eatre de confirmation s\u0027affiche. Cliquez sur le bouton de validation pour enregistrer d\u00e9finitivement cette cl\u00e9 de r\u00e9partition dans le module Cl\u00e9s.", "title": "Confirmer l\u0027enregistrement", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 284, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 48, "width": 284, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"}}, "screenshot": "../assets/algorithm-generate/fr/mobile/step-59.png", "viewport": {"height": 900, "width": 1440}}], "index": 18, "screenshot": "../assets/algorithm-generate/fr/mobile/step-59.png", "subtitle": "Navigation", "text": "Touchez l\u0027ic\u00f4ne du menu pour ouvrir le tiroir, puis dans la section \u00ab Gestion \u00bb touchez \u00ab Cl\u00e9s \u00bb pour afficher les cl\u00e9s de r\u00e9partition.", "title": "Ouvrir les cl\u00e9s", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/fr/mobile/step-62.png", "viewport": {"height": 900, "width": 1440}}], "index": 19, "screenshot": "../assets/algorithm-generate/fr/mobile/step-62.png", "subtitle": "R\u00e9sultat final", "text": "La cl\u00e9 enregistr\u00e9e depuis le module OLAGSA appara\u00eet maintenant dans la liste des cl\u00e9s de r\u00e9partition de la communaut\u00e9. Elle est disponible pour les membres autoris\u00e9s.", "title": "Cl\u00e9 visible dans le module Cl\u00e9s", "viewport": {"height": 900, "width": 1440}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

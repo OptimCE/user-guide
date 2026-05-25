@@ -1,0 +1,1964 @@
+{
+  "version": "1.0",
+  "slug": "key-create-wizard",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Créer une clé (assistant)",
+    "en": "Create an allocation key (wizard)"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur la flèche du bouton « Ajouter » pour révéler les modes de création — la grille libre ou l'assistant pas-à-pas.",
+        "en": "Click the dropdown arrow next to \"Add\" to reveal the available creation modes — the free grid or the step-by-step wizard."
+      },
+      "subtitle": {
+        "fr": "Création d'une clé",
+        "en": "Creating a key"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1327,
+                      "y": 52,
+                      "width": 42,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"keys-list__btn--add\"] .p-splitbutton-dropdown"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 139.921875,
+                      "y": 239,
+                      "width": 42,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"keys-list__btn--add\"] .p-splitbutton-dropdown"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1327,
+                      "y": 52,
+                      "width": 42,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"keys-list__btn--add\"] .p-splitbutton-dropdown"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 116.03125,
+                      "y": 239,
+                      "width": 42,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"keys-list__btn--add\"] .p-splitbutton-dropdown"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Sélectionnez « Ajouter une clé standard » pour démarrer l'assistant pas-à-pas, qui guide la configuration en quatre étapes.",
+        "en": "Select \"Add standard key\" to start the step-by-step wizard, which walks you through the configuration in four steps."
+      },
+      "subtitle": {
+        "fr": "Création d'une clé",
+        "en": "Creating a key"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1229.078125,
+                      "y": 101,
+                      "width": 202.203125,
+                      "height": 32
+                    },
+                    "selector": ".p-tieredmenu [role=\"menuitem\"], .p-menu [role=\"menuitem\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 42,
+                      "y": 288,
+                      "width": 202.203125,
+                      "height": 32
+                    },
+                    "selector": ".p-tieredmenu [role=\"menuitem\"], .p-menu [role=\"menuitem\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1173.96875,
+                      "y": 101,
+                      "width": 190,
+                      "height": 32
+                    },
+                    "selector": ".p-tieredmenu [role=\"menuitem\"], .p-menu [role=\"menuitem\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 42,
+                      "y": 288,
+                      "width": 190,
+                      "height": 32
+                    },
+                    "selector": ".p-tieredmenu [role=\"menuitem\"], .p-menu [role=\"menuitem\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "fill",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Indiquez combien de consommateurs se partageront l'énergie. Ce nombre conditionne la taille des itérations générées par l'assistant — ici trois.",
+        "en": "Indicate how many consumers will share the energy. This count drives the size of every iteration the wizard creates — three here."
+      },
+      "subtitle": {
+        "fr": "Étape 1/4 — Consommateurs",
+        "en": "Step 1/4 — Consumers"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 137,
+                      "y": 352,
+                      "width": 448,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__input--nb-consumers\"] input"
+                  },
+                  "value": "3"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 39,
+                      "y": 512,
+                      "width": 315,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__input--nb-consumers\"] input"
+                  },
+                  "value": "3"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 137,
+                      "y": 352,
+                      "width": 448,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__input--nb-consumers\"] input"
+                  },
+                  "value": "3"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 39,
+                      "y": 492,
+                      "width": 315,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__input--nb-consumers\"] input"
+                  },
+                  "value": "3"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur « Valider » pour confirmer le nombre de consommateurs et passer à l'étape suivante.",
+        "en": "Click \"Validate\" to confirm the consumer count and proceed to the next step."
+      },
+      "subtitle": {
+        "fr": "Étape 1/4 — Consommateurs",
+        "en": "Step 1/4 — Consumers"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1294.125,
+                      "y": 434,
+                      "width": 99.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step0-validate\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 274.125,
+                      "y": 594,
+                      "width": 99.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step0-validate\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1286.015625,
+                      "y": 434,
+                      "width": 107.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step0-validate\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 266.015625,
+                      "y": 574,
+                      "width": 107.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step0-validate\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "fill-form",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Saisissez un nom pour chacun des trois consommateurs (Cons1, Cons2, Cons3). Ces noms seront repris dans toutes les itérations qui suivent.",
+        "en": "Enter a name for each of the three consumers (Cons1, Cons2, Cons3). These names carry over to every subsequent iteration."
+      },
+      "subtitle": {
+        "fr": "Étape 2/4 — Noms",
+        "en": "Step 2/4 — Names"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-23-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 352,
+                        "width": 401.65625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-creation__input--consumer-name--0\"]",
+                      "value": "Cons1"
+                    },
+                    {
+                      "bbox": {
+                        "x": 554.65625,
+                        "y": 352,
+                        "width": 401.671875,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-creation__input--consumer-name--1\"]",
+                      "value": "Cons2"
+                    },
+                    {
+                      "bbox": {
+                        "x": 972.328125,
+                        "y": 352,
+                        "width": 401.65625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-creation__input--consumer-name--2\"]",
+                      "value": "Cons3"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-23-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 470,
+                        "width": 315,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-creation__input--consumer-name--0\"]",
+                      "value": "Cons1"
+                    },
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 558,
+                        "width": 315,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-creation__input--consumer-name--1\"]",
+                      "value": "Cons2"
+                    },
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 646,
+                        "width": 315,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-creation__input--consumer-name--2\"]",
+                      "value": "Cons3"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-23-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 352,
+                        "width": 401.65625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-creation__input--consumer-name--0\"]",
+                      "value": "Cons1"
+                    },
+                    {
+                      "bbox": {
+                        "x": 554.65625,
+                        "y": 352,
+                        "width": 401.671875,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-creation__input--consumer-name--1\"]",
+                      "value": "Cons2"
+                    },
+                    {
+                      "bbox": {
+                        "x": 972.328125,
+                        "y": 352,
+                        "width": 401.65625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-creation__input--consumer-name--2\"]",
+                      "value": "Cons3"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-23-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 450,
+                        "width": 315,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-creation__input--consumer-name--0\"]",
+                      "value": "Cons1"
+                    },
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 538,
+                        "width": 315,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-creation__input--consumer-name--1\"]",
+                      "value": "Cons2"
+                    },
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 626,
+                        "width": 315,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-creation__input--consumer-name--2\"]",
+                      "value": "Cons3"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur « Valider » pour figer les noms des consommateurs et accéder à la configuration des itérations.",
+        "en": "Click \"Validate\" to lock in the consumer names and move on to configuring the iterations."
+      },
+      "subtitle": {
+        "fr": "Étape 2/4 — Noms",
+        "en": "Step 2/4 — Names"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1294.125,
+                      "y": 434,
+                      "width": 99.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step1-validate\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 274.125,
+                      "y": 728,
+                      "width": 99.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step1-validate\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1286.015625,
+                      "y": 434,
+                      "width": 107.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step1-validate\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 266.015625,
+                      "y": 708,
+                      "width": 107.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step1-validate\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Sélectionnez « Prorata » pour cette première itération : l'énergie sera répartie automatiquement entre les consommateurs selon leur consommation réelle.",
+        "en": "Select \"Prorata\" for this first iteration: the energy will be split automatically between consumers based on their actual consumption."
+      },
+      "subtitle": {
+        "fr": "Étape 3/4 — Itérations",
+        "en": "Step 3/4 — Iterations"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 135,
+                      "y": 357,
+                      "width": 20,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"key-creation__radio--type-prorata--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 475,
+                      "width": 20,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"key-creation__radio--type-prorata--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 135,
+                      "y": 357,
+                      "width": 20,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"key-creation__radio--type-prorata--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 455,
+                      "width": 20,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"key-creation__radio--type-prorata--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "fill",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Saisissez 70 dans le champ de pondération : cette itération recevra 70% de l'énergie disponible. Le total devra atteindre 100% pour valider l'étape.",
+        "en": "Type 70 in the weight field — this iteration will receive 70% of the available energy. The total must reach 100% to validate the step."
+      },
+      "subtitle": {
+        "fr": "Étape 3/4 — Itérations",
+        "en": "Step 3/4 — Iterations"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 762,
+                      "y": 353,
+                      "width": 611,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__input--inj-percentage--0\"] input"
+                  },
+                  "value": "70"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 545,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__input--inj-percentage--0\"] input"
+                  },
+                  "value": "70"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 762,
+                      "y": 353,
+                      "width": 611,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__input--inj-percentage--0\"] input"
+                  },
+                  "value": "70"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 525,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__input--inj-percentage--0\"] input"
+                  },
+                  "value": "70"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "L'assistant détecte que le total reste sous 100% et ajoute automatiquement une deuxième itération à configurer. Il continuera tant que la somme ne sera pas atteinte.",
+        "en": "The wizard sees the total is still below 100% and spawns a second iteration to configure. It will keep adding rows until the sum is reached."
+      },
+      "subtitle": {
+        "fr": "Étape 3/4 — Itérations",
+        "en": "Step 3/4 — Iterations"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1294.125,
+                      "y": 436,
+                      "width": 99.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step2-validate\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 274.125,
+                      "y": 628,
+                      "width": 99.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step2-validate\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1286.015625,
+                      "y": 436,
+                      "width": 107.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step2-validate\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 266.015625,
+                      "y": 608,
+                      "width": 107.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step2-validate\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-10",
+      "index": 10,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Sélectionnez à nouveau « Prorata » pour la deuxième itération : la même logique de répartition automatique s'appliquera.",
+        "en": "Pick \"Prorata\" again for the second iteration so it uses the same automatic split logic."
+      },
+      "subtitle": {
+        "fr": "Étape 3/4 — Itérations",
+        "en": "Step 3/4 — Iterations"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 135,
+                      "y": 559,
+                      "width": 20,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"key-creation__radio--type-prorata--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 751,
+                      "width": 20,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"key-creation__radio--type-prorata--1\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 135,
+                      "y": 559,
+                      "width": 20,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"key-creation__radio--type-prorata--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 731,
+                      "width": 20,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"key-creation__radio--type-prorata--1\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-11",
+      "index": 11,
+      "action": "fill",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Saisissez 30 pour cette deuxième itération : la somme avec les 70% précédents atteint 100% et débloque la finalisation.",
+        "en": "Type 30 for this second iteration — combined with the earlier 70%, the total now reaches 100% and unlocks the finalisation step."
+      },
+      "subtitle": {
+        "fr": "Étape 3/4 — Itérations",
+        "en": "Step 3/4 — Iterations"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 762,
+                      "y": 555,
+                      "width": 611,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__input--inj-percentage--1\"] input"
+                  },
+                  "value": "30"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 802,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__input--inj-percentage--1\"] input"
+                  },
+                  "value": "30"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 762,
+                      "y": 555,
+                      "width": 611,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__input--inj-percentage--1\"] input"
+                  },
+                  "value": "30"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 801,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__input--inj-percentage--1\"] input"
+                  },
+                  "value": "30"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-12",
+      "index": 12,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur « Valider » : la somme atteint 100% et l'assistant ouvre la dernière étape de finalisation.",
+        "en": "Click \"Validate\": the total reaches 100% and the wizard opens the final finalisation step."
+      },
+      "subtitle": {
+        "fr": "Étape 3/4 — Itérations",
+        "en": "Step 3/4 — Iterations"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1294.125,
+                      "y": 638,
+                      "width": 99.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step2-validate\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 274.125,
+                      "y": 762,
+                      "width": 99.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step2-validate\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1286.015625,
+                      "y": 638,
+                      "width": 107.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step2-validate\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 266.015625,
+                      "y": 762,
+                      "width": 107.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step2-validate\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-13",
+      "index": 13,
+      "action": "fill-form",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Donnez un nom et une description à la nouvelle clé de répartition. Ces informations apparaîtront dans la liste des clés et facilitent sa réutilisation.",
+        "en": "Give the new allocation key a name and a description. This metadata appears in the key list and makes the key easier to reuse."
+      },
+      "subtitle": {
+        "fr": "Étape 4/4 — Finalisation",
+        "en": "Step 4/4 — Finalisation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-34-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 352,
+                        "width": 1237,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-creation__input--key-name\"]",
+                      "value": "E2E wizard key"
+                    },
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 440,
+                        "width": 1237,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-creation__textarea--key-description\"]",
+                      "value": "A demo key created via the step-by-step wizard"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-34-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 470,
+                        "width": 315,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-creation__input--key-name\"]",
+                      "value": "E2E wizard key"
+                    },
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 558,
+                        "width": 315,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-creation__textarea--key-description\"]",
+                      "value": "A demo key created via the step-by-step wizard"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-34-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 352,
+                        "width": 1237,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-creation__input--key-name\"]",
+                      "value": "E2E wizard key"
+                    },
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 440,
+                        "width": 1237,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-creation__textarea--key-description\"]",
+                      "value": "A demo key created via the step-by-step wizard"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-34-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 450,
+                        "width": 315,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-creation__input--key-name\"]",
+                      "value": "E2E wizard key"
+                    },
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 538,
+                        "width": 315,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-creation__textarea--key-description\"]",
+                      "value": "A demo key created via the step-by-step wizard"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-14",
+      "index": 14,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Validez l'assistant pour générer la grille complète : une page de revue s'ouvre afin de relire la configuration avant l'enregistrement définitif.",
+        "en": "Submit the wizard to materialise the full grid: a review page opens so you can re-read the configuration before persisting it."
+      },
+      "subtitle": {
+        "fr": "Étape 4/4 — Finalisation",
+        "en": "Step 4/4 — Finalisation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1273.125,
+                      "y": 582,
+                      "width": 100.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step3-submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 253.125,
+                      "y": 700,
+                      "width": 100.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step3-submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1265.015625,
+                      "y": 582,
+                      "width": 108.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step3-submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 245.015625,
+                      "y": 680,
+                      "width": 108.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-creation__btn--step3-submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-15",
+      "index": 15,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "text": {
+        "fr": "Cliquez sur « Créer » pour enregistrer la clé. La grille pré-remplie par l'assistant est envoyée telle quelle au CRM.",
+        "en": "Click \"Create\" to save the key. The grid pre-filled by the wizard is sent to the CRM as-is."
+      },
+      "subtitle": {
+        "fr": "Validation finale",
+        "en": "Final review"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 703.6875,
+                      "y": 815,
+                      "width": 100.609375,
+                      "height": 49
+                    },
+                    "selector": "[data-testid=\"key-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 144.6875,
+                      "y": 763,
+                      "width": 100.609375,
+                      "height": 49
+                    },
+                    "selector": "[data-testid=\"key-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 699.125,
+                      "y": 815,
+                      "width": 109.734375,
+                      "height": 49
+                    },
+                    "selector": "[data-testid=\"key-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 140.125,
+                      "y": 763,
+                      "width": 109.734375,
+                      "height": 49
+                    },
+                    "selector": "[data-testid=\"key-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-16",
+      "index": 16,
+      "action": "custom",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "text": {
+        "fr": "La nouvelle clé « E2E wizard key » apparaît dans la liste des clés de répartition de la communauté, prête à être associée à une opération de partage.",
+        "en": "The new \"E2E wizard key\" shows up in the community's allocation keys list, ready to be associated with a sharing operation."
+      },
+      "subtitle": {
+        "fr": "Confirmation",
+        "en": "Confirmation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
