@@ -447,6 +447,24 @@
         "fr": "algorithm-delete-generation/fr.html",
         "en": "algorithm-delete-generation/en.html"
       }
+    },
+    {
+      "slug": "simulation-run",
+      "title": {
+        "fr": "Simuler une clé de répartition",
+        "en": "Simulate an allocation key"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "simulation-run.md",
+      "group": "simulation",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "simulation-run/fr.html",
+        "en": "simulation-run/en.html"
+      }
     }
   ],
   "groups": [
@@ -624,6 +642,24 @@
       "pages": {
         "fr": "key-generation/fr.html",
         "en": "key-generation/en.html"
+      }
+    },
+    {
+      "slug": "simulation",
+      "title": {
+        "fr": "Simulation",
+        "en": "Simulation"
+      },
+      "description": {
+        "fr": "Tester une clé de répartition enregistrée avec des données réelles de consommation et de production.",
+        "en": "Test a saved allocation key with real consumption and production data."
+      },
+      "guides": [
+        "simulation-run"
+      ],
+      "pages": {
+        "fr": "simulation/fr.html",
+        "en": "simulation/en.html"
       }
     }
   ],
@@ -1021,6 +1057,30 @@
                 "en": "Delete a generation"
               },
               "path": "/algorithm-delete-generation"
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "slug": "simulation",
+          "title": {
+            "fr": "Simulation",
+            "en": "Simulation"
+          },
+          "description": {
+            "fr": "Tester une clé de répartition enregistrée avec des données réelles de consommation et de production.",
+            "en": "Test a saved allocation key with real consumption and production data."
+          },
+          "path": "/simulation",
+          "children": [
+            {
+              "kind": "guide",
+              "slug": "simulation-run",
+              "title": {
+                "fr": "Simuler une clé de répartition",
+                "en": "Simulate an allocation key"
+              },
+              "path": "/simulation-run"
             }
           ]
         }
