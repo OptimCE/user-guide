@@ -1,0 +1,221 @@
+{
+  "version": "1.0",
+  "slug": "notification-view",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Consulter ses notifications",
+    "en": "View your notifications"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 500,
+      "title": {
+        "fr": "Ouvrir les notifications",
+        "en": "Open notifications"
+      },
+      "text": {
+        "fr": "Cliquez sur la cloche dans la barre latérale pour ouvrir le panneau des notifications. La notification d'invitation à rejoindre la communauté y apparaît, avec le nom de la communauté et le moment de réception.",
+        "en": "Click the bell in the sidebar to open the notifications panel. The invitation to join the community appears here, with the community name and when it was received."
+      },
+      "subtitle": {
+        "fr": "Cloche de notification",
+        "en": "Notification bell"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-view/fr/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 173,
+                      "y": 16,
+                      "width": 36,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"notification-bell__trigger\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-view/fr/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 179.140625,
+                      "y": 16,
+                      "width": 36,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"notification-bell__trigger\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-view/en/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 173,
+                      "y": 16,
+                      "width": 36,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"notification-bell__trigger\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-view/en/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 179.140625,
+                      "y": 16,
+                      "width": 36,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"notification-bell__trigger\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "wait-for",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Consulter la page des notifications",
+        "en": "View the notifications page"
+      },
+      "text": {
+        "fr": "La page des notifications regroupe l'ensemble de vos notifications. On y retrouve l'invitation à rejoindre la communauté, avec le nom de la communauté et la date de réception.",
+        "en": "The notifications page gathers all of your notifications. The invitation to join the community appears here, with the community name and the date it was received."
+      },
+      "subtitle": {
+        "fr": "Toutes vos notifications",
+        "en": "All your notifications"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-view/fr/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-view/fr/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-view/en/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-view/en/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

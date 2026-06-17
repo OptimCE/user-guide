@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir la fiche du compteur",
+        "en": "Open the meter detail"
+      },
       "text": {
         "fr": "Cliquez sur la ligne du compteur que vous souhaitez modifier pour ouvrir sa fiche détaillée.",
         "en": "Click the row of the meter you want to edit to open its detail page."
@@ -69,8 +74,8 @@
               {
                 "screenshot": "../assets/meter-update/fr/mobile/step-15.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -117,8 +122,8 @@
               {
                 "screenshot": "../assets/meter-update/en/mobile/step-15.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -145,6 +150,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Fiche initiale",
+        "en": "Initial detail"
+      },
       "text": {
         "fr": "La fiche détaillée affiche les informations actuelles du compteur : EAN, adresse d'installation et caractéristiques techniques.",
         "en": "The detail page shows the meter's current information: EAN, installation address and technical characteristics."
@@ -172,8 +181,8 @@
               {
                 "screenshot": "../assets/meter-update/fr/mobile/step-18.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -198,8 +207,8 @@
               {
                 "screenshot": "../assets/meter-update/en/mobile/step-18.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -215,6 +224,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir le formulaire",
+        "en": "Open the edit form"
+      },
       "text": {
         "fr": "Cliquez sur « Modifier » : un dialogue s'ouvre avec les champs modifiables du compteur (adresse, numéro, EAN et caractéristiques).",
         "en": "Click \"Modify\" to open the dialog containing the meter's editable fields (address, number, EAN and characteristics)."
@@ -253,8 +266,8 @@
               {
                 "screenshot": "../assets/meter-update/fr/mobile/step-19.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -301,8 +314,8 @@
               {
                 "screenshot": "../assets/meter-update/en/mobile/step-19.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -329,6 +342,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Mettre à jour l'adresse",
+        "en": "Update the address"
+      },
       "text": {
         "fr": "Modifiez les champs souhaités — ici l'adresse d'installation et le numéro physique du compteur. L'EAN et les caractéristiques techniques restent inchangés.",
         "en": "Edit the fields you want to change — here the installation address and the meter's physical number. The EAN and technical characteristics stay the same."
@@ -420,8 +437,8 @@
               {
                 "screenshot": "../assets/meter-update/fr/mobile/step-21-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -574,8 +591,8 @@
               {
                 "screenshot": "../assets/meter-update/en/mobile/step-21-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -655,6 +672,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Enregistrer",
+        "en": "Save"
+      },
       "text": {
         "fr": "Cliquez sur « Valider » pour envoyer les modifications au CRM. Le dialogue se ferme une fois la mise à jour confirmée.",
         "en": "Click \"Save\" to send the changes to the CRM. The dialog closes once the update is acknowledged."
@@ -693,8 +714,8 @@
               {
                 "screenshot": "../assets/meter-update/fr/mobile/step-22.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -741,8 +762,8 @@
               {
                 "screenshot": "../assets/meter-update/en/mobile/step-22.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -769,6 +790,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Compteur mis à jour",
+        "en": "Meter updated"
+      },
       "text": {
         "fr": "De retour sur la fiche du compteur, la nouvelle adresse et le nouveau numéro sont visibles immédiatement — la modification est persistée côté serveur.",
         "en": "Back on the meter detail page, the new address and meter number appear immediately — the change has been persisted server-side."
@@ -796,8 +821,8 @@
               {
                 "screenshot": "../assets/meter-update/fr/mobile/step-27.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -822,8 +847,8 @@
               {
                 "screenshot": "../assets/meter-update/en/mobile/step-27.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir la liste des membres",
+        "en": "Open the members list"
+      },
       "text": {
         "fr": "Depuis le menu de gestion, ouvrez la liste des membres pour retrouver la personne dont vous souhaitez mettre à jour les informations.",
         "en": "From the management menu, open the members list to locate the person whose information you want to update."
@@ -58,8 +63,8 @@
               {
                 "screenshot": "../assets/member-update/fr/mobile/step-14.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -84,8 +89,8 @@
               {
                 "screenshot": "../assets/member-update/en/mobile/step-14.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -101,6 +106,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Sélectionner le membre",
+        "en": "Select the member"
+      },
       "text": {
         "fr": "Cliquez sur la ligne correspondant au membre à mettre à jour — ici « Member One » — pour ouvrir sa fiche détaillée.",
         "en": "Click the row of the member you want to update — here \"Member One\" — to open their detail page."
@@ -139,8 +148,8 @@
               {
                 "screenshot": "../assets/member-update/fr/mobile/step-16.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -187,8 +196,8 @@
               {
                 "screenshot": "../assets/member-update/en/mobile/step-16.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -215,6 +224,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir le formulaire de modification",
+        "en": "Open the modification form"
+      },
       "text": {
         "fr": "Cliquez sur « Modifier » dans l'en-tête de la fiche : la fenêtre de mise à jour s'ouvre, pré-remplie avec les informations actuelles du membre.",
         "en": "Click \"Modify\" in the member header — the update dialog opens, pre-populated with the member's current information."
@@ -253,8 +266,8 @@
               {
                 "screenshot": "../assets/member-update/fr/mobile/step-20.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -301,8 +314,8 @@
               {
                 "screenshot": "../assets/member-update/en/mobile/step-20.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -329,6 +342,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Saisir les nouvelles informations",
+        "en": "Enter the new information"
+      },
       "text": {
         "fr": "Mettez à jour le prénom et l'adresse e-mail dans les champs correspondants. Les autres informations restent inchangées et sont conservées telles quelles.",
         "en": "Update the first name and email address in the matching fields. The other fields stay as they were and are preserved unchanged."
@@ -368,8 +385,8 @@
               {
                 "screenshot": "../assets/member-update/fr/mobile/step-25.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -418,8 +435,8 @@
               {
                 "screenshot": "../assets/member-update/en/mobile/step-25.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -443,10 +460,14 @@
     {
       "id": "step-5",
       "index": 5,
-      "action": "custom",
-      "interactive": false,
+      "action": "click",
+      "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Enregistrer les modifications",
+        "en": "Save the changes"
+      },
       "text": {
         "fr": "Parcourez les étapes adresses et coordonnées bancaires sans rien changer, puis cliquez sur « Valider » pour envoyer les nouvelles informations au CRM.",
         "en": "Step through the address and banking panels without changing anything, then click \"Save\" to send the updated information to the CRM."
@@ -465,7 +486,18 @@
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 982.875,
+                      "y": 551.5,
+                      "width": 100.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
               }
             ]
           },
@@ -474,10 +506,21 @@
               {
                 "screenshot": "../assets/member-update/fr/mobile/step-30.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 457.875,
+                      "y": 523.5,
+                      "width": 100.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
               }
             ]
           }
@@ -491,7 +534,18 @@
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 956.53125,
+                      "y": 551.5,
+                      "width": 108.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
               }
             ]
           },
@@ -500,10 +554,21 @@
               {
                 "screenshot": "../assets/member-update/en/mobile/step-30.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 431.53125,
+                      "y": 523.5,
+                      "width": 108.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
               }
             ]
           }
@@ -517,6 +582,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Membre mis à jour",
+        "en": "Member updated"
+      },
       "text": {
         "fr": "De retour sur la fiche du membre, le nouveau prénom et la nouvelle adresse e-mail sont visibles immédiatement — la modification a bien été persistée côté serveur.",
         "en": "Back on the member's detail page, the new first name and email address show up right away — the change has been persisted server-side."
@@ -544,8 +613,8 @@
               {
                 "screenshot": "../assets/member-update/fr/mobile/step-34.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -570,8 +639,8 @@
               {
                 "screenshot": "../assets/member-update/en/mobile/step-34.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

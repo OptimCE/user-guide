@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Repérer l'icône ⓘ",
+        "en": "Spot the ⓘ icon"
+      },
       "text": {
         "fr": "Dans l'application, certains champs ou colonnes affichent une icône ⓘ. C'est le signe qu'une explication supplémentaire est disponible — il vous suffit de cliquer dessus pour la lire.",
         "en": "Throughout the app, some fields or columns display an ⓘ icon. This signals that extra information is available — just click it to read the explanation."
@@ -58,8 +63,8 @@
               {
                 "screenshot": "../assets/key-helper-tour/fr/mobile/step-36.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -84,8 +89,8 @@
               {
                 "screenshot": "../assets/key-helper-tour/en/mobile/step-36.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -97,10 +102,14 @@
     {
       "id": "step-2",
       "index": 2,
-      "action": "custom",
+      "action": "click",
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Cliquer sur ⓘ",
+        "en": "Click ⓘ for details"
+      },
       "text": {
         "fr": "Cliquez sur l'icône ⓘ pour obtenir plus d'informations sur ce champ. Une infobulle s'affiche avec le titre et la description complète.",
         "en": "Click the ⓘ icon to get more information about that field. A popover appears with the title and full description."
@@ -139,8 +148,8 @@
               {
                 "screenshot": "../assets/key-helper-tour/fr/mobile/step-37.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -187,8 +196,8 @@
               {
                 "screenshot": "../assets/key-helper-tour/en/mobile/step-37.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -215,6 +224,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 1000,
+      "title": {
+        "fr": "L'infobulle s'affiche",
+        "en": "Popover appears"
+      },
       "text": {
         "fr": "L'infobulle donne le nom du champ et son explication détaillée. Vous pouvez ainsi comprendre la signification de chaque valeur sans quitter la page. Cette icône ⓘ est disponible partout où elle apparaît dans l'application.",
         "en": "The popover shows the field name and its full explanation, letting you understand what each value means without leaving the page. The ⓘ icon works the same way wherever you see it in the app."
@@ -242,8 +255,8 @@
               {
                 "screenshot": "../assets/key-helper-tour/fr/mobile/step-39.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -268,8 +281,8 @@
               {
                 "screenshot": "../assets/key-helper-tour/en/mobile/step-39.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

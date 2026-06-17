@@ -1,10 +1,19 @@
 {
   "step": 52,
   "screenshot": "step-52.png",
-  "action": "assert",
+  "action": "click",
   "viewport": {
     "width": 1440,
     "height": 900
   },
-  "target": null
+  "target": {
+    "kind": "single",
+    "selector": "[data-testid^=\"key-row__btn--save--\"] button",
+    "bbox": {
+      "x": 1288,
+      "y": 851.5,
+      "width": 32,
+      "height": 35
+    }
+  }
 }

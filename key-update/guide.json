@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir la liste des clés",
+        "en": "Open the keys list"
+      },
       "text": {
         "fr": "Depuis le menu Gestion, ouvrez la liste des clés de répartition de la communauté pour retrouver celle à modifier.",
         "en": "From the Management menu, open the community's allocation keys list to find the one you want to modify."
@@ -58,8 +63,8 @@
               {
                 "screenshot": "../assets/key-update/fr/mobile/step-12.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -84,8 +89,8 @@
               {
                 "screenshot": "../assets/key-update/en/mobile/step-12.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -101,6 +106,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Sélectionner la clé",
+        "en": "Select the key"
+      },
       "text": {
         "fr": "Cliquez sur la ligne de la clé que vous souhaitez modifier pour ouvrir sa fiche détaillée.",
         "en": "Click the row of the key you want to modify to open its detail page."
@@ -139,8 +148,8 @@
               {
                 "screenshot": "../assets/key-update/fr/mobile/step-17.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -187,8 +196,8 @@
               {
                 "screenshot": "../assets/key-update/en/mobile/step-17.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -215,6 +224,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Passer en édition",
+        "en": "Switch to edit mode"
+      },
       "text": {
         "fr": "Cliquez sur « Modifier » : la clé s'ouvre dans le même éditeur que celui utilisé pour la création, mais pré-rempli avec les valeurs existantes.",
         "en": "Click \"Update\" — the key opens in the same editor used for creation, pre-filled with the existing values."
@@ -253,8 +266,8 @@
               {
                 "screenshot": "../assets/key-update/fr/mobile/step-20.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -301,8 +314,8 @@
               {
                 "screenshot": "../assets/key-update/en/mobile/step-20.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -329,6 +342,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Renommer la clé",
+        "en": "Rename the key"
+      },
       "text": {
         "fr": "Modifiez le nom et la description pour refléter le nouvel usage de la clé. Ces champs apparaissent dans la liste et facilitent sa recherche.",
         "en": "Edit the name and description to reflect the key's new purpose. These fields appear in the list and make it easier to find."
@@ -380,8 +397,8 @@
               {
                 "screenshot": "../assets/key-update/fr/mobile/step-22-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -454,8 +471,8 @@
               {
                 "screenshot": "../assets/key-update/en/mobile/step-22-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -495,6 +512,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Rééquilibrer les consommateurs",
+        "en": "Rebalance the consumers"
+      },
       "text": {
         "fr": "Double-cliquez sur les pourcentages des consommateurs pour les modifier — ici on passe de 50/50 à 60/40. La somme par itération doit toujours faire 100%.",
         "en": "Double-click the consumer percentages to edit them — here we move from 50/50 to 60/40. The per-iteration total must still equal 100%."
@@ -534,8 +555,8 @@
               {
                 "screenshot": "../assets/key-update/fr/mobile/step-23.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -584,8 +605,8 @@
               {
                 "screenshot": "../assets/key-update/en/mobile/step-23.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -613,6 +634,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Vérifier avant d'enregistrer",
+        "en": "Review before saving"
+      },
       "text": {
         "fr": "Relisez la grille complète : nom, description et nouveaux pourcentages doivent correspondre à l'intention avant l'enregistrement.",
         "en": "Scan the whole grid: name, description and the new percentages must match what you intended before you save."
@@ -640,8 +665,8 @@
               {
                 "screenshot": "../assets/key-update/fr/mobile/step-24.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -666,8 +691,8 @@
               {
                 "screenshot": "../assets/key-update/en/mobile/step-24.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -683,6 +708,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Enregistrer les modifications",
+        "en": "Save the changes"
+      },
       "text": {
         "fr": "Cliquez sur le bouton d'enregistrement : l'application valide les pourcentages et renvoie vers la liste des clés.",
         "en": "Click the save button — the app validates the percentages and redirects you back to the keys list."
@@ -721,8 +750,8 @@
               {
                 "screenshot": "../assets/key-update/fr/mobile/step-25.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -769,8 +798,8 @@
               {
                 "screenshot": "../assets/key-update/en/mobile/step-25.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -797,6 +826,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Modifications enregistrées",
+        "en": "Changes persisted"
+      },
       "text": {
         "fr": "La fiche détaillée affiche désormais la nouvelle description : la clé a bien été mise à jour côté serveur.",
         "en": "The detail page now shows the new description — the key has been successfully updated on the server."
@@ -824,8 +857,8 @@
               {
                 "screenshot": "../assets/key-update/fr/mobile/step-29.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -850,8 +883,8 @@
               {
                 "screenshot": "../assets/key-update/en/mobile/step-29.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Liste des compteurs",
+        "en": "Meters list"
+      },
       "text": {
         "fr": "Ouvrez la liste des compteurs de la communauté active. Repérez le compteur dont vous souhaitez mettre à jour la configuration courante.",
         "en": "Open the active community's meter list and locate the meter whose current configuration you want to update."
@@ -58,8 +63,8 @@
               {
                 "screenshot": "../assets/meter-data-update/fr/mobile/step-15.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -84,8 +89,8 @@
               {
                 "screenshot": "../assets/meter-data-update/en/mobile/step-15.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -101,6 +106,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir la fiche du compteur",
+        "en": "Open the meter detail"
+      },
       "text": {
         "fr": "Cliquez sur la ligne du compteur (EAN 123456789012345678) pour ouvrir sa fiche détaillée et accéder à ses données actuelles.",
         "en": "Click the meter row (EAN 123456789012345678) to open its detail page and reach the current meter-data view."
@@ -139,8 +148,8 @@
               {
                 "screenshot": "../assets/meter-data-update/fr/mobile/step-17.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -187,8 +196,8 @@
               {
                 "screenshot": "../assets/meter-data-update/en/mobile/step-17.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -215,6 +224,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Compteur actif",
+        "en": "Active meter"
+      },
       "text": {
         "fr": "La fiche affiche les caractéristiques courantes. Le bouton « Mettre à jour les données » n'est proposé que pour un compteur actif — c'est notre point d'entrée.",
         "en": "The detail page shows the current configuration. The \"Update data\" action is only exposed when the meter is active — that is our entry point."
@@ -242,8 +255,8 @@
               {
                 "screenshot": "../assets/meter-data-update/fr/mobile/step-19.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -268,8 +281,8 @@
               {
                 "screenshot": "../assets/meter-data-update/en/mobile/step-19.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -285,6 +298,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir le formulaire",
+        "en": "Open the form"
+      },
       "text": {
         "fr": "Cliquez sur « Mettre à jour les données » : un dialogue s'ouvre, pré-rempli avec la configuration courante du compteur — description, puissances, tarif, type de client et propriétaire.",
         "en": "Click \"Update data\" — a dialog opens, pre-populated with the meter's current configuration: description, powers, rate, client type and owner."
@@ -323,8 +340,8 @@
               {
                 "screenshot": "../assets/meter-data-update/fr/mobile/step-20.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -371,8 +388,8 @@
               {
                 "screenshot": "../assets/meter-data-update/en/mobile/step-20.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -399,6 +416,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ajuster les valeurs énergétiques",
+        "en": "Adjust the energy values"
+      },
       "text": {
         "fr": "Modifiez la description, la puissance de prélèvement et l'ampérage. Ces nouveaux chiffres alimenteront immédiatement les calculs de répartition des opérations de partage.",
         "en": "Edit the description, the sampling power and the amperage. These updated figures feed straight into the sharing-operation allocation calculations."
@@ -460,8 +481,8 @@
               {
                 "screenshot": "../assets/meter-data-update/fr/mobile/step-23-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -554,8 +575,8 @@
               {
                 "screenshot": "../assets/meter-data-update/en/mobile/step-23-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -601,10 +622,14 @@
     {
       "id": "step-6",
       "index": 6,
-      "action": "custom",
+      "action": "select-option",
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Choisir le GRD",
+        "en": "Pick the DSO"
+      },
       "text": {
         "fr": "Sélectionnez le gestionnaire de réseau de distribution auquel le compteur est raccordé. Ce champ est obligatoire pour valider la nouvelle configuration.",
         "en": "Select the distribution grid operator the meter is connected to. This field is mandatory to validate the new configuration."
@@ -643,8 +668,8 @@
               {
                 "screenshot": "../assets/meter-data-update/fr/mobile/step-24.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -691,8 +716,8 @@
               {
                 "screenshot": "../assets/meter-data-update/en/mobile/step-24.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -719,6 +744,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Changer le profil de consommation",
+        "en": "Change the consumption profile"
+      },
       "text": {
         "fr": "Basculez le tarif sur « bi-horaire » et le type de client sur « professionnel » pour refléter le nouveau profil de consommation du compteur.",
         "en": "Switch the rate to \"bi-hourly\" and the client type to \"professional\" to mirror the meter's new consumption profile."
@@ -757,8 +786,8 @@
               {
                 "screenshot": "../assets/meter-data-update/fr/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -805,8 +834,8 @@
               {
                 "screenshot": "../assets/meter-data-update/en/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -829,10 +858,14 @@
     {
       "id": "step-8",
       "index": 8,
-      "action": "custom",
+      "action": "pick-date",
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Fixer la date d'effet",
+        "en": "Set the effective date"
+      },
       "text": {
         "fr": "Choisissez la date à partir de laquelle la nouvelle configuration s'applique. Cette date est obligatoire pour valider la modification.",
         "en": "Pick the date from which the new configuration takes effect. This field is required to validate the change."
@@ -852,7 +885,7 @@
                   "height": 900
                 },
                 "cursor": {
-                  "kind": "type",
+                  "kind": "click",
                   "target": {
                     "bbox": {
                       "x": 885,
@@ -861,8 +894,7 @@
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-data-update__datepicker--start-date\"]"
-                  },
-                  "value": "aujourd'hui"
+                  }
                 }
               }
             ]
@@ -872,11 +904,11 @@
               {
                 "screenshot": "../assets/meter-data-update/fr/mobile/step-27.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
-                  "kind": "type",
+                  "kind": "click",
                   "target": {
                     "bbox": {
                       "x": 37,
@@ -885,8 +917,7 @@
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-data-update__datepicker--start-date\"]"
-                  },
-                  "value": "aujourd'hui"
+                  }
                 }
               }
             ]
@@ -902,7 +933,7 @@
                   "height": 900
                 },
                 "cursor": {
-                  "kind": "type",
+                  "kind": "click",
                   "target": {
                     "bbox": {
                       "x": 885,
@@ -911,8 +942,7 @@
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-data-update__datepicker--start-date\"]"
-                  },
-                  "value": "aujourd'hui"
+                  }
                 }
               }
             ]
@@ -922,11 +952,11 @@
               {
                 "screenshot": "../assets/meter-data-update/en/mobile/step-27.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
-                  "kind": "type",
+                  "kind": "click",
                   "target": {
                     "bbox": {
                       "x": 37,
@@ -935,8 +965,7 @@
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-data-update__datepicker--start-date\"]"
-                  },
-                  "value": "aujourd'hui"
+                  }
                 }
               }
             ]
@@ -951,6 +980,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Enregistrer la mise à jour",
+        "en": "Save the update"
+      },
       "text": {
         "fr": "Cliquez sur « Valider » : le formulaire est envoyé au CRM, qui remplace la configuration courante du compteur. Le dialogue se ferme dès la confirmation.",
         "en": "Click \"Validate\" — the form is sent to the CRM, which replaces the meter's current configuration. The dialog closes once the change is acknowledged."
@@ -989,8 +1022,8 @@
               {
                 "screenshot": "../assets/meter-data-update/fr/mobile/step-28.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1037,8 +1070,8 @@
               {
                 "screenshot": "../assets/meter-data-update/en/mobile/step-28.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1065,6 +1098,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Mise à jour confirmée",
+        "en": "Update confirmed"
+      },
       "text": {
         "fr": "De retour sur la fiche, la nouvelle description, l'ampérage de 63 A et le tarif bi-horaire apparaissent dans les cartes de données — les modifications sont bien persistées côté serveur.",
         "en": "Back on the detail page, the new description, the 63 A amperage and the bi-hourly rate appear in the data cards — the changes have been persisted server-side."
@@ -1092,8 +1129,8 @@
               {
                 "screenshot": "../assets/meter-data-update/fr/mobile/step-32.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -1118,8 +1155,8 @@
               {
                 "screenshot": "../assets/meter-data-update/en/mobile/step-32.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

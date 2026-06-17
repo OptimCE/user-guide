@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir le profil",
+        "en": "Open the profile"
+      },
       "text": {
         "fr": "Dans la barre latérale, cliquez sur « Profil » pour ouvrir la page de votre compte personnel.",
         "en": "In the sidebar, click \"Profile\" to open your personal account page."
@@ -69,8 +74,8 @@
               {
                 "screenshot": "../assets/profile-update/fr/mobile/step-12.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -117,8 +122,8 @@
               {
                 "screenshot": "../assets/profile-update/en/mobile/step-12.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -145,6 +150,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Profil par défaut",
+        "en": "Default profile"
+      },
       "text": {
         "fr": "Le profil affiche les données initiales : Demo User, demo@example.com et l'adresse à Bruxelles, telles qu'elles ont été semées par la base de données.",
         "en": "The profile shows the seeded defaults: Demo User, demo@example.com and the Brussels address as injected by the database fixtures."
@@ -172,8 +181,8 @@
               {
                 "screenshot": "../assets/profile-update/fr/mobile/step-17.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -198,8 +207,8 @@
               {
                 "screenshot": "../assets/profile-update/en/mobile/step-17.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -215,6 +224,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir le formulaire",
+        "en": "Open the form"
+      },
       "text": {
         "fr": "Cliquez sur « Modifier le profil » : un dialogue s'ouvre avec les champs prénom, nom et autres informations modifiables.",
         "en": "Click \"Update profile\" to open the dialog containing the editable first name, last name and related fields."
@@ -253,8 +266,8 @@
               {
                 "screenshot": "../assets/profile-update/fr/mobile/step-20.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -301,8 +314,8 @@
               {
                 "screenshot": "../assets/profile-update/en/mobile/step-20.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -329,6 +342,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Renseigner le nouveau nom",
+        "en": "Enter the new name"
+      },
       "text": {
         "fr": "Saisissez le nouveau prénom puis le nouveau nom dans les champs correspondants. La validation s'active dès que les deux champs sont remplis.",
         "en": "Type the new first name and last name in their respective fields. The save button enables once both fields are populated."
@@ -368,8 +385,8 @@
               {
                 "screenshot": "../assets/profile-update/fr/mobile/step-23.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -418,8 +435,8 @@
               {
                 "screenshot": "../assets/profile-update/en/mobile/step-23.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -447,6 +464,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Enregistrer les modifications",
+        "en": "Save the changes"
+      },
       "text": {
         "fr": "Cliquez sur « Valider » pour envoyer les nouvelles informations au CRM. Le dialogue se ferme une fois la mise à jour confirmée.",
         "en": "Click \"Save\" to send the updated information to the CRM. The dialog closes once the update is acknowledged."
@@ -485,8 +506,8 @@
               {
                 "screenshot": "../assets/profile-update/fr/mobile/step-24.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -533,8 +554,8 @@
               {
                 "screenshot": "../assets/profile-update/en/mobile/step-24.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -561,6 +582,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Profil mis à jour",
+        "en": "Profile updated"
+      },
       "text": {
         "fr": "De retour sur la page de profil, le nouveau prénom et le nouveau nom sont visibles immédiatement — la modification est persistée côté serveur.",
         "en": "Back on the profile page, the new first and last name appear immediately — the change has been persisted server-side."
@@ -588,8 +613,8 @@
               {
                 "screenshot": "../assets/profile-update/fr/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -614,8 +639,8 @@
               {
                 "screenshot": "../assets/profile-update/en/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

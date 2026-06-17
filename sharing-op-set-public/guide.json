@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 500,
+      "title": {
+        "fr": "Ouvrir le groupe Membres",
+        "en": "Open the Members group"
+      },
       "text": {
         "fr": "Dans la section « Gestion » de la barre latérale, cliquez sur « Gestion des membres » pour révéler le sous-menu contenant notamment les opérations de partage.",
         "en": "In the sidebar's \"Management\" section, click the Members group to reveal the submenu that includes sharing operations."
@@ -69,8 +74,8 @@
               {
                 "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-21.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -117,8 +122,8 @@
               {
                 "screenshot": "../assets/sharing-op-set-public/en/mobile/step-21.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -145,6 +150,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Accéder aux opérations de partage",
+        "en": "Access sharing operations"
+      },
       "text": {
         "fr": "Dans le sous-menu, cliquez sur « Opérations de partage » pour accéder à la liste des opérations de partage d'énergie de votre communauté.",
         "en": "In the submenu, click \"Sharing operations\" to access the list of energy sharing operations for your community."
@@ -183,8 +192,8 @@
               {
                 "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-22.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -231,8 +240,8 @@
               {
                 "screenshot": "../assets/sharing-op-set-public/en/mobile/step-22.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -259,6 +268,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ajouter une opération",
+        "en": "Add an operation"
+      },
       "text": {
         "fr": "Cliquez sur « Ajouter » pour ouvrir le dialogue de création d'une nouvelle opération de partage. Par défaut, toute nouvelle opération est créée en mode privé : elle n'est pas encore visible dans l'annuaire public.",
         "en": "Click \"Add\" to open the dialog for creating a new sharing operation. By default, every new operation is created in private mode: it is not yet visible in the public directory."
@@ -297,8 +310,8 @@
               {
                 "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-25.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -345,8 +358,8 @@
               {
                 "screenshot": "../assets/sharing-op-set-public/en/mobile/step-25.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -373,6 +386,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Nommer l'opération",
+        "en": "Name the operation"
+      },
       "text": {
         "fr": "Saisissez un nom pour la nouvelle opération. Ce nom sera visible dans la liste de gestion et dans l'annuaire public une fois l'opération rendue publique.",
         "en": "Type a name for the new operation. This name will appear in the management list and in the public directory once the operation is made public."
@@ -412,8 +429,8 @@
               {
                 "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-27.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -462,8 +479,8 @@
               {
                 "screenshot": "../assets/sharing-op-set-public/en/mobile/step-27.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -487,10 +504,14 @@
     {
       "id": "step-5",
       "index": 5,
-      "action": "custom",
+      "action": "click",
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Sélectionner le type Local",
+        "en": "Select the Local type"
+      },
       "text": {
         "fr": "Sélectionnez le type « Local » pour une opération de partage au sein d'un même bâtiment. Ce type, comme les types CER et CEC, peut être rendu public pour apparaître dans l'annuaire des communautés d'énergie.",
         "en": "Select the \"Local\" type for sharing within a single building. This type, like CER and CEC, can be made public to appear in the energy community directory."
@@ -529,8 +550,8 @@
               {
                 "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-28.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -577,8 +598,8 @@
               {
                 "screenshot": "../assets/sharing-op-set-public/en/mobile/step-28.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -605,6 +626,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Saisir la commune",
+        "en": "Type the municipality"
+      },
       "text": {
         "fr": "Tapez les premières lettres d'une commune pour voir les suggestions. La commune rattachée à l'opération sera affichée dans l'annuaire public pour aider les citoyens à trouver une initiative proche de chez eux.",
         "en": "Type the first letters of a municipality to see suggestions. The municipality linked to the operation will be shown in the public directory to help citizens find an initiative near them."
@@ -618,7 +643,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-29.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-30.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -642,10 +667,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-29.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-30.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -668,7 +693,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-29.png",
+                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-30.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -692,10 +717,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-29.png",
+                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-30.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -723,6 +748,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Sélectionner Anderlecht",
+        "en": "Select Anderlecht"
+      },
       "text": {
         "fr": "Cliquez sur la première suggestion (Anderlecht) pour l'associer à l'opération. Les communes couvertes apparaîtront dans l'annuaire public pour chaque opération publique, permettant aux citoyens de filtrer par localité.",
         "en": "Click the first suggestion (Anderlecht) to associate it with the operation. Covered municipalities will be shown in the public directory for each public operation, allowing citizens to filter by locality."
@@ -736,7 +765,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-30.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-31.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -759,10 +788,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-30.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-31.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -784,7 +813,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-30.png",
+                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-31.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -807,10 +836,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-30.png",
+                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-31.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -833,10 +862,14 @@
     {
       "id": "step-8",
       "index": 8,
-      "action": "custom",
+      "action": "assert",
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Opération créée",
+        "en": "Operation created"
+      },
       "text": {
         "fr": "La nouvelle opération « E2E Energy Sharing » apparaît dans la liste. Elle est pour l'instant en mode privé : elle n'est visible que par les gestionnaires de la communauté et n'apparaît pas encore dans l'annuaire public.",
         "en": "The new \"E2E Energy Sharing\" appears in the list. It is currently private: visible only to community managers and not yet shown in the public directory."
@@ -850,7 +883,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-33.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-35.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -862,10 +895,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-33.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-35.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -876,7 +909,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-33.png",
+                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-35.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -888,10 +921,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-33.png",
+                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-35.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -907,6 +940,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir la fiche",
+        "en": "Open the detail"
+      },
       "text": {
         "fr": "Cliquez sur la ligne de la nouvelle opération pour ouvrir sa fiche détaillée et accéder aux paramètres de visibilité.",
         "en": "Click the new operation's row to open its detail page and access the visibility settings."
@@ -920,7 +957,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-34.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-36.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -943,10 +980,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-34.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-36.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -968,7 +1005,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-34.png",
+                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-36.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -991,10 +1028,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-34.png",
+                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-36.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1021,6 +1058,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Visibilité privée par défaut",
+        "en": "Private by default"
+      },
       "text": {
         "fr": "Le bouton grisé « PRIVÉ » dans l'en-tête indique que cette opération n'est pas encore visible dans l'annuaire public. Les citoyens qui cherchent une opération de partage dans leur commune ne pourront pas la trouver tant qu'elle reste privée.",
         "en": "The grey \"PRIVATE\" button in the header shows that this operation is not yet visible in the public directory. Citizens searching for a sharing operation in their municipality cannot find it as long as it remains private."
@@ -1034,7 +1075,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-38.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-40.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1046,10 +1087,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-38.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-40.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -1060,7 +1101,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-38.png",
+                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-40.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1072,10 +1113,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-38.png",
+                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-40.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -1091,6 +1132,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 2000,
+      "title": {
+        "fr": "Rendre l'opération publique",
+        "en": "Make the operation public"
+      },
       "text": {
         "fr": "Cliquez sur le bouton de visibilité pour basculer l'opération en mode public. Ce changement est immédiatement enregistré : l'opération devient visible dans l'annuaire des communautés d'énergie pour tous les citoyens.",
         "en": "Click the visibility button to switch the operation to public mode. The change is saved immediately: the operation becomes visible in the energy community directory for all citizens."
@@ -1104,7 +1149,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-39.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-41.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1127,10 +1172,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-39.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-41.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1152,7 +1197,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-39.png",
+                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-41.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1175,10 +1220,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-39.png",
+                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-41.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1205,6 +1250,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "L'opération est maintenant publique",
+        "en": "Operation is now public"
+      },
       "text": {
         "fr": "Le bouton passe au vert et affiche « PUBLIC ». Tout citoyen peut désormais trouver cette opération dans l'annuaire des communautés d'énergie, filtrer par commune et contacter la communauté pour demander à y participer.",
         "en": "The button turns green and shows \"PUBLIC\". Any citizen can now find this operation in the energy community directory, filter by municipality, and contact the community to request participation."
@@ -1218,7 +1267,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-40.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-42.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1230,10 +1279,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-40.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-42.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -1244,7 +1293,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-40.png",
+                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-42.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1256,10 +1305,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-40.png",
+                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-42.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -1275,6 +1324,10 @@
       "interactive": false,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Annuaire public des communautés",
+        "en": "Public energy community directory"
+      },
       "text": {
         "fr": "La page « Communautés d'énergie » est accessible à tous, sans connexion requise. Elle liste les communautés qui disposent d'au moins une opération de partage publique, avec la possibilité de filtrer par commune pour découvrir une initiative locale.",
         "en": "The \"Energy communities\" page is accessible to everyone without login. It lists communities that have at least one public sharing operation, with a municipality filter to discover local initiatives."
@@ -1288,7 +1341,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-41.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-43.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1300,10 +1353,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-41.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-43.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -1314,7 +1367,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-41.png",
+                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-43.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1326,10 +1379,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-41.png",
+                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-43.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -1345,6 +1398,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Développer une communauté",
+        "en": "Expand a community"
+      },
       "text": {
         "fr": "Cliquez sur une communauté pour afficher ses opérations de partage publiques. Pour chaque opération, le type et les communes couvertes sont visibles — des informations essentielles pour un citoyen qui cherche une initiative proche de chez lui.",
         "en": "Click a community to display its public sharing operations. For each operation, the type and covered municipalities are shown — essential information for a citizen looking for a local initiative."
@@ -1358,7 +1415,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-43.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-45.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1381,10 +1438,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-43.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-45.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1406,7 +1463,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-43.png",
+                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-45.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1429,10 +1486,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-43.png",
+                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-45.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1459,6 +1516,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "L'opération apparaît dans l'annuaire",
+        "en": "Operation visible in the directory"
+      },
       "text": {
         "fr": "L'opération « E2E Energy Sharing » est maintenant visible dans l'annuaire public, avec son type et la commune d'Anderlecht. C'est exactement ce qu'un citoyen verra lorsqu'il cherchera une opération de partage d'énergie dans sa région pour rejoindre une communauté locale.",
         "en": "\"E2E Energy Sharing\" is now visible in the public directory, with its type and the municipality of Anderlecht. This is exactly what a citizen will see when searching for an energy sharing operation in their region to join a local community."
@@ -1472,7 +1533,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-45.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/desktop/step-47.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1484,10 +1545,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-45.png",
+                "screenshot": "../assets/sharing-op-set-public/fr/mobile/step-47.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -1498,7 +1559,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-45.png",
+                "screenshot": "../assets/sharing-op-set-public/en/desktop/step-47.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1510,10 +1571,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-45.png",
+                "screenshot": "../assets/sharing-op-set-public/en/mobile/step-47.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

@@ -18,9 +18,37 @@
       .steppy-interactive-main {
           max-width: 1024px;
           margin: 0 auto;
-          padding: 24px 16px;
+          padding: 40px 16px 64px;
       }
-      steppy-guide { display: block; }
+      /* Branded card frame around the player, consistent with the .steppy-guide
+         step-by-step card. Colours track the site's light/dark --oce-* vars. */
+      .steppy-interactive-frame {
+          position: relative;
+          background: var(--oce-card);
+          border: 1px solid var(--oce-border);
+          border-radius: var(--oce-radius-md);
+          box-shadow: var(--oce-shadow-md);
+          overflow: hidden;
+      }
+      .steppy-interactive-frame::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 24px;
+          right: 24px;
+          height: 3px;
+          background: linear-gradient(90deg, var(--oce-primary-dark), var(--oce-primary), var(--oce-primary-light));
+          border-radius: 0 0 3px 3px;
+          z-index: 1;
+      }
+      steppy-guide {
+          display: block;
+          min-height: 520px;
+      }
+      @media (max-width: 768px) {
+          .steppy-interactive-main { padding: 20px 12px 48px; }
+          steppy-guide { min-height: 460px; }
+      }
     </style>
 </head>
 <body>
@@ -72,7 +100,9 @@
     </header>
 
     <main class="steppy-interactive-main">
-        <steppy-guide src="./guide.json" locale="fr" variant="desktop"></steppy-guide>
+        <div class="steppy-interactive-frame">
+            <steppy-guide src="./guide.json" locale="fr" variant="desktop"></steppy-guide>
+        </div>
     </main>
 
     <footer class="steppy-site-footer">

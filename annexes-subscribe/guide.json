@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les services annexes",
+        "en": "Open annexe services"
+      },
       "text": {
         "fr": "Dans la section « Communauté » de la barre latérale, cliquez sur « Services annexes » pour accéder aux modules complémentaires disponibles pour la communauté.",
         "en": "In the sidebar's \"Community\" section, click \"Annexe services\" to access the optional modules available for the community."
@@ -44,7 +49,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/fr/desktop/step-13.png",
+                "screenshot": "../assets/annexes-subscribe/fr/desktop/step-14.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -67,10 +72,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/fr/mobile/step-16.png",
+                "screenshot": "../assets/annexes-subscribe/fr/mobile/step-17.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -92,7 +97,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/en/desktop/step-13.png",
+                "screenshot": "../assets/annexes-subscribe/en/desktop/step-14.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -115,10 +120,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/en/mobile/step-16.png",
+                "screenshot": "../assets/annexes-subscribe/en/mobile/step-17.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -145,6 +150,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Aucun module activé",
+        "en": "No modules active"
+      },
       "text": {
         "fr": "La page « Services annexes » s'affiche vide : aucun module complémentaire n'est encore activé pour cette communauté.",
         "en": "The \"Annexe services\" page is empty — no optional module has been activated for this community yet."
@@ -158,7 +167,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/fr/desktop/step-19.png",
+                "screenshot": "../assets/annexes-subscribe/fr/desktop/step-20.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -170,10 +179,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/fr/mobile/step-19.png",
+                "screenshot": "../assets/annexes-subscribe/fr/mobile/step-20.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -184,7 +193,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/en/desktop/step-19.png",
+                "screenshot": "../assets/annexes-subscribe/en/desktop/step-20.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -196,10 +205,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/en/mobile/step-19.png",
+                "screenshot": "../assets/annexes-subscribe/en/mobile/step-20.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -215,6 +224,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ajouter un module",
+        "en": "Add a module"
+      },
       "text": {
         "fr": "Cliquez sur « Ajouter un module » en haut à droite pour ouvrir le catalogue des modules disponibles pour cette communauté.",
         "en": "Click \"Add a module\" in the top right to open the catalogue of available modules for this community."
@@ -228,7 +241,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/fr/desktop/step-20.png",
+                "screenshot": "../assets/annexes-subscribe/fr/desktop/step-21.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -251,10 +264,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/fr/mobile/step-20.png",
+                "screenshot": "../assets/annexes-subscribe/fr/mobile/step-21.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -276,7 +289,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/en/desktop/step-20.png",
+                "screenshot": "../assets/annexes-subscribe/en/desktop/step-21.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -299,10 +312,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/en/mobile/step-20.png",
+                "screenshot": "../assets/annexes-subscribe/en/mobile/step-21.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -329,6 +342,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 600,
+      "title": {
+        "fr": "Choisir un module",
+        "en": "Choose a module"
+      },
       "text": {
         "fr": "Le dialogue liste les modules disponibles. Ici, le module « Génération de clés de répartition » est proposé avec sa description.",
         "en": "The dialog lists available modules. Here, the \"Allocation key generation\" module is offered with its description."
@@ -342,7 +359,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/fr/desktop/step-22.png",
+                "screenshot": "../assets/annexes-subscribe/fr/desktop/step-23.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -354,10 +371,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/fr/mobile/step-22.png",
+                "screenshot": "../assets/annexes-subscribe/fr/mobile/step-23.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -368,7 +385,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/en/desktop/step-22.png",
+                "screenshot": "../assets/annexes-subscribe/en/desktop/step-23.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -380,10 +397,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/en/mobile/step-22.png",
+                "screenshot": "../assets/annexes-subscribe/en/mobile/step-23.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -399,6 +416,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Activer le module",
+        "en": "Activate the module"
+      },
       "text": {
         "fr": "Cliquez sur « Ajouter » en face du module « Génération de clés de répartition » pour l'activer dans la communauté.",
         "en": "Click \"Add\" next to the \"Allocation key generation\" module to activate it for the community."
@@ -412,7 +433,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/fr/desktop/step-23.png",
+                "screenshot": "../assets/annexes-subscribe/fr/desktop/step-24.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -435,10 +456,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/fr/mobile/step-23.png",
+                "screenshot": "../assets/annexes-subscribe/fr/mobile/step-24.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -460,7 +481,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/en/desktop/step-23.png",
+                "screenshot": "../assets/annexes-subscribe/en/desktop/step-24.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -483,10 +504,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/en/mobile/step-23.png",
+                "screenshot": "../assets/annexes-subscribe/en/mobile/step-24.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -513,6 +534,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Module activé",
+        "en": "Module activated"
+      },
       "text": {
         "fr": "La carte « Génération de clés de répartition » apparaît dans la grille avec le badge « Activé » : le module est maintenant accessible depuis cette page.",
         "en": "The \"Allocation key generation\" card appears in the grid with the \"Activated\" badge — the module is now accessible from this page."
@@ -526,7 +551,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/fr/desktop/step-25.png",
+                "screenshot": "../assets/annexes-subscribe/fr/desktop/step-26.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -538,10 +563,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/fr/mobile/step-25.png",
+                "screenshot": "../assets/annexes-subscribe/fr/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -552,7 +577,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/en/desktop/step-25.png",
+                "screenshot": "../assets/annexes-subscribe/en/desktop/step-26.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -564,10 +589,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-subscribe/en/mobile/step-25.png",
+                "screenshot": "../assets/annexes-subscribe/en/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir mes communautés",
+        "en": "Open my communities"
+      },
       "text": {
         "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Mes communautés » pour voir la liste des communautés où vous êtes inscrit·e.",
         "en": "In the sidebar's profile menu, click \"My communities\" to see the list of communities you belong to."
@@ -69,8 +74,8 @@
               {
                 "screenshot": "../assets/community-activate/fr/mobile/step-13.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -117,8 +122,8 @@
               {
                 "screenshot": "../assets/community-activate/en/mobile/step-13.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -145,6 +150,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Activer la communauté",
+        "en": "Activate the community"
+      },
       "text": {
         "fr": "Cliquez sur « Activer » sur la ligne de la Test Community pour la rejoindre dans votre espace de travail. Le menu de gestion ne sera disponible qu'après cette étape.",
         "en": "Click \"Activate\" on the Test Community row to join it in your workspace. The management menu only becomes available once this step is done."
@@ -183,8 +192,8 @@
               {
                 "screenshot": "../assets/community-activate/fr/mobile/step-19.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -231,8 +240,8 @@
               {
                 "screenshot": "../assets/community-activate/en/mobile/step-19.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -259,6 +268,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Menu de gestion débloqué",
+        "en": "Management menu unlocked"
+      },
       "text": {
         "fr": "Un nouveau menu « Gestion » apparaît dans la barre latérale, donnant accès aux clés, compteurs et opérations de partage de la communauté.",
         "en": "A new \"Management\" menu appears in the sidebar, granting access to the community's keys, meters and sharing operations."
@@ -286,8 +299,8 @@
               {
                 "screenshot": "../assets/community-activate/fr/mobile/step-20.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -312,8 +325,8 @@
               {
                 "screenshot": "../assets/community-activate/en/mobile/step-20.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -329,6 +342,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les clés",
+        "en": "Open the keys"
+      },
       "text": {
         "fr": "Dans la section « Gestion » de la barre latérale, cliquez sur « Clés » pour afficher les clés de répartition de la communauté active.",
         "en": "In the sidebar's \"Management\" section, click \"Keys\" to display the active community's allocation keys."
@@ -367,8 +384,8 @@
               {
                 "screenshot": "../assets/community-activate/fr/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -415,8 +432,8 @@
               {
                 "screenshot": "../assets/community-activate/en/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -443,6 +460,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Liste des clés de répartition",
+        "en": "Allocation keys list"
+      },
       "text": {
         "fr": "Le tableau « Clés » affiche les clés de répartition déjà configurées dans la communauté, avec leur nom et leur description.",
         "en": "The \"Keys\" table shows the allocation keys already configured in the community, with their name and description."
@@ -470,8 +491,8 @@
               {
                 "screenshot": "../assets/community-activate/fr/mobile/step-29.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -496,8 +517,8 @@
               {
                 "screenshot": "../assets/community-activate/en/mobile/step-29.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -513,6 +534,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir le groupe Membres",
+        "en": "Open the Members group"
+      },
       "text": {
         "fr": "Dans la section « Gestion », cliquez sur « Gestion des membres » pour révéler le sous-menu (membres, compteurs, opérations de partage).",
         "en": "In the \"Management\" section, click \"Members\" to reveal the submenu (members, meters, sharing operations)."
@@ -551,8 +576,8 @@
               {
                 "screenshot": "../assets/community-activate/fr/mobile/step-36.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -599,8 +624,8 @@
               {
                 "screenshot": "../assets/community-activate/en/mobile/step-36.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -627,6 +652,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir la liste des compteurs",
+        "en": "Open the meters list"
+      },
       "text": {
         "fr": "Dans le sous-menu, cliquez sur « Compteurs » pour afficher la liste des compteurs de la communauté.",
         "en": "In the submenu, click \"Meters\" to display the community's meters."
@@ -665,8 +694,8 @@
               {
                 "screenshot": "../assets/community-activate/fr/mobile/step-37.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -713,8 +742,8 @@
               {
                 "screenshot": "../assets/community-activate/en/mobile/step-37.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -741,6 +770,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Liste des compteurs",
+        "en": "Meters list"
+      },
       "text": {
         "fr": "Le tableau « Compteurs » liste les compteurs associés à la communauté, identifiés par leur EAN et leur numéro de compteur.",
         "en": "The \"Meters\" table lists the meters linked to the community, identified by their EAN and meter number."
@@ -768,8 +801,8 @@
               {
                 "screenshot": "../assets/community-activate/fr/mobile/step-40.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -794,8 +827,8 @@
               {
                 "screenshot": "../assets/community-activate/en/mobile/step-40.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

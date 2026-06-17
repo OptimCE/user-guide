@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir le module de simulation",
+        "en": "Open the simulation module"
+      },
       "text": {
         "fr": "Cliquez sur la carte « Simulation » pour ouvrir le module et accéder au formulaire de configuration d'une nouvelle simulation.",
         "en": "Click the \"Simulation\" card to open the module and reach the configuration form for a new simulation."
@@ -44,7 +49,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/fr/desktop/step-45.png",
+                "screenshot": "../assets/simulation-run/fr/desktop/step-49.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -67,10 +72,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/fr/mobile/step-45.png",
+                "screenshot": "../assets/simulation-run/fr/mobile/step-49.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -92,7 +97,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/en/desktop/step-45.png",
+                "screenshot": "../assets/simulation-run/en/desktop/step-49.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -115,10 +120,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/en/mobile/step-45.png",
+                "screenshot": "../assets/simulation-run/en/mobile/step-49.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -145,6 +150,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Page de simulation",
+        "en": "Simulation page"
+      },
       "text": {
         "fr": "La page de simulation s'affiche avec son formulaire de configuration : choisissez une clé de répartition enregistrée, nommez la simulation, indiquez l'injection et importez le fichier de consommation à simuler.",
         "en": "The simulation page displays its configuration form: pick a saved allocation key, name the simulation, set the injection, and upload the consumption file to simulate."
@@ -158,7 +167,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/fr/desktop/step-47.png",
+                "screenshot": "../assets/simulation-run/fr/desktop/step-51.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -170,10 +179,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/fr/mobile/step-47.png",
+                "screenshot": "../assets/simulation-run/fr/mobile/step-51.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -184,7 +193,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/en/desktop/step-47.png",
+                "screenshot": "../assets/simulation-run/en/desktop/step-51.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -196,10 +205,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/en/mobile/step-47.png",
+                "screenshot": "../assets/simulation-run/en/mobile/step-51.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -211,10 +220,14 @@
     {
       "id": "step-3",
       "index": 3,
-      "action": "custom",
+      "action": "select-option",
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Choisir la clé de répartition",
+        "en": "Choose the allocation key"
+      },
       "text": {
         "fr": "Ouvrez le menu déroulant « Clé de répartition » et sélectionnez la clé que vous venez d'enregistrer. La simulation appliquera cette répartition aux données de consommation importées.",
         "en": "Open the \"Allocation key\" dropdown and select the key you just saved. The simulation will apply this allocation to the imported consumption data."
@@ -228,7 +241,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/fr/desktop/step-48.png",
+                "screenshot": "../assets/simulation-run/fr/desktop/step-52.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -251,10 +264,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/fr/mobile/step-48.png",
+                "screenshot": "../assets/simulation-run/fr/mobile/step-52.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -276,7 +289,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/en/desktop/step-48.png",
+                "screenshot": "../assets/simulation-run/en/desktop/step-52.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -299,10 +312,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/en/mobile/step-48.png",
+                "screenshot": "../assets/simulation-run/en/mobile/step-52.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -329,6 +342,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Nommer la simulation et l'injection",
+        "en": "Name the simulation and injection"
+      },
       "text": {
         "fr": "Saisissez un nom pour la simulation (« Simulation Run 1 ») et le nom de l'injection (« Production »), qui correspond à la colonne de production du fichier de données.",
         "en": "Enter a name for the simulation (\"Simulation Run 1\") and the injection name (\"Production\"), which matches the production column of the data file."
@@ -342,7 +359,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/fr/desktop/step-50.png",
+                "screenshot": "../assets/simulation-run/fr/desktop/step-54.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -366,16 +383,16 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/fr/mobile/step-50.png",
+                "screenshot": "../assets/simulation-run/fr/mobile/step-54.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
                   "target": {
                     "bbox": {
-                      "x": 37,
+                      "x": 0,
                       "y": 651,
                       "width": 316,
                       "height": 42
@@ -392,7 +409,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/en/desktop/step-50.png",
+                "screenshot": "../assets/simulation-run/en/desktop/step-54.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -416,16 +433,16 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/en/mobile/step-50.png",
+                "screenshot": "../assets/simulation-run/en/mobile/step-54.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
                   "target": {
                     "bbox": {
-                      "x": 37,
+                      "x": 0,
                       "y": 631,
                       "width": 316,
                       "height": 42
@@ -443,10 +460,14 @@
     {
       "id": "step-5",
       "index": 5,
-      "action": "custom",
+      "action": "upload",
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Importer le fichier à simuler",
+        "en": "Import the file to simulate"
+      },
       "text": {
         "fr": "Importez le même fichier « test_4.csv » dans la zone de dépôt. La simulation calculera l'autoconsommation et le partage d'énergie à partir de ces données et de la clé sélectionnée.",
         "en": "Upload the same \"test_4.csv\" file into the drop zone. The simulation will compute self-consumption and energy sharing from this data and the selected key."
@@ -460,7 +481,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/fr/desktop/step-51.png",
+                "screenshot": "../assets/simulation-run/fr/desktop/step-55.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -483,16 +504,16 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/fr/mobile/step-51.png",
+                "screenshot": "../assets/simulation-run/fr/mobile/step-55.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 37,
+                      "x": 0,
                       "y": 721,
                       "width": 316,
                       "height": 122.796875
@@ -508,7 +529,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/en/desktop/step-51.png",
+                "screenshot": "../assets/simulation-run/en/desktop/step-55.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -531,16 +552,16 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/en/mobile/step-51.png",
+                "screenshot": "../assets/simulation-run/en/mobile/step-55.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 37,
+                      "x": 0,
                       "y": 721,
                       "width": 316,
                       "height": 122.796875
@@ -557,10 +578,14 @@
     {
       "id": "step-6",
       "index": 6,
-      "action": "custom",
+      "action": "click",
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Lancer la simulation",
+        "en": "Launch the simulation"
+      },
       "text": {
         "fr": "Cliquez sur « Lancer la simulation ». La simulation est mise en file d'attente et apparaît dans la liste des exécutions avec le statut « En attente » jusqu'à la fin du calcul.",
         "en": "Click \"Run simulation\". The simulation is queued and appears in the runs list with a \"Pending\" status until the computation completes."
@@ -574,7 +599,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/fr/desktop/step-52.png",
+                "screenshot": "../assets/simulation-run/fr/desktop/step-56.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -588,7 +613,7 @@
                       "width": 194.75,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"simulation-hub__btn--submit\"]"
+                    "selector": "[data-testid=\"simulation-hub__btn--submit\"] button"
                   }
                 }
               }
@@ -597,21 +622,21 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/fr/mobile/step-52.png",
+                "screenshot": "../assets/simulation-run/fr/mobile/step-56.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 37,
-                      "y": 802,
-                      "width": 316,
+                      "x": 0,
+                      "y": 803,
+                      "width": 194.75,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"simulation-hub__btn--submit\"]"
+                    "selector": "[data-testid=\"simulation-hub__btn--submit\"] button"
                   }
                 }
               }
@@ -622,7 +647,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/en/desktop/step-52.png",
+                "screenshot": "../assets/simulation-run/en/desktop/step-56.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -636,7 +661,7 @@
                       "width": 159,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"simulation-hub__btn--submit\"]"
+                    "selector": "[data-testid=\"simulation-hub__btn--submit\"] button"
                   }
                 }
               }
@@ -645,21 +670,21 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/en/mobile/step-52.png",
+                "screenshot": "../assets/simulation-run/en/mobile/step-56.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 37,
-                      "y": 802,
-                      "width": 316,
+                      "x": 0,
+                      "y": 803,
+                      "width": 159,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"simulation-hub__btn--submit\"]"
+                    "selector": "[data-testid=\"simulation-hub__btn--submit\"] button"
                   }
                 }
               }
@@ -675,6 +700,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Résultats de la simulation",
+        "en": "Simulation results"
+      },
       "text": {
         "fr": "La simulation est terminée. Les indicateurs clés s'affichent : énergie autoconsommée, surplus, taux d'autosuffisance et taux de partage — calculés à partir de la clé enregistrée et du fichier importé.",
         "en": "The simulation is complete. The headline metrics are shown: self-consumed energy, surplus, self-sufficiency rate, and sharing rate — computed from the saved key and the imported file."
@@ -688,7 +717,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/fr/desktop/step-58.png",
+                "screenshot": "../assets/simulation-run/fr/desktop/step-62.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -700,10 +729,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/fr/mobile/step-58.png",
+                "screenshot": "../assets/simulation-run/fr/mobile/step-62.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -714,7 +743,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/en/desktop/step-58.png",
+                "screenshot": "../assets/simulation-run/en/desktop/step-62.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -726,10 +755,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/en/mobile/step-58.png",
+                "screenshot": "../assets/simulation-run/en/mobile/step-62.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -745,6 +774,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Détail par itération et par consommateur",
+        "en": "Per-iteration, per-consumer detail"
+      },
       "text": {
         "fr": "Chaque itération de la clé peut être dépliée pour révéler le détail par consommateur : allocation, consommation, énergie autoconsommée, surplus et volume résiduel. C'est ici que l'on compare les solutions de répartition.",
         "en": "Each key iteration can be expanded to reveal the per-consumer detail: allocation, consumption, self-consumed energy, surplus, and residual volume. This is where allocation solutions are compared."
@@ -758,7 +791,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/fr/desktop/step-60.png",
+                "screenshot": "../assets/simulation-run/fr/desktop/step-64.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -770,10 +803,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/fr/mobile/step-60.png",
+                "screenshot": "../assets/simulation-run/fr/mobile/step-64.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -784,7 +817,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/en/desktop/step-60.png",
+                "screenshot": "../assets/simulation-run/en/desktop/step-64.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -796,10 +829,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/simulation-run/en/mobile/step-60.png",
+                "screenshot": "../assets/simulation-run/en/mobile/step-64.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

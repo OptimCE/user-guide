@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les services annexes",
+        "en": "Open annexe services"
+      },
       "text": {
         "fr": "Dans la section « Communauté » de la barre latérale, cliquez sur « Services annexes » pour accéder aux modules actifs de la communauté.",
         "en": "In the sidebar's \"Community\" section, click \"Annexe services\" to access the community's active modules."
@@ -44,7 +49,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-19.png",
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-20.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -67,10 +72,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-22.png",
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-23.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -92,7 +97,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-19.png",
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-20.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -115,10 +120,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-22.png",
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-23.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -145,6 +150,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Module de génération disponible",
+        "en": "Generation module available"
+      },
       "text": {
         "fr": "La carte « Génération de clés de répartition » est visible avec le badge « Activé ». Cliquez dessus pour ouvrir le module de génération.",
         "en": "The \"Allocation key generation\" card is visible with the \"Activated\" badge. Click it to open the generation module."
@@ -158,7 +167,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-25.png",
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-26.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -170,10 +179,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-25.png",
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -184,7 +193,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-25.png",
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-26.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -196,10 +205,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-25.png",
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -215,6 +224,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir le module de génération",
+        "en": "Open the generation module"
+      },
       "text": {
         "fr": "Cliquez sur la carte pour ouvrir le module de génération de clés de répartition OLAGSA.",
         "en": "Click the card to open the OLAGSA allocation key generation module."
@@ -228,7 +241,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-26.png",
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-27.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -251,10 +264,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-26.png",
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-27.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -276,7 +289,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-26.png",
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-27.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -299,10 +312,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-26.png",
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-27.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -329,6 +342,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Page de génération de clés",
+        "en": "Key generation page"
+      },
       "text": {
         "fr": "La page de génération de clés de répartition s'affiche avec le formulaire de configuration. Sélectionnez l'algorithme, renseignez les paramètres et importez votre fichier de données pour lancer une nouvelle génération.",
         "en": "The allocation key generation page displays the configuration form. Select the algorithm, fill in the parameters, and upload your data file to launch a new generation."
@@ -342,7 +359,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-28.png",
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-29.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -354,10 +371,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-28.png",
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-29.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -368,7 +385,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-28.png",
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-29.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -380,10 +397,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-28.png",
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-29.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -395,10 +412,14 @@
     {
       "id": "step-5",
       "index": 5,
-      "action": "custom",
+      "action": "select-option",
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Sélectionner l'algorithme OLAGSA",
+        "en": "Select the OLAGSA algorithm"
+      },
       "text": {
         "fr": "Cliquez sur le menu déroulant « Algorithme » et sélectionnez « OLAGSA ». Le formulaire de paramètres propres à cet algorithme génétique s'affiche alors.",
         "en": "Click the \"Algorithm\" dropdown and select \"OLAGSA\". The parameter form specific to this genetic algorithm then appears."
@@ -412,7 +433,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-29.png",
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-30.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -435,10 +456,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-29.png",
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-30.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -460,7 +481,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-29.png",
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-30.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -483,10 +504,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-29.png",
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-30.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -513,6 +534,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Nommer la génération et l'injection",
+        "en": "Name the generation and injection"
+      },
       "text": {
         "fr": "Saisissez un nom pour cette génération (identifiant interne) et le nom de l'injection correspondante — ici « Production » pour cibler les données de production.",
         "en": "Enter a name for this generation (internal identifier) and the corresponding injection name — here \"Production\" to target production data."
@@ -526,7 +551,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-31.png",
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-33.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -550,16 +575,16 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-31.png",
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-33.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
                   "target": {
                     "bbox": {
-                      "x": 31,
+                      "x": 24,
                       "y": 802,
                       "width": 316,
                       "height": 42
@@ -576,7 +601,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-31.png",
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-33.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -600,16 +625,16 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-31.png",
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-33.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
                   "target": {
                     "bbox": {
-                      "x": 31,
+                      "x": 25,
                       "y": 802,
                       "width": 316,
                       "height": 42
@@ -627,10 +652,14 @@
     {
       "id": "step-7",
       "index": 7,
-      "action": "custom",
+      "action": "fill",
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Définir le nombre d'itérations",
+        "en": "Set the number of iterations"
+      },
       "text": {
         "fr": "Saisissez « 3 » dans le champ « Itérations ». Ce paramètre définit le nombre de solutions indépendantes calculées par l'algorithme génétique OLAGSA.",
         "en": "Enter \"3\" in the \"Iterations\" field. This parameter defines the number of independent solutions computed by the OLAGSA genetic algorithm."
@@ -644,7 +673,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-32.png",
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-34.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -668,16 +697,16 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-32.png",
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-34.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
                   "target": {
                     "bbox": {
-                      "x": 31,
+                      "x": 24,
                       "y": 400.796875,
                       "width": 316,
                       "height": 42
@@ -694,7 +723,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-32.png",
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-34.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -718,16 +747,16 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-32.png",
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-34.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
                   "target": {
                     "bbox": {
-                      "x": 31,
+                      "x": 25,
                       "y": 409.796875,
                       "width": 316,
                       "height": 42
@@ -749,6 +778,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir les paramètres avancés",
+        "en": "Open advanced parameters"
+      },
       "text": {
         "fr": "Cliquez sur « Paramètres avancés » pour afficher les hyperparamètres de l'algorithme génétique : taille de population, taux de croisement, taux de mutation, etc.",
         "en": "Click \"Advanced parameters\" to reveal the genetic algorithm's hyperparameters: population size, crossover rates, mutation rate, and more."
@@ -762,7 +795,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-33.png",
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-35.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -785,10 +818,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-33.png",
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-35.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -810,7 +843,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-33.png",
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-35.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -833,16 +866,16 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-33.png",
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-35.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 31,
+                      "x": 37,
                       "y": 499.296875,
                       "width": 138.578125,
                       "height": 20
@@ -863,6 +896,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Hyperparamètres de l'algorithme génétique",
+        "en": "Genetic algorithm hyperparameters"
+      },
       "text": {
         "fr": "Les paramètres avancés d'OLAGSA s'affichent : générations, taille de population, taux de croisement inter-espèces et intra-espèces, taux de mutation, nombre d'espèces attendues et nombre maximum de générations sans amélioration. Les valeurs par défaut conviennent pour la plupart des usages.",
         "en": "OLAGSA's advanced parameters are displayed: generations, population size, inter-species and intra-species crossover rates, mutation rate, expected species count, and maximum generations without improvement. Default values suit most use cases."
@@ -876,7 +913,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-35.png",
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-37.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -888,10 +925,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-35.png",
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-37.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -902,7 +939,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-35.png",
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-37.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -914,10 +951,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-35.png",
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-37.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -929,10 +966,14 @@
     {
       "id": "step-10",
       "index": 10,
-      "action": "custom",
+      "action": "upload",
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Importer le fichier de données",
+        "en": "Import the data file"
+      },
       "text": {
         "fr": "Glissez votre fichier CSV dans la zone d'import ou cliquez dessus pour sélectionner le fichier de données à utiliser pour la génération.",
         "en": "Drag your CSV file into the import zone or click it to select the data file to use for generation."
@@ -946,7 +987,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-36.png",
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-38.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -969,10 +1010,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-36.png",
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-38.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -994,7 +1035,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-36.png",
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-38.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1017,10 +1058,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-36.png",
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-38.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1043,10 +1084,14 @@
     {
       "id": "step-11",
       "index": 11,
-      "action": "custom",
+      "action": "click",
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Lancer la génération",
+        "en": "Launch the generation"
+      },
       "text": {
         "fr": "Cliquez sur « Lancer la génération » pour soumettre la tâche au moteur OLAGSA. La génération apparaît immédiatement dans la liste avec le statut « En attente ».",
         "en": "Click \"Launch generation\" to submit the task to the OLAGSA engine. The generation immediately appears in the list with a \"Pending\" status."
@@ -1054,120 +1099,6 @@
       "subtitle": {
         "fr": "Exécution",
         "en": "Execution"
-      },
-      "captures": {
-        "fr": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-37.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 1171.109375,
-                      "y": 624,
-                      "width": 197.890625,
-                      "height": 42
-                    },
-                    "selector": "[data-testid=\"algorithm-hub__btn--submit\"]"
-                  }
-                }
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-37.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 37,
-                      "y": 511.5,
-                      "width": 316,
-                      "height": 42
-                    },
-                    "selector": "[data-testid=\"algorithm-hub__btn--submit\"]"
-                  }
-                }
-              }
-            ]
-          }
-        },
-        "en": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-37.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 1200.953125,
-                      "y": 623.5,
-                      "width": 168.046875,
-                      "height": 42
-                    },
-                    "selector": "[data-testid=\"algorithm-hub__btn--submit\"]"
-                  }
-                }
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-37.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 37,
-                      "y": 548,
-                      "width": 316,
-                      "height": 42
-                    },
-                    "selector": "[data-testid=\"algorithm-hub__btn--submit\"]"
-                  }
-                }
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "id": "step-12",
-      "index": 12,
-      "action": "custom",
-      "interactive": true,
-      "screenshotWhen": "after",
-      "waitAfter": 0,
-      "text": {
-        "fr": "La génération « Test Run 1 » apparaît dans la liste. Un point orange clignotant indique qu'elle est en attente de traitement ; il devient vert dès que le moteur OLAGSA a terminé.",
-        "en": "The \"Test Run 1\" generation appears in the list. A pulsing orange dot indicates it is pending processing; it turns green once the OLAGSA engine has finished."
-      },
-      "subtitle": {
-        "fr": "Suivi du statut",
-        "en": "Status tracking"
       },
       "captures": {
         "fr": {
@@ -1183,12 +1114,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 114,
-                      "y": 804,
-                      "width": 1280,
-                      "height": 76
+                      "x": 1171.109375,
+                      "y": 624,
+                      "width": 197.890625,
+                      "height": 42
                     },
-                    "selector": "[data-testid^=\"generation-row--\"]"
+                    "selector": "[data-testid=\"algorithm-hub__btn--submit\"] button"
                   }
                 }
               }
@@ -1199,19 +1130,19 @@
               {
                 "screenshot": "../assets/algorithm-generate/fr/mobile/step-39.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 16,
-                      "y": 752.296875,
-                      "width": 358,
-                      "height": 76
+                      "x": 37,
+                      "y": 511.5,
+                      "width": 197.890625,
+                      "height": 42
                     },
-                    "selector": "[data-testid^=\"generation-row--\"]"
+                    "selector": "[data-testid=\"algorithm-hub__btn--submit\"] button"
                   }
                 }
               }
@@ -1231,12 +1162,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 114,
-                      "y": 803.5,
-                      "width": 1280,
-                      "height": 76
+                      "x": 1200.953125,
+                      "y": 623.5,
+                      "width": 168.046875,
+                      "height": 42
                     },
-                    "selector": "[data-testid^=\"generation-row--\"]"
+                    "selector": "[data-testid=\"algorithm-hub__btn--submit\"] button"
                   }
                 }
               }
@@ -1247,19 +1178,19 @@
               {
                 "screenshot": "../assets/algorithm-generate/en/mobile/step-39.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 16,
-                      "y": 751.796875,
-                      "width": 358,
-                      "height": 76
+                      "x": 37,
+                      "y": 548,
+                      "width": 168.046875,
+                      "height": 42
                     },
-                    "selector": "[data-testid^=\"generation-row--\"]"
+                    "selector": "[data-testid=\"algorithm-hub__btn--submit\"] button"
                   }
                 }
               }
@@ -1269,12 +1200,90 @@
       }
     },
     {
-      "id": "step-13",
-      "index": 13,
-      "action": "custom",
-      "interactive": true,
+      "id": "step-12",
+      "index": 12,
+      "action": "assert",
+      "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Génération soumise",
+        "en": "Generation submitted"
+      },
+      "text": {
+        "fr": "La génération « Test Run 1 » apparaît dans la liste. Un point orange clignotant indique qu'elle est en attente de traitement ; il devient vert dès que le moteur OLAGSA a terminé.",
+        "en": "The \"Test Run 1\" generation appears in the list. A pulsing orange dot indicates it is pending processing; it turns green once the OLAGSA engine has finished."
+      },
+      "subtitle": {
+        "fr": "Suivi du statut",
+        "en": "Status tracking"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-13",
+      "index": 13,
+      "action": "wait-for",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Génération terminée avec succès",
+        "en": "Generation completed"
+      },
       "text": {
         "fr": "Le point passe au vert : la génération est terminée. Les clés de répartition ont été calculées et sont prêtes à être consultées en déroulant la ligne.",
         "en": "The dot turns green — the generation is complete. The allocation keys have been computed and are ready to view by expanding the row."
@@ -1288,46 +1297,24 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-43.png",
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-45.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 163,
-                      "y": 836,
-                      "width": 12,
-                      "height": 12
-                    },
-                    "selector": ".timeline-dot--success"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-43.png",
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-45.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 65,
-                      "y": 784.296875,
-                      "width": 12,
-                      "height": 12
-                    },
-                    "selector": ".timeline-dot--success"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -1336,46 +1323,24 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-43.png",
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-45.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 163,
-                      "y": 835.5,
-                      "width": 12,
-                      "height": 12
-                    },
-                    "selector": ".timeline-dot--success"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-43.png",
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-45.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 65,
-                      "y": 783.796875,
-                      "width": 12,
-                      "height": 12
-                    },
-                    "selector": ".timeline-dot--success"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -1385,10 +1350,14 @@
     {
       "id": "step-14",
       "index": 14,
-      "action": "custom",
-      "interactive": true,
+      "action": "wait-for",
+      "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Clés de répartition générées",
+        "en": "Allocation keys generated"
+      },
       "text": {
         "fr": "La liste des clés calculées apparaît sous la génération. Chaque clé correspond à une solution OLAGSA optimisée. Cliquez sur une clé pour afficher sa répartition détaillée.",
         "en": "The list of computed keys appears under the generation. Each key corresponds to one optimised OLAGSA solution. Click a key to view its detailed allocation."
@@ -1402,46 +1371,24 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-46.png",
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-48.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 131,
-                      "y": 837,
-                      "width": 1246,
-                      "height": 64
-                    },
-                    "selector": "[data-testid^=\"key-row--\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-46.png",
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-48.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 33,
-                      "y": 781.296875,
-                      "width": 324,
-                      "height": 64
-                    },
-                    "selector": "[data-testid^=\"key-row--\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -1450,46 +1397,24 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-46.png",
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-48.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 131,
-                      "y": 836.5,
-                      "width": 1246,
-                      "height": 64
-                    },
-                    "selector": "[data-testid^=\"key-row--\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-46.png",
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-48.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 33,
-                      "y": 780.796875,
-                      "width": 324,
-                      "height": 64
-                    },
-                    "selector": "[data-testid^=\"key-row--\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -1499,10 +1424,14 @@
     {
       "id": "step-15",
       "index": 15,
-      "action": "custom",
-      "interactive": true,
+      "action": "wait-for",
+      "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Détail de la clé et répartition par itération",
+        "en": "Key detail and per-iteration allocation"
+      },
       "text": {
         "fr": "Le tableau de répartition s'affiche pour cette clé, détaillant les valeurs calculées par l'algorithme. Le bouton « Enregistrer » permet de sauvegarder cette clé dans le module Clés.",
         "en": "The allocation table is shown for this key, detailing the values computed by the algorithm. The \"Save\" button lets you store this key in the Keys module."
@@ -1516,46 +1445,24 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-49.png",
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-51.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 148,
-                      "y": 235,
-                      "width": 1212,
-                      "height": 429
-                    },
-                    "selector": "[data-testid^=\"key-row__grid--\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-49.png",
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-51.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 50,
-                      "y": 207.296875,
-                      "width": 290,
-                      "height": 429
-                    },
-                    "selector": "[data-testid^=\"key-row__grid--\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -1564,46 +1471,24 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-49.png",
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-51.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 148,
-                      "y": 235.5,
-                      "width": 1212,
-                      "height": 429
-                    },
-                    "selector": "[data-testid^=\"key-row__grid--\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-49.png",
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-51.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 50,
-                      "y": 207.796875,
-                      "width": 290,
-                      "height": 429
-                    },
-                    "selector": "[data-testid^=\"key-row__grid--\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -1613,127 +1498,17 @@
     {
       "id": "step-16",
       "index": 16,
-      "action": "custom",
+      "action": "click",
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Enregistrer la clé dans le module",
+        "en": "Save the key to the module"
+      },
       "text": {
         "fr": "Cliquez sur « Enregistrer » pour sauvegarder cette clé de répartition dans le module Clés, où elle sera accessible depuis la gestion de la communauté.",
         "en": "Click \"Save\" to store this allocation key in the Keys module, where it will be accessible from the community management section."
-      },
-      "subtitle": {
-        "fr": "Sauvegarde",
-        "en": "Save"
-      },
-      "captures": {
-        "fr": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-50.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 1288,
-                      "y": 173.5,
-                      "width": 32,
-                      "height": 35
-                    },
-                    "selector": "[data-testid^=\"key-row__btn--save--\"]"
-                  }
-                }
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-50.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 268,
-                      "y": 144.296875,
-                      "width": 32,
-                      "height": 35
-                    },
-                    "selector": "[data-testid^=\"key-row__btn--save--\"]"
-                  }
-                }
-              }
-            ]
-          }
-        },
-        "en": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-50.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 1288,
-                      "y": 174,
-                      "width": 32,
-                      "height": 35
-                    },
-                    "selector": "[data-testid^=\"key-row__btn--save--\"]"
-                  }
-                }
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-50.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 268,
-                      "y": 144.796875,
-                      "width": 32,
-                      "height": 35
-                    },
-                    "selector": "[data-testid^=\"key-row__btn--save--\"]"
-                  }
-                }
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "id": "step-17",
-      "index": 17,
-      "action": "assert",
-      "interactive": false,
-      "screenshotWhen": "after",
-      "waitAfter": 600,
-      "text": {
-        "fr": "Une fenêtre de confirmation s'affiche. Cliquez sur le bouton de validation pour enregistrer définitivement cette clé de répartition dans le module Clés.",
-        "en": "A confirmation dialog appears. Click the confirm button to permanently save this allocation key to the Keys module."
       },
       "subtitle": {
         "fr": "Sauvegarde",
@@ -1749,7 +1524,18 @@
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1288,
+                      "y": 851.5,
+                      "width": 32,
+                      "height": 35
+                    },
+                    "selector": "[data-testid^=\"key-row__btn--save--\"] button"
+                  }
+                }
               }
             ]
           },
@@ -1758,10 +1544,21 @@
               {
                 "screenshot": "../assets/algorithm-generate/fr/mobile/step-52.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 268,
+                      "y": 794.296875,
+                      "width": 32,
+                      "height": 35
+                    },
+                    "selector": "[data-testid^=\"key-row__btn--save--\"] button"
+                  }
+                }
               }
             ]
           }
@@ -1775,7 +1572,18 @@
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1288,
+                      "y": 851,
+                      "width": 32,
+                      "height": 35
+                    },
+                    "selector": "[data-testid^=\"key-row__btn--save--\"] button"
+                  }
+                }
               }
             ]
           },
@@ -1784,8 +1592,93 @@
               {
                 "screenshot": "../assets/algorithm-generate/en/mobile/step-52.png",
                 "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 268,
+                      "y": 793.796875,
+                      "width": 32,
+                      "height": 35
+                    },
+                    "selector": "[data-testid^=\"key-row__btn--save--\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-17",
+      "index": 17,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 600,
+      "title": {
+        "fr": "Confirmer l'enregistrement",
+        "en": "Confirm saving the key"
+      },
+      "text": {
+        "fr": "Une fenêtre de confirmation s'affiche. Cliquez sur le bouton de validation pour enregistrer définitivement cette clé de répartition dans le module Clés.",
+        "en": "A confirmation dialog appears. Click the confirm button to permanently save this allocation key to the Keys module."
+      },
+      "subtitle": {
+        "fr": "Sauvegarde",
+        "en": "Save"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-54.png",
+                "captureSize": {
                   "width": 1440,
                   "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-54.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-54.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-54.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -1801,6 +1694,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les clés",
+        "en": "Open the keys"
+      },
       "text": {
         "fr": "Dans la section « Gestion » de la barre latérale, cliquez sur « Clés » pour afficher les clés de répartition enregistrées pour la communauté active.",
         "en": "In the sidebar's \"Management\" section, click \"Keys\" to display the allocation keys saved for the active community."
@@ -1814,7 +1711,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-56.png",
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-59.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1837,10 +1734,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-59.png",
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-62.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1862,7 +1759,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-56.png",
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-59.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1885,10 +1782,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-59.png",
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-62.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1915,6 +1812,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Clé visible dans le module Clés",
+        "en": "Key visible in the Keys module"
+      },
       "text": {
         "fr": "La clé enregistrée depuis le module OLAGSA apparaît maintenant dans la liste des clés de répartition de la communauté. Elle est disponible pour les membres autorisés.",
         "en": "The key saved from the OLAGSA module now appears in the community's allocation keys list. It is available to authorised members."
@@ -1928,7 +1829,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/desktop/step-62.png",
+                "screenshot": "../assets/algorithm-generate/fr/desktop/step-65.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1940,10 +1841,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/fr/mobile/step-62.png",
+                "screenshot": "../assets/algorithm-generate/fr/mobile/step-65.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -1954,7 +1855,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/desktop/step-62.png",
+                "screenshot": "../assets/algorithm-generate/en/desktop/step-65.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1966,10 +1867,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/algorithm-generate/en/mobile/step-62.png",
+                "screenshot": "../assets/algorithm-generate/en/mobile/step-65.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

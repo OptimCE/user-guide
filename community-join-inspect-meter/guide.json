@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir mes communautés",
+        "en": "Open my communities"
+      },
       "text": {
         "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Mes communautés » pour voir la liste des communautés où vous êtes inscrit·e.",
         "en": "In the sidebar's profile menu, click \"My communities\" to see the list of communities you belong to."
@@ -69,8 +74,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-meter/fr/mobile/step-13.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -117,8 +122,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-meter/en/mobile/step-13.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -145,6 +150,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir le groupe Membres",
+        "en": "Open the Members group"
+      },
       "text": {
         "fr": "Dans la section « Gestion », cliquez sur « Gestion des membres » pour révéler le sous-menu (membres, compteurs, opérations de partage).",
         "en": "In the \"Management\" section, click \"Members\" to reveal the submenu (members, meters, sharing operations)."
@@ -183,8 +192,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-meter/fr/mobile/step-27.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -231,8 +240,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-meter/en/mobile/step-27.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -259,6 +268,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir la liste des compteurs",
+        "en": "Open the meters list"
+      },
       "text": {
         "fr": "Dans le sous-menu, cliquez sur « Compteurs » pour afficher la liste des compteurs de la communauté.",
         "en": "In the submenu, click \"Meters\" to display the community's meters."
@@ -297,8 +310,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-meter/fr/mobile/step-28.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -345,8 +358,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-meter/en/mobile/step-28.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -373,6 +386,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir un compteur",
+        "en": "Open a meter"
+      },
       "text": {
         "fr": "Cliquez sur le premier compteur de la liste pour afficher sa fiche détaillée — la sélection se fait par l'EAN du compteur.",
         "en": "Click the first meter in the list to open its detail page — the row is matched by the meter's EAN."
@@ -411,8 +428,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-meter/fr/mobile/step-34.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -459,8 +476,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-meter/en/mobile/step-34.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -487,6 +504,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "EAN du compteur",
+        "en": "Meter EAN"
+      },
       "text": {
         "fr": "L'en-tête de la fiche affiche l'EAN du compteur tel qu'il est enregistré dans la base — c'est l'identifiant unique du point de comptage.",
         "en": "The hero shows the meter's EAN as stored in the database — this is the unique identifier of the metering point."
@@ -514,8 +535,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-meter/fr/mobile/step-37.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -540,8 +561,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-meter/en/mobile/step-37.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -553,10 +574,14 @@
     {
       "id": "step-6",
       "index": 6,
-      "action": "custom",
+      "action": "assert",
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Caractéristiques techniques",
+        "en": "Technical characteristics"
+      },
       "text": {
         "fr": "La carte technique reprend le numéro physique du compteur et la fréquence de relevé — utile pour confirmer que la fiche correspond bien à l'appareil installé.",
         "en": "The technical card lists the physical meter number and the reading frequency — handy for confirming the page matches the installed device."
@@ -584,8 +609,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-meter/fr/mobile/step-38.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -610,8 +635,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-meter/en/mobile/step-38.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -627,6 +652,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Onglets de consultation",
+        "en": "Browsing tabs"
+      },
       "text": {
         "fr": "Les onglets permettent de naviguer entre les données actuelles, l'historique, les valeurs futures et la consommation calculée du compteur.",
         "en": "The tabs let you switch between actual, historical, future and computed consumption data for this meter."
@@ -654,8 +683,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-meter/fr/mobile/step-39.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -680,8 +709,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-meter/en/mobile/step-39.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

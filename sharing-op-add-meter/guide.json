@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir mes communautés",
+        "en": "Open my communities"
+      },
       "text": {
         "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Mes communautés » pour voir la liste des communautés où vous êtes inscrit·e.",
         "en": "In the sidebar's profile menu, click \"My communities\" to see the list of communities you belong to."
@@ -69,8 +74,8 @@
               {
                 "screenshot": "../assets/sharing-op-add-meter/fr/mobile/step-13.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -117,8 +122,8 @@
               {
                 "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-13.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -145,6 +150,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Activer la communauté",
+        "en": "Activate the community"
+      },
       "text": {
         "fr": "Cliquez sur « Activer » sur la ligne de la Test Community pour la rejoindre dans votre espace de travail. Le menu de gestion ne sera disponible qu'après cette étape.",
         "en": "Click \"Activate\" on the Test Community row to join it in your workspace. The management menu only becomes available once this step is done."
@@ -183,8 +192,8 @@
               {
                 "screenshot": "../assets/sharing-op-add-meter/fr/mobile/step-19.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -231,8 +240,8 @@
               {
                 "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-19.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -259,6 +268,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir les partages d'énergie",
+        "en": "Open sharing operations"
+      },
       "text": {
         "fr": "Rendez-vous sur la liste des opérations de partage de votre communauté pour retrouver celle à laquelle vous souhaitez rattacher un compteur.",
         "en": "Open the list of sharing operations for your community to find the one you want to attach a meter to."
@@ -286,8 +299,8 @@
               {
                 "screenshot": "../assets/sharing-op-add-meter/fr/mobile/step-21.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -312,8 +325,8 @@
               {
                 "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-21.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -329,6 +342,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Sélectionner une opération",
+        "en": "Select an operation"
+      },
       "text": {
         "fr": "Cliquez sur la ligne de l'opération de partage à modifier pour ouvrir sa fiche détaillée.",
         "en": "Click the row of the sharing operation you want to edit to open its detail view."
@@ -367,8 +384,8 @@
               {
                 "screenshot": "../assets/sharing-op-add-meter/fr/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -415,8 +432,8 @@
               {
                 "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -443,6 +460,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Lancer l'ajout d'un compteur",
+        "en": "Start adding a meter"
+      },
       "text": {
         "fr": "Depuis la fiche détaillée, cliquez sur « Ajouter un compteur » pour ouvrir la boîte de dialogue de sélection.",
         "en": "From the detail view, click \"Add meter\" to open the meter selection dialog."
@@ -481,8 +502,8 @@
               {
                 "screenshot": "../assets/sharing-op-add-meter/fr/mobile/step-29.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -529,8 +550,8 @@
               {
                 "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-29.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -557,6 +578,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Compteurs disponibles",
+        "en": "Available meters"
+      },
       "text": {
         "fr": "La boîte de dialogue affiche tous les compteurs de la communauté qui ne sont pas encore rattachés à cette opération de partage.",
         "en": "The dialog lists every meter in the community that is not yet attached to this sharing operation."
@@ -584,8 +609,8 @@
               {
                 "screenshot": "../assets/sharing-op-add-meter/fr/mobile/step-30.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -610,8 +635,8 @@
               {
                 "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-30.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -623,10 +648,14 @@
     {
       "id": "step-7",
       "index": 7,
-      "action": "custom",
-      "interactive": false,
+      "action": "click",
+      "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Cocher le compteur",
+        "en": "Tick the meter"
+      },
       "text": {
         "fr": "Cochez la case du compteur à rattacher. Vous pouvez en sélectionner plusieurs si nécessaire avant de valider.",
         "en": "Tick the checkbox of the meter you want to attach. Multiple meters can be selected before submitting."
@@ -645,19 +674,41 @@
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 269,
+                      "y": 457.5,
+                      "width": 20,
+                      "height": 19
+                    },
+                    "selector": "[data-testid=\"op-add-meter__checkbox--0\"]"
+                  }
+                }
               }
             ]
           },
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-add-meter/fr/mobile/step-31.png",
+                "screenshot": "../assets/sharing-op-add-meter/fr/mobile/step-32.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 18,
+                      "y": 429,
+                      "width": 20,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"op-add-meter__checkbox-mobile--0\"]"
+                  }
+                }
               }
             ]
           }
@@ -671,19 +722,41 @@
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 269,
+                      "y": 457.5,
+                      "width": 20,
+                      "height": 19
+                    },
+                    "selector": "[data-testid=\"op-add-meter__checkbox--0\"]"
+                  }
+                }
               }
             ]
           },
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-31.png",
+                "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-32.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 18,
+                      "y": 429,
+                      "width": 20,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"op-add-meter__checkbox-mobile--0\"]"
+                  }
+                }
               }
             ]
           }
@@ -693,10 +766,14 @@
     {
       "id": "step-8",
       "index": 8,
-      "action": "custom",
+      "action": "pick-date",
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Date de début aujourd'hui",
+        "en": "Start date today"
+      },
       "text": {
         "fr": "Ouvrez le calendrier et sélectionnez la date du jour : le rattachement du compteur prendra effet immédiatement.",
         "en": "Open the calendar and pick today's date so the meter attachment takes effect immediately."
@@ -710,7 +787,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-add-meter/fr/desktop/step-32.png",
+                "screenshot": "../assets/sharing-op-add-meter/fr/desktop/step-33.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -733,10 +810,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-add-meter/fr/mobile/step-32.png",
+                "screenshot": "../assets/sharing-op-add-meter/fr/mobile/step-33.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -758,7 +835,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-32.png",
+                "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-33.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -781,10 +858,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-32.png",
+                "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-33.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -807,10 +884,14 @@
     {
       "id": "step-9",
       "index": 9,
-      "action": "custom",
-      "interactive": false,
+      "action": "click",
+      "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Valider l'ajout",
+        "en": "Confirm the addition"
+      },
       "text": {
         "fr": "Cliquez sur « Valider » pour rattacher le compteur. Une notification confirme la mise à jour côté serveur.",
         "en": "Click \"Validate\" to attach the meter. A toast notification confirms the server-side update."
@@ -824,24 +905,46 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-add-meter/fr/desktop/step-33.png",
+                "screenshot": "../assets/sharing-op-add-meter/fr/desktop/step-34.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 682.0625,
+                      "y": 596.5,
+                      "width": 75.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-add-meter__btn--validate\"]"
+                  }
+                }
               }
             ]
           },
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-add-meter/fr/mobile/step-33.png",
+                "screenshot": "../assets/sharing-op-add-meter/fr/mobile/step-34.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 157.0625,
+                      "y": 624,
+                      "width": 75.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-add-meter__btn--validate\"]"
+                  }
+                }
               }
             ]
           }
@@ -850,24 +953,46 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-33.png",
+                "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-34.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 678,
+                      "y": 596.5,
+                      "width": 83.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-add-meter__btn--validate\"]"
+                  }
+                }
               }
             ]
           },
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-33.png",
+                "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-34.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 153,
+                      "y": 624,
+                      "width": 83.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-add-meter__btn--validate\"]"
+                  }
+                }
               }
             ]
           }
@@ -881,6 +1006,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Compteur rattaché",
+        "en": "Meter attached"
+      },
       "text": {
         "fr": "De retour sur la fiche détaillée, le compteur ajouté apparaît immédiatement dans l'onglet « Actuel » des compteurs rattachés à l'opération.",
         "en": "Back on the detail view, the newly attached meter appears immediately in the \"Now\" tab of meters tied to the operation."
@@ -894,7 +1023,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-add-meter/fr/desktop/step-36.png",
+                "screenshot": "../assets/sharing-op-add-meter/fr/desktop/step-37.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -906,10 +1035,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-add-meter/fr/mobile/step-37.png",
+                "screenshot": "../assets/sharing-op-add-meter/fr/mobile/step-38.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -920,7 +1049,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-36.png",
+                "screenshot": "../assets/sharing-op-add-meter/en/desktop/step-37.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -932,10 +1061,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-37.png",
+                "screenshot": "../assets/sharing-op-add-meter/en/mobile/step-38.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

@@ -29,6 +29,7 @@
     --oce-border: #e1dcc6;
     --oce-border-strong: #c8c0a0;
     --oce-accent: #b08a3a;
+    --oce-primary-glow: rgba(67, 160, 71, 0.35);
 
     --oce-kbd-bg: #181e18;
     --oce-kbd-fg: #f0f4f0;
@@ -74,6 +75,7 @@
     --oce-border: #2c3a2e;
     --oce-border-strong: #4a5a4c;
     --oce-accent: #d4b572;
+    --oce-primary-glow: rgba(102, 187, 106, 0.40);
 
     --oce-kbd-bg: #f0f4f0;
     --oce-kbd-fg: #181e18;
@@ -81,6 +83,40 @@
     --oce-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.3);
     --oce-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.35), 0 8px 24px rgba(0, 0, 0, 0.45);
     --oce-shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.4), 0 24px 48px rgba(0, 0, 0, 0.6);
+}
+
+/* ── Interactive player (<steppy-guide> web component) ──────────────────
+   The interactive mode is the Lit <steppy-guide> custom element. Its Shadow
+   DOM is isolated, so it is themeable ONLY through these custom properties
+   (token names verified against the installed steppy-player.js). The --oce-*
+   refs already remap under [data-theme="dark"] and var() resolves at use time,
+   so this single block themes both light and dark. Only the alpha-glow tokens
+   need a literal, supplied via --oce-primary-glow (defined per theme above). */
+steppy-guide {
+    --steppy-accent:        var(--oce-primary-dark);
+    --steppy-accent-weak:   var(--oce-primary-glow);
+    --steppy-success:       var(--oce-primary);
+
+    --steppy-bg:            var(--oce-paper);
+    --steppy-surface:       var(--oce-card);
+    --steppy-chrome-bg:     var(--oce-paper-deep);
+
+    --steppy-fg:            var(--oce-text);
+    --steppy-muted:         var(--oce-text-muted);
+    --steppy-border:        var(--oce-border);
+
+    --steppy-tooltip-bg:    var(--oce-card);
+    --steppy-tooltip-fg:    var(--oce-text);
+
+    --steppy-cursor-color:  var(--oce-primary-dark);
+    --steppy-hotspot-color: var(--oce-primary);
+    --steppy-hotspot-glow:  var(--oce-primary-glow);
+    --steppy-ripple-color:  var(--oce-primary);
+
+    --steppy-font-serif:    var(--font-display);
+    --steppy-font-sans:     var(--font-body);
+    --steppy-font-mono:     var(--font-mono);
+    --steppy-font-family:   var(--font-body);
 }
 
 /* ── Base ────────────────────────────────────────────────────────────── */

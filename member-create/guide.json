@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir mes communautés",
+        "en": "Open my communities"
+      },
       "text": {
         "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Mes communautés » pour voir la liste des communautés où vous êtes inscrit·e.",
         "en": "In the sidebar's profile menu, click \"My communities\" to see the list of communities you belong to."
@@ -69,8 +74,8 @@
               {
                 "screenshot": "../assets/member-create/fr/mobile/step-12.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -117,8 +122,8 @@
               {
                 "screenshot": "../assets/member-create/en/mobile/step-12.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -145,6 +150,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir le groupe Membres",
+        "en": "Open the Members group"
+      },
       "text": {
         "fr": "Dans la section « Gestion », cliquez sur « Gestion des membres » pour révéler le sous-menu (membres, compteurs, opérations de partage).",
         "en": "In the \"Management\" section, click \"Members\" to reveal the submenu (members, meters, sharing operations)."
@@ -183,8 +192,8 @@
               {
                 "screenshot": "../assets/member-create/fr/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -231,8 +240,8 @@
               {
                 "screenshot": "../assets/member-create/en/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -259,6 +268,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir la liste des membres",
+        "en": "Open the members list"
+      },
       "text": {
         "fr": "Dans le sous-menu, cliquez sur « Membres » : c'est le point de départ pour ajouter une nouvelle personne à la communauté.",
         "en": "In the submenu, click \"Members\" — this is the starting point for adding a new person to the community."
@@ -297,8 +310,8 @@
               {
                 "screenshot": "../assets/member-create/fr/mobile/step-27.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -345,8 +358,8 @@
               {
                 "screenshot": "../assets/member-create/en/mobile/step-27.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -373,6 +386,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Lancer la création d'un membre",
+        "en": "Start creating a member"
+      },
       "text": {
         "fr": "Cliquez sur « Ajouter un membre » en haut de la liste pour ouvrir l'assistant de création en quatre étapes.",
         "en": "Click \"Add member\" at the top of the list to open the four-step creation wizard."
@@ -411,8 +428,8 @@
               {
                 "screenshot": "../assets/member-create/fr/mobile/step-30.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -459,8 +476,8 @@
               {
                 "screenshot": "../assets/member-create/en/mobile/step-30.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -487,6 +504,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Choisir le type de membre",
+        "en": "Pick the member type"
+      },
       "text": {
         "fr": "Sélectionnez « Particulier » pour créer un membre individuel. L'option « Entreprise » est réservée aux personnes morales et demandera des champs différents par la suite.",
         "en": "Select \"Individual\" to create a personal member. The \"Company\" option is reserved for legal entities and asks for different fields later."
@@ -525,8 +546,8 @@
               {
                 "screenshot": "../assets/member-create/fr/mobile/step-32.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -573,8 +594,8 @@
               {
                 "screenshot": "../assets/member-create/en/mobile/step-32.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -601,6 +622,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Renseigner les informations personnelles",
+        "en": "Fill in the personal information"
+      },
       "text": {
         "fr": "Saisissez le numéro national, le nom, le prénom, l'adresse e-mail et le numéro de téléphone du nouveau membre. Tous ces champs sont obligatoires pour valider l'étape.",
         "en": "Enter the national number, last name, first name, email address and phone number of the new member. All these fields are required to move past this step."
@@ -682,8 +707,8 @@
               {
                 "screenshot": "../assets/member-create/fr/mobile/step-35-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -816,8 +841,8 @@
               {
                 "screenshot": "../assets/member-create/en/mobile/step-35-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -887,6 +912,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Renseigner l'adresse",
+        "en": "Enter the address"
+      },
       "text": {
         "fr": "Complétez l'adresse du domicile : rue, numéro, code postal et ville. Si l'adresse de facturation est identique, cochez la case « Même adresse » à l'étape suivante pour la réutiliser automatiquement.",
         "en": "Fill in the home address: street, number, postcode and city. If the billing address is identical, tick the \"Same address\" checkbox right after to reuse it automatically."
@@ -958,8 +987,8 @@
               {
                 "screenshot": "../assets/member-create/fr/mobile/step-38-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -1072,8 +1101,8 @@
               {
                 "screenshot": "../assets/member-create/en/mobile/step-38-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -1133,6 +1162,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Renseigner les coordonnées bancaires",
+        "en": "Enter the banking details"
+      },
       "text": {
         "fr": "Saisissez l'IBAN du membre : il est utilisé pour les remboursements liés aux opérations de partage. Le format est validé en temps réel.",
         "en": "Enter the member's IBAN — it is used for refunds tied to sharing operations. The format is validated as you type."
@@ -1172,8 +1205,8 @@
               {
                 "screenshot": "../assets/member-create/fr/mobile/step-42.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -1222,8 +1255,8 @@
               {
                 "screenshot": "../assets/member-create/en/mobile/step-42.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -1247,10 +1280,14 @@
     {
       "id": "step-9",
       "index": 9,
-      "action": "custom",
-      "interactive": false,
+      "action": "click",
+      "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Valider la création",
+        "en": "Submit the new member"
+      },
       "text": {
         "fr": "Cliquez sur « Valider » pour envoyer le formulaire au CRM. Le membre est créé immédiatement et associé à la communauté active.",
         "en": "Click \"Submit\" to send the form to the CRM. The member is created immediately and attached to the active community."
@@ -1269,7 +1306,18 @@
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 982.875,
+                      "y": 551.5,
+                      "width": 100.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
               }
             ]
           },
@@ -1278,10 +1326,21 @@
               {
                 "screenshot": "../assets/member-create/fr/mobile/step-43.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 457.875,
+                      "y": 523.5,
+                      "width": 100.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
               }
             ]
           }
@@ -1295,7 +1354,18 @@
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 956.53125,
+                      "y": 551.5,
+                      "width": 108.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
               }
             ]
           },
@@ -1304,10 +1374,21 @@
               {
                 "screenshot": "../assets/member-create/en/mobile/step-43.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
-                "cursor": null
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 431.53125,
+                      "y": 523.5,
+                      "width": 108.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
               }
             ]
           }
@@ -1321,6 +1402,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Reporter l'ajout d'un compteur",
+        "en": "Skip adding a meter"
+      },
       "text": {
         "fr": "Une fenêtre propose d'enchaîner avec la création d'un compteur. Choisissez « Non » pour terminer ici — vous pourrez toujours ajouter un compteur plus tard depuis la fiche du membre.",
         "en": "A dialog offers to chain into meter creation. Pick \"No\" to stop here — you can always add a meter later from the member's detail page."
@@ -1359,8 +1444,8 @@
               {
                 "screenshot": "../assets/member-create/fr/mobile/step-45.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1407,8 +1492,8 @@
               {
                 "screenshot": "../assets/member-create/en/mobile/step-45.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1435,6 +1520,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Membre créé",
+        "en": "Member created"
+      },
       "text": {
         "fr": "La fiche du nouveau membre s'affiche : son nom complet apparaît dans l'en-tête et toutes les informations saisies sont visibles. Le membre est désormais utilisable dans les opérations de partage.",
         "en": "The new member's detail page is now visible: their full name shows in the header and every field you entered is rendered. The member is ready to use in sharing operations."
@@ -1462,8 +1551,8 @@
               {
                 "screenshot": "../assets/member-create/fr/mobile/step-51.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -1488,8 +1577,8 @@
               {
                 "screenshot": "../assets/member-create/en/mobile/step-51.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

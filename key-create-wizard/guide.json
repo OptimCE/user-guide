@@ -23,14 +23,19 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
       "index": 1,
-      "action": "custom",
+      "action": "click",
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir le menu de création",
+        "en": "Open the create menu"
+      },
       "text": {
         "fr": "Cliquez sur la flèche du bouton « Ajouter » pour révéler les modes de création — la grille libre ou l'assistant pas-à-pas.",
         "en": "Click the dropdown arrow next to \"Add\" to reveal the available creation modes — the free grid or the step-by-step wizard."
@@ -69,8 +74,8 @@
               {
                 "screenshot": "../assets/key-create-wizard/fr/mobile/step-17.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -117,8 +122,8 @@
               {
                 "screenshot": "../assets/key-create-wizard/en/mobile/step-17.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -141,10 +146,14 @@
     {
       "id": "step-2",
       "index": 2,
-      "action": "custom",
+      "action": "click",
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Lancer l'assistant",
+        "en": "Launch the wizard"
+      },
       "text": {
         "fr": "Sélectionnez « Ajouter une clé standard » pour démarrer l'assistant pas-à-pas, qui guide la configuration en quatre étapes.",
         "en": "Select \"Add standard key\" to start the step-by-step wizard, which walks you through the configuration in four steps."
@@ -158,7 +167,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/desktop/step-18.png",
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-19.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -181,10 +190,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/mobile/step-18.png",
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-19.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -206,7 +215,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/desktop/step-18.png",
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-19.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -229,10 +238,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/mobile/step-18.png",
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-19.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -259,6 +268,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Nombre de consommateurs",
+        "en": "Number of consumers"
+      },
       "text": {
         "fr": "Indiquez combien de consommateurs se partageront l'énergie. Ce nombre conditionne la taille des itérations générées par l'assistant — ici trois.",
         "en": "Indicate how many consumers will share the energy. This count drives the size of every iteration the wizard creates — three here."
@@ -272,7 +285,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/desktop/step-20.png",
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-21.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -296,10 +309,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/mobile/step-20.png",
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-21.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -322,7 +335,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/desktop/step-20.png",
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-21.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -346,10 +359,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/mobile/step-20.png",
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-21.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -377,6 +390,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Valider l'étape",
+        "en": "Confirm the step"
+      },
       "text": {
         "fr": "Cliquez sur « Valider » pour confirmer le nombre de consommateurs et passer à l'étape suivante.",
         "en": "Click \"Validate\" to confirm the consumer count and proceed to the next step."
@@ -390,7 +407,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/desktop/step-21.png",
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-22.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -413,10 +430,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/mobile/step-21.png",
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-22.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -438,7 +455,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/desktop/step-21.png",
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-22.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -461,10 +478,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/mobile/step-21.png",
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-22.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -491,6 +508,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Nommer les consommateurs",
+        "en": "Name the consumers"
+      },
       "text": {
         "fr": "Saisissez un nom pour chacun des trois consommateurs (Cons1, Cons2, Cons3). Ces noms seront repris dans toutes les itérations qui suivent.",
         "en": "Enter a name for each of the three consumers (Cons1, Cons2, Cons3). These names carry over to every subsequent iteration."
@@ -504,7 +525,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/desktop/step-23-a.png",
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-24-a.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -550,10 +571,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/mobile/step-23-a.png",
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-24-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -598,7 +619,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/desktop/step-23-a.png",
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-24-a.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -644,10 +665,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/mobile/step-23-a.png",
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-24-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -697,6 +718,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Valider les noms",
+        "en": "Confirm the names"
+      },
       "text": {
         "fr": "Cliquez sur « Valider » pour figer les noms des consommateurs et accéder à la configuration des itérations.",
         "en": "Click \"Validate\" to lock in the consumer names and move on to configuring the iterations."
@@ -710,7 +735,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/desktop/step-24.png",
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-25.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -733,10 +758,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/mobile/step-24.png",
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-25.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -758,7 +783,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/desktop/step-24.png",
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-25.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -781,10 +806,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/mobile/step-24.png",
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-25.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -811,6 +836,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Choisir le mode prorata",
+        "en": "Pick prorata mode"
+      },
       "text": {
         "fr": "Sélectionnez « Prorata » pour cette première itération : l'énergie sera répartie automatiquement entre les consommateurs selon leur consommation réelle.",
         "en": "Select \"Prorata\" for this first iteration: the energy will be split automatically between consumers based on their actual consumption."
@@ -824,7 +853,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/desktop/step-26.png",
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-27.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -847,10 +876,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/mobile/step-26.png",
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-27.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -872,7 +901,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/desktop/step-26.png",
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-27.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -895,10 +924,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/mobile/step-26.png",
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-27.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -925,6 +954,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Allouer 70%",
+        "en": "Allocate 70%"
+      },
       "text": {
         "fr": "Saisissez 70 dans le champ de pondération : cette itération recevra 70% de l'énergie disponible. Le total devra atteindre 100% pour valider l'étape.",
         "en": "Type 70 in the weight field — this iteration will receive 70% of the available energy. The total must reach 100% to validate the step."
@@ -938,7 +971,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/desktop/step-27.png",
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-28.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -962,10 +995,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/mobile/step-27.png",
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-28.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -988,7 +1021,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/desktop/step-27.png",
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-28.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1012,10 +1045,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/mobile/step-27.png",
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-28.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -1043,6 +1076,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Itération suivante générée",
+        "en": "Next iteration generated"
+      },
       "text": {
         "fr": "L'assistant détecte que le total reste sous 100% et ajoute automatiquement une deuxième itération à configurer. Il continuera tant que la somme ne sera pas atteinte.",
         "en": "The wizard sees the total is still below 100% and spawns a second iteration to configure. It will keep adding rows until the sum is reached."
@@ -1056,7 +1093,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/desktop/step-28.png",
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-29.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1079,10 +1116,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/mobile/step-28.png",
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-29.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1104,7 +1141,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/desktop/step-28.png",
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-29.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1127,10 +1164,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/mobile/step-28.png",
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-29.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1157,6 +1194,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Mode prorata (itération 2)",
+        "en": "Prorata mode (iter. 2)"
+      },
       "text": {
         "fr": "Sélectionnez à nouveau « Prorata » pour la deuxième itération : la même logique de répartition automatique s'appliquera.",
         "en": "Pick \"Prorata\" again for the second iteration so it uses the same automatic split logic."
@@ -1170,7 +1211,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/desktop/step-30.png",
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-31.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1193,10 +1234,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/mobile/step-30.png",
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-31.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1218,7 +1259,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/desktop/step-30.png",
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-31.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1241,10 +1282,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/mobile/step-30.png",
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-31.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1271,6 +1312,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Allouer 30%",
+        "en": "Allocate 30%"
+      },
       "text": {
         "fr": "Saisissez 30 pour cette deuxième itération : la somme avec les 70% précédents atteint 100% et débloque la finalisation.",
         "en": "Type 30 for this second iteration — combined with the earlier 70%, the total now reaches 100% and unlocks the finalisation step."
@@ -1284,7 +1329,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/desktop/step-31.png",
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-32.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1308,10 +1353,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/mobile/step-31.png",
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-32.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -1334,7 +1379,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/desktop/step-31.png",
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-32.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1358,10 +1403,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/mobile/step-31.png",
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-32.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -1389,6 +1434,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Valider les itérations",
+        "en": "Confirm iterations"
+      },
       "text": {
         "fr": "Cliquez sur « Valider » : la somme atteint 100% et l'assistant ouvre la dernière étape de finalisation.",
         "en": "Click \"Validate\": the total reaches 100% and the wizard opens the final finalisation step."
@@ -1402,7 +1451,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/desktop/step-32.png",
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-33.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1425,10 +1474,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/mobile/step-32.png",
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-33.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1450,7 +1499,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/desktop/step-32.png",
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-33.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1473,10 +1522,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/mobile/step-32.png",
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-33.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1503,6 +1552,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Identifier la clé",
+        "en": "Name the key"
+      },
       "text": {
         "fr": "Donnez un nom et une description à la nouvelle clé de répartition. Ces informations apparaîtront dans la liste des clés et facilitent sa réutilisation.",
         "en": "Give the new allocation key a name and a description. This metadata appears in the key list and makes the key easier to reuse."
@@ -1516,7 +1569,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/desktop/step-34-a.png",
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-35-a.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1552,10 +1605,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/mobile/step-34-a.png",
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-35-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -1590,7 +1643,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/desktop/step-34-a.png",
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-35-a.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1626,10 +1679,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/mobile/step-34-a.png",
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-35-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -1669,6 +1722,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Soumettre l'assistant",
+        "en": "Submit the wizard"
+      },
       "text": {
         "fr": "Validez l'assistant pour générer la grille complète : une page de revue s'ouvre afin de relire la configuration avant l'enregistrement définitif.",
         "en": "Submit the wizard to materialise the full grid: a review page opens so you can re-read the configuration before persisting it."
@@ -1682,7 +1739,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/desktop/step-35.png",
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-36.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1705,10 +1762,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/mobile/step-35.png",
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-36.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1730,7 +1787,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/desktop/step-35.png",
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-36.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1753,10 +1810,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/mobile/step-35.png",
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-36.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1783,6 +1840,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Enregistrer la clé",
+        "en": "Save the key"
+      },
       "text": {
         "fr": "Cliquez sur « Créer » pour enregistrer la clé. La grille pré-remplie par l'assistant est envoyée telle quelle au CRM.",
         "en": "Click \"Create\" to save the key. The grid pre-filled by the wizard is sent to the CRM as-is."
@@ -1796,7 +1857,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/desktop/step-37.png",
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-38.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1819,10 +1880,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/mobile/step-37.png",
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-38.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1844,7 +1905,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/desktop/step-37.png",
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-38.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1867,10 +1928,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/mobile/step-37.png",
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-38.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1893,10 +1954,14 @@
     {
       "id": "step-16",
       "index": 16,
-      "action": "custom",
+      "action": "assert",
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Clé créée",
+        "en": "Key created"
+      },
       "text": {
         "fr": "La nouvelle clé « E2E wizard key » apparaît dans la liste des clés de répartition de la communauté, prête à être associée à une opération de partage.",
         "en": "The new \"E2E wizard key\" shows up in the community's allocation keys list, ready to be associated with a sharing operation."
@@ -1910,7 +1975,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/desktop/step-39.png",
+                "screenshot": "../assets/key-create-wizard/fr/desktop/step-40.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1922,10 +1987,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/fr/mobile/step-39.png",
+                "screenshot": "../assets/key-create-wizard/fr/mobile/step-40.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -1936,7 +2001,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/desktop/step-39.png",
+                "screenshot": "../assets/key-create-wizard/en/desktop/step-40.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1948,10 +2013,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/key-create-wizard/en/mobile/step-39.png",
+                "screenshot": "../assets/key-create-wizard/en/mobile/step-40.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

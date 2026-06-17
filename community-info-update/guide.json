@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Se connecter",
+        "en": "Log in"
+      },
       "text": {
         "fr": "Saisissez vos identifiants (demo / demo) dans le formulaire Keycloak, puis cliquez sur « Se connecter » pour accéder au CRM.",
         "en": "Enter your credentials (demo / demo) in the Keycloak form, then click \"Log in\" to access the CRM."
@@ -69,8 +74,8 @@
               {
                 "screenshot": "../assets/community-info-update/fr/mobile/step-05.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -117,8 +122,8 @@
               {
                 "screenshot": "../assets/community-info-update/en/mobile/step-05.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -145,6 +150,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Fiche d'informations de la communauté",
+        "en": "Community information page"
+      },
       "text": {
         "fr": "La page affiche les informations actuelles de la communauté : nom, description, site web et adresse du siège social. Cliquez sur **Modifier** pour passer en mode édition.",
         "en": "The page shows the community's current information: name, description, website, and registered office address. Click **Edit** to switch to edit mode."
@@ -172,8 +181,8 @@
               {
                 "screenshot": "../assets/community-info-update/fr/mobile/step-19.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -198,8 +207,8 @@
               {
                 "screenshot": "../assets/community-info-update/en/mobile/step-19.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -215,6 +224,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Saisir les informations",
+        "en": "Enter the information"
+      },
       "text": {
         "fr": "Remplissez les champs : **Description**, **Site web** (URL complète commençant par https://) et les champs de l'adresse du siège social — rue, numéro, code postal et commune. Les quatre champs d'adresse doivent être renseignés ensemble ou laissés vides.",
         "en": "Fill in the fields: **Description**, **Website** (full URL starting with https://) and the registered office address fields — street, number, postcode, and city. All four address fields must be filled together or left empty."
@@ -306,8 +319,8 @@
               {
                 "screenshot": "../assets/community-info-update/fr/mobile/step-22-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -460,8 +473,8 @@
               {
                 "screenshot": "../assets/community-info-update/en/mobile/step-22-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -541,6 +554,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Informations mises à jour",
+        "en": "Information updated"
+      },
       "text": {
         "fr": "De retour en mode consultation, la fiche affiche la description, le site web et l'adresse tels que vous les avez saisis — les modifications ont bien été enregistrées côté serveur.",
         "en": "Back in view mode, the page shows the description, website, and address exactly as you entered them — the changes have been successfully saved server-side."
@@ -568,8 +585,8 @@
               {
                 "screenshot": "../assets/community-info-update/fr/mobile/step-24.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -594,8 +611,8 @@
               {
                 "screenshot": "../assets/community-info-update/en/mobile/step-24.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

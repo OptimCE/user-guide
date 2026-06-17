@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ajouter un compteur",
+        "en": "Add a meter"
+      },
       "text": {
         "fr": "Cliquez sur « Ajouter » pour ouvrir le formulaire de création d'un nouveau compteur rattaché à la communauté active.",
         "en": "Click \"Add\" to open the form that creates a new meter attached to the active community."
@@ -69,8 +74,8 @@
               {
                 "screenshot": "../assets/meter-create/fr/mobile/step-17.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -117,8 +122,8 @@
               {
                 "screenshot": "../assets/meter-create/en/mobile/step-17.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -145,6 +150,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Décrire l'emplacement",
+        "en": "Describe the location"
+      },
       "text": {
         "fr": "Renseignez l'adresse d'installation, l'EAN unique du point de comptage et le numéro physique du compteur. Ces champs sont indispensables pour identifier l'appareil.",
         "en": "Fill in the installation address, the unique EAN of the metering point and the physical meter number. These fields are required to identify the device."
@@ -246,8 +255,8 @@
               {
                 "screenshot": "../assets/meter-create/fr/mobile/step-19-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -305,7 +314,7 @@
                     {
                       "bbox": {
                         "x": -16.625,
-                        "y": 694.203125,
+                        "y": 693.203125,
                         "width": 423.265625,
                         "height": 42
                       },
@@ -315,7 +324,7 @@
                     {
                       "bbox": {
                         "x": -16.625,
-                        "y": 770.203125,
+                        "y": 769.203125,
                         "width": 423.265625,
                         "height": 42
                       },
@@ -420,8 +429,8 @@
               {
                 "screenshot": "../assets/meter-create/en/mobile/step-19-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -469,7 +478,7 @@
                     {
                       "bbox": {
                         "x": 28.78125,
-                        "y": 561.203125,
+                        "y": 560.203125,
                         "width": 332.4375,
                         "height": 42
                       },
@@ -479,7 +488,7 @@
                     {
                       "bbox": {
                         "x": 28.78125,
-                        "y": 694.203125,
+                        "y": 693.203125,
                         "width": 332.4375,
                         "height": 42
                       },
@@ -511,6 +520,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Choisir les caractéristiques",
+        "en": "Choose the characteristics"
+      },
       "text": {
         "fr": "Sélectionnez le nombre de phases, la fréquence de relevé et le groupe tarifaire — ces choix conditionnent la modélisation des consommations du compteur.",
         "en": "Select the phase count, reading frequency and tarif group — these choices drive how the meter's consumption is modelled."
@@ -549,8 +562,8 @@
               {
                 "screenshot": "../assets/meter-create/fr/mobile/step-22.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -597,8 +610,8 @@
               {
                 "screenshot": "../assets/meter-create/en/mobile/step-22.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -625,6 +638,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Caractéristiques énergétiques",
+        "en": "Energy characteristics"
+      },
       "text": {
         "fr": "Décrivez la puissance de prélèvement, la capacité totale de génération et l'ampérage du compteur. Ces valeurs alimentent les calculs de répartition des opérations de partage.",
         "en": "Describe the sampling power, total generating capacity and amperage of the meter. These values feed the allocation calculations for sharing operations."
@@ -696,8 +713,8 @@
               {
                 "screenshot": "../assets/meter-create/fr/mobile/step-25-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -810,8 +827,8 @@
               {
                 "screenshot": "../assets/meter-create/en/mobile/step-25-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -867,10 +884,14 @@
     {
       "id": "step-5",
       "index": 5,
-      "action": "custom",
+      "action": "select-option",
       "interactive": true,
       "screenshotWhen": "after",
-      "waitAfter": 0,
+      "waitAfter": 700,
+      "title": {
+        "fr": "Configurer le réseau",
+        "en": "Configure the grid"
+      },
       "text": {
         "fr": "Sélectionnez la filière de production, le statut d'injection et le gestionnaire de réseau de distribution (GRD) auquel le compteur est raccordé.",
         "en": "Select the production chain, injection status and distribution grid operator (DSO) the meter connects to."
@@ -909,8 +930,8 @@
               {
                 "screenshot": "../assets/meter-create/fr/mobile/step-28.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -957,8 +978,8 @@
               {
                 "screenshot": "../assets/meter-create/en/mobile/step-28.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -981,10 +1002,14 @@
     {
       "id": "step-6",
       "index": 6,
-      "action": "custom",
+      "action": "select-option",
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Associer à un membre",
+        "en": "Assign to a member"
+      },
       "text": {
         "fr": "Choisissez le tarif (simple ou bi-horaire), le type de client (résidentiel, professionnel) et le membre de la communauté propriétaire du compteur.",
         "en": "Pick the rate (simple or dual), the client type (residential, business) and the community member who owns the meter."
@@ -1007,12 +1032,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 407,
-                      "y": 649,
-                      "width": 305,
-                      "height": 42
+                      "x": 671,
+                      "y": 650,
+                      "width": 40,
+                      "height": 40
                     },
-                    "selector": "[data-testid=\"meter-creation__select--member\"]"
+                    "selector": "[data-testid=\"meter-creation__select--member\"] .p-select-dropdown"
                   }
                 }
               }
@@ -1023,19 +1048,19 @@
               {
                 "screenshot": "../assets/meter-create/fr/mobile/step-31.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": -16.625,
-                      "y": 520.203125,
-                      "width": 423.265625,
-                      "height": 42
+                      "x": 365.640625,
+                      "y": 521.203125,
+                      "width": 40,
+                      "height": 40
                     },
-                    "selector": "[data-testid=\"meter-creation__select--member\"]"
+                    "selector": "[data-testid=\"meter-creation__select--member\"] .p-select-dropdown"
                   }
                 }
               }
@@ -1055,12 +1080,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 407,
-                      "y": 649,
-                      "width": 305,
-                      "height": 42
+                      "x": 671,
+                      "y": 650,
+                      "width": 40,
+                      "height": 40
                     },
-                    "selector": "[data-testid=\"meter-creation__select--member\"]"
+                    "selector": "[data-testid=\"meter-creation__select--member\"] .p-select-dropdown"
                   }
                 }
               }
@@ -1071,19 +1096,19 @@
               {
                 "screenshot": "../assets/meter-create/en/mobile/step-31.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 28.78125,
-                      "y": 520.203125,
-                      "width": 332.4375,
-                      "height": 42
+                      "x": 320.21875,
+                      "y": 521.203125,
+                      "width": 40,
+                      "height": 40
                     },
-                    "selector": "[data-testid=\"meter-creation__select--member\"]"
+                    "selector": "[data-testid=\"meter-creation__select--member\"] .p-select-dropdown"
                   }
                 }
               }
@@ -1095,10 +1120,14 @@
     {
       "id": "step-7",
       "index": 7,
-      "action": "custom",
+      "action": "pick-date",
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Fixer la date d'activation",
+        "en": "Set the activation date"
+      },
       "text": {
         "fr": "Choisissez la date à partir de laquelle le compteur sera considéré comme actif dans la communauté. Avant cette date, il n'apparaîtra pas dans les calculs.",
         "en": "Pick the date from which the meter is considered active in the community. Before that date, the meter is excluded from any calculations."
@@ -1118,7 +1147,7 @@
                   "height": 900
                 },
                 "cursor": {
-                  "kind": "type",
+                  "kind": "click",
                   "target": {
                     "bbox": {
                       "x": 728,
@@ -1127,8 +1156,7 @@
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-creation__datepicker--start-date\"]"
-                  },
-                  "value": "aujourd'hui"
+                  }
                 }
               }
             ]
@@ -1138,11 +1166,11 @@
               {
                 "screenshot": "../assets/meter-create/fr/mobile/step-32.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
-                  "kind": "type",
+                  "kind": "click",
                   "target": {
                     "bbox": {
                       "x": -16.625,
@@ -1151,8 +1179,7 @@
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-creation__datepicker--start-date\"]"
-                  },
-                  "value": "aujourd'hui"
+                  }
                 }
               }
             ]
@@ -1168,7 +1195,7 @@
                   "height": 900
                 },
                 "cursor": {
-                  "kind": "type",
+                  "kind": "click",
                   "target": {
                     "bbox": {
                       "x": 728,
@@ -1177,8 +1204,7 @@
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-creation__datepicker--start-date\"]"
-                  },
-                  "value": "aujourd'hui"
+                  }
                 }
               }
             ]
@@ -1188,11 +1214,11 @@
               {
                 "screenshot": "../assets/meter-create/en/mobile/step-32.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
-                  "kind": "type",
+                  "kind": "click",
                   "target": {
                     "bbox": {
                       "x": 28.78125,
@@ -1201,8 +1227,7 @@
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-creation__datepicker--start-date\"]"
-                  },
-                  "value": "aujourd'hui"
+                  }
                 }
               }
             ]
@@ -1217,6 +1242,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Enregistrer le compteur",
+        "en": "Save the meter"
+      },
       "text": {
         "fr": "Cliquez sur « Valider » : le formulaire complet est envoyé au CRM, qui crée le compteur et le rattache à la communauté active.",
         "en": "Click \"Validate\" — the full form is submitted to the CRM, which creates the meter and links it to the active community."
@@ -1255,8 +1284,8 @@
               {
                 "screenshot": "../assets/meter-create/fr/mobile/step-33.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1303,8 +1332,8 @@
               {
                 "screenshot": "../assets/meter-create/en/mobile/step-33.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1331,6 +1360,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 800,
+      "title": {
+        "fr": "Filtrer par EAN",
+        "en": "Filter by EAN"
+      },
       "text": {
         "fr": "Saisissez l'EAN du compteur dans la barre de recherche pour filtrer la liste et retrouver immédiatement le compteur nouvellement créé.",
         "en": "Type the meter's EAN into the search bar to filter the list and immediately locate the newly created meter."
@@ -1370,8 +1403,8 @@
               {
                 "screenshot": "../assets/meter-create/fr/mobile/step-35.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -1420,8 +1453,8 @@
               {
                 "screenshot": "../assets/meter-create/en/mobile/step-35.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type",
@@ -1445,10 +1478,14 @@
     {
       "id": "step-10",
       "index": 10,
-      "action": "custom",
+      "action": "assert",
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Compteur trouvé",
+        "en": "Meter found"
+      },
       "text": {
         "fr": "Le compteur « 541449123456789012 » apparaît dans le tableau filtré : la création est confirmée et la fiche est accessible depuis la liste.",
         "en": "The meter \"541449123456789012\" appears in the filtered table — the creation is confirmed and the detail page is reachable from the list."
@@ -1476,8 +1513,8 @@
               {
                 "screenshot": "../assets/meter-create/fr/mobile/step-36.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -1502,8 +1539,8 @@
               {
                 "screenshot": "../assets/meter-create/en/mobile/step-36.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -1519,6 +1556,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir la fiche",
+        "en": "Open the detail"
+      },
       "text": {
         "fr": "Cliquez sur la ligne du compteur pour ouvrir sa fiche détaillée et accéder aux onglets de consultation des consommations.",
         "en": "Click the meter row to open its detail page and reach the tabs that browse the consumption data."
@@ -1557,8 +1598,8 @@
               {
                 "screenshot": "../assets/meter-create/fr/mobile/step-38.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1605,8 +1646,8 @@
               {
                 "screenshot": "../assets/meter-create/en/mobile/step-38.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -1633,6 +1674,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Fiche compteur prête",
+        "en": "Meter detail ready"
+      },
       "text": {
         "fr": "La fiche détaillée reprend l'EAN du nouveau compteur et propose les onglets de consultation : données actuelles, historiques, futures et consommation.",
         "en": "The detail page shows the new meter's EAN and exposes the browsing tabs: actual, historical, future and consumption data."
@@ -1660,8 +1705,8 @@
               {
                 "screenshot": "../assets/meter-create/fr/mobile/step-42.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -1686,8 +1731,8 @@
               {
                 "screenshot": "../assets/meter-create/en/mobile/step-42.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

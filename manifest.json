@@ -53,6 +53,24 @@
       }
     },
     {
+      "slug": "notification-view",
+      "title": {
+        "fr": "Consulter ses notifications",
+        "en": "View your notifications"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "notification-view.md",
+      "group": "account",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "notification-view/fr.html",
+        "en": "notification-view/en.html"
+      }
+    },
+    {
       "slug": "community-activate",
       "title": {
         "fr": "Activer une communauté",
@@ -480,7 +498,8 @@
       },
       "guides": [
         "auth-login",
-        "profile-update"
+        "profile-update",
+        "notification-view"
       ],
       "pages": {
         "fr": "account/fr.html",
@@ -741,6 +760,15 @@
             "en": "Update your profile"
           },
           "path": "/profile-update"
+        },
+        {
+          "kind": "guide",
+          "slug": "notification-view",
+          "title": {
+            "fr": "Consulter ses notifications",
+            "en": "View your notifications"
+          },
+          "path": "/notification-view"
         }
       ]
     },

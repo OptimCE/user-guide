@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir l'application",
+        "en": "Open the app"
+      },
       "text": {
         "fr": "Ouvrez l'application OptimCE CRM dans votre navigateur — la page d'accueil propose un bouton de connexion.",
         "en": "Open the OptimCE CRM application in your browser — the landing page exposes a login entry point."
@@ -58,8 +63,8 @@
               {
                 "screenshot": "../assets/auth-login/fr/mobile/step-01.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -84,8 +89,8 @@
               {
                 "screenshot": "../assets/auth-login/en/mobile/step-01.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -101,6 +106,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Lancer la connexion",
+        "en": "Start the login"
+      },
       "text": {
         "fr": "Cliquez sur le bouton « Se connecter » pour être redirigé vers le formulaire de Keycloak.",
         "en": "Click the login button to be redirected to the Keycloak login form."
@@ -139,8 +148,8 @@
               {
                 "screenshot": "../assets/auth-login/fr/mobile/step-02.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -187,8 +196,8 @@
               {
                 "screenshot": "../assets/auth-login/en/mobile/step-02.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -215,6 +224,10 @@
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Saisir vos identifiants",
+        "en": "Enter your credentials"
+      },
       "text": {
         "fr": "Renseignez votre nom d'utilisateur et votre mot de passe Keycloak. Ces identifiants sont gérés par le serveur d'authentification, pas par OptimCE.",
         "en": "Fill in your Keycloak username and password. These credentials are managed by the authentication server, not by OptimCE itself."
@@ -266,8 +279,8 @@
               {
                 "screenshot": "../assets/auth-login/fr/mobile/step-04-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -340,8 +353,8 @@
               {
                 "screenshot": "../assets/auth-login/en/mobile/step-04-a.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "type-multi",
@@ -381,6 +394,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir le profil",
+        "en": "Open the profile"
+      },
       "text": {
         "fr": "Dans la barre latérale de gauche, cliquez sur « Profil » pour afficher la page de votre compte personnel.",
         "en": "In the left sidebar, click \"Profile\" to display your personal account page."
@@ -419,8 +436,8 @@
               {
                 "screenshot": "../assets/auth-login/fr/mobile/step-12.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -467,8 +484,8 @@
               {
                 "screenshot": "../assets/auth-login/en/mobile/step-12.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -495,6 +512,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Profil affiché",
+        "en": "Profile displayed"
+      },
       "text": {
         "fr": "Votre profil est bien affiché : informations personnelles, avatar et carte de compte sont chargés depuis le CRM.",
         "en": "Your profile is displayed: personal info, avatar and account card are loaded from the CRM."
@@ -522,8 +543,8 @@
               {
                 "screenshot": "../assets/auth-login/fr/mobile/step-16.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -548,8 +569,8 @@
               {
                 "screenshot": "../assets/auth-login/en/mobile/step-16.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

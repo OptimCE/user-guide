@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir une opération",
+        "en": "Open an operation"
+      },
       "text": {
         "fr": "Cliquez sur la première ligne du tableau pour afficher la fiche détaillée de l'opération de partage et explorer sa configuration.",
         "en": "Click the first row of the table to open the sharing operation's detail page and inspect its configuration."
@@ -69,8 +74,8 @@
               {
                 "screenshot": "../assets/sharing-op-inspect/fr/mobile/step-20.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -117,8 +122,8 @@
               {
                 "screenshot": "../assets/sharing-op-inspect/en/mobile/step-20.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -145,6 +150,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Identification de l'opération",
+        "en": "Operation identification"
+      },
       "text": {
         "fr": "La fiche affiche le nom de l'opération de partage tel qu'il a été configuré. C'est ce nom qui sert de référence dans les exports et les rapports.",
         "en": "The detail page shows the sharing operation's name as configured. This name is the reference used in exports and reports."
@@ -172,8 +181,8 @@
               {
                 "screenshot": "../assets/sharing-op-inspect/fr/mobile/step-23.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -198,8 +207,8 @@
               {
                 "screenshot": "../assets/sharing-op-inspect/en/mobile/step-23.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -215,6 +224,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Clé associée",
+        "en": "Linked key"
+      },
       "text": {
         "fr": "La carte « Gestion des clés » montre la clé de répartition associée à cette opération — c'est elle qui détermine comment l'énergie est partagée entre les consommateurs.",
         "en": "The \"Key management\" card shows the allocation key linked to this operation — it drives how the energy is shared between consumers."
@@ -242,8 +255,8 @@
               {
                 "screenshot": "../assets/sharing-op-inspect/fr/mobile/step-25.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -268,8 +281,8 @@
               {
                 "screenshot": "../assets/sharing-op-inspect/en/mobile/step-25.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

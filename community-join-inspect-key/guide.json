@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir mes communautés",
+        "en": "Open my communities"
+      },
       "text": {
         "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Mes communautés » pour voir la liste des communautés où vous êtes inscrit·e.",
         "en": "In the sidebar's profile menu, click \"My communities\" to see the list of communities you belong to."
@@ -69,8 +74,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-key/fr/mobile/step-13.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -117,8 +122,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-key/en/mobile/step-13.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -145,6 +150,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les clés",
+        "en": "Open the keys"
+      },
       "text": {
         "fr": "Dans la section « Gestion » de la barre latérale, cliquez sur « Clés » pour afficher les clés de répartition de la communauté active.",
         "en": "In the sidebar's \"Management\" section, click \"Keys\" to display the active community's allocation keys."
@@ -183,8 +192,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-key/fr/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -231,8 +240,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-key/en/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -259,6 +268,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir une clé",
+        "en": "Open a key"
+      },
       "text": {
         "fr": "Cliquez sur la première ligne du tableau pour afficher la fiche détaillée de cette clé de répartition.",
         "en": "Click the first row of the table to open the detail view for that allocation key."
@@ -297,8 +310,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-key/fr/mobile/step-32.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -345,8 +358,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-key/en/mobile/step-32.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -373,6 +386,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Identification de la clé",
+        "en": "Key identification"
+      },
       "text": {
         "fr": "La fiche affiche le nom et la description de la clé telle qu'elle a été configurée — ces métadonnées aident à la retrouver dans la liste.",
         "en": "The detail page shows the key's name and description as configured — this metadata helps you locate it in the list."
@@ -400,8 +417,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-key/fr/mobile/step-35.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -426,8 +443,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-key/en/mobile/step-35.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -443,6 +460,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Itérations et consommateurs",
+        "en": "Iterations and consumers"
+      },
       "text": {
         "fr": "Le tableau détaille les itérations et les consommateurs associés à cette clé, avec les pourcentages d'allocation calculés ou saisis.",
         "en": "The grid lists the iterations and consumers linked to this key, along with the allocation percentages — either computed or set manually."
@@ -470,8 +491,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-key/fr/mobile/step-36.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -496,8 +517,8 @@
               {
                 "screenshot": "../assets/community-join-inspect-key/en/mobile/step-36.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }

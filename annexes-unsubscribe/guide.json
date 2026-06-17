@@ -23,6 +23,7 @@
     "post_action_ms": 150,
     "travel_speed_px_per_ms": 1.5
   },
+  "defaultTemplate": "overlay",
   "steps": [
     {
       "id": "step-1",
@@ -31,6 +32,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les services annexes",
+        "en": "Open annexe services"
+      },
       "text": {
         "fr": "Dans la section « Communauté » de la barre latérale, cliquez sur « Services annexes » pour gérer les modules actifs de la communauté.",
         "en": "In the sidebar's \"Community\" section, click \"Annexe services\" to manage the community's active modules."
@@ -44,7 +49,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/fr/desktop/step-19.png",
+                "screenshot": "../assets/annexes-unsubscribe/fr/desktop/step-20.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -67,10 +72,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/fr/mobile/step-22.png",
+                "screenshot": "../assets/annexes-unsubscribe/fr/mobile/step-23.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -92,7 +97,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/en/desktop/step-19.png",
+                "screenshot": "../assets/annexes-unsubscribe/en/desktop/step-20.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -115,10 +120,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/en/mobile/step-22.png",
+                "screenshot": "../assets/annexes-unsubscribe/en/mobile/step-23.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -145,6 +150,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Module actif",
+        "en": "Module active"
+      },
       "text": {
         "fr": "La carte « Génération de clés de répartition » est visible avec le badge « Activé ». Le bouton de désactivation (×) est disponible en haut à droite de la carte.",
         "en": "The \"Allocation key generation\" card is visible with the \"Activated\" badge. The deactivation button (×) is available at the top right of the card."
@@ -158,7 +167,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/fr/desktop/step-25.png",
+                "screenshot": "../assets/annexes-unsubscribe/fr/desktop/step-26.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -170,10 +179,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/fr/mobile/step-25.png",
+                "screenshot": "../assets/annexes-unsubscribe/fr/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -184,7 +193,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/en/desktop/step-25.png",
+                "screenshot": "../assets/annexes-unsubscribe/en/desktop/step-26.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -196,10 +205,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/en/mobile/step-25.png",
+                "screenshot": "../assets/annexes-unsubscribe/en/mobile/step-26.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -215,6 +224,10 @@
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 0,
+      "title": {
+        "fr": "Désactiver le module",
+        "en": "Deactivate the module"
+      },
       "text": {
         "fr": "Cliquez sur le bouton × en haut à droite de la carte pour désactiver le module. Une confirmation vous sera demandée avant la suppression.",
         "en": "Click the × button at the top right of the card to deactivate the module. A confirmation will be required before removal."
@@ -228,7 +241,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/fr/desktop/step-26.png",
+                "screenshot": "../assets/annexes-unsubscribe/fr/desktop/step-27.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -251,10 +264,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/fr/mobile/step-26.png",
+                "screenshot": "../assets/annexes-unsubscribe/fr/mobile/step-27.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -276,7 +289,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/en/desktop/step-26.png",
+                "screenshot": "../assets/annexes-unsubscribe/en/desktop/step-27.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -299,10 +312,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/en/mobile/step-26.png",
+                "screenshot": "../assets/annexes-unsubscribe/en/mobile/step-27.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": {
                   "kind": "click",
@@ -329,6 +342,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 600,
+      "title": {
+        "fr": "Confirmer la désactivation",
+        "en": "Confirm deactivation"
+      },
       "text": {
         "fr": "Une fenêtre de confirmation s'affiche. Cliquez sur « Valider » pour confirmer la désactivation du module et la perte d'accès pour les membres.",
         "en": "A confirmation dialog appears. Click \"Validate\" to confirm deactivating the module and revoking member access."
@@ -342,7 +359,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/fr/desktop/step-28.png",
+                "screenshot": "../assets/annexes-unsubscribe/fr/desktop/step-29.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -354,10 +371,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/fr/mobile/step-28.png",
+                "screenshot": "../assets/annexes-unsubscribe/fr/mobile/step-29.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -368,7 +385,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/en/desktop/step-28.png",
+                "screenshot": "../assets/annexes-unsubscribe/en/desktop/step-29.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -380,10 +397,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/en/mobile/step-28.png",
+                "screenshot": "../assets/annexes-unsubscribe/en/mobile/step-29.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -399,6 +416,10 @@
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
+      "title": {
+        "fr": "Module désactivé",
+        "en": "Module deactivated"
+      },
       "text": {
         "fr": "La grille est à nouveau vide : le module « Génération de clés de répartition » a été désactivé et n'est plus accessible depuis la communauté.",
         "en": "The grid is empty again — the \"Allocation key generation\" module has been deactivated and is no longer accessible from the community."
@@ -412,7 +433,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/fr/desktop/step-31.png",
+                "screenshot": "../assets/annexes-unsubscribe/fr/desktop/step-32.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -424,10 +445,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/fr/mobile/step-31.png",
+                "screenshot": "../assets/annexes-unsubscribe/fr/mobile/step-32.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
@@ -438,7 +459,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/en/desktop/step-31.png",
+                "screenshot": "../assets/annexes-unsubscribe/en/desktop/step-32.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -450,10 +471,10 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/annexes-unsubscribe/en/mobile/step-31.png",
+                "screenshot": "../assets/annexes-unsubscribe/en/mobile/step-32.png",
                 "captureSize": {
-                  "width": 1440,
-                  "height": 900
+                  "width": 390,
+                  "height": 844
                 },
                 "cursor": null
               }
