@@ -1,0 +1,1897 @@
+{
+  "version": "1.0",
+  "slug": "news-poll-create",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Créer un sondage",
+    "en": "Create a poll"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir le tableau d'actualités",
+        "en": "Open the news board"
+      },
+      "text": {
+        "fr": "Dans la section « Communauté » de la barre latérale, cliquez sur « Actualités » pour accéder au tableau d'actualités de la communauté.",
+        "en": "In the sidebar's \"Community\" section, click \"News\" to open the community news board."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 360,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 360,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 360,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 360,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir le compositeur",
+        "en": "Open the composer"
+      },
+      "text": {
+        "fr": "Cliquez sur « Nouvelle publication » pour ouvrir la fenêtre de rédaction.",
+        "en": "Click \"New post\" to open the compose dialog."
+      },
+      "subtitle": {
+        "fr": "Rédaction",
+        "en": "Compose"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1266.8125,
+                      "y": 52,
+                      "width": 124.1875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-board__compose\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 219,
+                      "width": 124.1875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-board__compose\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1272.734375,
+                      "y": 52,
+                      "width": 118.265625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-board__compose\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 219,
+                      "width": 118.265625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-board__compose\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Choisir le type « Sondage »",
+        "en": "Switch to a poll"
+      },
+      "text": {
+        "fr": "En haut de la fenêtre, basculez sur l'onglet « Sondage ». Des champs supplémentaires apparaissent : question, options de réponse, date de clôture et visibilité.",
+        "en": "At the top of the dialog, switch to the \"Poll\" tab. Extra fields appear: question, answer options, closing date, and visibility."
+      },
+      "subtitle": {
+        "fr": "Type de publication",
+        "en": "Post kind"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 531.78125,
+                      "y": 286.65625,
+                      "width": 103.765625,
+                      "height": 33.171875
+                    },
+                    "selector": "[data-testid=\"news-compose__kind--poll\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 139.78125,
+                      "y": 97,
+                      "width": 103.765625,
+                      "height": 33.171875
+                    },
+                    "selector": "[data-testid=\"news-compose__kind--poll\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 488.96875,
+                      "y": 286.65625,
+                      "width": 72.296875,
+                      "height": 33.171875
+                    },
+                    "selector": "[data-testid=\"news-compose__kind--poll\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 96.96875,
+                      "y": 97,
+                      "width": 72.296875,
+                      "height": 33.171875
+                    },
+                    "selector": "[data-testid=\"news-compose__kind--poll\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Poser la question",
+        "en": "Ask the question"
+      },
+      "text": {
+        "fr": "Saisissez la question du sondage dans l'éditeur, comme pour une actualité classique.",
+        "en": "Type the poll question in the editor, just like a regular news post."
+      },
+      "subtitle": {
+        "fr": "Sondage",
+        "en": "Poll"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 406,
+                      "y": 299.078125,
+                      "width": 628,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"
+                  },
+                  "value": "Quand souhaitez-vous organiser la prochaine réunion ?"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 14,
+                      "y": 310.078125,
+                      "width": 362,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"
+                  },
+                  "value": "Quand souhaitez-vous organiser la prochaine réunion ?"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 406,
+                      "y": 299.078125,
+                      "width": 628,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"
+                  },
+                  "value": "Quand souhaitez-vous organiser la prochaine réunion ?"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 14,
+                      "y": 310.078125,
+                      "width": 362,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"
+                  },
+                  "value": "Quand souhaitez-vous organiser la prochaine réunion ?"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Choix unique ou multiple",
+        "en": "Single or multiple choice"
+      },
+      "text": {
+        "fr": "Choisissez si les membres peuvent sélectionner une seule réponse (« Choix unique ») ou plusieurs (« Choix multiple »). Nous gardons « Choix unique ».",
+        "en": "Choose whether members can select a single answer (\"Single choice\") or several (\"Multiple choice\"). We keep \"Single choice\"."
+      },
+      "subtitle": {
+        "fr": "Sondage",
+        "en": "Poll"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "fill",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Ajouter les options de réponse",
+        "en": "Add the answer options"
+      },
+      "text": {
+        "fr": "Renseignez au moins deux options de réponse. Le bouton « Ajouter une option » en ajoute d'autres, et l'icône de corbeille en retire.",
+        "en": "Provide at least two answer options. The \"Add option\" button adds more, and the trash icon removes one."
+      },
+      "subtitle": {
+        "fr": "Sondage",
+        "en": "Poll"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 705.0625,
+                      "width": 582,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__option-input--2\"]"
+                  },
+                  "value": "Samedi matin"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 801.0625,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__option-input--2\"]"
+                  },
+                  "value": "Samedi matin"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 705.0625,
+                      "width": 582,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__option-input--2\"]"
+                  },
+                  "value": "Samedi matin"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 801.0625,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__option-input--2\"]"
+                  },
+                  "value": "Samedi matin"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Définir une date de clôture",
+        "en": "Set a closing date"
+      },
+      "text": {
+        "fr": "Choisissez la date et l'heure de clôture dans le calendrier. Après cette échéance, plus aucun vote n'est accepté et, selon la visibilité choisie, les résultats peuvent se dévoiler.",
+        "en": "Pick the closing date and time from the calendar. After this deadline no more votes are accepted and, depending on the chosen visibility, results may be revealed."
+      },
+      "subtitle": {
+        "fr": "Sondage",
+        "en": "Poll"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 811.5625,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "#news-expiry"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 440.5625,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "#news-expiry"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 811.5625,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "#news-expiry"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 449.5625,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "#news-expiry"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Choisir qui voit les résultats",
+        "en": "Choose who sees the results"
+      },
+      "text": {
+        "fr": "Trois préréglages couvrent les cas les plus courants. Chacun combine ce que voient les gestionnaires, ce que voient les membres, et à quel moment.",
+        "en": "Three presets cover the most common cases. Each one combines what managers see, what members see, and when."
+      },
+      "subtitle": {
+        "fr": "Visibilité",
+        "en": "Visibility"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Anonyme",
+        "en": "Anonymous"
+      },
+      "text": {
+        "fr": "Les membres ne voient que le nombre total de votes par option, et seulement après avoir voté eux-mêmes. Personne ne voit qui a voté quoi — les gestionnaires aussi n'ont que les totaux. Idéal pour un vote confidentiel.",
+        "en": "Members see only the total number of votes per option, and only after they have voted themselves. Nobody sees who voted for what — managers also get totals only. Ideal for a confidential vote."
+      },
+      "subtitle": {
+        "fr": "Visibilité — préréglage",
+        "en": "Visibility — preset"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 643.46875,
+                      "width": 204.65625,
+                      "height": 89.34375
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--anonymous\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 518.46875,
+                      "width": 364,
+                      "height": 74.78125
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--anonymous\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 658.46875,
+                      "width": 204.65625,
+                      "height": 74.78125
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--anonymous\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 533.46875,
+                      "width": 364,
+                      "height": 60.21875
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--anonymous\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-10",
+      "index": 10,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Transparent",
+        "en": "Transparent"
+      },
+      "text": {
+        "fr": "Tout le monde voit les résultats complets immédiatement, y compris qui a voté pour quelle option, avant même d'avoir voté. Idéal pour une décision ouverte où chacun assume son choix.",
+        "en": "Everyone sees the full results immediately, including who voted for which option, even before voting. Ideal for an open decision where everyone owns their choice."
+      },
+      "subtitle": {
+        "fr": "Visibilité — préréglage",
+        "en": "Visibility — preset"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 617.65625,
+                      "y": 643.46875,
+                      "width": 204.671875,
+                      "height": 89.34375
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--transparent\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 601.25,
+                      "width": 364,
+                      "height": 60.21875
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--transparent\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 617.65625,
+                      "y": 658.46875,
+                      "width": 204.671875,
+                      "height": 74.78125
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--transparent\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 601.6875,
+                      "width": 364,
+                      "height": 60.21875
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--transparent\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-11",
+      "index": 11,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "À la clôture",
+        "en": "On close"
+      },
+      "text": {
+        "fr": "Les membres ne découvrent les totaux qu'une fois le sondage clôturé ; avant cela, les résultats restent masqués. Les gestionnaires, eux, voient le détail (qui a voté quoi) à tout moment pour suivre la participation.",
+        "en": "Members only discover the totals once the poll closes; until then results stay hidden. Managers, however, see the breakdown (who voted for what) at any time to follow participation."
+      },
+      "subtitle": {
+        "fr": "Visibilité — préréglage",
+        "en": "Visibility — preset"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 830.328125,
+                      "y": 643.46875,
+                      "width": 204.671875,
+                      "height": 89.34375
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--on_close\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 669.46875,
+                      "width": 364,
+                      "height": 60.21875
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--on_close\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 830.328125,
+                      "y": 658.46875,
+                      "width": 204.671875,
+                      "height": 74.78125
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--on_close\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 669.90625,
+                      "width": 364,
+                      "height": 60.21875
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--on_close\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-12",
+      "index": 12,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 400,
+      "title": {
+        "fr": "Réglage fin (avancé)",
+        "en": "Fine-grained control (advanced)"
+      },
+      "text": {
+        "fr": "Le bouton « Avancé » dévoile trois réglages indépendants. Un préréglage n'est qu'un raccourci pour ces trois champs — vous pouvez les combiner librement.",
+        "en": "The \"Advanced\" button reveals three independent settings. A preset is just a shortcut for these three fields — you can combine them freely."
+      },
+      "subtitle": {
+        "fr": "Visibilité",
+        "en": "Visibility"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 738.40625,
+                      "width": 120.203125,
+                      "height": 26.71875
+                    },
+                    "selector": "[data-testid=\"news-compose__advanced-toggle\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 735.28125,
+                      "width": 120.203125,
+                      "height": 26.71875
+                    },
+                    "selector": "[data-testid=\"news-compose__advanced-toggle\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 738.84375,
+                      "width": 125.34375,
+                      "height": 26.71875
+                    },
+                    "selector": "[data-testid=\"news-compose__advanced-toggle\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 735.71875,
+                      "width": 125.34375,
+                      "height": 26.71875
+                    },
+                    "selector": "[data-testid=\"news-compose__advanced-toggle\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-13",
+      "index": 13,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Visibilité gestionnaire",
+        "en": "Manager visibility"
+      },
+      "text": {
+        "fr": "Ce que voient les gestionnaires. « Agrégé » : uniquement les totaux par option. « Complet » : le détail nominatif, c'est-à-dire qui a voté pour chaque option.",
+        "en": "What managers see. \"Aggregate\": only the totals per option. \"Full\": the per-voter breakdown — who voted for each option."
+      },
+      "subtitle": {
+        "fr": "Visibilité — avancé",
+        "en": "Visibility — advanced"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-14",
+      "index": 14,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Visibilité membre",
+        "en": "Member visibility"
+      },
+      "text": {
+        "fr": "Ce que les membres sont autorisés à voir. « Aucun » : jamais de résultats. « Agrégé » : les totaux. « Complet » : le détail des votes par personne.",
+        "en": "What members are allowed to see. \"None\": never any results. \"Aggregate\": the totals. \"Full\": the per-voter breakdown."
+      },
+      "subtitle": {
+        "fr": "Visibilité — avancé",
+        "en": "Visibility — advanced"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-15",
+      "index": 15,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Affichage membre",
+        "en": "Member display"
+      },
+      "text": {
+        "fr": "Le moment où les membres voient ce qui leur est autorisé. « Jamais », « Avant de voter », « Après avoir voté », ou « À la clôture du sondage ». C'est ce réglage qui distingue, par exemple, un vote dont le résultat n'apparaît qu'une fois la participation enregistrée.",
+        "en": "When members see what they are allowed to. \"Never\", \"Before vote\", \"After vote\", or \"When the poll ends\". This setting is what distinguishes, for instance, a vote whose result only appears once participation is recorded."
+      },
+      "subtitle": {
+        "fr": "Visibilité — avancé",
+        "en": "Visibility — advanced"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-16",
+      "index": 16,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Revenir à un préréglage",
+        "en": "Back to a preset"
+      },
+      "text": {
+        "fr": "Pour finir, nous reprenons le préréglage « Anonyme », qui referme les réglages avancés et applique une combinaison cohérente prête à être publiée.",
+        "en": "To finish, we pick the \"Anonymous\" preset again, which collapses the advanced settings and applies a consistent, ready-to-publish combination."
+      },
+      "subtitle": {
+        "fr": "Visibilité",
+        "en": "Visibility"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-40.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 643.46875,
+                      "width": 204.65625,
+                      "height": 89.34375
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--anonymous\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-40.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 518.46875,
+                      "width": 364,
+                      "height": 74.78125
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--anonymous\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-40.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 658.46875,
+                      "width": 204.65625,
+                      "height": 74.78125
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--anonymous\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-40.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 533.46875,
+                      "width": 364,
+                      "height": 60.21875
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--anonymous\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-17",
+      "index": 17,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Publier le sondage",
+        "en": "Publish the poll"
+      },
+      "text": {
+        "fr": "Cliquez sur « Publier ». Le sondage est diffusé à tous les membres, qui reçoivent une notification les invitant à voter.",
+        "en": "Click \"Publish\". The poll is broadcast to every member, who receives a notification inviting them to vote."
+      },
+      "subtitle": {
+        "fr": "Sondage",
+        "en": "Poll"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 957.890625,
+                      "y": 791.71875,
+                      "width": 77.109375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 299.890625,
+                      "y": 788.59375,
+                      "width": 77.109375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 956.09375,
+                      "y": 792.15625,
+                      "width": 78.90625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 298.09375,
+                      "y": 789.03125,
+                      "width": 78.90625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-18",
+      "index": 18,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Votre sondage est en ligne",
+        "en": "Your poll is live"
+      },
+      "text": {
+        "fr": "Le sondage apparaît dans le tableau avec ses options. Les membres peuvent désormais voter ; les résultats s'afficheront selon la visibilité que vous avez choisie.",
+        "en": "The poll appears on the board with its options. Members can now vote; results will be shown according to the visibility you chose."
+      },
+      "subtitle": {
+        "fr": "Sondage",
+        "en": "Poll"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/desktop/step-43.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/fr/mobile/step-43.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/desktop/step-43.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/en/mobile/step-43.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

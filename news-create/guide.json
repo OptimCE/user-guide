@@ -1,0 +1,727 @@
+{
+  "version": "1.0",
+  "slug": "news-create",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Publier une actualité",
+    "en": "Publish a news"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir le tableau d'actualités",
+        "en": "Open the news board"
+      },
+      "text": {
+        "fr": "Dans la section « Communauté » de la barre latérale, cliquez sur « Actualités » pour accéder au tableau d'actualités de la communauté.",
+        "en": "In the sidebar's \"Community\" section, click \"News\" to open the community news board."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/fr/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 360,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 360,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/en/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 360,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 360,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Le tableau d'actualités",
+        "en": "The news board"
+      },
+      "text": {
+        "fr": "Le tableau d'actualités s'affiche. Il est encore vide : aucune actualité n'a été publiée. En tant que gestionnaire, vous pouvez en créer une avec le bouton « Nouvelle publication ».",
+        "en": "The news board is shown. It is still empty — no news has been published yet. As a manager you can create one with the \"New post\" button."
+      },
+      "subtitle": {
+        "fr": "Actualités",
+        "en": "News"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir le compositeur",
+        "en": "Open the composer"
+      },
+      "text": {
+        "fr": "Cliquez sur « Nouvelle publication » en haut à droite pour ouvrir la fenêtre de rédaction.",
+        "en": "Click \"New post\" in the top right to open the compose dialog."
+      },
+      "subtitle": {
+        "fr": "Rédaction",
+        "en": "Compose"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/fr/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1266.8125,
+                      "y": 52,
+                      "width": 124.1875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-board__compose\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/fr/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 219,
+                      "width": 124.1875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-board__compose\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/en/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1272.734375,
+                      "y": 52,
+                      "width": 118.265625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-board__compose\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/en/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 219,
+                      "width": 118.265625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-board__compose\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 600,
+      "title": {
+        "fr": "Rédiger une actualité",
+        "en": "Compose a news"
+      },
+      "text": {
+        "fr": "La fenêtre s'ouvre sur le type « Publication ». L'onglet « Sondage » permettrait plutôt de créer un sondage — ici nous publions une simple actualité.",
+        "en": "The dialog opens on the \"Post\" kind. The \"Poll\" tab would create a poll instead — here we publish a plain news post."
+      },
+      "subtitle": {
+        "fr": "Rédaction",
+        "en": "Compose"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/fr/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/en/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Écrire le message",
+        "en": "Write the message"
+      },
+      "text": {
+        "fr": "Saisissez le contenu de votre actualité dans l'éditeur. La barre d'outils permet de mettre en forme le texte (titres, gras, listes, liens).",
+        "en": "Type your news content in the editor. The toolbar lets you format the text (headings, bold, lists, links)."
+      },
+      "subtitle": {
+        "fr": "Rédaction",
+        "en": "Compose"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/fr/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 406,
+                      "y": 455.734375,
+                      "width": 628,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"
+                  },
+                  "value": "Bienvenue sur le tableau des actualités de la communauté !"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/fr/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 14,
+                      "y": 310.078125,
+                      "width": 362,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"
+                  },
+                  "value": "Bienvenue sur le tableau des actualités de la communauté !"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/en/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 406,
+                      "y": 455.734375,
+                      "width": 628,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"
+                  },
+                  "value": "Bienvenue sur le tableau des actualités de la communauté !"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/en/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 14,
+                      "y": 310.078125,
+                      "width": 362,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"
+                  },
+                  "value": "Bienvenue sur le tableau des actualités de la communauté !"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Publier",
+        "en": "Publish"
+      },
+      "text": {
+        "fr": "Cliquez sur « Publier » pour diffuser l'actualité à tous les membres de la communauté.",
+        "en": "Click \"Publish\" to broadcast the news to every member of the community."
+      },
+      "subtitle": {
+        "fr": "Rédaction",
+        "en": "Compose"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/fr/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 957.890625,
+                      "y": 659.328125,
+                      "width": 77.109375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/fr/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 299.890625,
+                      "y": 657.671875,
+                      "width": 77.109375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/en/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 956.09375,
+                      "y": 659.328125,
+                      "width": 78.90625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 298.09375,
+                      "y": 657.671875,
+                      "width": 78.90625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Votre actualité est publiée",
+        "en": "Your news is published"
+      },
+      "text": {
+        "fr": "L'actualité apparaît en tête du tableau, signée par son auteur. Tous les membres de la communauté la voient et reçoivent une notification.",
+        "en": "The news appears at the top of the board, signed by its author. Every member of the community sees it and receives a notification."
+      },
+      "subtitle": {
+        "fr": "Actualités",
+        "en": "News"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/fr/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/fr/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/en/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/en/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

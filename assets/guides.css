@@ -1299,7 +1299,10 @@ a.steppy-site-title:hover { color: var(--oce-primary-dark); }
 }
 
 .steppy-guide .steppy-stage img {
-    width: 100%;
+    /* width:auto caps display at the screenshot's intrinsic width so a dense
+       mobile capture (device_scale_factor) fills the column crisply instead of
+       being upscaled and blurred. A low-res capture renders at native size. */
+    width: auto;
     max-width: 100%;
     height: auto;
     border: 1px solid var(--oce-border);

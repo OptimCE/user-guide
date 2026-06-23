@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Créer un sondage — OptimCE — Guides utilisateur</title>
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Synchronise the saved language preference with the file we just loaded.
+        // The user landed on this <locale>.html either by clicking a link rewritten
+        // to honour their preference or by direct entry — either way, that's the
+        // current truth.
+        try { localStorage.setItem("oce-lang", "fr"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.html" aria-label="OptimCE — Guides utilisateur">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.html">
+            <span class="i18n-fr">OptimCE — Guides utilisateur</span>
+            <span class="i18n-en">OptimCE — User guides</span>
+        </a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html"><span class="i18n-fr">Accueil</span><span class="i18n-en">Home</span></a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../news/index.html">
+                <span class="i18n-fr">Actualités</span>
+                <span class="i18n-en">News</span>
+            </a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">
+                <span class="i18n-fr">Créer un sondage</span>
+                <span class="i18n-en">Create a poll</span>
+            </span>
+        </nav>
+
+        <div class="steppy-header-actions">
+            <nav class="steppy-locale-switch" aria-label="Language">
+                <ul>
+                    <li>
+                        <span aria-current="true">Français</span>
+                    </li>
+                    <li>
+                        <a href="./en.html">English</a>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-mode-switch" aria-label="Guide mode">
+            <ul>
+                <li>
+                    <span aria-current="true">
+                        <span class="i18n-fr">Pas à pas</span>
+                        <span class="i18n-en">Step by step</span>
+                    </span>
+                </li>
+                <li>
+                    <a href="./interactive.html">
+                        <span class="i18n-fr">Interactif</span>
+                        <span class="i18n-en">Interactive</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Créer un sondage</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Ouvrir le tableau d'actualités</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Dans la section « Communauté » de la barre latérale, cliquez sur « Actualités » pour accéder au tableau d'actualités de la communauté.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-14.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Ouvrir le compositeur</span>
+        </h2>
+        <div class="steppy-step-subtitle">Rédaction</div>
+        <div class="steppy-step-content">Cliquez sur « Nouvelle publication » pour ouvrir la fenêtre de rédaction.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-20.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Choisir le type « Sondage »</span>
+        </h2>
+        <div class="steppy-step-subtitle">Type de publication</div>
+        <div class="steppy-step-content">En haut de la fenêtre, basculez sur l'onglet « Sondage ». Des champs supplémentaires apparaissent : question, options de réponse, date de clôture et visibilité.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-22.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Poser la question</span>
+        </h2>
+        <div class="steppy-step-subtitle">Sondage</div>
+        <div class="steppy-step-content">Saisissez la question du sondage dans l'éditeur, comme pour une actualité classique.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-24.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Choix unique ou multiple</span>
+        </h2>
+        <div class="steppy-step-subtitle">Sondage</div>
+        <div class="steppy-step-content">Choisissez si les membres peuvent sélectionner une seule réponse (« Choix unique ») ou plusieurs (« Choix multiple »). Nous gardons « Choix unique ».</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-25.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Ajouter les options de réponse</span>
+        </h2>
+        <div class="steppy-step-subtitle">Sondage</div>
+        <div class="steppy-step-content">Renseignez au moins deux options de réponse. Le bouton « Ajouter une option » en ajoute d'autres, et l'icône de corbeille en retire.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-30.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Définir une date de clôture</span>
+        </h2>
+        <div class="steppy-step-subtitle">Sondage</div>
+        <div class="steppy-step-content">Choisissez la date et l'heure de clôture dans le calendrier. Après cette échéance, plus aucun vote n'est accepté et, selon la visibilité choisie, les résultats peuvent se dévoiler.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-31.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Choisir qui voit les résultats</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité</div>
+        <div class="steppy-step-content">Trois préréglages couvrent les cas les plus courants. Chacun combine ce que voient les gestionnaires, ce que voient les membres, et à quel moment.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-32.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Anonyme</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité — préréglage</div>
+        <div class="steppy-step-content">Les membres ne voient que le nombre total de votes par option, et seulement après avoir voté eux-mêmes. Personne ne voit qui a voté quoi — les gestionnaires aussi n'ont que les totaux. Idéal pour un vote confidentiel.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-33.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Transparent</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité — préréglage</div>
+        <div class="steppy-step-content">Tout le monde voit les résultats complets immédiatement, y compris qui a voté pour quelle option, avant même d'avoir voté. Idéal pour une décision ouverte où chacun assume son choix.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-34.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>À la clôture</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité — préréglage</div>
+        <div class="steppy-step-content">Les membres ne découvrent les totaux qu'une fois le sondage clôturé ; avant cela, les résultats restent masqués. Les gestionnaires, eux, voient le détail (qui a voté quoi) à tout moment pour suivre la participation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-35.png" alt="Step 11" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>Réglage fin (avancé)</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité</div>
+        <div class="steppy-step-content">Le bouton « Avancé » dévoile trois réglages indépendants. Un préréglage n'est qu'un raccourci pour ces trois champs — vous pouvez les combiner librement.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-36.png" alt="Step 12" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="13">
+        <h2>
+            <span class="steppy-step-number">13</span>
+            <span>Visibilité gestionnaire</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité — avancé</div>
+        <div class="steppy-step-content">Ce que voient les gestionnaires. « Agrégé » : uniquement les totaux par option. « Complet » : le détail nominatif, c'est-à-dire qui a voté pour chaque option.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-37.png" alt="Step 13" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="14">
+        <h2>
+            <span class="steppy-step-number">14</span>
+            <span>Visibilité membre</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité — avancé</div>
+        <div class="steppy-step-content">Ce que les membres sont autorisés à voir. « Aucun » : jamais de résultats. « Agrégé » : les totaux. « Complet » : le détail des votes par personne.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-38.png" alt="Step 14" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="15">
+        <h2>
+            <span class="steppy-step-number">15</span>
+            <span>Affichage membre</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité — avancé</div>
+        <div class="steppy-step-content">Le moment où les membres voient ce qui leur est autorisé. « Jamais », « Avant de voter », « Après avoir voté », ou « À la clôture du sondage ». C'est ce réglage qui distingue, par exemple, un vote dont le résultat n'apparaît qu'une fois la participation enregistrée.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-39.png" alt="Step 15" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="16">
+        <h2>
+            <span class="steppy-step-number">16</span>
+            <span>Revenir à un préréglage</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité</div>
+        <div class="steppy-step-content">Pour finir, nous reprenons le préréglage « Anonyme », qui referme les réglages avancés et applique une combinaison cohérente prête à être publiée.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-40.png" alt="Step 16" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="17">
+        <h2>
+            <span class="steppy-step-number">17</span>
+            <span>Publier le sondage</span>
+        </h2>
+        <div class="steppy-step-subtitle">Sondage</div>
+        <div class="steppy-step-content">Cliquez sur « Publier ». Le sondage est diffusé à tous les membres, qui reçoivent une notification les invitant à voter.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-41.png" alt="Step 17" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="18">
+        <h2>
+            <span class="steppy-step-number">18</span>
+            <span>Votre sondage est en ligne</span>
+        </h2>
+        <div class="steppy-step-subtitle">Sondage</div>
+        <div class="steppy-step-content">Le sondage apparaît dans le tableau avec ses options. Les membres peuvent désormais voter ; les résultats s'afficheront selon la visibilité que vous avez choisie.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/desktop/step-43.png" alt="Step 18" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Créer un sondage</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Ouvrir le tableau d'actualités</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Touchez l'icône du menu pour ouvrir le tiroir de navigation, puis dans la section « Communauté » touchez « Actualités ».</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-17.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Ouvrir le compositeur</span>
+        </h2>
+        <div class="steppy-step-subtitle">Rédaction</div>
+        <div class="steppy-step-content">Cliquez sur « Nouvelle publication » pour ouvrir la fenêtre de rédaction.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-20.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Choisir le type « Sondage »</span>
+        </h2>
+        <div class="steppy-step-subtitle">Type de publication</div>
+        <div class="steppy-step-content">En haut de la fenêtre, basculez sur l'onglet « Sondage ». Des champs supplémentaires apparaissent : question, options de réponse, date de clôture et visibilité.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-22.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Poser la question</span>
+        </h2>
+        <div class="steppy-step-subtitle">Sondage</div>
+        <div class="steppy-step-content">Saisissez la question du sondage dans l'éditeur, comme pour une actualité classique.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-24.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Choix unique ou multiple</span>
+        </h2>
+        <div class="steppy-step-subtitle">Sondage</div>
+        <div class="steppy-step-content">Choisissez si les membres peuvent sélectionner une seule réponse (« Choix unique ») ou plusieurs (« Choix multiple »). Nous gardons « Choix unique ».</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-25.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Ajouter les options de réponse</span>
+        </h2>
+        <div class="steppy-step-subtitle">Sondage</div>
+        <div class="steppy-step-content">Renseignez au moins deux options de réponse. Le bouton « Ajouter une option » en ajoute d'autres, et l'icône de corbeille en retire.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-30.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Définir une date de clôture</span>
+        </h2>
+        <div class="steppy-step-subtitle">Sondage</div>
+        <div class="steppy-step-content">Choisissez la date et l'heure de clôture dans le calendrier. Après cette échéance, plus aucun vote n'est accepté et, selon la visibilité choisie, les résultats peuvent se dévoiler.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-31.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Choisir qui voit les résultats</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité</div>
+        <div class="steppy-step-content">Trois préréglages couvrent les cas les plus courants. Chacun combine ce que voient les gestionnaires, ce que voient les membres, et à quel moment.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-32.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Anonyme</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité — préréglage</div>
+        <div class="steppy-step-content">Les membres ne voient que le nombre total de votes par option, et seulement après avoir voté eux-mêmes. Personne ne voit qui a voté quoi — les gestionnaires aussi n'ont que les totaux. Idéal pour un vote confidentiel.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-33.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Transparent</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité — préréglage</div>
+        <div class="steppy-step-content">Tout le monde voit les résultats complets immédiatement, y compris qui a voté pour quelle option, avant même d'avoir voté. Idéal pour une décision ouverte où chacun assume son choix.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-34.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>À la clôture</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité — préréglage</div>
+        <div class="steppy-step-content">Les membres ne découvrent les totaux qu'une fois le sondage clôturé ; avant cela, les résultats restent masqués. Les gestionnaires, eux, voient le détail (qui a voté quoi) à tout moment pour suivre la participation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-35.png" alt="Step 11" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>Réglage fin (avancé)</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité</div>
+        <div class="steppy-step-content">Le bouton « Avancé » dévoile trois réglages indépendants. Un préréglage n'est qu'un raccourci pour ces trois champs — vous pouvez les combiner librement.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-36.png" alt="Step 12" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="13">
+        <h2>
+            <span class="steppy-step-number">13</span>
+            <span>Visibilité gestionnaire</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité — avancé</div>
+        <div class="steppy-step-content">Ce que voient les gestionnaires. « Agrégé » : uniquement les totaux par option. « Complet » : le détail nominatif, c'est-à-dire qui a voté pour chaque option.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-37.png" alt="Step 13" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="14">
+        <h2>
+            <span class="steppy-step-number">14</span>
+            <span>Visibilité membre</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité — avancé</div>
+        <div class="steppy-step-content">Ce que les membres sont autorisés à voir. « Aucun » : jamais de résultats. « Agrégé » : les totaux. « Complet » : le détail des votes par personne.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-38.png" alt="Step 14" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="15">
+        <h2>
+            <span class="steppy-step-number">15</span>
+            <span>Affichage membre</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité — avancé</div>
+        <div class="steppy-step-content">Le moment où les membres voient ce qui leur est autorisé. « Jamais », « Avant de voter », « Après avoir voté », ou « À la clôture du sondage ». C'est ce réglage qui distingue, par exemple, un vote dont le résultat n'apparaît qu'une fois la participation enregistrée.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-39.png" alt="Step 15" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="16">
+        <h2>
+            <span class="steppy-step-number">16</span>
+            <span>Revenir à un préréglage</span>
+        </h2>
+        <div class="steppy-step-subtitle">Visibilité</div>
+        <div class="steppy-step-content">Pour finir, nous reprenons le préréglage « Anonyme », qui referme les réglages avancés et applique une combinaison cohérente prête à être publiée.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-40.png" alt="Step 16" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="17">
+        <h2>
+            <span class="steppy-step-number">17</span>
+            <span>Publier le sondage</span>
+        </h2>
+        <div class="steppy-step-subtitle">Sondage</div>
+        <div class="steppy-step-content">Cliquez sur « Publier ». Le sondage est diffusé à tous les membres, qui reçoivent une notification les invitant à voter.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-41.png" alt="Step 17" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="18">
+        <h2>
+            <span class="steppy-step-number">18</span>
+            <span>Votre sondage est en ligne</span>
+        </h2>
+        <div class="steppy-step-subtitle">Sondage</div>
+        <div class="steppy-step-content">Le sondage apparaît dans le tableau avec ses options. Les membres peuvent désormais voter ; les résultats s'afficheront selon la visibilité que vous avez choisie.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/news-poll-create/fr/mobile/step-43.png" alt="Step 18" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p><span class="i18n-fr">Généré par Steppy.</span><span class="i18n-en">Generated by Steppy.</span></p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 360}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 360}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"}}, "screenshot": "../assets/news-poll-create/fr/desktop/step-14.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/news-poll-create/fr/desktop/step-14.png", "subtitle": "Navigation", "text": "Dans la section \u00ab Communaut\u00e9 \u00bb de la barre lat\u00e9rale, cliquez sur \u00ab Actualit\u00e9s \u00bb pour acc\u00e9der au tableau d\u0027actualit\u00e9s de la communaut\u00e9.", "title": "Ouvrir le tableau d\u0027actualit\u00e9s", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 124.1875, "x": 1266.8125, "y": 52}, "selector": "[data-testid=\"news-board__compose\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 124.1875, "x": 1266.8125, "y": 52}, "selector": "[data-testid=\"news-board__compose\"]"}}, "screenshot": "../assets/news-poll-create/fr/desktop/step-20.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/news-poll-create/fr/desktop/step-20.png", "subtitle": "R\u00e9daction", "text": "Cliquez sur \u00ab Nouvelle publication \u00bb pour ouvrir la fen\u00eatre de r\u00e9daction.", "title": "Ouvrir le compositeur", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 33.171875, "width": 103.765625, "x": 531.78125, "y": 286.65625}, "selector": "[data-testid=\"news-compose__kind--poll\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 33.171875, "width": 103.765625, "x": 531.78125, "y": 286.65625}, "selector": "[data-testid=\"news-compose__kind--poll\"]"}}, "screenshot": "../assets/news-poll-create/fr/desktop/step-22.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/news-poll-create/fr/desktop/step-22.png", "subtitle": "Type de publication", "text": "En haut de la fen\u00eatre, basculez sur l\u0027onglet \u00ab Sondage \u00bb. Des champs suppl\u00e9mentaires apparaissent : question, options de r\u00e9ponse, date de cl\u00f4ture et visibilit\u00e9.", "title": "Choisir le type \u00ab Sondage \u00bb", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 152, "width": 628, "x": 406, "y": 299.078125}, "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"}, "value": "Quand souhaitez-vous organiser la prochaine r\u00e9union ?"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 152, "width": 628, "x": 406, "y": 299.078125}, "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"}, "value": "Quand souhaitez-vous organiser la prochaine r\u00e9union ?"}, "screenshot": "../assets/news-poll-create/fr/desktop/step-24.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/news-poll-create/fr/desktop/step-24.png", "subtitle": "Sondage", "text": "Saisissez la question du sondage dans l\u0027\u00e9diteur, comme pour une actualit\u00e9 classique.", "title": "Poser la question", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/news-poll-create/fr/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/news-poll-create/fr/desktop/step-25.png", "subtitle": "Sondage", "text": "Choisissez si les membres peuvent s\u00e9lectionner une seule r\u00e9ponse (\u00ab Choix unique \u00bb) ou plusieurs (\u00ab Choix multiple \u00bb). Nous gardons \u00ab Choix unique \u00bb.", "title": "Choix unique ou multiple", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 582, "x": 405, "y": 705.0625}, "selector": "[data-testid=\"news-compose__option-input--2\"]"}, "value": "Samedi matin"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 582, "x": 405, "y": 705.0625}, "selector": "[data-testid=\"news-compose__option-input--2\"]"}, "value": "Samedi matin"}, "screenshot": "../assets/news-poll-create/fr/desktop/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/news-poll-create/fr/desktop/step-30.png", "subtitle": "Sondage", "text": "Renseignez au moins deux options de r\u00e9ponse. Le bouton \u00ab Ajouter une option \u00bb en ajoute d\u0027autres, et l\u0027ic\u00f4ne de corbeille en retire.", "title": "Ajouter les options de r\u00e9ponse", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 207, "x": 405, "y": 811.5625}, "selector": "#news-expiry"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 207, "x": 405, "y": 811.5625}, "selector": "#news-expiry"}, "value": null}, "screenshot": "../assets/news-poll-create/fr/desktop/step-31.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/news-poll-create/fr/desktop/step-31.png", "subtitle": "Sondage", "text": "Choisissez la date et l\u0027heure de cl\u00f4ture dans le calendrier. Apr\u00e8s cette \u00e9ch\u00e9ance, plus aucun vote n\u0027est accept\u00e9 et, selon la visibilit\u00e9 choisie, les r\u00e9sultats peuvent se d\u00e9voiler.", "title": "D\u00e9finir une date de cl\u00f4ture", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/news-poll-create/fr/desktop/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/news-poll-create/fr/desktop/step-32.png", "subtitle": "Visibilit\u00e9", "text": "Trois pr\u00e9r\u00e9glages couvrent les cas les plus courants. Chacun combine ce que voient les gestionnaires, ce que voient les membres, et \u00e0 quel moment.", "title": "Choisir qui voit les r\u00e9sultats", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 89.34375, "width": 204.65625, "x": 405, "y": 643.46875}, "selector": "[data-testid=\"news-compose__preset--anonymous\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 89.34375, "width": 204.65625, "x": 405, "y": 643.46875}, "selector": "[data-testid=\"news-compose__preset--anonymous\"]"}}, "screenshot": "../assets/news-poll-create/fr/desktop/step-33.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/news-poll-create/fr/desktop/step-33.png", "subtitle": "Visibilit\u00e9 \u2014 pr\u00e9r\u00e9glage", "text": "Les membres ne voient que le nombre total de votes par option, et seulement apr\u00e8s avoir vot\u00e9 eux-m\u00eames. Personne ne voit qui a vot\u00e9 quoi \u2014 les gestionnaires aussi n\u0027ont que les totaux. Id\u00e9al pour un vote confidentiel.", "title": "Anonyme", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 89.34375, "width": 204.671875, "x": 617.65625, "y": 643.46875}, "selector": "[data-testid=\"news-compose__preset--transparent\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 89.34375, "width": 204.671875, "x": 617.65625, "y": 643.46875}, "selector": "[data-testid=\"news-compose__preset--transparent\"]"}}, "screenshot": "../assets/news-poll-create/fr/desktop/step-34.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/news-poll-create/fr/desktop/step-34.png", "subtitle": "Visibilit\u00e9 \u2014 pr\u00e9r\u00e9glage", "text": "Tout le monde voit les r\u00e9sultats complets imm\u00e9diatement, y compris qui a vot\u00e9 pour quelle option, avant m\u00eame d\u0027avoir vot\u00e9. Id\u00e9al pour une d\u00e9cision ouverte o\u00f9 chacun assume son choix.", "title": "Transparent", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 89.34375, "width": 204.671875, "x": 830.328125, "y": 643.46875}, "selector": "[data-testid=\"news-compose__preset--on_close\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 89.34375, "width": 204.671875, "x": 830.328125, "y": 643.46875}, "selector": "[data-testid=\"news-compose__preset--on_close\"]"}}, "screenshot": "../assets/news-poll-create/fr/desktop/step-35.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/news-poll-create/fr/desktop/step-35.png", "subtitle": "Visibilit\u00e9 \u2014 pr\u00e9r\u00e9glage", "text": "Les membres ne d\u00e9couvrent les totaux qu\u0027une fois le sondage cl\u00f4tur\u00e9 ; avant cela, les r\u00e9sultats restent masqu\u00e9s. Les gestionnaires, eux, voient le d\u00e9tail (qui a vot\u00e9 quoi) \u00e0 tout moment pour suivre la participation.", "title": "\u00c0 la cl\u00f4ture", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 26.71875, "width": 120.203125, "x": 405, "y": 738.40625}, "selector": "[data-testid=\"news-compose__advanced-toggle\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 26.71875, "width": 120.203125, "x": 405, "y": 738.40625}, "selector": "[data-testid=\"news-compose__advanced-toggle\"]"}}, "screenshot": "../assets/news-poll-create/fr/desktop/step-36.png", "viewport": {"height": 900, "width": 1440}}], "index": 12, "screenshot": "../assets/news-poll-create/fr/desktop/step-36.png", "subtitle": "Visibilit\u00e9", "text": "Le bouton \u00ab Avanc\u00e9 \u00bb d\u00e9voile trois r\u00e9glages ind\u00e9pendants. Un pr\u00e9r\u00e9glage n\u0027est qu\u0027un raccourci pour ces trois champs \u2014 vous pouvez les combiner librement.", "title": "R\u00e9glage fin (avanc\u00e9)", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/news-poll-create/fr/desktop/step-37.png", "viewport": {"height": 900, "width": 1440}}], "index": 13, "screenshot": "../assets/news-poll-create/fr/desktop/step-37.png", "subtitle": "Visibilit\u00e9 \u2014 avanc\u00e9", "text": "Ce que voient les gestionnaires. \u00ab Agr\u00e9g\u00e9 \u00bb : uniquement les totaux par option. \u00ab Complet \u00bb : le d\u00e9tail nominatif, c\u0027est-\u00e0-dire qui a vot\u00e9 pour chaque option.", "title": "Visibilit\u00e9 gestionnaire", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/news-poll-create/fr/desktop/step-38.png", "viewport": {"height": 900, "width": 1440}}], "index": 14, "screenshot": "../assets/news-poll-create/fr/desktop/step-38.png", "subtitle": "Visibilit\u00e9 \u2014 avanc\u00e9", "text": "Ce que les membres sont autoris\u00e9s \u00e0 voir. \u00ab Aucun \u00bb : jamais de r\u00e9sultats. \u00ab Agr\u00e9g\u00e9 \u00bb : les totaux. \u00ab Complet \u00bb : le d\u00e9tail des votes par personne.", "title": "Visibilit\u00e9 membre", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/news-poll-create/fr/desktop/step-39.png", "viewport": {"height": 900, "width": 1440}}], "index": 15, "screenshot": "../assets/news-poll-create/fr/desktop/step-39.png", "subtitle": "Visibilit\u00e9 \u2014 avanc\u00e9", "text": "Le moment o\u00f9 les membres voient ce qui leur est autoris\u00e9. \u00ab Jamais \u00bb, \u00ab Avant de voter \u00bb, \u00ab Apr\u00e8s avoir vot\u00e9 \u00bb, ou \u00ab \u00c0 la cl\u00f4ture du sondage \u00bb. C\u0027est ce r\u00e9glage qui distingue, par exemple, un vote dont le r\u00e9sultat n\u0027appara\u00eet qu\u0027une fois la participation enregistr\u00e9e.", "title": "Affichage membre", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 89.34375, "width": 204.65625, "x": 405, "y": 643.46875}, "selector": "[data-testid=\"news-compose__preset--anonymous\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 89.34375, "width": 204.65625, "x": 405, "y": 643.46875}, "selector": "[data-testid=\"news-compose__preset--anonymous\"]"}}, "screenshot": "../assets/news-poll-create/fr/desktop/step-40.png", "viewport": {"height": 900, "width": 1440}}], "index": 16, "screenshot": "../assets/news-poll-create/fr/desktop/step-40.png", "subtitle": "Visibilit\u00e9", "text": "Pour finir, nous reprenons le pr\u00e9r\u00e9glage \u00ab Anonyme \u00bb, qui referme les r\u00e9glages avanc\u00e9s et applique une combinaison coh\u00e9rente pr\u00eate \u00e0 \u00eatre publi\u00e9e.", "title": "Revenir \u00e0 un pr\u00e9r\u00e9glage", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 77.109375, "x": 957.890625, "y": 791.71875}, "selector": "[data-testid=\"news-compose__btn--submit\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 77.109375, "x": 957.890625, "y": 791.71875}, "selector": "[data-testid=\"news-compose__btn--submit\"]"}}, "screenshot": "../assets/news-poll-create/fr/desktop/step-41.png", "viewport": {"height": 900, "width": 1440}}], "index": 17, "screenshot": "../assets/news-poll-create/fr/desktop/step-41.png", "subtitle": "Sondage", "text": "Cliquez sur \u00ab Publier \u00bb. Le sondage est diffus\u00e9 \u00e0 tous les membres, qui re\u00e7oivent une notification les invitant \u00e0 voter.", "title": "Publier le sondage", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/news-poll-create/fr/desktop/step-43.png", "viewport": {"height": 900, "width": 1440}}], "index": 18, "screenshot": "../assets/news-poll-create/fr/desktop/step-43.png", "subtitle": "Sondage", "text": "Le sondage appara\u00eet dans le tableau avec ses options. Les membres peuvent d\u00e9sormais voter ; les r\u00e9sultats s\u0027afficheront selon la visibilit\u00e9 que vous avez choisie.", "title": "Votre sondage est en ligne", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 360}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 360}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"}}, "screenshot": "../assets/news-poll-create/fr/mobile/step-17.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/news-poll-create/fr/mobile/step-17.png", "subtitle": "Navigation", "text": "Touchez l\u0027ic\u00f4ne du menu pour ouvrir le tiroir de navigation, puis dans la section \u00ab Communaut\u00e9 \u00bb touchez \u00ab Actualit\u00e9s \u00bb.", "title": "Ouvrir le tableau d\u0027actualit\u00e9s", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 124.1875, "x": 37, "y": 219}, "selector": "[data-testid=\"news-board__compose\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 124.1875, "x": 37, "y": 219}, "selector": "[data-testid=\"news-board__compose\"]"}}, "screenshot": "../assets/news-poll-create/fr/mobile/step-20.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/news-poll-create/fr/mobile/step-20.png", "subtitle": "R\u00e9daction", "text": "Cliquez sur \u00ab Nouvelle publication \u00bb pour ouvrir la fen\u00eatre de r\u00e9daction.", "title": "Ouvrir le compositeur", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 33.171875, "width": 103.765625, "x": 139.78125, "y": 97}, "selector": "[data-testid=\"news-compose__kind--poll\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 33.171875, "width": 103.765625, "x": 139.78125, "y": 97}, "selector": "[data-testid=\"news-compose__kind--poll\"]"}}, "screenshot": "../assets/news-poll-create/fr/mobile/step-22.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/news-poll-create/fr/mobile/step-22.png", "subtitle": "Type de publication", "text": "En haut de la fen\u00eatre, basculez sur l\u0027onglet \u00ab Sondage \u00bb. Des champs suppl\u00e9mentaires apparaissent : question, options de r\u00e9ponse, date de cl\u00f4ture et visibilit\u00e9.", "title": "Choisir le type \u00ab Sondage \u00bb", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 152, "width": 362, "x": 14, "y": 310.078125}, "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"}, "value": "Quand souhaitez-vous organiser la prochaine r\u00e9union ?"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 152, "width": 362, "x": 14, "y": 310.078125}, "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"}, "value": "Quand souhaitez-vous organiser la prochaine r\u00e9union ?"}, "screenshot": "../assets/news-poll-create/fr/mobile/step-24.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/news-poll-create/fr/mobile/step-24.png", "subtitle": "Sondage", "text": "Saisissez la question du sondage dans l\u0027\u00e9diteur, comme pour une actualit\u00e9 classique.", "title": "Poser la question", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/news-poll-create/fr/mobile/step-25.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/news-poll-create/fr/mobile/step-25.png", "subtitle": "Sondage", "text": "Choisissez si les membres peuvent s\u00e9lectionner une seule r\u00e9ponse (\u00ab Choix unique \u00bb) ou plusieurs (\u00ab Choix multiple \u00bb). Nous gardons \u00ab Choix unique \u00bb.", "title": "Choix unique ou multiple", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 13, "y": 801.0625}, "selector": "[data-testid=\"news-compose__option-input--2\"]"}, "value": "Samedi matin"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 13, "y": 801.0625}, "selector": "[data-testid=\"news-compose__option-input--2\"]"}, "value": "Samedi matin"}, "screenshot": "../assets/news-poll-create/fr/mobile/step-30.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/news-poll-create/fr/mobile/step-30.png", "subtitle": "Sondage", "text": "Renseignez au moins deux options de r\u00e9ponse. Le bouton \u00ab Ajouter une option \u00bb en ajoute d\u0027autres, et l\u0027ic\u00f4ne de corbeille en retire.", "title": "Ajouter les options de r\u00e9ponse", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 207, "x": 13, "y": 440.5625}, "selector": "#news-expiry"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 207, "x": 13, "y": 440.5625}, "selector": "#news-expiry"}, "value": null}, "screenshot": "../assets/news-poll-create/fr/mobile/step-31.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/news-poll-create/fr/mobile/step-31.png", "subtitle": "Sondage", "text": "Choisissez la date et l\u0027heure de cl\u00f4ture dans le calendrier. Apr\u00e8s cette \u00e9ch\u00e9ance, plus aucun vote n\u0027est accept\u00e9 et, selon la visibilit\u00e9 choisie, les r\u00e9sultats peuvent se d\u00e9voiler.", "title": "D\u00e9finir une date de cl\u00f4ture", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/news-poll-create/fr/mobile/step-32.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/news-poll-create/fr/mobile/step-32.png", "subtitle": "Visibilit\u00e9", "text": "Trois pr\u00e9r\u00e9glages couvrent les cas les plus courants. Chacun combine ce que voient les gestionnaires, ce que voient les membres, et \u00e0 quel moment.", "title": "Choisir qui voit les r\u00e9sultats", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 74.78125, "width": 364, "x": 13, "y": 518.46875}, "selector": "[data-testid=\"news-compose__preset--anonymous\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 74.78125, "width": 364, "x": 13, "y": 518.46875}, "selector": "[data-testid=\"news-compose__preset--anonymous\"]"}}, "screenshot": "../assets/news-poll-create/fr/mobile/step-33.png", "viewport": {"height": 844, "width": 390}}], "index": 9, "screenshot": "../assets/news-poll-create/fr/mobile/step-33.png", "subtitle": "Visibilit\u00e9 \u2014 pr\u00e9r\u00e9glage", "text": "Les membres ne voient que le nombre total de votes par option, et seulement apr\u00e8s avoir vot\u00e9 eux-m\u00eames. Personne ne voit qui a vot\u00e9 quoi \u2014 les gestionnaires aussi n\u0027ont que les totaux. Id\u00e9al pour un vote confidentiel.", "title": "Anonyme", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 60.21875, "width": 364, "x": 13, "y": 601.25}, "selector": "[data-testid=\"news-compose__preset--transparent\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 60.21875, "width": 364, "x": 13, "y": 601.25}, "selector": "[data-testid=\"news-compose__preset--transparent\"]"}}, "screenshot": "../assets/news-poll-create/fr/mobile/step-34.png", "viewport": {"height": 844, "width": 390}}], "index": 10, "screenshot": "../assets/news-poll-create/fr/mobile/step-34.png", "subtitle": "Visibilit\u00e9 \u2014 pr\u00e9r\u00e9glage", "text": "Tout le monde voit les r\u00e9sultats complets imm\u00e9diatement, y compris qui a vot\u00e9 pour quelle option, avant m\u00eame d\u0027avoir vot\u00e9. Id\u00e9al pour une d\u00e9cision ouverte o\u00f9 chacun assume son choix.", "title": "Transparent", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 60.21875, "width": 364, "x": 13, "y": 669.46875}, "selector": "[data-testid=\"news-compose__preset--on_close\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 60.21875, "width": 364, "x": 13, "y": 669.46875}, "selector": "[data-testid=\"news-compose__preset--on_close\"]"}}, "screenshot": "../assets/news-poll-create/fr/mobile/step-35.png", "viewport": {"height": 844, "width": 390}}], "index": 11, "screenshot": "../assets/news-poll-create/fr/mobile/step-35.png", "subtitle": "Visibilit\u00e9 \u2014 pr\u00e9r\u00e9glage", "text": "Les membres ne d\u00e9couvrent les totaux qu\u0027une fois le sondage cl\u00f4tur\u00e9 ; avant cela, les r\u00e9sultats restent masqu\u00e9s. Les gestionnaires, eux, voient le d\u00e9tail (qui a vot\u00e9 quoi) \u00e0 tout moment pour suivre la participation.", "title": "\u00c0 la cl\u00f4ture", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 26.71875, "width": 120.203125, "x": 13, "y": 735.28125}, "selector": "[data-testid=\"news-compose__advanced-toggle\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 26.71875, "width": 120.203125, "x": 13, "y": 735.28125}, "selector": "[data-testid=\"news-compose__advanced-toggle\"]"}}, "screenshot": "../assets/news-poll-create/fr/mobile/step-36.png", "viewport": {"height": 844, "width": 390}}], "index": 12, "screenshot": "../assets/news-poll-create/fr/mobile/step-36.png", "subtitle": "Visibilit\u00e9", "text": "Le bouton \u00ab Avanc\u00e9 \u00bb d\u00e9voile trois r\u00e9glages ind\u00e9pendants. Un pr\u00e9r\u00e9glage n\u0027est qu\u0027un raccourci pour ces trois champs \u2014 vous pouvez les combiner librement.", "title": "R\u00e9glage fin (avanc\u00e9)", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/news-poll-create/fr/mobile/step-37.png", "viewport": {"height": 844, "width": 390}}], "index": 13, "screenshot": "../assets/news-poll-create/fr/mobile/step-37.png", "subtitle": "Visibilit\u00e9 \u2014 avanc\u00e9", "text": "Ce que voient les gestionnaires. \u00ab Agr\u00e9g\u00e9 \u00bb : uniquement les totaux par option. \u00ab Complet \u00bb : le d\u00e9tail nominatif, c\u0027est-\u00e0-dire qui a vot\u00e9 pour chaque option.", "title": "Visibilit\u00e9 gestionnaire", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/news-poll-create/fr/mobile/step-38.png", "viewport": {"height": 844, "width": 390}}], "index": 14, "screenshot": "../assets/news-poll-create/fr/mobile/step-38.png", "subtitle": "Visibilit\u00e9 \u2014 avanc\u00e9", "text": "Ce que les membres sont autoris\u00e9s \u00e0 voir. \u00ab Aucun \u00bb : jamais de r\u00e9sultats. \u00ab Agr\u00e9g\u00e9 \u00bb : les totaux. \u00ab Complet \u00bb : le d\u00e9tail des votes par personne.", "title": "Visibilit\u00e9 membre", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/news-poll-create/fr/mobile/step-39.png", "viewport": {"height": 844, "width": 390}}], "index": 15, "screenshot": "../assets/news-poll-create/fr/mobile/step-39.png", "subtitle": "Visibilit\u00e9 \u2014 avanc\u00e9", "text": "Le moment o\u00f9 les membres voient ce qui leur est autoris\u00e9. \u00ab Jamais \u00bb, \u00ab Avant de voter \u00bb, \u00ab Apr\u00e8s avoir vot\u00e9 \u00bb, ou \u00ab \u00c0 la cl\u00f4ture du sondage \u00bb. C\u0027est ce r\u00e9glage qui distingue, par exemple, un vote dont le r\u00e9sultat n\u0027appara\u00eet qu\u0027une fois la participation enregistr\u00e9e.", "title": "Affichage membre", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 74.78125, "width": 364, "x": 13, "y": 518.46875}, "selector": "[data-testid=\"news-compose__preset--anonymous\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 74.78125, "width": 364, "x": 13, "y": 518.46875}, "selector": "[data-testid=\"news-compose__preset--anonymous\"]"}}, "screenshot": "../assets/news-poll-create/fr/mobile/step-40.png", "viewport": {"height": 844, "width": 390}}], "index": 16, "screenshot": "../assets/news-poll-create/fr/mobile/step-40.png", "subtitle": "Visibilit\u00e9", "text": "Pour finir, nous reprenons le pr\u00e9r\u00e9glage \u00ab Anonyme \u00bb, qui referme les r\u00e9glages avanc\u00e9s et applique une combinaison coh\u00e9rente pr\u00eate \u00e0 \u00eatre publi\u00e9e.", "title": "Revenir \u00e0 un pr\u00e9r\u00e9glage", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 77.109375, "x": 299.890625, "y": 788.59375}, "selector": "[data-testid=\"news-compose__btn--submit\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 77.109375, "x": 299.890625, "y": 788.59375}, "selector": "[data-testid=\"news-compose__btn--submit\"]"}}, "screenshot": "../assets/news-poll-create/fr/mobile/step-41.png", "viewport": {"height": 844, "width": 390}}], "index": 17, "screenshot": "../assets/news-poll-create/fr/mobile/step-41.png", "subtitle": "Sondage", "text": "Cliquez sur \u00ab Publier \u00bb. Le sondage est diffus\u00e9 \u00e0 tous les membres, qui re\u00e7oivent une notification les invitant \u00e0 voter.", "title": "Publier le sondage", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/news-poll-create/fr/mobile/step-43.png", "viewport": {"height": 844, "width": 390}}], "index": 18, "screenshot": "../assets/news-poll-create/fr/mobile/step-43.png", "subtitle": "Sondage", "text": "Le sondage appara\u00eet dans le tableau avec ses options. Les membres peuvent d\u00e9sormais voter ; les r\u00e9sultats s\u0027afficheront selon la visibilit\u00e9 que vous avez choisie.", "title": "Votre sondage est en ligne", "viewport": {"height": 844, "width": 390}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

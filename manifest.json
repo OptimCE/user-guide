@@ -359,6 +359,42 @@
       }
     },
     {
+      "slug": "news-create",
+      "title": {
+        "fr": "Publier une actualité",
+        "en": "Publish a news"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "news-create.md",
+      "group": "news",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "news-create/fr.html",
+        "en": "news-create/en.html"
+      }
+    },
+    {
+      "slug": "news-poll-create",
+      "title": {
+        "fr": "Créer un sondage",
+        "en": "Create a poll"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "news-poll-create.md",
+      "group": "news",
+      "onboardingIndex": null,
+      "pages": {
+        "fr": "news-poll-create/fr.html",
+        "en": "news-poll-create/en.html"
+      }
+    },
+    {
       "slug": "sharing-op-add-meter",
       "title": {
         "fr": "Ajouter un compteur à une opération",
@@ -679,6 +715,25 @@
       "pages": {
         "fr": "simulation/fr.html",
         "en": "simulation/en.html"
+      }
+    },
+    {
+      "slug": "news",
+      "title": {
+        "fr": "Actualités",
+        "en": "News"
+      },
+      "description": {
+        "fr": "Publier des actualités et des sondages sur le tableau de la communauté.",
+        "en": "Publish news and polls on the community board."
+      },
+      "guides": [
+        "news-create",
+        "news-poll-create"
+      ],
+      "pages": {
+        "fr": "news/fr.html",
+        "en": "news/en.html"
       }
     }
   ],
@@ -1109,6 +1164,39 @@
                 "en": "Simulate an allocation key"
               },
               "path": "/simulation-run"
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "slug": "news",
+          "title": {
+            "fr": "Actualités",
+            "en": "News"
+          },
+          "description": {
+            "fr": "Publier des actualités et des sondages sur le tableau de la communauté.",
+            "en": "Publish news and polls on the community board."
+          },
+          "path": "/news",
+          "children": [
+            {
+              "kind": "guide",
+              "slug": "news-create",
+              "title": {
+                "fr": "Publier une actualité",
+                "en": "Publish a news"
+              },
+              "path": "/news-create"
+            },
+            {
+              "kind": "guide",
+              "slug": "news-poll-create",
+              "title": {
+                "fr": "Créer un sondage",
+                "en": "Create a poll"
+              },
+              "path": "/news-poll-create"
             }
           ]
         }

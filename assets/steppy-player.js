@@ -4031,7 +4031,14 @@ const Br = Ue`
   }
   .steppy-stage img {
     display: block;
-    width: 100%;
+    /* width:auto caps display at the screenshot's intrinsic pixel width (never
+       upscales), max-width:100% fills/shrinks within the stage. A dense capture
+       (mobile device_scale_factor=3) downscales to fill the stage crisply; a
+       low-res capture renders at native size instead of blurred. The img stays
+       left-aligned (no centering) so the cursor/hotspot overlay — positioned in
+       img-display-space with the stage top-left as origin — stays aligned. */
+    width: auto;
+    max-width: 100%;
     height: auto;
     pointer-events: none;
   }
