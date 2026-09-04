@@ -1,0 +1,471 @@
+{
+  "version": "1.1",
+  "slug": "community-managers-view",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Voir les gestionnaires de sa communauté",
+    "en": "See your community's managers"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Voir les gestionnaires",
+        "en": "See the managers"
+      },
+      "text": {
+        "fr": "Dans la barre latérale, la section « Utilisateurs » vous donne accès à la liste des gestionnaires de votre communauté — les personnes qui l'administrent.",
+        "en": "In the sidebar, the \"Users\" section gives you the list of your community's managers — the people who run it."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-managers-view/fr/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--member\"] a[href=\"/communities/managers\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-managers-view/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--member\"] a[href=\"/communities/managers\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Voir les gestionnaires",
+              "text": "Touchez l'icône du menu pour ouvrir le tiroir, puis dans la section « Utilisateurs » touchez l'entrée pour voir les gestionnaires.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-managers-view/en/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--member\"] a[href=\"/communities/managers\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-managers-view/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--member\"] a[href=\"/communities/managers\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "See the managers",
+              "text": "Tap the menu icon to open the drawer, then in the \"Users\" section tap the entry to see the managers.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Les gestionnaires de votre communauté",
+        "en": "Your community's managers"
+      },
+      "text": {
+        "fr": "Cette page liste les administrateurs et gestionnaires de la communauté avec leur rôle. Vous pouvez filtrer par rôle ou rechercher une personne. C'est une vue de consultation : vous ne pouvez rien modifier.",
+        "en": "This page lists the community's administrators and managers with their role. You can filter by role or search for a person. It is a read-only view: you cannot change anything."
+      },
+      "subtitle": {
+        "fr": "Transparence",
+        "en": "Transparency"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-managers-view/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-managers-view/fr/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-managers-view/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-managers-view/en/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "fill",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Rechercher un gestionnaire",
+        "en": "Search a manager"
+      },
+      "text": {
+        "fr": "Saisissez un nom ou une adresse e-mail pour filtrer la liste et retrouver rapidement une personne précise.",
+        "en": "Type a name or an email address to filter the list and quickly find a specific person."
+      },
+      "subtitle": {
+        "fr": "Recherche",
+        "en": "Search"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-managers-view/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 181,
+                      "width": 956.453125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"managers-community-list__input--search\"] input"
+                  },
+                  "value": "manager"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-managers-view/fr/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 299,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"managers-community-list__input--search\"] input"
+                  },
+                  "value": "manager"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-managers-view/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 181,
+                      "width": 993,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"managers-community-list__input--search\"] input"
+                  },
+                  "value": "manager"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-managers-view/en/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 279,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"managers-community-list__input--search\"] input"
+                  },
+                  "value": "manager"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Réinitialiser la recherche",
+        "en": "Reset the search"
+      },
+      "text": {
+        "fr": "Le bouton « Réinitialiser les filtres » efface la recherche et réaffiche l'ensemble des gestionnaires.",
+        "en": "The \"Clear filters\" button clears the search and shows all the managers again."
+      },
+      "subtitle": {
+        "fr": "Recherche",
+        "en": "Search"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-managers-view/fr/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1208.171875,
+                      "y": 181,
+                      "width": 168.828125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"managers-community-list__btn--clear-filters\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-managers-view/fr/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 429,
+                      "width": 168.828125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"managers-community-list__btn--clear-filters\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-managers-view/en/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1244.71875,
+                      "y": 181,
+                      "width": 132.28125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"managers-community-list__btn--clear-filters\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-managers-view/en/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 409,
+                      "width": 132.28125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"managers-community-list__btn--clear-filters\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

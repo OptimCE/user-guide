@@ -1,0 +1,413 @@
+{
+  "version": "1.1",
+  "slug": "meter-deactivate",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Désactiver un compteur",
+    "en": "Deactivate a meter"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "wait-for",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Fiche du compteur",
+        "en": "Meter detail"
+      },
+      "text": {
+        "fr": "Ouvrez la fiche du compteur à désactiver. Le bouton « Désactiver » permet de programmer la fin de son activité à une date donnée.",
+        "en": "Open the detail of the meter to deactivate. The \"Deactivate\" button schedules the end of its activity on a given date."
+      },
+      "subtitle": {
+        "fr": "Désactivation d'un compteur",
+        "en": "Deactivating a meter"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/fr/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/fr/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/en/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/en/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Choisir la date de fin",
+        "en": "Choose the end date"
+      },
+      "text": {
+        "fr": "Sélectionnez la date à partir de laquelle le compteur ne sera plus actif.",
+        "en": "Select the date from which the meter will no longer be active."
+      },
+      "subtitle": {
+        "fr": "Désactivation d'un compteur",
+        "en": "Deactivating a meter"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/fr/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 672.8125,
+                      "y": 432,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-deactivation__datepicker--date\"] input"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/fr/mobile/step-16.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 416,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-deactivation__datepicker--date\"] input"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/en/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 658.34375,
+                      "y": 432,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-deactivation__datepicker--date\"] input"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/en/mobile/step-16.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 416,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-deactivation__datepicker--date\"] input"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Valider la désactivation",
+        "en": "Confirm the deactivation"
+      },
+      "text": {
+        "fr": "Cliquez sur « Désactiver » : une période inactive est ajoutée au compteur à partir de la date choisie.",
+        "en": "Click \"Deactivate\": an inactive period is added to the meter from the chosen date."
+      },
+      "subtitle": {
+        "fr": "Désactivation d'un compteur",
+        "en": "Deactivating a meter"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/fr/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 520.171875,
+                      "y": 486,
+                      "width": 102.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-deactivation__button--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 470,
+                      "width": 102.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-deactivation__button--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/en/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 534.65625,
+                      "y": 486,
+                      "width": 72.84375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-deactivation__button--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 470,
+                      "width": 72.84375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-deactivation__button--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Désactivation programmée",
+        "en": "Scheduled deactivation"
+      },
+      "text": {
+        "fr": "L'onglet « Futur » montre la période inactive à venir : le compteur restera actif jusqu'à la date choisie, puis sera désactivé.",
+        "en": "The \"Future\" tab shows the upcoming inactive period: the meter stays active until the chosen date, then is deactivated."
+      },
+      "subtitle": {
+        "fr": "Confirmation",
+        "en": "Confirmation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

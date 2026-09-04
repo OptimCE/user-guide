@@ -1,0 +1,885 @@
+{
+  "version": "1.1",
+  "slug": "community-create",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Créer une communauté",
+    "en": "Create a community"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir mes communautés",
+        "en": "Open my communities"
+      },
+      "text": {
+        "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Mes communautés » pour voir la liste des communautés où vous êtes inscrit·e et en créer de nouvelles.",
+        "en": "In the sidebar's profile menu, click \"My communities\" to see the communities you belong to and create new ones."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir mes communautés",
+              "text": "Touchez l'icône du menu pour ouvrir le tiroir de navigation, puis « Mes communautés ».",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open my communities",
+              "text": "Tap the menu icon to open the navigation drawer, then \"My communities\".",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Créer une communauté",
+        "en": "Create a community"
+      },
+      "text": {
+        "fr": "Cliquez sur « Créer une communauté » en haut de la liste pour ouvrir la fenêtre de création.",
+        "en": "Click \"Create a community\" above the list to open the creation dialog."
+      },
+      "subtitle": {
+        "fr": "Nouvelle communauté",
+        "en": "New community"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1148.421875,
+                      "y": 52,
+                      "width": 220.578125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"user-communities__button--create\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 220.578125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"user-communities__button--create\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1172.90625,
+                      "y": 52,
+                      "width": 196.09375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"user-communities__button--create\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 196.09375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"user-communities__button--create\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "fill",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Nommer la communauté",
+        "en": "Name the community"
+      },
+      "text": {
+        "fr": "Saisissez le nom de la communauté. Le régulateur est présélectionné (CWaPE pour la Wallonie) ; adaptez-le si votre communauté dépend d'un autre régulateur régional.",
+        "en": "Enter the community name. The regulator is preselected (CWaPE for Wallonia); change it if your community reports to a different regional regulator."
+      },
+      "subtitle": {
+        "fr": "Nouvelle communauté",
+        "en": "New community"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 593.375,
+                      "y": 405,
+                      "width": 253.234375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-dialog__input--name\"]"
+                  },
+                  "value": "E2E Community"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 68.375,
+                      "y": 377,
+                      "width": 253.234375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-dialog__input--name\"]"
+                  },
+                  "value": "E2E Community"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 608.6875,
+                      "y": 405,
+                      "width": 222.625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-dialog__input--name\"]"
+                  },
+                  "value": "E2E Community"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 83.6875,
+                      "y": 377,
+                      "width": 222.625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-dialog__input--name\"]"
+                  },
+                  "value": "E2E Community"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Valider la création",
+        "en": "Confirm the creation"
+      },
+      "text": {
+        "fr": "Cliquez sur « Valider ». La communauté est créée dans le CRM et dans le fournisseur d'identité, et vous en devenez automatiquement l'administrateur.",
+        "en": "Click \"Confirm\". The community is created in the CRM and the identity provider, and you automatically become its administrator."
+      },
+      "subtitle": {
+        "fr": "Confirmation",
+        "en": "Confirmation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 593.375,
+                      "y": 535,
+                      "width": 75.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-dialog__button--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 68.375,
+                      "y": 507,
+                      "width": 75.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-dialog__button--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 608.6875,
+                      "y": 535,
+                      "width": 83.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-dialog__button--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 83.6875,
+                      "y": 507,
+                      "width": 83.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-dialog__button--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Votre nouvelle communauté",
+        "en": "Your new community"
+      },
+      "text": {
+        "fr": "« E2E Community » figure maintenant dans votre liste. Il ne reste plus qu'à l'activer pour commencer à la configurer.",
+        "en": "\"E2E Community\" now appears in your list. All that's left is to activate it and start setting it up."
+      },
+      "subtitle": {
+        "fr": "Liste des communautés",
+        "en": "Communities list"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "wait-for",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Vous êtes administrateur",
+        "en": "You are the administrator"
+      },
+      "text": {
+        "fr": "La section « Gestion » apparaît dans la barre latérale : en tant que créateur, vous êtes administrateur de la communauté et avez accès à tous ses outils.",
+        "en": "The \"Management\" section appears in the sidebar: as its creator, you are the community administrator and have access to all its tools."
+      },
+      "subtitle": {
+        "fr": "Communauté active",
+        "en": "Active community"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Aucune clé pour l'instant",
+        "en": "No keys yet"
+      },
+      "text": {
+        "fr": "Une communauté toute neuve n'a encore aucune clé de répartition. L'écran vous invite à en créer votre première.",
+        "en": "A brand-new community has no allocation keys yet. The screen invites you to create your first one."
+      },
+      "subtitle": {
+        "fr": "Point de départ",
+        "en": "Starting point"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Aucun membre pour l'instant",
+        "en": "No members yet"
+      },
+      "text": {
+        "fr": "De la même façon, la liste des membres est vide. Vous ajouterez vos membres un à un ou par invitation.",
+        "en": "Likewise, the members list is empty. You will add your members one by one or by invitation."
+      },
+      "subtitle": {
+        "fr": "Point de départ",
+        "en": "Starting point"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Aucun compteur pour l'instant",
+        "en": "No meters yet"
+      },
+      "text": {
+        "fr": "Enfin, aucun compteur n'est encore rattaché. Votre communauté est prête : membres, compteurs et clés de répartition se configurent ensuite depuis ces mêmes écrans.",
+        "en": "Finally, no meters are attached yet. Your community is ready: members, meters and allocation keys are set up next from these very screens."
+      },
+      "subtitle": {
+        "fr": "Point de départ",
+        "en": "Starting point"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/fr/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

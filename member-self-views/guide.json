@@ -1,0 +1,915 @@
+{
+  "version": "1.1",
+  "slug": "member-self-views",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Consulter sa fiche et son compteur",
+    "en": "Consult your own record and meter"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir votre profil",
+        "en": "Open your profile"
+      },
+      "text": {
+        "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Profil » pour accéder à votre espace personnel.",
+        "en": "In the sidebar's profile menu, click \"Profile\" to reach your personal space."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/fr/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir votre profil",
+              "text": "Touchez l'icône du menu pour ouvrir le tiroir, puis « Profil ».",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/en/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open your profile",
+              "text": "Tap the menu icon to open the drawer, then \"Profile\".",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Vos représentations",
+        "en": "Your memberships"
+      },
+      "text": {
+        "fr": "L'onglet « Représentations » liste les membres de la communauté que vous représentez. Cliquez sur une ligne pour ouvrir sa fiche.",
+        "en": "The \"Representations\" tab lists the community members you represent. Click a row to open its record."
+      },
+      "subtitle": {
+        "fr": "Profil",
+        "en": "Profile"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 550.375,
+                      "y": 380,
+                      "width": 152.578125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--representations\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 118.375,
+                      "y": 393.84375,
+                      "width": 152.578125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--representations\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 504.171875,
+                      "y": 380,
+                      "width": 152.578125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--representations\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 119.171875,
+                      "y": 393.84375,
+                      "width": 152.578125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--representations\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir sa fiche de membre",
+        "en": "Open your member record"
+      },
+      "text": {
+        "fr": "Cliquez sur la ligne correspondant au membre que vous représentez pour afficher sa fiche complète.",
+        "en": "Click the row for the member you represent to display their full record."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/fr/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 132,
+                      "y": 614,
+                      "width": 1244,
+                      "height": 53
+                    },
+                    "selector": "[data-testid=\"representations__row--desktop--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/fr/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 655.84375,
+                      "width": 322,
+                      "height": 187.65625
+                    },
+                    "selector": "[data-testid=\"representations__row--mobile--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir sa fiche de membre",
+              "text": "Touchez la ligne correspondant au membre que vous représentez pour afficher sa fiche complète.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/en/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 132,
+                      "y": 614,
+                      "width": 1244,
+                      "height": 53
+                    },
+                    "selector": "[data-testid=\"representations__row--desktop--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/en/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 655.84375,
+                      "width": 322,
+                      "height": 187.65625
+                    },
+                    "selector": "[data-testid=\"representations__row--mobile--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open your member record",
+              "text": "Tap the row for the member you represent to display their full record.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Votre fiche de membre",
+        "en": "Your member record"
+      },
+      "text": {
+        "fr": "Votre fiche de membre s'affiche en lecture seule : informations personnelles, coordonnées bancaires et gestionnaire associé. Pour toute correction, contactez le gestionnaire de la communauté.",
+        "en": "Your member record is shown read-only: personal information, banking details, and the associated manager. For any correction, contact the community manager."
+      },
+      "subtitle": {
+        "fr": "Consultation",
+        "en": "Read-only view"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/fr/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/fr/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/en/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/en/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Vos compteurs",
+        "en": "Your meters"
+      },
+      "text": {
+        "fr": "L'onglet « Compteurs » liste les compteurs rattachés aux membres que vous représentez. Cliquez sur une ligne pour consulter le compteur en détail.",
+        "en": "The \"Meters\" tab lists the meters attached to the members you represent. Click a row to inspect a meter in detail."
+      },
+      "subtitle": {
+        "fr": "Profil",
+        "en": "Profile"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/fr/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 380,
+                      "width": 115.75,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--meters\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/fr/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 393.84375,
+                      "width": 115.75,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--meters\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/en/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 380,
+                      "width": 86.40625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--meters\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/en/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 393.84375,
+                      "width": 86.40625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--meters\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir son compteur",
+        "en": "Open your meter"
+      },
+      "text": {
+        "fr": "Cliquez sur la ligne du compteur pour consulter son détail et ses relevés.",
+        "en": "Click the meter's row to consult its detail and its readings."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/fr/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 132,
+                      "y": 614,
+                      "width": 1244,
+                      "height": 65
+                    },
+                    "selector": "[data-testid=\"meters__row--desktop--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/fr/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 532.84375,
+                      "width": 322,
+                      "height": 310.65625
+                    },
+                    "selector": "[data-testid=\"meters__row--mobile--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir son compteur",
+              "text": "Touchez la ligne du compteur pour consulter son détail et ses relevés.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/en/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 132,
+                      "y": 614,
+                      "width": 1244,
+                      "height": 65
+                    },
+                    "selector": "[data-testid=\"meters__row--desktop--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 532.84375,
+                      "width": 322,
+                      "height": 310.65625
+                    },
+                    "selector": "[data-testid=\"meters__row--mobile--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open your meter",
+              "text": "Tap the meter's row to consult its detail and its readings.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Votre compteur",
+        "en": "Your meter"
+      },
+      "text": {
+        "fr": "La vue du compteur affiche ses caractéristiques et son statut. Les onglets vous permettent de voir la configuration actuelle, l'historique, les périodes futures et la consommation.",
+        "en": "The meter view shows its characteristics and status. The tabs let you see the current configuration, history, upcoming periods, and consumption."
+      },
+      "subtitle": {
+        "fr": "Consultation",
+        "en": "Read-only view"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/fr/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/fr/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/en/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/en/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "La consommation",
+        "en": "Consumption"
+      },
+      "text": {
+        "fr": "L'onglet « Consommation » présente les relevés de votre compteur. Lorsqu'aucune donnée n'est encore disponible, un message vous l'indique.",
+        "en": "The \"Consumption\" tab presents your meter's readings. When no data is available yet, a message tells you so."
+      },
+      "subtitle": {
+        "fr": "Consultation",
+        "en": "Read-only view"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/fr/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 620.515625,
+                      "y": 425,
+                      "width": 219.671875,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"meter-view-me__tab--consumption\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/fr/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 154.515625,
+                      "y": 394,
+                      "width": 219.671875,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"meter-view-me__tab--consumption\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/en/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 501.1875,
+                      "y": 425,
+                      "width": 219.6875,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"meter-view-me__tab--consumption\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 154.1875,
+                      "y": 394,
+                      "width": 219.6875,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"meter-view-me__tab--consumption\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

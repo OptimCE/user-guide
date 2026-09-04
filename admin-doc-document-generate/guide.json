@@ -1,0 +1,1593 @@
+{
+  "version": "1.1",
+  "slug": "admin-doc-document-generate",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Générer un document depuis le CRM",
+    "en": "Generate a document from the CRM"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les documents administratifs",
+        "en": "Open the administrative documents"
+      },
+      "text": {
+        "fr": "Dans la barre latérale, cliquez sur « Documents administratifs » pour retrouver vos dossiers.",
+        "en": "In the sidebar, click \"Administrative documents\" to find your dossiers."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir les documents administratifs",
+              "text": "Touchez l'icône du menu pour ouvrir le tiroir, puis « Documents administratifs ».",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the administrative documents",
+              "text": "Tap the menu icon to open the drawer, then \"Administrative documents\".",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Ouvrir le dossier",
+        "en": "Open the dossier"
+      },
+      "text": {
+        "fr": "Cliquez sur la ligne du dossier pour ouvrir sa fiche. Les documents s'ajoutent toujours à l'intérieur d'un dossier.",
+        "en": "Click the dossier row to open its page. Documents are always added inside a dossier."
+      },
+      "subtitle": {
+        "fr": "Documents administratifs",
+        "en": "Administrative documents"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 260,
+                      "y": 554,
+                      "width": 988,
+                      "height": 73
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 705,
+                      "width": 628.15625,
+                      "height": 105
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 260,
+                      "y": 554,
+                      "width": 988,
+                      "height": 73
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 705,
+                      "width": 642.140625,
+                      "height": 105
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 500,
+      "title": {
+        "fr": "Un dossier vide",
+        "en": "An empty dossier"
+      },
+      "text": {
+        "fr": "L'onglet « Documents » liste les pièces du dossier. Un dossier fraîchement créé n'en contient aucune.",
+        "en": "The \"Documents\" tab lists the dossier's pieces. A freshly created dossier holds none."
+      },
+      "subtitle": {
+        "fr": "Documents du dossier",
+        "en": "Dossier documents"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ajouter un document",
+        "en": "Add a document"
+      },
+      "text": {
+        "fr": "Cliquez sur « Ajouter un document » pour choisir le formulaire réglementaire à préparer.",
+        "en": "Click \"Add document\" to choose which regulatory form to prepare."
+      },
+      "subtitle": {
+        "fr": "Documents du dossier",
+        "en": "Dossier documents"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1068.15625,
+                      "y": 385,
+                      "width": 179.84375,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 176.15625,
+                      "y": 693,
+                      "width": 179.84375,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1109.265625,
+                      "y": 385,
+                      "width": 138.734375,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 217.265625,
+                      "y": 693,
+                      "width": 138.734375,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "select-option",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 700,
+      "title": {
+        "fr": "Choisir le formulaire",
+        "en": "Choose the form"
+      },
+      "text": {
+        "fr": "La liste reprend les formulaires publiés par le régulateur pour votre région. Chacun sait quelles données du CRM il doit reprendre.",
+        "en": "The list holds the forms published by the regulator for your region. Each one knows which CRM data it has to carry."
+      },
+      "subtitle": {
+        "fr": "Ajouter un document",
+        "en": "Add document"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 485,
+                      "y": 397,
+                      "width": 470,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"document-create-dialog__select--doc-type\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 117,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"document-create-dialog__select--doc-type\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 485,
+                      "y": 397,
+                      "width": 470,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"document-create-dialog__select--doc-type\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 117,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"document-create-dialog__select--doc-type\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Créer le document",
+        "en": "Create the document"
+      },
+      "text": {
+        "fr": "Validez : le document rejoint le dossier, encore vide de tout contenu.",
+        "en": "Submit: the document joins the dossier, still without any content."
+      },
+      "subtitle": {
+        "fr": "Ajouter un document",
+        "en": "Add document"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 875.078125,
+                      "y": 545,
+                      "width": 79.921875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"document-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 297.078125,
+                      "y": 265,
+                      "width": 79.921875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"document-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 898.96875,
+                      "y": 545,
+                      "width": 56.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"document-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 320.96875,
+                      "y": 265,
+                      "width": 56.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"document-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Un brouillon vous attend",
+        "en": "A draft is waiting"
+      },
+      "text": {
+        "fr": "Le document est créé au statut « Brouillon ». Il n'a encore aucun contenu : les icônes proposent de le générer depuis le CRM ou de téléverser votre propre fichier.",
+        "en": "The document is created with the status \"Draft\". It has no content yet: the icons offer to generate it from the CRM or to upload your own file."
+      },
+      "subtitle": {
+        "fr": "Documents du dossier",
+        "en": "Dossier documents"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 2000,
+      "title": {
+        "fr": "Générer le document",
+        "en": "Generate the document"
+      },
+      "text": {
+        "fr": "Cliquez sur l'icône de génération. OptimCE va rassembler les données de la communauté, de l'opération et de ses membres pour remplir le formulaire.",
+        "en": "Click the generate icon. OptimCE gathers the data of the community, the operation and its members to fill the form."
+      },
+      "subtitle": {
+        "fr": "Documents du dossier",
+        "en": "Dossier documents"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1167,
+                      "y": 453.5,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--generate-1\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 83,
+                      "y": 813,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--generate-1\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1167,
+                      "y": 453.5,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--generate-1\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 83,
+                      "y": 813,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--generate-1\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 500,
+      "title": {
+        "fr": "Vérifier les données",
+        "en": "Check the data"
+      },
+      "text": {
+        "fr": "Rien n'est déposé sans votre relecture. Les champs sont pré-remplis depuis le CRM et restent modifiables : ce que vous validez ici est exactement ce qui sera figé dans le document.",
+        "en": "Nothing is filed without your review. The fields are pre-filled from the CRM and stay editable: what you approve here is exactly what gets frozen into the document."
+      },
+      "subtitle": {
+        "fr": "Générer le document",
+        "en": "Generate the document"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-10",
+      "index": 10,
+      "action": "fill",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Corriger une valeur",
+        "en": "Correct a value"
+      },
+      "text": {
+        "fr": "Une correction faite ici ne vaut que pour ce document. Si une donnée est fausse partout, corrigez-la plutôt dans le CRM puis rechargez le formulaire.",
+        "en": "A correction made here applies to this document only. If a value is wrong everywhere, fix it in the CRM instead and reload the form."
+      },
+      "subtitle": {
+        "fr": "Générer le document",
+        "en": "Generate the document"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 726,
+                      "y": 281.328125,
+                      "width": 437,
+                      "height": 39.328125
+                    },
+                    "selector": "[data-testid=\"generate-dialog__field--community_name\"]"
+                  },
+                  "value": "Test Community"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 410.984375,
+                      "width": 364,
+                      "height": 39.328125
+                    },
+                    "selector": "[data-testid=\"generate-dialog__field--community_name\"]"
+                  },
+                  "value": "Test Community"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 726,
+                      "y": 281.328125,
+                      "width": 437,
+                      "height": 39.328125
+                    },
+                    "selector": "[data-testid=\"generate-dialog__field--community_name\"]"
+                  },
+                  "value": "Test Community"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 410.984375,
+                      "width": 364,
+                      "height": 39.328125
+                    },
+                    "selector": "[data-testid=\"generate-dialog__field--community_name\"]"
+                  },
+                  "value": "Test Community"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-11",
+      "index": 11,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 2000,
+      "title": {
+        "fr": "Lancer la génération",
+        "en": "Start the generation"
+      },
+      "text": {
+        "fr": "La génération part en arrière-plan. Vous pouvez continuer à travailler : la carte du document affiche « Génération en cours » et se met à jour toute seule.",
+        "en": "The generation runs in the background. You can carry on working: the document card shows \"Generating\" and updates on its own."
+      },
+      "subtitle": {
+        "fr": "Générer le document",
+        "en": "Generate the document"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1079.296875,
+                      "y": 813.296875,
+                      "width": 83.703125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"generate-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 293.296875,
+                      "y": 788.609375,
+                      "width": 83.703125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"generate-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1071.046875,
+                      "y": 813.296875,
+                      "width": 91.953125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"generate-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 285.046875,
+                      "y": 788.609375,
+                      "width": 91.953125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"generate-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-12",
+      "index": 12,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Le document est prêt",
+        "en": "The document is ready"
+      },
+      "text": {
+        "fr": "Une fois la génération terminée, le document porte une version téléchargeable. Rien n'est écrasé : chaque génération ajoute une nouvelle version.",
+        "en": "Once the generation finishes, the document carries a downloadable version. Nothing is overwritten: every generation adds a new version."
+      },
+      "subtitle": {
+        "fr": "Documents du dossier",
+        "en": "Dossier documents"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-13",
+      "index": 13,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Consulter les versions",
+        "en": "Look at the versions"
+      },
+      "text": {
+        "fr": "L'icône « Versions » ouvre l'historique complet du document.",
+        "en": "The \"Versions\" icon opens the document's full history."
+      },
+      "subtitle": {
+        "fr": "Documents du dossier",
+        "en": "Dossier documents"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1095,
+                      "y": 453.5,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--detail-1\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 47,
+                      "y": 813,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--detail-1\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1095,
+                      "y": 453.5,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--detail-1\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 47,
+                      "y": 813,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--detail-1\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-14",
+      "index": 14,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Une trace de ce qui a été produit",
+        "en": "A record of what was produced"
+      },
+      "text": {
+        "fr": "Chaque version indique quand elle a été produite et par qui. Les versions générées conservent en plus les données exactes utilisées.",
+        "en": "Every version records when it was produced and by whom. Generated versions additionally keep the exact data that was used."
+      },
+      "subtitle": {
+        "fr": "Versions du document",
+        "en": "Document versions"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-15",
+      "index": 15,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Voir les données figées",
+        "en": "See the frozen data"
+      },
+      "text": {
+        "fr": "Ouvrez l'instantané pour relire les données telles qu'elles étaient au moment du dépôt. Une modification ultérieure dans le CRM ne réécrit jamais ce qui a été transmis.",
+        "en": "Open the snapshot to re-read the data exactly as it was at filing time. A later change in the CRM never rewrites what was submitted."
+      },
+      "subtitle": {
+        "fr": "Versions du document",
+        "en": "Document versions"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/desktop/step-40.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1003,
+                      "y": 488,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"document-detail-dialog__btn--snapshot-1\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/fr/mobile/step-40.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 312.765625,
+                      "y": 240,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"document-detail-dialog__btn--snapshot-1\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-40.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1003,
+                      "y": 488,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"document-detail-dialog__btn--snapshot-1\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-40.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 313.0625,
+                      "y": 290,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"document-detail-dialog__btn--snapshot-1\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "version": "1.1",
+  "slug": "billing-member-view",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Consulter sa facture",
+    "en": "View your own bill"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir mes factures",
+        "en": "Open my invoices"
+      },
+      "text": {
+        "fr": "Dans la section « Communauté » de la barre latérale, cliquez sur « Facturation » pour accéder à vos factures. En tant que membre, vous ne voyez que les vôtres.",
+        "en": "In the sidebar's \"Community\" section, click \"Billing\" to reach your invoices. As a member you only ever see your own."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-member-view/fr/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/billing\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-member-view/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/billing\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir mes factures",
+              "text": "Touchez l'icône du menu pour ouvrir le tiroir de navigation, puis dans la section « Communauté » touchez « Facturation ».",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-member-view/en/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/billing\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-member-view/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/billing\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open my invoices",
+              "text": "Tap the menu icon to open the navigation drawer, then in the \"Community\" section tap \"Billing\".",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Vos factures",
+        "en": "Your invoices"
+      },
+      "text": {
+        "fr": "Voici l'espace « Mes factures ». Chaque carte correspond à une de vos factures, avec son numéro, son montant, son statut et sa communication structurée. Vous ne voyez que vos propres factures.",
+        "en": "This is the \"My invoices\" space. Each card is one of your invoices, with its number, amount, status and structured communication. You only ever see your own invoices."
+      },
+      "subtitle": {
+        "fr": "Facturation",
+        "en": "Billing"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-member-view/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-member-view/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-member-view/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-member-view/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

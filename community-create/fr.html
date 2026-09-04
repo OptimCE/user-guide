@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Créer une communauté — OptimCE — Guides utilisateur</title>
+    <meta name="description" content="Créer une nouvelle communauté énergétique, l&#39;activer et en devenir l&#39;administrateur.">
+    <link rel="canonical" href="https://guide.optimce.be/community-create/fr.html">
+    <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/community-create/fr.html">
+    <link rel="alternate" hreflang="en" href="https://guide.optimce.be/community-create/en.html">
+    <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/community-create/fr.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Créer une communauté">
+    <meta property="og:description" content="Créer une nouvelle communauté énergétique, l&#39;activer et en devenir l&#39;administrateur.">
+    <meta property="og:url" content="https://guide.optimce.be/community-create/fr.html">
+    <meta property="og:site_name" content="OptimCE — Guides utilisateur">
+    <meta property="og:locale" content="fr">
+    <meta property="og:image" content="https://guide.optimce.be/assets/community-create/fr/desktop/step-09.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Synchronise the saved language preference with the file we just loaded.
+        // The user landed on this <locale>.html either by clicking a link rewritten
+        // to honour their preference or by direct entry — either way, that's the
+        // current truth.
+        try { localStorage.setItem("oce-lang", "fr"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.html" aria-label="OptimCE — Guides utilisateur">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.html">OptimCE — Guides utilisateur</a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Accueil</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../community/fr.html">Communauté</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">Créer une communauté</span>
+        </nav>
+
+        <div class="steppy-header-actions">
+            <nav class="steppy-locale-switch" aria-label="Language">
+                <ul>
+                    <li>
+                        <span aria-current="true">Français</span>
+                    </li>
+                    <li>
+                        <a href="./en.html">English</a>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-mode-switch" aria-label="Guide mode">
+            <ul>
+                <li>
+                    <span aria-current="true">Pas à pas</span>
+                </li>
+                <li>
+                    <a href="./interactive.html">Interactif</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Créer une communauté</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Ouvrir mes communautés</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Dans le menu de profil de la barre latérale, cliquez sur « Mes communautés » pour voir la liste des communautés où vous êtes inscrit·e et en créer de nouvelles.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/desktop/step-09.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Créer une communauté</span>
+        </h2>
+        <div class="steppy-step-subtitle">Nouvelle communauté</div>
+        <div class="steppy-step-content">Cliquez sur « Créer une communauté » en haut de la liste pour ouvrir la fenêtre de création.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/desktop/step-15.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Nommer la communauté</span>
+        </h2>
+        <div class="steppy-step-subtitle">Nouvelle communauté</div>
+        <div class="steppy-step-content">Saisissez le nom de la communauté. Le régulateur est présélectionné (CWaPE pour la Wallonie) ; adaptez-le si votre communauté dépend d'un autre régulateur régional.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/desktop/step-17.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Valider la création</span>
+        </h2>
+        <div class="steppy-step-subtitle">Confirmation</div>
+        <div class="steppy-step-content">Cliquez sur « Valider ». La communauté est créée dans le CRM et dans le fournisseur d'identité, et vous en devenez automatiquement l'administrateur.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/desktop/step-18.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Votre nouvelle communauté</span>
+        </h2>
+        <div class="steppy-step-subtitle">Liste des communautés</div>
+        <div class="steppy-step-content">« E2E Community » figure maintenant dans votre liste. Il ne reste plus qu'à l'activer pour commencer à la configurer.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/desktop/step-23.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Vous êtes administrateur</span>
+        </h2>
+        <div class="steppy-step-subtitle">Communauté active</div>
+        <div class="steppy-step-content">La section « Gestion » apparaît dans la barre latérale : en tant que créateur, vous êtes administrateur de la communauté et avez accès à tous ses outils.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/desktop/step-26.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Aucune clé pour l'instant</span>
+        </h2>
+        <div class="steppy-step-subtitle">Point de départ</div>
+        <div class="steppy-step-content">Une communauté toute neuve n'a encore aucune clé de répartition. L'écran vous invite à en créer votre première.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/desktop/step-28.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Aucun membre pour l'instant</span>
+        </h2>
+        <div class="steppy-step-subtitle">Point de départ</div>
+        <div class="steppy-step-content">De la même façon, la liste des membres est vide. Vous ajouterez vos membres un à un ou par invitation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/desktop/step-30.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Aucun compteur pour l'instant</span>
+        </h2>
+        <div class="steppy-step-subtitle">Point de départ</div>
+        <div class="steppy-step-content">Enfin, aucun compteur n'est encore rattaché. Votre communauté est prête : membres, compteurs et clés de répartition se configurent ensuite depuis ces mêmes écrans.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/desktop/step-32.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Créer une communauté</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Ouvrir mes communautés</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Touchez l'icône du menu pour ouvrir le tiroir de navigation, puis « Mes communautés ».</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/mobile/step-12.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Créer une communauté</span>
+        </h2>
+        <div class="steppy-step-subtitle">Nouvelle communauté</div>
+        <div class="steppy-step-content">Cliquez sur « Créer une communauté » en haut de la liste pour ouvrir la fenêtre de création.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/mobile/step-15.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Nommer la communauté</span>
+        </h2>
+        <div class="steppy-step-subtitle">Nouvelle communauté</div>
+        <div class="steppy-step-content">Saisissez le nom de la communauté. Le régulateur est présélectionné (CWaPE pour la Wallonie) ; adaptez-le si votre communauté dépend d'un autre régulateur régional.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/mobile/step-17.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Valider la création</span>
+        </h2>
+        <div class="steppy-step-subtitle">Confirmation</div>
+        <div class="steppy-step-content">Cliquez sur « Valider ». La communauté est créée dans le CRM et dans le fournisseur d'identité, et vous en devenez automatiquement l'administrateur.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/mobile/step-18.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Votre nouvelle communauté</span>
+        </h2>
+        <div class="steppy-step-subtitle">Liste des communautés</div>
+        <div class="steppy-step-content">« E2E Community » figure maintenant dans votre liste. Il ne reste plus qu'à l'activer pour commencer à la configurer.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/mobile/step-23.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Vous êtes administrateur</span>
+        </h2>
+        <div class="steppy-step-subtitle">Communauté active</div>
+        <div class="steppy-step-content">La section « Gestion » apparaît dans la barre latérale : en tant que créateur, vous êtes administrateur de la communauté et avez accès à tous ses outils.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/mobile/step-26.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Aucune clé pour l'instant</span>
+        </h2>
+        <div class="steppy-step-subtitle">Point de départ</div>
+        <div class="steppy-step-content">Une communauté toute neuve n'a encore aucune clé de répartition. L'écran vous invite à en créer votre première.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/mobile/step-28.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Aucun membre pour l'instant</span>
+        </h2>
+        <div class="steppy-step-subtitle">Point de départ</div>
+        <div class="steppy-step-content">De la même façon, la liste des membres est vide. Vous ajouterez vos membres un à un ou par invitation.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/mobile/step-30.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Aucun compteur pour l'instant</span>
+        </h2>
+        <div class="steppy-step-subtitle">Point de départ</div>
+        <div class="steppy-step-content">Enfin, aucun compteur n'est encore rattaché. Votre communauté est prête : membres, compteurs et clés de répartition se configurent ensuite depuis ces mêmes écrans.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-create/fr/mobile/step-32.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p>Généré par Steppy.</p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 219.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 219.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"}}, "screenshot": "../assets/community-create/fr/desktop/step-09.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/community-create/fr/desktop/step-09.png", "subtitle": "Navigation", "text": "Dans le menu de profil de la barre lat\u00e9rale, cliquez sur \u00ab Mes communaut\u00e9s \u00bb pour voir la liste des communaut\u00e9s o\u00f9 vous \u00eates inscrit\u00b7e et en cr\u00e9er de nouvelles.", "title": "Ouvrir mes communaut\u00e9s", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 220.578125, "x": 1148.421875, "y": 52}, "selector": "[data-testid=\"user-communities__button--create\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 220.578125, "x": 1148.421875, "y": 52}, "selector": "[data-testid=\"user-communities__button--create\"]"}}, "screenshot": "../assets/community-create/fr/desktop/step-15.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/community-create/fr/desktop/step-15.png", "subtitle": "Nouvelle communaut\u00e9", "text": "Cliquez sur \u00ab Cr\u00e9er une communaut\u00e9 \u00bb en haut de la liste pour ouvrir la fen\u00eatre de cr\u00e9ation.", "title": "Cr\u00e9er une communaut\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 253.234375, "x": 593.375, "y": 405}, "selector": "[data-testid=\"community-dialog__input--name\"]"}, "value": "E2E Community"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 253.234375, "x": 593.375, "y": 405}, "selector": "[data-testid=\"community-dialog__input--name\"]"}, "value": "E2E Community"}, "screenshot": "../assets/community-create/fr/desktop/step-17.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/community-create/fr/desktop/step-17.png", "subtitle": "Nouvelle communaut\u00e9", "text": "Saisissez le nom de la communaut\u00e9. Le r\u00e9gulateur est pr\u00e9s\u00e9lectionn\u00e9 (CWaPE pour la Wallonie) ; adaptez-le si votre communaut\u00e9 d\u00e9pend d\u0027un autre r\u00e9gulateur r\u00e9gional.", "title": "Nommer la communaut\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 75.875, "x": 593.375, "y": 535}, "selector": "[data-testid=\"community-dialog__button--submit\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 75.875, "x": 593.375, "y": 535}, "selector": "[data-testid=\"community-dialog__button--submit\"] button"}}, "screenshot": "../assets/community-create/fr/desktop/step-18.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/community-create/fr/desktop/step-18.png", "subtitle": "Confirmation", "text": "Cliquez sur \u00ab Valider \u00bb. La communaut\u00e9 est cr\u00e9\u00e9e dans le CRM et dans le fournisseur d\u0027identit\u00e9, et vous en devenez automatiquement l\u0027administrateur.", "title": "Valider la cr\u00e9ation", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-create/fr/desktop/step-23.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/community-create/fr/desktop/step-23.png", "subtitle": "Liste des communaut\u00e9s", "text": "\u00ab E2E Community \u00bb figure maintenant dans votre liste. Il ne reste plus qu\u0027\u00e0 l\u0027activer pour commencer \u00e0 la configurer.", "title": "Votre nouvelle communaut\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-create/fr/desktop/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/community-create/fr/desktop/step-26.png", "subtitle": "Communaut\u00e9 active", "text": "La section \u00ab Gestion \u00bb appara\u00eet dans la barre lat\u00e9rale : en tant que cr\u00e9ateur, vous \u00eates administrateur de la communaut\u00e9 et avez acc\u00e8s \u00e0 tous ses outils.", "title": "Vous \u00eates administrateur", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-create/fr/desktop/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/community-create/fr/desktop/step-28.png", "subtitle": "Point de d\u00e9part", "text": "Une communaut\u00e9 toute neuve n\u0027a encore aucune cl\u00e9 de r\u00e9partition. L\u0027\u00e9cran vous invite \u00e0 en cr\u00e9er votre premi\u00e8re.", "title": "Aucune cl\u00e9 pour l\u0027instant", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-create/fr/desktop/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/community-create/fr/desktop/step-30.png", "subtitle": "Point de d\u00e9part", "text": "De la m\u00eame fa\u00e7on, la liste des membres est vide. Vous ajouterez vos membres un \u00e0 un ou par invitation.", "title": "Aucun membre pour l\u0027instant", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-create/fr/desktop/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/community-create/fr/desktop/step-32.png", "subtitle": "Point de d\u00e9part", "text": "Enfin, aucun compteur n\u0027est encore rattach\u00e9. Votre communaut\u00e9 est pr\u00eate : membres, compteurs et cl\u00e9s de r\u00e9partition se configurent ensuite depuis ces m\u00eames \u00e9crans.", "title": "Aucun compteur pour l\u0027instant", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 219.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 219.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"}}, "screenshot": "../assets/community-create/fr/mobile/step-12.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/community-create/fr/mobile/step-12.png", "subtitle": "Navigation", "text": "Touchez l\u0027ic\u00f4ne du menu pour ouvrir le tiroir de navigation, puis \u00ab Mes communaut\u00e9s \u00bb.", "title": "Ouvrir mes communaut\u00e9s", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 220.578125, "x": 37, "y": 239}, "selector": "[data-testid=\"user-communities__button--create\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 220.578125, "x": 37, "y": 239}, "selector": "[data-testid=\"user-communities__button--create\"]"}}, "screenshot": "../assets/community-create/fr/mobile/step-15.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/community-create/fr/mobile/step-15.png", "subtitle": "Nouvelle communaut\u00e9", "text": "Cliquez sur \u00ab Cr\u00e9er une communaut\u00e9 \u00bb en haut de la liste pour ouvrir la fen\u00eatre de cr\u00e9ation.", "title": "Cr\u00e9er une communaut\u00e9", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 253.234375, "x": 68.375, "y": 377}, "selector": "[data-testid=\"community-dialog__input--name\"]"}, "value": "E2E Community"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 253.234375, "x": 68.375, "y": 377}, "selector": "[data-testid=\"community-dialog__input--name\"]"}, "value": "E2E Community"}, "screenshot": "../assets/community-create/fr/mobile/step-17.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/community-create/fr/mobile/step-17.png", "subtitle": "Nouvelle communaut\u00e9", "text": "Saisissez le nom de la communaut\u00e9. Le r\u00e9gulateur est pr\u00e9s\u00e9lectionn\u00e9 (CWaPE pour la Wallonie) ; adaptez-le si votre communaut\u00e9 d\u00e9pend d\u0027un autre r\u00e9gulateur r\u00e9gional.", "title": "Nommer la communaut\u00e9", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 75.875, "x": 68.375, "y": 507}, "selector": "[data-testid=\"community-dialog__button--submit\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 75.875, "x": 68.375, "y": 507}, "selector": "[data-testid=\"community-dialog__button--submit\"] button"}}, "screenshot": "../assets/community-create/fr/mobile/step-18.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/community-create/fr/mobile/step-18.png", "subtitle": "Confirmation", "text": "Cliquez sur \u00ab Valider \u00bb. La communaut\u00e9 est cr\u00e9\u00e9e dans le CRM et dans le fournisseur d\u0027identit\u00e9, et vous en devenez automatiquement l\u0027administrateur.", "title": "Valider la cr\u00e9ation", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-create/fr/mobile/step-23.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/community-create/fr/mobile/step-23.png", "subtitle": "Liste des communaut\u00e9s", "text": "\u00ab E2E Community \u00bb figure maintenant dans votre liste. Il ne reste plus qu\u0027\u00e0 l\u0027activer pour commencer \u00e0 la configurer.", "title": "Votre nouvelle communaut\u00e9", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-create/fr/mobile/step-26.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/community-create/fr/mobile/step-26.png", "subtitle": "Communaut\u00e9 active", "text": "La section \u00ab Gestion \u00bb appara\u00eet dans la barre lat\u00e9rale : en tant que cr\u00e9ateur, vous \u00eates administrateur de la communaut\u00e9 et avez acc\u00e8s \u00e0 tous ses outils.", "title": "Vous \u00eates administrateur", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-create/fr/mobile/step-28.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/community-create/fr/mobile/step-28.png", "subtitle": "Point de d\u00e9part", "text": "Une communaut\u00e9 toute neuve n\u0027a encore aucune cl\u00e9 de r\u00e9partition. L\u0027\u00e9cran vous invite \u00e0 en cr\u00e9er votre premi\u00e8re.", "title": "Aucune cl\u00e9 pour l\u0027instant", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-create/fr/mobile/step-30.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/community-create/fr/mobile/step-30.png", "subtitle": "Point de d\u00e9part", "text": "De la m\u00eame fa\u00e7on, la liste des membres est vide. Vous ajouterez vos membres un \u00e0 un ou par invitation.", "title": "Aucun membre pour l\u0027instant", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-create/fr/mobile/step-32.png", "viewport": {"height": 844, "width": 390}}], "index": 9, "screenshot": "../assets/community-create/fr/mobile/step-32.png", "subtitle": "Point de d\u00e9part", "text": "Enfin, aucun compteur n\u0027est encore rattach\u00e9. Votre communaut\u00e9 est pr\u00eate : membres, compteurs et cl\u00e9s de r\u00e9partition se configurent ensuite depuis ces m\u00eames \u00e9crans.", "title": "Aucun compteur pour l\u0027instant", "viewport": {"height": 844, "width": 390}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

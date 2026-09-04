@@ -1,0 +1,477 @@
+{
+  "version": "1.1",
+  "slug": "key-delete",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Supprimer une clé de répartition",
+    "en": "Delete an allocation key"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les clés de répartition",
+        "en": "Open the allocation keys"
+      },
+      "text": {
+        "fr": "Dans la section « Gestion » de la barre latérale, cliquez sur « Clés de répartition ».",
+        "en": "In the sidebar's \"Management\" section, click \"Allocation keys\"."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/fr/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir les clés de répartition",
+              "text": "Touchez l'icône du menu pour ouvrir le tiroir, puis « Clés de répartition ».",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/en/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the allocation keys",
+              "text": "Tap the menu icon to open the drawer, then \"Allocation keys\".",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir une clé",
+        "en": "Open a key"
+      },
+      "text": {
+        "fr": "Cliquez sur la clé que vous souhaitez supprimer pour ouvrir sa fiche détaillée.",
+        "en": "Click the key you want to delete to open its detail page."
+      },
+      "subtitle": {
+        "fr": "Suppression d'une clé",
+        "en": "Deleting a key"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 350,
+                      "width": 1280,
+                      "height": 45
+                    },
+                    "selector": "[data-testid=\"keys-list__row--desktop--2\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/fr/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 616,
+                      "width": 358,
+                      "height": 130
+                    },
+                    "selector": "[data-testid=\"keys-list__row--mobile--2\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir la clé",
+              "text": "Touchez la ligne de « Key 2 » dans la liste pour ouvrir sa fiche détaillée.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 350,
+                      "width": 1280,
+                      "height": 45
+                    },
+                    "selector": "[data-testid=\"keys-list__row--desktop--2\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/en/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 616,
+                      "width": 358,
+                      "height": 130
+                    },
+                    "selector": "[data-testid=\"keys-list__row--mobile--2\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the key",
+              "text": "Tap the \"Key 2\" row in the list to open its detail page.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Supprimer la clé",
+        "en": "Delete the key"
+      },
+      "text": {
+        "fr": "Le bouton « Supprimer » retire définitivement la clé de la communauté. Si elle était affectée à une opération de partage, cette affectation est également retirée.",
+        "en": "The \"Delete\" button permanently removes the key from the community. If it was assigned to a sharing operation, that assignment is removed too."
+      },
+      "subtitle": {
+        "fr": "Suppression d'une clé",
+        "en": "Deleting a key"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1242.96875,
+                      "y": 84,
+                      "width": 126.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-view__btn--delete\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/fr/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 301,
+                      "width": 126.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-view__btn--delete\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1272.15625,
+                      "y": 84,
+                      "width": 96.84375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-view__btn--delete\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/en/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 301,
+                      "width": 96.84375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-view__btn--delete\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Clé supprimée",
+        "en": "Key deleted"
+      },
+      "text": {
+        "fr": "De retour sur la liste des clés, « Key 2 » n'apparaît plus : la suppression a bien été enregistrée.",
+        "en": "Back on the keys list, \"Key 2\" no longer appears: the deletion has been saved."
+      },
+      "subtitle": {
+        "fr": "Confirmation",
+        "en": "Confirmation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/fr/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/fr/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/en/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

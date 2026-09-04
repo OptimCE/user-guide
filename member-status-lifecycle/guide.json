@@ -1,0 +1,865 @@
+{
+  "version": "1.1",
+  "slug": "member-status-lifecycle",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Désactiver et réactiver un membre",
+    "en": "Deactivate and reactivate a member"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir la liste des membres",
+        "en": "Open the members list"
+      },
+      "text": {
+        "fr": "Dans la section « Gestion », ouvrez « Gestion des membres » puis cliquez sur « Membres ».",
+        "en": "In the \"Management\" section, open \"Members\" then click \"Members\"."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/fr/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/fr/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir la liste des membres",
+              "text": "Dans le tiroir, ouvrez « Gestion des membres » puis touchez « Membres ».",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/en/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/en/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the members list",
+              "text": "In the drawer, open \"Members\" then tap \"Members\".",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "fill",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Rechercher le membre",
+        "en": "Find the member"
+      },
+      "text": {
+        "fr": "Recherchez le membre par son nom. Nous prenons ici un membre sans compteur actif, car un membre rattaché à un compteur actif ne peut pas être désactivé.",
+        "en": "Search the member by name. Here we pick a member with no active meter, because a member tied to an active meter cannot be deactivated."
+      },
+      "subtitle": {
+        "fr": "Cycle de vie d'un membre",
+        "en": "Member lifecycle"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/fr/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 299,
+                      "y": 181,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__input--search\"] input"
+                  },
+                  "value": "E2E Solo Member"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/fr/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 181,
+                      "y": 457,
+                      "width": 176,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__input--search\"] input"
+                  },
+                  "value": "E2E Solo Member"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/en/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 299,
+                      "y": 181,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__input--search\"] input"
+                  },
+                  "value": "E2E Solo Member"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/en/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 181,
+                      "y": 457,
+                      "width": 176,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__input--search\"] input"
+                  },
+                  "value": "E2E Solo Member"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir la fiche du membre",
+        "en": "Open the member record"
+      },
+      "text": {
+        "fr": "Cliquez sur la ligne du membre dans le tableau pour ouvrir sa fiche.",
+        "en": "Click the member's row in the table to open their record."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/fr/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 305,
+                      "width": 1280,
+                      "height": 51.65625
+                    },
+                    "selector": "[data-testid=\"members-list__row--desktop--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/fr/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 719,
+                      "width": 358,
+                      "height": 124.65625
+                    },
+                    "selector": "[data-testid=\"members-list__card--mobile--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir la fiche du membre",
+              "text": "Touchez la carte du membre pour ouvrir sa fiche.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/en/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 305,
+                      "width": 1280,
+                      "height": 51.65625
+                    },
+                    "selector": "[data-testid=\"members-list__row--desktop--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/en/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 719,
+                      "width": 358,
+                      "height": 124.65625
+                    },
+                    "selector": "[data-testid=\"members-list__card--mobile--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the member record",
+              "text": "Tap the member's card to open their record.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Fiche du membre actif",
+        "en": "Active member record"
+      },
+      "text": {
+        "fr": "Le membre est actif : sa pastille de statut est verte et un onglet « Compteur » est disponible. Les boutons d'action permettent de le désactiver ou de le mettre en attente.",
+        "en": "The member is active: its status badge is green and a \"Meter\" tab is available. The action buttons let you deactivate it or put it on hold."
+      },
+      "subtitle": {
+        "fr": "Cycle de vie d'un membre",
+        "en": "Member lifecycle"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/fr/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/fr/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/en/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/en/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Désactiver le membre",
+        "en": "Deactivate the member"
+      },
+      "text": {
+        "fr": "Cliquez sur « Désactiver ». Le changement de statut est immédiat, sans confirmation supplémentaire.",
+        "en": "Click \"Deactivate\". The status change is immediate, with no extra confirmation."
+      },
+      "subtitle": {
+        "fr": "Cycle de vie d'un membre",
+        "en": "Member lifecycle"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/fr/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 943.28125,
+                      "y": 88,
+                      "width": 125.125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--deactivate\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/fr/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 308,
+                      "width": 125.125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--deactivate\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/en/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 989.84375,
+                      "y": 88,
+                      "width": 126.203125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--deactivate\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/en/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 308,
+                      "width": 126.203125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--deactivate\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Membre désactivé",
+        "en": "Member deactivated"
+      },
+      "text": {
+        "fr": "La pastille passe à « Inactif » et l'onglet « Compteur » disparaît : un membre inactif ne peut plus être rattaché à un compteur.",
+        "en": "The badge switches to \"Inactive\" and the \"Meter\" tab disappears: an inactive member can no longer be tied to a meter."
+      },
+      "subtitle": {
+        "fr": "Cycle de vie d'un membre",
+        "en": "Member lifecycle"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/fr/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/fr/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/en/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/en/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Réactiver le membre",
+        "en": "Reactivate the member"
+      },
+      "text": {
+        "fr": "Le bouton « Activer » réactive le membre. Vous pouvez ainsi gérer tout le cycle de vie d'un membre depuis sa fiche.",
+        "en": "The \"Activate\" button reactivates the member. You can manage a member's whole lifecycle from its record."
+      },
+      "subtitle": {
+        "fr": "Cycle de vie d'un membre",
+        "en": "Member lifecycle"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/fr/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 967.765625,
+                      "y": 88,
+                      "width": 100.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--activate\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/fr/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 308,
+                      "width": 100.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--activate\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/en/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1007.421875,
+                      "y": 88,
+                      "width": 108.625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--activate\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/en/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 308,
+                      "width": 108.625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--activate\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Membre réactivé",
+        "en": "Member reactivated"
+      },
+      "text": {
+        "fr": "La pastille repasse à « Actif » et l'onglet « Compteur » réapparaît. Le membre est de nouveau pleinement opérationnel.",
+        "en": "The badge returns to \"Active\" and the \"Meter\" tab reappears. The member is fully operational again."
+      },
+      "subtitle": {
+        "fr": "Cycle de vie d'un membre",
+        "en": "Member lifecycle"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/fr/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/fr/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/en/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

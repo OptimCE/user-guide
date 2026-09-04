@@ -1,0 +1,1091 @@
+{
+  "version": "1.1",
+  "slug": "admin-doc-dossier-create",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Créer un dossier administratif",
+    "en": "Create an administrative dossier"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les documents administratifs",
+        "en": "Open the administrative documents"
+      },
+      "text": {
+        "fr": "Dans la barre latérale, cliquez sur « Documents administratifs ». Le lien apparaît dès que la communauté est abonnée au module.",
+        "en": "In the sidebar, click \"Administrative documents\". The link appears as soon as the community is subscribed to the module."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir les documents administratifs",
+              "text": "Touchez l'icône du menu pour ouvrir le tiroir, puis « Documents administratifs ».",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the administrative documents",
+              "text": "Tap the menu icon to open the drawer, then \"Administrative documents\".",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 500,
+      "title": {
+        "fr": "Aucun dossier pour le moment",
+        "en": "No dossier yet"
+      },
+      "text": {
+        "fr": "Cette page suit les dossiers déposés auprès de la CWaPE et du gestionnaire de réseau. Chaque dossier concerne une seule opération de partage : une communauté qui en exploite plusieurs dépose un dossier par opération.",
+        "en": "This page tracks the dossiers filed with the CWaPE and the grid operator. Every dossier concerns exactly one sharing operation: a community running several operations files one dossier per operation."
+      },
+      "subtitle": {
+        "fr": "Documents administratifs",
+        "en": "Administrative documents"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Créer un dossier",
+        "en": "Create a dossier"
+      },
+      "text": {
+        "fr": "Cliquez sur « Nouveau dossier » pour ouvrir le formulaire de création.",
+        "en": "Click \"New dossier\" to open the creation form."
+      },
+      "subtitle": {
+        "fr": "Nouveau dossier",
+        "en": "New dossier"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1076.65625,
+                      "y": 233,
+                      "width": 171.34375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-list__btn--create\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 419,
+                      "width": 171.34375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-list__btn--create\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1109.125,
+                      "y": 233,
+                      "width": 138.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-list__btn--create\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 399,
+                      "width": 138.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-list__btn--create\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "select-option",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 700,
+      "title": {
+        "fr": "Choisir le type de dossier",
+        "en": "Choose the dossier type"
+      },
+      "text": {
+        "fr": "Le type détermine les échéances réglementaires qui seront calculées ensuite. Ici, une notification de création de communauté.",
+        "en": "The type decides which regulatory deadlines are derived later. Here, a community creation notification."
+      },
+      "subtitle": {
+        "fr": "Nouveau dossier",
+        "en": "New dossier"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 291.8125,
+                      "width": 502,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__select--type\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 117,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__select--type\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 291.8125,
+                      "width": 502,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__select--type\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 117,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__select--type\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "select-option",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 700,
+      "title": {
+        "fr": "Choisir l'opération de partage",
+        "en": "Choose the sharing operation"
+      },
+      "text": {
+        "fr": "Sélectionnez l'opération de partage concernée. C'est elle qui fournira les membres et les compteurs repris dans les documents du dossier.",
+        "en": "Pick the sharing operation the filing is about. It supplies the members and meters that the dossier's documents will list."
+      },
+      "subtitle": {
+        "fr": "Nouveau dossier",
+        "en": "New dossier"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 373.8125,
+                      "width": 502,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__select--operation\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 199,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__select--operation\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 373.8125,
+                      "width": 502,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__select--operation\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 199,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__select--operation\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "fill",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Titre et référence",
+        "en": "Title and reference"
+      },
+      "text": {
+        "fr": "Le titre est libre : il vous sert à retrouver le dossier. La référence est celle attribuée par l'autorité — elle identifie le dossier de façon unique et reste modifiable plus tard.",
+        "en": "The title is free text — it is how you will recognise the dossier. The reference is the one assigned by the authority; it identifies the dossier uniquely and stays editable later."
+      },
+      "subtitle": {
+        "fr": "Nouveau dossier",
+        "en": "New dossier"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 561,
+                      "width": 502,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__input--external-ref\"]"
+                  },
+                  "value": "CWAPE-2026-0042"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 386.1875,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__input--external-ref\"]"
+                  },
+                  "value": "CWAPE-2026-0042"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 561,
+                      "width": 502,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__input--external-ref\"]"
+                  },
+                  "value": "CWAPE-2026-0042"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 386.1875,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__input--external-ref\"]"
+                  },
+                  "value": "CWAPE-2026-0042"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Créer",
+        "en": "Create"
+      },
+      "text": {
+        "fr": "Validez : le dossier est créé et vient s'ajouter au tableau de suivi.",
+        "en": "Submit: the dossier is created and joins the tracking table."
+      },
+      "subtitle": {
+        "fr": "Nouveau dossier",
+        "en": "New dossier"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 906.359375,
+                      "y": 650.1875,
+                      "width": 64.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 312.359375,
+                      "y": 475.375,
+                      "width": 64.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 898.234375,
+                      "y": 650.1875,
+                      "width": 72.765625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 304.234375,
+                      "y": 475.375,
+                      "width": 72.765625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Le dossier est créé",
+        "en": "The dossier is created"
+      },
+      "text": {
+        "fr": "Le dossier apparaît dans le tableau avec le statut « En préparation ». Tant qu'il n'est pas soumis, il reste modifiable et aucune échéance ne court.",
+        "en": "The dossier shows up in the table with the status \"In preparation\". Until it is submitted it stays editable and no deadline is running."
+      },
+      "subtitle": {
+        "fr": "Suivi des dossiers",
+        "en": "Tracking dossiers"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Ouvrir le dossier",
+        "en": "Open the dossier"
+      },
+      "text": {
+        "fr": "Cliquez n'importe où sur la ligne pour ouvrir la fiche du dossier.",
+        "en": "Click anywhere on the row to open the dossier page."
+      },
+      "subtitle": {
+        "fr": "Suivi des dossiers",
+        "en": "Tracking dossiers"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 260,
+                      "y": 530,
+                      "width": 988,
+                      "height": 53
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 725,
+                      "width": 628.15625,
+                      "height": 85
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 260,
+                      "y": 530,
+                      "width": 988,
+                      "height": 53
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 725,
+                      "width": 642.140625,
+                      "height": 85
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-10",
+      "index": 10,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "La fiche du dossier",
+        "en": "The dossier page"
+      },
+      "text": {
+        "fr": "La fiche rassemble tout ce qui concerne le dossier : ses documents, ses échéances et l'historique de ses changements de statut. Les boutons en haut proposent les seuls changements de statut autorisés à cet instant.",
+        "en": "The dossier page gathers everything about the filing: its documents, its deadlines and the history of its status changes. The buttons at the top offer only the status changes that are legal right now."
+      },
+      "subtitle": {
+        "fr": "Suivi des dossiers",
+        "en": "Tracking dossiers"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

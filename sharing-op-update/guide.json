@@ -1,0 +1,987 @@
+{
+  "version": "1.1",
+  "slug": "sharing-op-update",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Modifier une opération de partage",
+    "en": "Edit a sharing operation"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les opérations de partage",
+        "en": "Open the sharing operations"
+      },
+      "text": {
+        "fr": "Dans la section « Gestion », ouvrez « Gestion des membres » puis cliquez sur « Opérations de partage ».",
+        "en": "In the \"Management\" section, open \"Members\" then click \"Sharing operations\"."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 613.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--2\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 613.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--2\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir les opérations de partage",
+              "text": "Dans le tiroir, ouvrez « Gestion des membres » puis touchez « Opérations de partage ».",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 613.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--2\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 613.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--2\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the sharing operations",
+              "text": "In the drawer, open \"Members\" then tap \"Sharing operations\".",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir l'opération de partage",
+        "en": "Open the sharing operation"
+      },
+      "text": {
+        "fr": "Cliquez sur la ligne de l'opération de partage à modifier pour ouvrir sa fiche.",
+        "en": "Click the row of the sharing operation you want to edit to open its page."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 305,
+                      "width": 1280,
+                      "height": 51.65625
+                    },
+                    "selector": "[data-testid=\"operations-list__row--desktop--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 562,
+                      "width": 358,
+                      "height": 193.3125
+                    },
+                    "selector": "[data-testid=\"operations-list__card--mobile--1\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir l'opération de partage",
+              "text": "Touchez la carte de l'opération de partage à modifier pour ouvrir sa fiche.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 305,
+                      "width": 1280,
+                      "height": 51.65625
+                    },
+                    "selector": "[data-testid=\"operations-list__row--desktop--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 562,
+                      "width": 358,
+                      "height": 193.3125
+                    },
+                    "selector": "[data-testid=\"operations-list__card--mobile--1\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the sharing operation",
+              "text": "Tap the card of the sharing operation you want to edit to open its page.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "wait-for",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Fiche de l'opération",
+        "en": "Operation detail"
+      },
+      "text": {
+        "fr": "La fiche de l'opération affiche son nom, son type, ses compteurs et les communes couvertes. Les crayons permettent de modifier ces informations.",
+        "en": "The operation page shows its name, type, meters and covered municipalities. The pencils let you edit this information."
+      },
+      "subtitle": {
+        "fr": "Modifier une opération",
+        "en": "Editing an operation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 500,
+      "title": {
+        "fr": "Ouvrir le formulaire de modification",
+        "en": "Open the edit form"
+      },
+      "text": {
+        "fr": "Cliquez sur « Modifier » dans l'en-tête : le formulaire s'ouvre, pré-rempli avec les informations actuelles de l'opération.",
+        "en": "Click \"Edit\" in the header — the form opens, pre-filled with the operation's current details."
+      },
+      "subtitle": {
+        "fr": "Modification",
+        "en": "Editing"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1154.5,
+                      "y": 88,
+                      "width": 112.28125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-view__btn--edit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 296,
+                      "width": 112.28125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-view__btn--edit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1188.890625,
+                      "y": 88,
+                      "width": 77.890625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-view__btn--edit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 296,
+                      "width": 77.890625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-view__btn--edit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "fill",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Renommer l'opération",
+        "en": "Rename the operation"
+      },
+      "text": {
+        "fr": "Modifiez le nom de l'opération. Vous pouvez aussi y ajuster son type et ses communes.",
+        "en": "Change the operation's name. You can also adjust its type and municipalities here."
+      },
+      "subtitle": {
+        "fr": "Modifier une opération",
+        "en": "Editing an operation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 421,
+                      "y": 334,
+                      "width": 598,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-creation__input--name\"]"
+                  },
+                  "value": "E2E Solar Op"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 123,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-creation__input--name\"]"
+                  },
+                  "value": "E2E Solar Op"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 421,
+                      "y": 344,
+                      "width": 598,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-creation__input--name\"]"
+                  },
+                  "value": "E2E Solar Op"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 123,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-creation__input--name\"]"
+                  },
+                  "value": "E2E Solar Op"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Nom mis à jour",
+        "en": "Name updated"
+      },
+      "text": {
+        "fr": "De retour sur la fiche, l'opération porte son nouveau nom.",
+        "en": "Back on the page, the operation carries its new name."
+      },
+      "subtitle": {
+        "fr": "Confirmation",
+        "en": "Confirmation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 500,
+      "title": {
+        "fr": "Modifier les communes",
+        "en": "Edit the municipalities"
+      },
+      "text": {
+        "fr": "Le crayon à côté des communes ouvre l'éditeur des communes couvertes par l'opération.",
+        "en": "The pencil next to the municipalities opens the editor for the operation's covered municipalities."
+      },
+      "subtitle": {
+        "fr": "Communes couvertes",
+        "en": "Covered municipalities"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 478,
+                      "y": 368,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"op-view__btn--edit-municipalities\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 322,
+                      "y": 584,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"op-view__btn--edit-municipalities\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 478,
+                      "y": 368,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"op-view__btn--edit-municipalities\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 322,
+                      "y": 584,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"op-view__btn--edit-municipalities\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Ajouter une commune",
+        "en": "Add a municipality"
+      },
+      "text": {
+        "fr": "Saisissez une commune et choisissez-la dans les suggestions pour l'ajouter au périmètre de l'opération.",
+        "en": "Type a municipality and pick it from the suggestions to add it to the operation's scope."
+      },
+      "subtitle": {
+        "fr": "Communes couvertes",
+        "en": "Covered municipalities"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 590.84375,
+                      "y": 469.5,
+                      "width": 383.15625,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"op-muni-update__autocomplete--municipalities\"] input"
+                  },
+                  "value": "Ixelles"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 142.84375,
+                      "y": 208,
+                      "width": 229.15625,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"op-muni-update__autocomplete--municipalities\"] input"
+                  },
+                  "value": "Ixelles"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 590.84375,
+                      "y": 469.5,
+                      "width": 383.15625,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"op-muni-update__autocomplete--municipalities\"] input"
+                  },
+                  "value": "Ixelles"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 142.84375,
+                      "y": 208,
+                      "width": 229.15625,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"op-muni-update__autocomplete--municipalities\"] input"
+                  },
+                  "value": "Ixelles"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "custom",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Commune ajoutée",
+        "en": "Municipality added"
+      },
+      "text": {
+        "fr": "La commune « Ixelles » apparaît désormais parmi les communes couvertes par l'opération.",
+        "en": "The municipality \"Ixelles\" now appears among the operation's covered municipalities."
+      },
+      "subtitle": {
+        "fr": "Confirmation",
+        "en": "Confirmation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/fr/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-update/en/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

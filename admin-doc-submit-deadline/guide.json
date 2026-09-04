@@ -1,0 +1,1305 @@
+{
+  "version": "1.1",
+  "slug": "admin-doc-submit-deadline",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Déposer un dossier et suivre son échéance",
+    "en": "File a dossier and follow its deadline"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les documents administratifs",
+        "en": "Open the administrative documents"
+      },
+      "text": {
+        "fr": "Dans la barre latérale, cliquez sur « Documents administratifs ».",
+        "en": "In the sidebar, click \"Administrative documents\"."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir les documents administratifs",
+              "text": "Touchez l'icône du menu pour ouvrir le tiroir, puis « Documents administratifs ».",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the administrative documents",
+              "text": "Tap the menu icon to open the drawer, then \"Administrative documents\".",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Ouvrir le dossier",
+        "en": "Open the dossier"
+      },
+      "text": {
+        "fr": "Ouvrez le dossier dont vous voulez enregistrer le dépôt.",
+        "en": "Open the dossier whose filing you want to record."
+      },
+      "subtitle": {
+        "fr": "Documents administratifs",
+        "en": "Administrative documents"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 260,
+                      "y": 554,
+                      "width": 988,
+                      "height": 73
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 705,
+                      "width": 628.15625,
+                      "height": 105
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 260,
+                      "y": 554,
+                      "width": 988,
+                      "height": 73
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 705,
+                      "width": 642.140625,
+                      "height": 105
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 500,
+      "title": {
+        "fr": "Un dossier en préparation",
+        "en": "A dossier in preparation"
+      },
+      "text": {
+        "fr": "Tant que le dossier est « En préparation », rien n'est attendu de vous par le régulateur. Les boutons en haut ne proposent que les changements de statut légitimes à ce stade.",
+        "en": "While the dossier is \"In preparation\", the regulator expects nothing from you. The buttons at the top only offer the status changes that make sense at this stage."
+      },
+      "subtitle": {
+        "fr": "Suivi des dossiers",
+        "en": "Tracking dossiers"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Marquer le dossier comme soumis",
+        "en": "Mark the dossier as submitted"
+      },
+      "text": {
+        "fr": "Vous déposez le dossier auprès de l'autorité par vos moyens habituels ; ici, vous enregistrez que ce dépôt a eu lieu.",
+        "en": "You file the dossier with the authority through your usual channel; here you record that the filing happened."
+      },
+      "subtitle": {
+        "fr": "Suivi des dossiers",
+        "en": "Tracking dossiers"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 263,
+                      "y": 222,
+                      "width": 90.25,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 534,
+                      "width": 90.25,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 263,
+                      "y": 222,
+                      "width": 110.203125,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 534,
+                      "width": 110.203125,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "custom",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "La date de dépôt",
+        "en": "The filing date"
+      },
+      "text": {
+        "fr": "La date de dépôt n'est pas une formalité : c'est elle qui fait courir les délais réglementaires. Choisissez la date réelle du dépôt.",
+        "en": "The filing date is not a formality: it is what starts the regulatory clocks. Pick the date the dossier was really filed."
+      },
+      "subtitle": {
+        "fr": "Changer le statut",
+        "en": "Change status"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Le dossier est soumis",
+        "en": "The dossier is submitted"
+      },
+      "text": {
+        "fr": "Le statut change et les actions proposées changent avec lui : un dossier soumis peut être déclaré complet, corrigé, ou devenir caduc.",
+        "en": "The status changes and the available actions change with it: a submitted dossier can be declared complete, corrected, or lapse."
+      },
+      "subtitle": {
+        "fr": "Suivi des dossiers",
+        "en": "Tracking dossiers"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Voir les échéances",
+        "en": "See the deadlines"
+      },
+      "text": {
+        "fr": "L'onglet « Échéances » montre ce que le dépôt vient de déclencher.",
+        "en": "The \"Deadlines\" tab shows what the filing has just triggered."
+      },
+      "subtitle": {
+        "fr": "Suivi des dossiers",
+        "en": "Tracking dossiers"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 360.578125,
+                      "y": 298,
+                      "width": 110.234375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 134.578125,
+                      "y": 649,
+                      "width": 110.234375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 360.578125,
+                      "y": 298,
+                      "width": 107.0625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 134.578125,
+                      "y": 649,
+                      "width": 107.0625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Une échéance est apparue",
+        "en": "A deadline has appeared"
+      },
+      "text": {
+        "fr": "Vous n'encodez jamais une échéance à la main : OptimCE la calcule à partir du type de dossier, de la région et de la date que vous venez d'enregistrer.",
+        "en": "You never enter a deadline by hand: OptimCE derives it from the dossier type, the region and the date you have just recorded."
+      },
+      "subtitle": {
+        "fr": "Échéances",
+        "en": "Deadlines"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Toutes les échéances",
+        "en": "Every deadline"
+      },
+      "text": {
+        "fr": "L'onglet « Échéances » de la page principale rassemble les échéances de tous les dossiers, pour savoir d'un coup d'œil ce qui arrive à terme.",
+        "en": "The \"Deadlines\" tab of the main page gathers the deadlines of every dossier, so you can see at a glance what is coming due."
+      },
+      "subtitle": {
+        "fr": "Documents administratifs",
+        "en": "Administrative documents"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 338.4375,
+                      "y": 146,
+                      "width": 110.234375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 112.4375,
+                      "y": 284,
+                      "width": 110.234375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 338.4375,
+                      "y": 146,
+                      "width": 107.0625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 112.4375,
+                      "y": 284,
+                      "width": 107.0625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-10",
+      "index": 10,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Le tableau des échéances",
+        "en": "The deadline board"
+      },
+      "text": {
+        "fr": "Chaque ligne renvoie à son dossier et indique la date limite. Le filtre affiche par défaut les échéances encore ouvertes.",
+        "en": "Every row links back to its dossier and shows the due date. The filter shows the still-open deadlines by default."
+      },
+      "subtitle": {
+        "fr": "Échéances",
+        "en": "Deadlines"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-11",
+      "index": 11,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Clôturer une échéance",
+        "en": "Close a deadline"
+      },
+      "text": {
+        "fr": "Quand l'obligation est remplie, marquez l'échéance comme respectée. Elle quitte la liste des échéances ouvertes sans disparaître de l'historique.",
+        "en": "Once the obligation is fulfilled, mark the deadline as met. It leaves the open list without disappearing from the record."
+      },
+      "subtitle": {
+        "fr": "Échéances",
+        "en": "Deadlines"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1097.859375,
+                      "y": 466,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 275.59375,
+                      "y": 757,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1083.828125,
+                      "y": 466,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 275.546875,
+                      "y": 761,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-12",
+      "index": 12,
+      "action": "confirm",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 2000,
+      "title": {
+        "fr": "Confirmer",
+        "en": "Confirm"
+      },
+      "text": {
+        "fr": "Confirmez : l'échéance passe au statut « Respectée » et le tableau des échéances ouvertes se vide.",
+        "en": "Confirm: the deadline moves to \"Met\" and the open-deadline board empties."
+      },
+      "subtitle": {
+        "fr": "Échéances",
+        "en": "Deadlines"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 954.578125,
+                      "y": 481,
+                      "width": 75.875,
+                      "height": 42
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 293.125,
+                      "y": 475,
+                      "width": 75.875,
+                      "height": 42
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 928.640625,
+                      "y": 481,
+                      "width": 83.984375,
+                      "height": 42
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 285.015625,
+                      "y": 465,
+                      "width": 83.984375,
+                      "height": 42
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-13",
+      "index": 13,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Plus rien en attente",
+        "en": "Nothing pending"
+      },
+      "text": {
+        "fr": "Le tableau ne montre plus d'échéance ouverte. L'historique du dossier, lui, garde la trace de ce qui a été fait et quand.",
+        "en": "The board shows no open deadline any more. The dossier history still keeps a record of what was done and when."
+      },
+      "subtitle": {
+        "fr": "Échéances",
+        "en": "Deadlines"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

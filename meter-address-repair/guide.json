@@ -1,0 +1,827 @@
+{
+  "version": "1.1",
+  "slug": "meter-address-repair",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Corriger les adresses des compteurs",
+    "en": "Fix meter addresses"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Corriger les adresses",
+        "en": "Fix the addresses"
+      },
+      "text": {
+        "fr": "Le bandeau au-dessus de la carte indique combien de compteurs n'y figurent pas encore. Cliquez sur « Corriger les adresses » pour ouvrir la file des compteurs à replacer.",
+        "en": "The banner above the map says how many meters are not on it yet. Click \"Fix the addresses\" to open the queue of meters to reposition."
+      },
+      "subtitle": {
+        "fr": "Couverture de la carte",
+        "en": "Map coverage"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 705.8125,
+                      "y": 272,
+                      "width": 160.75,
+                      "height": 19
+                    },
+                    "selector": "[data-testid=\"meters-map__button--repair\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 618,
+                      "width": 160.75,
+                      "height": 19
+                    },
+                    "selector": "[data-testid=\"meters-map__button--repair\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 720.90625,
+                      "y": 272,
+                      "width": 138.28125,
+                      "height": 19
+                    },
+                    "selector": "[data-testid=\"meters-map__button--repair\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 618,
+                      "width": 138.28125,
+                      "height": 19
+                    },
+                    "selector": "[data-testid=\"meters-map__button--repair\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "La file de correction",
+        "en": "The repair queue"
+      },
+      "text": {
+        "fr": "La fenêtre liste exactement les compteurs que la carte ne sait pas placer : ceux qui n'ont aucune coordonnée, mais aussi ceux qui ne sont situés qu'au centre de leur commune.",
+        "en": "The dialog lists exactly the meters the map cannot place: those with no coordinates at all, and also those pinned only to the centre of their municipality."
+      },
+      "subtitle": {
+        "fr": "Compteurs à replacer",
+        "en": "Meters to reposition"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Choisir un compteur",
+        "en": "Pick a meter"
+      },
+      "text": {
+        "fr": "Cliquez sur une ligne pour charger son adresse dans le formulaire de droite. La correction se fait un compteur à la fois.",
+        "en": "Click a row to load its address into the form on the right. Repairs are made one meter at a time."
+      },
+      "subtitle": {
+        "fr": "Sélection dans la file",
+        "en": "Selecting from the queue"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 261,
+                      "y": 389.5,
+                      "width": 357.59375,
+                      "height": 54
+                    },
+                    "selector": "[data-testid=\"unlocated-meters__row--987654321098765432\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 21,
+                      "y": 257.5,
+                      "width": 348,
+                      "height": 54
+                    },
+                    "selector": "[data-testid=\"unlocated-meters__row--987654321098765432\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 261,
+                      "y": 389.5,
+                      "width": 357.59375,
+                      "height": 54
+                    },
+                    "selector": "[data-testid=\"unlocated-meters__row--987654321098765432\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 21,
+                      "y": 257.5,
+                      "width": 348,
+                      "height": 54
+                    },
+                    "selector": "[data-testid=\"unlocated-meters__row--987654321098765432\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "wait-for",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Adresse introuvable",
+        "en": "Address not found"
+      },
+      "text": {
+        "fr": "OptimCE interroge le registre fédéral BeSt Address. Cette adresse n'y correspond à rien : c'est pourquoi le compteur n'apparaît pas sur la carte.",
+        "en": "OptimCE queries the federal BeSt Address register. This address matches nothing there, which is why the meter is missing from the map."
+      },
+      "subtitle": {
+        "fr": "Diagnostic",
+        "en": "Diagnosis"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "custom",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Rechercher la bonne adresse",
+        "en": "Search for the right address"
+      },
+      "text": {
+        "fr": "Tapez les premiers mots de l'adresse réelle. Les propositions viennent directement du registre officiel des adresses belges.",
+        "en": "Type the first words of the real address. The suggestions come straight from the official Belgian address register."
+      },
+      "subtitle": {
+        "fr": "Registre BeSt Address",
+        "en": "BeSt Address register"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "custom",
+      "interactive": false,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Choisir la proposition",
+        "en": "Choose the suggestion"
+      },
+      "text": {
+        "fr": "Cliquez sur la proposition qui correspond. Les cinq champs détaillés se remplissent avec l'orthographe officielle du registre.",
+        "en": "Click the matching suggestion. The five detailed fields are filled with the register's official spelling."
+      },
+      "subtitle": {
+        "fr": "Sélection de l'adresse",
+        "en": "Selecting the address"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "wait-for",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Adresse localisée",
+        "en": "Address located"
+      },
+      "text": {
+        "fr": "Le message vert confirme que l'adresse est localisée précisément : le compteur apparaîtra bien sur la carte une fois la correction enregistrée.",
+        "en": "The green message confirms the address is precisely located: the meter will appear on the map once the repair is saved."
+      },
+      "subtitle": {
+        "fr": "Confirmation",
+        "en": "Confirmation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Enregistrer et continuer",
+        "en": "Save and continue"
+      },
+      "text": {
+        "fr": "« Enregistrer et suivant » applique la correction et passe au compteur suivant de la file, sans refermer la fenêtre.",
+        "en": "\"Save and next\" applies the fix and moves on to the next meter in the queue, without closing the dialog."
+      },
+      "subtitle": {
+        "fr": "Validation de la correction",
+        "en": "Applying the repair"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 999.578125,
+                      "y": 625.5,
+                      "width": 179.421875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"unlocated-meters__button--save\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 264.390625,
+                      "y": 697.5,
+                      "width": 104.609375,
+                      "height": 66
+                    },
+                    "selector": "[data-testid=\"unlocated-meters__button--save\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1051.6875,
+                      "y": 625.5,
+                      "width": 127.3125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"unlocated-meters__button--save\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 252.90625,
+                      "y": 697.5,
+                      "width": 116.09375,
+                      "height": 66
+                    },
+                    "selector": "[data-testid=\"unlocated-meters__button--save\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "La carte est à jour",
+        "en": "The map is up to date"
+      },
+      "text": {
+        "fr": "De retour sur la carte, le bandeau a diminué : le compteur corrigé est désormais placé, et il ne reste que celui situé au centre de sa commune.",
+        "en": "Back on the map, the banner has gone down: the repaired meter is now placed, and only the one pinned to its municipality centre remains."
+      },
+      "subtitle": {
+        "fr": "Couverture après correction",
+        "en": "Coverage after the repair"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/fr/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-address-repair/en/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

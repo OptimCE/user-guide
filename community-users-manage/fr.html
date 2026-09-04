@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gérer les utilisateurs de la communauté — OptimCE — Guides utilisateur</title>
+    <meta name="description" content="Inviter un gestionnaire par e-mail, suivre les invitations en attente, changer un rôle ou retirer un utilisateur.">
+    <link rel="canonical" href="https://guide.optimce.be/community-users-manage/fr.html">
+    <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/community-users-manage/fr.html">
+    <link rel="alternate" hreflang="en" href="https://guide.optimce.be/community-users-manage/en.html">
+    <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/community-users-manage/fr.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Gérer les utilisateurs de la communauté">
+    <meta property="og:description" content="Inviter un gestionnaire par e-mail, suivre les invitations en attente, changer un rôle ou retirer un utilisateur.">
+    <meta property="og:url" content="https://guide.optimce.be/community-users-manage/fr.html">
+    <meta property="og:site_name" content="OptimCE — Guides utilisateur">
+    <meta property="og:locale" content="fr">
+    <meta property="og:image" content="https://guide.optimce.be/assets/community-users-manage/fr/desktop/step-14.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Synchronise the saved language preference with the file we just loaded.
+        // The user landed on this <locale>.html either by clicking a link rewritten
+        // to honour their preference or by direct entry — either way, that's the
+        // current truth.
+        try { localStorage.setItem("oce-lang", "fr"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.html" aria-label="OptimCE — Guides utilisateur">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.html">OptimCE — Guides utilisateur</a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Accueil</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../community/fr.html">Communauté</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">Gérer les utilisateurs de la communauté</span>
+        </nav>
+
+        <div class="steppy-header-actions">
+            <nav class="steppy-locale-switch" aria-label="Language">
+                <ul>
+                    <li>
+                        <span aria-current="true">Français</span>
+                    </li>
+                    <li>
+                        <a href="./en.html">English</a>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-mode-switch" aria-label="Guide mode">
+            <ul>
+                <li>
+                    <span aria-current="true">Pas à pas</span>
+                </li>
+                <li>
+                    <a href="./interactive.html">Interactif</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Gérer les utilisateurs de la communauté</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Ouvrir les utilisateurs</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Dans la section « Gestion » de la barre latérale, cliquez sur « Utilisateurs » pour gérer les personnes qui ont accès à votre communauté.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/desktop/step-14.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Les utilisateurs de la communauté</span>
+        </h2>
+        <div class="steppy-step-subtitle">Gestion des accès</div>
+        <div class="steppy-step-content">Cette page liste tous les utilisateurs ayant accès à la communauté, avec leur rôle : administrateur, gestionnaire ou membre. Vous pouvez inviter, changer un rôle ou retirer un accès.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/desktop/step-20.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Inviter un gestionnaire</span>
+        </h2>
+        <div class="steppy-step-subtitle">Invitation</div>
+        <div class="steppy-step-content">Cliquez sur « Inviter un gestionnaire » pour envoyer une invitation par e-mail à une personne qui aidera à gérer la communauté.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/desktop/step-22.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Saisir l'adresse e-mail</span>
+        </h2>
+        <div class="steppy-step-subtitle">Invitation</div>
+        <div class="steppy-step-content">Renseignez l'adresse e-mail de la personne à inviter. Elle recevra une invitation à rejoindre la communauté en tant que gestionnaire.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/desktop/step-24.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Voir les invitations en attente</span>
+        </h2>
+        <div class="steppy-step-subtitle">Suivi</div>
+        <div class="steppy-step-content">Le bouton « Voir les invitations en attente » ouvre la liste des invitations envoyées mais pas encore acceptées, membres et gestionnaires confondus.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/desktop/step-27.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Invitations en attente</span>
+        </h2>
+        <div class="steppy-step-subtitle">Suivi</div>
+        <div class="steppy-step-content">L'onglet « Gestionnaires » regroupe les invitations envoyées mais pas encore acceptées. Tant qu'une invitation est en attente, vous pouvez l'annuler depuis cette liste.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/desktop/step-30.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Modifier un rôle</span>
+        </h2>
+        <div class="steppy-step-subtitle">Rôles</div>
+        <div class="steppy-step-content">Le crayon à côté d'un utilisateur ouvre l'éditeur de rôle. Vous pouvez promouvoir un membre en gestionnaire, ou rétrograder un gestionnaire en membre.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/desktop/step-34.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Enregistrer le rôle</span>
+        </h2>
+        <div class="steppy-step-subtitle">Rôles</div>
+        <div class="steppy-step-content">Choisissez le nouveau rôle dans la liste puis cliquez sur « Enregistrer ». Le changement prend effet immédiatement.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/desktop/step-38.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Rôle mis à jour</span>
+        </h2>
+        <div class="steppy-step-subtitle">Rôles</div>
+        <div class="steppy-step-content">L'utilisateur est désormais un membre : sa pastille de rôle a changé et l'action de suppression est maintenant disponible sur sa ligne.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/desktop/step-39.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Retirer un utilisateur</span>
+        </h2>
+        <div class="steppy-step-subtitle">Suppression</div>
+        <div class="steppy-step-content">La croix rouge retire immédiatement l'utilisateur de la communauté — son accès est révoqué sur-le-champ, sans confirmation supplémentaire.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/desktop/step-41.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Utilisateur retiré</span>
+        </h2>
+        <div class="steppy-step-subtitle">Confirmation</div>
+        <div class="steppy-step-content">La recherche sur cet e-mail ne renvoie plus aucun résultat : l'utilisateur n'a plus accès à la communauté.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/desktop/step-43.png" alt="Step 11" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Gérer les utilisateurs de la communauté</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Ouvrir les utilisateurs</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Touchez l'icône du menu pour ouvrir le tiroir, puis dans la section « Gestion » touchez « Utilisateurs ».</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/mobile/step-17.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Les utilisateurs de la communauté</span>
+        </h2>
+        <div class="steppy-step-subtitle">Utilisateurs</div>
+        <div class="steppy-step-content">Cette page liste les comptes rattachés à la communauté et leur rôle. C'est ici que vous invitez un gestionnaire, changez un rôle ou retirez un accès.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/mobile/step-21.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Inviter un gestionnaire</span>
+        </h2>
+        <div class="steppy-step-subtitle">Invitation</div>
+        <div class="steppy-step-content">Cliquez sur « Inviter un gestionnaire » pour envoyer une invitation par e-mail à une personne qui aidera à gérer la communauté.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/mobile/step-22.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Saisir l'adresse e-mail</span>
+        </h2>
+        <div class="steppy-step-subtitle">Invitation</div>
+        <div class="steppy-step-content">Renseignez l'adresse e-mail de la personne à inviter. Elle recevra une invitation à rejoindre la communauté en tant que gestionnaire.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/mobile/step-24.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Voir les invitations en attente</span>
+        </h2>
+        <div class="steppy-step-subtitle">Suivi</div>
+        <div class="steppy-step-content">Le bouton « Voir les invitations en attente » ouvre la liste des invitations envoyées mais pas encore acceptées, membres et gestionnaires confondus.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/mobile/step-27.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Invitations en attente</span>
+        </h2>
+        <div class="steppy-step-subtitle">Suivi</div>
+        <div class="steppy-step-content">L'onglet « Gestionnaires » regroupe les invitations envoyées mais pas encore acceptées. Tant qu'une invitation est en attente, vous pouvez l'annuler depuis cette liste.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/mobile/step-30.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Modifier un rôle</span>
+        </h2>
+        <div class="steppy-step-subtitle">Rôles</div>
+        <div class="steppy-step-content">Sur la carte de l'utilisateur, le bouton « Modifier le rôle » ouvre l'éditeur de rôle.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/mobile/step-35.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Enregistrer le rôle</span>
+        </h2>
+        <div class="steppy-step-subtitle">Rôles</div>
+        <div class="steppy-step-content">Choisissez le nouveau rôle dans la liste puis cliquez sur « Enregistrer ». Le changement prend effet immédiatement.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/mobile/step-38.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Rôle mis à jour</span>
+        </h2>
+        <div class="steppy-step-subtitle">Rôles</div>
+        <div class="steppy-step-content">L'utilisateur est désormais un membre : sa pastille de rôle a changé et l'action de suppression est maintenant disponible sur sa carte.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/mobile/step-40.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Retirer un utilisateur</span>
+        </h2>
+        <div class="steppy-step-subtitle">Suppression</div>
+        <div class="steppy-step-content">Sur la carte, le bouton « Supprimer » retire immédiatement l'utilisateur de la communauté.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/mobile/step-42.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Utilisateur retiré</span>
+        </h2>
+        <div class="steppy-step-subtitle">Confirmation</div>
+        <div class="steppy-step-content">La recherche sur cet e-mail ne renvoie plus aucun résultat : l'utilisateur n'a plus accès à la communauté.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/community-users-manage/fr/mobile/step-43.png" alt="Step 11" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p>Généré par Steppy.</p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 538.5}, "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/communities/users\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 538.5}, "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/communities/users\"]"}}, "screenshot": "../assets/community-users-manage/fr/desktop/step-14.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/community-users-manage/fr/desktop/step-14.png", "subtitle": "Navigation", "text": "Dans la section \u00ab Gestion \u00bb de la barre lat\u00e9rale, cliquez sur \u00ab Utilisateurs \u00bb pour g\u00e9rer les personnes qui ont acc\u00e8s \u00e0 votre communaut\u00e9.", "title": "Ouvrir les utilisateurs", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-users-manage/fr/desktop/step-20.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/community-users-manage/fr/desktop/step-20.png", "subtitle": "Gestion des acc\u00e8s", "text": "Cette page liste tous les utilisateurs ayant acc\u00e8s \u00e0 la communaut\u00e9, avec leur r\u00f4le : administrateur, gestionnaire ou membre. Vous pouvez inviter, changer un r\u00f4le ou retirer un acc\u00e8s.", "title": "Les utilisateurs de la communaut\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 213.921875, "x": 1155.078125, "y": 52}, "selector": "[data-testid=\"users-community-list__btn--invite-manager\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 213.921875, "x": 1155.078125, "y": 52}, "selector": "[data-testid=\"users-community-list__btn--invite-manager\"] button"}}, "screenshot": "../assets/community-users-manage/fr/desktop/step-22.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/community-users-manage/fr/desktop/step-22.png", "subtitle": "Invitation", "text": "Cliquez sur \u00ab Inviter un gestionnaire \u00bb pour envoyer une invitation par e-mail \u00e0 une personne qui aidera \u00e0 g\u00e9rer la communaut\u00e9.", "title": "Inviter un gestionnaire", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 311.453125, "x": 564.265625, "y": 450}, "selector": "[data-testid=\"community-invitation__input--email\"]"}, "value": "e2e-manager@example.com"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 311.453125, "x": 564.265625, "y": 450}, "selector": "[data-testid=\"community-invitation__input--email\"]"}, "value": "e2e-manager@example.com"}, "screenshot": "../assets/community-users-manage/fr/desktop/step-24.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/community-users-manage/fr/desktop/step-24.png", "subtitle": "Invitation", "text": "Renseignez l\u0027adresse e-mail de la personne \u00e0 inviter. Elle recevra une invitation \u00e0 rejoindre la communaut\u00e9 en tant que gestionnaire.", "title": "Saisir l\u0027adresse e-mail", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 230.578125, "x": 916.5, "y": 52}, "selector": "[data-testid=\"users-community-list__btn--see-pending\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 230.578125, "x": 916.5, "y": 52}, "selector": "[data-testid=\"users-community-list__btn--see-pending\"] button"}}, "screenshot": "../assets/community-users-manage/fr/desktop/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/community-users-manage/fr/desktop/step-27.png", "subtitle": "Suivi", "text": "Le bouton \u00ab Voir les invitations en attente \u00bb ouvre la liste des invitations envoy\u00e9es mais pas encore accept\u00e9es, membres et gestionnaires confondus.", "title": "Voir les invitations en attente", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-users-manage/fr/desktop/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/community-users-manage/fr/desktop/step-30.png", "subtitle": "Suivi", "text": "L\u0027onglet \u00ab Gestionnaires \u00bb regroupe les invitations envoy\u00e9es mais pas encore accept\u00e9es. Tant qu\u0027une invitation est en attente, vous pouvez l\u0027annuler depuis cette liste.", "title": "Invitations en attente", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 40, "width": 40, "x": 1184.609375, "y": 317}, "selector": "[data-testid=\"users-community-list__btn--edit-role--0\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 40, "width": 40, "x": 1184.609375, "y": 317}, "selector": "[data-testid=\"users-community-list__btn--edit-role--0\"] button"}}, "screenshot": "../assets/community-users-manage/fr/desktop/step-34.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/community-users-manage/fr/desktop/step-34.png", "subtitle": "R\u00f4les", "text": "Le crayon \u00e0 c\u00f4t\u00e9 d\u0027un utilisateur ouvre l\u0027\u00e9diteur de r\u00f4le. Vous pouvez promouvoir un membre en gestionnaire, ou r\u00e9trograder un gestionnaire en membre.", "title": "Modifier un r\u00f4le", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 104.609375, "x": 794.390625, "y": 512}, "selector": "[data-testid=\"users-community-list__btn--dialog-save\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 104.609375, "x": 794.390625, "y": 512}, "selector": "[data-testid=\"users-community-list__btn--dialog-save\"] button"}}, "screenshot": "../assets/community-users-manage/fr/desktop/step-38.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/community-users-manage/fr/desktop/step-38.png", "subtitle": "R\u00f4les", "text": "Choisissez le nouveau r\u00f4le dans la liste puis cliquez sur \u00ab Enregistrer \u00bb. Le changement prend effet imm\u00e9diatement.", "title": "Enregistrer le r\u00f4le", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-users-manage/fr/desktop/step-39.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/community-users-manage/fr/desktop/step-39.png", "subtitle": "R\u00f4les", "text": "L\u0027utilisateur est d\u00e9sormais un membre : sa pastille de r\u00f4le a chang\u00e9 et l\u0027action de suppression est maintenant disponible sur sa ligne.", "title": "R\u00f4le mis \u00e0 jour", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 40, "width": 40, "x": 1147.609375, "y": 317}, "selector": "[data-testid=\"users-community-list__btn--delete--0\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 40, "width": 40, "x": 1147.609375, "y": 317}, "selector": "[data-testid=\"users-community-list__btn--delete--0\"] button"}}, "screenshot": "../assets/community-users-manage/fr/desktop/step-41.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/community-users-manage/fr/desktop/step-41.png", "subtitle": "Suppression", "text": "La croix rouge retire imm\u00e9diatement l\u0027utilisateur de la communaut\u00e9 \u2014 son acc\u00e8s est r\u00e9voqu\u00e9 sur-le-champ, sans confirmation suppl\u00e9mentaire.", "title": "Retirer un utilisateur", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-users-manage/fr/desktop/step-43.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/community-users-manage/fr/desktop/step-43.png", "subtitle": "Confirmation", "text": "La recherche sur cet e-mail ne renvoie plus aucun r\u00e9sultat : l\u0027utilisateur n\u0027a plus acc\u00e8s \u00e0 la communaut\u00e9.", "title": "Utilisateur retir\u00e9", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 538.5}, "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/communities/users\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 538.5}, "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/communities/users\"]"}}, "screenshot": "../assets/community-users-manage/fr/mobile/step-17.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/community-users-manage/fr/mobile/step-17.png", "subtitle": "Navigation", "text": "Touchez l\u0027ic\u00f4ne du menu pour ouvrir le tiroir, puis dans la section \u00ab Gestion \u00bb touchez \u00ab Utilisateurs \u00bb.", "title": "Ouvrir les utilisateurs", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-users-manage/fr/mobile/step-21.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/community-users-manage/fr/mobile/step-21.png", "subtitle": "Utilisateurs", "text": "Cette page liste les comptes rattach\u00e9s \u00e0 la communaut\u00e9 et leur r\u00f4le. C\u0027est ici que vous invitez un gestionnaire, changez un r\u00f4le ou retirez un acc\u00e8s.", "title": "Les utilisateurs de la communaut\u00e9", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 213.921875, "x": 37, "y": 289}, "selector": "[data-testid=\"users-community-list__btn--invite-manager\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 213.921875, "x": 37, "y": 289}, "selector": "[data-testid=\"users-community-list__btn--invite-manager\"] button"}}, "screenshot": "../assets/community-users-manage/fr/mobile/step-22.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/community-users-manage/fr/mobile/step-22.png", "subtitle": "Invitation", "text": "Cliquez sur \u00ab Inviter un gestionnaire \u00bb pour envoyer une invitation par e-mail \u00e0 une personne qui aidera \u00e0 g\u00e9rer la communaut\u00e9.", "title": "Inviter un gestionnaire", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 311.453125, "x": 39.265625, "y": 422}, "selector": "[data-testid=\"community-invitation__input--email\"]"}, "value": "e2e-manager@example.com"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 311.453125, "x": 39.265625, "y": 422}, "selector": "[data-testid=\"community-invitation__input--email\"]"}, "value": "e2e-manager@example.com"}, "screenshot": "../assets/community-users-manage/fr/mobile/step-24.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/community-users-manage/fr/mobile/step-24.png", "subtitle": "Invitation", "text": "Renseignez l\u0027adresse e-mail de la personne \u00e0 inviter. Elle recevra une invitation \u00e0 rejoindre la communaut\u00e9 en tant que gestionnaire.", "title": "Saisir l\u0027adresse e-mail", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 230.578125, "x": 37, "y": 239}, "selector": "[data-testid=\"users-community-list__btn--see-pending\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 230.578125, "x": 37, "y": 239}, "selector": "[data-testid=\"users-community-list__btn--see-pending\"] button"}}, "screenshot": "../assets/community-users-manage/fr/mobile/step-27.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/community-users-manage/fr/mobile/step-27.png", "subtitle": "Suivi", "text": "Le bouton \u00ab Voir les invitations en attente \u00bb ouvre la liste des invitations envoy\u00e9es mais pas encore accept\u00e9es, membres et gestionnaires confondus.", "title": "Voir les invitations en attente", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-users-manage/fr/mobile/step-30.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/community-users-manage/fr/mobile/step-30.png", "subtitle": "Suivi", "text": "L\u0027onglet \u00ab Gestionnaires \u00bb regroupe les invitations envoy\u00e9es mais pas encore accept\u00e9es. Tant qu\u0027une invitation est en attente, vous pouvez l\u0027annuler depuis cette liste.", "title": "Invitations en attente", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 141.8125, "x": 33, "y": 740.65625}, "selector": "[data-testid=\"users-community-list__btn--card-edit-role--0\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 141.8125, "x": 33, "y": 740.65625}, "selector": "[data-testid=\"users-community-list__btn--card-edit-role--0\"] button"}}, "screenshot": "../assets/community-users-manage/fr/mobile/step-35.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/community-users-manage/fr/mobile/step-35.png", "subtitle": "R\u00f4les", "text": "Sur la carte de l\u0027utilisateur, le bouton \u00ab Modifier le r\u00f4le \u00bb ouvre l\u0027\u00e9diteur de r\u00f4le.", "title": "Modifier un r\u00f4le", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 104.609375, "x": 264.390625, "y": 484}, "selector": "[data-testid=\"users-community-list__btn--dialog-save\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 104.609375, "x": 264.390625, "y": 484}, "selector": "[data-testid=\"users-community-list__btn--dialog-save\"] button"}}, "screenshot": "../assets/community-users-manage/fr/mobile/step-38.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/community-users-manage/fr/mobile/step-38.png", "subtitle": "R\u00f4les", "text": "Choisissez le nouveau r\u00f4le dans la liste puis cliquez sur \u00ab Enregistrer \u00bb. Le changement prend effet imm\u00e9diatement.", "title": "Enregistrer le r\u00f4le", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-users-manage/fr/mobile/step-40.png", "viewport": {"height": 844, "width": 390}}], "index": 9, "screenshot": "../assets/community-users-manage/fr/mobile/step-40.png", "subtitle": "R\u00f4les", "text": "L\u0027utilisateur est d\u00e9sormais un membre : sa pastille de r\u00f4le a chang\u00e9 et l\u0027action de suppression est maintenant disponible sur sa carte.", "title": "R\u00f4le mis \u00e0 jour", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 110.53125, "x": 182.8125, "y": 740.65625}, "selector": "[data-testid=\"users-community-list__btn--card-delete--0\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 110.53125, "x": 182.8125, "y": 740.65625}, "selector": "[data-testid=\"users-community-list__btn--card-delete--0\"] button"}}, "screenshot": "../assets/community-users-manage/fr/mobile/step-42.png", "viewport": {"height": 844, "width": 390}}], "index": 10, "screenshot": "../assets/community-users-manage/fr/mobile/step-42.png", "subtitle": "Suppression", "text": "Sur la carte, le bouton \u00ab Supprimer \u00bb retire imm\u00e9diatement l\u0027utilisateur de la communaut\u00e9.", "title": "Retirer un utilisateur", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/community-users-manage/fr/mobile/step-43.png", "viewport": {"height": 844, "width": 390}}], "index": 11, "screenshot": "../assets/community-users-manage/fr/mobile/step-43.png", "subtitle": "Confirmation", "text": "La recherche sur cet e-mail ne renvoie plus aucun r\u00e9sultat : l\u0027utilisateur n\u0027a plus acc\u00e8s \u00e0 la communaut\u00e9.", "title": "Utilisateur retir\u00e9", "viewport": {"height": 844, "width": 390}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

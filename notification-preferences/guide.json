@@ -1,0 +1,733 @@
+{
+  "version": "1.1",
+  "slug": "notification-preferences",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Choisir ses notifications",
+    "en": "Choose your notifications"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir votre profil",
+        "en": "Open your profile"
+      },
+      "text": {
+        "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Profil » : les préférences de notification sont personnelles, elles ne dépendent pas de la communauté active.",
+        "en": "In the sidebar's profile menu, click \"Profile\": notification preferences are personal, they do not depend on the active community."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/fr/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir votre profil",
+              "text": "Touchez l'icône du menu pour ouvrir le tiroir, puis « Profil ».",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/en/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open your profile",
+              "text": "Tap the menu icon to open the drawer, then \"Profile\".",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 2000,
+      "title": {
+        "fr": "Onglet Notifications",
+        "en": "Notifications tab"
+      },
+      "text": {
+        "fr": "Le dernier onglet de votre profil règle la façon dont OptimCE vous prévient.",
+        "en": "The last tab of your profile controls how OptimCE tells you about things."
+      },
+      "subtitle": {
+        "fr": "Profil",
+        "en": "Profile"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 702.953125,
+                      "y": 446,
+                      "width": 129.109375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--notifications\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 244.953125,
+                      "y": 393.84375,
+                      "width": 129.109375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--notifications\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 656.75,
+                      "y": 446,
+                      "width": 129.109375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--notifications\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 244.75,
+                      "y": 393.84375,
+                      "width": 129.109375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--notifications\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 500,
+      "title": {
+        "fr": "Catégories et canaux",
+        "en": "Categories and channels"
+      },
+      "text": {
+        "fr": "Chaque ligne est une catégorie d'activité — actualités, factures, échéances… — et chaque colonne un canal. « Tout le reste » couvre les catégories qui n'ont pas leur propre ligne. Les messages essentiels (factures, invitations, échéances dépassées) restent toujours envoyés.",
+        "en": "Each row is a kind of activity — news, invoices, deadlines… — and each column a channel. \"Everything else\" covers the categories without a row of their own. Essential messages (invoices, invitations, missed deadlines) are always delivered."
+      },
+      "subtitle": {
+        "fr": "Préférences de notification",
+        "en": "Notification preferences"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/fr/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/fr/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/en/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/en/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "toggle",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 700,
+      "title": {
+        "fr": "Couper un canal",
+        "en": "Turn a channel off"
+      },
+      "text": {
+        "fr": "Décochez « E-mail » sur la ligne « Actualités » : vous continuerez à voir les publications dans l'application, mais sans recevoir de courriel.",
+        "en": "Switch \"Email\" off on the \"News posts\" row: you will still see the posts inside the application, but no email will be sent."
+      },
+      "subtitle": {
+        "fr": "Préférences de notification",
+        "en": "Notification preferences"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1256,
+                      "y": 767,
+                      "width": 40,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"notification-preferences__email--news_post\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/fr/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 278.59375,
+                      "y": 714.84375,
+                      "width": 40,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"notification-preferences__email--news_post\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1256,
+                      "y": 767,
+                      "width": 40,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"notification-preferences__email--news_post\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/en/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 261.78125,
+                      "y": 714.84375,
+                      "width": 40,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"notification-preferences__email--news_post\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 2000,
+      "title": {
+        "fr": "Enregistrer",
+        "en": "Save"
+      },
+      "text": {
+        "fr": "Rien n'est appliqué tant que vous n'avez pas enregistré. Cliquez sur « Enregistrer les préférences ».",
+        "en": "Nothing is applied until you save. Click \"Save preferences\"."
+      },
+      "subtitle": {
+        "fr": "Préférences de notification",
+        "en": "Notification preferences"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/fr/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 132,
+                      "y": 820,
+                      "width": 217.453125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"notification-preferences__save\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/fr/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 767.84375,
+                      "width": 217.453125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"notification-preferences__save\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/en/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 132,
+                      "y": 820,
+                      "width": 148.4375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"notification-preferences__save\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/en/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 767.84375,
+                      "width": 148.4375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"notification-preferences__save\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Préférences enregistrées",
+        "en": "Preferences saved"
+      },
+      "text": {
+        "fr": "Un message de confirmation apparaît à côté du bouton. Il disparaît dès que vous modifiez à nouveau un réglage.",
+        "en": "A confirmation appears next to the button. It clears as soon as you change a setting again."
+      },
+      "subtitle": {
+        "fr": "Préférences de notification",
+        "en": "Notification preferences"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/fr/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/fr/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/en/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/en/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "custom",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Un réglage qui vous suit",
+        "en": "A setting that follows you"
+      },
+      "text": {
+        "fr": "Vos préférences sont attachées à votre compte, pas à cet appareil : vous les retrouverez identiques à la prochaine connexion, où que ce soit.",
+        "en": "Your preferences belong to your account, not to this device: you will find them unchanged the next time you sign in, wherever that is."
+      },
+      "subtitle": {
+        "fr": "Préférences de notification",
+        "en": "Notification preferences"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/fr/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/fr/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/en/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/en/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

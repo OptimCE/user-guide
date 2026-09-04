@@ -1,0 +1,1135 @@
+{
+  "version": "1.1",
+  "slug": "admin-doc-upload-version",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Joindre un document existant",
+    "en": "Attach a document you already have"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les documents administratifs",
+        "en": "Open the administrative documents"
+      },
+      "text": {
+        "fr": "Dans la barre latérale, cliquez sur « Documents administratifs ».",
+        "en": "In the sidebar, click \"Administrative documents\"."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir les documents administratifs",
+              "text": "Touchez l'icône du menu pour ouvrir le tiroir, puis « Documents administratifs ».",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the administrative documents",
+              "text": "Tap the menu icon to open the drawer, then \"Administrative documents\".",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Ouvrir le dossier",
+        "en": "Open the dossier"
+      },
+      "text": {
+        "fr": "Ouvrez le dossier auquel la pièce doit être rattachée.",
+        "en": "Open the dossier the piece has to be attached to."
+      },
+      "subtitle": {
+        "fr": "Documents administratifs",
+        "en": "Administrative documents"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 260,
+                      "y": 554,
+                      "width": 988,
+                      "height": 73
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 705,
+                      "width": 628.15625,
+                      "height": 105
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 260,
+                      "y": 554,
+                      "width": 988,
+                      "height": 73
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 705,
+                      "width": 642.140625,
+                      "height": 105
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Déclarer la pièce",
+        "en": "Declare the piece"
+      },
+      "text": {
+        "fr": "Un document produit hors d'OptimCE — un formulaire signé, un courrier du GRD — se déclare d'abord ici, puis reçoit son fichier.",
+        "en": "A document produced outside OptimCE — a signed form, a letter from the grid operator — is declared here first, then receives its file."
+      },
+      "subtitle": {
+        "fr": "Documents du dossier",
+        "en": "Dossier documents"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1068.15625,
+                      "y": 385,
+                      "width": 179.84375,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 176.15625,
+                      "y": 693,
+                      "width": 179.84375,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1109.265625,
+                      "y": 385,
+                      "width": 138.734375,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 217.265625,
+                      "y": 693,
+                      "width": 138.734375,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "fill",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Nommer la pièce",
+        "en": "Name the piece"
+      },
+      "text": {
+        "fr": "Choisissez le formulaire correspondant et donnez-lui un intitulé parlant pour vos collègues.",
+        "en": "Pick the matching form and give it a title your colleagues will recognise."
+      },
+      "subtitle": {
+        "fr": "Ajouter un document",
+        "en": "Add document"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 485,
+                      "y": 479,
+                      "width": 470,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"document-create-dialog__input--title\"]"
+                  },
+                  "value": "Formulaire signe recu du GRD"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 199,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"document-create-dialog__input--title\"]"
+                  },
+                  "value": "Formulaire signe recu du GRD"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 485,
+                      "y": 479,
+                      "width": 470,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"document-create-dialog__input--title\"]"
+                  },
+                  "value": "Formulaire signe recu du GRD"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 199,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"document-create-dialog__input--title\"]"
+                  },
+                  "value": "Formulaire signe recu du GRD"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Téléverser une version",
+        "en": "Upload a version"
+      },
+      "text": {
+        "fr": "L'icône de téléversement permet de joindre votre propre fichier au lieu de laisser OptimCE le générer.",
+        "en": "The upload icon lets you attach your own file instead of having OptimCE generate one."
+      },
+      "subtitle": {
+        "fr": "Documents du dossier",
+        "en": "Dossier documents"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1203,
+                      "y": 453.5,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--upload-1\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 119,
+                      "y": 813,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--upload-1\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1203,
+                      "y": 453.5,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--upload-1\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 119,
+                      "y": 813,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--upload-1\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "upload",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Choisir le fichier",
+        "en": "Choose the file"
+      },
+      "text": {
+        "fr": "Glissez le fichier dans la zone prévue ou cliquez pour le sélectionner sur votre ordinateur.",
+        "en": "Drop the file in the dedicated area, or click to pick it from your computer."
+      },
+      "subtitle": {
+        "fr": "Téléverser une version",
+        "en": "Upload a version"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 485,
+                      "y": 435.5,
+                      "width": 470,
+                      "height": 79
+                    },
+                    "selector": "[data-testid=\"upload-version-dialog__dropzone\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 149,
+                      "width": 364,
+                      "height": 103
+                    },
+                    "selector": "[data-testid=\"upload-version-dialog__dropzone\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 485,
+                      "y": 425.5,
+                      "width": 470,
+                      "height": 79
+                    },
+                    "selector": "[data-testid=\"upload-version-dialog__dropzone\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 149,
+                      "width": 364,
+                      "height": 79
+                    },
+                    "selector": "[data-testid=\"upload-version-dialog__dropzone\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 2000,
+      "title": {
+        "fr": "Enregistrer",
+        "en": "Store it"
+      },
+      "text": {
+        "fr": "Chaque dépôt crée une version permanente de plus. Un fichier déjà enregistré n'est jamais remplacé : il est conservé, et le nouveau devient la version courante.",
+        "en": "Every upload creates one more permanent version. A file already stored is never replaced: it is kept, and the new one becomes the current version."
+      },
+      "subtitle": {
+        "fr": "Téléverser une version",
+        "en": "Upload a version"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 856.703125,
+                      "y": 560.5,
+                      "width": 98.296875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"upload-version-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 278.703125,
+                      "y": 296,
+                      "width": 98.296875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"upload-version-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 876.5625,
+                      "y": 550.5,
+                      "width": 78.4375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"upload-version-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 298.5625,
+                      "y": 296,
+                      "width": 78.4375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"upload-version-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "La pièce est jointe",
+        "en": "The piece is attached"
+      },
+      "text": {
+        "fr": "Le document dispose maintenant d'une version téléchargeable, comme s'il avait été généré.",
+        "en": "The document now has a downloadable version, exactly as if it had been generated."
+      },
+      "subtitle": {
+        "fr": "Documents du dossier",
+        "en": "Dossier documents"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Vérifier l'historique",
+        "en": "Check the history"
+      },
+      "text": {
+        "fr": "Ouvrez les versions pour confirmer que le fichier a bien été enregistré, avec son nom d'origine et sa taille.",
+        "en": "Open the versions to confirm the file was stored, with its original name and size."
+      },
+      "subtitle": {
+        "fr": "Documents du dossier",
+        "en": "Dossier documents"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1095,
+                      "y": 453.5,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--detail-1\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 47,
+                      "y": 813,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--detail-1\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1095,
+                      "y": 453.5,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--detail-1\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 47,
+                      "y": 813,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__btn--detail-1\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-10",
+      "index": 10,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Une version de plus",
+        "en": "One more version"
+      },
+      "text": {
+        "fr": "Le fichier téléversé apparaît comme version 1. Contrairement à une version générée, il ne conserve aucun instantané de données : un fichier arbitraire ne dit rien de qui il concerne.",
+        "en": "The uploaded file shows up as version 1. Unlike a generated version it keeps no data snapshot: an arbitrary file says nothing about who it concerns."
+      },
+      "subtitle": {
+        "fr": "Versions du document",
+        "en": "Document versions"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/fr/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-upload-version/en/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

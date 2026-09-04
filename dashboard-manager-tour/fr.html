@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Le tableau de bord du gestionnaire — OptimCE — Guides utilisateur</title>
+    <meta name="description" content="Faire le tour du tableau de bord du gestionnaire : points à vérifier, énergie, opérations et modules annexes.">
+    <link rel="canonical" href="https://guide.optimce.be/dashboard-manager-tour/fr.html">
+    <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/dashboard-manager-tour/fr.html">
+    <link rel="alternate" hreflang="en" href="https://guide.optimce.be/dashboard-manager-tour/en.html">
+    <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/dashboard-manager-tour/fr.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Le tableau de bord du gestionnaire">
+    <meta property="og:description" content="Faire le tour du tableau de bord du gestionnaire : points à vérifier, énergie, opérations et modules annexes.">
+    <meta property="og:url" content="https://guide.optimce.be/dashboard-manager-tour/fr.html">
+    <meta property="og:site_name" content="OptimCE — Guides utilisateur">
+    <meta property="og:locale" content="fr">
+    <meta property="og:image" content="https://guide.optimce.be/assets/dashboard-manager-tour/fr/desktop/step-07.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Synchronise the saved language preference with the file we just loaded.
+        // The user landed on this <locale>.html either by clicking a link rewritten
+        // to honour their preference or by direct entry — either way, that's the
+        // current truth.
+        try { localStorage.setItem("oce-lang", "fr"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.html" aria-label="OptimCE — Guides utilisateur">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.html">OptimCE — Guides utilisateur</a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Accueil</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../dashboard/fr.html">Accueil et tableau de bord</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">Le tableau de bord du gestionnaire</span>
+        </nav>
+
+        <div class="steppy-header-actions">
+            <nav class="steppy-locale-switch" aria-label="Language">
+                <ul>
+                    <li>
+                        <span aria-current="true">Français</span>
+                    </li>
+                    <li>
+                        <a href="./en.html">English</a>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-mode-switch" aria-label="Guide mode">
+            <ul>
+                <li>
+                    <span aria-current="true">Pas à pas</span>
+                </li>
+                <li>
+                    <a href="./interactive.html">Interactif</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="steppy-onboarding-strip" aria-label="Progression Premiers pas">
+        <span class="steppy-onboarding-strip-progress">
+            <a href="../getting-started/fr.html">Premiers pas</a>
+            <span class="steppy-onboarding-strip-position">Étape 5 sur 11</span>
+        </span>
+        <span class="steppy-onboarding-strip-nav">
+            <a class="steppy-onboarding-prev" href="../community-activate/fr.html?onboarding=1">‹ Activer une communauté</a>
+            <a class="steppy-onboarding-next" href="../key-create-wizard/fr.html?onboarding=1">Créer une clé (assistant) ›</a>
+        </span>
+    </nav>
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Le tableau de bord du gestionnaire</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Entrer dans la communauté</span>
+        </h2>
+        <div class="steppy-step-subtitle">Page d'accueil</div>
+        <div class="steppy-step-content">Depuis votre page d'accueil, ouvrez la communauté sur laquelle vous voulez travailler. Elle devient votre communauté active et vous arrivez sur son tableau de bord.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/desktop/step-07.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Le tableau de bord</span>
+        </h2>
+        <div class="steppy-step-subtitle">Vue d'ensemble</div>
+        <div class="steppy-step-content">Le tableau de bord résume l'état de la communauté active : ce qui demande votre attention, l'énergie partagée, les opérations, et les modules auxquels la communauté est abonnée.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/desktop/step-09.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Points à vérifier</span>
+        </h2>
+        <div class="steppy-step-subtitle">Tableau de bord</div>
+        <div class="steppy-step-content">La première tuile rassemble ce qui bloque ou risque de bloquer : informations légales manquantes, compteurs en attente du GRD, opérations sans clé de répartition. Chaque ligne mène directement à l'écran où la corriger.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/desktop/step-10.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Corriger en un clic</span>
+        </h2>
+        <div class="steppy-step-subtitle">Points à vérifier</div>
+        <div class="steppy-step-content">Cliquez sur « Corriger » : vous arrivez sur la page concernée, ici les informations de la communauté.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/desktop/step-11.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Énergie en un coup d'œil</span>
+        </h2>
+        <div class="steppy-step-subtitle">Tableau de bord</div>
+        <div class="steppy-step-content">Pour chaque opération de partage, la tuile indique l'énergie partagée et l'énergie injectée sur la dernière période disposant de données. Le nom de l'opération renvoie à sa fiche.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/desktop/step-15.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Opérations de partage</span>
+        </h2>
+        <div class="steppy-step-subtitle">Tableau de bord</div>
+        <div class="steppy-step-content">La tuile liste les opérations de la communauté avec leur type. Le lien en bas ouvre la liste complète.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/desktop/step-16.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Voir toutes les opérations</span>
+        </h2>
+        <div class="steppy-step-subtitle">Opérations de partage</div>
+        <div class="steppy-step-content">Le lien vous emmène à la gestion complète des opérations de partage.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/desktop/step-17.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Arrivées et activité récente</span>
+        </h2>
+        <div class="steppy-step-subtitle">Tableau de bord</div>
+        <div class="steppy-step-content">« Arrivées en cours » compte les invitations envoyées et les fiches encore à encoder. « Activité récente » reprend les dernières actions enregistrées dans le journal d'audit de la communauté.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/desktop/step-21.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Les modules activés</span>
+        </h2>
+        <div class="steppy-step-subtitle">Tableau de bord</div>
+        <div class="steppy-step-content">Facturation, actualités, dossiers et échéances administratives n'apparaissent que si la communauté est abonnée au module correspondant. Une communauté sans abonnement ne voit tout simplement pas ces tuiles.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/desktop/step-22.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Modules disponibles</span>
+        </h2>
+        <div class="steppy-step-subtitle">Tableau de bord</div>
+        <div class="steppy-step-content">En bas du tableau de bord, la bande « Modules disponibles » présente ce que la communauté n'utilise pas encore. Un administrateur peut les activer d'ici ; un gestionnaire voit à qui les demander.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/desktop/step-23.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Actualiser</span>
+        </h2>
+        <div class="steppy-step-subtitle">Tableau de bord</div>
+        <div class="steppy-step-content">Le bouton « Actualiser » recharge toutes les tuiles d'un coup, sans recharger la page — pratique après avoir corrigé quelque chose dans un autre écran.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/desktop/step-24.png" alt="Step 11" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>Données à jour</span>
+        </h2>
+        <div class="steppy-step-subtitle">Tableau de bord</div>
+        <div class="steppy-step-content">Les tuiles se rechargent une par une et reprennent leur affichage habituel avec les données les plus récentes.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/desktop/step-25.png" alt="Step 12" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Le tableau de bord du gestionnaire</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Entrer dans la communauté</span>
+        </h2>
+        <div class="steppy-step-subtitle">Page d'accueil</div>
+        <div class="steppy-step-content">Depuis votre page d'accueil, ouvrez la communauté sur laquelle vous voulez travailler. Elle devient votre communauté active et vous arrivez sur son tableau de bord.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/mobile/step-07.png" alt="Step 1" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Le tableau de bord</span>
+        </h2>
+        <div class="steppy-step-subtitle">Vue d'ensemble</div>
+        <div class="steppy-step-content">Le tableau de bord résume l'état de la communauté active : ce qui demande votre attention, l'énergie partagée, les opérations, et les modules auxquels la communauté est abonnée.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/mobile/step-09.png" alt="Step 2" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Points à vérifier</span>
+        </h2>
+        <div class="steppy-step-subtitle">Tableau de bord</div>
+        <div class="steppy-step-content">La première tuile rassemble ce qui bloque ou risque de bloquer : informations légales manquantes, compteurs en attente du GRD, opérations sans clé de répartition. Chaque ligne mène directement à l'écran où la corriger.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/mobile/step-10.png" alt="Step 3" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Corriger en un clic</span>
+        </h2>
+        <div class="steppy-step-subtitle">Points à vérifier</div>
+        <div class="steppy-step-content">Cliquez sur « Corriger » : vous arrivez sur la page concernée, ici les informations de la communauté.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/mobile/step-11.png" alt="Step 4" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Énergie en un coup d'œil</span>
+        </h2>
+        <div class="steppy-step-subtitle">Tableau de bord</div>
+        <div class="steppy-step-content">Pour chaque opération de partage, la tuile indique l'énergie partagée et l'énergie injectée sur la dernière période disposant de données. Le nom de l'opération renvoie à sa fiche.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/mobile/step-15.png" alt="Step 5" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Opérations de partage</span>
+        </h2>
+        <div class="steppy-step-subtitle">Tableau de bord</div>
+        <div class="steppy-step-content">La tuile liste les opérations de la communauté avec leur type. Le lien en bas ouvre la liste complète.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/mobile/step-16.png" alt="Step 6" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Voir toutes les opérations</span>
+        </h2>
+        <div class="steppy-step-subtitle">Opérations de partage</div>
+        <div class="steppy-step-content">Le lien vous emmène à la gestion complète des opérations de partage.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/mobile/step-17.png" alt="Step 7" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Arrivées et activité récente</span>
+        </h2>
+        <div class="steppy-step-subtitle">Tableau de bord</div>
+        <div class="steppy-step-content">« Arrivées en cours » compte les invitations envoyées et les fiches encore à encoder. « Activité récente » reprend les dernières actions enregistrées dans le journal d'audit de la communauté.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/mobile/step-21.png" alt="Step 8" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Les modules activés</span>
+        </h2>
+        <div class="steppy-step-subtitle">Tableau de bord</div>
+        <div class="steppy-step-content">Facturation, actualités, dossiers et échéances administratives n'apparaissent que si la communauté est abonnée au module correspondant. Une communauté sans abonnement ne voit tout simplement pas ces tuiles.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/mobile/step-22.png" alt="Step 9" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Modules disponibles</span>
+        </h2>
+        <div class="steppy-step-subtitle">Tableau de bord</div>
+        <div class="steppy-step-content">En bas du tableau de bord, la bande « Modules disponibles » présente ce que la communauté n'utilise pas encore. Un administrateur peut les activer d'ici ; un gestionnaire voit à qui les demander.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/mobile/step-23.png" alt="Step 10" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Actualiser</span>
+        </h2>
+        <div class="steppy-step-subtitle">Tableau de bord</div>
+        <div class="steppy-step-content">Le bouton « Actualiser » recharge toutes les tuiles d'un coup, sans recharger la page — pratique après avoir corrigé quelque chose dans un autre écran.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/mobile/step-24.png" alt="Step 11" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>Données à jour</span>
+        </h2>
+        <div class="steppy-step-subtitle">Tableau de bord</div>
+        <div class="steppy-step-content">Les tuiles se rechargent une par une et reprennent leur affichage habituel avec les données les plus récentes.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/fr/mobile/step-25.png" alt="Step 12" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p>Généré par Steppy.</p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 342, "x": 387, "y": 265}, "selector": "[data-testid=\"community-picker__btn--enter\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 342, "x": 387, "y": 265}, "selector": "[data-testid=\"community-picker__btn--enter\"] button"}}, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-07.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-07.png", "subtitle": "Page d\u0027accueil", "text": "Depuis votre page d\u0027accueil, ouvrez la communaut\u00e9 sur laquelle vous voulez travailler. Elle devient votre communaut\u00e9 active et vous arrivez sur son tableau de bord.", "title": "Entrer dans la communaut\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-09.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-09.png", "subtitle": "Vue d\u0027ensemble", "text": "Le tableau de bord r\u00e9sume l\u0027\u00e9tat de la communaut\u00e9 active : ce qui demande votre attention, l\u0027\u00e9nergie partag\u00e9e, les op\u00e9rations, et les modules auxquels la communaut\u00e9 est abonn\u00e9e.", "title": "Le tableau de bord", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-10.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-10.png", "subtitle": "Tableau de bord", "text": "La premi\u00e8re tuile rassemble ce qui bloque ou risque de bloquer : informations l\u00e9gales manquantes, compteurs en attente du GRD, op\u00e9rations sans cl\u00e9 de r\u00e9partition. Chaque ligne m\u00e8ne directement \u00e0 l\u0027\u00e9cran o\u00f9 la corriger.", "title": "Points \u00e0 v\u00e9rifier", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 50.4375, "x": 1198.5625, "y": 200}, "selector": "[data-testid=\"readiness-tile__link--COMMUNITY_FIELD_MISSING\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 50.4375, "x": 1198.5625, "y": 200}, "selector": "[data-testid=\"readiness-tile__link--COMMUNITY_FIELD_MISSING\"]"}}, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-11.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-11.png", "subtitle": "Points \u00e0 v\u00e9rifier", "text": "Cliquez sur \u00ab Corriger \u00bb : vous arrivez sur la page concern\u00e9e, ici les informations de la communaut\u00e9.", "title": "Corriger en un clic", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-15.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-15.png", "subtitle": "Tableau de bord", "text": "Pour chaque op\u00e9ration de partage, la tuile indique l\u0027\u00e9nergie partag\u00e9e et l\u0027\u00e9nergie inject\u00e9e sur la derni\u00e8re p\u00e9riode disposant de donn\u00e9es. Le nom de l\u0027op\u00e9ration renvoie \u00e0 sa fiche.", "title": "\u00c9nergie en un coup d\u0027\u0153il", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-16.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-16.png", "subtitle": "Tableau de bord", "text": "La tuile liste les op\u00e9rations de la communaut\u00e9 avec leur type. Le lien en bas ouvre la liste compl\u00e8te.", "title": "Op\u00e9rations de partage", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 19, "width": 125.921875, "x": 779, "y": 472}, "selector": "[data-testid=\"sharing-operations-tile__link--all\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 19, "width": 125.921875, "x": 779, "y": 472}, "selector": "[data-testid=\"sharing-operations-tile__link--all\"]"}}, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-17.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-17.png", "subtitle": "Op\u00e9rations de partage", "text": "Le lien vous emm\u00e8ne \u00e0 la gestion compl\u00e8te des op\u00e9rations de partage.", "title": "Voir toutes les op\u00e9rations", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-21.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-21.png", "subtitle": "Tableau de bord", "text": "\u00ab Arriv\u00e9es en cours \u00bb compte les invitations envoy\u00e9es et les fiches encore \u00e0 encoder. \u00ab Activit\u00e9 r\u00e9cente \u00bb reprend les derni\u00e8res actions enregistr\u00e9es dans le journal d\u0027audit de la communaut\u00e9.", "title": "Arriv\u00e9es et activit\u00e9 r\u00e9cente", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-22.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-22.png", "subtitle": "Tableau de bord", "text": "Facturation, actualit\u00e9s, dossiers et \u00e9ch\u00e9ances administratives n\u0027apparaissent que si la communaut\u00e9 est abonn\u00e9e au module correspondant. Une communaut\u00e9 sans abonnement ne voit tout simplement pas ces tuiles.", "title": "Les modules activ\u00e9s", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-23.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-23.png", "subtitle": "Tableau de bord", "text": "En bas du tableau de bord, la bande \u00ab Modules disponibles \u00bb pr\u00e9sente ce que la communaut\u00e9 n\u0027utilise pas encore. Un administrateur peut les activer d\u0027ici ; un gestionnaire voit \u00e0 qui les demander.", "title": "Modules disponibles", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 121.421875, "x": 1119.578125, "y": 52}, "selector": "[data-testid=\"manager-dashboard__btn--refresh\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 121.421875, "x": 1119.578125, "y": 52}, "selector": "[data-testid=\"manager-dashboard__btn--refresh\"] button"}}, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-24.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-24.png", "subtitle": "Tableau de bord", "text": "Le bouton \u00ab Actualiser \u00bb recharge toutes les tuiles d\u0027un coup, sans recharger la page \u2014 pratique apr\u00e8s avoir corrig\u00e9 quelque chose dans un autre \u00e9cran.", "title": "Actualiser", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 12, "screenshot": "../assets/dashboard-manager-tour/fr/desktop/step-25.png", "subtitle": "Tableau de bord", "text": "Les tuiles se rechargent une par une et reprennent leur affichage habituel avec les donn\u00e9es les plus r\u00e9centes.", "title": "Donn\u00e9es \u00e0 jour", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 324, "x": 33, "y": 325}, "selector": "[data-testid=\"community-picker__btn--enter\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 324, "x": 33, "y": 325}, "selector": "[data-testid=\"community-picker__btn--enter\"] button"}}, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-07.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-07.png", "subtitle": "Page d\u0027accueil", "text": "Depuis votre page d\u0027accueil, ouvrez la communaut\u00e9 sur laquelle vous voulez travailler. Elle devient votre communaut\u00e9 active et vous arrivez sur son tableau de bord.", "title": "Entrer dans la communaut\u00e9", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-09.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-09.png", "subtitle": "Vue d\u0027ensemble", "text": "Le tableau de bord r\u00e9sume l\u0027\u00e9tat de la communaut\u00e9 active : ce qui demande votre attention, l\u0027\u00e9nergie partag\u00e9e, les op\u00e9rations, et les modules auxquels la communaut\u00e9 est abonn\u00e9e.", "title": "Le tableau de bord", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-10.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-10.png", "subtitle": "Tableau de bord", "text": "La premi\u00e8re tuile rassemble ce qui bloque ou risque de bloquer : informations l\u00e9gales manquantes, compteurs en attente du GRD, op\u00e9rations sans cl\u00e9 de r\u00e9partition. Chaque ligne m\u00e8ne directement \u00e0 l\u0027\u00e9cran o\u00f9 la corriger.", "title": "Points \u00e0 v\u00e9rifier", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 50.4375, "x": 306.5625, "y": 366}, "selector": "[data-testid=\"readiness-tile__link--COMMUNITY_FIELD_MISSING\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 50.4375, "x": 306.5625, "y": 366}, "selector": "[data-testid=\"readiness-tile__link--COMMUNITY_FIELD_MISSING\"]"}}, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-11.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-11.png", "subtitle": "Points \u00e0 v\u00e9rifier", "text": "Cliquez sur \u00ab Corriger \u00bb : vous arrivez sur la page concern\u00e9e, ici les informations de la communaut\u00e9.", "title": "Corriger en un clic", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-15.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-15.png", "subtitle": "Tableau de bord", "text": "Pour chaque op\u00e9ration de partage, la tuile indique l\u0027\u00e9nergie partag\u00e9e et l\u0027\u00e9nergie inject\u00e9e sur la derni\u00e8re p\u00e9riode disposant de donn\u00e9es. Le nom de l\u0027op\u00e9ration renvoie \u00e0 sa fiche.", "title": "\u00c9nergie en un coup d\u0027\u0153il", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-16.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-16.png", "subtitle": "Tableau de bord", "text": "La tuile liste les op\u00e9rations de la communaut\u00e9 avec leur type. Le lien en bas ouvre la liste compl\u00e8te.", "title": "Op\u00e9rations de partage", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 19, "width": 125.921875, "x": 33, "y": 820}, "selector": "[data-testid=\"sharing-operations-tile__link--all\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 19, "width": 125.921875, "x": 33, "y": 820}, "selector": "[data-testid=\"sharing-operations-tile__link--all\"]"}}, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-17.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-17.png", "subtitle": "Op\u00e9rations de partage", "text": "Le lien vous emm\u00e8ne \u00e0 la gestion compl\u00e8te des op\u00e9rations de partage.", "title": "Voir toutes les op\u00e9rations", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-21.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-21.png", "subtitle": "Tableau de bord", "text": "\u00ab Arriv\u00e9es en cours \u00bb compte les invitations envoy\u00e9es et les fiches encore \u00e0 encoder. \u00ab Activit\u00e9 r\u00e9cente \u00bb reprend les derni\u00e8res actions enregistr\u00e9es dans le journal d\u0027audit de la communaut\u00e9.", "title": "Arriv\u00e9es et activit\u00e9 r\u00e9cente", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-22.png", "viewport": {"height": 844, "width": 390}}], "index": 9, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-22.png", "subtitle": "Tableau de bord", "text": "Facturation, actualit\u00e9s, dossiers et \u00e9ch\u00e9ances administratives n\u0027apparaissent que si la communaut\u00e9 est abonn\u00e9e au module correspondant. Une communaut\u00e9 sans abonnement ne voit tout simplement pas ces tuiles.", "title": "Les modules activ\u00e9s", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-23.png", "viewport": {"height": 844, "width": 390}}], "index": 10, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-23.png", "subtitle": "Tableau de bord", "text": "En bas du tableau de bord, la bande \u00ab Modules disponibles \u00bb pr\u00e9sente ce que la communaut\u00e9 n\u0027utilise pas encore. Un administrateur peut les activer d\u0027ici ; un gestionnaire voit \u00e0 qui les demander.", "title": "Modules disponibles", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 121.421875, "x": 37, "y": 219}, "selector": "[data-testid=\"manager-dashboard__btn--refresh\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 121.421875, "x": 37, "y": 219}, "selector": "[data-testid=\"manager-dashboard__btn--refresh\"] button"}}, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-24.png", "viewport": {"height": 844, "width": 390}}], "index": 11, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-24.png", "subtitle": "Tableau de bord", "text": "Le bouton \u00ab Actualiser \u00bb recharge toutes les tuiles d\u0027un coup, sans recharger la page \u2014 pratique apr\u00e8s avoir corrig\u00e9 quelque chose dans un autre \u00e9cran.", "title": "Actualiser", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-25.png", "viewport": {"height": 844, "width": 390}}], "index": 12, "screenshot": "../assets/dashboard-manager-tour/fr/mobile/step-25.png", "subtitle": "Tableau de bord", "text": "Les tuiles se rechargent une par une et reprennent leur affichage habituel avec les donn\u00e9es les plus r\u00e9centes.", "title": "Donn\u00e9es \u00e0 jour", "viewport": {"height": 844, "width": 390}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

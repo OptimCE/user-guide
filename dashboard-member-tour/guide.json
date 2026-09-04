@@ -1,0 +1,901 @@
+{
+  "version": "1.1",
+  "slug": "dashboard-member-tour",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Le tableau de bord du membre",
+    "en": "The member dashboard"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 2500,
+      "title": {
+        "fr": "Ouvrir sa communauté",
+        "en": "Open your community"
+      },
+      "text": {
+        "fr": "Depuis la page d'accueil, ouvrez la communauté dont vous voulez voir le détail.",
+        "en": "From the home page, open the community you want to look at."
+      },
+      "subtitle": {
+        "fr": "Page d'accueil",
+        "en": "Home page"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/desktop/step-07.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 387,
+                      "y": 265,
+                      "width": 342,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/mobile/step-07.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 325,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/desktop/step-07.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 387,
+                      "y": 265,
+                      "width": 342,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/mobile/step-07.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 305,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Le tableau de bord",
+        "en": "The dashboard"
+      },
+      "text": {
+        "fr": "Le tableau de bord s'adapte à votre rôle. En tant que membre, vous ne voyez pas la gestion de la communauté mais votre situation dans celle-ci.",
+        "en": "The dashboard adapts to your role. As a member you do not see the community's management, but your own situation inside it."
+      },
+      "subtitle": {
+        "fr": "Vue d'ensemble",
+        "en": "Overview"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/mobile/step-09.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/mobile/step-09.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Mon énergie ici",
+        "en": "My energy here"
+      },
+      "text": {
+        "fr": "La première tuile totalise, sur les trente derniers jours, ce que vous avez consommé et ce que le partage vous a apporté, puis détaille compteur par compteur.",
+        "en": "The first tile totals, over the last thirty days, what you consumed and what the sharing brought you, then breaks it down meter by meter."
+      },
+      "subtitle": {
+        "fr": "Tableau de bord",
+        "en": "Dashboard"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Ma participation",
+        "en": "My participation"
+      },
+      "text": {
+        "fr": "Pour chaque opération de partage, la tuile indique la part qui vous revient : un pourcentage fixe, une répartition au prorata de votre consommation, ou l'indication que votre compteur n'est pas repris dans la clé en vigueur.",
+        "en": "For each sharing operation the tile shows the share that comes to you: a fixed percentage, a split in proportion to your consumption, or a note that your meter is not part of the key currently in force."
+      },
+      "subtitle": {
+        "fr": "Tableau de bord",
+        "en": "Dashboard"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/desktop/step-11.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/mobile/step-11.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/desktop/step-11.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/mobile/step-11.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Ma fiche membre",
+        "en": "My member record"
+      },
+      "text": {
+        "fr": "La tuile confirme que votre fiche est active, ou signale qu'elle attend encore d'être validée par un gestionnaire.",
+        "en": "The tile confirms your record is active, or flags that it is still waiting for a manager to validate it."
+      },
+      "subtitle": {
+        "fr": "Tableau de bord",
+        "en": "Dashboard"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 2500,
+      "title": {
+        "fr": "Consulter sa fiche",
+        "en": "Look at your record"
+      },
+      "text": {
+        "fr": "Le lien ouvre votre fiche en lecture seule — les mêmes informations que celles dont dispose votre gestionnaire.",
+        "en": "The link opens your record read-only — the same information your manager holds."
+      },
+      "subtitle": {
+        "fr": "Ma fiche membre",
+        "en": "My member record"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 779,
+                      "y": 387,
+                      "width": 342,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"my-member-record-tile__link--member\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 741,
+                      "width": 324,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"my-member-record-tile__link--member\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 779,
+                      "y": 387,
+                      "width": 342,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"my-member-record-tile__link--member\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 741,
+                      "width": 324,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"my-member-record-tile__link--member\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "À propos de la communauté",
+        "en": "About this community"
+      },
+      "text": {
+        "fr": "Nombre de membres, régulateur, site web : de quoi savoir à qui vous avez affaire. Le lien ouvre la fiche complète de la communauté.",
+        "en": "Member count, regulator, website: enough to know who you are dealing with. The link opens the community's full information page."
+      },
+      "subtitle": {
+        "fr": "Tableau de bord",
+        "en": "Dashboard"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Factures et actualités",
+        "en": "Invoices and news"
+      },
+      "text": {
+        "fr": "Ces deux tuiles n'apparaissent que si la communauté utilise les modules correspondants. Vos factures impayées y sont résumées, tout comme les dernières publications du tableau d'actualités.",
+        "en": "These two tiles only appear when the community uses the matching modules. Your unpaid invoices are summarised there, as are the latest posts on the news board."
+      },
+      "subtitle": {
+        "fr": "Tableau de bord",
+        "en": "Dashboard"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 2500,
+      "title": {
+        "fr": "Actualiser",
+        "en": "Refresh"
+      },
+      "text": {
+        "fr": "Le bouton « Actualiser » recharge toutes les tuiles sans recharger la page.",
+        "en": "The \"Refresh\" button reloads every tile without reloading the page."
+      },
+      "subtitle": {
+        "fr": "Tableau de bord",
+        "en": "Dashboard"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 991.578125,
+                      "y": 52,
+                      "width": 121.421875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-dashboard__btn--refresh\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 219,
+                      "width": 121.421875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-dashboard__btn--refresh\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1008.953125,
+                      "y": 52,
+                      "width": 104.046875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-dashboard__btn--refresh\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 219,
+                      "width": 104.046875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-dashboard__btn--refresh\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-10",
+      "index": 10,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Données à jour",
+        "en": "Up-to-date data"
+      },
+      "text": {
+        "fr": "Les tuiles se rechargent une à une et reprennent leur affichage avec les données les plus récentes.",
+        "en": "The tiles reload one by one and settle back with the freshest data."
+      },
+      "subtitle": {
+        "fr": "Tableau de bord",
+        "en": "Dashboard"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

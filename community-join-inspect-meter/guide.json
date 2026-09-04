@@ -1,0 +1,763 @@
+{
+  "version": "1.1",
+  "slug": "community-join-inspect-meter",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Rejoindre une communauté — vérifier le compteur",
+    "en": "Join a community — verify the meter"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir mes communautés",
+        "en": "Open my communities"
+      },
+      "text": {
+        "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Mes communautés » pour voir la liste des communautés où vous êtes inscrit·e.",
+        "en": "In the sidebar's profile menu, click \"My communities\" to see the list of communities you belong to."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/fr/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/fr/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir mes communautés",
+              "text": "Touchez l'icône du menu pour ouvrir le tiroir de navigation, puis « Mes communautés » pour voir la liste des communautés où vous êtes inscrit·e.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/en/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/en/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open my communities",
+              "text": "Tap the menu icon to open the navigation drawer, then \"My communities\" to see the list of communities you belong to.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir le groupe Membres",
+        "en": "Open the Members group"
+      },
+      "text": {
+        "fr": "Dans la section « Gestion », cliquez sur « Gestion des membres » pour révéler le sous-menu (membres, compteurs, opérations de partage).",
+        "en": "In the \"Management\" section, click \"Members\" to reveal the submenu (members, meters, sharing operations)."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/fr/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir le groupe Membres",
+              "text": "Dans le tiroir, section « Gestion », touchez « Gestion des membres » pour révéler le sous-menu (membres, compteurs, opérations de partage).",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/en/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the Members group",
+              "text": "In the drawer, under \"Management\", tap \"Members\" to reveal the submenu (members, meters, sharing operations).",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir la liste des compteurs",
+        "en": "Open the meters list"
+      },
+      "text": {
+        "fr": "Dans le sous-menu, cliquez sur « Compteurs » pour afficher la liste des compteurs de la communauté.",
+        "en": "In the submenu, click \"Meters\" to display the community's meters."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/fr/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 579,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/fr/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 579,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--1\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir la liste des compteurs",
+              "text": "Dans le sous-menu, touchez « Compteurs » pour afficher la liste des compteurs de la communauté.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/en/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 579,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/en/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 579,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--1\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the meters list",
+              "text": "In the submenu, tap \"Meters\" to display the community's meters.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir un compteur",
+        "en": "Open a meter"
+      },
+      "text": {
+        "fr": "Cliquez sur le premier compteur de la liste pour afficher sa fiche détaillée — la sélection se fait par l'EAN du compteur.",
+        "en": "Click the first meter in the list to open its detail page — the row is matched by the meter's EAN."
+      },
+      "subtitle": {
+        "fr": "Liste des compteurs",
+        "en": "Meters list"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/fr/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 487
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/fr/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 0,
+                      "width": 358,
+                      "height": 1935.9375
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir un compteur",
+              "text": "Touchez la carte du premier compteur pour afficher sa fiche détaillée — la sélection se fait par l'EAN du compteur.",
+              "subtitle": "Liste des compteurs"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/en/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 487
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/en/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 0,
+                      "width": 358,
+                      "height": 1935.9375
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open a meter",
+              "text": "Tap the first meter card to open its detail page — the card is matched by the meter's EAN.",
+              "subtitle": "Meters list"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "EAN du compteur",
+        "en": "Meter EAN"
+      },
+      "text": {
+        "fr": "L'en-tête de la fiche affiche l'EAN du compteur tel qu'il est enregistré dans la base — c'est l'identifiant unique du point de comptage.",
+        "en": "The hero shows the meter's EAN as stored in the database — this is the unique identifier of the metering point."
+      },
+      "subtitle": {
+        "fr": "Détail du compteur",
+        "en": "Meter detail"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/fr/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/fr/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/en/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/en/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Caractéristiques techniques",
+        "en": "Technical characteristics"
+      },
+      "text": {
+        "fr": "La carte technique reprend le numéro physique du compteur et la fréquence de relevé — utile pour confirmer que la fiche correspond bien à l'appareil installé.",
+        "en": "The technical card lists the physical meter number and the reading frequency — handy for confirming the page matches the installed device."
+      },
+      "subtitle": {
+        "fr": "Détail du compteur",
+        "en": "Meter detail"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/fr/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/fr/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/en/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/en/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Onglets de consultation",
+        "en": "Browsing tabs"
+      },
+      "text": {
+        "fr": "Les onglets permettent de naviguer entre les données actuelles, l'historique, les valeurs futures et la consommation calculée du compteur.",
+        "en": "The tabs let you switch between actual, historical, future and computed consumption data for this meter."
+      },
+      "subtitle": {
+        "fr": "Onglets de données",
+        "en": "Data tabs"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/fr/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/fr/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/en/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/en/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

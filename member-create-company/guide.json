@@ -1,0 +1,1485 @@
+{
+  "version": "1.1",
+  "slug": "member-create-company",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Créer un membre entreprise",
+    "en": "Create a company member"
+  },
+  "locales": [
+    "fr",
+    "en"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir la liste des membres",
+        "en": "Open the members list"
+      },
+      "text": {
+        "fr": "Dans la section « Gestion », ouvrez « Gestion des membres » puis cliquez sur « Membres ».",
+        "en": "In the \"Management\" section, open \"Members\" then click \"Members\"."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir la liste des membres",
+              "text": "Dans le tiroir, ouvrez « Gestion des membres » puis touchez « Membres ».",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the members list",
+              "text": "In the drawer, open \"Members\" then tap \"Members\".",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Ajouter un membre",
+        "en": "Add a member"
+      },
+      "text": {
+        "fr": "Cliquez sur « Ajouter un membre » pour ouvrir l'assistant de création en quatre étapes.",
+        "en": "Click \"Add member\" to open the four-step creation wizard."
+      },
+      "subtitle": {
+        "fr": "Création d'un membre société",
+        "en": "Creating a company member"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 736.171875,
+                      "y": 52,
+                      "width": 103.921875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 840.28125,
+                      "y": 52,
+                      "width": 80.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Choisir le type « Société »",
+        "en": "Pick the \"Company\" type"
+      },
+      "text": {
+        "fr": "Sélectionnez « Société » pour créer un membre personne morale. Les champs de l'étape suivante seront adaptés : numéro d'entreprise et numéro de TVA au lieu du numéro national.",
+        "en": "Select \"Company\" to create a legal-entity member. The next step adapts its fields: company number and VAT number instead of a national number."
+      },
+      "subtitle": {
+        "fr": "Étape 1 — Type",
+        "en": "Step 1 — Type"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 728,
+                      "y": 451,
+                      "width": 248,
+                      "height": 62
+                    },
+                    "selector": "[data-testid=\"new-member-type__card--company\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": -61,
+                      "y": 462,
+                      "width": 512,
+                      "height": 62
+                    },
+                    "selector": "[data-testid=\"new-member-type__card--company\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 728,
+                      "y": 451,
+                      "width": 248,
+                      "height": 62
+                    },
+                    "selector": "[data-testid=\"new-member-type__card--company\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": -61,
+                      "y": 462,
+                      "width": 512,
+                      "height": 62
+                    },
+                    "selector": "[data-testid=\"new-member-type__card--company\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "fill-form",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Renseigner la société",
+        "en": "Fill in the company"
+      },
+      "text": {
+        "fr": "Saisissez le numéro d'entreprise, la dénomination sociale et le numéro de TVA. Une société étant une personne morale, indiquez aussi son représentant légal : numéro national, nom, e-mail et téléphone.",
+        "en": "Enter the company number, legal name and VAT number. Since a company is a legal entity, also provide its legal representative: national number, name, email and phone."
+      },
+      "subtitle": {
+        "fr": "Étape 2 — Identité",
+        "en": "Step 2 — Identity"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/desktop/step-27-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 356.25,
+                        "y": 274,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--company-number\"]",
+                      "value": "0762031208"
+                    },
+                    {
+                      "bbox": {
+                        "x": 356.25,
+                        "y": 350,
+                        "width": 355.75,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--company-name\"]",
+                      "value": "E2E Company SA"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 350,
+                        "width": 355.75,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--vat-number\"]",
+                      "value": "BE0762031208"
+                    },
+                    {
+                      "bbox": {
+                        "x": 356.25,
+                        "y": 483,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-nrn\"]",
+                      "value": "85.06.22-456.78"
+                    },
+                    {
+                      "bbox": {
+                        "x": 356.25,
+                        "y": 559,
+                        "width": 355.75,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-surname\"]",
+                      "value": "Legal"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 559,
+                        "width": 355.75,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-name\"]",
+                      "value": "Rep"
+                    },
+                    {
+                      "bbox": {
+                        "x": 356.25,
+                        "y": 635,
+                        "width": 355.75,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-email\"]",
+                      "value": "legal-rep@test.com"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 635,
+                        "width": 355.75,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-phone\"]",
+                      "value": "0470000088"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/mobile/step-27-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 180.203125,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--company-number\"]",
+                      "value": "0762031208"
+                    },
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 256.203125,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--company-name\"]",
+                      "value": "E2E Company SA"
+                    },
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 332.203125,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--vat-number\"]",
+                      "value": "BE0762031208"
+                    },
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 465.203125,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-nrn\"]",
+                      "value": "85.06.22-456.78"
+                    },
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 541.203125,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-surname\"]",
+                      "value": "Legal"
+                    },
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 617.203125,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-name\"]",
+                      "value": "Rep"
+                    },
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 693.203125,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-email\"]",
+                      "value": "legal-rep@test.com"
+                    },
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 769.203125,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-phone\"]",
+                      "value": "0470000088"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/desktop/step-27-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 374.484375,
+                        "y": 274,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--company-number\"]",
+                      "value": "0762031208"
+                    },
+                    {
+                      "bbox": {
+                        "x": 374.484375,
+                        "y": 350,
+                        "width": 337.515625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--company-name\"]",
+                      "value": "E2E Company SA"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 350,
+                        "width": 337.515625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--vat-number\"]",
+                      "value": "BE0762031208"
+                    },
+                    {
+                      "bbox": {
+                        "x": 374.484375,
+                        "y": 483,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-nrn\"]",
+                      "value": "85.06.22-456.78"
+                    },
+                    {
+                      "bbox": {
+                        "x": 374.484375,
+                        "y": 559,
+                        "width": 337.515625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-surname\"]",
+                      "value": "Legal"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 559,
+                        "width": 337.515625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-name\"]",
+                      "value": "Rep"
+                    },
+                    {
+                      "bbox": {
+                        "x": 374.484375,
+                        "y": 635,
+                        "width": 337.515625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-email\"]",
+                      "value": "legal-rep@test.com"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 635,
+                        "width": 337.515625,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-phone\"]",
+                      "value": "0470000088"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/mobile/step-27-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 180.203125,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--company-number\"]",
+                      "value": "0762031208"
+                    },
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 256.203125,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--company-name\"]",
+                      "value": "E2E Company SA"
+                    },
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 332.203125,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--vat-number\"]",
+                      "value": "BE0762031208"
+                    },
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 465.203125,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-nrn\"]",
+                      "value": "85.06.22-456.78"
+                    },
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 541.203125,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-surname\"]",
+                      "value": "Legal"
+                    },
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 617.203125,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-name\"]",
+                      "value": "Rep"
+                    },
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 693.203125,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-email\"]",
+                      "value": "legal-rep@test.com"
+                    },
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 769.203125,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-phone\"]",
+                      "value": "0470000088"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "fill-form",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Renseigner l'adresse",
+        "en": "Enter the address"
+      },
+      "text": {
+        "fr": "Complétez l'adresse du siège social. Cochez « Même adresse » pour réutiliser cette adresse comme adresse de facturation.",
+        "en": "Fill in the registered office address. Tick \"Same address\" to reuse it as the billing address."
+      },
+      "subtitle": {
+        "fr": "Étape 3 — Adresse",
+        "en": "Step 3 — Address"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/desktop/step-30-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 282,
+                        "y": 368,
+                        "width": 430,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-street\"]",
+                      "value": "Rue de la Loi"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 368,
+                        "width": 207,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-number\"]",
+                      "value": "16"
+                    },
+                    {
+                      "bbox": {
+                        "x": 282,
+                        "y": 444,
+                        "width": 207,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 505,
+                        "y": 444,
+                        "width": 653,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/mobile/step-30-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 155.203125,
+                        "width": 727.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-street\"]",
+                      "value": "Rue de la Loi"
+                    },
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 231.203125,
+                        "width": 355.734375,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-number\"]",
+                      "value": "16"
+                    },
+                    {
+                      "bbox": {
+                        "x": -168.75,
+                        "y": 307.203125,
+                        "width": 231.828125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 79.078125,
+                        "y": 307.203125,
+                        "width": 479.671875,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/desktop/step-30-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 282,
+                        "y": 368,
+                        "width": 430,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-street\"]",
+                      "value": "Rue de la Loi"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 368,
+                        "width": 207,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-number\"]",
+                      "value": "16"
+                    },
+                    {
+                      "bbox": {
+                        "x": 282,
+                        "y": 444,
+                        "width": 207,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 505,
+                        "y": 444,
+                        "width": 653,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/mobile/step-30-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 155.203125,
+                        "width": 691.03125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-street\"]",
+                      "value": "Rue de la Loi"
+                    },
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 231.203125,
+                        "width": 337.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-number\"]",
+                      "value": "16"
+                    },
+                    {
+                      "bbox": {
+                        "x": -150.515625,
+                        "y": 307.203125,
+                        "width": 219.671875,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 85.15625,
+                        "y": 307.203125,
+                        "width": 455.359375,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "fill",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Renseigner l'IBAN",
+        "en": "Enter the IBAN"
+      },
+      "text": {
+        "fr": "Saisissez l'IBAN de la société, utilisé pour les remboursements liés aux opérations de partage.",
+        "en": "Enter the company's IBAN, used for refunds tied to sharing operations."
+      },
+      "subtitle": {
+        "fr": "Étape 4 — Banque",
+        "en": "Step 4 — Banking"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 356.25,
+                      "y": 468.5,
+                      "width": 448,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"
+                  },
+                  "value": "BE68539007547034"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": -168.75,
+                      "y": 440.5,
+                      "width": 448,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"
+                  },
+                  "value": "BE68539007547034"
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 374.484375,
+                      "y": 468.5,
+                      "width": 448,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"
+                  },
+                  "value": "BE68539007547034"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": -150.515625,
+                      "y": 440.5,
+                      "width": 448,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"
+                  },
+                  "value": "BE68539007547034"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Valider la création",
+        "en": "Submit the new member"
+      },
+      "text": {
+        "fr": "Cliquez sur « Valider » pour créer la société et l'associer à la communauté active.",
+        "en": "Click \"Submit\" to create the company and attach it to the active community."
+      },
+      "subtitle": {
+        "fr": "Confirmation",
+        "en": "Confirmation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 982.875,
+                      "y": 551.5,
+                      "width": 100.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 457.875,
+                      "y": 523.5,
+                      "width": 100.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 956.53125,
+                      "y": 551.5,
+                      "width": 108.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 431.53125,
+                      "y": 523.5,
+                      "width": 108.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Reporter l'ajout d'un compteur",
+        "en": "Skip adding a meter"
+      },
+      "text": {
+        "fr": "Une fenêtre propose d'ajouter un compteur dans la foulée. Choisissez « Non » pour terminer ici.",
+        "en": "A dialog offers to add a meter right away. Pick \"No\" to stop here."
+      },
+      "subtitle": {
+        "fr": "Boîte de dialogue",
+        "en": "Confirmation dialog"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 839.1875,
+                      "y": 485,
+                      "width": 65.171875,
+                      "height": 42
+                    },
+                    "selector": "button.p-confirmdialog-reject-button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 236.21875,
+                      "y": 465,
+                      "width": 65.171875,
+                      "height": 42
+                    },
+                    "selector": "button.p-confirmdialog-reject-button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 808.96875,
+                      "y": 485,
+                      "width": 55.828125,
+                      "height": 42
+                    },
+                    "selector": "button.p-confirmdialog-reject-button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 247.953125,
+                      "y": 465,
+                      "width": 55.828125,
+                      "height": 42
+                    },
+                    "selector": "button.p-confirmdialog-reject-button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "La société est créée",
+        "en": "The company is created"
+      },
+      "text": {
+        "fr": "« E2E Company SA » figure désormais dans la liste des membres, avec l'étiquette de type « Société ».",
+        "en": "\"E2E Company SA\" now appears in the members list, tagged with the \"Company\" type."
+      },
+      "subtitle": {
+        "fr": "Confirmation",
+        "en": "Confirmation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/desktop/step-40.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/fr/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/desktop/step-40.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/en/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
