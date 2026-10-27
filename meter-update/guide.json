@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Modifier un compteur",
-    "en": "Edit a meter"
+    "en": "Edit a meter",
+    "nl": "Een meter wijzigen",
+    "de": "Zähler bearbeiten"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir la fiche du compteur",
-        "en": "Open the meter detail"
+        "en": "Open the meter detail",
+        "nl": "De meterfiche openen",
+        "de": "Die Zählerdetails öffnen"
       },
       "text": {
         "fr": "Cliquez sur la ligne du compteur que vous souhaitez modifier pour ouvrir sa fiche détaillée.",
-        "en": "Click the row of the meter you want to edit to open its detail page."
+        "en": "Click the row of the meter you want to edit to open its detail page.",
+        "nl": "Klik op de rij van de meter die u wilt wijzigen om de gedetailleerde fiche ervan te openen.",
+        "de": "Klicken Sie auf die Zeile des Zählers, den Sie ändern möchten, um seine Detailseite zu öffnen."
       },
       "subtitle": {
         "fr": "Sélection du compteur",
-        "en": "Picking the meter"
+        "en": "Picking the meter",
+        "nl": "Selectie van de meter",
+        "de": "Auswahl des Zählers"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Picking the meter"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 487
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/nl/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 0,
+                      "width": 358,
+                      "height": 1935.9375
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De meterfiche openen",
+              "text": "Tik op de kaart van de meter die u wilt wijzigen om de gedetailleerde fiche ervan te openen.",
+              "subtitle": "Selectie van de meter"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 487
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/de/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 0,
+                      "width": 358,
+                      "height": 1935.9375
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Die Zählerdetails öffnen",
+              "text": "Tippen Sie auf die Karte des Zählers, den Sie ändern möchten, um seine Detailseite zu öffnen.",
+              "subtitle": "Auswahl des Zählers"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Fiche initiale",
-        "en": "Initial detail"
+        "en": "Initial detail",
+        "nl": "Oorspronkelijke fiche",
+        "de": "Ausgangszustand"
       },
       "text": {
         "fr": "La fiche détaillée affiche les informations actuelles du compteur : EAN, adresse d'installation et caractéristiques techniques.",
-        "en": "The detail page shows the meter's current information: EAN, installation address and technical characteristics."
+        "en": "The detail page shows the meter's current information: EAN, installation address and technical characteristics.",
+        "nl": "De gedetailleerde fiche toont de huidige gegevens van de meter: EAN, installatieadres en technische kenmerken.",
+        "de": "Die Detailseite zeigt die aktuellen Angaben des Zählers: EAN, Installationsadresse und technische Merkmale."
       },
       "subtitle": {
         "fr": "Vue d'ensemble du compteur",
-        "en": "Meter overview"
+        "en": "Meter overview",
+        "nl": "Overzicht van de meter",
+        "de": "Zählerübersicht"
       },
       "captures": {
         "fr": {
@@ -224,6 +346,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/nl/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/nl/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/de/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/de/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -236,15 +410,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir le formulaire",
-        "en": "Open the edit form"
+        "en": "Open the edit form",
+        "nl": "Het formulier openen",
+        "de": "Das Formular öffnen"
       },
       "text": {
         "fr": "Cliquez sur « Modifier » : un dialogue s'ouvre avec les champs modifiables du compteur (adresse, numéro, EAN et caractéristiques).",
-        "en": "Click \"Modify\" to open the dialog containing the meter's editable fields (address, number, EAN and characteristics)."
+        "en": "Click \"Modify\" to open the dialog containing the meter's editable fields (address, number, EAN and characteristics).",
+        "nl": "Klik op “Wijzigen”: er opent een dialoogvenster met de wijzigbare velden van de meter (adres, nummer, EAN en kenmerken).",
+        "de": "Klicken Sie auf „Bearbeiten“: Ein Dialogfenster mit den bearbeitbaren Feldern des Zählers öffnet sich (Adresse, Nummer, EAN und Merkmale)."
       },
       "subtitle": {
         "fr": "Modification du compteur",
-        "en": "Updating the meter"
+        "en": "Updating the meter",
+        "nl": "Wijziging van de meter",
+        "de": "Änderung des Zählers"
       },
       "captures": {
         "fr": {
@@ -342,6 +522,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/nl/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1256.09375,
+                      "y": 88,
+                      "width": 112.90625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-view__btn--modify\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/nl/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 310,
+                      "width": 112.90625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-view__btn--modify\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/de/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1240.71875,
+                      "y": 88,
+                      "width": 128.28125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-view__btn--modify\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/de/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 189.0625,
+                      "y": 310,
+                      "width": 128.28125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-view__btn--modify\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -354,15 +630,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Mettre à jour l'adresse",
-        "en": "Update the address"
+        "en": "Update the address",
+        "nl": "Het adres bijwerken",
+        "de": "Die Adresse aktualisieren"
       },
       "text": {
         "fr": "Modifiez les champs souhaités — ici l'adresse d'installation et le numéro physique du compteur. L'EAN et les caractéristiques techniques restent inchangés.",
-        "en": "Edit the fields you want to change — here the installation address and the meter's physical number. The EAN and technical characteristics stay the same."
+        "en": "Edit the fields you want to change — here the installation address and the meter's physical number. The EAN and technical characteristics stay the same.",
+        "nl": "Wijzig de gewenste velden — hier het installatieadres en het fysieke nummer van de meter. De EAN en de technische kenmerken blijven ongewijzigd.",
+        "de": "Ändern Sie die gewünschten Felder — hier die Installationsadresse und die physische Nummer des Zählers. Der EAN und die technischen Merkmale bleiben unverändert."
       },
       "subtitle": {
         "fr": "Modification du compteur",
-        "en": "Updating the meter"
+        "en": "Updating the meter",
+        "nl": "Wijziging van de meter",
+        "de": "Änderung des Zählers"
       },
       "captures": {
         "fr": {
@@ -380,7 +662,7 @@
                     {
                       "bbox": {
                         "x": 457,
-                        "y": 308,
+                        "y": 300,
                         "width": 255,
                         "height": 42
                       },
@@ -390,7 +672,7 @@
                     {
                       "bbox": {
                         "x": 728,
-                        "y": 308,
+                        "y": 300,
                         "width": 119.5,
                         "height": 42
                       },
@@ -400,7 +682,7 @@
                     {
                       "bbox": {
                         "x": 863.5,
-                        "y": 308,
+                        "y": 300,
                         "width": 119.5,
                         "height": 42
                       },
@@ -410,7 +692,7 @@
                     {
                       "bbox": {
                         "x": 457,
-                        "y": 384,
+                        "y": 376,
                         "width": 119.5,
                         "height": 42
                       },
@@ -420,7 +702,7 @@
                     {
                       "bbox": {
                         "x": 592.5,
-                        "y": 384,
+                        "y": 376,
                         "width": 390.5,
                         "height": 42
                       },
@@ -430,7 +712,7 @@
                     {
                       "bbox": {
                         "x": 728,
-                        "y": 517,
+                        "y": 509,
                         "width": 255,
                         "height": 42
                       },
@@ -506,7 +788,7 @@
                     {
                       "bbox": {
                         "x": 37,
-                        "y": 658.203125,
+                        "y": 696.578125,
                         "width": 316,
                         "height": 42
                       },
@@ -534,7 +816,7 @@
                     {
                       "bbox": {
                         "x": 457,
-                        "y": 308,
+                        "y": 300,
                         "width": 255,
                         "height": 42
                       },
@@ -544,7 +826,7 @@
                     {
                       "bbox": {
                         "x": 728,
-                        "y": 308,
+                        "y": 300,
                         "width": 119.5,
                         "height": 42
                       },
@@ -554,7 +836,7 @@
                     {
                       "bbox": {
                         "x": 863.5,
-                        "y": 308,
+                        "y": 300,
                         "width": 119.5,
                         "height": 42
                       },
@@ -564,7 +846,7 @@
                     {
                       "bbox": {
                         "x": 457,
-                        "y": 384,
+                        "y": 376,
                         "width": 119.5,
                         "height": 42
                       },
@@ -574,7 +856,7 @@
                     {
                       "bbox": {
                         "x": 592.5,
-                        "y": 384,
+                        "y": 376,
                         "width": 390.5,
                         "height": 42
                       },
@@ -584,7 +866,7 @@
                     {
                       "bbox": {
                         "x": 728,
-                        "y": 517,
+                        "y": 509,
                         "width": 255,
                         "height": 42
                       },
@@ -660,8 +942,316 @@
                     {
                       "bbox": {
                         "x": 37,
-                        "y": 658.203125,
+                        "y": 696.578125,
                         "width": 316,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--meter-number\"]",
+                      "value": "M1-E2E-UPDATED"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/nl/desktop/step-21-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 457,
+                        "y": 300,
+                        "width": 255,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--street\"]",
+                      "value": "Avenue de l’Énergie"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 300,
+                        "width": 119.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--address-number\"]",
+                      "value": "99"
+                    },
+                    {
+                      "bbox": {
+                        "x": 863.5,
+                        "y": 300,
+                        "width": 119.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--address-supplement\"]",
+                      "value": "B"
+                    },
+                    {
+                      "bbox": {
+                        "x": 457,
+                        "y": 376,
+                        "width": 119.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--postcode\"]",
+                      "value": "5000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 592.5,
+                        "y": 376,
+                        "width": 390.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--city\"]",
+                      "value": "Namur"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 509,
+                        "width": 255,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--meter-number\"]",
+                      "value": "M1-E2E-UPDATED"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/nl/mobile/step-21-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 267,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--street\"]",
+                      "value": "Avenue de l’Énergie"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 343,
+                        "width": 158,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--address-number\"]",
+                      "value": "99"
+                    },
+                    {
+                      "bbox": {
+                        "x": 203,
+                        "y": 343,
+                        "width": 158,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--address-supplement\"]",
+                      "value": "B"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 419,
+                        "width": 100,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--postcode\"]",
+                      "value": "5000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 145,
+                        "y": 419,
+                        "width": 216,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--city\"]",
+                      "value": "Namur"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 666.375,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--meter-number\"]",
+                      "value": "M1-E2E-UPDATED"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/de/desktop/step-21-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 457,
+                        "y": 300,
+                        "width": 255,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--street\"]",
+                      "value": "Avenue de l’Énergie"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 300,
+                        "width": 119.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--address-number\"]",
+                      "value": "99"
+                    },
+                    {
+                      "bbox": {
+                        "x": 863.5,
+                        "y": 300,
+                        "width": 119.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--address-supplement\"]",
+                      "value": "B"
+                    },
+                    {
+                      "bbox": {
+                        "x": 457,
+                        "y": 376,
+                        "width": 119.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--postcode\"]",
+                      "value": "5000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 592.5,
+                        "y": 376,
+                        "width": 390.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--city\"]",
+                      "value": "Namur"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 509,
+                        "width": 255,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--meter-number\"]",
+                      "value": "M1-E2E-UPDATED"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/de/mobile/step-21-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 267,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--street\"]",
+                      "value": "Avenue de l’Énergie"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 343,
+                        "width": 158,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--address-number\"]",
+                      "value": "99"
+                    },
+                    {
+                      "bbox": {
+                        "x": 203,
+                        "y": 343,
+                        "width": 158,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--address-supplement\"]",
+                      "value": "B"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 419,
+                        "width": 100,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--postcode\"]",
+                      "value": "5000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 145,
+                        "y": 419,
+                        "width": 216,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-update__input--city\"]",
+                      "value": "Namur"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 666.375,
+                        "width": 332,
                         "height": 42
                       },
                       "selector": "[data-testid=\"meter-update__input--meter-number\"]",
@@ -684,15 +1274,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Enregistrer",
-        "en": "Save"
+        "en": "Save",
+        "nl": "Opslaan",
+        "de": "Speichern"
       },
       "text": {
         "fr": "Cliquez sur « Valider » pour envoyer les modifications au CRM. Le dialogue se ferme une fois la mise à jour confirmée.",
-        "en": "Click \"Save\" to send the changes to the CRM. The dialog closes once the update is acknowledged."
+        "en": "Click \"Save\" to send the changes to the CRM. The dialog closes once the update is acknowledged.",
+        "nl": "Klik op “Bevestigen” om de wijzigingen naar het CRM te sturen. Het dialoogvenster sluit zodra de update is bevestigd.",
+        "de": "Klicken Sie auf „Bestätigen“, um die Änderungen an das CRM zu senden. Das Dialogfenster schließt sich, sobald die Aktualisierung bestätigt ist."
       },
       "subtitle": {
         "fr": "Enregistrement",
-        "en": "Saving"
+        "en": "Saving",
+        "nl": "Wijzigingen opslaan",
+        "de": "Speichern der Änderungen"
       },
       "captures": {
         "fr": {
@@ -709,7 +1305,7 @@
                   "target": {
                     "bbox": {
                       "x": 882.125,
-                      "y": 776,
+                      "y": 806.375,
                       "width": 100.875,
                       "height": 42
                     },
@@ -732,7 +1328,7 @@
                   "target": {
                     "bbox": {
                       "x": 252.125,
-                      "y": 731.203125,
+                      "y": 731.578125,
                       "width": 100.875,
                       "height": 42
                     },
@@ -757,7 +1353,7 @@
                   "target": {
                     "bbox": {
                       "x": 874.015625,
-                      "y": 776,
+                      "y": 806.375,
                       "width": 108.984375,
                       "height": 42
                     },
@@ -780,8 +1376,104 @@
                   "target": {
                     "bbox": {
                       "x": 244.015625,
-                      "y": 731.203125,
+                      "y": 731.578125,
                       "width": 108.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/nl/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 853,
+                      "y": 790.375,
+                      "width": 130,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/nl/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 231,
+                      "y": 781.375,
+                      "width": 130,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/de/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 855.359375,
+                      "y": 806.375,
+                      "width": 127.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/de/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 233.359375,
+                      "y": 781.375,
+                      "width": 127.640625,
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-update__btn--submit\"]"
@@ -802,15 +1494,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Compteur mis à jour",
-        "en": "Meter updated"
+        "en": "Meter updated",
+        "nl": "Meter bijgewerkt",
+        "de": "Zähler aktualisiert"
       },
       "text": {
         "fr": "De retour sur la fiche du compteur, la nouvelle adresse et le nouveau numéro sont visibles immédiatement — la modification est persistée côté serveur.",
-        "en": "Back on the meter detail page, the new address and meter number appear immediately — the change has been persisted server-side."
+        "en": "Back on the meter detail page, the new address and meter number appear immediately — the change has been persisted server-side.",
+        "nl": "Terug op de meterfiche zijn het nieuwe adres en het nieuwe nummer meteen zichtbaar — de wijziging is aan de serverzijde opgeslagen.",
+        "de": "Zurück auf der Detailseite des Zählers sind die neue Adresse und die neue Nummer sofort sichtbar — die Änderung ist serverseitig gespeichert."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -856,6 +1554,58 @@
             "frames": [
               {
                 "screenshot": "../assets/meter-update/en/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-update/de/mobile/step-27.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

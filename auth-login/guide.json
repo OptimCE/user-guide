@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Se connecter",
-    "en": "Sign in"
+    "en": "Sign in",
+    "nl": "Aanmelden",
+    "de": "Anmelden"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir l'application",
-        "en": "Open the app"
+        "en": "Open the app",
+        "nl": "De applicatie openen",
+        "de": "Die Anwendung öffnen"
       },
       "text": {
         "fr": "Ouvrez l'application OptimCE CRM dans votre navigateur — la page d'accueil propose un bouton de connexion.",
-        "en": "Open the OptimCE CRM application in your browser — the landing page exposes a login entry point."
+        "en": "Open the OptimCE CRM application in your browser — the landing page exposes a login entry point.",
+        "nl": "Open de applicatie OptimCE CRM in uw browser — de startpagina biedt een knop om u aan te melden.",
+        "de": "Öffnen Sie die Anwendung OptimCE CRM in Ihrem Browser — die Startseite bietet eine Schaltfläche zum Anmelden."
       },
       "subtitle": {
         "fr": "Accès à OptimCE CRM",
-        "en": "Accessing OptimCE CRM"
+        "en": "Accessing OptimCE CRM",
+        "nl": "Toegang tot OptimCE CRM",
+        "de": "Zugang zu OptimCE CRM"
       },
       "captures": {
         "fr": {
@@ -96,6 +106,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/nl/desktop/step-01.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/nl/mobile/step-01.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/de/desktop/step-01.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/de/mobile/step-01.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -108,15 +170,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Lancer la connexion",
-        "en": "Start the login"
+        "en": "Start the login",
+        "nl": "De aanmelding starten",
+        "de": "Die Anmeldung starten"
       },
       "text": {
         "fr": "Cliquez sur le bouton « Se connecter » pour être redirigé vers le formulaire de Keycloak.",
-        "en": "Click the login button to be redirected to the Keycloak login form."
+        "en": "Click the login button to be redirected to the Keycloak login form.",
+        "nl": "Klik op de knop “Aanmelden” om naar het aanmeldformulier van Keycloak te worden doorgestuurd.",
+        "de": "Klicken Sie auf die Schaltfläche „Anmelden“, um zum Anmeldeformular von Keycloak weitergeleitet zu werden."
       },
       "subtitle": {
         "fr": "Accès à OptimCE CRM",
-        "en": "Accessing OptimCE CRM"
+        "en": "Accessing OptimCE CRM",
+        "nl": "Toegang tot OptimCE CRM",
+        "de": "Zugang zu OptimCE CRM"
       },
       "captures": {
         "fr": {
@@ -156,7 +224,7 @@
                   "target": {
                     "bbox": {
                       "x": 99.984375,
-                      "y": 744.078125,
+                      "y": 246.15625,
                       "width": 190.015625,
                       "height": 48.375
                     },
@@ -204,8 +272,104 @@
                   "target": {
                     "bbox": {
                       "x": 135.53125,
-                      "y": 738.640625,
+                      "y": 246.15625,
                       "width": 118.9375,
+                      "height": 48.375
+                    },
+                    "selector": "[data-testid=\"auth-page__button--login\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/nl/desktop/step-02.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1025.609375,
+                      "y": 527.5625,
+                      "width": 156.765625,
+                      "height": 48.375
+                    },
+                    "selector": "[data-testid=\"auth-page__button--login\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/nl/mobile/step-02.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 116.609375,
+                      "y": 246.328125,
+                      "width": 156.765625,
+                      "height": 48.375
+                    },
+                    "selector": "[data-testid=\"auth-page__button--login\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/de/desktop/step-02.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1029.796875,
+                      "y": 527.5625,
+                      "width": 148.40625,
+                      "height": 48.375
+                    },
+                    "selector": "[data-testid=\"auth-page__button--login\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/de/mobile/step-02.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 120.796875,
+                      "y": 243.796875,
+                      "width": 148.40625,
                       "height": 48.375
                     },
                     "selector": "[data-testid=\"auth-page__button--login\"]"
@@ -226,15 +390,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Saisir vos identifiants",
-        "en": "Enter your credentials"
+        "en": "Enter your credentials",
+        "nl": "Uw aanmeldgegevens invoeren",
+        "de": "Ihre Anmeldedaten eingeben"
       },
       "text": {
         "fr": "Renseignez votre nom d'utilisateur et votre mot de passe Keycloak. Ces identifiants sont gérés par le serveur d'authentification, pas par OptimCE.",
-        "en": "Fill in your Keycloak username and password. These credentials are managed by the authentication server, not by OptimCE itself."
+        "en": "Fill in your Keycloak username and password. These credentials are managed by the authentication server, not by OptimCE itself.",
+        "nl": "Vul uw Keycloak-gebruikersnaam en -wachtwoord in. Deze aanmeldgegevens worden beheerd door de authenticatieserver, niet door OptimCE.",
+        "de": "Geben Sie Ihren Keycloak-Benutzernamen und Ihr Passwort ein. Diese Anmeldedaten werden vom Authentifizierungsserver verwaltet, nicht von OptimCE."
       },
       "subtitle": {
         "fr": "Connexion à Keycloak",
-        "en": "Login to Keycloak"
+        "en": "Login to Keycloak",
+        "nl": "Aanmelden bij Keycloak",
+        "de": "Anmeldung bei Keycloak"
       },
       "captures": {
         "fr": {
@@ -384,6 +554,154 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/nl/desktop/step-04-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 531,
+                        "y": 415.5,
+                        "width": 378,
+                        "height": 48
+                      },
+                      "selector": "[id=\"username\"]",
+                      "value": "demo"
+                    },
+                    {
+                      "bbox": {
+                        "x": 531,
+                        "y": 508.5,
+                        "width": 378,
+                        "height": 48
+                      },
+                      "selector": "[id=\"password\"]",
+                      "value": "demo"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/nl/mobile/step-04-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 41,
+                        "y": 385,
+                        "width": 308,
+                        "height": 48
+                      },
+                      "selector": "[id=\"username\"]",
+                      "value": "demo"
+                    },
+                    {
+                      "bbox": {
+                        "x": 41,
+                        "y": 478,
+                        "width": 308,
+                        "height": 48
+                      },
+                      "selector": "[id=\"password\"]",
+                      "value": "demo"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/de/desktop/step-04-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 531,
+                        "y": 415.5,
+                        "width": 378,
+                        "height": 48
+                      },
+                      "selector": "[id=\"username\"]",
+                      "value": "demo"
+                    },
+                    {
+                      "bbox": {
+                        "x": 531,
+                        "y": 508.5,
+                        "width": 378,
+                        "height": 48
+                      },
+                      "selector": "[id=\"password\"]",
+                      "value": "demo"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/de/mobile/step-04-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 41,
+                        "y": 385,
+                        "width": 308,
+                        "height": 48
+                      },
+                      "selector": "[id=\"username\"]",
+                      "value": "demo"
+                    },
+                    {
+                      "bbox": {
+                        "x": 41,
+                        "y": 478,
+                        "width": 308,
+                        "height": 48
+                      },
+                      "selector": "[id=\"password\"]",
+                      "value": "demo"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -396,15 +714,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir le profil",
-        "en": "Open the profile"
+        "en": "Open the profile",
+        "nl": "Het profiel openen",
+        "de": "Das Profil öffnen"
       },
       "text": {
         "fr": "Dans la barre latérale de gauche, cliquez sur « Profil » pour afficher la page de votre compte personnel.",
-        "en": "In the left sidebar, click \"Profile\" to display your personal account page."
+        "en": "In the left sidebar, click \"Profile\" to display your personal account page.",
+        "nl": "Klik in de linkerzijbalk op “Profiel” om de pagina van uw persoonlijke account weer te geven.",
+        "de": "Klicken Sie in der linken Seitenleiste auf „Profil“, um die Seite Ihres persönlichen Kontos anzuzeigen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -512,6 +836,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/nl/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/nl/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Het profiel openen",
+              "text": "Tik linksboven op het menupictogram om de navigatielade te openen en daarna op “Profiel” om uw persoonlijke account weer te geven.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/de/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/de/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Das Profil öffnen",
+              "text": "Tippen Sie oben links auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Profil“, um Ihr persönliches Konto anzuzeigen.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -524,15 +954,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Profil affiché",
-        "en": "Profile displayed"
+        "en": "Profile displayed",
+        "nl": "Profiel weergegeven",
+        "de": "Profil angezeigt"
       },
       "text": {
         "fr": "Votre profil est bien affiché : informations personnelles, avatar et carte de compte sont chargés depuis le CRM.",
-        "en": "Your profile is displayed: personal info, avatar and account card are loaded from the CRM."
+        "en": "Your profile is displayed: personal info, avatar and account card are loaded from the CRM.",
+        "nl": "Uw profiel wordt correct weergegeven: persoonlijke gegevens, avatar en accountkaart worden uit het CRM geladen.",
+        "de": "Ihr Profil wird korrekt angezeigt: Persönliche Daten, Avatar und Kontokarte werden aus dem CRM geladen."
       },
       "subtitle": {
         "fr": "Arrivée sur le profil",
-        "en": "Landing on the profile"
+        "en": "Landing on the profile",
+        "nl": "Aankomst op het profiel",
+        "de": "Ankunft im Profil"
       },
       "captures": {
         "fr": {
@@ -578,6 +1014,58 @@
             "frames": [
               {
                 "screenshot": "../assets/auth-login/en/mobile/step-16.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/nl/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/nl/mobile/step-16.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/de/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/auth-login/de/mobile/step-16.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

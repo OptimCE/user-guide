@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Een deeloperatie factureren, van tarief tot betaling — OptimCE — Gebruikershandleidingen</title>
+    <meta name="description" content="Gedeelde energie van begin tot eind factureren: tarief, meetbestand, facturatie-uitvoering, uitgifte van de facturen en inning.">
+    <link rel="canonical" href="https://guide.optimce.be/billing-tarification-pay/nl.html">
+    <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/billing-tarification-pay/fr.html">
+    <link rel="alternate" hreflang="en" href="https://guide.optimce.be/billing-tarification-pay/en.html">
+    <link rel="alternate" hreflang="nl" href="https://guide.optimce.be/billing-tarification-pay/nl.html">
+    <link rel="alternate" hreflang="de" href="https://guide.optimce.be/billing-tarification-pay/de.html">
+    <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/billing-tarification-pay/fr.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Een deeloperatie factureren, van tarief tot betaling">
+    <meta property="og:description" content="Gedeelde energie van begin tot eind factureren: tarief, meetbestand, facturatie-uitvoering, uitgifte van de facturen en inning.">
+    <meta property="og:url" content="https://guide.optimce.be/billing-tarification-pay/nl.html">
+    <meta property="og:site_name" content="OptimCE — Gebruikershandleidingen">
+    <meta property="og:image" content="https://guide.optimce.be/assets/billing-tarification-pay/nl/desktop/step-14.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Remember the language of the file we just loaded: interactive.html is one
+        // URL for every locale and opens in this language when no ?lang= is given.
+        try { localStorage.setItem("oce-lang", "nl"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.nl.html" aria-label="OptimCE — Gebruikershandleidingen">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.nl.html">OptimCE — Gebruikershandleidingen</a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.nl.html">Startpagina</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../billing/nl.html">Facturatie</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">Een deeloperatie factureren, van tarief tot betaling</span>
+        </nav>
+
+        <div class="steppy-header-actions">
+<label class="steppy-locale-select">
+    <span class="steppy-visually-hidden">Taal</span>
+    <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <select autocomplete="off">        <option value="./fr.html" lang="fr">Français</option>        <option value="./en.html" lang="en">English</option>        <option value="./nl.html" lang="nl" selected>Nederlands</option>        <option value="./de.html" lang="de">Deutsch</option>    </select>
+    <svg class="steppy-locale-select-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</label>
+<script>
+  (function () {
+    var sel = document.querySelector(".steppy-locale-select select");
+    if (!sel) return;
+    sel.addEventListener("change", function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+    // Back from the language just picked can restore this page from the
+    // bfcache with that option still showing — snap it back to this page's own.
+    window.addEventListener("pageshow", function () {
+      var own = sel.querySelector("option[selected]");
+      if (own) sel.value = own.value;
+    });
+  })();
+</script>            <button type="button" class="oce-theme-toggle" aria-label="Thema wisselen">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-mode-switch" aria-label="Guide mode">
+            <ul>
+                <li>
+                    <span aria-current="true">Stap voor stap</span>
+                </li>
+                <li>
+                    <a href="./interactive.html?lang=nl">Interactief</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Een deeloperatie factureren, van tarief tot betaling</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>De facturatie openen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigatie</div>
+        <div class="steppy-step-content">Klik in de sectie “Gemeenschap” van de zijbalk op “Facturatie” om de facturatiemodule van de gemeenschap te openen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-14.png" alt="1. De facturatie openen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>De facturatiemodule</span>
+        </h2>
+        <div class="steppy-step-subtitle">Facturatie</div>
+        <div class="steppy-step-content">De module opent op het tabblad “Tarieven”. Hier legt u de prijs van de gedeelde energie vast voordat u de facturen genereert. Daarna volgen de tabbladen “Factuur genereren” en “Overzicht”.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-20.png" alt="2. De facturatiemodule" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>De deeloperatie kiezen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 1 — Tarieven</div>
+        <div class="steppy-step-content">Selecteer de te factureren deeloperatie — hier “Public Wind Sharing”. Tarieven en facturen zijn altijd aan een operatie gekoppeld.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-21.png" alt="3. De deeloperatie kiezen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Een tarief toevoegen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 1 — Tarieven</div>
+        <div class="steppy-step-content">Klik op “Nieuw tarief” om het aanmaakvenster te openen. Standaard geldt het tarief voor de verkoop aan verbruikers en voor de hele operatie.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-22.png" alt="4. Een tarief toevoegen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Het tarief invullen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 1 — Tarieven</div>
+        <div class="steppy-step-content">Geef de prijs per gedeelde kWh op (0,1200 €), de begindatum van de geldigheid en een label. De soort “Verkoopprijs voor verbruiker” en het bereik “Globaal” zijn geschikt om de hele operatie te factureren.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-26.png" alt="5. Het tarief invullen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Het tarief aanmaken</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 1 — Tarieven</div>
+        <div class="steppy-step-content">Klik op “Tarief aanmaken”. Het verschijnt meteen in de lijst en wordt gebruikt om de facturen te berekenen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-27.png" alt="6. Het tarief aanmaken" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Een terugkooptarief toevoegen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 1 — Tarieven</div>
+        <div class="steppy-step-content">De windoperatie telt producenten: ook voor hun gedeelde injectie is een tarief nodig. Open opnieuw “Nieuw tarief” om een terugkooptarief aan te maken.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-30.png" alt="7. Een terugkooptarief toevoegen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>De soort “Terugkoopprijs voor producent” kiezen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 1 — Tarieven</div>
+        <div class="steppy-step-content">Selecteer de soort “Terugkoopprijs voor producent”. Dit tarief vergoedt de energie die de producenten injecteren en met de gemeenschap delen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-32.png" alt="8. De soort “Terugkoopprijs voor producent” kiezen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>De tarieven zijn opgeslagen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 1 — Tarieven</div>
+        <div class="steppy-step-content">De operatie heeft nu een verkooptarief voor verbruikers en een terugkooptarief voor producenten. Tijd om de facturen te genereren.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-38.png" alt="9. De tarieven zijn opgeslagen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Naar het genereren</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 2 — Genereren</div>
+        <div class="steppy-step-content">Open het tabblad “Factuur genereren”. Hier importeert u de verbruiksgegevens en start u de berekening van de facturen over een periode.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-39.png" alt="10. Naar het genereren" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>De te factureren operatie kiezen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 2 — Genereren</div>
+        <div class="steppy-step-content">Selecteer opnieuw “Public Wind Sharing”. De zone om de verbruiksmeetgegevens te importeren verschijnt.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-40.png" alt="11. De te factureren operatie kiezen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>De RESA-meetgegevens importeren</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 2 — Genereren</div>
+        <div class="steppy-step-content">Zet het RESA-bestand van de operatie (de kwartierwaarden van de maand) neer in de importzone. Het levert de gedeelde energie die zal worden gefactureerd.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-41.png" alt="12. De RESA-meetgegevens importeren" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="13">
+        <h2>
+            <span class="steppy-step-number">13</span>
+            <span>De periode bepalen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 2 — Genereren</div>
+        <div class="steppy-step-content">Kies de te factureren periode — hier februari 2025, de maand die het geïmporteerde bestand dekt. De facturatie heeft betrekking op de gedeelde energie van die periode.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-44.png" alt="13. De periode bepalen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="14">
+        <h2>
+            <span class="steppy-step-number">14</span>
+            <span>De facturen genereren</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 2 — Genereren</div>
+        <div class="steppy-step-content">Klik op “Genereren”. De berekening loopt op de achtergrond: zodra ze klaar is, verschijnen de facturen van elk lid van de operatie.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-45.png" alt="14. De facturen genereren" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="15">
+        <h2>
+            <span class="steppy-step-number">15</span>
+            <span>De facturen zijn gegenereerd</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 2 — Genereren</div>
+        <div class="steppy-step-content">Elk lid van de operatie heeft nu een factuur met de status “Concept”. U moet ze nog uitreiken en daarna de betaling ervan registreren.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-47.png" alt="15. De facturen zijn gegenereerd" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="16">
+        <h2>
+            <span class="steppy-step-number">16</span>
+            <span>De factuur uitreiken</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 3 — Uitreiken en innen</div>
+        <div class="steppy-step-content">Klik op het pictogram “Uitreiken” van een factuur. Ze krijgt een wettelijk nummer en een gestructureerde mededeling, en haar status wordt “Uitgereikt”.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-48.png" alt="16. De factuur uitreiken" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="17">
+        <h2>
+            <span class="steppy-step-number">17</span>
+            <span>Een betaling registreren</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 3 — Uitreiken en innen</div>
+        <div class="steppy-step-content">Zodra de factuur is uitgereikt, verschijnt het pictogram “Betaling registreren” (portefeuille). Klik erop om het betalingsvenster te openen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-50.png" alt="17. Een betaling registreren" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="18">
+        <h2>
+            <span class="steppy-step-number">18</span>
+            <span>De betaling bevestigen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 3 — Uitreiken en innen</div>
+        <div class="steppy-step-content">Het bedrag is vooraf ingevuld met het totaal van de factuur en de standaardbetaalmethode is “Overschrijving”. Klik op “Betaling registreren”: de factuur krijgt de status “Betaald”.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-52.png" alt="18. De betaling bevestigen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="19">
+        <h2>
+            <span class="steppy-step-number">19</span>
+            <span>De factuur is betaald</span>
+        </h2>
+        <div class="steppy-step-subtitle">Facturatie</div>
+        <div class="steppy-step-content">De betaling is geregistreerd en de factuur heeft nu de status “Betaald”. De volledige cyclus — tarief, generatie, uitreiking, inning — is voltooid.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/desktop/step-54.png" alt="19. De factuur is betaald" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Een deeloperatie factureren, van tarief tot betaling</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>De facturatie openen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigatie</div>
+        <div class="steppy-step-content">Tik op het menupictogram om de navigatielade te openen en tik daarna in de sectie “Gemeenschap” op “Facturatie”.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-17.png" alt="1. De facturatie openen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>De facturatiemodule</span>
+        </h2>
+        <div class="steppy-step-subtitle">Facturatie</div>
+        <div class="steppy-step-content">De module opent op het tabblad “Tarieven”. Hier legt u de prijs van de gedeelde energie vast voordat u de facturen genereert. Daarna volgen de tabbladen “Factuur genereren” en “Overzicht”.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-20.png" alt="2. De facturatiemodule" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>De deeloperatie kiezen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 1 — Tarieven</div>
+        <div class="steppy-step-content">Selecteer de te factureren deeloperatie — hier “Public Wind Sharing”. Tarieven en facturen zijn altijd aan een operatie gekoppeld.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-21.png" alt="3. De deeloperatie kiezen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Een tarief toevoegen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 1 — Tarieven</div>
+        <div class="steppy-step-content">Klik op “Nieuw tarief” om het aanmaakvenster te openen. Standaard geldt het tarief voor de verkoop aan verbruikers en voor de hele operatie.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-22.png" alt="4. Een tarief toevoegen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Het tarief invullen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 1 — Tarieven</div>
+        <div class="steppy-step-content">Geef de prijs per gedeelde kWh op (0,1200 €), de begindatum van de geldigheid en een label. De soort “Verkoopprijs voor verbruiker” en het bereik “Globaal” zijn geschikt om de hele operatie te factureren.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-26.png" alt="5. Het tarief invullen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Het tarief aanmaken</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 1 — Tarieven</div>
+        <div class="steppy-step-content">Klik op “Tarief aanmaken”. Het verschijnt meteen in de lijst en wordt gebruikt om de facturen te berekenen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-27.png" alt="6. Het tarief aanmaken" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Een terugkooptarief toevoegen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 1 — Tarieven</div>
+        <div class="steppy-step-content">De windoperatie telt producenten: ook voor hun gedeelde injectie is een tarief nodig. Open opnieuw “Nieuw tarief” om een terugkooptarief aan te maken.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-30.png" alt="7. Een terugkooptarief toevoegen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>De soort “Terugkoopprijs voor producent” kiezen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 1 — Tarieven</div>
+        <div class="steppy-step-content">Selecteer de soort “Terugkoopprijs voor producent”. Dit tarief vergoedt de energie die de producenten injecteren en met de gemeenschap delen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-32.png" alt="8. De soort “Terugkoopprijs voor producent” kiezen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>De tarieven zijn opgeslagen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 1 — Tarieven</div>
+        <div class="steppy-step-content">De operatie heeft nu een verkooptarief voor verbruikers en een terugkooptarief voor producenten. Tijd om de facturen te genereren.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-38.png" alt="9. De tarieven zijn opgeslagen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Naar het genereren</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 2 — Genereren</div>
+        <div class="steppy-step-content">Open het tabblad “Factuur genereren”. Hier importeert u de verbruiksgegevens en start u de berekening van de facturen over een periode.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-39.png" alt="10. Naar het genereren" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>De te factureren operatie kiezen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 2 — Genereren</div>
+        <div class="steppy-step-content">Selecteer opnieuw “Public Wind Sharing”. De zone om de verbruiksmeetgegevens te importeren verschijnt.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-40.png" alt="11. De te factureren operatie kiezen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>De RESA-meetgegevens importeren</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 2 — Genereren</div>
+        <div class="steppy-step-content">Zet het RESA-bestand van de operatie (de kwartierwaarden van de maand) neer in de importzone. Het levert de gedeelde energie die zal worden gefactureerd.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-41.png" alt="12. De RESA-meetgegevens importeren" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="13">
+        <h2>
+            <span class="steppy-step-number">13</span>
+            <span>De periode bepalen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 2 — Genereren</div>
+        <div class="steppy-step-content">Kies de te factureren periode — hier februari 2025, de maand die het geïmporteerde bestand dekt. De facturatie heeft betrekking op de gedeelde energie van die periode.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-44.png" alt="13. De periode bepalen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="14">
+        <h2>
+            <span class="steppy-step-number">14</span>
+            <span>De facturen genereren</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 2 — Genereren</div>
+        <div class="steppy-step-content">Klik op “Genereren”. De berekening loopt op de achtergrond: zodra ze klaar is, verschijnen de facturen van elk lid van de operatie.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-45.png" alt="14. De facturen genereren" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="15">
+        <h2>
+            <span class="steppy-step-number">15</span>
+            <span>De facturen zijn gegenereerd</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 2 — Genereren</div>
+        <div class="steppy-step-content">Elk lid van de operatie heeft nu een factuur met de status “Concept”. U moet ze nog uitreiken en daarna de betaling ervan registreren.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-47.png" alt="15. De facturen zijn gegenereerd" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="16">
+        <h2>
+            <span class="steppy-step-number">16</span>
+            <span>De factuur uitreiken</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 3 — Uitreiken en innen</div>
+        <div class="steppy-step-content">Klik op het pictogram “Uitreiken” van een factuur. Ze krijgt een wettelijk nummer en een gestructureerde mededeling, en haar status wordt “Uitgereikt”.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-48.png" alt="16. De factuur uitreiken" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="17">
+        <h2>
+            <span class="steppy-step-number">17</span>
+            <span>Een betaling registreren</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 3 — Uitreiken en innen</div>
+        <div class="steppy-step-content">Zodra de factuur is uitgereikt, verschijnt het pictogram “Betaling registreren” (portefeuille). Klik erop om het betalingsvenster te openen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-50.png" alt="17. Een betaling registreren" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="18">
+        <h2>
+            <span class="steppy-step-number">18</span>
+            <span>De betaling bevestigen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Stap 3 — Uitreiken en innen</div>
+        <div class="steppy-step-content">Het bedrag is vooraf ingevuld met het totaal van de factuur en de standaardbetaalmethode is “Overschrijving”. Klik op “Betaling registreren”: de factuur krijgt de status “Betaald”.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-52.png" alt="18. De betaling bevestigen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="19">
+        <h2>
+            <span class="steppy-step-number">19</span>
+            <span>De factuur is betaald</span>
+        </h2>
+        <div class="steppy-step-subtitle">Facturatie</div>
+        <div class="steppy-step-content">De betaling is geregistreerd en de factuur heeft nu de status “Betaald”. De volledige cyclus — tarief, generatie, uitreiking, inning — is voltooid.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/billing-tarification-pay/nl/mobile/step-54.png" alt="19. De factuur is betaald" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p>Gegenereerd door Steppy.</p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/billing\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/billing\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-14.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-14.png", "subtitle": "Navigatie", "text": "Klik in de sectie \u201cGemeenschap\u201d van de zijbalk op \u201cFacturatie\u201d om de facturatiemodule van de gemeenschap te openen.", "title": "De facturatie openen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-20.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-20.png", "subtitle": "Facturatie", "text": "De module opent op het tabblad \u201cTarieven\u201d. Hier legt u de prijs van de gedeelde energie vast voordat u de facturen genereert. Daarna volgen de tabbladen \u201cFactuur genereren\u201d en \u201cOverzicht\u201d.", "title": "De facturatiemodule", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 448, "x": 260, "y": 241}, "selector": "[data-testid=\"tariffs-panel__select--operation\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 448, "x": 260, "y": 241}, "selector": "[data-testid=\"tariffs-panel__select--operation\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-21.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-21.png", "subtitle": "Stap 1 \u2014 Tarieven", "text": "Selecteer de te factureren deeloperatie \u2014 hier \u201cPublic Wind Sharing\u201d. Tarieven en facturen zijn altijd aan een operatie gekoppeld.", "title": "De deeloperatie kiezen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 139.046875, "x": 1108.953125, "y": 241}, "selector": "[data-testid=\"tariffs-panel__btn--add\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 139.046875, "x": 1108.953125, "y": 241}, "selector": "[data-testid=\"tariffs-panel__btn--add\"] button"}}, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-22.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-22.png", "subtitle": "Stap 1 \u2014 Tarieven", "text": "Klik op \u201cNieuw tarief\u201d om het aanmaakvenster te openen. Standaard geldt het tarief voor de verkoop aan verbruikers en voor de hele operatie.", "title": "Een tarief toevoegen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 502, "x": 469, "y": 602}, "selector": "[data-testid=\"tariff-dialog__input--label\"]"}, "value": "Tarif standard"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 502, "x": 469, "y": 602}, "selector": "[data-testid=\"tariff-dialog__input--label\"]"}, "value": "Tarif standard"}, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-26.png", "subtitle": "Stap 1 \u2014 Tarieven", "text": "Geef de prijs per gedeelde kWh op (0,1200 \u20ac), de begindatum van de geldigheid en een label. De soort \u201cVerkoopprijs voor verbruiker\u201d en het bereik \u201cGlobaal\u201d zijn geschikt om de hele operatie te factureren.", "title": "Het tarief invullen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 144.671875, "x": 826.328125, "y": 668}, "selector": "[data-testid=\"tariff-dialog__btn--submit\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 144.671875, "x": 826.328125, "y": 668}, "selector": "[data-testid=\"tariff-dialog__btn--submit\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-27.png", "subtitle": "Stap 1 \u2014 Tarieven", "text": "Klik op \u201cTarief aanmaken\u201d. Het verschijnt meteen in de lijst en wordt gebruikt om de facturen te berekenen.", "title": "Het tarief aanmaken", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 139.046875, "x": 1108.953125, "y": 241}, "selector": "[data-testid=\"tariffs-panel__btn--add\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 139.046875, "x": 1108.953125, "y": 241}, "selector": "[data-testid=\"tariffs-panel__btn--add\"] button"}}, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-30.png", "subtitle": "Stap 1 \u2014 Tarieven", "text": "De windoperatie telt producenten: ook voor hun gedeelde injectie is een tarief nodig. Open opnieuw \u201cNieuw tarief\u201d om een terugkooptarief aan te maken.", "title": "Een terugkooptarief toevoegen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 502, "x": 469, "y": 274}, "selector": "[data-testid=\"tariff-dialog__select--kind\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 502, "x": 469, "y": 274}, "selector": "[data-testid=\"tariff-dialog__select--kind\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-32.png", "subtitle": "Stap 1 \u2014 Tarieven", "text": "Selecteer de soort \u201cTerugkoopprijs voor producent\u201d. Dit tarief vergoedt de energie die de producenten injecteren en met de gemeenschap delen.", "title": "De soort \u201cTerugkoopprijs voor producent\u201d kiezen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-38.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-38.png", "subtitle": "Stap 1 \u2014 Tarieven", "text": "De operatie heeft nu een verkooptarief voor verbruikers en een terugkooptarief voor producenten. Tijd om de facturen te genereren.", "title": "De tarieven zijn opgeslagen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 57, "width": 168.03125, "x": 338.0625, "y": 146}, "selector": "[data-testid=\"billing__tab--generate\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 57, "width": 168.03125, "x": 338.0625, "y": 146}, "selector": "[data-testid=\"billing__tab--generate\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-39.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-39.png", "subtitle": "Stap 2 \u2014 Genereren", "text": "Open het tabblad \u201cFactuur genereren\u201d. Hier importeert u de verbruiksgegevens en start u de berekening van de facturen over een periode.", "title": "Naar het genereren", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 954, "x": 277, "y": 258}, "selector": "[data-testid=\"run-generate__select--operation\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 954, "x": 277, "y": 258}, "selector": "[data-testid=\"run-generate__select--operation\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-40.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-40.png", "subtitle": "Stap 2 \u2014 Genereren", "text": "Selecteer opnieuw \u201cPublic Wind Sharing\u201d. De zone om de verbruiksmeetgegevens te importeren verschijnt.", "title": "De te factureren operatie kiezen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 135, "width": 920, "x": 294, "y": 443}, "selector": "[data-testid=\"consumption-upload__dropzone\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 135, "width": 920, "x": 294, "y": 443}, "selector": "[data-testid=\"consumption-upload__dropzone\"]"}, "value": null}, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-41.png", "viewport": {"height": 900, "width": 1440}}], "index": 12, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-41.png", "subtitle": "Stap 2 \u2014 Genereren", "text": "Zet het RESA-bestand van de operatie (de kwartierwaarden van de maand) neer in de importzone. Het levert de gedeelde energie die zal worden gefactureerd.", "title": "De RESA-meetgegevens importeren", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-44.png", "viewport": {"height": 900, "width": 1440}}], "index": 13, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-44.png", "subtitle": "Stap 2 \u2014 Genereren", "text": "Kies de te factureren periode \u2014 hier februari 2025, de maand die het ge\u00efmporteerde bestand dekt. De facturatie heeft betrekking op de gedeelde energie van die periode.", "title": "De periode bepalen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 21, "width": 125.390625, "x": 277, "y": 800.796875}, "selector": "[data-testid=\"run-generate__btn--generate\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 21, "width": 125.390625, "x": 277, "y": 800.796875}, "selector": "[data-testid=\"run-generate__btn--generate\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-45.png", "viewport": {"height": 900, "width": 1440}}], "index": 14, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-45.png", "subtitle": "Stap 2 \u2014 Genereren", "text": "Klik op \u201cGenereren\u201d. De berekening loopt op de achtergrond: zodra ze klaar is, verschijnen de facturen van elk lid van de operatie.", "title": "De facturen genereren", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-47.png", "viewport": {"height": 900, "width": 1440}}], "index": 15, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-47.png", "subtitle": "Stap 2 \u2014 Genereren", "text": "Elk lid van de operatie heeft nu een factuur met de status \u201cConcept\u201d. U moet ze nog uitreiken en daarna de betaling ervan registreren.", "title": "De facturen zijn gegenereerd", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1167, "y": 434.296875}, "selector": "app-run-generate [data-testid=\"invoice-list__btn--issue\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1167, "y": 434.296875}, "selector": "app-run-generate [data-testid=\"invoice-list__btn--issue\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-48.png", "viewport": {"height": 900, "width": 1440}}], "index": 16, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-48.png", "subtitle": "Stap 3 \u2014 Uitreiken en innen", "text": "Klik op het pictogram \u201cUitreiken\u201d van een factuur. Ze krijgt een wettelijk nummer en een gestructureerde mededeling, en haar status wordt \u201cUitgereikt\u201d.", "title": "De factuur uitreiken", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1131, "y": 434.296875}, "selector": "app-run-generate [data-testid=\"invoice-list__btn--pay\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1131, "y": 434.296875}, "selector": "app-run-generate [data-testid=\"invoice-list__btn--pay\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-50.png", "viewport": {"height": 900, "width": 1440}}], "index": 17, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-50.png", "subtitle": "Stap 3 \u2014 Uitreiken en innen", "text": "Zodra de factuur is uitgereikt, verschijnt het pictogram \u201cBetaling registreren\u201d (portefeuille). Klik erop om het betalingsvenster te openen.", "title": "Een betaling registreren", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168.71875, "x": 786.28125, "y": 627}, "selector": "[data-testid=\"payment-dialog__btn--submit\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168.71875, "x": 786.28125, "y": 627}, "selector": "[data-testid=\"payment-dialog__btn--submit\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-52.png", "viewport": {"height": 900, "width": 1440}}], "index": 18, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-52.png", "subtitle": "Stap 3 \u2014 Uitreiken en innen", "text": "Het bedrag is vooraf ingevuld met het totaal van de factuur en de standaardbetaalmethode is \u201cOverschrijving\u201d. Klik op \u201cBetaling registreren\u201d: de factuur krijgt de status \u201cBetaald\u201d.", "title": "De betaling bevestigen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-54.png", "viewport": {"height": 900, "width": 1440}}], "index": 19, "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-54.png", "subtitle": "Facturatie", "text": "De betaling is geregistreerd en de factuur heeft nu de status \u201cBetaald\u201d. De volledige cyclus \u2014 tarief, generatie, uitreiking, inning \u2014 is voltooid.", "title": "De factuur is betaald", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/billing\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/billing\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-17.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-17.png", "subtitle": "Navigatie", "text": "Tik op het menupictogram om de navigatielade te openen en tik daarna in de sectie \u201cGemeenschap\u201d op \u201cFacturatie\u201d.", "title": "De facturatie openen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-20.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-20.png", "subtitle": "Facturatie", "text": "De module opent op het tabblad \u201cTarieven\u201d. Hier legt u de prijs van de gedeelde energie vast voordat u de facturen genereert. Daarna volgen de tabbladen \u201cFactuur genereren\u201d en \u201cOverzicht\u201d.", "title": "De facturatiemodule", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 322, "x": 34, "y": 359}, "selector": "[data-testid=\"tariffs-panel__select--operation\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 322, "x": 34, "y": 359}, "selector": "[data-testid=\"tariffs-panel__select--operation\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-21.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-21.png", "subtitle": "Stap 1 \u2014 Tarieven", "text": "Selecteer de te factureren deeloperatie \u2014 hier \u201cPublic Wind Sharing\u201d. Tarieven en facturen zijn altijd aan een operatie gekoppeld.", "title": "De deeloperatie kiezen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 139.046875, "x": 34, "y": 409}, "selector": "[data-testid=\"tariffs-panel__btn--add\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 139.046875, "x": 34, "y": 409}, "selector": "[data-testid=\"tariffs-panel__btn--add\"] button"}}, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-22.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-22.png", "subtitle": "Stap 1 \u2014 Tarieven", "text": "Klik op \u201cNieuw tarief\u201d om het aanmaakvenster te openen. Standaard geldt het tarief voor de verkoop aan verbruikers en voor de hele operatie.", "title": "Een tarief toevoegen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 364, "x": 13, "y": 523}, "selector": "[data-testid=\"tariff-dialog__input--label\"]"}, "value": "Tarif standard"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 364, "x": 13, "y": 523}, "selector": "[data-testid=\"tariff-dialog__input--label\"]"}, "value": "Tarif standard"}, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-26.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-26.png", "subtitle": "Stap 1 \u2014 Tarieven", "text": "Geef de prijs per gedeelde kWh op (0,1200 \u20ac), de begindatum van de geldigheid en een label. De soort \u201cVerkoopprijs voor verbruiker\u201d en het bereik \u201cGlobaal\u201d zijn geschikt om de hele operatie te factureren.", "title": "Het tarief invullen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 144.671875, "x": 232.328125, "y": 589}, "selector": "[data-testid=\"tariff-dialog__btn--submit\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 144.671875, "x": 232.328125, "y": 589}, "selector": "[data-testid=\"tariff-dialog__btn--submit\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-27.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-27.png", "subtitle": "Stap 1 \u2014 Tarieven", "text": "Klik op \u201cTarief aanmaken\u201d. Het verschijnt meteen in de lijst en wordt gebruikt om de facturen te berekenen.", "title": "Het tarief aanmaken", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 139.046875, "x": 34, "y": 409}, "selector": "[data-testid=\"tariffs-panel__btn--add\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 139.046875, "x": 34, "y": 409}, "selector": "[data-testid=\"tariffs-panel__btn--add\"] button"}}, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-30.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-30.png", "subtitle": "Stap 1 \u2014 Tarieven", "text": "De windoperatie telt producenten: ook voor hun gedeelde injectie is een tarief nodig. Open opnieuw \u201cNieuw tarief\u201d om een terugkooptarief aan te maken.", "title": "Een terugkooptarief toevoegen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 364, "x": 13, "y": 117}, "selector": "[data-testid=\"tariff-dialog__select--kind\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 364, "x": 13, "y": 117}, "selector": "[data-testid=\"tariff-dialog__select--kind\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-32.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-32.png", "subtitle": "Stap 1 \u2014 Tarieven", "text": "Selecteer de soort \u201cTerugkoopprijs voor producent\u201d. Dit tarief vergoedt de energie die de producenten injecteren en met de gemeenschap delen.", "title": "De soort \u201cTerugkoopprijs voor producent\u201d kiezen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-38.png", "viewport": {"height": 844, "width": 390}}], "index": 9, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-38.png", "subtitle": "Stap 1 \u2014 Tarieven", "text": "De operatie heeft nu een verkooptarief voor verbruikers en een terugkooptarief voor producenten. Tijd om de facturen te genereren.", "title": "De tarieven zijn opgeslagen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 57, "width": 168.03125, "x": 112.0625, "y": 264}, "selector": "[data-testid=\"billing__tab--generate\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 57, "width": 168.03125, "x": 112.0625, "y": 264}, "selector": "[data-testid=\"billing__tab--generate\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-39.png", "viewport": {"height": 844, "width": 390}}], "index": 10, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-39.png", "subtitle": "Stap 2 \u2014 Genereren", "text": "Open het tabblad \u201cFactuur genereren\u201d. Hier importeert u de verbruiksgegevens en start u de berekening van de facturen over een periode.", "title": "Naar het genereren", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 288, "x": 51, "y": 376}, "selector": "[data-testid=\"run-generate__select--operation\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 288, "x": 51, "y": 376}, "selector": "[data-testid=\"run-generate__select--operation\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-40.png", "viewport": {"height": 844, "width": 390}}], "index": 11, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-40.png", "subtitle": "Stap 2 \u2014 Genereren", "text": "Selecteer opnieuw \u201cPublic Wind Sharing\u201d. De zone om de verbruiksmeetgegevens te importeren verschijnt.", "title": "De te factureren operatie kiezen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 183, "width": 254, "x": 68, "y": 593}, "selector": "[data-testid=\"consumption-upload__dropzone\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 183, "width": 254, "x": 68, "y": 593}, "selector": "[data-testid=\"consumption-upload__dropzone\"]"}, "value": null}, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-41.png", "viewport": {"height": 844, "width": 390}}], "index": 12, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-41.png", "subtitle": "Stap 2 \u2014 Genereren", "text": "Zet het RESA-bestand van de operatie (de kwartierwaarden van de maand) neer in de importzone. Het levert de gedeelde energie die zal worden gefactureerd.", "title": "De RESA-meetgegevens importeren", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-44.png", "viewport": {"height": 844, "width": 390}}], "index": 13, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-44.png", "subtitle": "Stap 2 \u2014 Genereren", "text": "Kies de te factureren periode \u2014 hier februari 2025, de maand die het ge\u00efmporteerde bestand dekt. De facturatie heeft betrekking op de gedeelde energie van die periode.", "title": "De periode bepalen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 21, "width": 125.390625, "x": 51, "y": 761.59375}, "selector": "[data-testid=\"run-generate__btn--generate\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 21, "width": 125.390625, "x": 51, "y": 761.59375}, "selector": "[data-testid=\"run-generate__btn--generate\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-45.png", "viewport": {"height": 844, "width": 390}}], "index": 14, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-45.png", "subtitle": "Stap 2 \u2014 Genereren", "text": "Klik op \u201cGenereren\u201d. De berekening loopt op de achtergrond: zodra ze klaar is, verschijnen de facturen van elk lid van de operatie.", "title": "De facturen genereren", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-47.png", "viewport": {"height": 844, "width": 390}}], "index": 15, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-47.png", "subtitle": "Stap 2 \u2014 Genereren", "text": "Elk lid van de operatie heeft nu een factuur met de status \u201cConcept\u201d. U moet ze nog uitreiken en daarna de betaling ervan registreren.", "title": "De facturen zijn gegenereerd", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 83, "y": 405.59375}, "selector": "app-run-generate [data-testid=\"invoice-list__btn--issue\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 83, "y": 405.59375}, "selector": "app-run-generate [data-testid=\"invoice-list__btn--issue\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-48.png", "viewport": {"height": 844, "width": 390}}], "index": 16, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-48.png", "subtitle": "Stap 3 \u2014 Uitreiken en innen", "text": "Klik op het pictogram \u201cUitreiken\u201d van een factuur. Ze krijgt een wettelijk nummer en een gestructureerde mededeling, en haar status wordt \u201cUitgereikt\u201d.", "title": "De factuur uitreiken", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 119, "y": 437.59375}, "selector": "app-run-generate [data-testid=\"invoice-list__btn--pay\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 119, "y": 437.59375}, "selector": "app-run-generate [data-testid=\"invoice-list__btn--pay\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-50.png", "viewport": {"height": 844, "width": 390}}], "index": 17, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-50.png", "subtitle": "Stap 3 \u2014 Uitreiken en innen", "text": "Zodra de factuur is uitgereikt, verschijnt het pictogram \u201cBetaling registreren\u201d (portefeuille). Klik erop om het betalingsvenster te openen.", "title": "Een betaling registreren", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168.71875, "x": 208.28125, "y": 429}, "selector": "[data-testid=\"payment-dialog__btn--submit\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168.71875, "x": 208.28125, "y": 429}, "selector": "[data-testid=\"payment-dialog__btn--submit\"]"}}, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-52.png", "viewport": {"height": 844, "width": 390}}], "index": 18, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-52.png", "subtitle": "Stap 3 \u2014 Uitreiken en innen", "text": "Het bedrag is vooraf ingevuld met het totaal van de factuur en de standaardbetaalmethode is \u201cOverschrijving\u201d. Klik op \u201cBetaling registreren\u201d: de factuur krijgt de status \u201cBetaald\u201d.", "title": "De betaling bevestigen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-54.png", "viewport": {"height": 844, "width": 390}}], "index": 19, "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-54.png", "subtitle": "Facturatie", "text": "De betaling is geregistreerd en de factuur heeft nu de status \u201cBetaald\u201d. De volledige cyclus \u2014 tarief, generatie, uitreiking, inning \u2014 is voltooid.", "title": "De factuur is betaald", "viewport": {"height": 844, "width": 390}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

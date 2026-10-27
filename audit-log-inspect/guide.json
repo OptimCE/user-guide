@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Consulter le journal d'audit",
-    "en": "Consult the audit log"
+    "en": "Consult the audit log",
+    "nl": "Het auditlogboek raadplegen",
+    "de": "Audit-Protokoll einsehen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir le journal d'audit",
-        "en": "Open the audit log"
+        "en": "Open the audit log",
+        "nl": "Auditlogboek openen",
+        "de": "Audit-Protokoll öffnen"
       },
       "text": {
         "fr": "Dans la section « Gestion » de la barre latérale, cliquez sur « Journal d'audit » pour consulter l'historique des actions effectuées sur votre communauté.",
-        "en": "In the sidebar's \"Management\" section, click \"Audit log\" to review the history of actions performed on your community."
+        "en": "In the sidebar's \"Management\" section, click \"Audit log\" to review the history of actions performed on your community.",
+        "nl": "Klik in de sectie “Beheer” van de zijbalk op “Auditlogboek” om de geschiedenis te bekijken van de acties die op uw gemeenschap zijn uitgevoerd.",
+        "de": "Klicken Sie im Abschnitt „Verwaltung“ der Seitenleiste auf „Audit-Protokoll“, um den Verlauf der in Ihrer Gemeinschaft ausgeführten Aktionen einzusehen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/nl/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 576.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/audit-logs\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 576.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/audit-logs\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Auditlogboek openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en tik vervolgens in de sectie “Beheer” op “Auditlogboek”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/de/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 576.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/audit-logs\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 576.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/audit-logs\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Audit-Protokoll öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und tippen Sie dann im Abschnitt „Verwaltung“ auf „Audit-Protokoll“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Le journal d'audit",
-        "en": "The audit log"
+        "en": "The audit log",
+        "nl": "Het auditlogboek",
+        "de": "Das Audit-Protokoll"
       },
       "text": {
         "fr": "Chaque ligne retrace une action : la date, le type d'action, l'entité concernée, l'auteur et la source. La modification que vous venez d'effectuer apparaît en tête de liste.",
-        "en": "Each row records one action: the timestamp, the action type, the affected entity, who did it, and the source. The change you just made appears at the top of the list."
+        "en": "Each row records one action: the timestamp, the action type, the affected entity, who did it, and the source. The change you just made appears at the top of the list.",
+        "nl": "Elke rij beschrijft één actie: de datum, het type actie, de betrokken entiteit, de uitvoerder en de bron. De wijziging die u zojuist hebt aangebracht, staat bovenaan de lijst.",
+        "de": "Jede Zeile beschreibt eine Aktion: Datum, Art der Aktion, betroffene Entität, Urheber und Quelle. Die Änderung, die Sie gerade vorgenommen haben, steht ganz oben in der Liste."
       },
       "subtitle": {
         "fr": "Traçabilité",
-        "en": "Traceability"
+        "en": "Traceability",
+        "nl": "Traceerbaarheid",
+        "de": "Nachvollziehbarkeit"
       },
       "captures": {
         "fr": {
@@ -224,6 +346,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/de/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -236,15 +410,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Le détail de l'action",
-        "en": "The action details"
+        "en": "The action details",
+        "nl": "Details van de actie",
+        "de": "Details der Aktion"
       },
       "text": {
         "fr": "En cliquant sur une ligne, vous dépliez sa charge utile (payload) au format JSON : ici, la liste des champs modifiés. C'est la preuve technique complète de ce qui a changé.",
-        "en": "Clicking a row expands its JSON payload — here, the list of changed fields. This is the full technical record of exactly what changed."
+        "en": "Clicking a row expands its JSON payload — here, the list of changed fields. This is the full technical record of exactly what changed.",
+        "nl": "Wanneer u op een rij klikt, klapt u de payload in JSON-formaat uit: hier de lijst van gewijzigde velden. Dat is het volledige technische bewijs van wat er is gewijzigd.",
+        "de": "Ein Klick auf eine Zeile klappt ihre Nutzdaten (Payload) im JSON-Format auf: hier die Liste der geänderten Felder. Das ist der vollständige technische Nachweis dessen, was sich geändert hat."
       },
       "subtitle": {
         "fr": "Charge utile",
-        "en": "Payload"
+        "en": "Payload",
+        "nl": "Payload",
+        "de": "Nutzdaten"
       },
       "captures": {
         "fr": {
@@ -298,6 +478,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/nl/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/nl/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/de/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/de/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -310,15 +542,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Filtrer le journal",
-        "en": "Filter the log"
+        "en": "Filter the log",
+        "nl": "Logboek filteren",
+        "de": "Protokoll filtern"
       },
       "text": {
         "fr": "Utilisez les filtres pour cibler ce que vous cherchez : ici, le type d'entité « community » ne garde que les événements liés à la communauté. Vous pouvez aussi filtrer par action, par identifiant ou par plage de dates.",
-        "en": "Use the filters to narrow things down: here the entity type \"community\" keeps only community-related events. You can also filter by action, by id, or by a date range."
+        "en": "Use the filters to narrow things down: here the entity type \"community\" keeps only community-related events. You can also filter by action, by id, or by a date range.",
+        "nl": "Gebruik de filters om gericht te zoeken: hier houdt het entiteitstype “community” alleen de gebeurtenissen over die met de gemeenschap te maken hebben. U kunt ook filteren op actie, op ID of op datumbereik.",
+        "de": "Grenzen Sie mit den Filtern ein, was Sie suchen: Hier behält der Entitätstyp „community“ nur die Ereignisse, die die Gemeinschaft betreffen. Sie können auch nach Aktion, nach ID oder nach Zeitraum filtern."
       },
       "subtitle": {
         "fr": "Recherche",
-        "en": "Search"
+        "en": "Search",
+        "nl": "Zoeken",
+        "de": "Suche"
       },
       "captures": {
         "fr": {
@@ -420,6 +658,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/nl/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 445.5,
+                      "y": 181,
+                      "width": 302.5,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"audit-log-list__input--entity-type\"]"
+                  },
+                  "value": "community"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 257,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"audit-log-list__input--entity-type\"]"
+                  },
+                  "value": "community"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/de/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 445.5,
+                      "y": 181,
+                      "width": 302.5,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"audit-log-list__input--entity-type\"]"
+                  },
+                  "value": "community"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/de/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 257,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"audit-log-list__input--entity-type\"]"
+                  },
+                  "value": "community"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -432,15 +770,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Réinitialiser les filtres",
-        "en": "Reset the filters"
+        "en": "Reset the filters",
+        "nl": "Filters wissen",
+        "de": "Filter zurücksetzen"
       },
       "text": {
         "fr": "Le bouton « Réinitialiser les filtres » efface tous les critères d'un coup et réaffiche l'ensemble du journal.",
-        "en": "The \"Clear filters\" button wipes every criterion at once and shows the whole log again."
+        "en": "The \"Clear filters\" button wipes every criterion at once and shows the whole log again.",
+        "nl": "De knop “Filters wissen” wist alle criteria in één keer en toont opnieuw het volledige logboek.",
+        "de": "Die Schaltfläche „Filter zurücksetzen“ löscht alle Kriterien auf einmal und zeigt wieder das gesamte Protokoll an."
       },
       "subtitle": {
         "fr": "Recherche",
-        "en": "Search"
+        "en": "Search",
+        "nl": "Zoeken",
+        "de": "Suche"
       },
       "captures": {
         "fr": {
@@ -538,6 +882,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/nl/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 760,
+                      "y": 257,
+                      "width": 145.828125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"audit-log-list__btn--clear-filters\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/nl/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 615,
+                      "width": 145.828125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"audit-log-list__btn--clear-filters\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/de/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 760,
+                      "y": 257,
+                      "width": 185.296875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"audit-log-list__btn--clear-filters\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/de/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 615,
+                      "width": 185.296875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"audit-log-list__btn--clear-filters\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -550,15 +990,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Exporter le journal",
-        "en": "Export the log"
+        "en": "Export the log",
+        "nl": "Logboek exporteren",
+        "de": "Protokoll exportieren"
       },
       "text": {
         "fr": "Le bouton « Exporter » télécharge le journal complet au format CSV — pratique pour l'archivage ou pour le transmettre à votre régulateur.",
-        "en": "The \"Export\" button downloads the full log as a CSV file — handy for archiving or handing it to your regulator."
+        "en": "The \"Export\" button downloads the full log as a CSV file — handy for archiving or handing it to your regulator.",
+        "nl": "De knop “CSV exporteren” downloadt het volledige logboek in CSV-formaat — handig om te archiveren of om aan uw regulator te bezorgen.",
+        "de": "Die Schaltfläche „CSV exportieren“ lädt das vollständige Protokoll im CSV-Format herunter — praktisch für die Archivierung oder zur Weitergabe an Ihre Regulierungsbehörde."
       },
       "subtitle": {
         "fr": "Export",
-        "en": "Export"
+        "en": "Export",
+        "nl": "Export",
+        "de": "Export"
       },
       "captures": {
         "fr": {
@@ -648,6 +1094,102 @@
                       "x": 37,
                       "y": 63,
                       "width": 130.96875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"audit-log-list__btn--export\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/nl/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1205.78125,
+                      "y": 52,
+                      "width": 163.21875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"audit-log-list__btn--export\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/nl/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 63,
+                      "width": 163.21875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"audit-log-list__btn--export\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/de/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1201.515625,
+                      "y": 52,
+                      "width": 167.484375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"audit-log-list__btn--export\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/audit-log-inspect/de/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 63,
+                      "width": 167.484375,
                       "height": 42
                     },
                     "selector": "[data-testid=\"audit-log-list__btn--export\"] button"

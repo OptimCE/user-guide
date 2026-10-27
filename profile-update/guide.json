@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Mettre à jour son profil",
-    "en": "Update your profile"
+    "en": "Update your profile",
+    "nl": "Uw profiel bijwerken",
+    "de": "Ihr Profil aktualisieren"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir le profil",
-        "en": "Open the profile"
+        "en": "Open the profile",
+        "nl": "Profiel openen",
+        "de": "Profil öffnen"
       },
       "text": {
         "fr": "Dans la barre latérale, cliquez sur « Profil » pour ouvrir la page de votre compte personnel.",
-        "en": "In the sidebar, click \"Profile\" to open your personal account page."
+        "en": "In the sidebar, click \"Profile\" to open your personal account page.",
+        "nl": "Klik in de zijbalk op “Profiel” om de pagina van uw persoonlijke account te openen.",
+        "de": "Klicken Sie in der Seitenleiste auf „Profil“, um die Seite Ihres persönlichen Kontos zu öffnen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/nl/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/nl/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Profiel openen",
+              "text": "Tik op het menupictogram linksboven om de navigatielade te openen en vervolgens op “Profiel” om de pagina van uw persoonlijke account te openen.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/de/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/de/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Profil öffnen",
+              "text": "Tippen Sie oben links auf das Menüsymbol, um das Navigationsmenü auszuklappen, und dann auf „Profil“, um die Seite Ihres persönlichen Kontos zu öffnen.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Profil par défaut",
-        "en": "Default profile"
+        "en": "Default profile",
+        "nl": "Standaardprofiel",
+        "de": "Standardprofil"
       },
       "text": {
         "fr": "Le profil affiche les données initiales : Demo User, demo@example.com et l'adresse à Bruxelles, telles qu'elles ont été semées par la base de données.",
-        "en": "The profile shows the seeded defaults: Demo User, demo@example.com and the Brussels address as injected by the database fixtures."
+        "en": "The profile shows the seeded defaults: Demo User, demo@example.com and the Brussels address as injected by the database fixtures.",
+        "nl": "Het profiel toont de initiële gegevens: Demo User, demo@example.com en het adres in Brussel, zoals ze in de database zijn voorgeladen.",
+        "de": "Das Profil zeigt die Ausgangsdaten: Demo User, demo@example.com und die Adresse in Brüssel, wie sie in der Datenbank vorbelegt wurden."
       },
       "subtitle": {
         "fr": "Vue d'ensemble du profil",
-        "en": "Profile overview"
+        "en": "Profile overview",
+        "nl": "Profieloverzicht",
+        "de": "Profilübersicht"
       },
       "captures": {
         "fr": {
@@ -224,6 +346,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/nl/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/de/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -236,15 +410,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir le formulaire",
-        "en": "Open the form"
+        "en": "Open the form",
+        "nl": "Formulier openen",
+        "de": "Formular öffnen"
       },
       "text": {
         "fr": "Cliquez sur « Modifier le profil » : un dialogue s'ouvre avec les champs prénom, nom et autres informations modifiables.",
-        "en": "Click \"Update profile\" to open the dialog containing the editable first name, last name and related fields."
+        "en": "Click \"Update profile\" to open the dialog containing the editable first name, last name and related fields.",
+        "nl": "Klik op “Bijwerken”: er wordt een venster geopend met de velden voornaam, naam en andere wijzigbare gegevens.",
+        "de": "Klicken Sie auf „Aktualisieren“: Ein Dialog mit den Feldern Vorname, Name und weiteren änderbaren Angaben wird geöffnet."
       },
       "subtitle": {
         "fr": "Modification du profil",
-        "en": "Updating the profile"
+        "en": "Updating the profile",
+        "nl": "Profiel wijzigen",
+        "de": "Profil bearbeiten"
       },
       "captures": {
         "fr": {
@@ -342,6 +522,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1248.578125,
+                      "y": 56,
+                      "width": 120.421875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"profile__button--update-profile\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 227,
+                      "width": 120.421875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"profile__button--update-profile\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1224.9375,
+                      "y": 56,
+                      "width": 144.0625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"profile__button--update-profile\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 227,
+                      "width": 144.0625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"profile__button--update-profile\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -354,15 +630,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Renseigner le nouveau nom",
-        "en": "Enter the new name"
+        "en": "Enter the new name",
+        "nl": "Nieuwe naam invullen",
+        "de": "Neuen Namen eingeben"
       },
       "text": {
         "fr": "Saisissez le nouveau prénom puis le nouveau nom dans les champs correspondants. La validation s'active dès que les deux champs sont remplis.",
-        "en": "Type the new first name and last name in their respective fields. The save button enables once both fields are populated."
+        "en": "Type the new first name and last name in their respective fields. The save button enables once both fields are populated.",
+        "nl": "Voer de nieuwe voornaam en daarna de nieuwe naam in de bijbehorende velden in. Bevestigen wordt mogelijk zodra beide velden zijn ingevuld.",
+        "de": "Geben Sie den neuen Vornamen und dann den neuen Namen in die entsprechenden Felder ein. Die Bestätigung wird möglich, sobald beide Felder ausgefüllt sind."
       },
       "subtitle": {
         "fr": "Modification du profil",
-        "en": "Updating the profile"
+        "en": "Updating the profile",
+        "nl": "Profiel wijzigen",
+        "de": "Profil bearbeiten"
       },
       "captures": {
         "fr": {
@@ -464,6 +746,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 421,
+                      "y": 260,
+                      "width": 291,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"user-update-dialog__input--surname\"]"
+                  },
+                  "value": "DemoE2ELastName"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 40.5,
+                      "y": 257.203125,
+                      "width": 309,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"user-update-dialog__input--surname\"]"
+                  },
+                  "value": "DemoE2ELastName"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 421,
+                      "y": 260,
+                      "width": 291,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"user-update-dialog__input--surname\"]"
+                  },
+                  "value": "DemoE2ELastName"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 40.5,
+                      "y": 257.203125,
+                      "width": 309,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"user-update-dialog__input--surname\"]"
+                  },
+                  "value": "DemoE2ELastName"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -476,15 +858,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Enregistrer les modifications",
-        "en": "Save the changes"
+        "en": "Save the changes",
+        "nl": "Wijzigingen opslaan",
+        "de": "Änderungen speichern"
       },
       "text": {
         "fr": "Cliquez sur « Valider » pour envoyer les nouvelles informations au CRM. Le dialogue se ferme une fois la mise à jour confirmée.",
-        "en": "Click \"Save\" to send the updated information to the CRM. The dialog closes once the update is acknowledged."
+        "en": "Click \"Save\" to send the updated information to the CRM. The dialog closes once the update is acknowledged.",
+        "nl": "Klik op “Bevestigen” om de nieuwe gegevens naar het CRM te sturen. Het venster sluit zodra de update is bevestigd.",
+        "de": "Klicken Sie auf „Bestätigen“, um die neuen Angaben an das CRM zu senden. Der Dialog schließt sich, sobald die Aktualisierung bestätigt ist."
       },
       "subtitle": {
         "fr": "Enregistrement",
-        "en": "Saving"
+        "en": "Saving",
+        "nl": "Opslaan",
+        "de": "Speichern"
       },
       "captures": {
         "fr": {
@@ -582,6 +970,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 889,
+                      "y": 792,
+                      "width": 130,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"user-update-dialog__button--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 219.5,
+                      "y": 739.203125,
+                      "width": 130,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"user-update-dialog__button--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 891.359375,
+                      "y": 792,
+                      "width": 127.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"user-update-dialog__button--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 221.859375,
+                      "y": 739.203125,
+                      "width": 127.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"user-update-dialog__button--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -594,15 +1078,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Profil mis à jour",
-        "en": "Profile updated"
+        "en": "Profile updated",
+        "nl": "Profiel bijgewerkt",
+        "de": "Profil aktualisiert"
       },
       "text": {
         "fr": "De retour sur la page de profil, le nouveau prénom et le nouveau nom sont visibles immédiatement — la modification est persistée côté serveur.",
-        "en": "Back on the profile page, the new first and last name appear immediately — the change has been persisted server-side."
+        "en": "Back on the profile page, the new first and last name appear immediately — the change has been persisted server-side.",
+        "nl": "Terug op de profielpagina zijn de nieuwe voornaam en de nieuwe naam meteen zichtbaar — de wijziging is op de server opgeslagen.",
+        "de": "Zurück auf der Profilseite sind der neue Vorname und der neue Name sofort sichtbar — die Änderung wurde serverseitig gespeichert."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -648,6 +1138,58 @@
             "frames": [
               {
                 "screenshot": "../assets/profile-update/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/nl/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/de/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/profile-update/de/mobile/step-26.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

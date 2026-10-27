@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Ajouter un compteur à une opération",
-    "en": "Add a meter to a sharing operation"
+    "en": "Add a meter to a sharing operation",
+    "nl": "Een meter aan een deeloperatie toevoegen",
+    "de": "Zähler zu einer Teilungsoperation hinzufügen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir mes communautés",
-        "en": "Open my communities"
+        "en": "Open my communities",
+        "nl": "Mijn gemeenschappen openen",
+        "de": "Meine Gemeinschaften öffnen"
       },
       "text": {
         "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Mes communautés » pour voir la liste des communautés où vous êtes inscrit·e.",
-        "en": "In the sidebar's profile menu, click \"My communities\" to see the list of communities you belong to."
+        "en": "In the sidebar's profile menu, click \"My communities\" to see the list of communities you belong to.",
+        "nl": "Klik in het profielmenu van de zijbalk op “Mijn gemeenschappen” om de lijst te zien van de gemeenschappen waarvan u lid bent.",
+        "de": "Klicken Sie im Profilmenü der Seitenleiste auf „Meine Gemeinschaften“, um die Liste der Gemeinschaften zu sehen, denen Sie angehören."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Mijn gemeenschappen openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en daarna op “Mijn gemeenschappen” om de lijst te zien van de gemeenschappen waarvan u lid bent.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Meine Gemeinschaften öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Meine Gemeinschaften“, um die Liste der Gemeinschaften zu sehen, denen Sie angehören.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Vérifier la communauté active",
-        "en": "Check the active community"
+        "en": "Check the active community",
+        "nl": "De actieve gemeenschap controleren",
+        "de": "Aktive Gemeinschaft prüfen"
       },
       "text": {
         "fr": "La Test Community est déjà votre communauté active — sa ligne propose « Informations » et « Tableau de bord ». Si vous appartenez à plusieurs communautés, cliquez sur « Activer » sur celle dans laquelle vous voulez travailler.",
-        "en": "Test Community is already your active one — its row offers \"Information\" and \"Dashboard\". If you belong to several communities, click \"Activate\" on the one you want to work in."
+        "en": "Test Community is already your active one — its row offers \"Information\" and \"Dashboard\". If you belong to several communities, click \"Activate\" on the one you want to work in.",
+        "nl": "Test Community is al uw actieve gemeenschap — haar rij biedt “Gemeenschapsinfo” en “Dashboard”. Behoort u tot meerdere gemeenschappen, klik dan op “Activeren” bij de gemeenschap waarin u wilt werken.",
+        "de": "Test Community ist bereits Ihre aktive Gemeinschaft — ihre Zeile bietet „Gemeinschaftsinfo“ und „Übersicht“. Wenn Sie mehreren Gemeinschaften angehören, klicken Sie bei derjenigen, in der Sie arbeiten möchten, auf „Aktivieren“."
       },
       "subtitle": {
         "fr": "Communauté active",
-        "en": "Active community"
+        "en": "Active community",
+        "nl": "Actieve gemeenschap",
+        "de": "Aktive Gemeinschaft"
       },
       "captures": {
         "fr": {
@@ -234,6 +356,68 @@
               "subtitle": "Active community"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ],
+            "content": {
+              "title": "De actieve gemeenschap controleren",
+              "text": "De kaart van Test Community toont dat dit al uw actieve gemeenschap is. Behoort u tot meerdere gemeenschappen, tik dan op “Activeren” bij de gemeenschap waarin u wilt werken.",
+              "subtitle": "Actieve gemeenschap"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ],
+            "content": {
+              "title": "Aktive Gemeinschaft prüfen",
+              "text": "Die Karte von Test Community zeigt, dass sie bereits Ihre aktive Gemeinschaft ist. Wenn Sie mehreren Gemeinschaften angehören, tippen Sie bei derjenigen, in der Sie arbeiten möchten, auf „Aktivieren“.",
+              "subtitle": "Aktive Gemeinschaft"
+            }
+          }
         }
       }
     },
@@ -246,15 +430,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir les partages d'énergie",
-        "en": "Open sharing operations"
+        "en": "Open sharing operations",
+        "nl": "De energiedelingen openen",
+        "de": "Energieteilungen öffnen"
       },
       "text": {
         "fr": "Rendez-vous sur la liste des opérations de partage de votre communauté pour retrouver celle à laquelle vous souhaitez rattacher un compteur.",
-        "en": "Open the list of sharing operations for your community to find the one you want to attach a meter to."
+        "en": "Open the list of sharing operations for your community to find the one you want to attach a meter to.",
+        "nl": "Ga naar de lijst van de deeloperaties van uw gemeenschap om de operatie terug te vinden waaraan u een meter wilt koppelen.",
+        "de": "Rufen Sie die Liste der Teilungsoperationen Ihrer Gemeinschaft auf, um diejenige zu finden, der Sie einen Zähler zuordnen möchten."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -308,6 +498,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -320,15 +562,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Sélectionner une opération",
-        "en": "Select an operation"
+        "en": "Select an operation",
+        "nl": "Een operatie selecteren",
+        "de": "Operation auswählen"
       },
       "text": {
         "fr": "Cliquez sur la ligne de l'opération de partage à modifier pour ouvrir sa fiche détaillée.",
-        "en": "Click the row of the sharing operation you want to edit to open its detail view."
+        "en": "Click the row of the sharing operation you want to edit to open its detail view.",
+        "nl": "Klik op de rij van de deeloperatie die u wilt wijzigen om de detailpagina ervan te openen.",
+        "de": "Klicken Sie auf die Zeile der Teilungsoperation, die Sie ändern möchten, um ihre Detailansicht zu öffnen."
       },
       "subtitle": {
         "fr": "Sélection",
-        "en": "Selection"
+        "en": "Selection",
+        "nl": "Selectie",
+        "de": "Auswahl"
       },
       "captures": {
         "fr": {
@@ -436,6 +684,112 @@
               "subtitle": "Selection"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 305,
+                      "width": 1280,
+                      "height": 51.65625
+                    },
+                    "selector": "[data-testid=\"operations-list__row--desktop--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 562,
+                      "width": 358,
+                      "height": 193.3125
+                    },
+                    "selector": "[data-testid=\"operations-list__card--mobile--1\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Een operatie selecteren",
+              "text": "Tik op de kaart van de deeloperatie die u wilt wijzigen om de detailpagina ervan te openen.",
+              "subtitle": "Selectie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 305,
+                      "width": 1280,
+                      "height": 51.65625
+                    },
+                    "selector": "[data-testid=\"operations-list__row--desktop--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 562,
+                      "width": 358,
+                      "height": 193.3125
+                    },
+                    "selector": "[data-testid=\"operations-list__card--mobile--1\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Operation auswählen",
+              "text": "Tippen Sie auf die Karte der Teilungsoperation, die Sie ändern möchten, um ihre Detailansicht zu öffnen.",
+              "subtitle": "Auswahl"
+            }
+          }
         }
       }
     },
@@ -448,15 +802,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Lancer l'ajout d'un compteur",
-        "en": "Start adding a meter"
+        "en": "Start adding a meter",
+        "nl": "Toevoegen van een meter starten",
+        "de": "Hinzufügen eines Zählers starten"
       },
       "text": {
         "fr": "Depuis la fiche détaillée, cliquez sur « Ajouter un compteur » pour ouvrir la boîte de dialogue de sélection.",
-        "en": "From the detail view, click \"Add meter\" to open the meter selection dialog."
+        "en": "From the detail view, click \"Add meter\" to open the meter selection dialog.",
+        "nl": "Klik op de detailpagina op “Meter toevoegen” om het selectievenster te openen.",
+        "de": "Klicken Sie in der Detailansicht auf „Zähler hinzufügen“, um das Auswahlfenster zu öffnen."
       },
       "subtitle": {
         "fr": "Action",
-        "en": "Action"
+        "en": "Action",
+        "nl": "Actie",
+        "de": "Aktion"
       },
       "captures": {
         "fr": {
@@ -554,6 +914,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1001,
+                      "y": 316.5,
+                      "width": 153.4375,
+                      "height": 21
+                    },
+                    "selector": "[data-testid=\"op-view__btn--add-meter\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 39,
+                      "y": 411.5,
+                      "width": 153.4375,
+                      "height": 21
+                    },
+                    "selector": "[data-testid=\"op-view__btn--add-meter\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1001,
+                      "y": 316.5,
+                      "width": 159.484375,
+                      "height": 21
+                    },
+                    "selector": "[data-testid=\"op-view__btn--add-meter\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 39,
+                      "y": 411.5,
+                      "width": 159.484375,
+                      "height": 21
+                    },
+                    "selector": "[data-testid=\"op-view__btn--add-meter\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -566,15 +1022,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Compteurs disponibles",
-        "en": "Available meters"
+        "en": "Available meters",
+        "nl": "Beschikbare meters",
+        "de": "Verfügbare Zähler"
       },
       "text": {
         "fr": "La boîte de dialogue affiche tous les compteurs de la communauté qui ne sont pas encore rattachés à cette opération de partage.",
-        "en": "The dialog lists every meter in the community that is not yet attached to this sharing operation."
+        "en": "The dialog lists every meter in the community that is not yet attached to this sharing operation.",
+        "nl": "Het venster toont alle meters van de gemeenschap die nog niet aan deze deeloperatie gekoppeld zijn.",
+        "de": "Das Fenster zeigt alle Zähler der Gemeinschaft, die dieser Teilungsoperation noch nicht zugeordnet sind."
       },
       "subtitle": {
         "fr": "Sélection",
-        "en": "Selection"
+        "en": "Selection",
+        "nl": "Selectie",
+        "de": "Auswahl"
       },
       "captures": {
         "fr": {
@@ -628,6 +1090,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -640,15 +1154,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Cocher le compteur",
-        "en": "Tick the meter"
+        "en": "Tick the meter",
+        "nl": "De meter aanvinken",
+        "de": "Zähler ankreuzen"
       },
       "text": {
         "fr": "Cochez la case du compteur à rattacher. Vous pouvez en sélectionner plusieurs si nécessaire avant de valider.",
-        "en": "Tick the checkbox of the meter you want to attach. Multiple meters can be selected before submitting."
+        "en": "Tick the checkbox of the meter you want to attach. Multiple meters can be selected before submitting.",
+        "nl": "Vink het vakje aan van de meter die u wilt koppelen. Indien nodig kunt u er meerdere selecteren voordat u bevestigt.",
+        "de": "Kreuzen Sie das Kästchen des Zählers an, den Sie zuordnen möchten. Bei Bedarf können Sie vor dem Bestätigen mehrere auswählen."
       },
       "subtitle": {
         "fr": "Sélection",
-        "en": "Selection"
+        "en": "Selection",
+        "nl": "Selectie",
+        "de": "Auswahl"
       },
       "captures": {
         "fr": {
@@ -746,6 +1266,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 269,
+                      "y": 327.5,
+                      "width": 20,
+                      "height": 19
+                    },
+                    "selector": "[data-testid=\"op-add-meter__checkbox--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 18,
+                      "y": 429,
+                      "width": 20,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"op-add-meter__checkbox-mobile--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 269,
+                      "y": 327.5,
+                      "width": 20,
+                      "height": 19
+                    },
+                    "selector": "[data-testid=\"op-add-meter__checkbox--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 18,
+                      "y": 429,
+                      "width": 20,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"op-add-meter__checkbox-mobile--0\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -758,15 +1374,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Date de début aujourd'hui",
-        "en": "Start date today"
+        "en": "Start date today",
+        "nl": "Startdatum vandaag",
+        "de": "Startdatum heute"
       },
       "text": {
         "fr": "Ouvrez le calendrier et sélectionnez la date du jour : le rattachement du compteur prendra effet immédiatement.",
-        "en": "Open the calendar and pick today's date so the meter attachment takes effect immediately."
+        "en": "Open the calendar and pick today's date so the meter attachment takes effect immediately.",
+        "nl": "Open de kalender en selecteer de datum van vandaag: de koppeling van de meter gaat dan onmiddellijk in.",
+        "de": "Öffnen Sie den Kalender und wählen Sie das heutige Datum aus: Die Zuordnung des Zählers wird dann sofort wirksam."
       },
       "subtitle": {
         "fr": "Période d'activation",
-        "en": "Activation window"
+        "en": "Activation window",
+        "nl": "Activeringsperiode",
+        "de": "Aktivierungszeitraum"
       },
       "captures": {
         "fr": {
@@ -864,6 +1486,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 596.5,
+                      "y": 678.5,
+                      "width": 247,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-add-meter__datepicker--start-date\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 723,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-add-meter__datepicker--start-date\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 596.5,
+                      "y": 678.5,
+                      "width": 247,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-add-meter__datepicker--start-date\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 723,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-add-meter__datepicker--start-date\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -876,15 +1594,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Valider l'ajout",
-        "en": "Confirm the addition"
+        "en": "Confirm the addition",
+        "nl": "De toevoeging bevestigen",
+        "de": "Hinzufügen bestätigen"
       },
       "text": {
         "fr": "Cliquez sur « Valider » pour rattacher le compteur. Une notification confirme la mise à jour côté serveur.",
-        "en": "Click \"Validate\" to attach the meter. A toast notification confirms the server-side update."
+        "en": "Click \"Validate\" to attach the meter. A toast notification confirms the server-side update.",
+        "nl": "Klik op “Bevestigen” om de meter te koppelen. Een melding bevestigt de update aan serverzijde.",
+        "de": "Klicken Sie auf „Bestätigen“, um den Zähler zuzuordnen. Eine Benachrichtigung bestätigt die serverseitige Aktualisierung."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -982,6 +1706,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 667.5,
+                      "y": 732.5,
+                      "width": 105,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-add-meter__btn--validate\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 142.5,
+                      "y": 777,
+                      "width": 105,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-add-meter__btn--validate\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 668.671875,
+                      "y": 732.5,
+                      "width": 102.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-add-meter__btn--validate\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 143.671875,
+                      "y": 777,
+                      "width": 102.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-add-meter__btn--validate\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -994,15 +1814,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Compteur rattaché",
-        "en": "Meter attached"
+        "en": "Meter attached",
+        "nl": "Meter gekoppeld",
+        "de": "Zähler zugeordnet"
       },
       "text": {
         "fr": "De retour sur la fiche détaillée, le compteur ajouté apparaît immédiatement dans l'onglet « Actuel » des compteurs rattachés à l'opération.",
-        "en": "Back on the detail view, the newly attached meter appears immediately in the \"Now\" tab of meters tied to the operation."
+        "en": "Back on the detail view, the newly attached meter appears immediately in the \"Now\" tab of meters tied to the operation.",
+        "nl": "Terug op de detailpagina verschijnt de toegevoegde meter meteen in het tabblad “Huidig” van de meters die aan de operatie gekoppeld zijn.",
+        "de": "Zurück in der Detailansicht erscheint der hinzugefügte Zähler sofort in der Registerkarte „Aktuell“ der Zähler, die der Operation zugeordnet sind."
       },
       "subtitle": {
         "fr": "Vérification",
-        "en": "Verification"
+        "en": "Verification",
+        "nl": "Controle",
+        "de": "Überprüfung"
       },
       "captures": {
         "fr": {
@@ -1064,6 +1890,68 @@
               "title": "Meter attached",
               "text": "Back on the detail view, the card of the newly attached meter appears immediately in the \"Now\" tab of meters tied to the operation.",
               "subtitle": "Verification"
+            }
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/nl/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ],
+            "content": {
+              "title": "Meter gekoppeld",
+              "text": "Terug op de detailpagina verschijnt de kaart van de toegevoegde meter meteen in het tabblad “Huidig” van de meters die aan de operatie gekoppeld zijn.",
+              "subtitle": "Controle"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ],
+            "content": {
+              "title": "Zähler zugeordnet",
+              "text": "Zurück in der Detailansicht erscheint die Karte des hinzugefügten Zählers sofort in der Registerkarte „Aktuell“ der Zähler, die der Operation zugeordnet sind.",
+              "subtitle": "Überprüfung"
             }
           }
         }

@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Supprimer une clé de répartition",
-    "en": "Delete an allocation key"
+    "en": "Delete an allocation key",
+    "nl": "Een verdeelsleutel verwijderen",
+    "de": "Verteilungsschlüssel löschen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir les clés de répartition",
-        "en": "Open the allocation keys"
+        "en": "Open the allocation keys",
+        "nl": "De verdeelsleutels openen",
+        "de": "Die Verteilungsschlüssel öffnen"
       },
       "text": {
         "fr": "Dans la section « Gestion » de la barre latérale, cliquez sur « Clés de répartition ».",
-        "en": "In the sidebar's \"Management\" section, click \"Allocation keys\"."
+        "en": "In the sidebar's \"Management\" section, click \"Allocation keys\".",
+        "nl": "Klik in de sectie “Beheer” van de zijbalk op “Verdeelsleutelbeheer”.",
+        "de": "Klicken Sie im Bereich „Verwaltung“ der Seitenleiste auf „Verteilungsschlüsselverwaltung“."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De verdeelsleutels openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en daarna op “Verdeelsleutelbeheer”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Die Verteilungsschlüssel öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Verteilungsschlüsselverwaltung“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir une clé",
-        "en": "Open a key"
+        "en": "Open a key",
+        "nl": "Een sleutel openen",
+        "de": "Einen Schlüssel öffnen"
       },
       "text": {
         "fr": "Cliquez sur la clé que vous souhaitez supprimer pour ouvrir sa fiche détaillée.",
-        "en": "Click the key you want to delete to open its detail page."
+        "en": "Click the key you want to delete to open its detail page.",
+        "nl": "Klik op de sleutel die u wilt verwijderen om de detailpagina ervan te openen.",
+        "de": "Klicken Sie auf den Schlüssel, den Sie löschen möchten, um seine Detailseite zu öffnen."
       },
       "subtitle": {
         "fr": "Suppression d'une clé",
-        "en": "Deleting a key"
+        "en": "Deleting a key",
+        "nl": "Een sleutel verwijderen",
+        "de": "Einen Schlüssel löschen"
       },
       "captures": {
         "fr": {
@@ -278,6 +400,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 350,
+                      "width": 1280,
+                      "height": 45
+                    },
+                    "selector": "[data-testid=\"keys-list__row--desktop--2\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/nl/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 616,
+                      "width": 358,
+                      "height": 130
+                    },
+                    "selector": "[data-testid=\"keys-list__row--mobile--2\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De sleutel openen",
+              "text": "Tik in de lijst op de rij van “Key 2” om de detailpagina ervan te openen.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 350,
+                      "width": 1280,
+                      "height": 45
+                    },
+                    "selector": "[data-testid=\"keys-list__row--desktop--2\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/de/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 616,
+                      "width": 358,
+                      "height": 130
+                    },
+                    "selector": "[data-testid=\"keys-list__row--mobile--2\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Den Schlüssel öffnen",
+              "text": "Tippen Sie in der Liste auf die Zeile von „Key 2“, um seine Detailseite zu öffnen.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -290,15 +518,21 @@
       "waitAfter": 1500,
       "title": {
         "fr": "Supprimer la clé",
-        "en": "Delete the key"
+        "en": "Delete the key",
+        "nl": "De sleutel verwijderen",
+        "de": "Den Schlüssel löschen"
       },
       "text": {
         "fr": "Le bouton « Supprimer » retire définitivement la clé de la communauté. Si elle était affectée à une opération de partage, cette affectation est également retirée.",
-        "en": "The \"Delete\" button permanently removes the key from the community. If it was assigned to a sharing operation, that assignment is removed too."
+        "en": "The \"Delete\" button permanently removes the key from the community. If it was assigned to a sharing operation, that assignment is removed too.",
+        "nl": "De knop “Verwijderen” verwijdert de sleutel definitief uit de gemeenschap. Als hij aan een deeloperatie was toegewezen, wordt die toewijzing ook verwijderd.",
+        "de": "Die Schaltfläche „Löschen“ entfernt den Schlüssel endgültig aus der Gemeinschaft. War er einer Teilungsoperation zugewiesen, wird diese Zuweisung ebenfalls entfernt."
       },
       "subtitle": {
         "fr": "Suppression d'une clé",
-        "en": "Deleting a key"
+        "en": "Deleting a key",
+        "nl": "Een sleutel verwijderen",
+        "de": "Einen Schlüssel löschen"
       },
       "captures": {
         "fr": {
@@ -396,6 +630,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1232.515625,
+                      "y": 84,
+                      "width": 136.484375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-view__btn--delete\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 301,
+                      "width": 136.484375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-view__btn--delete\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1260.046875,
+                      "y": 84,
+                      "width": 108.953125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-view__btn--delete\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 301,
+                      "width": 108.953125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-view__btn--delete\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -408,15 +738,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Clé supprimée",
-        "en": "Key deleted"
+        "en": "Key deleted",
+        "nl": "Sleutel verwijderd",
+        "de": "Schlüssel gelöscht"
       },
       "text": {
         "fr": "De retour sur la liste des clés, « Key 2 » n'apparaît plus : la suppression a bien été enregistrée.",
-        "en": "Back on the keys list, \"Key 2\" no longer appears: the deletion has been saved."
+        "en": "Back on the keys list, \"Key 2\" no longer appears: the deletion has been saved.",
+        "nl": "Terug in de lijst met sleutels staat “Key 2” er niet meer bij: de verwijdering is wel degelijk opgeslagen.",
+        "de": "Zurück in der Schlüsselliste erscheint „Key 2“ nicht mehr: Das Löschen wurde gespeichert."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -462,6 +798,58 @@
             "frames": [
               {
                 "screenshot": "../assets/key-delete/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/nl/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/de/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-delete/de/mobile/step-26.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

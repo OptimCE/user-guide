@@ -8,13 +8,14 @@
     <link rel="canonical" href="https://guide.optimce.be/dashboard-member-tour/en.html">
     <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/dashboard-member-tour/fr.html">
     <link rel="alternate" hreflang="en" href="https://guide.optimce.be/dashboard-member-tour/en.html">
+    <link rel="alternate" hreflang="nl" href="https://guide.optimce.be/dashboard-member-tour/nl.html">
+    <link rel="alternate" hreflang="de" href="https://guide.optimce.be/dashboard-member-tour/de.html">
     <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/dashboard-member-tour/fr.html">
     <meta property="og:type" content="article">
     <meta property="og:title" content="The member dashboard">
     <meta property="og:description" content="Tour the member dashboard: your energy, your share of the allocation key and your member record.">
     <meta property="og:url" content="https://guide.optimce.be/dashboard-member-tour/en.html">
     <meta property="og:site_name" content="OptimCE — User guides">
-    <meta property="og:locale" content="en">
     <meta property="og:image" content="https://guide.optimce.be/assets/dashboard-member-tour/en/desktop/step-07.png">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="../assets/guides.css">
@@ -25,10 +26,8 @@
           var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
           document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
         } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
-        // Synchronise the saved language preference with the file we just loaded.
-        // The user landed on this <locale>.html either by clicking a link rewritten
-        // to honour their preference or by direct entry — either way, that's the
-        // current truth.
+        // Remember the language of the file we just loaded: interactive.html is one
+        // URL for every locale and opens in this language when no ?lang= is given.
         try { localStorage.setItem("oce-lang", "en"); } catch (e) {}
       })();
     </script>
@@ -54,17 +53,27 @@
         </nav>
 
         <div class="steppy-header-actions">
-            <nav class="steppy-locale-switch" aria-label="Language">
-                <ul>
-                    <li>
-                        <a href="./fr.html">Français</a>
-                    </li>
-                    <li>
-                        <span aria-current="true">English</span>
-                    </li>
-                </ul>
-            </nav>
-            <button type="button" class="oce-theme-toggle" aria-label="Toggle theme">
+<label class="steppy-locale-select">
+    <span class="steppy-visually-hidden">Language</span>
+    <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <select autocomplete="off">        <option value="./fr.html" lang="fr">Français</option>        <option value="./en.html" lang="en" selected>English</option>        <option value="./nl.html" lang="nl">Nederlands</option>        <option value="./de.html" lang="de">Deutsch</option>    </select>
+    <svg class="steppy-locale-select-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</label>
+<script>
+  (function () {
+    var sel = document.querySelector(".steppy-locale-select select");
+    if (!sel) return;
+    sel.addEventListener("change", function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+    // Back from the language just picked can restore this page from the
+    // bfcache with that option still showing — snap it back to this page's own.
+    window.addEventListener("pageshow", function () {
+      var own = sel.querySelector("option[selected]");
+      if (own) sel.value = own.value;
+    });
+  })();
+</script>            <button type="button" class="oce-theme-toggle" aria-label="Toggle theme">
                 <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                 <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
             </button>
@@ -75,7 +84,7 @@
                     <span aria-current="true">Step by step</span>
                 </li>
                 <li>
-                    <a href="./interactive.html">Interactive</a>
+                    <a href="./interactive.html?lang=en">Interactive</a>
                 </li>
             </ul>
         </nav>
@@ -100,6 +109,8 @@
     <div class="steppy-role-badge">
         <span class="i18n-fr">Guide utilisateur</span>
         <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
     </div>
 
     <div class="steppy-step" data-step-index="1">
@@ -110,7 +121,7 @@
         <div class="steppy-step-subtitle">Home page</div>
         <div class="steppy-step-content">From the home page, open the community you want to look at.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/desktop/step-07.png" alt="Step 1" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/desktop/step-07.png" alt="1. Open your community" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -124,7 +135,7 @@
         <div class="steppy-step-subtitle">Overview</div>
         <div class="steppy-step-content">The dashboard adapts to your role. As a member you do not see the community's management, but your own situation inside it.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/desktop/step-09.png" alt="Step 2" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/desktop/step-09.png" alt="2. The dashboard" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -138,7 +149,7 @@
         <div class="steppy-step-subtitle">Dashboard</div>
         <div class="steppy-step-content">The first tile totals, over the last thirty days, what you consumed and what the sharing brought you, then breaks it down meter by meter.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/desktop/step-10.png" alt="Step 3" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/desktop/step-10.png" alt="3. My energy here" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -152,7 +163,7 @@
         <div class="steppy-step-subtitle">Dashboard</div>
         <div class="steppy-step-content">For each sharing operation the tile shows the share that comes to you: a fixed percentage, a split in proportion to your consumption, or a note that your meter is not part of the key currently in force.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/desktop/step-11.png" alt="Step 4" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/desktop/step-11.png" alt="4. My participation" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -166,7 +177,7 @@
         <div class="steppy-step-subtitle">Dashboard</div>
         <div class="steppy-step-content">The tile confirms your record is active, or flags that it is still waiting for a manager to validate it.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/desktop/step-12.png" alt="Step 5" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/desktop/step-12.png" alt="5. My member record" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -180,7 +191,7 @@
         <div class="steppy-step-subtitle">My member record</div>
         <div class="steppy-step-content">The link opens your record read-only — the same information your manager holds.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/desktop/step-13.png" alt="Step 6" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/desktop/step-13.png" alt="6. Look at your record" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -194,7 +205,7 @@
         <div class="steppy-step-subtitle">Dashboard</div>
         <div class="steppy-step-content">Member count, regulator, website: enough to know who you are dealing with. The link opens the community's full information page.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/desktop/step-17.png" alt="Step 7" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/desktop/step-17.png" alt="7. About this community" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -208,7 +219,7 @@
         <div class="steppy-step-subtitle">Dashboard</div>
         <div class="steppy-step-content">These two tiles only appear when the community uses the matching modules. Your unpaid invoices are summarised there, as are the latest posts on the news board.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/desktop/step-18.png" alt="Step 8" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/desktop/step-18.png" alt="8. Invoices and news" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -222,7 +233,7 @@
         <div class="steppy-step-subtitle">Dashboard</div>
         <div class="steppy-step-content">The &quot;Refresh&quot; button reloads every tile without reloading the page.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/desktop/step-19.png" alt="Step 9" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/desktop/step-19.png" alt="9. Refresh" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -236,7 +247,7 @@
         <div class="steppy-step-subtitle">Dashboard</div>
         <div class="steppy-step-content">The tiles reload one by one and settle back with the freshest data.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/desktop/step-20.png" alt="Step 10" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/desktop/step-20.png" alt="10. Up-to-date data" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -251,6 +262,8 @@
     <div class="steppy-role-badge">
         <span class="i18n-fr">Guide utilisateur</span>
         <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
     </div>
 
     <div class="steppy-step" data-step-index="1">
@@ -261,7 +274,7 @@
         <div class="steppy-step-subtitle">Home page</div>
         <div class="steppy-step-content">From the home page, open the community you want to look at.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/mobile/step-07.png" alt="Step 1" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/mobile/step-07.png" alt="1. Open your community" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -275,7 +288,7 @@
         <div class="steppy-step-subtitle">Overview</div>
         <div class="steppy-step-content">The dashboard adapts to your role. As a member you do not see the community's management, but your own situation inside it.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/mobile/step-09.png" alt="Step 2" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/mobile/step-09.png" alt="2. The dashboard" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -289,7 +302,7 @@
         <div class="steppy-step-subtitle">Dashboard</div>
         <div class="steppy-step-content">The first tile totals, over the last thirty days, what you consumed and what the sharing brought you, then breaks it down meter by meter.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/mobile/step-10.png" alt="Step 3" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/mobile/step-10.png" alt="3. My energy here" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -303,7 +316,7 @@
         <div class="steppy-step-subtitle">Dashboard</div>
         <div class="steppy-step-content">For each sharing operation the tile shows the share that comes to you: a fixed percentage, a split in proportion to your consumption, or a note that your meter is not part of the key currently in force.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/mobile/step-11.png" alt="Step 4" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/mobile/step-11.png" alt="4. My participation" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -317,7 +330,7 @@
         <div class="steppy-step-subtitle">Dashboard</div>
         <div class="steppy-step-content">The tile confirms your record is active, or flags that it is still waiting for a manager to validate it.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/mobile/step-12.png" alt="Step 5" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/mobile/step-12.png" alt="5. My member record" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -331,7 +344,7 @@
         <div class="steppy-step-subtitle">My member record</div>
         <div class="steppy-step-content">The link opens your record read-only — the same information your manager holds.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/mobile/step-13.png" alt="Step 6" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/mobile/step-13.png" alt="6. Look at your record" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -345,7 +358,7 @@
         <div class="steppy-step-subtitle">Dashboard</div>
         <div class="steppy-step-content">Member count, regulator, website: enough to know who you are dealing with. The link opens the community's full information page.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/mobile/step-17.png" alt="Step 7" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/mobile/step-17.png" alt="7. About this community" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -359,7 +372,7 @@
         <div class="steppy-step-subtitle">Dashboard</div>
         <div class="steppy-step-content">These two tiles only appear when the community uses the matching modules. Your unpaid invoices are summarised there, as are the latest posts on the news board.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/mobile/step-18.png" alt="Step 8" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/mobile/step-18.png" alt="8. Invoices and news" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -373,7 +386,7 @@
         <div class="steppy-step-subtitle">Dashboard</div>
         <div class="steppy-step-content">The &quot;Refresh&quot; button reloads every tile without reloading the page.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/mobile/step-19.png" alt="Step 9" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/mobile/step-19.png" alt="9. Refresh" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -387,7 +400,7 @@
         <div class="steppy-step-subtitle">Dashboard</div>
         <div class="steppy-step-content">The tiles reload one by one and settle back with the freshest data.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/dashboard-member-tour/en/mobile/step-20.png" alt="Step 10" loading="lazy">
+            <img src="../assets/dashboard-member-tour/en/mobile/step-20.png" alt="10. Up-to-date data" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>

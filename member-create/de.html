@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mitglied anlegen — OptimCE — Benutzeranleitungen</title>
+    <meta name="description" content="Ein Mitglied als Privatperson über den 4-stufigen Erstellungsassistenten zu Ihrer Gemeinschaft hinzufügen.">
+    <link rel="canonical" href="https://guide.optimce.be/member-create/de.html">
+    <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/member-create/fr.html">
+    <link rel="alternate" hreflang="en" href="https://guide.optimce.be/member-create/en.html">
+    <link rel="alternate" hreflang="nl" href="https://guide.optimce.be/member-create/nl.html">
+    <link rel="alternate" hreflang="de" href="https://guide.optimce.be/member-create/de.html">
+    <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/member-create/fr.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Mitglied anlegen">
+    <meta property="og:description" content="Ein Mitglied als Privatperson über den 4-stufigen Erstellungsassistenten zu Ihrer Gemeinschaft hinzufügen.">
+    <meta property="og:url" content="https://guide.optimce.be/member-create/de.html">
+    <meta property="og:site_name" content="OptimCE — Benutzeranleitungen">
+    <meta property="og:image" content="https://guide.optimce.be/assets/member-create/de/desktop/step-09.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Remember the language of the file we just loaded: interactive.html is one
+        // URL for every locale and opens in this language when no ?lang= is given.
+        try { localStorage.setItem("oce-lang", "de"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.de.html" aria-label="OptimCE — Benutzeranleitungen">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.de.html">OptimCE — Benutzeranleitungen</a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.de.html">Startseite</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../members/de.html">Mitglieder</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">Mitglied anlegen</span>
+        </nav>
+
+        <div class="steppy-header-actions">
+<label class="steppy-locale-select">
+    <span class="steppy-visually-hidden">Sprache</span>
+    <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <select autocomplete="off">        <option value="./fr.html" lang="fr">Français</option>        <option value="./en.html" lang="en">English</option>        <option value="./nl.html" lang="nl">Nederlands</option>        <option value="./de.html" lang="de" selected>Deutsch</option>    </select>
+    <svg class="steppy-locale-select-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</label>
+<script>
+  (function () {
+    var sel = document.querySelector(".steppy-locale-select select");
+    if (!sel) return;
+    sel.addEventListener("change", function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+    // Back from the language just picked can restore this page from the
+    // bfcache with that option still showing — snap it back to this page's own.
+    window.addEventListener("pageshow", function () {
+      var own = sel.querySelector("option[selected]");
+      if (own) sel.value = own.value;
+    });
+  })();
+</script>            <button type="button" class="oce-theme-toggle" aria-label="Design wechseln">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-mode-switch" aria-label="Guide mode">
+            <ul>
+                <li>
+                    <span aria-current="true">Schritt für Schritt</span>
+                </li>
+                <li>
+                    <a href="./interactive.html?lang=de">Interaktiv</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="steppy-onboarding-strip" aria-label="Fortschritt Erste Schritte">
+        <span class="steppy-onboarding-strip-progress">
+            <a href="../getting-started/de.html">Erste Schritte</a>
+            <span class="steppy-onboarding-strip-position">Schritt 7 von 11</span>
+        </span>
+        <span class="steppy-onboarding-strip-nav">
+            <a class="steppy-onboarding-prev" href="../key-create-wizard/de.html?onboarding=1">‹ Verteilungsschlüssel erstellen (Assistent)</a>
+            <a class="steppy-onboarding-next" href="../member-update/de.html?onboarding=1">Mitglied bearbeiten ›</a>
+        </span>
+    </nav>
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Mitglied anlegen</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Meine Gemeinschaften öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Klicken Sie im Profilmenü der Seitenleiste auf „Meine Gemeinschaften“, um die Liste der Gemeinschaften anzuzeigen, bei denen Sie angemeldet sind.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/desktop/step-09.png" alt="1. Meine Gemeinschaften öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Gruppe Mitgliederverwaltung öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Klicken Sie im Abschnitt „Verwaltung“ auf „Mitgliederverwaltung“, um das Untermenü einzublenden (Mitglieder, Zähler, Teilungsoperationen).</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/desktop/step-22.png" alt="2. Gruppe Mitgliederverwaltung öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Mitgliederliste öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Klicken Sie im Untermenü auf „Mitglieder verwalten“: Hier beginnen Sie, wenn Sie eine neue Person zur Gemeinschaft hinzufügen möchten.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/desktop/step-23.png" alt="3. Mitgliederliste öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Erstellung eines Mitglieds starten</span>
+        </h2>
+        <div class="steppy-step-subtitle">Mitglied hinzufügen</div>
+        <div class="steppy-step-content">Klicken Sie oben in der Liste auf „Hinzufügen“, um den Erstellungsassistenten mit vier Schritten zu öffnen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/desktop/step-30.png" alt="4. Erstellung eines Mitglieds starten" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Mitgliedstyp wählen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Schritt 1 — Typ</div>
+        <div class="steppy-step-content">Wählen Sie „Privatperson“, um ein Einzelmitglied zu erstellen. Die Option „Unternehmen“ ist juristischen Personen vorbehalten und fragt im weiteren Verlauf andere Felder ab.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/desktop/step-32.png" alt="5. Mitgliedstyp wählen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Persönliche Informationen eingeben</span>
+        </h2>
+        <div class="steppy-step-subtitle">Schritt 2 — Identität</div>
+        <div class="steppy-step-content">Geben Sie die Nationalregisternummer, den Nachnamen, den Vornamen, die E-Mail-Adresse und die Telefonnummer des neuen Mitglieds ein. Alle diese Felder müssen ausgefüllt sein, um den Schritt abzuschließen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/desktop/step-35-a.png" alt="6. Persönliche Informationen eingeben" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Adresse eingeben</span>
+        </h2>
+        <div class="steppy-step-subtitle">Schritt 3 — Adresse</div>
+        <div class="steppy-step-content">Vervollständigen Sie die Wohnadresse: Straße, Hausnummer, Postleitzahl und Ort. Ist die Rechnungsadresse identisch, aktivieren Sie im nächsten Schritt das Kontrollkästchen „Gleiche Adresse für die Rechnungsstellung“, um sie automatisch zu übernehmen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/desktop/step-38-a.png" alt="7. Adresse eingeben" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Bankdaten eingeben</span>
+        </h2>
+        <div class="steppy-step-subtitle">Schritt 4 — Bank</div>
+        <div class="steppy-step-content">Geben Sie die IBAN des Mitglieds ein: Sie wird für Rückerstattungen im Zusammenhang mit Teilungsoperationen verwendet. Das Format wird in Echtzeit geprüft.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/desktop/step-42.png" alt="8. Bankdaten eingeben" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Erstellung bestätigen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Bestätigung</div>
+        <div class="steppy-step-content">Klicken Sie auf „Bestätigen“, um das Formular an das CRM zu senden. Das Mitglied wird sofort erstellt und der aktiven Gemeinschaft zugeordnet.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/desktop/step-43.png" alt="9. Erstellung bestätigen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Zähler später hinzufügen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dialogfenster</div>
+        <div class="steppy-step-content">Ein Fenster schlägt vor, direkt mit dem Erstellen eines Zählers fortzufahren. Wählen Sie „Nein“, um hier abzuschließen — Sie können später jederzeit über die Detailseite des Mitglieds einen Zähler hinzufügen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/desktop/step-45.png" alt="10. Zähler später hinzufügen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Mitglied erstellt</span>
+        </h2>
+        <div class="steppy-step-subtitle">Bestätigung</div>
+        <div class="steppy-step-content">Die Detailseite des neuen Mitglieds wird angezeigt: Der vollständige Name erscheint in der Kopfzeile, und alle eingegebenen Informationen sind sichtbar. Das Mitglied kann nun in Teilungsoperationen verwendet werden.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/desktop/step-51.png" alt="11. Mitglied erstellt" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Mitglied anlegen</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Meine Gemeinschaften öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Meine Gemeinschaften“, um die Liste der Gemeinschaften anzuzeigen, bei denen Sie angemeldet sind.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/mobile/step-12.png" alt="1. Meine Gemeinschaften öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Gruppe Mitgliederverwaltung öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Tippen Sie im Navigationsmenü im Abschnitt „Verwaltung“ auf „Mitgliederverwaltung“, um das Untermenü einzublenden (Mitglieder, Zähler, Teilungsoperationen).</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/mobile/step-26.png" alt="2. Gruppe Mitgliederverwaltung öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Mitgliederliste öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Tippen Sie im Untermenü auf „Mitglieder verwalten“: Hier beginnen Sie, wenn Sie eine neue Person zur Gemeinschaft hinzufügen möchten.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/mobile/step-27.png" alt="3. Mitgliederliste öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Erstellung eines Mitglieds starten</span>
+        </h2>
+        <div class="steppy-step-subtitle">Mitglied hinzufügen</div>
+        <div class="steppy-step-content">Klicken Sie oben in der Liste auf „Hinzufügen“, um den Erstellungsassistenten mit vier Schritten zu öffnen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/mobile/step-30.png" alt="4. Erstellung eines Mitglieds starten" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Mitgliedstyp wählen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Schritt 1 — Typ</div>
+        <div class="steppy-step-content">Wählen Sie „Privatperson“, um ein Einzelmitglied zu erstellen. Die Option „Unternehmen“ ist juristischen Personen vorbehalten und fragt im weiteren Verlauf andere Felder ab.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/mobile/step-32.png" alt="5. Mitgliedstyp wählen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Persönliche Informationen eingeben</span>
+        </h2>
+        <div class="steppy-step-subtitle">Schritt 2 — Identität</div>
+        <div class="steppy-step-content">Geben Sie die Nationalregisternummer, den Nachnamen, den Vornamen, die E-Mail-Adresse und die Telefonnummer des neuen Mitglieds ein. Alle diese Felder müssen ausgefüllt sein, um den Schritt abzuschließen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/mobile/step-35-a.png" alt="6. Persönliche Informationen eingeben" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Adresse eingeben</span>
+        </h2>
+        <div class="steppy-step-subtitle">Schritt 3 — Adresse</div>
+        <div class="steppy-step-content">Vervollständigen Sie die Wohnadresse: Straße, Hausnummer, Postleitzahl und Ort. Ist die Rechnungsadresse identisch, aktivieren Sie im nächsten Schritt das Kontrollkästchen „Gleiche Adresse für die Rechnungsstellung“, um sie automatisch zu übernehmen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/mobile/step-38-a.png" alt="7. Adresse eingeben" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Bankdaten eingeben</span>
+        </h2>
+        <div class="steppy-step-subtitle">Schritt 4 — Bank</div>
+        <div class="steppy-step-content">Geben Sie die IBAN des Mitglieds ein: Sie wird für Rückerstattungen im Zusammenhang mit Teilungsoperationen verwendet. Das Format wird in Echtzeit geprüft.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/mobile/step-42.png" alt="8. Bankdaten eingeben" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Erstellung bestätigen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Bestätigung</div>
+        <div class="steppy-step-content">Klicken Sie auf „Bestätigen“, um das Formular an das CRM zu senden. Das Mitglied wird sofort erstellt und der aktiven Gemeinschaft zugeordnet.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/mobile/step-43.png" alt="9. Erstellung bestätigen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Zähler später hinzufügen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dialogfenster</div>
+        <div class="steppy-step-content">Ein Fenster schlägt vor, direkt mit dem Erstellen eines Zählers fortzufahren. Wählen Sie „Nein“, um hier abzuschließen — Sie können später jederzeit über die Detailseite des Mitglieds einen Zähler hinzufügen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/mobile/step-45.png" alt="10. Zähler später hinzufügen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Mitglied erstellt</span>
+        </h2>
+        <div class="steppy-step-subtitle">Bestätigung</div>
+        <div class="steppy-step-content">Die Detailseite des neuen Mitglieds wird angezeigt: Der vollständige Name erscheint in der Kopfzeile, und alle eingegebenen Informationen sind sichtbar. Das Mitglied kann nun in Teilungsoperationen verwendet werden.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/member-create/de/mobile/step-51.png" alt="11. Mitglied erstellt" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p>Erstellt mit Steppy.</p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 219.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 219.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"}}, "screenshot": "../assets/member-create/de/desktop/step-09.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/member-create/de/desktop/step-09.png", "subtitle": "Navigation", "text": "Klicken Sie im Profilmen\u00fc der Seitenleiste auf \u201eMeine Gemeinschaften\u201c, um die Liste der Gemeinschaften anzuzeigen, bei denen Sie angemeldet sind.", "title": "Meine Gemeinschaften \u00f6ffnen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"}}, "screenshot": "../assets/member-create/de/desktop/step-22.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/member-create/de/desktop/step-22.png", "subtitle": "Navigation", "text": "Klicken Sie im Abschnitt \u201eVerwaltung\u201c auf \u201eMitgliederverwaltung\u201c, um das Untermen\u00fc einzublenden (Mitglieder, Z\u00e4hler, Teilungsoperationen).", "title": "Gruppe Mitgliederverwaltung \u00f6ffnen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 33.5, "width": 215, "x": 36, "y": 544.5}, "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 33.5, "width": 215, "x": 36, "y": 544.5}, "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"}}, "screenshot": "../assets/member-create/de/desktop/step-23.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/member-create/de/desktop/step-23.png", "subtitle": "Navigation", "text": "Klicken Sie im Untermen\u00fc auf \u201eMitglieder verwalten\u201c: Hier beginnen Sie, wenn Sie eine neue Person zur Gemeinschaft hinzuf\u00fcgen m\u00f6chten.", "title": "Mitgliederliste \u00f6ffnen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 134.375, "x": 683.953125, "y": 61}, "selector": "[data-testid=\"members-list__btn--add\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 134.375, "x": 683.953125, "y": 61}, "selector": "[data-testid=\"members-list__btn--add\"]"}}, "screenshot": "../assets/member-create/de/desktop/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/member-create/de/desktop/step-30.png", "subtitle": "Mitglied hinzuf\u00fcgen", "text": "Klicken Sie oben in der Liste auf \u201eHinzuf\u00fcgen\u201c, um den Erstellungsassistenten mit vier Schritten zu \u00f6ffnen.", "title": "Erstellung eines Mitglieds starten", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 62, "width": 248, "x": 464, "y": 451}, "selector": "[data-testid=\"new-member-type__card--individual\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 62, "width": 248, "x": 464, "y": 451}, "selector": "[data-testid=\"new-member-type__card--individual\"]"}}, "screenshot": "../assets/member-create/de/desktop/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/member-create/de/desktop/step-32.png", "subtitle": "Schritt 1 \u2014 Typ", "text": "W\u00e4hlen Sie \u201ePrivatperson\u201c, um ein Einzelmitglied zu erstellen. Die Option \u201eUnternehmen\u201c ist juristischen Personen vorbehalten und fragt im weiteren Verlauf andere Felder ab.", "title": "Mitgliedstyp w\u00e4hlen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 826, "x": 307, "y": 362.5}, "selector": "[data-testid=\"new-member-informations__input--nrn\"]", "value": "85.06.22-456.78"}, {"bbox": {"height": 42, "width": 405, "x": 307, "y": 438.5}, "selector": "[data-testid=\"new-member-informations__input--surname\"]", "value": "E2EUser"}, {"bbox": {"height": 42, "width": 405, "x": 728, "y": 438.5}, "selector": "[data-testid=\"new-member-informations__input--name\"]", "value": "Testy"}, {"bbox": {"height": 42, "width": 405, "x": 307, "y": 514.5}, "selector": "[data-testid=\"new-member-informations__input--email\"]", "value": "e2e-testy@test.com"}, {"bbox": {"height": 42, "width": 405, "x": 728, "y": 514.5}, "selector": "[data-testid=\"new-member-informations__input--phone\"]", "value": "0412345678"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 826, "x": 307, "y": 362.5}, "selector": "[data-testid=\"new-member-informations__input--nrn\"]", "value": "85.06.22-456.78"}, {"bbox": {"height": 42, "width": 405, "x": 307, "y": 438.5}, "selector": "[data-testid=\"new-member-informations__input--surname\"]", "value": "E2EUser"}, {"bbox": {"height": 42, "width": 405, "x": 728, "y": 438.5}, "selector": "[data-testid=\"new-member-informations__input--name\"]", "value": "Testy"}, {"bbox": {"height": 42, "width": 405, "x": 307, "y": 514.5}, "selector": "[data-testid=\"new-member-informations__input--email\"]", "value": "e2e-testy@test.com"}, {"bbox": {"height": 42, "width": 405, "x": 728, "y": 514.5}, "selector": "[data-testid=\"new-member-informations__input--phone\"]", "value": "0412345678"}]}, "screenshot": "../assets/member-create/de/desktop/step-35-a.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/member-create/de/desktop/step-35-a.png", "subtitle": "Schritt 2 \u2014 Identit\u00e4t", "text": "Geben Sie die Nationalregisternummer, den Nachnamen, den Vornamen, die E-Mail-Adresse und die Telefonnummer des neuen Mitglieds ein. Alle diese Felder m\u00fcssen ausgef\u00fcllt sein, um den Schritt abzuschlie\u00dfen.", "title": "Pers\u00f6nliche Informationen eingeben", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 405, "x": 307, "y": 368}, "selector": "[data-testid=\"new-member-address__input--home-street\"]", "value": "Rue de Test"}, {"bbox": {"height": 42, "width": 194.5, "x": 728, "y": 368}, "selector": "[data-testid=\"new-member-address__input--home-number\"]", "value": "42"}, {"bbox": {"height": 42, "width": 194.5, "x": 307, "y": 444}, "selector": "[data-testid=\"new-member-address__input--home-postcode\"]", "value": "1000"}, {"bbox": {"height": 42, "width": 615.5, "x": 517.5, "y": 444}, "selector": "[data-testid=\"new-member-address__input--home-city\"]", "value": "Bruxelles"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 405, "x": 307, "y": 368}, "selector": "[data-testid=\"new-member-address__input--home-street\"]", "value": "Rue de Test"}, {"bbox": {"height": 42, "width": 194.5, "x": 728, "y": 368}, "selector": "[data-testid=\"new-member-address__input--home-number\"]", "value": "42"}, {"bbox": {"height": 42, "width": 194.5, "x": 307, "y": 444}, "selector": "[data-testid=\"new-member-address__input--home-postcode\"]", "value": "1000"}, {"bbox": {"height": 42, "width": 615.5, "x": 517.5, "y": 444}, "selector": "[data-testid=\"new-member-address__input--home-city\"]", "value": "Bruxelles"}]}, "screenshot": "../assets/member-create/de/desktop/step-38-a.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/member-create/de/desktop/step-38-a.png", "subtitle": "Schritt 3 \u2014 Adresse", "text": "Vervollst\u00e4ndigen Sie die Wohnadresse: Stra\u00dfe, Hausnummer, Postleitzahl und Ort. Ist die Rechnungsadresse identisch, aktivieren Sie im n\u00e4chsten Schritt das Kontrollk\u00e4stchen \u201eGleiche Adresse f\u00fcr die Rechnungsstellung\u201c, um sie automatisch zu \u00fcbernehmen.", "title": "Adresse eingeben", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 448, "x": 307, "y": 468.5}, "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"}, "value": "BE68539007547034"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 448, "x": 307, "y": 468.5}, "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"}, "value": "BE68539007547034"}, "screenshot": "../assets/member-create/de/desktop/step-42.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/member-create/de/desktop/step-42.png", "subtitle": "Schritt 4 \u2014 Bank", "text": "Geben Sie die IBAN des Mitglieds ein: Sie wird f\u00fcr R\u00fcckerstattungen im Zusammenhang mit Teilungsoperationen verwendet. Das Format wird in Echtzeit gepr\u00fcft.", "title": "Bankdaten eingeben", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 127.640625, "x": 1005.359375, "y": 551.5}, "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 127.640625, "x": 1005.359375, "y": 551.5}, "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"}}, "screenshot": "../assets/member-create/de/desktop/step-43.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/member-create/de/desktop/step-43.png", "subtitle": "Best\u00e4tigung", "text": "Klicken Sie auf \u201eBest\u00e4tigen\u201c, um das Formular an das CRM zu senden. Das Mitglied wird sofort erstellt und der aktiven Gemeinschaft zugeordnet.", "title": "Erstellung best\u00e4tigen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 68.296875, "x": 846.078125, "y": 485}, "selector": "button.p-confirmdialog-reject-button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 68.296875, "x": 846.078125, "y": 485}, "selector": "button.p-confirmdialog-reject-button"}}, "screenshot": "../assets/member-create/de/desktop/step-45.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/member-create/de/desktop/step-45.png", "subtitle": "Dialogfenster", "text": "Ein Fenster schl\u00e4gt vor, direkt mit dem Erstellen eines Z\u00e4hlers fortzufahren. W\u00e4hlen Sie \u201eNein\u201c, um hier abzuschlie\u00dfen \u2014 Sie k\u00f6nnen sp\u00e4ter jederzeit \u00fcber die Detailseite des Mitglieds einen Z\u00e4hler hinzuf\u00fcgen.", "title": "Z\u00e4hler sp\u00e4ter hinzuf\u00fcgen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/member-create/de/desktop/step-51.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/member-create/de/desktop/step-51.png", "subtitle": "Best\u00e4tigung", "text": "Die Detailseite des neuen Mitglieds wird angezeigt: Der vollst\u00e4ndige Name erscheint in der Kopfzeile, und alle eingegebenen Informationen sind sichtbar. Das Mitglied kann nun in Teilungsoperationen verwendet werden.", "title": "Mitglied erstellt", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 219.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 219.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"}}, "screenshot": "../assets/member-create/de/mobile/step-12.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/member-create/de/mobile/step-12.png", "subtitle": "Navigation", "text": "Tippen Sie auf das Men\u00fcsymbol, um das Navigationsmen\u00fc zu \u00f6ffnen, und dann auf \u201eMeine Gemeinschaften\u201c, um die Liste der Gemeinschaften anzuzeigen, bei denen Sie angemeldet sind.", "title": "Meine Gemeinschaften \u00f6ffnen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"}}, "screenshot": "../assets/member-create/de/mobile/step-26.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/member-create/de/mobile/step-26.png", "subtitle": "Navigation", "text": "Tippen Sie im Navigationsmen\u00fc im Abschnitt \u201eVerwaltung\u201c auf \u201eMitgliederverwaltung\u201c, um das Untermen\u00fc einzublenden (Mitglieder, Z\u00e4hler, Teilungsoperationen).", "title": "Gruppe Mitgliederverwaltung \u00f6ffnen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 33.5, "width": 256, "x": 36, "y": 544.5}, "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 33.5, "width": 256, "x": 36, "y": 544.5}, "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"}}, "screenshot": "../assets/member-create/de/mobile/step-27.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/member-create/de/mobile/step-27.png", "subtitle": "Navigation", "text": "Tippen Sie im Untermen\u00fc auf \u201eMitglieder verwalten\u201c: Hier beginnen Sie, wenn Sie eine neue Person zur Gemeinschaft hinzuf\u00fcgen m\u00f6chten.", "title": "Mitgliederliste \u00f6ffnen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 239}, "selector": "[data-testid=\"members-list__btn--add\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 239}, "selector": "[data-testid=\"members-list__btn--add\"]"}}, "screenshot": "../assets/member-create/de/mobile/step-30.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/member-create/de/mobile/step-30.png", "subtitle": "Mitglied hinzuf\u00fcgen", "text": "Klicken Sie oben in der Liste auf \u201eHinzuf\u00fcgen\u201c, um den Erstellungsassistenten mit vier Schritten zu \u00f6ffnen.", "title": "Erstellung eines Mitglieds starten", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 62, "width": 332, "x": 29, "y": 211}, "selector": "[data-testid=\"new-member-type__card--individual\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 62, "width": 332, "x": 29, "y": 211}, "selector": "[data-testid=\"new-member-type__card--individual\"]"}}, "screenshot": "../assets/member-create/de/mobile/step-32.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/member-create/de/mobile/step-32.png", "subtitle": "Schritt 1 \u2014 Typ", "text": "W\u00e4hlen Sie \u201ePrivatperson\u201c, um ein Einzelmitglied zu erstellen. Die Option \u201eUnternehmen\u201c ist juristischen Personen vorbehalten und fragt im weiteren Verlauf andere Felder ab.", "title": "Mitgliedstyp w\u00e4hlen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 332, "x": 29, "y": 195}, "selector": "[data-testid=\"new-member-informations__input--nrn\"]", "value": "85.06.22-456.78"}, {"bbox": {"height": 42, "width": 332, "x": 29, "y": 271}, "selector": "[data-testid=\"new-member-informations__input--surname\"]", "value": "E2EUser"}, {"bbox": {"height": 42, "width": 332, "x": 29, "y": 347}, "selector": "[data-testid=\"new-member-informations__input--name\"]", "value": "Testy"}, {"bbox": {"height": 42, "width": 332, "x": 29, "y": 423}, "selector": "[data-testid=\"new-member-informations__input--email\"]", "value": "e2e-testy@test.com"}, {"bbox": {"height": 42, "width": 332, "x": 29, "y": 499}, "selector": "[data-testid=\"new-member-informations__input--phone\"]", "value": "0412345678"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 332, "x": 29, "y": 195}, "selector": "[data-testid=\"new-member-informations__input--nrn\"]", "value": "85.06.22-456.78"}, {"bbox": {"height": 42, "width": 332, "x": 29, "y": 271}, "selector": "[data-testid=\"new-member-informations__input--surname\"]", "value": "E2EUser"}, {"bbox": {"height": 42, "width": 332, "x": 29, "y": 347}, "selector": "[data-testid=\"new-member-informations__input--name\"]", "value": "Testy"}, {"bbox": {"height": 42, "width": 332, "x": 29, "y": 423}, "selector": "[data-testid=\"new-member-informations__input--email\"]", "value": "e2e-testy@test.com"}, {"bbox": {"height": 42, "width": 332, "x": 29, "y": 499}, "selector": "[data-testid=\"new-member-informations__input--phone\"]", "value": "0412345678"}]}, "screenshot": "../assets/member-create/de/mobile/step-35-a.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/member-create/de/mobile/step-35-a.png", "subtitle": "Schritt 2 \u2014 Identit\u00e4t", "text": "Geben Sie die Nationalregisternummer, den Nachnamen, den Vornamen, die E-Mail-Adresse und die Telefonnummer des neuen Mitglieds ein. Alle diese Felder m\u00fcssen ausgef\u00fcllt sein, um den Schritt abzuschlie\u00dfen.", "title": "Pers\u00f6nliche Informationen eingeben", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 332, "x": 29, "y": 335}, "selector": "[data-testid=\"new-member-address__input--home-street\"]", "value": "Rue de Test"}, {"bbox": {"height": 42, "width": 158, "x": 29, "y": 411}, "selector": "[data-testid=\"new-member-address__input--home-number\"]", "value": "42"}, {"bbox": {"height": 42, "width": 100, "x": 29, "y": 487}, "selector": "[data-testid=\"new-member-address__input--home-postcode\"]", "value": "1000"}, {"bbox": {"height": 42, "width": 216, "x": 145, "y": 487}, "selector": "[data-testid=\"new-member-address__input--home-city\"]", "value": "Bruxelles"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 332, "x": 29, "y": 335}, "selector": "[data-testid=\"new-member-address__input--home-street\"]", "value": "Rue de Test"}, {"bbox": {"height": 42, "width": 158, "x": 29, "y": 411}, "selector": "[data-testid=\"new-member-address__input--home-number\"]", "value": "42"}, {"bbox": {"height": 42, "width": 100, "x": 29, "y": 487}, "selector": "[data-testid=\"new-member-address__input--home-postcode\"]", "value": "1000"}, {"bbox": {"height": 42, "width": 216, "x": 145, "y": 487}, "selector": "[data-testid=\"new-member-address__input--home-city\"]", "value": "Bruxelles"}]}, "screenshot": "../assets/member-create/de/mobile/step-38-a.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/member-create/de/mobile/step-38-a.png", "subtitle": "Schritt 3 \u2014 Adresse", "text": "Vervollst\u00e4ndigen Sie die Wohnadresse: Stra\u00dfe, Hausnummer, Postleitzahl und Ort. Ist die Rechnungsadresse identisch, aktivieren Sie im n\u00e4chsten Schritt das Kontrollk\u00e4stchen \u201eGleiche Adresse f\u00fcr die Rechnungsstellung\u201c, um sie automatisch zu \u00fcbernehmen.", "title": "Adresse eingeben", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 332, "x": 29, "y": 227}, "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"}, "value": "BE68539007547034"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 332, "x": 29, "y": 227}, "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"}, "value": "BE68539007547034"}, "screenshot": "../assets/member-create/de/mobile/step-42.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/member-create/de/mobile/step-42.png", "subtitle": "Schritt 4 \u2014 Bank", "text": "Geben Sie die IBAN des Mitglieds ein: Sie wird f\u00fcr R\u00fcckerstattungen im Zusammenhang mit Teilungsoperationen verwendet. Das Format wird in Echtzeit gepr\u00fcft.", "title": "Bankdaten eingeben", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 66, "width": 127.640625, "x": 233.359375, "y": 310}, "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 66, "width": 127.640625, "x": 233.359375, "y": 310}, "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"}}, "screenshot": "../assets/member-create/de/mobile/step-43.png", "viewport": {"height": 844, "width": 390}}], "index": 9, "screenshot": "../assets/member-create/de/mobile/step-43.png", "subtitle": "Best\u00e4tigung", "text": "Klicken Sie auf \u201eBest\u00e4tigen\u201c, um das Formular an das CRM zu senden. Das Mitglied wird sofort erstellt und der aktiven Gemeinschaft zugeordnet.", "title": "Erstellung best\u00e4tigen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 68.296875, "x": 244.1875, "y": 465}, "selector": "button.p-confirmdialog-reject-button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 68.296875, "x": 244.1875, "y": 465}, "selector": "button.p-confirmdialog-reject-button"}}, "screenshot": "../assets/member-create/de/mobile/step-45.png", "viewport": {"height": 844, "width": 390}}], "index": 10, "screenshot": "../assets/member-create/de/mobile/step-45.png", "subtitle": "Dialogfenster", "text": "Ein Fenster schl\u00e4gt vor, direkt mit dem Erstellen eines Z\u00e4hlers fortzufahren. W\u00e4hlen Sie \u201eNein\u201c, um hier abzuschlie\u00dfen \u2014 Sie k\u00f6nnen sp\u00e4ter jederzeit \u00fcber die Detailseite des Mitglieds einen Z\u00e4hler hinzuf\u00fcgen.", "title": "Z\u00e4hler sp\u00e4ter hinzuf\u00fcgen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/member-create/de/mobile/step-51.png", "viewport": {"height": 844, "width": 390}}], "index": 11, "screenshot": "../assets/member-create/de/mobile/step-51.png", "subtitle": "Best\u00e4tigung", "text": "Die Detailseite des neuen Mitglieds wird angezeigt: Der vollst\u00e4ndige Name erscheint in der Kopfzeile, und alle eingegebenen Informationen sind sichtbar. Das Mitglied kann nun in Teilungsoperationen verwendet werden.", "title": "Mitglied erstellt", "viewport": {"height": 844, "width": 390}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

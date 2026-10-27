@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zähler zu einer Teilungsoperation hinzufügen — OptimCE — Benutzeranleitungen</title>
+    <meta name="description" content="Einen verfügbaren Zähler mit seinem Startdatum einer Teilungsoperation zuordnen.">
+    <link rel="canonical" href="https://guide.optimce.be/sharing-op-add-meter/de.html">
+    <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/sharing-op-add-meter/fr.html">
+    <link rel="alternate" hreflang="en" href="https://guide.optimce.be/sharing-op-add-meter/en.html">
+    <link rel="alternate" hreflang="nl" href="https://guide.optimce.be/sharing-op-add-meter/nl.html">
+    <link rel="alternate" hreflang="de" href="https://guide.optimce.be/sharing-op-add-meter/de.html">
+    <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/sharing-op-add-meter/fr.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Zähler zu einer Teilungsoperation hinzufügen">
+    <meta property="og:description" content="Einen verfügbaren Zähler mit seinem Startdatum einer Teilungsoperation zuordnen.">
+    <meta property="og:url" content="https://guide.optimce.be/sharing-op-add-meter/de.html">
+    <meta property="og:site_name" content="OptimCE — Benutzeranleitungen">
+    <meta property="og:image" content="https://guide.optimce.be/assets/sharing-op-add-meter/de/desktop/step-10.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Remember the language of the file we just loaded: interactive.html is one
+        // URL for every locale and opens in this language when no ?lang= is given.
+        try { localStorage.setItem("oce-lang", "de"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.de.html" aria-label="OptimCE — Benutzeranleitungen">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.de.html">OptimCE — Benutzeranleitungen</a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.de.html">Startseite</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../sharing/de.html">Teilungsoperationen</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">Zähler zu einer Teilungsoperation hinzufügen</span>
+        </nav>
+
+        <div class="steppy-header-actions">
+<label class="steppy-locale-select">
+    <span class="steppy-visually-hidden">Sprache</span>
+    <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <select autocomplete="off">        <option value="./fr.html" lang="fr">Français</option>        <option value="./en.html" lang="en">English</option>        <option value="./nl.html" lang="nl">Nederlands</option>        <option value="./de.html" lang="de" selected>Deutsch</option>    </select>
+    <svg class="steppy-locale-select-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</label>
+<script>
+  (function () {
+    var sel = document.querySelector(".steppy-locale-select select");
+    if (!sel) return;
+    sel.addEventListener("change", function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+    // Back from the language just picked can restore this page from the
+    // bfcache with that option still showing — snap it back to this page's own.
+    window.addEventListener("pageshow", function () {
+      var own = sel.querySelector("option[selected]");
+      if (own) sel.value = own.value;
+    });
+  })();
+</script>            <button type="button" class="oce-theme-toggle" aria-label="Design wechseln">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-mode-switch" aria-label="Guide mode">
+            <ul>
+                <li>
+                    <span aria-current="true">Schritt für Schritt</span>
+                </li>
+                <li>
+                    <a href="./interactive.html?lang=de">Interaktiv</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Zähler zu einer Teilungsoperation hinzufügen</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Meine Gemeinschaften öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Klicken Sie im Profilmenü der Seitenleiste auf „Meine Gemeinschaften“, um die Liste der Gemeinschaften zu sehen, denen Sie angehören.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/desktop/step-10.png" alt="1. Meine Gemeinschaften öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Aktive Gemeinschaft prüfen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Aktive Gemeinschaft</div>
+        <div class="steppy-step-content">Test Community ist bereits Ihre aktive Gemeinschaft — ihre Zeile bietet „Gemeinschaftsinfo“ und „Übersicht“. Wenn Sie mehreren Gemeinschaften angehören, klicken Sie bei derjenigen, in der Sie arbeiten möchten, auf „Aktivieren“.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/desktop/step-18.png" alt="2. Aktive Gemeinschaft prüfen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Energieteilungen öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Rufen Sie die Liste der Teilungsoperationen Ihrer Gemeinschaft auf, um diejenige zu finden, der Sie einen Zähler zuordnen möchten.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/desktop/step-21.png" alt="3. Energieteilungen öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Operation auswählen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Auswahl</div>
+        <div class="steppy-step-content">Klicken Sie auf die Zeile der Teilungsoperation, die Sie ändern möchten, um ihre Detailansicht zu öffnen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/desktop/step-25.png" alt="4. Operation auswählen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Hinzufügen eines Zählers starten</span>
+        </h2>
+        <div class="steppy-step-subtitle">Aktion</div>
+        <div class="steppy-step-content">Klicken Sie in der Detailansicht auf „Zähler hinzufügen“, um das Auswahlfenster zu öffnen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/desktop/step-29.png" alt="5. Hinzufügen eines Zählers starten" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Verfügbare Zähler</span>
+        </h2>
+        <div class="steppy-step-subtitle">Auswahl</div>
+        <div class="steppy-step-content">Das Fenster zeigt alle Zähler der Gemeinschaft, die dieser Teilungsoperation noch nicht zugeordnet sind.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/desktop/step-30.png" alt="6. Verfügbare Zähler" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Zähler ankreuzen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Auswahl</div>
+        <div class="steppy-step-content">Kreuzen Sie das Kästchen des Zählers an, den Sie zuordnen möchten. Bei Bedarf können Sie vor dem Bestätigen mehrere auswählen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/desktop/step-31.png" alt="7. Zähler ankreuzen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Startdatum heute</span>
+        </h2>
+        <div class="steppy-step-subtitle">Aktivierungszeitraum</div>
+        <div class="steppy-step-content">Öffnen Sie den Kalender und wählen Sie das heutige Datum aus: Die Zuordnung des Zählers wird dann sofort wirksam.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/desktop/step-33.png" alt="8. Startdatum heute" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Hinzufügen bestätigen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Bestätigung</div>
+        <div class="steppy-step-content">Klicken Sie auf „Bestätigen“, um den Zähler zuzuordnen. Eine Benachrichtigung bestätigt die serverseitige Aktualisierung.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/desktop/step-34.png" alt="9. Hinzufügen bestätigen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Zähler zugeordnet</span>
+        </h2>
+        <div class="steppy-step-subtitle">Überprüfung</div>
+        <div class="steppy-step-content">Zurück in der Detailansicht erscheint der hinzugefügte Zähler sofort in der Registerkarte „Aktuell“ der Zähler, die der Operation zugeordnet sind.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/desktop/step-37.png" alt="10. Zähler zugeordnet" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Zähler zu einer Teilungsoperation hinzufügen</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Meine Gemeinschaften öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Meine Gemeinschaften“, um die Liste der Gemeinschaften zu sehen, denen Sie angehören.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/mobile/step-13.png" alt="1. Meine Gemeinschaften öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Aktive Gemeinschaft prüfen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Aktive Gemeinschaft</div>
+        <div class="steppy-step-content">Die Karte von Test Community zeigt, dass sie bereits Ihre aktive Gemeinschaft ist. Wenn Sie mehreren Gemeinschaften angehören, tippen Sie bei derjenigen, in der Sie arbeiten möchten, auf „Aktivieren“.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/mobile/step-19.png" alt="2. Aktive Gemeinschaft prüfen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Energieteilungen öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Rufen Sie die Liste der Teilungsoperationen Ihrer Gemeinschaft auf, um diejenige zu finden, der Sie einen Zähler zuordnen möchten.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/mobile/step-21.png" alt="3. Energieteilungen öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Operation auswählen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Auswahl</div>
+        <div class="steppy-step-content">Tippen Sie auf die Karte der Teilungsoperation, die Sie ändern möchten, um ihre Detailansicht zu öffnen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/mobile/step-26.png" alt="4. Operation auswählen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Hinzufügen eines Zählers starten</span>
+        </h2>
+        <div class="steppy-step-subtitle">Aktion</div>
+        <div class="steppy-step-content">Klicken Sie in der Detailansicht auf „Zähler hinzufügen“, um das Auswahlfenster zu öffnen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/mobile/step-29.png" alt="5. Hinzufügen eines Zählers starten" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Verfügbare Zähler</span>
+        </h2>
+        <div class="steppy-step-subtitle">Auswahl</div>
+        <div class="steppy-step-content">Das Fenster zeigt alle Zähler der Gemeinschaft, die dieser Teilungsoperation noch nicht zugeordnet sind.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/mobile/step-30.png" alt="6. Verfügbare Zähler" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Zähler ankreuzen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Auswahl</div>
+        <div class="steppy-step-content">Kreuzen Sie das Kästchen des Zählers an, den Sie zuordnen möchten. Bei Bedarf können Sie vor dem Bestätigen mehrere auswählen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/mobile/step-32.png" alt="7. Zähler ankreuzen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Startdatum heute</span>
+        </h2>
+        <div class="steppy-step-subtitle">Aktivierungszeitraum</div>
+        <div class="steppy-step-content">Öffnen Sie den Kalender und wählen Sie das heutige Datum aus: Die Zuordnung des Zählers wird dann sofort wirksam.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/mobile/step-33.png" alt="8. Startdatum heute" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Hinzufügen bestätigen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Bestätigung</div>
+        <div class="steppy-step-content">Klicken Sie auf „Bestätigen“, um den Zähler zuzuordnen. Eine Benachrichtigung bestätigt die serverseitige Aktualisierung.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/mobile/step-34.png" alt="9. Hinzufügen bestätigen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Zähler zugeordnet</span>
+        </h2>
+        <div class="steppy-step-subtitle">Überprüfung</div>
+        <div class="steppy-step-content">Zurück in der Detailansicht erscheint die Karte des hinzugefügten Zählers sofort in der Registerkarte „Aktuell“ der Zähler, die der Operation zugeordnet sind.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-add-meter/de/mobile/step-38.png" alt="10. Zähler zugeordnet" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p>Erstellt mit Steppy.</p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 219.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 219.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"}}, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-10.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-10.png", "subtitle": "Navigation", "text": "Klicken Sie im Profilmen\u00fc der Seitenleiste auf \u201eMeine Gemeinschaften\u201c, um die Liste der Gemeinschaften zu sehen, denen Sie angeh\u00f6ren.", "title": "Meine Gemeinschaften \u00f6ffnen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-18.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-18.png", "subtitle": "Aktive Gemeinschaft", "text": "Test Community ist bereits Ihre aktive Gemeinschaft \u2014 ihre Zeile bietet \u201eGemeinschaftsinfo\u201c und \u201e\u00dcbersicht\u201c. Wenn Sie mehreren Gemeinschaften angeh\u00f6ren, klicken Sie bei derjenigen, in der Sie arbeiten m\u00f6chten, auf \u201eAktivieren\u201c.", "title": "Aktive Gemeinschaft pr\u00fcfen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-21.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-21.png", "subtitle": "Navigation", "text": "Rufen Sie die Liste der Teilungsoperationen Ihrer Gemeinschaft auf, um diejenige zu finden, der Sie einen Z\u00e4hler zuordnen m\u00f6chten.", "title": "Energieteilungen \u00f6ffnen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 51.65625, "width": 1280, "x": 114, "y": 305}, "selector": "[data-testid=\"operations-list__row--desktop--1\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 51.65625, "width": 1280, "x": 114, "y": 305}, "selector": "[data-testid=\"operations-list__row--desktop--1\"]"}}, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-25.png", "subtitle": "Auswahl", "text": "Klicken Sie auf die Zeile der Teilungsoperation, die Sie \u00e4ndern m\u00f6chten, um ihre Detailansicht zu \u00f6ffnen.", "title": "Operation ausw\u00e4hlen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 21, "width": 159.484375, "x": 1001, "y": 316.5}, "selector": "[data-testid=\"op-view__btn--add-meter\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 21, "width": 159.484375, "x": 1001, "y": 316.5}, "selector": "[data-testid=\"op-view__btn--add-meter\"]"}}, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-29.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-29.png", "subtitle": "Aktion", "text": "Klicken Sie in der Detailansicht auf \u201eZ\u00e4hler hinzuf\u00fcgen\u201c, um das Auswahlfenster zu \u00f6ffnen.", "title": "Hinzuf\u00fcgen eines Z\u00e4hlers starten", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-30.png", "subtitle": "Auswahl", "text": "Das Fenster zeigt alle Z\u00e4hler der Gemeinschaft, die dieser Teilungsoperation noch nicht zugeordnet sind.", "title": "Verf\u00fcgbare Z\u00e4hler", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 19, "width": 20, "x": 269, "y": 327.5}, "selector": "[data-testid=\"op-add-meter__checkbox--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 19, "width": 20, "x": 269, "y": 327.5}, "selector": "[data-testid=\"op-add-meter__checkbox--0\"]"}}, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-31.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-31.png", "subtitle": "Auswahl", "text": "Kreuzen Sie das K\u00e4stchen des Z\u00e4hlers an, den Sie zuordnen m\u00f6chten. Bei Bedarf k\u00f6nnen Sie vor dem Best\u00e4tigen mehrere ausw\u00e4hlen.", "title": "Z\u00e4hler ankreuzen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 247, "x": 596.5, "y": 678.5}, "selector": "[data-testid=\"op-add-meter__datepicker--start-date\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 247, "x": 596.5, "y": 678.5}, "selector": "[data-testid=\"op-add-meter__datepicker--start-date\"]"}}, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-33.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-33.png", "subtitle": "Aktivierungszeitraum", "text": "\u00d6ffnen Sie den Kalender und w\u00e4hlen Sie das heutige Datum aus: Die Zuordnung des Z\u00e4hlers wird dann sofort wirksam.", "title": "Startdatum heute", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 102.640625, "x": 668.671875, "y": 732.5}, "selector": "[data-testid=\"op-add-meter__btn--validate\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 102.640625, "x": 668.671875, "y": 732.5}, "selector": "[data-testid=\"op-add-meter__btn--validate\"]"}}, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-34.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-34.png", "subtitle": "Best\u00e4tigung", "text": "Klicken Sie auf \u201eBest\u00e4tigen\u201c, um den Z\u00e4hler zuzuordnen. Eine Benachrichtigung best\u00e4tigt die serverseitige Aktualisierung.", "title": "Hinzuf\u00fcgen best\u00e4tigen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-37.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/sharing-op-add-meter/de/desktop/step-37.png", "subtitle": "\u00dcberpr\u00fcfung", "text": "Zur\u00fcck in der Detailansicht erscheint der hinzugef\u00fcgte Z\u00e4hler sofort in der Registerkarte \u201eAktuell\u201c der Z\u00e4hler, die der Operation zugeordnet sind.", "title": "Z\u00e4hler zugeordnet", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 219.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 219.5}, "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"}}, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-13.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-13.png", "subtitle": "Navigation", "text": "Tippen Sie auf das Men\u00fcsymbol, um das Navigationsmen\u00fc zu \u00f6ffnen, und dann auf \u201eMeine Gemeinschaften\u201c, um die Liste der Gemeinschaften zu sehen, denen Sie angeh\u00f6ren.", "title": "Meine Gemeinschaften \u00f6ffnen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-19.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-19.png", "subtitle": "Aktive Gemeinschaft", "text": "Die Karte von Test Community zeigt, dass sie bereits Ihre aktive Gemeinschaft ist. Wenn Sie mehreren Gemeinschaften angeh\u00f6ren, tippen Sie bei derjenigen, in der Sie arbeiten m\u00f6chten, auf \u201eAktivieren\u201c.", "title": "Aktive Gemeinschaft pr\u00fcfen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-21.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-21.png", "subtitle": "Navigation", "text": "Rufen Sie die Liste der Teilungsoperationen Ihrer Gemeinschaft auf, um diejenige zu finden, der Sie einen Z\u00e4hler zuordnen m\u00f6chten.", "title": "Energieteilungen \u00f6ffnen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 193.3125, "width": 358, "x": 16, "y": 562}, "selector": "[data-testid=\"operations-list__card--mobile--1\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 193.3125, "width": 358, "x": 16, "y": 562}, "selector": "[data-testid=\"operations-list__card--mobile--1\"]"}}, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-26.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-26.png", "subtitle": "Auswahl", "text": "Tippen Sie auf die Karte der Teilungsoperation, die Sie \u00e4ndern m\u00f6chten, um ihre Detailansicht zu \u00f6ffnen.", "title": "Operation ausw\u00e4hlen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 21, "width": 159.484375, "x": 39, "y": 411.5}, "selector": "[data-testid=\"op-view__btn--add-meter\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 21, "width": 159.484375, "x": 39, "y": 411.5}, "selector": "[data-testid=\"op-view__btn--add-meter\"]"}}, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-29.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-29.png", "subtitle": "Aktion", "text": "Klicken Sie in der Detailansicht auf \u201eZ\u00e4hler hinzuf\u00fcgen\u201c, um das Auswahlfenster zu \u00f6ffnen.", "title": "Hinzuf\u00fcgen eines Z\u00e4hlers starten", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-30.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-30.png", "subtitle": "Auswahl", "text": "Das Fenster zeigt alle Z\u00e4hler der Gemeinschaft, die dieser Teilungsoperation noch nicht zugeordnet sind.", "title": "Verf\u00fcgbare Z\u00e4hler", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 24, "width": 20, "x": 18, "y": 429}, "selector": "[data-testid=\"op-add-meter__checkbox-mobile--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 24, "width": 20, "x": 18, "y": 429}, "selector": "[data-testid=\"op-add-meter__checkbox-mobile--0\"]"}}, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-32.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-32.png", "subtitle": "Auswahl", "text": "Kreuzen Sie das K\u00e4stchen des Z\u00e4hlers an, den Sie zuordnen m\u00f6chten. Bei Bedarf k\u00f6nnen Sie vor dem Best\u00e4tigen mehrere ausw\u00e4hlen.", "title": "Z\u00e4hler ankreuzen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 364, "x": 13, "y": 723}, "selector": "[data-testid=\"op-add-meter__datepicker--start-date\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 364, "x": 13, "y": 723}, "selector": "[data-testid=\"op-add-meter__datepicker--start-date\"]"}}, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-33.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-33.png", "subtitle": "Aktivierungszeitraum", "text": "\u00d6ffnen Sie den Kalender und w\u00e4hlen Sie das heutige Datum aus: Die Zuordnung des Z\u00e4hlers wird dann sofort wirksam.", "title": "Startdatum heute", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 102.640625, "x": 143.671875, "y": 777}, "selector": "[data-testid=\"op-add-meter__btn--validate\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 102.640625, "x": 143.671875, "y": 777}, "selector": "[data-testid=\"op-add-meter__btn--validate\"]"}}, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-34.png", "viewport": {"height": 844, "width": 390}}], "index": 9, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-34.png", "subtitle": "Best\u00e4tigung", "text": "Klicken Sie auf \u201eBest\u00e4tigen\u201c, um den Z\u00e4hler zuzuordnen. Eine Benachrichtigung best\u00e4tigt die serverseitige Aktualisierung.", "title": "Hinzuf\u00fcgen best\u00e4tigen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-38.png", "viewport": {"height": 844, "width": 390}}], "index": 10, "screenshot": "../assets/sharing-op-add-meter/de/mobile/step-38.png", "subtitle": "\u00dcberpr\u00fcfung", "text": "Zur\u00fcck in der Detailansicht erscheint die Karte des hinzugef\u00fcgten Z\u00e4hlers sofort in der Registerkarte \u201eAktuell\u201c der Z\u00e4hler, die der Operation zugeordnet sind.", "title": "Z\u00e4hler zugeordnet", "viewport": {"height": 844, "width": 390}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Voir ce qui a été déclaré à son sujet",
-    "en": "See what has been filed about you"
+    "en": "See what has been filed about you",
+    "nl": "Zien wat er over u is ingediend",
+    "de": "Sehen, was über Sie eingereicht wurde"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir les documents administratifs",
-        "en": "Open the administrative documents"
+        "en": "Open the administrative documents",
+        "nl": "Administratieve documenten openen",
+        "de": "Verwaltungsdokumente öffnen"
       },
       "text": {
         "fr": "Dans la barre latérale, cliquez sur « Documents administratifs ».",
-        "en": "In the sidebar, click \"Administrative documents\"."
+        "en": "In the sidebar, click \"Administrative documents\".",
+        "nl": "Klik in de zijbalk op “Administratieve documenten”.",
+        "de": "Klicken Sie in der Seitenleiste auf „Verwaltungsdokumente“."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-my-filings/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-my-filings/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Administratieve documenten openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en daarna op “Administratieve documenten”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-my-filings/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-my-filings/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Verwaltungsdokumente öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Verwaltungsdokumente“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 500,
       "title": {
         "fr": "Ce qui a été déclaré à mon sujet",
-        "en": "What has been filed about me"
+        "en": "What has been filed about me",
+        "nl": "Wat er over mij is ingediend",
+        "de": "Was über mich eingereicht wurde"
       },
       "text": {
         "fr": "En tant que membre, vous ne voyez pas les dossiers de la communauté : vous voyez uniquement les informations vous concernant qui ont été transmises au régulateur, et dans quel document.",
-        "en": "As a member you do not see the community's dossiers: you only see the information about you that was sent to the regulator, and in which document."
+        "en": "As a member you do not see the community's dossiers: you only see the information about you that was sent to the regulator, and in which document.",
+        "nl": "Als lid ziet u de dossiers van de gemeenschap niet: u ziet alleen de informatie over u die aan de regulator is bezorgd, en in welk document.",
+        "de": "Als Mitglied sehen Sie die Dossiers der Gemeinschaft nicht: Sie sehen nur die Angaben zu Ihrer Person, die an die Regulierungsbehörde übermittelt wurden, und in welchem Dokument."
       },
       "subtitle": {
         "fr": "Documents administratifs",
-        "en": "Administrative documents"
+        "en": "Administrative documents",
+        "nl": "Administratieve documenten",
+        "de": "Verwaltungsdokumente"
       },
       "captures": {
         "fr": {
@@ -224,6 +346,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-my-filings/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-my-filings/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-my-filings/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-my-filings/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -236,15 +410,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Les valeurs transmises",
-        "en": "The values that were sent"
+        "en": "The values that were sent",
+        "nl": "De ingediende waarden",
+        "de": "Die übermittelten Werte"
       },
       "text": {
         "fr": "Chaque bloc reprend les valeurs telles qu'elles ont été figées au moment du dépôt. Une correction faite plus tard dans le CRM ne réécrit pas ce qui a déjà été transmis — c'est la date affichée qui fait foi.",
-        "en": "Every block shows the values exactly as they were frozen at filing time. A later correction in the CRM does not rewrite what was already submitted — the date shown is what counts."
+        "en": "Every block shows the values exactly as they were frozen at filing time. A later correction in the CRM does not rewrite what was already submitted — the date shown is what counts.",
+        "nl": "Elk blok toont de waarden zoals ze op het moment van indiening werden vastgelegd. Een latere correctie in het CRM herschrijft niet wat al is ingediend — de getoonde datum is bepalend.",
+        "de": "Jeder Block zeigt die Werte so, wie sie zum Zeitpunkt der Einreichung eingefroren wurden. Eine spätere Korrektur im CRM überschreibt nicht, was bereits übermittelt wurde — maßgeblich ist das angezeigte Datum."
       },
       "subtitle": {
         "fr": "Mes déclarations",
-        "en": "My filings"
+        "en": "My filings",
+        "nl": "Mijn aangiften",
+        "de": "Meine Meldungen"
       },
       "captures": {
         "fr": {
@@ -290,6 +470,58 @@
             "frames": [
               {
                 "screenshot": "../assets/admin-doc-my-filings/en/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-my-filings/nl/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-my-filings/nl/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-my-filings/de/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-my-filings/de/mobile/step-21.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

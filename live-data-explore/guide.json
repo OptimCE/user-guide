@@ -1,0 +1,1593 @@
+{
+  "version": "1.1",
+  "slug": "live-data-explore",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Découvrir les données en direct",
+    "en": "Discover Live data",
+    "nl": "Live gegevens ontdekken",
+    "de": "Live-Daten entdecken"
+  },
+  "locales": [
+    "fr",
+    "en",
+    "nl",
+    "de"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les données en direct",
+        "en": "Open Live data",
+        "nl": "Live gegevens openen",
+        "de": "Live-Daten öffnen"
+      },
+      "text": {
+        "fr": "Dans la barre latérale, cliquez sur « Données en direct ». Le lien apparaît dès que la communauté est abonnée au module, et seulement pour ses gestionnaires.",
+        "en": "In the sidebar, click \"Live data\". The link appears as soon as the community is subscribed to the module, and only for its managers.",
+        "nl": "Klik in de zijbalk op “Live gegevens”. De link verschijnt zodra de gemeenschap op de module geabonneerd is, en alleen voor de beheerders ervan.",
+        "de": "Klicken Sie in der Seitenleiste auf „Live-Daten“. Der Link erscheint, sobald die Gemeinschaft das Modul abonniert hat, und nur für ihre Manager."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/desktop/step-11.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/live-data\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/mobile/step-14.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/live-data\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir les données en direct",
+              "text": "Touchez l'icône du menu pour ouvrir le tiroir, puis « Données en direct ». Le lien n'apparaît que pour les gestionnaires d'une communauté abonnée au module.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/desktop/step-11.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/live-data\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/mobile/step-14.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/live-data\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open Live data",
+              "text": "Tap the menu icon to open the drawer, then \"Live data\". The link only appears for the managers of a community subscribed to the module.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/desktop/step-11.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/live-data\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/mobile/step-14.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/live-data\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Live gegevens openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en daarna op “Live gegevens”. De link verschijnt alleen voor de beheerders van een gemeenschap die op de module geabonneerd is.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/desktop/step-11.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/live-data\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/mobile/step-14.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/live-data\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Live-Daten öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Live-Daten“. Der Link erscheint nur für die Manager einer Gemeinschaft, die das Modul abonniert hat.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 500,
+      "title": {
+        "fr": "La console des données en direct",
+        "en": "The Live data console",
+        "nl": "De console voor live gegevens",
+        "de": "Die Live-Daten-Konsole"
+      },
+      "text": {
+        "fr": "Cette console suit, quart d'heure par quart d'heure, ce que mesurent les appareils installés chez les membres. Ces chiffres sont indicatifs : seules les données du gestionnaire de réseau servent aux clés de répartition et à la facturation.",
+        "en": "This console follows, quarter-hour by quarter-hour, what the devices installed at members' premises measure. The figures are indicative: only the grid operator's data is used for allocation keys and invoicing.",
+        "nl": "Deze console volgt kwartier per kwartier wat de apparaten meten die bij de leden zijn geïnstalleerd. Deze cijfers zijn indicatief: alleen de gegevens van de netbeheerder dienen voor de verdeelsleutels en de facturatie.",
+        "de": "Diese Konsole verfolgt Viertelstunde für Viertelstunde, was die bei den Mitgliedern installierten Geräte messen. Diese Werte sind indikativ: Nur die Daten des Netzbetreibers dienen für die Verteilungsschlüssel und die Abrechnung."
+      },
+      "subtitle": {
+        "fr": "Données en direct",
+        "en": "Live data",
+        "nl": "Live gegevens",
+        "de": "Live-Daten"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Le tableau de bord",
+        "en": "The dashboard",
+        "nl": "Het dashboard",
+        "de": "Die Übersicht"
+      },
+      "text": {
+        "fr": "Le tableau de bord résume la dernière heure complète : production, puissance, échanges avec le réseau et état du parc. Tant qu'aucun appareil n'a transmis de mesure, chaque case affiche un tiret plutôt qu'un zéro — « pas encore mesuré » n'est pas « rien produit ».",
+        "en": "The dashboard sums up the last full hour: production, power, grid exchanges and the state of the fleet. Until a device has sent a reading, every card shows a dash rather than a zero — \"not measured yet\" is not \"nothing produced\".",
+        "nl": "Het dashboard vat het laatste volledige uur samen: productie, vermogen, uitwisselingen met het net en de status van de apparaten. Zolang geen enkel apparaat een meting heeft doorgestuurd, toont elke kaart een streepje in plaats van een nul — “nog niet gemeten” is niet hetzelfde als “niets geproduceerd”.",
+        "de": "Die Übersicht fasst die letzte volle Stunde zusammen: Erzeugung, Leistung, Austausch mit dem Netz und Gerätestatus. Solange kein Gerät einen Messwert gesendet hat, zeigt jede Kachel einen Strich statt einer Null — „noch nicht gemessen“ ist nicht dasselbe wie „nichts erzeugt“."
+      },
+      "subtitle": {
+        "fr": "Tableau de bord",
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Choisir la période du graphique",
+        "en": "Choose the chart period",
+        "nl": "De periode van de grafiek kiezen",
+        "de": "Den Zeitraum des Diagramms wählen"
+      },
+      "text": {
+        "fr": "Les graphiques — production et injection, puis consommation prélevée sur le réseau — couvrent 24 heures (par quart d'heure), 7 jours (par heure) ou 30 jours (par jour). Tant que rien n'a été mesuré, ils le disent au lieu de tracer une ligne plate à zéro.",
+        "en": "The charts — production and export, then consumption drawn from the grid — cover 24 hours (per quarter-hour), 7 days (per hour) or 30 days (per day). While nothing has been measured, they say so instead of drawing a flat line at zero.",
+        "nl": "De grafieken — productie en injectie, daarna verbruik afgenomen van het net — beslaan 24 uur (per kwartier), 7 dagen (per uur) of 30 dagen (per dag). Zolang er niets gemeten is, zeggen ze dat in plaats van een vlakke lijn op nul te tekenen.",
+        "de": "Die Diagramme — Erzeugung und Einspeisung, dann aus dem Netz bezogener Verbrauch — umfassen 24 Stunden (pro Viertelstunde), 7 Tage (pro Stunde) oder 30 Tage (pro Tag). Solange nichts gemessen wurde, sagen sie das, statt eine flache Linie bei null zu zeichnen."
+      },
+      "subtitle": {
+        "fr": "Tableau de bord",
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1200.84375,
+                      "y": 595.84375,
+                      "width": 91.15625,
+                      "height": 40.84375
+                    },
+                    "selector": "[data-testid=\"live-dashboard__window\"] .p-togglebutton"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 240.796875,
+                      "y": 401.375,
+                      "width": 91.15625,
+                      "height": 40.84375
+                    },
+                    "selector": "[data-testid=\"live-dashboard__window\"] .p-togglebutton"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1203.8125,
+                      "y": 595.84375,
+                      "width": 88.1875,
+                      "height": 40.84375
+                    },
+                    "selector": "[data-testid=\"live-dashboard__window\"] .p-togglebutton"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 230.625,
+                      "y": 437.53125,
+                      "width": 88.1875,
+                      "height": 40.84375
+                    },
+                    "selector": "[data-testid=\"live-dashboard__window\"] .p-togglebutton"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1191.359375,
+                      "y": 611.84375,
+                      "width": 100.640625,
+                      "height": 40.84375
+                    },
+                    "selector": "[data-testid=\"live-dashboard__window\"] .p-togglebutton"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 226.546875,
+                      "y": 401.53125,
+                      "width": 100.640625,
+                      "height": 40.84375
+                    },
+                    "selector": "[data-testid=\"live-dashboard__window\"] .p-togglebutton"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1203.0625,
+                      "y": 611.84375,
+                      "width": 88.9375,
+                      "height": 40.84375
+                    },
+                    "selector": "[data-testid=\"live-dashboard__window\"] .p-togglebutton"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 248.109375,
+                      "y": 394.375,
+                      "width": 87.890625,
+                      "height": 63.6875
+                    },
+                    "selector": "[data-testid=\"live-dashboard__window\"] .p-togglebutton"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 500,
+      "title": {
+        "fr": "Les appareils",
+        "en": "The devices",
+        "nl": "De apparaten",
+        "de": "Die Geräte"
+      },
+      "text": {
+        "fr": "L'onglet « Appareils » liste les boîtiers raccordés aux compteurs des membres, avec leur état de transmission.",
+        "en": "The \"Devices\" tab lists the boxes connected to the members' meters, with their reporting state.",
+        "nl": "Het tabblad “Apparaten” toont de kastjes die op de meters van de leden zijn aangesloten, met hun rapportagestatus.",
+        "de": "Der Reiter „Geräte“ listet die an die Zähler der Mitglieder angeschlossenen Boxen mit ihrem Sendestatus auf."
+      },
+      "subtitle": {
+        "fr": "Appareils",
+        "en": "Devices",
+        "nl": "Apparaten",
+        "de": "Geräte"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 331.203125,
+                      "y": 200.84375,
+                      "width": 103.734375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--devices\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 169.203125,
+                      "y": 387.375,
+                      "width": 103.734375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--devices\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 292.828125,
+                      "y": 200.84375,
+                      "width": 91.203125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--devices\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 130.828125,
+                      "y": 364.53125,
+                      "width": 91.203125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--devices\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 292.828125,
+                      "y": 200.84375,
+                      "width": 111.984375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--devices\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 130.828125,
+                      "y": 364.53125,
+                      "width": 111.984375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--devices\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 283.109375,
+                      "y": 200.84375,
+                      "width": 84.125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--devices\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 121.109375,
+                      "y": 387.375,
+                      "width": 84.125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--devices\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Aucun appareil pour le moment",
+        "en": "No device yet",
+        "nl": "Nog geen apparaten",
+        "de": "Noch keine Geräte"
+      },
+      "text": {
+        "fr": "La communauté n'a encore aucun appareil. Le bouton « Ajouter un appareil » crée un appareil pour un compteur et délivre son code d'enrôlement — voir le guide « Connecter un appareil ».",
+        "en": "The community has no device yet. The \"Add a device\" button creates a device for a meter and issues its enrolment code — see the \"Connect a device\" guide.",
+        "nl": "De gemeenschap heeft nog geen enkel apparaat. De knop “Apparaat toevoegen” maakt een apparaat aan voor een meter en levert de aanmeldcode ervan — zie de handleiding “Een apparaat koppelen”.",
+        "de": "Die Gemeinschaft hat noch kein Gerät. Die Schaltfläche „Gerät hinzufügen“ legt ein Gerät für einen Zähler an und stellt seinen Registrierungscode aus — siehe die Anleitung „Ein Gerät verbinden“."
+      },
+      "subtitle": {
+        "fr": "Appareils",
+        "en": "Devices",
+        "nl": "Apparaten",
+        "de": "Geräte"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 500,
+      "title": {
+        "fr": "L'état du parc",
+        "en": "The fleet status",
+        "nl": "Status apparaten",
+        "de": "Der Gerätestatus"
+      },
+      "text": {
+        "fr": "L'onglet « État du parc » est l'écran de maintenance : il dit si les chiffres sont à jour, quels appareils demandent une intervention et ce qui n'a pas pu être enregistré.",
+        "en": "The \"Fleet status\" tab is the maintenance screen: it tells you whether the figures are up to date, which devices need attention and what could not be stored.",
+        "nl": "Het tabblad “Status apparaten” is het onderhoudsscherm: het toont of de cijfers actueel zijn, welke apparaten een ingreep vereisen en wat niet kon worden opgeslagen.",
+        "de": "Der Reiter „Gerätestatus“ ist der Wartungsbildschirm: Er zeigt, ob die Werte aktuell sind, welche Geräte einen Eingriff erfordern und was nicht gespeichert werden konnte."
+      },
+      "subtitle": {
+        "fr": "État du parc",
+        "en": "Fleet status",
+        "nl": "Status apparaten",
+        "de": "Gerätestatus"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 434.9375,
+                      "y": 200.84375,
+                      "width": 123.078125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--ops\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 250.9375,
+                      "y": 387.375,
+                      "width": 123.078125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--ops\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 384.03125,
+                      "y": 200.84375,
+                      "width": 118.453125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--ops\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 222.03125,
+                      "y": 364.53125,
+                      "width": 118.453125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--ops\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 404.8125,
+                      "y": 200.84375,
+                      "width": 158.390625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--ops\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 215.8125,
+                      "y": 364.53125,
+                      "width": 158.390625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--ops\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 367.234375,
+                      "y": 200.84375,
+                      "width": 127.171875,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--ops\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 205.234375,
+                      "y": 387.375,
+                      "width": 127.171875,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--ops\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Un parc vide",
+        "en": "An empty fleet",
+        "nl": "Een leeg apparatenpark",
+        "de": "Ein leerer Gerätepark"
+      },
+      "text": {
+        "fr": "Sans appareil, rien n'a encore été calculé et aucun appareil ne demande d'attention. Dès qu'un appareil transmet, cet écran indique depuis quand les chiffres ont été recalculés et signale les appareils silencieux, hors ligne ou dont des mesures sont rejetées.",
+        "en": "With no device, nothing has been computed yet and no device needs attention. As soon as a device reports, this screen shows how long ago the figures were recomputed and flags devices that are silent, offline or whose readings are rejected.",
+        "nl": "Zonder apparaten is er nog niets berekend en vraagt geen enkel apparaat aandacht. Zodra een apparaat rapporteert, toont dit scherm sinds wanneer de cijfers zijn herberekend en signaleert het apparaten die stil of offline zijn of waarvan metingen worden geweigerd.",
+        "de": "Ohne Gerät wurde noch nichts berechnet, und kein Gerät erfordert Aufmerksamkeit. Sobald ein Gerät sendet, zeigt dieser Bildschirm, seit wann die Werte neu berechnet wurden, und meldet Geräte, die stumm oder offline sind oder deren Messwerte abgelehnt werden."
+      },
+      "subtitle": {
+        "fr": "État du parc",
+        "en": "Fleet status",
+        "nl": "Status apparaten",
+        "de": "Gerätestatus"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Les paramètres de visibilité",
+        "en": "The visibility settings",
+        "nl": "De zichtbaarheidsinstellingen",
+        "de": "Die Sichtbarkeitseinstellungen"
+      },
+      "text": {
+        "fr": "Les paramètres décident de ce que les membres pourront voir et du nombre minimum de membres en dessous duquel les échanges avec le réseau restent masqués, pour qu'aucun foyer ne soit identifiable. Tant qu'ils n'ont pas été enregistrés, ce sont les valeurs par défaut de la plateforme.",
+        "en": "The settings decide what members will be able to see, and the minimum number of members below which grid exchanges stay hidden so that no household can be identified. Until they are saved, the platform defaults apply.",
+        "nl": "De instellingen bepalen wat de leden kunnen zien en het minimumaantal leden waaronder de uitwisselingen met het net verborgen blijven, zodat geen enkel gezin herkenbaar is. Zolang ze niet zijn opgeslagen, gelden de standaardwaarden van het platform.",
+        "de": "Die Einstellungen legen fest, was die Mitglieder sehen können, und die Mindestanzahl an Mitgliedern, unterhalb derer der Austausch mit dem Netz verborgen bleibt, damit kein Haushalt identifizierbar ist. Solange sie nicht gespeichert wurden, gelten die Standardwerte der Plattform."
+      },
+      "subtitle": {
+        "fr": "Paramètres",
+        "en": "Settings",
+        "nl": "Instellingen",
+        "de": "Einstellungen"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/fr/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/en/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/nl/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-explore/de/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

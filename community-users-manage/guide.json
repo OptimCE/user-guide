@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Gérer les utilisateurs de la communauté",
-    "en": "Manage the community's users"
+    "en": "Manage the community's users",
+    "nl": "De gebruikers van de gemeenschap beheren",
+    "de": "Benutzer der Gemeinschaft verwalten"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir les utilisateurs",
-        "en": "Open the users list"
+        "en": "Open the users list",
+        "nl": "Gebruikers openen",
+        "de": "Benutzer öffnen"
       },
       "text": {
         "fr": "Dans la section « Gestion » de la barre latérale, cliquez sur « Utilisateurs » pour gérer les personnes qui ont accès à votre communauté.",
-        "en": "In the sidebar's \"Management\" section, click \"Users\" to manage the people who have access to your community."
+        "en": "In the sidebar's \"Management\" section, click \"Users\" to manage the people who have access to your community.",
+        "nl": "Klik in de sectie “Beheer” van de zijbalk op “Gebruikers” om de personen te beheren die toegang hebben tot uw gemeenschap.",
+        "de": "Klicken Sie im Abschnitt „Verwaltung“ der Seitenleiste auf „Benutzer“, um die Personen zu verwalten, die Zugriff auf Ihre Gemeinschaft haben."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 538.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/communities/users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 538.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/communities/users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Gebruikers openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en tik vervolgens in de sectie “Beheer” op “Gebruikers”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 538.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/communities/users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 538.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/communities/users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Benutzer öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und tippen Sie dann im Abschnitt „Verwaltung“ auf „Benutzer“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Les utilisateurs de la communauté",
-        "en": "The community's users"
+        "en": "The community's users",
+        "nl": "De gebruikers van de gemeenschap",
+        "de": "Die Benutzer der Gemeinschaft"
       },
       "text": {
         "fr": "Cette page liste tous les utilisateurs ayant accès à la communauté, avec leur rôle : administrateur, gestionnaire ou membre. Vous pouvez inviter, changer un rôle ou retirer un accès.",
-        "en": "This page lists everyone with access to the community and their role: administrator, manager or member. You can invite, change a role, or revoke access."
+        "en": "This page lists everyone with access to the community and their role: administrator, manager or member. You can invite, change a role, or revoke access.",
+        "nl": "Deze pagina toont alle gebruikers die toegang hebben tot de gemeenschap, met hun rol: beheerder, manager of lid. U kunt iemand uitnodigen, een rol wijzigen of een toegang intrekken.",
+        "de": "Diese Seite listet alle Benutzer mit Zugriff auf die Gemeinschaft und ihre Rolle auf: Administrator, Manager oder Mitglied. Sie können jemanden einladen, eine Rolle ändern oder einen Zugriff entziehen."
       },
       "subtitle": {
         "fr": "Gestion des accès",
-        "en": "Access management"
+        "en": "Access management",
+        "nl": "Toegangsbeheer",
+        "de": "Zugriffsverwaltung"
       },
       "captures": {
         "fr": {
@@ -234,6 +356,68 @@
               "subtitle": "Users"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ],
+            "content": {
+              "title": "De gebruikers van de gemeenschap",
+              "text": "Deze pagina toont de accounts die aan de gemeenschap gekoppeld zijn, met hun rol. Hier nodigt u een manager uit, wijzigt u een rol of trekt u een toegang in.",
+              "subtitle": "Gebruikers"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ],
+            "content": {
+              "title": "Die Benutzer der Gemeinschaft",
+              "text": "Diese Seite listet die mit der Gemeinschaft verknüpften Konten und ihre Rolle auf. Hier laden Sie einen Manager ein, ändern eine Rolle oder entziehen einen Zugriff.",
+              "subtitle": "Benutzer"
+            }
+          }
         }
       }
     },
@@ -246,15 +430,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Inviter un gestionnaire",
-        "en": "Invite a manager"
+        "en": "Invite a manager",
+        "nl": "Een manager uitnodigen",
+        "de": "Einen Manager einladen"
       },
       "text": {
         "fr": "Cliquez sur « Inviter un gestionnaire » pour envoyer une invitation par e-mail à une personne qui aidera à gérer la communauté.",
-        "en": "Click \"Invite a manager\" to email an invitation to someone who will help run the community."
+        "en": "Click \"Invite a manager\" to email an invitation to someone who will help run the community.",
+        "nl": "Klik op “Een manager uitnodigen” om per e-mail een uitnodiging te sturen naar iemand die zal helpen de gemeenschap te beheren.",
+        "de": "Klicken Sie auf „Einen Manager einladen“, um einer Person, die bei der Verwaltung der Gemeinschaft helfen wird, eine Einladung per E-Mail zu senden."
       },
       "subtitle": {
         "fr": "Invitation",
-        "en": "Invitation"
+        "en": "Invitation",
+        "nl": "Uitnodiging",
+        "de": "Einladung"
       },
       "captures": {
         "fr": {
@@ -352,6 +542,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1140.328125,
+                      "y": 52,
+                      "width": 228.671875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--invite-manager\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 313,
+                      "width": 228.671875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--invite-manager\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1143.65625,
+                      "y": 52,
+                      "width": 225.34375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--invite-manager\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 289,
+                      "width": 225.34375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--invite-manager\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -364,15 +650,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Saisir l'adresse e-mail",
-        "en": "Enter the email address"
+        "en": "Enter the email address",
+        "nl": "Het e-mailadres invullen",
+        "de": "E-Mail-Adresse eingeben"
       },
       "text": {
         "fr": "Renseignez l'adresse e-mail de la personne à inviter. Elle recevra une invitation à rejoindre la communauté en tant que gestionnaire.",
-        "en": "Enter the email address of the person to invite. They will receive an invitation to join the community as a manager."
+        "en": "Enter the email address of the person to invite. They will receive an invitation to join the community as a manager.",
+        "nl": "Vul het e-mailadres in van de persoon die u wilt uitnodigen. Die persoon ontvangt een uitnodiging om zich als manager bij de gemeenschap aan te sluiten.",
+        "de": "Geben Sie die E-Mail-Adresse der einzuladenden Person ein. Sie erhält eine Einladung, der Gemeinschaft als Manager beizutreten."
       },
       "subtitle": {
         "fr": "Invitation",
-        "en": "Invitation"
+        "en": "Invitation",
+        "nl": "Uitnodiging",
+        "de": "Einladung"
       },
       "captures": {
         "fr": {
@@ -474,6 +766,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 527,
+                      "y": 450,
+                      "width": 386,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-invitation__input--email\"]"
+                  },
+                  "value": "e2e-manager@example.com"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 21,
+                      "y": 434,
+                      "width": 348,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-invitation__input--email\"]"
+                  },
+                  "value": "e2e-manager@example.com"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 526.03125,
+                      "y": 450,
+                      "width": 387.921875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-invitation__input--email\"]"
+                  },
+                  "value": "e2e-manager@example.com"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 21,
+                      "y": 434,
+                      "width": 348,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-invitation__input--email\"]"
+                  },
+                  "value": "e2e-manager@example.com"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -486,15 +878,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Voir les invitations en attente",
-        "en": "See pending invitations"
+        "en": "See pending invitations",
+        "nl": "Uitnodigingen in behandeling bekijken",
+        "de": "Ausstehende Einladungen anzeigen"
       },
       "text": {
         "fr": "Le bouton « Voir les invitations en attente » ouvre la liste des invitations envoyées mais pas encore acceptées, membres et gestionnaires confondus.",
-        "en": "The \"See pending invitations\" button opens the list of invitations that have been sent but not yet accepted, both members and managers."
+        "en": "The \"See pending invitations\" button opens the list of invitations that have been sent but not yet accepted, both members and managers.",
+        "nl": "De knop “Uitnodigingen in behandeling bekijken” opent de lijst met verzonden maar nog niet aanvaarde uitnodigingen, voor leden en managers samen.",
+        "de": "Die Schaltfläche „Ausstehende Einladungen anzeigen“ öffnet die Liste der versendeten, aber noch nicht angenommenen Einladungen, sowohl für Mitglieder als auch für Manager."
       },
       "subtitle": {
         "fr": "Suivi",
-        "en": "Follow-up"
+        "en": "Follow-up",
+        "nl": "Opvolging",
+        "de": "Nachverfolgung"
       },
       "captures": {
         "fr": {
@@ -592,6 +990,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 799.59375,
+                      "y": 52,
+                      "width": 332.734375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--see-pending\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 316,
+                      "height": 66
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--see-pending\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 828.109375,
+                      "y": 52,
+                      "width": 307.546875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--see-pending\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 307.546875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--see-pending\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -604,15 +1098,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Invitations en attente",
-        "en": "Pending invitations"
+        "en": "Pending invitations",
+        "nl": "Uitnodigingen in behandeling",
+        "de": "Ausstehende Einladungen"
       },
       "text": {
         "fr": "L'onglet « Gestionnaires » regroupe les invitations envoyées mais pas encore acceptées. Tant qu'une invitation est en attente, vous pouvez l'annuler depuis cette liste.",
-        "en": "The \"Managers\" tab gathers invitations that have been sent but not yet accepted. While an invitation is pending, you can cancel it from this list."
+        "en": "The \"Managers\" tab gathers invitations that have been sent but not yet accepted. While an invitation is pending, you can cancel it from this list.",
+        "nl": "Het tabblad “Manager” groepeert de verzonden maar nog niet aanvaarde uitnodigingen. Zolang een uitnodiging in behandeling is, kunt u ze vanuit deze lijst annuleren.",
+        "de": "Die Registerkarte „Manager“ bündelt die versendeten, aber noch nicht angenommenen Einladungen. Solange eine Einladung aussteht, können Sie sie in dieser Liste zurückziehen."
       },
       "subtitle": {
         "fr": "Suivi",
-        "en": "Follow-up"
+        "en": "Follow-up",
+        "nl": "Opvolging",
+        "de": "Nachverfolgung"
       },
       "captures": {
         "fr": {
@@ -666,6 +1166,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -678,15 +1230,21 @@
       "waitAfter": 700,
       "title": {
         "fr": "Modifier un rôle",
-        "en": "Change a role"
+        "en": "Change a role",
+        "nl": "Een rol wijzigen",
+        "de": "Eine Rolle ändern"
       },
       "text": {
         "fr": "Le crayon à côté d'un utilisateur ouvre l'éditeur de rôle. Vous pouvez promouvoir un membre en gestionnaire, ou rétrograder un gestionnaire en membre.",
-        "en": "The pencil next to a user opens the role editor. You can promote a member to manager, or set a manager back to a plain member."
+        "en": "The pencil next to a user opens the role editor. You can promote a member to manager, or set a manager back to a plain member.",
+        "nl": "Het potloodpictogram naast een gebruiker opent de roleditor. U kunt een lid bevorderen tot manager of een manager terugzetten naar lid.",
+        "de": "Der Stift neben einem Benutzer öffnet den Rolleneditor. Sie können ein Mitglied zum Manager befördern oder einen Manager zum Mitglied zurückstufen."
       },
       "subtitle": {
         "fr": "Rôles",
-        "en": "Roles"
+        "en": "Roles",
+        "nl": "Rollen",
+        "de": "Rollen"
       },
       "captures": {
         "fr": {
@@ -794,6 +1352,112 @@
               "subtitle": "Roles"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1196.609375,
+                      "y": 317,
+                      "width": 40,
+                      "height": 40
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--edit-role--0\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 764.65625,
+                      "width": 120.3125,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--card-edit-role--0\"] button"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Een rol wijzigen",
+              "text": "Op de kaart van de gebruiker opent de knop “Rol wijzigen” de roleditor.",
+              "subtitle": "Rollen"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1147.09375,
+                      "y": 317,
+                      "width": 40,
+                      "height": 40
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--edit-role--0\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 740.65625,
+                      "width": 124.015625,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--card-edit-role--0\"] button"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Eine Rolle ändern",
+              "text": "Auf der Karte des Benutzers öffnet die Schaltfläche „Rolle ändern“ den Rolleneditor.",
+              "subtitle": "Rollen"
+            }
+          }
         }
       }
     },
@@ -806,15 +1470,21 @@
       "waitAfter": 1500,
       "title": {
         "fr": "Enregistrer le rôle",
-        "en": "Save the role"
+        "en": "Save the role",
+        "nl": "De rol opslaan",
+        "de": "Rolle speichern"
       },
       "text": {
         "fr": "Choisissez le nouveau rôle dans la liste puis cliquez sur « Enregistrer ». Le changement prend effet immédiatement.",
-        "en": "Pick the new role from the list, then click \"Save\". The change takes effect immediately."
+        "en": "Pick the new role from the list, then click \"Save\". The change takes effect immediately.",
+        "nl": "Kies de nieuwe rol in de lijst en klik vervolgens op “Opslaan”. De wijziging gaat onmiddellijk in.",
+        "de": "Wählen Sie die neue Rolle in der Liste aus und klicken Sie dann auf „Speichern“. Die Änderung wird sofort wirksam."
       },
       "subtitle": {
         "fr": "Rôles",
-        "en": "Roles"
+        "en": "Roles",
+        "nl": "Rollen",
+        "de": "Rollen"
       },
       "captures": {
         "fr": {
@@ -912,6 +1582,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 814.140625,
+                      "y": 512,
+                      "width": 84.859375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--dialog-save\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 284.140625,
+                      "y": 484,
+                      "width": 84.859375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--dialog-save\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 801.375,
+                      "y": 512,
+                      "width": 97.625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--dialog-save\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 271.375,
+                      "y": 484,
+                      "width": 97.625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--dialog-save\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -924,15 +1690,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Rôle mis à jour",
-        "en": "Role updated"
+        "en": "Role updated",
+        "nl": "Rol bijgewerkt",
+        "de": "Rolle aktualisiert"
       },
       "text": {
         "fr": "L'utilisateur est désormais un membre : sa pastille de rôle a changé et l'action de suppression est maintenant disponible sur sa ligne.",
-        "en": "The user is now a member: their role tag has changed and the remove action is now available on their row."
+        "en": "The user is now a member: their role tag has changed and the remove action is now available on their row.",
+        "nl": "De gebruiker is nu een lid: het rollabel is gewijzigd en de verwijderactie is nu beschikbaar in de rij van de gebruiker.",
+        "de": "Der Benutzer ist jetzt ein Mitglied: Sein Rollen-Badge hat sich geändert, und die Löschaktion ist nun in seiner Zeile verfügbar."
       },
       "subtitle": {
         "fr": "Rôles",
-        "en": "Roles"
+        "en": "Roles",
+        "nl": "Rollen",
+        "de": "Rollen"
       },
       "captures": {
         "fr": {
@@ -996,6 +1768,68 @@
               "subtitle": "Roles"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/mobile/step-40.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ],
+            "content": {
+              "title": "Rol bijgewerkt",
+              "text": "De gebruiker is nu een lid: het rollabel is gewijzigd en de verwijderactie is nu beschikbaar op de kaart van de gebruiker.",
+              "subtitle": "Rollen"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/mobile/step-40.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ],
+            "content": {
+              "title": "Rolle aktualisiert",
+              "text": "Der Benutzer ist jetzt ein Mitglied: Sein Rollen-Badge hat sich geändert, und die Löschaktion ist nun auf seiner Karte verfügbar.",
+              "subtitle": "Rollen"
+            }
+          }
         }
       }
     },
@@ -1008,15 +1842,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Retirer un utilisateur",
-        "en": "Remove a user"
+        "en": "Remove a user",
+        "nl": "Een gebruiker verwijderen",
+        "de": "Einen Benutzer entfernen"
       },
       "text": {
         "fr": "La croix rouge retire immédiatement l'utilisateur de la communauté — son accès est révoqué sur-le-champ, sans confirmation supplémentaire.",
-        "en": "The red cross removes the user from the community right away — their access is revoked immediately, with no extra confirmation."
+        "en": "The red cross removes the user from the community right away — their access is revoked immediately, with no extra confirmation.",
+        "nl": "Het rode kruisje verwijdert de gebruiker onmiddellijk uit de gemeenschap — de toegang wordt meteen ingetrokken, zonder bijkomende bevestiging.",
+        "de": "Das rote Kreuz entfernt den Benutzer sofort aus der Gemeinschaft — sein Zugriff wird umgehend entzogen, ohne zusätzliche Bestätigung."
       },
       "subtitle": {
         "fr": "Suppression",
-        "en": "Removal"
+        "en": "Removal",
+        "nl": "Verwijderen",
+        "de": "Entfernen"
       },
       "captures": {
         "fr": {
@@ -1124,6 +1964,112 @@
               "subtitle": "Removal"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1123.421875,
+                      "y": 317,
+                      "width": 40,
+                      "height": 40
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--delete--0\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/mobile/step-42.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 161.3125,
+                      "y": 764.65625,
+                      "width": 119.6875,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--card-delete--0\"] button"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Een gebruiker verwijderen",
+              "text": "Op de kaart verwijdert de knop “Verwijderen” de gebruiker onmiddellijk uit de gemeenschap.",
+              "subtitle": "Verwijderen"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1147.640625,
+                      "y": 317,
+                      "width": 40,
+                      "height": 40
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--delete--0\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/mobile/step-42.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 165.015625,
+                      "y": 740.65625,
+                      "width": 95.578125,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"users-community-list__btn--card-delete--0\"] button"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Einen Benutzer entfernen",
+              "text": "Auf der Karte entfernt die Schaltfläche „Löschen“ den Benutzer sofort aus der Gemeinschaft.",
+              "subtitle": "Entfernen"
+            }
+          }
         }
       }
     },
@@ -1136,15 +2082,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Utilisateur retiré",
-        "en": "User removed"
+        "en": "User removed",
+        "nl": "Gebruiker verwijderd",
+        "de": "Benutzer entfernt"
       },
       "text": {
         "fr": "La recherche sur cet e-mail ne renvoie plus aucun résultat : l'utilisateur n'a plus accès à la communauté.",
-        "en": "Searching for that email now returns nothing: the user no longer has access to the community."
+        "en": "Searching for that email now returns nothing: the user no longer has access to the community.",
+        "nl": "Zoeken op dit e-mailadres levert geen resultaten meer op: de gebruiker heeft geen toegang meer tot de gemeenschap.",
+        "de": "Die Suche nach dieser E-Mail-Adresse liefert keine Ergebnisse mehr: Der Benutzer hat keinen Zugriff mehr auf die Gemeinschaft."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -1190,6 +2142,58 @@
             "frames": [
               {
                 "screenshot": "../assets/community-users-manage/en/mobile/step-43.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/desktop/step-43.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/nl/mobile/step-43.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/desktop/step-43.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-users-manage/de/mobile/step-43.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

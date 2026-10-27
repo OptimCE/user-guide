@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Choisir ses notifications",
-    "en": "Choose your notifications"
+    "en": "Choose your notifications",
+    "nl": "Uw meldingen instellen",
+    "de": "Ihre Benachrichtigungen einstellen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir votre profil",
-        "en": "Open your profile"
+        "en": "Open your profile",
+        "nl": "Uw profiel openen",
+        "de": "Ihr Profil öffnen"
       },
       "text": {
         "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Profil » : les préférences de notification sont personnelles, elles ne dépendent pas de la communauté active.",
-        "en": "In the sidebar's profile menu, click \"Profile\": notification preferences are personal, they do not depend on the active community."
+        "en": "In the sidebar's profile menu, click \"Profile\": notification preferences are personal, they do not depend on the active community.",
+        "nl": "Klik in het profielmenu van de zijbalk op “Profiel”: de meldingsvoorkeuren zijn persoonlijk en hangen niet af van de actieve gemeenschap.",
+        "de": "Klicken Sie im Profilmenü der Seitenleiste auf „Profil“: Die Benachrichtigungseinstellungen sind persönlich und hängen nicht von der aktiven Gemeinschaft ab."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Uw profiel openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en daarna op “Profiel”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ihr Profil öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Profil“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 2000,
       "title": {
         "fr": "Onglet Notifications",
-        "en": "Notifications tab"
+        "en": "Notifications tab",
+        "nl": "Tabblad Meldingen",
+        "de": "Registerkarte Benachrichtigungen"
       },
       "text": {
         "fr": "Le dernier onglet de votre profil règle la façon dont OptimCE vous prévient.",
-        "en": "The last tab of your profile controls how OptimCE tells you about things."
+        "en": "The last tab of your profile controls how OptimCE tells you about things.",
+        "nl": "Het laatste tabblad van uw profiel bepaalt hoe OptimCE u op de hoogte brengt.",
+        "de": "Die letzte Registerkarte Ihres Profils legt fest, wie OptimCE Sie benachrichtigt."
       },
       "subtitle": {
         "fr": "Profil",
-        "en": "Profile"
+        "en": "Profile",
+        "nl": "Profiel",
+        "de": "Profil"
       },
       "captures": {
         "fr": {
@@ -268,6 +390,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 673.484375,
+                      "y": 446,
+                      "width": 114.109375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--notifications\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 259.484375,
+                      "y": 393.84375,
+                      "width": 114.109375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--notifications\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 561.828125,
+                      "y": 446,
+                      "width": 181.375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--notifications\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 192.828125,
+                      "y": 393.84375,
+                      "width": 181.375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--notifications\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -280,15 +498,21 @@
       "waitAfter": 500,
       "title": {
         "fr": "Catégories et canaux",
-        "en": "Categories and channels"
+        "en": "Categories and channels",
+        "nl": "Categorieën en kanalen",
+        "de": "Kategorien und Kanäle"
       },
       "text": {
         "fr": "Chaque ligne est une catégorie d'activité — actualités, factures, échéances… — et chaque colonne un canal. « Tout le reste » couvre les catégories qui n'ont pas leur propre ligne. Les messages essentiels (factures, invitations, échéances dépassées) restent toujours envoyés.",
-        "en": "Each row is a kind of activity — news, invoices, deadlines… — and each column a channel. \"Everything else\" covers the categories without a row of their own. Essential messages (invoices, invitations, missed deadlines) are always delivered."
+        "en": "Each row is a kind of activity — news, invoices, deadlines… — and each column a channel. \"Everything else\" covers the categories without a row of their own. Essential messages (invoices, invitations, missed deadlines) are always delivered.",
+        "nl": "Elke rij is een activiteitencategorie — nieuws, facturen, termijnen… — en elke kolom een kanaal. “Al het overige” dekt de categorieën die geen eigen rij hebben. Essentiële berichten (facturen, uitnodigingen, overschreden termijnen) worden altijd verzonden.",
+        "de": "Jede Zeile ist eine Aktivitätskategorie — Neuigkeiten, Rechnungen, Fristen… — und jede Spalte ein Kanal. „Alles Übrige“ deckt die Kategorien ab, die keine eigene Zeile haben. Wesentliche Nachrichten (Rechnungen, Einladungen, versäumte Fristen) werden immer zugestellt."
       },
       "subtitle": {
         "fr": "Préférences de notification",
-        "en": "Notification preferences"
+        "en": "Notification preferences",
+        "nl": "Meldingsvoorkeuren",
+        "de": "Benachrichtigungseinstellungen"
       },
       "captures": {
         "fr": {
@@ -342,6 +566,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/nl/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/nl/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/de/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/de/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -354,15 +630,21 @@
       "waitAfter": 700,
       "title": {
         "fr": "Couper un canal",
-        "en": "Turn a channel off"
+        "en": "Turn a channel off",
+        "nl": "Een kanaal uitschakelen",
+        "de": "Einen Kanal abschalten"
       },
       "text": {
         "fr": "Décochez « E-mail » sur la ligne « Actualités » : vous continuerez à voir les publications dans l'application, mais sans recevoir de courriel.",
-        "en": "Switch \"Email\" off on the \"News posts\" row: you will still see the posts inside the application, but no email will be sent."
+        "en": "Switch \"Email\" off on the \"News posts\" row: you will still see the posts inside the application, but no email will be sent.",
+        "nl": "Zet “E-mail” uit op de rij “Nieuwsberichten”: u blijft de berichten in de applicatie zien, maar ontvangt er geen e-mail meer over.",
+        "de": "Schalten Sie „E-Mail“ in der Zeile „Beiträge“ aus: Sie sehen die Beiträge weiterhin in der Anwendung, erhalten aber keine E-Mail mehr."
       },
       "subtitle": {
         "fr": "Préférences de notification",
-        "en": "Notification preferences"
+        "en": "Notification preferences",
+        "nl": "Meldingsvoorkeuren",
+        "de": "Benachrichtigungseinstellungen"
       },
       "captures": {
         "fr": {
@@ -460,6 +742,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1256,
+                      "y": 724,
+                      "width": 40,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"notification-preferences__email--news_post\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 300.15625,
+                      "y": 671.84375,
+                      "width": 40,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"notification-preferences__email--news_post\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1256,
+                      "y": 724,
+                      "width": 40,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"notification-preferences__email--news_post\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 292.796875,
+                      "y": 671.84375,
+                      "width": 40,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"notification-preferences__email--news_post\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -472,15 +850,21 @@
       "waitAfter": 2000,
       "title": {
         "fr": "Enregistrer",
-        "en": "Save"
+        "en": "Save",
+        "nl": "Opslaan",
+        "de": "Speichern"
       },
       "text": {
         "fr": "Rien n'est appliqué tant que vous n'avez pas enregistré. Cliquez sur « Enregistrer les préférences ».",
-        "en": "Nothing is applied until you save. Click \"Save preferences\"."
+        "en": "Nothing is applied until you save. Click \"Save preferences\".",
+        "nl": "Er wordt niets toegepast zolang u niet hebt opgeslagen. Klik op “Voorkeuren opslaan”.",
+        "de": "Nichts wird übernommen, solange Sie nicht gespeichert haben. Klicken Sie auf „Einstellungen speichern“."
       },
       "subtitle": {
         "fr": "Préférences de notification",
-        "en": "Notification preferences"
+        "en": "Notification preferences",
+        "nl": "Meldingsvoorkeuren",
+        "de": "Benachrichtigungseinstellungen"
       },
       "captures": {
         "fr": {
@@ -578,6 +962,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 132,
+                      "y": 820,
+                      "width": 170.5625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"notification-preferences__save\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 767.84375,
+                      "width": 170.5625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"notification-preferences__save\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 132,
+                      "y": 820,
+                      "width": 197.609375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"notification-preferences__save\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 767.84375,
+                      "width": 197.609375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"notification-preferences__save\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -590,15 +1070,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Préférences enregistrées",
-        "en": "Preferences saved"
+        "en": "Preferences saved",
+        "nl": "Voorkeuren opgeslagen",
+        "de": "Einstellungen gespeichert"
       },
       "text": {
         "fr": "Un message de confirmation apparaît à côté du bouton. Il disparaît dès que vous modifiez à nouveau un réglage.",
-        "en": "A confirmation appears next to the button. It clears as soon as you change a setting again."
+        "en": "A confirmation appears next to the button. It clears as soon as you change a setting again.",
+        "nl": "Er verschijnt een bevestigingsbericht naast de knop. Het verdwijnt zodra u opnieuw een instelling wijzigt.",
+        "de": "Neben der Schaltfläche erscheint eine Bestätigungsmeldung. Sie verschwindet, sobald Sie erneut eine Einstellung ändern."
       },
       "subtitle": {
         "fr": "Préférences de notification",
-        "en": "Notification preferences"
+        "en": "Notification preferences",
+        "nl": "Meldingsvoorkeuren",
+        "de": "Benachrichtigungseinstellungen"
       },
       "captures": {
         "fr": {
@@ -652,6 +1138,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/nl/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/nl/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/de/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/de/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -664,15 +1202,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Un réglage qui vous suit",
-        "en": "A setting that follows you"
+        "en": "A setting that follows you",
+        "nl": "Een instelling die u volgt",
+        "de": "Eine Einstellung, die Ihnen folgt"
       },
       "text": {
         "fr": "Vos préférences sont attachées à votre compte, pas à cet appareil : vous les retrouverez identiques à la prochaine connexion, où que ce soit.",
-        "en": "Your preferences belong to your account, not to this device: you will find them unchanged the next time you sign in, wherever that is."
+        "en": "Your preferences belong to your account, not to this device: you will find them unchanged the next time you sign in, wherever that is.",
+        "nl": "Uw voorkeuren zijn aan uw account gekoppeld, niet aan dit toestel: u vindt ze ongewijzigd terug bij de volgende aanmelding, waar dan ook.",
+        "de": "Ihre Einstellungen sind an Ihr Konto gebunden, nicht an dieses Gerät: Sie finden sie bei der nächsten Anmeldung unverändert wieder, egal wo."
       },
       "subtitle": {
         "fr": "Préférences de notification",
-        "en": "Notification preferences"
+        "en": "Notification preferences",
+        "nl": "Meldingsvoorkeuren",
+        "de": "Benachrichtigungseinstellungen"
       },
       "captures": {
         "fr": {
@@ -718,6 +1262,58 @@
             "frames": [
               {
                 "screenshot": "../assets/notification-preferences/en/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/nl/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/nl/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/de/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-preferences/de/mobile/step-28.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

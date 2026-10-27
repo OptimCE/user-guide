@@ -1,0 +1,6 @@
+# A PDF is byte-for-byte the page it was printed from, and unlike that page it
+# cannot carry a <meta name="robots">. Without this header the published PDF is
+# the only indexable form of a handbook that is deliberately noindex, and it
+# competes with the HTML of every guide it duplicates.
+/*.pdf
+  X-Robots-Tag: noindex

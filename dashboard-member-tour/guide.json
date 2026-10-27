@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Le tableau de bord du membre",
-    "en": "The member dashboard"
+    "en": "The member dashboard",
+    "nl": "Het ledendashboard",
+    "de": "Die Übersicht für Mitglieder"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 2500,
       "title": {
         "fr": "Ouvrir sa communauté",
-        "en": "Open your community"
+        "en": "Open your community",
+        "nl": "Uw gemeenschap openen",
+        "de": "Ihre Gemeinschaft öffnen"
       },
       "text": {
         "fr": "Depuis la page d'accueil, ouvrez la communauté dont vous voulez voir le détail.",
-        "en": "From the home page, open the community you want to look at."
+        "en": "From the home page, open the community you want to look at.",
+        "nl": "Open vanaf de startpagina de gemeenschap waarvan u de details wilt bekijken.",
+        "de": "Öffnen Sie auf der Startseite die Gemeinschaft, deren Details Sie ansehen möchten."
       },
       "subtitle": {
         "fr": "Page d'accueil",
-        "en": "Home page"
+        "en": "Home page",
+        "nl": "Startpagina",
+        "de": "Startseite"
       },
       "captures": {
         "fr": {
@@ -140,6 +150,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/desktop/step-07.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 387,
+                      "y": 265,
+                      "width": 342,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/mobile/step-07.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 305,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/desktop/step-07.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 387,
+                      "y": 265,
+                      "width": 342,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/mobile/step-07.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 305,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -152,15 +258,21 @@
       "waitAfter": 1500,
       "title": {
         "fr": "Le tableau de bord",
-        "en": "The dashboard"
+        "en": "The dashboard",
+        "nl": "Het dashboard",
+        "de": "Die Übersicht"
       },
       "text": {
         "fr": "Le tableau de bord s'adapte à votre rôle. En tant que membre, vous ne voyez pas la gestion de la communauté mais votre situation dans celle-ci.",
-        "en": "The dashboard adapts to your role. As a member you do not see the community's management, but your own situation inside it."
+        "en": "The dashboard adapts to your role. As a member you do not see the community's management, but your own situation inside it.",
+        "nl": "Het dashboard past zich aan uw rol aan. Als lid ziet u niet het beheer van de gemeenschap, maar wel uw eigen situatie daarbinnen.",
+        "de": "Die Übersicht passt sich Ihrer Rolle an. Als Mitglied sehen Sie nicht die Verwaltung der Gemeinschaft, sondern Ihre eigene Situation darin."
       },
       "subtitle": {
         "fr": "Vue d'ensemble",
-        "en": "Overview"
+        "en": "Overview",
+        "nl": "Overzicht",
+        "de": "Überblick"
       },
       "captures": {
         "fr": {
@@ -214,6 +326,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/mobile/step-09.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/mobile/step-09.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -226,15 +390,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Mon énergie ici",
-        "en": "My energy here"
+        "en": "My energy here",
+        "nl": "Mijn energie hier",
+        "de": "Meine Energie hier"
       },
       "text": {
         "fr": "La première tuile totalise, sur les trente derniers jours, ce que vous avez consommé et ce que le partage vous a apporté, puis détaille compteur par compteur.",
-        "en": "The first tile totals, over the last thirty days, what you consumed and what the sharing brought you, then breaks it down meter by meter."
+        "en": "The first tile totals, over the last thirty days, what you consumed and what the sharing brought you, then breaks it down meter by meter.",
+        "nl": "De eerste tegel telt over de laatste dertig dagen op wat u hebt verbruikt en wat het delen u heeft opgeleverd, en splitst dat vervolgens per meter op.",
+        "de": "Die erste Kachel summiert über die letzten dreißig Tage, was Sie verbraucht haben und was Ihnen die Teilung eingebracht hat, und schlüsselt dies anschließend Zähler für Zähler auf."
       },
       "subtitle": {
         "fr": "Tableau de bord",
-        "en": "Dashboard"
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
       },
       "captures": {
         "fr": {
@@ -288,6 +458,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -300,15 +522,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ma participation",
-        "en": "My participation"
+        "en": "My participation",
+        "nl": "Mijn deelname",
+        "de": "Meine Beteiligung"
       },
       "text": {
         "fr": "Pour chaque opération de partage, la tuile indique la part qui vous revient : un pourcentage fixe, une répartition au prorata de votre consommation, ou l'indication que votre compteur n'est pas repris dans la clé en vigueur.",
-        "en": "For each sharing operation the tile shows the share that comes to you: a fixed percentage, a split in proportion to your consumption, or a note that your meter is not part of the key currently in force."
+        "en": "For each sharing operation the tile shows the share that comes to you: a fixed percentage, a split in proportion to your consumption, or a note that your meter is not part of the key currently in force.",
+        "nl": "Voor elke deeloperatie toont de tegel het deel dat u toekomt: een vast percentage, een verdeling naar rato van uw verbruik, of de vermelding dat uw meter niet is opgenomen in de geldende sleutel.",
+        "de": "Für jede Teilungsoperation zeigt die Kachel den Anteil, der Ihnen zusteht: einen festen Prozentsatz, eine Verteilung anteilig zu Ihrem Verbrauch oder den Hinweis, dass Ihr Zähler nicht im geltenden Schlüssel enthalten ist."
       },
       "subtitle": {
         "fr": "Tableau de bord",
-        "en": "Dashboard"
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
       },
       "captures": {
         "fr": {
@@ -362,6 +590,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/desktop/step-11.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/mobile/step-11.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/desktop/step-11.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/mobile/step-11.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -374,15 +654,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ma fiche membre",
-        "en": "My member record"
+        "en": "My member record",
+        "nl": "Mijn ledenfiche",
+        "de": "Mein Mitgliederdatensatz"
       },
       "text": {
         "fr": "La tuile confirme que votre fiche est active, ou signale qu'elle attend encore d'être validée par un gestionnaire.",
-        "en": "The tile confirms your record is active, or flags that it is still waiting for a manager to validate it."
+        "en": "The tile confirms your record is active, or flags that it is still waiting for a manager to validate it.",
+        "nl": "De tegel bevestigt dat uw fiche actief is, of geeft aan dat ze nog op validatie door een beheerder wacht.",
+        "de": "Die Kachel bestätigt, dass Ihr Datensatz aktiv ist, oder weist darauf hin, dass er noch auf die Freigabe durch einen Manager wartet."
       },
       "subtitle": {
         "fr": "Tableau de bord",
-        "en": "Dashboard"
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
       },
       "captures": {
         "fr": {
@@ -436,6 +722,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -448,15 +786,21 @@
       "waitAfter": 2500,
       "title": {
         "fr": "Consulter sa fiche",
-        "en": "Look at your record"
+        "en": "Look at your record",
+        "nl": "Uw fiche bekijken",
+        "de": "Ihren Datensatz ansehen"
       },
       "text": {
         "fr": "Le lien ouvre votre fiche en lecture seule — les mêmes informations que celles dont dispose votre gestionnaire.",
-        "en": "The link opens your record read-only — the same information your manager holds."
+        "en": "The link opens your record read-only — the same information your manager holds.",
+        "nl": "De link opent uw fiche in alleen-lezen — dezelfde gegevens als die waarover uw beheerder beschikt.",
+        "de": "Der Link öffnet Ihren Datensatz schreibgeschützt — mit denselben Informationen, über die auch Ihr Manager verfügt."
       },
       "subtitle": {
         "fr": "Ma fiche membre",
-        "en": "My member record"
+        "en": "My member record",
+        "nl": "Mijn ledenfiche",
+        "de": "Mein Mitgliederdatensatz"
       },
       "captures": {
         "fr": {
@@ -554,6 +898,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 779,
+                      "y": 387,
+                      "width": 342,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"my-member-record-tile__link--member\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 741,
+                      "width": 324,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"my-member-record-tile__link--member\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 779,
+                      "y": 387,
+                      "width": 342,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"my-member-record-tile__link--member\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 741,
+                      "width": 324,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"my-member-record-tile__link--member\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -566,15 +1006,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "À propos de la communauté",
-        "en": "About this community"
+        "en": "About this community",
+        "nl": "Over deze gemeenschap",
+        "de": "Über diese Gemeinschaft"
       },
       "text": {
         "fr": "Nombre de membres, régulateur, site web : de quoi savoir à qui vous avez affaire. Le lien ouvre la fiche complète de la communauté.",
-        "en": "Member count, regulator, website: enough to know who you are dealing with. The link opens the community's full information page."
+        "en": "Member count, regulator, website: enough to know who you are dealing with. The link opens the community's full information page.",
+        "nl": "Aantal leden, regulator, website: genoeg om te weten met wie u te maken hebt. De link opent de volledige fiche van de gemeenschap.",
+        "de": "Mitgliederzahl, Regulierungsbehörde, Website: genug, um zu wissen, mit wem Sie es zu tun haben. Der Link öffnet die vollständige Informationsseite der Gemeinschaft."
       },
       "subtitle": {
         "fr": "Tableau de bord",
-        "en": "Dashboard"
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
       },
       "captures": {
         "fr": {
@@ -628,6 +1074,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -640,15 +1138,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Factures et actualités",
-        "en": "Invoices and news"
+        "en": "Invoices and news",
+        "nl": "Facturen en nieuws",
+        "de": "Rechnungen und Aktuelles"
       },
       "text": {
         "fr": "Ces deux tuiles n'apparaissent que si la communauté utilise les modules correspondants. Vos factures impayées y sont résumées, tout comme les dernières publications du tableau d'actualités.",
-        "en": "These two tiles only appear when the community uses the matching modules. Your unpaid invoices are summarised there, as are the latest posts on the news board."
+        "en": "These two tiles only appear when the community uses the matching modules. Your unpaid invoices are summarised there, as are the latest posts on the news board.",
+        "nl": "Deze twee tegels verschijnen alleen als de gemeenschap de bijbehorende modules gebruikt. Ze vatten uw onbetaalde facturen samen, net als de laatste berichten op het nieuwsbord.",
+        "de": "Diese beiden Kacheln erscheinen nur, wenn die Gemeinschaft die entsprechenden Module nutzt. Dort werden Ihre offenen Rechnungen zusammengefasst, ebenso wie die neuesten Beiträge des Nachrichtenbretts."
       },
       "subtitle": {
         "fr": "Tableau de bord",
-        "en": "Dashboard"
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
       },
       "captures": {
         "fr": {
@@ -702,6 +1206,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -714,15 +1270,21 @@
       "waitAfter": 2500,
       "title": {
         "fr": "Actualiser",
-        "en": "Refresh"
+        "en": "Refresh",
+        "nl": "Vernieuwen",
+        "de": "Aktualisieren"
       },
       "text": {
         "fr": "Le bouton « Actualiser » recharge toutes les tuiles sans recharger la page.",
-        "en": "The \"Refresh\" button reloads every tile without reloading the page."
+        "en": "The \"Refresh\" button reloads every tile without reloading the page.",
+        "nl": "De knop “Vernieuwen” laadt alle tegels opnieuw zonder de pagina te herladen.",
+        "de": "Die Schaltfläche „Aktualisieren“ lädt alle Kacheln neu, ohne die Seite neu zu laden."
       },
       "subtitle": {
         "fr": "Tableau de bord",
-        "en": "Dashboard"
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
       },
       "captures": {
         "fr": {
@@ -820,6 +1382,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 978.125,
+                      "y": 52,
+                      "width": 134.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-dashboard__btn--refresh\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 219,
+                      "width": 134.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-dashboard__btn--refresh\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 968.9375,
+                      "y": 52,
+                      "width": 144.0625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-dashboard__btn--refresh\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 219,
+                      "width": 144.0625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-dashboard__btn--refresh\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -832,15 +1490,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Données à jour",
-        "en": "Up-to-date data"
+        "en": "Up-to-date data",
+        "nl": "Actuele gegevens",
+        "de": "Aktuelle Daten"
       },
       "text": {
         "fr": "Les tuiles se rechargent une à une et reprennent leur affichage avec les données les plus récentes.",
-        "en": "The tiles reload one by one and settle back with the freshest data."
+        "en": "The tiles reload one by one and settle back with the freshest data.",
+        "nl": "De tegels laden een voor een opnieuw en tonen weer hun inhoud met de meest recente gegevens.",
+        "de": "Die Kacheln werden nacheinander neu geladen und zeigen ihre Inhalte wieder mit den neuesten Daten an."
       },
       "subtitle": {
         "fr": "Tableau de bord",
-        "en": "Dashboard"
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
       },
       "captures": {
         "fr": {
@@ -886,6 +1550,58 @@
             "frames": [
               {
                 "screenshot": "../assets/dashboard-member-tour/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-member-tour/de/mobile/step-20.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

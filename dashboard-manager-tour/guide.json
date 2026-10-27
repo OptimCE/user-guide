@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Le tableau de bord du gestionnaire",
-    "en": "The manager dashboard"
+    "en": "The manager dashboard",
+    "nl": "Het beheerdersdashboard",
+    "de": "Die Übersicht für Manager"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 2000,
       "title": {
         "fr": "Entrer dans la communauté",
-        "en": "Enter the community"
+        "en": "Enter the community",
+        "nl": "De gemeenschap betreden",
+        "de": "Die Gemeinschaft betreten"
       },
       "text": {
         "fr": "Depuis votre page d'accueil, ouvrez la communauté sur laquelle vous voulez travailler. Elle devient votre communauté active et vous arrivez sur son tableau de bord.",
-        "en": "From your home page, open the community you want to work on. It becomes your active community and you land on its dashboard."
+        "en": "From your home page, open the community you want to work on. It becomes your active community and you land on its dashboard.",
+        "nl": "Open vanaf uw startpagina de gemeenschap waarin u wilt werken. Ze wordt uw actieve gemeenschap en u komt op haar dashboard terecht.",
+        "de": "Öffnen Sie auf Ihrer Startseite die Gemeinschaft, in der Sie arbeiten möchten. Sie wird zu Ihrer aktiven Gemeinschaft, und Sie gelangen zu ihrer Übersicht."
       },
       "subtitle": {
         "fr": "Page d'accueil",
-        "en": "Home page"
+        "en": "Home page",
+        "nl": "Startpagina",
+        "de": "Startseite"
       },
       "captures": {
         "fr": {
@@ -140,6 +150,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-07.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 387,
+                      "y": 265,
+                      "width": 342,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-07.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 305,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/desktop/step-07.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 387,
+                      "y": 265,
+                      "width": 342,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/mobile/step-07.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 305,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -152,15 +258,21 @@
       "waitAfter": 1500,
       "title": {
         "fr": "Le tableau de bord",
-        "en": "The dashboard"
+        "en": "The dashboard",
+        "nl": "Het dashboard",
+        "de": "Die Übersicht"
       },
       "text": {
         "fr": "Le tableau de bord résume l'état de la communauté active : ce qui demande votre attention, l'énergie partagée, les opérations, et les modules auxquels la communauté est abonnée.",
-        "en": "The dashboard sums up the state of the active community: what needs your attention, the shared energy, the operations, and the modules the community is subscribed to."
+        "en": "The dashboard sums up the state of the active community: what needs your attention, the shared energy, the operations, and the modules the community is subscribed to.",
+        "nl": "Het dashboard vat de toestand van de actieve gemeenschap samen: wat uw aandacht vraagt, de gedeelde energie, de operaties en de modules waarop de gemeenschap geabonneerd is.",
+        "de": "Die Übersicht fasst den Zustand der aktiven Gemeinschaft zusammen: was Ihre Aufmerksamkeit erfordert, die geteilte Energie, die Operationen und die Module, die die Gemeinschaft abonniert hat."
       },
       "subtitle": {
         "fr": "Vue d'ensemble",
-        "en": "Overview"
+        "en": "Overview",
+        "nl": "Overzicht",
+        "de": "Überblick"
       },
       "captures": {
         "fr": {
@@ -214,6 +326,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-09.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/mobile/step-09.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -226,15 +390,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Points à vérifier",
-        "en": "Things to check"
+        "en": "Things to check",
+        "nl": "Aandachtspunten",
+        "de": "Zu prüfende Punkte"
       },
       "text": {
         "fr": "La première tuile rassemble ce qui bloque ou risque de bloquer : informations légales manquantes, compteurs en attente du GRD, opérations sans clé de répartition. Chaque ligne mène directement à l'écran où la corriger.",
-        "en": "The first tile gathers what is blocking, or about to: missing legal details, meters waiting on the grid operator, operations without an allocation key. Every row links straight to the screen where you fix it."
+        "en": "The first tile gathers what is blocking, or about to: missing legal details, meters waiting on the grid operator, operations without an allocation key. Every row links straight to the screen where you fix it.",
+        "nl": "De eerste tegel verzamelt wat blokkeert of dreigt te blokkeren: ontbrekende juridische gegevens, meters die op de netbeheerder wachten, operaties zonder verdeelsleutel. Elke regel leidt rechtstreeks naar het scherm waar u het kunt oplossen.",
+        "de": "Die erste Kachel fasst zusammen, was blockiert oder zu blockieren droht: fehlende rechtliche Angaben, Zähler, die auf den Netzbetreiber warten, Operationen ohne Verteilungsschlüssel. Jede Zeile führt direkt zu dem Bildschirm, auf dem Sie es beheben können."
       },
       "subtitle": {
         "fr": "Tableau de bord",
-        "en": "Dashboard"
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
       },
       "captures": {
         "fr": {
@@ -288,6 +458,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -300,15 +522,21 @@
       "waitAfter": 2000,
       "title": {
         "fr": "Corriger en un clic",
-        "en": "Fix it in one click"
+        "en": "Fix it in one click",
+        "nl": "Oplossen met één klik",
+        "de": "Mit einem Klick beheben"
       },
       "text": {
         "fr": "Cliquez sur « Corriger » : vous arrivez sur la page concernée, ici les informations de la communauté.",
-        "en": "Click \"Fix\": you land on the page in question — here, the community information."
+        "en": "Click \"Fix\": you land on the page in question — here, the community information.",
+        "nl": "Klik op “Oplossen”: u komt op de betreffende pagina terecht, hier de gegevens van de gemeenschap.",
+        "de": "Klicken Sie auf „Beheben“: Sie gelangen zur betreffenden Seite, hier zu den Angaben der Gemeinschaft."
       },
       "subtitle": {
         "fr": "Points à vérifier",
-        "en": "Things to check"
+        "en": "Things to check",
+        "nl": "Aandachtspunten",
+        "de": "Zu prüfende Punkte"
       },
       "captures": {
         "fr": {
@@ -406,6 +634,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-11.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1191.484375,
+                      "y": 200,
+                      "width": 57.515625,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"readiness-tile__link--COMMUNITY_FIELD_MISSING\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-11.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 299.484375,
+                      "y": 366,
+                      "width": 57.515625,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"readiness-tile__link--COMMUNITY_FIELD_MISSING\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/desktop/step-11.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1194.921875,
+                      "y": 200,
+                      "width": 54.078125,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"readiness-tile__link--COMMUNITY_FIELD_MISSING\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/mobile/step-11.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 302.921875,
+                      "y": 366,
+                      "width": 54.078125,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"readiness-tile__link--COMMUNITY_FIELD_MISSING\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -418,15 +742,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Énergie en un coup d'œil",
-        "en": "Energy at a glance"
+        "en": "Energy at a glance",
+        "nl": "Energie in één oogopslag",
+        "de": "Energie auf einen Blick"
       },
       "text": {
         "fr": "Pour chaque opération de partage, la tuile indique l'énergie partagée et l'énergie injectée sur la dernière période disposant de données. Le nom de l'opération renvoie à sa fiche.",
-        "en": "For each sharing operation, the tile shows the shared and injected energy over the latest period with data. The operation name links to its page."
+        "en": "For each sharing operation, the tile shows the shared and injected energy over the latest period with data. The operation name links to its page.",
+        "nl": "Voor elke deeloperatie toont de tegel de gedeelde en de geïnjecteerde energie over de laatste periode waarvoor gegevens beschikbaar zijn. De naam van de operatie leidt naar haar detailpagina.",
+        "de": "Für jede Teilungsoperation zeigt die Kachel die geteilte und die eingespeiste Energie für den letzten Zeitraum, für den Daten vorliegen. Der Name der Operation führt zu ihrer Detailseite."
       },
       "subtitle": {
         "fr": "Tableau de bord",
-        "en": "Dashboard"
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
       },
       "captures": {
         "fr": {
@@ -480,6 +810,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -492,15 +874,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Opérations de partage",
-        "en": "Sharing operations"
+        "en": "Sharing operations",
+        "nl": "Deelbewerkingen",
+        "de": "Teilungsvorgänge"
       },
       "text": {
         "fr": "La tuile liste les opérations de la communauté avec leur type. Le lien en bas ouvre la liste complète.",
-        "en": "The tile lists the community's operations with their type. The link at the bottom opens the full list."
+        "en": "The tile lists the community's operations with their type. The link at the bottom opens the full list.",
+        "nl": "De tegel toont de operaties van de gemeenschap met hun type. De link onderaan opent de volledige lijst.",
+        "de": "Die Kachel listet die Operationen der Gemeinschaft mit ihrem Typ auf. Der Link unten öffnet die vollständige Liste."
       },
       "subtitle": {
         "fr": "Tableau de bord",
-        "en": "Dashboard"
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
       },
       "captures": {
         "fr": {
@@ -554,6 +942,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-16.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/mobile/step-16.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -566,15 +1006,21 @@
       "waitAfter": 2000,
       "title": {
         "fr": "Voir toutes les opérations",
-        "en": "See every operation"
+        "en": "See every operation",
+        "nl": "Alle operaties bekijken",
+        "de": "Alle Operationen ansehen"
       },
       "text": {
         "fr": "Le lien vous emmène à la gestion complète des opérations de partage.",
-        "en": "The link takes you to the full sharing-operation management screen."
+        "en": "The link takes you to the full sharing-operation management screen.",
+        "nl": "De link brengt u naar het volledige beheer van de deeloperaties.",
+        "de": "Der Link führt Sie zur vollständigen Verwaltung der Teilungsoperationen."
       },
       "subtitle": {
         "fr": "Opérations de partage",
-        "en": "Sharing operations"
+        "en": "Sharing operations",
+        "nl": "Deeloperaties",
+        "de": "Teilungsoperationen"
       },
       "captures": {
         "fr": {
@@ -672,6 +1118,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 779,
+                      "y": 472,
+                      "width": 155.953125,
+                      "height": 19
+                    },
+                    "selector": "[data-testid=\"sharing-operations-tile__link--all\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 820,
+                      "width": 155.953125,
+                      "height": 19
+                    },
+                    "selector": "[data-testid=\"sharing-operations-tile__link--all\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 779,
+                      "y": 472,
+                      "width": 153.40625,
+                      "height": 19
+                    },
+                    "selector": "[data-testid=\"sharing-operations-tile__link--all\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 820,
+                      "width": 153.40625,
+                      "height": 19
+                    },
+                    "selector": "[data-testid=\"sharing-operations-tile__link--all\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -684,15 +1226,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Arrivées et activité récente",
-        "en": "Arrivals and recent activity"
+        "en": "Arrivals and recent activity",
+        "nl": "Nieuwe deelnemers en recente activiteit",
+        "de": "Neuzugänge und letzte Aktivität"
       },
       "text": {
         "fr": "« Arrivées en cours » compte les invitations envoyées et les fiches encore à encoder. « Activité récente » reprend les dernières actions enregistrées dans le journal d'audit de la communauté.",
-        "en": "\"People joining\" counts the invitations sent and the records still to be filled in. \"Recent activity\" shows the latest actions recorded in the community's audit log."
+        "en": "\"People joining\" counts the invitations sent and the records still to be filled in. \"Recent activity\" shows the latest actions recorded in the community's audit log.",
+        "nl": "“Nieuwe deelnemers” telt de verzonden uitnodigingen en de fiches die nog moeten worden ingevuld. “Recente activiteit” toont de laatste acties die in het auditlogboek van de gemeenschap zijn geregistreerd.",
+        "de": "„Neuzugänge“ zählt die versendeten Einladungen und die noch zu erfassenden Datensätze. „Letzte Aktivität“ zeigt die zuletzt im Audit-Protokoll der Gemeinschaft erfassten Aktionen."
       },
       "subtitle": {
         "fr": "Tableau de bord",
-        "en": "Dashboard"
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
       },
       "captures": {
         "fr": {
@@ -746,6 +1294,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -758,15 +1358,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Les modules activés",
-        "en": "The enabled modules"
+        "en": "The enabled modules",
+        "nl": "De geactiveerde modules",
+        "de": "Die aktivierten Module"
       },
       "text": {
         "fr": "Facturation, actualités, dossiers et échéances administratives n'apparaissent que si la communauté est abonnée au module correspondant. Une communauté sans abonnement ne voit tout simplement pas ces tuiles.",
-        "en": "Billing, news, dossiers and administrative deadlines only appear when the community is subscribed to the matching module. A community with no subscription simply does not see these tiles."
+        "en": "Billing, news, dossiers and administrative deadlines only appear when the community is subscribed to the matching module. A community with no subscription simply does not see these tiles.",
+        "nl": "Facturatie, nieuws, dossiers en administratieve deadlines verschijnen alleen als de gemeenschap geabonneerd is op de bijbehorende module. Een gemeenschap zonder abonnement ziet deze tegels gewoon niet.",
+        "de": "Abrechnung, Aktuelles, Dossiers und Verwaltungsfristen erscheinen nur, wenn die Gemeinschaft das entsprechende Modul abonniert hat. Eine Gemeinschaft ohne Abonnement sieht diese Kacheln einfach nicht."
       },
       "subtitle": {
         "fr": "Tableau de bord",
-        "en": "Dashboard"
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
       },
       "captures": {
         "fr": {
@@ -820,6 +1426,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -832,15 +1490,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Modules disponibles",
-        "en": "Available modules"
+        "en": "Available modules",
+        "nl": "Beschikbare modules",
+        "de": "Verfügbare Module"
       },
       "text": {
         "fr": "En bas du tableau de bord, la bande « Modules disponibles » présente ce que la communauté n'utilise pas encore. Un administrateur peut les activer d'ici ; un gestionnaire voit à qui les demander.",
-        "en": "At the bottom of the dashboard, the \"Available modules\" strip shows what the community is not using yet. An administrator can enable them from here; a manager is told whom to ask."
+        "en": "At the bottom of the dashboard, the \"Available modules\" strip shows what the community is not using yet. An administrator can enable them from here; a manager is told whom to ask.",
+        "nl": "Onderaan het dashboard toont de strook “Beschikbare modules” wat de gemeenschap nog niet gebruikt. Een beheerder kan ze hier activeren; een manager ziet aan wie hij ze moet vragen.",
+        "de": "Unten in der Übersicht zeigt die Leiste „Verfügbare Module“, was die Gemeinschaft noch nicht nutzt. Ein Administrator kann sie hier aktivieren; ein Manager sieht, an wen er sich wenden muss."
       },
       "subtitle": {
         "fr": "Tableau de bord",
-        "en": "Dashboard"
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
       },
       "captures": {
         "fr": {
@@ -894,6 +1558,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -906,15 +1622,21 @@
       "waitAfter": 2500,
       "title": {
         "fr": "Actualiser",
-        "en": "Refresh"
+        "en": "Refresh",
+        "nl": "Vernieuwen",
+        "de": "Aktualisieren"
       },
       "text": {
         "fr": "Le bouton « Actualiser » recharge toutes les tuiles d'un coup, sans recharger la page — pratique après avoir corrigé quelque chose dans un autre écran.",
-        "en": "The \"Refresh\" button reloads every tile at once without reloading the page — handy right after fixing something on another screen."
+        "en": "The \"Refresh\" button reloads every tile at once without reloading the page — handy right after fixing something on another screen.",
+        "nl": "De knop “Vernieuwen” laadt alle tegels in één keer opnieuw, zonder de pagina te herladen — handig nadat u iets in een ander scherm hebt gecorrigeerd.",
+        "de": "Die Schaltfläche „Aktualisieren“ lädt alle Kacheln auf einmal neu, ohne die Seite neu zu laden — praktisch, nachdem Sie auf einem anderen Bildschirm etwas korrigiert haben."
       },
       "subtitle": {
         "fr": "Tableau de bord",
-        "en": "Dashboard"
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
       },
       "captures": {
         "fr": {
@@ -1012,6 +1734,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1106.125,
+                      "y": 52,
+                      "width": 134.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"manager-dashboard__btn--refresh\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 219,
+                      "width": 134.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"manager-dashboard__btn--refresh\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1096.9375,
+                      "y": 52,
+                      "width": 144.0625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"manager-dashboard__btn--refresh\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 219,
+                      "width": 144.0625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"manager-dashboard__btn--refresh\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1024,15 +1842,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Données à jour",
-        "en": "Up-to-date data"
+        "en": "Up-to-date data",
+        "nl": "Bijgewerkte gegevens",
+        "de": "Aktuelle Daten"
       },
       "text": {
         "fr": "Les tuiles se rechargent une par une et reprennent leur affichage habituel avec les données les plus récentes.",
-        "en": "The tiles reload one by one and settle back into their usual display with the freshest data."
+        "en": "The tiles reload one by one and settle back into their usual display with the freshest data.",
+        "nl": "De tegels laden een voor een opnieuw en krijgen weer hun gewone weergave met de meest recente gegevens.",
+        "de": "Die Kacheln laden nacheinander neu und zeigen wieder ihre gewohnte Ansicht mit den neuesten Daten."
       },
       "subtitle": {
         "fr": "Tableau de bord",
-        "en": "Dashboard"
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
       },
       "captures": {
         "fr": {
@@ -1078,6 +1902,58 @@
             "frames": [
               {
                 "screenshot": "../assets/dashboard-manager-tour/en/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/dashboard-manager-tour/de/mobile/step-25.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

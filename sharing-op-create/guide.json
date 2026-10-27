@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Créer une opération de partage",
-    "en": "Create a sharing operation"
+    "en": "Create a sharing operation",
+    "nl": "Een deeloperatie aanmaken",
+    "de": "Teilungsoperation erstellen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ajouter une opération",
-        "en": "Add an operation"
+        "en": "Add an operation",
+        "nl": "Operatie toevoegen",
+        "de": "Operation hinzufügen"
       },
       "text": {
         "fr": "Cliquez sur « Ajouter » pour ouvrir le dialogue de création d'une nouvelle opération de partage au sein de la communauté active.",
-        "en": "Click \"Add\" to open the dialog that creates a new sharing operation inside the active community."
+        "en": "Click \"Add\" to open the dialog that creates a new sharing operation inside the active community.",
+        "nl": "Klik op “Toevoegen” om het dialoogvenster te openen waarmee u een nieuwe deeloperatie aanmaakt binnen de actieve gemeenschap.",
+        "de": "Klicken Sie auf „Hinzufügen“, um den Dialog zum Erstellen einer neuen Teilungsoperation in der aktiven Gemeinschaft zu öffnen."
       },
       "subtitle": {
         "fr": "Création d'une opération",
-        "en": "Creating an operation"
+        "en": "Creating an operation",
+        "nl": "Aanmaken van een operatie",
+        "de": "Erstellen einer Operation"
       },
       "captures": {
         "fr": {
@@ -140,6 +150,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/nl/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1240.140625,
+                      "y": 52,
+                      "width": 128.859375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"operations-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/nl/mobile/step-16.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 128.859375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"operations-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/de/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1234.625,
+                      "y": 52,
+                      "width": 134.375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"operations-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/de/mobile/step-16.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 134.375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"operations-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -152,15 +258,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Nommer l'opération",
-        "en": "Name the operation"
+        "en": "Name the operation",
+        "nl": "Operatie een naam geven",
+        "de": "Operation benennen"
       },
       "text": {
         "fr": "Saisissez un nom évocateur pour la nouvelle opération de partage. Ce nom apparaîtra dans la liste et dans toutes les références à cette opération.",
-        "en": "Type a meaningful name for the new sharing operation. This name appears in the list and in every reference to the operation."
+        "en": "Type a meaningful name for the new sharing operation. This name appears in the list and in every reference to the operation.",
+        "nl": "Voer een veelzeggende naam in voor de nieuwe deeloperatie. Deze naam verschijnt in de lijst en in alle verwijzingen naar deze operatie.",
+        "de": "Geben Sie einen aussagekräftigen Namen für die neue Teilungsoperation ein. Dieser Name erscheint in der Liste und in allen Verweisen auf diese Operation."
       },
       "subtitle": {
         "fr": "Identification de l'opération",
-        "en": "Operation identification"
+        "en": "Operation identification",
+        "nl": "Identificatie van de operatie",
+        "de": "Identifikation der Operation"
       },
       "captures": {
         "fr": {
@@ -262,6 +374,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/nl/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 416.640625,
+                      "y": 344,
+                      "width": 606.703125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-creation__input--name\"]"
+                  },
+                  "value": "E2E Sharing Op"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/nl/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 65.78125,
+                      "y": 248,
+                      "width": 258.4375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-creation__input--name\"]"
+                  },
+                  "value": "E2E Sharing Op"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/de/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 360.15625,
+                      "y": 344,
+                      "width": 719.671875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-creation__input--name\"]"
+                  },
+                  "value": "E2E Sharing Op"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/de/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 39.6875,
+                      "y": 248,
+                      "width": 310.609375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-creation__input--name\"]"
+                  },
+                  "value": "E2E Sharing Op"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -274,15 +486,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Type Local",
-        "en": "Local type"
+        "en": "Local type",
+        "nl": "Lokaal type",
+        "de": "Lokaler Typ"
       },
       "text": {
         "fr": "Sélectionnez la carte « Local » pour indiquer que le partage se fait au sein d'un même bâtiment, par opposition à un partage à distance via le réseau public.",
-        "en": "Pick the \"Local\" card to indicate that sharing happens inside a single building, as opposed to remote sharing across the public grid."
+        "en": "Pick the \"Local\" card to indicate that sharing happens inside a single building, as opposed to remote sharing across the public grid.",
+        "nl": "Selecteer de kaart “Binnen een gebouw” om aan te geven dat het delen binnen eenzelfde gebouw gebeurt, in tegenstelling tot delen op afstand via het openbare net.",
+        "de": "Wählen Sie die Karte „Innerhalb eines Gebäudes“, um anzugeben, dass die Teilung innerhalb desselben Gebäudes erfolgt, im Gegensatz zu einer Teilung auf Distanz über das öffentliche Netz."
       },
       "subtitle": {
         "fr": "Type de partage",
-        "en": "Sharing type"
+        "en": "Sharing type",
+        "nl": "Type deling",
+        "de": "Art der Teilung"
       },
       "captures": {
         "fr": {
@@ -380,6 +598,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/nl/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 416.640625,
+                      "y": 428,
+                      "width": 194.234375,
+                      "height": 56
+                    },
+                    "selector": "[data-testid=\"op-creation__card--type--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/nl/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 65.78125,
+                      "y": 332,
+                      "width": 258.4375,
+                      "height": 56
+                    },
+                    "selector": "[data-testid=\"op-creation__card--type--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/de/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 360.15625,
+                      "y": 428,
+                      "width": 231.890625,
+                      "height": 56
+                    },
+                    "selector": "[data-testid=\"op-creation__card--type--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/de/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 39.6875,
+                      "y": 332,
+                      "width": 310.609375,
+                      "height": 56
+                    },
+                    "selector": "[data-testid=\"op-creation__card--type--0\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -392,15 +706,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Saisir la commune",
-        "en": "Type the municipality"
+        "en": "Type the municipality",
+        "nl": "Gemeente invoeren",
+        "de": "Gemeinde eingeben"
       },
       "text": {
         "fr": "Tapez les premières lettres du nom d'une commune (par exemple « Anderl ») dans le champ « Communes couvertes » pour ouvrir la liste des suggestions correspondantes.",
-        "en": "Type the first letters of a municipality name (e.g. \"Anderl\") in the \"Covered municipalities\" field to open the list of matching suggestions."
+        "en": "Type the first letters of a municipality name (e.g. \"Anderl\") in the \"Covered municipalities\" field to open the list of matching suggestions.",
+        "nl": "Typ de eerste letters van een gemeentenaam (bijvoorbeeld “Anderl”) in het veld “Gedekte gemeenten” om de lijst met overeenkomende suggesties te openen.",
+        "de": "Geben Sie die ersten Buchstaben eines Gemeindenamens (zum Beispiel „Anderl“) in das Feld „Abgedeckte Gemeinden“ ein, um die Liste der passenden Vorschläge zu öffnen."
       },
       "subtitle": {
         "fr": "Communes couvertes",
-        "en": "Covered municipalities"
+        "en": "Covered municipalities",
+        "nl": "Gedekte gemeenten",
+        "de": "Abgedeckte Gemeinden"
       },
       "captures": {
         "fr": {
@@ -502,6 +822,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/nl/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 429.640625,
+                      "y": 535,
+                      "width": 580.703125,
+                      "height": 24
+                    },
+                    "selector": "#municipalities"
+                  },
+                  "value": "Anderl"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/nl/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 78.78125,
+                      "y": 575,
+                      "width": 232.4375,
+                      "height": 24
+                    },
+                    "selector": "#municipalities"
+                  },
+                  "value": "Anderl"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/de/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 373.15625,
+                      "y": 535,
+                      "width": 693.671875,
+                      "height": 24
+                    },
+                    "selector": "#municipalities"
+                  },
+                  "value": "Anderl"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/de/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 52.6875,
+                      "y": 575,
+                      "width": 284.609375,
+                      "height": 24
+                    },
+                    "selector": "#municipalities"
+                  },
+                  "value": "Anderl"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -514,15 +934,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Sélectionner Anderlecht",
-        "en": "Select Anderlecht"
+        "en": "Select Anderlecht",
+        "nl": "Anderlecht selecteren",
+        "de": "Anderlecht auswählen"
       },
       "text": {
         "fr": "Cliquez sur la première suggestion (« Anderlecht ») pour l'ajouter à la liste des communes couvertes par l'opération de partage.",
-        "en": "Click the first suggestion (\"Anderlecht\") to add it to the list of municipalities covered by the sharing operation."
+        "en": "Click the first suggestion (\"Anderlecht\") to add it to the list of municipalities covered by the sharing operation.",
+        "nl": "Klik op de eerste suggestie (“Anderlecht”) om deze toe te voegen aan de lijst van gemeenten die de deeloperatie dekt.",
+        "de": "Klicken Sie auf den ersten Vorschlag („Anderlecht“), um ihn zur Liste der von der Teilungsoperation abgedeckten Gemeinden hinzuzufügen."
       },
       "subtitle": {
         "fr": "Confirmation de la commune",
-        "en": "Confirming the municipality"
+        "en": "Confirming the municipality",
+        "nl": "Bevestiging van de gemeente",
+        "de": "Bestätigung der Gemeinde"
       },
       "captures": {
         "fr": {
@@ -620,6 +1046,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/nl/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 421.640625,
+                      "y": 575,
+                      "width": 597,
+                      "height": 52
+                    },
+                    "selector": ".p-autocomplete-overlay [role=\"option\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/nl/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 70.78125,
+                      "y": 615,
+                      "width": 248,
+                      "height": 52
+                    },
+                    "selector": ".p-autocomplete-overlay [role=\"option\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/de/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 365.15625,
+                      "y": 575,
+                      "width": 710,
+                      "height": 52
+                    },
+                    "selector": ".p-autocomplete-overlay [role=\"option\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/de/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 44.6875,
+                      "y": 615,
+                      "width": 301,
+                      "height": 52
+                    },
+                    "selector": ".p-autocomplete-overlay [role=\"option\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -632,15 +1154,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Opération créée",
-        "en": "Operation created"
+        "en": "Operation created",
+        "nl": "Operatie aangemaakt",
+        "de": "Operation erstellt"
       },
       "text": {
         "fr": "La nouvelle opération « E2E Sharing Op » apparaît dans la liste des opérations de partage de la communauté, prête à être éditée et activée.",
-        "en": "The new \"E2E Sharing Op\" shows up in the community's sharing operations list, ready to be edited and activated."
+        "en": "The new \"E2E Sharing Op\" shows up in the community's sharing operations list, ready to be edited and activated.",
+        "nl": "De nieuwe operatie “E2E Sharing Op” verschijnt in de lijst van deeloperaties van de gemeenschap, klaar om te worden bewerkt en geactiveerd.",
+        "de": "Die neue Operation „E2E Sharing Op“ erscheint in der Liste der Teilungsoperationen der Gemeinschaft, bereit zur Bearbeitung und Aktivierung."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -694,6 +1222,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/nl/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/de/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -706,15 +1286,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir la fiche",
-        "en": "Open the detail"
+        "en": "Open the detail",
+        "nl": "Detailpagina openen",
+        "de": "Detailseite öffnen"
       },
       "text": {
         "fr": "Cliquez sur la ligne de la nouvelle opération pour ouvrir sa fiche détaillée et accéder à ses paramètres complets.",
-        "en": "Click the new operation's row to open its detail page and access the full set of parameters."
+        "en": "Click the new operation's row to open its detail page and access the full set of parameters.",
+        "nl": "Klik op de rij van de nieuwe operatie om de detailpagina te openen en alle parameters te raadplegen.",
+        "de": "Klicken Sie auf die Zeile der neuen Operation, um ihre Detailseite zu öffnen und auf alle Parameter zuzugreifen."
       },
       "subtitle": {
         "fr": "Ouverture de la fiche",
-        "en": "Opening the detail"
+        "en": "Opening the detail",
+        "nl": "Openen van de detailpagina",
+        "de": "Öffnen der Detailseite"
       },
       "captures": {
         "fr": {
@@ -812,6 +1398,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 203.96875
+                    },
+                    "selector": "[data-testid=\"operations-list__table\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 264,
+                      "width": 358,
+                      "height": 579.9375
+                    },
+                    "selector": "[data-testid=\"operations-list__table\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 203.96875
+                    },
+                    "selector": "[data-testid=\"operations-list__table\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/de/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 264,
+                      "width": 358,
+                      "height": 579.9375
+                    },
+                    "selector": "[data-testid=\"operations-list__table\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -824,15 +1506,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Nom de l'opération",
-        "en": "Operation name"
+        "en": "Operation name",
+        "nl": "Naam van de operatie",
+        "de": "Name der Operation"
       },
       "text": {
         "fr": "L'en-tête de la fiche reprend le nom de l'opération que vous venez de créer — il sert de fil conducteur dans toutes les vues qui la référencent.",
-        "en": "The detail page header echoes the name of the operation you just created — it serves as the anchor across every view that references it."
+        "en": "The detail page header echoes the name of the operation you just created — it serves as the anchor across every view that references it.",
+        "nl": "De kop van de detailpagina toont de naam van de operatie die u zojuist hebt aangemaakt — die naam is de rode draad in alle weergaven die ernaar verwijzen.",
+        "de": "Die Kopfzeile der Detailseite zeigt den Namen der Operation, die Sie gerade erstellt haben — er dient als roter Faden in allen Ansichten, die auf sie verweisen."
       },
       "subtitle": {
         "fr": "Détail de l'opération",
-        "en": "Operation detail"
+        "en": "Operation detail",
+        "nl": "Details van de operatie",
+        "de": "Details der Operation"
       },
       "captures": {
         "fr": {
@@ -878,6 +1566,58 @@
             "frames": [
               {
                 "screenshot": "../assets/sharing-op-create/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/nl/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/de/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-create/de/mobile/step-30.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

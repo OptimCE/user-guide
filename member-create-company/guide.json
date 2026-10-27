@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Créer un membre entreprise",
-    "en": "Create a company member"
+    "en": "Create a company member",
+    "nl": "Een bedrijf als lid aanmaken",
+    "de": "Unternehmen als Mitglied anlegen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir la liste des membres",
-        "en": "Open the members list"
+        "en": "Open the members list",
+        "nl": "De ledenlijst openen",
+        "de": "Die Mitgliederliste öffnen"
       },
       "text": {
         "fr": "Dans la section « Gestion », ouvrez « Gestion des membres » puis cliquez sur « Membres ».",
-        "en": "In the \"Management\" section, open \"Members\" then click \"Members\"."
+        "en": "In the \"Management\" section, open \"Members\" then click \"Members\".",
+        "nl": "Open in de sectie “Beheer” het menu “Ledenbeheer” en klik daarna op “Leden beheren”.",
+        "de": "Öffnen Sie im Bereich „Verwaltung“ das Menü „Mitgliederverwaltung“ und klicken Sie dann auf „Mitglieder verwalten“."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De ledenlijst openen",
+              "text": "Open in de navigatielade het menu “Ledenbeheer” en tik daarna op “Leden beheren”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Die Mitgliederliste öffnen",
+              "text": "Öffnen Sie im Navigationsmenü den Eintrag „Mitgliederverwaltung“ und tippen Sie dann auf „Mitglieder verwalten“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ajouter un membre",
-        "en": "Add a member"
+        "en": "Add a member",
+        "nl": "Een lid toevoegen",
+        "de": "Ein Mitglied hinzufügen"
       },
       "text": {
         "fr": "Cliquez sur « Ajouter un membre » pour ouvrir l'assistant de création en quatre étapes.",
-        "en": "Click \"Add member\" to open the four-step creation wizard."
+        "en": "Click \"Add member\" to open the four-step creation wizard.",
+        "nl": "Klik op “Toevoegen” om de aanmaakwizard in vier stappen te openen.",
+        "de": "Klicken Sie auf „Hinzufügen“, um den Erstellungsassistenten in vier Schritten zu öffnen."
       },
       "subtitle": {
         "fr": "Création d'un membre société",
-        "en": "Creating a company member"
+        "en": "Creating a company member",
+        "nl": "Een bedrijfslid aanmaken",
+        "de": "Ein Unternehmensmitglied anlegen"
       },
       "captures": {
         "fr": {
@@ -268,6 +390,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 688.734375,
+                      "y": 52,
+                      "width": 128.859375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 683.953125,
+                      "y": 61,
+                      "width": 134.375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -280,15 +498,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Choisir le type « Société »",
-        "en": "Pick the \"Company\" type"
+        "en": "Pick the \"Company\" type",
+        "nl": "Het type “Bedrijf” kiezen",
+        "de": "Den Typ „Unternehmen“ wählen"
       },
       "text": {
         "fr": "Sélectionnez « Société » pour créer un membre personne morale. Les champs de l'étape suivante seront adaptés : numéro d'entreprise et numéro de TVA au lieu du numéro national.",
-        "en": "Select \"Company\" to create a legal-entity member. The next step adapts its fields: company number and VAT number instead of a national number."
+        "en": "Select \"Company\" to create a legal-entity member. The next step adapts its fields: company number and VAT number instead of a national number.",
+        "nl": "Selecteer “Bedrijf” om een lid aan te maken dat een rechtspersoon is. De velden van de volgende stap worden aangepast: ondernemingsnummer en btw-nummer in plaats van het rijksregisternummer.",
+        "de": "Wählen Sie „Unternehmen“, um ein Mitglied als juristische Person anzulegen. Die Felder des nächsten Schritts werden angepasst: Unternehmensnummer und MwSt-Nummer statt der Nationalregisternummer."
       },
       "subtitle": {
         "fr": "Étape 1 — Type",
-        "en": "Step 1 — Type"
+        "en": "Step 1 — Type",
+        "nl": "Stap 1 — Type",
+        "de": "Schritt 1 — Typ"
       },
       "captures": {
         "fr": {
@@ -386,6 +610,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 728,
+                      "y": 451,
+                      "width": 248,
+                      "height": 62
+                    },
+                    "selector": "[data-testid=\"new-member-type__card--company\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 289,
+                      "width": 332,
+                      "height": 62
+                    },
+                    "selector": "[data-testid=\"new-member-type__card--company\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 728,
+                      "y": 451,
+                      "width": 248,
+                      "height": 62
+                    },
+                    "selector": "[data-testid=\"new-member-type__card--company\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 289,
+                      "width": 332,
+                      "height": 62
+                    },
+                    "selector": "[data-testid=\"new-member-type__card--company\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -398,15 +718,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Renseigner la société",
-        "en": "Fill in the company"
+        "en": "Fill in the company",
+        "nl": "De bedrijfsgegevens invullen",
+        "de": "Die Unternehmensdaten eingeben"
       },
       "text": {
         "fr": "Saisissez le numéro d'entreprise, la dénomination sociale et le numéro de TVA. Une société étant une personne morale, indiquez aussi son représentant légal : numéro national, nom, e-mail et téléphone.",
-        "en": "Enter the company number, legal name and VAT number. Since a company is a legal entity, also provide its legal representative: national number, name, email and phone."
+        "en": "Enter the company number, legal name and VAT number. Since a company is a legal entity, also provide its legal representative: national number, name, email and phone.",
+        "nl": "Voer het ondernemingsnummer, de maatschappelijke benaming en het btw-nummer in. Aangezien een bedrijf een rechtspersoon is, vermeldt u ook de wettelijke vertegenwoordiger: rijksregisternummer, naam, e-mail en telefoon.",
+        "de": "Geben Sie die Unternehmensnummer, die Firmenbezeichnung und die MwSt-Nummer ein. Da ein Unternehmen eine juristische Person ist, geben Sie auch seinen gesetzlichen Vertreter an: Nationalregisternummer, Name, E-Mail und Telefon."
       },
       "subtitle": {
         "fr": "Étape 2 — Identité",
-        "en": "Step 2 — Identity"
+        "en": "Step 2 — Identity",
+        "nl": "Stap 2 — Identiteit",
+        "de": "Schritt 2 — Identität"
       },
       "captures": {
         "fr": {
@@ -796,6 +1122,394 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/desktop/step-27-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 274,
+                        "width": 826,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--company-number\"]",
+                      "value": "0762031208"
+                    },
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 350,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--company-name\"]",
+                      "value": "E2E Company SA"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 350,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--vat-number\"]",
+                      "value": "BE0762031208"
+                    },
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 483,
+                        "width": 826,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-nrn\"]",
+                      "value": "85.06.22-456.78"
+                    },
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 559,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-surname\"]",
+                      "value": "Legal"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 559,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-name\"]",
+                      "value": "Rep"
+                    },
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 635,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-email\"]",
+                      "value": "legal-rep@test.com"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 635,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-phone\"]",
+                      "value": "0470000088"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/mobile/step-27-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 195,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--company-number\"]",
+                      "value": "0762031208"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 271,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--company-name\"]",
+                      "value": "E2E Company SA"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 347,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--vat-number\"]",
+                      "value": "BE0762031208"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 480,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-nrn\"]",
+                      "value": "85.06.22-456.78"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 556,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-surname\"]",
+                      "value": "Legal"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 632,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-name\"]",
+                      "value": "Rep"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 708,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-email\"]",
+                      "value": "legal-rep@test.com"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 784,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-phone\"]",
+                      "value": "0470000088"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/desktop/step-27-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 274,
+                        "width": 826,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--company-number\"]",
+                      "value": "0762031208"
+                    },
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 350,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--company-name\"]",
+                      "value": "E2E Company SA"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 350,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--vat-number\"]",
+                      "value": "BE0762031208"
+                    },
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 483,
+                        "width": 826,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-nrn\"]",
+                      "value": "85.06.22-456.78"
+                    },
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 559,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-surname\"]",
+                      "value": "Legal"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 559,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-name\"]",
+                      "value": "Rep"
+                    },
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 635,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-email\"]",
+                      "value": "legal-rep@test.com"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 635,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-phone\"]",
+                      "value": "0470000088"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/mobile/step-27-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 195,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--company-number\"]",
+                      "value": "0762031208"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 271,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--company-name\"]",
+                      "value": "E2E Company SA"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 347,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--vat-number\"]",
+                      "value": "BE0762031208"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 480,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-nrn\"]",
+                      "value": "85.06.22-456.78"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 556,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-surname\"]",
+                      "value": "Legal"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 632,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-name\"]",
+                      "value": "Rep"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 708,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-email\"]",
+                      "value": "legal-rep@test.com"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 784,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--manager-phone\"]",
+                      "value": "0470000088"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -808,15 +1522,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Renseigner l'adresse",
-        "en": "Enter the address"
+        "en": "Enter the address",
+        "nl": "Het adres invullen",
+        "de": "Die Adresse eingeben"
       },
       "text": {
         "fr": "Complétez l'adresse du siège social. Cochez « Même adresse » pour réutiliser cette adresse comme adresse de facturation.",
-        "en": "Fill in the registered office address. Tick \"Same address\" to reuse it as the billing address."
+        "en": "Fill in the registered office address. Tick \"Same address\" to reuse it as the billing address.",
+        "nl": "Vul het adres van de maatschappelijke zetel in. Vink “Zelfde adres voor facturering” aan om dit adres ook als factuuradres te gebruiken.",
+        "de": "Geben Sie die Adresse des Gesellschaftssitzes ein. Aktivieren Sie „Gleiche Adresse für die Rechnungsstellung“, um diese Adresse als Rechnungsadresse zu übernehmen."
       },
       "subtitle": {
         "fr": "Étape 3 — Adresse",
-        "en": "Step 3 — Address"
+        "en": "Step 3 — Address",
+        "nl": "Stap 3 — Adres",
+        "de": "Schritt 3 — Adresse"
       },
       "captures": {
         "fr": {
@@ -1046,6 +1766,234 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/desktop/step-30-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 368,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-street\"]",
+                      "value": "Rue de la Loi"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 368,
+                        "width": 194.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-number\"]",
+                      "value": "16"
+                    },
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 444,
+                        "width": 194.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 517.5,
+                        "y": 444,
+                        "width": 615.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/mobile/step-30-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 229,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-street\"]",
+                      "value": "Rue de la Loi"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 305,
+                        "width": 158,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-number\"]",
+                      "value": "16"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 381,
+                        "width": 100,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 145,
+                        "y": 381,
+                        "width": 216,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/desktop/step-30-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 368,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-street\"]",
+                      "value": "Rue de la Loi"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 368,
+                        "width": 194.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-number\"]",
+                      "value": "16"
+                    },
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 444,
+                        "width": 194.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 517.5,
+                        "y": 444,
+                        "width": 615.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/mobile/step-30-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 229,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-street\"]",
+                      "value": "Rue de la Loi"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 305,
+                        "width": 158,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-number\"]",
+                      "value": "16"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 381,
+                        "width": 100,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 145,
+                        "y": 381,
+                        "width": 216,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1058,15 +2006,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Renseigner l'IBAN",
-        "en": "Enter the IBAN"
+        "en": "Enter the IBAN",
+        "nl": "Het IBAN invullen",
+        "de": "Die IBAN eingeben"
       },
       "text": {
         "fr": "Saisissez l'IBAN de la société, utilisé pour les remboursements liés aux opérations de partage.",
-        "en": "Enter the company's IBAN, used for refunds tied to sharing operations."
+        "en": "Enter the company's IBAN, used for refunds tied to sharing operations.",
+        "nl": "Voer het IBAN van het bedrijf in; het wordt gebruikt voor terugbetalingen in verband met de deeloperaties.",
+        "de": "Geben Sie die IBAN des Unternehmens ein, die für Rückerstattungen im Zusammenhang mit den Teilungsoperationen verwendet wird."
       },
       "subtitle": {
         "fr": "Étape 4 — Banque",
-        "en": "Step 4 — Banking"
+        "en": "Step 4 — Banking",
+        "nl": "Stap 4 — Bank",
+        "de": "Schritt 4 — Bank"
       },
       "captures": {
         "fr": {
@@ -1168,6 +2122,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 307,
+                      "y": 468.5,
+                      "width": 448,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"
+                  },
+                  "value": "BE68539007547034"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 227,
+                      "width": 332,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"
+                  },
+                  "value": "BE68539007547034"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 307,
+                      "y": 468.5,
+                      "width": 448,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"
+                  },
+                  "value": "BE68539007547034"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 227,
+                      "width": 332,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"
+                  },
+                  "value": "BE68539007547034"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1180,15 +2234,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Valider la création",
-        "en": "Submit the new member"
+        "en": "Submit the new member",
+        "nl": "Het aanmaken bevestigen",
+        "de": "Die Erstellung bestätigen"
       },
       "text": {
         "fr": "Cliquez sur « Valider » pour créer la société et l'associer à la communauté active.",
-        "en": "Click \"Submit\" to create the company and attach it to the active community."
+        "en": "Click \"Submit\" to create the company and attach it to the active community.",
+        "nl": "Klik op “Bevestigen” om het bedrijf aan te maken en aan de actieve gemeenschap te koppelen.",
+        "de": "Klicken Sie auf „Bestätigen“, um das Unternehmen anzulegen und mit der aktiven Gemeinschaft zu verknüpfen."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -1286,6 +2346,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1003,
+                      "y": 551.5,
+                      "width": 130,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 231,
+                      "y": 310,
+                      "width": 130,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1005.359375,
+                      "y": 551.5,
+                      "width": 127.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 233.359375,
+                      "y": 310,
+                      "width": 127.640625,
+                      "height": 66
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1298,15 +2454,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Reporter l'ajout d'un compteur",
-        "en": "Skip adding a meter"
+        "en": "Skip adding a meter",
+        "nl": "Het toevoegen van een meter uitstellen",
+        "de": "Das Hinzufügen eines Zählers verschieben"
       },
       "text": {
         "fr": "Une fenêtre propose d'ajouter un compteur dans la foulée. Choisissez « Non » pour terminer ici.",
-        "en": "A dialog offers to add a meter right away. Pick \"No\" to stop here."
+        "en": "A dialog offers to add a meter right away. Pick \"No\" to stop here.",
+        "nl": "Een venster stelt voor om meteen een meter toe te voegen. Kies “Nee” om hier te stoppen.",
+        "de": "Ein Fenster schlägt vor, gleich einen Zähler hinzuzufügen. Wählen Sie „Nein“, um hier abzuschließen."
       },
       "subtitle": {
         "fr": "Boîte de dialogue",
-        "en": "Confirmation dialog"
+        "en": "Confirmation dialog",
+        "nl": "Dialoogvenster",
+        "de": "Dialogfenster"
       },
       "captures": {
         "fr": {
@@ -1404,6 +2566,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 794.328125,
+                      "y": 485,
+                      "width": 63.28125,
+                      "height": 42
+                    },
+                    "selector": "button.p-confirmdialog-reject-button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 249.203125,
+                      "y": 465,
+                      "width": 63.28125,
+                      "height": 42
+                    },
+                    "selector": "button.p-confirmdialog-reject-button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 846.078125,
+                      "y": 485,
+                      "width": 68.296875,
+                      "height": 42
+                    },
+                    "selector": "button.p-confirmdialog-reject-button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 244.1875,
+                      "y": 465,
+                      "width": 68.296875,
+                      "height": 42
+                    },
+                    "selector": "button.p-confirmdialog-reject-button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1416,15 +2674,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "La société est créée",
-        "en": "The company is created"
+        "en": "The company is created",
+        "nl": "Het bedrijf is aangemaakt",
+        "de": "Das Unternehmen ist angelegt"
       },
       "text": {
         "fr": "« E2E Company SA » figure désormais dans la liste des membres, avec l'étiquette de type « Société ».",
-        "en": "\"E2E Company SA\" now appears in the members list, tagged with the \"Company\" type."
+        "en": "\"E2E Company SA\" now appears in the members list, tagged with the \"Company\" type.",
+        "nl": "“E2E Company SA” staat nu in de ledenlijst, met het typelabel “Rechtspersoon”.",
+        "de": "„E2E Company SA“ erscheint jetzt in der Mitgliederliste, mit der Typangabe „Juristische Person“."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -1470,6 +2734,58 @@
             "frames": [
               {
                 "screenshot": "../assets/member-create-company/en/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/desktop/step-40.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/nl/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/desktop/step-40.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create-company/de/mobile/step-41.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

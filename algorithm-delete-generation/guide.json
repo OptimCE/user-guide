@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Supprimer une génération",
-    "en": "Delete a generation"
+    "en": "Delete a generation",
+    "nl": "Een generatie verwijderen",
+    "de": "Generierung löschen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir les services annexes",
-        "en": "Open annexe services"
+        "en": "Open annexe services",
+        "nl": "Annexdiensten openen",
+        "de": "Zusatzdienste öffnen"
       },
       "text": {
         "fr": "Dans la section « Communauté » de la barre latérale, cliquez sur « Services annexes » pour accéder aux modules actifs de la communauté.",
-        "en": "In the sidebar's \"Community\" section, click \"Annexe services\" to access the community's active modules."
+        "en": "In the sidebar's \"Community\" section, click \"Annexe services\" to access the community's active modules.",
+        "nl": "Klik in de sectie “Gemeenschap” van de zijbalk op “Annexdiensten” om de actieve modules van de gemeenschap te openen.",
+        "de": "Klicken Sie im Abschnitt „Gemeinschaft“ der Seitenleiste auf „Zusatzdienste“, um die aktiven Module der Gemeinschaft aufzurufen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/nl/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 398,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/nl/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 398,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Annexdiensten openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en tik vervolgens in de sectie “Gemeenschap” op “Annexdiensten”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/de/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 398,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/de/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 398,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Zusatzdienste öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und tippen Sie dann im Abschnitt „Gemeinschaft“ auf „Zusatzdienste“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Module de génération disponible",
-        "en": "Generation module available"
+        "en": "Generation module available",
+        "nl": "Generatiemodule beschikbaar",
+        "de": "Generierungsmodul verfügbar"
       },
       "text": {
         "fr": "La carte « Génération de clés de répartition » est visible. Cliquez dessus pour ouvrir le hub et accéder aux générations existantes.",
-        "en": "The \"Allocation key generation\" card is visible. Click it to open the hub and access existing generations."
+        "en": "The \"Allocation key generation\" card is visible. Click it to open the hub and access existing generations.",
+        "nl": "De kaart “Generatie van verdeelsleutels” is zichtbaar. Klik erop om de hub te openen en de bestaande generaties te raadplegen.",
+        "de": "Die Karte „Generierung von Verteilschlüsseln“ ist sichtbar. Klicken Sie darauf, um den Hub zu öffnen und auf die vorhandenen Generierungen zuzugreifen."
       },
       "subtitle": {
         "fr": "Services annexes",
-        "en": "Annexe services"
+        "en": "Annexe services",
+        "nl": "Annexdiensten",
+        "de": "Zusatzdienste"
       },
       "captures": {
         "fr": {
@@ -224,6 +346,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/nl/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/nl/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/de/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/de/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -236,15 +410,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir le module de génération",
-        "en": "Open the generation module"
+        "en": "Open the generation module",
+        "nl": "Generatiemodule openen",
+        "de": "Generierungsmodul öffnen"
       },
       "text": {
         "fr": "Cliquez sur la carte pour ouvrir le hub de génération OLAGSA.",
-        "en": "Click the card to open the OLAGSA generation hub."
+        "en": "Click the card to open the OLAGSA generation hub.",
+        "nl": "Klik op de kaart om de OLAGSA-generatiehub te openen.",
+        "de": "Klicken Sie auf die Karte, um den OLAGSA-Generierungs-Hub zu öffnen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -342,6 +522,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/nl/desktop/step-40.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 142,
+                      "width": 416,
+                      "height": 171
+                    },
+                    "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/nl/mobile/step-40.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 318,
+                      "width": 358,
+                      "height": 171
+                    },
+                    "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/de/desktop/step-40.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 142,
+                      "width": 416,
+                      "height": 171
+                    },
+                    "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/de/mobile/step-40.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 318,
+                      "width": 358,
+                      "height": 171
+                    },
+                    "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -354,15 +630,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Génération terminée",
-        "en": "Generation completed"
+        "en": "Generation completed",
+        "nl": "Generatie voltooid",
+        "de": "Generierung abgeschlossen"
       },
       "text": {
         "fr": "La génération s'affiche avec un point vert indiquant qu'elle s'est terminée avec succès. Le bouton de suppression (×) en haut à droite de la ligne permet de supprimer l'ensemble de la génération et toutes ses clés.",
-        "en": "The generation is displayed with a green dot indicating it completed successfully. The delete button (×) at the top right of the row allows deleting the entire generation and all its keys."
+        "en": "The generation is displayed with a green dot indicating it completed successfully. The delete button (×) at the top right of the row allows deleting the entire generation and all its keys.",
+        "nl": "De generatie wordt weergegeven met een groene stip die aangeeft dat ze met succes is voltooid. Met de verwijderknop (×) rechtsboven in de rij kunt u de volledige generatie met al haar sleutels verwijderen.",
+        "de": "Die Generierung wird mit einem grünen Punkt angezeigt, der angibt, dass sie erfolgreich abgeschlossen wurde. Mit der Löschschaltfläche (×) oben rechts in der Zeile können Sie die gesamte Generierung samt all ihren Schlüsseln löschen."
       },
       "subtitle": {
         "fr": "Hub de génération",
-        "en": "Generation hub"
+        "en": "Generation hub",
+        "nl": "Generatiehub",
+        "de": "Generierungs-Hub"
       },
       "captures": {
         "fr": {
@@ -416,6 +698,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/nl/desktop/step-43.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/nl/mobile/step-43.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/de/desktop/step-43.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/de/mobile/step-43.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -428,15 +762,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Supprimer la génération",
-        "en": "Delete the generation"
+        "en": "Delete the generation",
+        "nl": "Generatie verwijderen",
+        "de": "Generierung löschen"
       },
       "text": {
         "fr": "Cliquez sur le bouton × de la génération pour lancer sa suppression. Toutes les clés associées seront également supprimées. Une confirmation vous sera demandée.",
-        "en": "Click the × button on the generation to initiate its deletion. All associated keys will also be deleted. A confirmation will be required."
+        "en": "Click the × button on the generation to initiate its deletion. All associated keys will also be deleted. A confirmation will be required.",
+        "nl": "Klik op de knop × van de generatie om ze te verwijderen. Alle bijbehorende sleutels worden eveneens verwijderd. U wordt om een bevestiging gevraagd.",
+        "de": "Klicken Sie bei der Generierung auf die Schaltfläche ×, um sie zu löschen. Alle zugehörigen Schlüssel werden ebenfalls gelöscht. Sie werden um eine Bestätigung gebeten."
       },
       "subtitle": {
         "fr": "Suppression",
-        "en": "Deletion"
+        "en": "Deletion",
+        "nl": "Verwijderen",
+        "de": "Löschen"
       },
       "captures": {
         "fr": {
@@ -534,6 +874,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/nl/desktop/step-44.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1345,
+                      "y": 851.5,
+                      "width": 32,
+                      "height": 35
+                    },
+                    "selector": "[data-testid^=\"generation-row__btn--delete--\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/nl/mobile/step-44.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 325,
+                      "y": 772.296875,
+                      "width": 32,
+                      "height": 35
+                    },
+                    "selector": "[data-testid^=\"generation-row__btn--delete--\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/de/desktop/step-44.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1345,
+                      "y": 851.5,
+                      "width": 32,
+                      "height": 35
+                    },
+                    "selector": "[data-testid^=\"generation-row__btn--delete--\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/de/mobile/step-44.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 325,
+                      "y": 772.296875,
+                      "width": 32,
+                      "height": 35
+                    },
+                    "selector": "[data-testid^=\"generation-row__btn--delete--\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -546,15 +982,21 @@
       "waitAfter": 600,
       "title": {
         "fr": "Confirmer la suppression",
-        "en": "Confirm deletion"
+        "en": "Confirm deletion",
+        "nl": "Verwijdering bevestigen",
+        "de": "Löschen bestätigen"
       },
       "text": {
         "fr": "Une fenêtre de confirmation s'affiche. Cliquez sur le bouton de validation pour supprimer définitivement la génération et toutes les clés de répartition qu'elle contient.",
-        "en": "A confirmation dialog appears. Click the confirm button to permanently delete the generation and all the allocation keys it contains."
+        "en": "A confirmation dialog appears. Click the confirm button to permanently delete the generation and all the allocation keys it contains.",
+        "nl": "Er verschijnt een bevestigingsvenster. Klik op de bevestigingsknop om de generatie en alle verdeelsleutels die ze bevat definitief te verwijderen.",
+        "de": "Ein Bestätigungsdialog wird angezeigt. Klicken Sie auf die Bestätigungsschaltfläche, um die Generierung und alle darin enthaltenen Verteilungsschlüssel endgültig zu löschen."
       },
       "subtitle": {
         "fr": "Suppression",
-        "en": "Deletion"
+        "en": "Deletion",
+        "nl": "Verwijderen",
+        "de": "Löschen"
       },
       "captures": {
         "fr": {
@@ -608,6 +1050,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/nl/desktop/step-46.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/nl/mobile/step-46.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/de/desktop/step-46.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/de/mobile/step-46.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -620,15 +1114,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Génération supprimée",
-        "en": "Generation deleted"
+        "en": "Generation deleted",
+        "nl": "Generatie verwijderd",
+        "de": "Generierung gelöscht"
       },
       "text": {
         "fr": "La liste des générations est à nouveau vide : la génération et toutes ses clés de répartition ont été supprimées définitivement.",
-        "en": "The generations list is empty again — the generation and all its allocation keys have been permanently deleted."
+        "en": "The generations list is empty again — the generation and all its allocation keys have been permanently deleted.",
+        "nl": "De lijst met generaties is opnieuw leeg: de generatie en al haar verdeelsleutels zijn definitief verwijderd.",
+        "de": "Die Liste der Generierungen ist wieder leer: Die Generierung und alle ihre Verteilungsschlüssel wurden endgültig gelöscht."
       },
       "subtitle": {
         "fr": "Suppression",
-        "en": "Deletion"
+        "en": "Deletion",
+        "nl": "Verwijderen",
+        "de": "Löschen"
       },
       "captures": {
         "fr": {
@@ -674,6 +1174,58 @@
             "frames": [
               {
                 "screenshot": "../assets/algorithm-delete-generation/en/mobile/step-49.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/nl/desktop/step-49.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/nl/mobile/step-49.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/de/desktop/step-49.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-delete-generation/de/mobile/step-49.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

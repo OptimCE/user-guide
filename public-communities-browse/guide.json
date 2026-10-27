@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Explorer les communautés publiques",
-    "en": "Explore the public communities directory"
+    "en": "Explore the public communities directory",
+    "nl": "Openbare gemeenschappen verkennen",
+    "de": "Öffentliche Gemeinschaften erkunden"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir l'annuaire public",
-        "en": "Open the public directory"
+        "en": "Open the public directory",
+        "nl": "Het openbare overzicht openen",
+        "de": "Das öffentliche Verzeichnis öffnen"
       },
       "text": {
         "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Communautés publiques » pour découvrir les communautés d'énergie ouvertes autour de vous.",
-        "en": "In the sidebar's profile menu, click \"Public communities\" to discover the open energy communities around you."
+        "en": "In the sidebar's profile menu, click \"Public communities\" to discover the open energy communities around you.",
+        "nl": "Klik in het profielmenu van de zijbalk op “Openbare gemeenschappen” om de open energiegemeenschappen in uw buurt te ontdekken.",
+        "de": "Klicken Sie im Profilmenü der Seitenleiste auf „Öffentliche Gemeinschaften“, um die offenen Energiegemeinschaften in Ihrer Nähe zu entdecken."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/nl/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 257.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/communities/public\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/nl/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 257.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/communities/public\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Het openbare overzicht openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en daarna op “Openbare gemeenschappen”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/de/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 257.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/communities/public\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/de/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 257.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/communities/public\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Das öffentliche Verzeichnis öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Öffentliche Gemeinschaften“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "L'annuaire des communautés publiques",
-        "en": "The public communities directory"
+        "en": "The public communities directory",
+        "nl": "Het overzicht van openbare gemeenschappen",
+        "de": "Das Verzeichnis der öffentlichen Gemeinschaften"
       },
       "text": {
         "fr": "Chaque carte représente une communauté d'énergie ouverte au public, avec son régulateur. Cliquez sur une carte pour en savoir plus.",
-        "en": "Each card is an energy community open to the public, with its regulator. Click a card to learn more."
+        "en": "Each card is an energy community open to the public, with its regulator. Click a card to learn more.",
+        "nl": "Elke kaart staat voor een energiegemeenschap die openstaat voor het publiek, met haar regulator. Klik op een kaart voor meer informatie.",
+        "de": "Jede Karte steht für eine öffentlich zugängliche Energiegemeinschaft mit ihrer Regulierungsbehörde. Klicken Sie auf eine Karte, um mehr zu erfahren."
       },
       "subtitle": {
         "fr": "Découverte",
-        "en": "Discovery"
+        "en": "Discovery",
+        "nl": "Ontdekken",
+        "de": "Entdecken"
       },
       "captures": {
         "fr": {
@@ -224,6 +346,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/nl/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/nl/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/de/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/de/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -236,15 +410,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Déplier une communauté",
-        "en": "Expand a community"
+        "en": "Expand a community",
+        "nl": "Een gemeenschap openklappen",
+        "de": "Eine Gemeinschaft aufklappen"
       },
       "text": {
         "fr": "En dépliant une communauté, vous voyez sa description, son site web, son siège social et surtout la liste de ses opérations de partage publiques.",
-        "en": "Expanding a community reveals its description, website, registered office and, above all, the list of its public sharing operations."
+        "en": "Expanding a community reveals its description, website, registered office and, above all, the list of its public sharing operations.",
+        "nl": "Wanneer u een gemeenschap openklapt, ziet u haar beschrijving, website, maatschappelijke zetel en vooral de lijst van haar openbare deeloperaties.",
+        "de": "Wenn Sie eine Gemeinschaft aufklappen, sehen Sie ihre Beschreibung, ihre Website, ihren Gesellschaftssitz und vor allem die Liste ihrer öffentlichen Teilungsoperationen."
       },
       "subtitle": {
         "fr": "Détails",
-        "en": "Details"
+        "en": "Details",
+        "nl": "Details",
+        "de": "Details"
       },
       "captures": {
         "fr": {
@@ -342,6 +522,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/nl/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 115,
+                      "y": 307,
+                      "width": 1278,
+                      "height": 64
+                    },
+                    "selector": "[data-testid=\"public-community-list__btn--accordion--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/nl/mobile/step-16.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 17,
+                      "y": 508,
+                      "width": 356,
+                      "height": 64
+                    },
+                    "selector": "[data-testid=\"public-community-list__btn--accordion--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/de/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 115,
+                      "y": 307,
+                      "width": 1278,
+                      "height": 64
+                    },
+                    "selector": "[data-testid=\"public-community-list__btn--accordion--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/de/mobile/step-16.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 17,
+                      "y": 508,
+                      "width": 356,
+                      "height": 72
+                    },
+                    "selector": "[data-testid=\"public-community-list__btn--accordion--0\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -354,15 +630,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Les opérations de partage",
-        "en": "The sharing operations"
+        "en": "The sharing operations",
+        "nl": "De deeloperaties",
+        "de": "Die Teilungsoperationen"
       },
       "text": {
         "fr": "La communauté « Test Community » propose plusieurs opérations de partage publiques (solaire, éolien). Chaque opération indique les communes qu'elle couvre.",
-        "en": "The \"Test Community\" offers several public sharing operations (solar, wind). Each operation lists the municipalities it covers."
+        "en": "The \"Test Community\" offers several public sharing operations (solar, wind). Each operation lists the municipalities it covers.",
+        "nl": "De gemeenschap “Test Community” biedt verschillende openbare deeloperaties aan (zon, wind). Elke operatie vermeldt de gemeenten die ze dekt.",
+        "de": "Die Gemeinschaft „Test Community“ bietet mehrere öffentliche Teilungsoperationen an (Solar, Wind). Jede Operation gibt die Gemeinden an, die sie abdeckt."
       },
       "subtitle": {
         "fr": "Détails",
-        "en": "Details"
+        "en": "Details",
+        "nl": "Details",
+        "de": "Details"
       },
       "captures": {
         "fr": {
@@ -416,6 +698,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/nl/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/de/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -428,15 +762,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Filtrer par commune",
-        "en": "Filter by municipality"
+        "en": "Filter by municipality",
+        "nl": "Filteren op gemeente",
+        "de": "Nach Gemeinde filtern"
       },
       "text": {
         "fr": "Saisissez une commune et choisissez-la dans les suggestions pour ne garder que les communautés actives sur ce territoire. Vous pouvez aussi filtrer par régulateur.",
-        "en": "Type a municipality and pick it from the suggestions to keep only the communities active there. You can also filter by regulator."
+        "en": "Type a municipality and pick it from the suggestions to keep only the communities active there. You can also filter by regulator.",
+        "nl": "Typ een gemeente en kies ze in de suggesties om alleen de gemeenschappen te behouden die op dat grondgebied actief zijn. U kunt ook filteren op regulator.",
+        "de": "Geben Sie eine Gemeinde ein und wählen Sie sie aus den Vorschlägen aus, um nur die in diesem Gebiet aktiven Gemeinschaften anzuzeigen. Sie können auch nach Regulierungsbehörde filtern."
       },
       "subtitle": {
         "fr": "Recherche",
-        "en": "Search"
+        "en": "Search",
+        "nl": "Zoeken",
+        "de": "Suche"
       },
       "captures": {
         "fr": {
@@ -538,6 +878,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/nl/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 127,
+                      "y": 175,
+                      "width": 1254,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"public-community-list__filter--municipality\"] input"
+                  },
+                  "value": "Anderlecht"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/nl/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 376,
+                      "width": 332,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"public-community-list__filter--municipality\"] input"
+                  },
+                  "value": "Anderlecht"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/de/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 127,
+                      "y": 175,
+                      "width": 1254,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"public-community-list__filter--municipality\"] input"
+                  },
+                  "value": "Anderlecht"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/de/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 376,
+                      "width": 332,
+                      "height": 24
+                    },
+                    "selector": "[data-testid=\"public-community-list__filter--municipality\"] input"
+                  },
+                  "value": "Anderlecht"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -550,15 +990,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Résultat filtré",
-        "en": "Filtered result"
+        "en": "Filtered result",
+        "nl": "Gefilterd resultaat",
+        "de": "Gefiltertes Ergebnis"
       },
       "text": {
         "fr": "« Test Community » exploite une opération de partage à Anderlecht : elle reste donc affichée. Une commune où aucune communauté n'est active afficherait un annuaire vide.",
-        "en": "\"Test Community\" runs a sharing operation in Anderlecht, so it stays listed. A municipality with no active community would show an empty directory."
+        "en": "\"Test Community\" runs a sharing operation in Anderlecht, so it stays listed. A municipality with no active community would show an empty directory.",
+        "nl": "“Test Community” beheert een deeloperatie in Anderlecht en blijft dus zichtbaar. Een gemeente waar geen enkele gemeenschap actief is, zou een leeg overzicht tonen.",
+        "de": "„Test Community“ betreibt eine Teilungsoperation in Anderlecht und wird daher weiterhin angezeigt. Eine Gemeinde, in der keine Gemeinschaft aktiv ist, würde ein leeres Verzeichnis anzeigen."
       },
       "subtitle": {
         "fr": "Recherche",
-        "en": "Search"
+        "en": "Search",
+        "nl": "Zoeken",
+        "de": "Suche"
       },
       "captures": {
         "fr": {
@@ -604,6 +1050,58 @@
             "frames": [
               {
                 "screenshot": "../assets/public-communities-browse/en/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/nl/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/nl/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/de/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/public-communities-browse/de/mobile/step-19.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

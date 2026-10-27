@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Het beheerdersdashboard — OptimCE — Gebruikershandleidingen</title>
+    <meta name="description" content="Het beheerdersdashboard doorlopen: aandachtspunten, energie, deeloperaties en annexmodules.">
+    <link rel="canonical" href="https://guide.optimce.be/dashboard-manager-tour/nl.html">
+    <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/dashboard-manager-tour/fr.html">
+    <link rel="alternate" hreflang="en" href="https://guide.optimce.be/dashboard-manager-tour/en.html">
+    <link rel="alternate" hreflang="nl" href="https://guide.optimce.be/dashboard-manager-tour/nl.html">
+    <link rel="alternate" hreflang="de" href="https://guide.optimce.be/dashboard-manager-tour/de.html">
+    <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/dashboard-manager-tour/fr.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Het beheerdersdashboard">
+    <meta property="og:description" content="Het beheerdersdashboard doorlopen: aandachtspunten, energie, deeloperaties en annexmodules.">
+    <meta property="og:url" content="https://guide.optimce.be/dashboard-manager-tour/nl.html">
+    <meta property="og:site_name" content="OptimCE — Gebruikershandleidingen">
+    <meta property="og:image" content="https://guide.optimce.be/assets/dashboard-manager-tour/nl/desktop/step-07.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Remember the language of the file we just loaded: interactive.html is one
+        // URL for every locale and opens in this language when no ?lang= is given.
+        try { localStorage.setItem("oce-lang", "nl"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.nl.html" aria-label="OptimCE — Gebruikershandleidingen">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.nl.html">OptimCE — Gebruikershandleidingen</a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.nl.html">Startpagina</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../dashboard/nl.html">Startpagina en dashboard</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">Het beheerdersdashboard</span>
+        </nav>
+
+        <div class="steppy-header-actions">
+<label class="steppy-locale-select">
+    <span class="steppy-visually-hidden">Taal</span>
+    <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <select autocomplete="off">        <option value="./fr.html" lang="fr">Français</option>        <option value="./en.html" lang="en">English</option>        <option value="./nl.html" lang="nl" selected>Nederlands</option>        <option value="./de.html" lang="de">Deutsch</option>    </select>
+    <svg class="steppy-locale-select-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</label>
+<script>
+  (function () {
+    var sel = document.querySelector(".steppy-locale-select select");
+    if (!sel) return;
+    sel.addEventListener("change", function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+    // Back from the language just picked can restore this page from the
+    // bfcache with that option still showing — snap it back to this page's own.
+    window.addEventListener("pageshow", function () {
+      var own = sel.querySelector("option[selected]");
+      if (own) sel.value = own.value;
+    });
+  })();
+</script>            <button type="button" class="oce-theme-toggle" aria-label="Thema wisselen">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-mode-switch" aria-label="Guide mode">
+            <ul>
+                <li>
+                    <span aria-current="true">Stap voor stap</span>
+                </li>
+                <li>
+                    <a href="./interactive.html?lang=nl">Interactief</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="steppy-onboarding-strip" aria-label="Voortgang Aan de slag">
+        <span class="steppy-onboarding-strip-progress">
+            <a href="../getting-started/nl.html">Eerste stappen</a>
+            <span class="steppy-onboarding-strip-position">Stap 5 van 11</span>
+        </span>
+        <span class="steppy-onboarding-strip-nav">
+            <a class="steppy-onboarding-prev" href="../community-activate/nl.html?onboarding=1">‹ Een gemeenschap activeren</a>
+            <a class="steppy-onboarding-next" href="../key-create-wizard/nl.html?onboarding=1">Een verdeelsleutel aanmaken (wizard) ›</a>
+        </span>
+    </nav>
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Het beheerdersdashboard</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>De gemeenschap betreden</span>
+        </h2>
+        <div class="steppy-step-subtitle">Startpagina</div>
+        <div class="steppy-step-content">Open vanaf uw startpagina de gemeenschap waarin u wilt werken. Ze wordt uw actieve gemeenschap en u komt op haar dashboard terecht.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/desktop/step-07.png" alt="1. De gemeenschap betreden" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Het dashboard</span>
+        </h2>
+        <div class="steppy-step-subtitle">Overzicht</div>
+        <div class="steppy-step-content">Het dashboard vat de toestand van de actieve gemeenschap samen: wat uw aandacht vraagt, de gedeelde energie, de operaties en de modules waarop de gemeenschap geabonneerd is.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/desktop/step-09.png" alt="2. Het dashboard" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Aandachtspunten</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dashboard</div>
+        <div class="steppy-step-content">De eerste tegel verzamelt wat blokkeert of dreigt te blokkeren: ontbrekende juridische gegevens, meters die op de netbeheerder wachten, operaties zonder verdeelsleutel. Elke regel leidt rechtstreeks naar het scherm waar u het kunt oplossen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/desktop/step-10.png" alt="3. Aandachtspunten" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Oplossen met één klik</span>
+        </h2>
+        <div class="steppy-step-subtitle">Aandachtspunten</div>
+        <div class="steppy-step-content">Klik op “Oplossen”: u komt op de betreffende pagina terecht, hier de gegevens van de gemeenschap.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/desktop/step-11.png" alt="4. Oplossen met één klik" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Energie in één oogopslag</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dashboard</div>
+        <div class="steppy-step-content">Voor elke deeloperatie toont de tegel de gedeelde en de geïnjecteerde energie over de laatste periode waarvoor gegevens beschikbaar zijn. De naam van de operatie leidt naar haar detailpagina.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/desktop/step-15.png" alt="5. Energie in één oogopslag" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Deelbewerkingen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dashboard</div>
+        <div class="steppy-step-content">De tegel toont de operaties van de gemeenschap met hun type. De link onderaan opent de volledige lijst.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/desktop/step-16.png" alt="6. Deelbewerkingen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Alle operaties bekijken</span>
+        </h2>
+        <div class="steppy-step-subtitle">Deeloperaties</div>
+        <div class="steppy-step-content">De link brengt u naar het volledige beheer van de deeloperaties.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/desktop/step-17.png" alt="7. Alle operaties bekijken" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Nieuwe deelnemers en recente activiteit</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dashboard</div>
+        <div class="steppy-step-content">“Nieuwe deelnemers” telt de verzonden uitnodigingen en de fiches die nog moeten worden ingevuld. “Recente activiteit” toont de laatste acties die in het auditlogboek van de gemeenschap zijn geregistreerd.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/desktop/step-21.png" alt="8. Nieuwe deelnemers en recente activiteit" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>De geactiveerde modules</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dashboard</div>
+        <div class="steppy-step-content">Facturatie, nieuws, dossiers en administratieve deadlines verschijnen alleen als de gemeenschap geabonneerd is op de bijbehorende module. Een gemeenschap zonder abonnement ziet deze tegels gewoon niet.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/desktop/step-22.png" alt="9. De geactiveerde modules" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Beschikbare modules</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dashboard</div>
+        <div class="steppy-step-content">Onderaan het dashboard toont de strook “Beschikbare modules” wat de gemeenschap nog niet gebruikt. Een beheerder kan ze hier activeren; een manager ziet aan wie hij ze moet vragen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/desktop/step-23.png" alt="10. Beschikbare modules" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Vernieuwen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dashboard</div>
+        <div class="steppy-step-content">De knop “Vernieuwen” laadt alle tegels in één keer opnieuw, zonder de pagina te herladen — handig nadat u iets in een ander scherm hebt gecorrigeerd.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/desktop/step-24.png" alt="11. Vernieuwen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>Bijgewerkte gegevens</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dashboard</div>
+        <div class="steppy-step-content">De tegels laden een voor een opnieuw en krijgen weer hun gewone weergave met de meest recente gegevens.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/desktop/step-25.png" alt="12. Bijgewerkte gegevens" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Het beheerdersdashboard</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>De gemeenschap betreden</span>
+        </h2>
+        <div class="steppy-step-subtitle">Startpagina</div>
+        <div class="steppy-step-content">Open vanaf uw startpagina de gemeenschap waarin u wilt werken. Ze wordt uw actieve gemeenschap en u komt op haar dashboard terecht.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/mobile/step-07.png" alt="1. De gemeenschap betreden" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Het dashboard</span>
+        </h2>
+        <div class="steppy-step-subtitle">Overzicht</div>
+        <div class="steppy-step-content">Het dashboard vat de toestand van de actieve gemeenschap samen: wat uw aandacht vraagt, de gedeelde energie, de operaties en de modules waarop de gemeenschap geabonneerd is.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/mobile/step-09.png" alt="2. Het dashboard" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Aandachtspunten</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dashboard</div>
+        <div class="steppy-step-content">De eerste tegel verzamelt wat blokkeert of dreigt te blokkeren: ontbrekende juridische gegevens, meters die op de netbeheerder wachten, operaties zonder verdeelsleutel. Elke regel leidt rechtstreeks naar het scherm waar u het kunt oplossen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/mobile/step-10.png" alt="3. Aandachtspunten" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Oplossen met één klik</span>
+        </h2>
+        <div class="steppy-step-subtitle">Aandachtspunten</div>
+        <div class="steppy-step-content">Klik op “Oplossen”: u komt op de betreffende pagina terecht, hier de gegevens van de gemeenschap.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/mobile/step-11.png" alt="4. Oplossen met één klik" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Energie in één oogopslag</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dashboard</div>
+        <div class="steppy-step-content">Voor elke deeloperatie toont de tegel de gedeelde en de geïnjecteerde energie over de laatste periode waarvoor gegevens beschikbaar zijn. De naam van de operatie leidt naar haar detailpagina.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/mobile/step-15.png" alt="5. Energie in één oogopslag" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Deelbewerkingen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dashboard</div>
+        <div class="steppy-step-content">De tegel toont de operaties van de gemeenschap met hun type. De link onderaan opent de volledige lijst.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/mobile/step-16.png" alt="6. Deelbewerkingen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Alle operaties bekijken</span>
+        </h2>
+        <div class="steppy-step-subtitle">Deeloperaties</div>
+        <div class="steppy-step-content">De link brengt u naar het volledige beheer van de deeloperaties.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/mobile/step-17.png" alt="7. Alle operaties bekijken" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Nieuwe deelnemers en recente activiteit</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dashboard</div>
+        <div class="steppy-step-content">“Nieuwe deelnemers” telt de verzonden uitnodigingen en de fiches die nog moeten worden ingevuld. “Recente activiteit” toont de laatste acties die in het auditlogboek van de gemeenschap zijn geregistreerd.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/mobile/step-21.png" alt="8. Nieuwe deelnemers en recente activiteit" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>De geactiveerde modules</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dashboard</div>
+        <div class="steppy-step-content">Facturatie, nieuws, dossiers en administratieve deadlines verschijnen alleen als de gemeenschap geabonneerd is op de bijbehorende module. Een gemeenschap zonder abonnement ziet deze tegels gewoon niet.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/mobile/step-22.png" alt="9. De geactiveerde modules" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Beschikbare modules</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dashboard</div>
+        <div class="steppy-step-content">Onderaan het dashboard toont de strook “Beschikbare modules” wat de gemeenschap nog niet gebruikt. Een beheerder kan ze hier activeren; een manager ziet aan wie hij ze moet vragen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/mobile/step-23.png" alt="10. Beschikbare modules" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Vernieuwen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dashboard</div>
+        <div class="steppy-step-content">De knop “Vernieuwen” laadt alle tegels in één keer opnieuw, zonder de pagina te herladen — handig nadat u iets in een ander scherm hebt gecorrigeerd.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/mobile/step-24.png" alt="11. Vernieuwen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>Bijgewerkte gegevens</span>
+        </h2>
+        <div class="steppy-step-subtitle">Dashboard</div>
+        <div class="steppy-step-content">De tegels laden een voor een opnieuw en krijgen weer hun gewone weergave met de meest recente gegevens.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/dashboard-manager-tour/nl/mobile/step-25.png" alt="12. Bijgewerkte gegevens" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p>Gegenereerd door Steppy.</p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 342, "x": 387, "y": 265}, "selector": "[data-testid=\"community-picker__btn--enter\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 342, "x": 387, "y": 265}, "selector": "[data-testid=\"community-picker__btn--enter\"] button"}}, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-07.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-07.png", "subtitle": "Startpagina", "text": "Open vanaf uw startpagina de gemeenschap waarin u wilt werken. Ze wordt uw actieve gemeenschap en u komt op haar dashboard terecht.", "title": "De gemeenschap betreden", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-09.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-09.png", "subtitle": "Overzicht", "text": "Het dashboard vat de toestand van de actieve gemeenschap samen: wat uw aandacht vraagt, de gedeelde energie, de operaties en de modules waarop de gemeenschap geabonneerd is.", "title": "Het dashboard", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-10.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-10.png", "subtitle": "Dashboard", "text": "De eerste tegel verzamelt wat blokkeert of dreigt te blokkeren: ontbrekende juridische gegevens, meters die op de netbeheerder wachten, operaties zonder verdeelsleutel. Elke regel leidt rechtstreeks naar het scherm waar u het kunt oplossen.", "title": "Aandachtspunten", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 57.515625, "x": 1191.484375, "y": 200}, "selector": "[data-testid=\"readiness-tile__link--COMMUNITY_FIELD_MISSING\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 57.515625, "x": 1191.484375, "y": 200}, "selector": "[data-testid=\"readiness-tile__link--COMMUNITY_FIELD_MISSING\"]"}}, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-11.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-11.png", "subtitle": "Aandachtspunten", "text": "Klik op \u201cOplossen\u201d: u komt op de betreffende pagina terecht, hier de gegevens van de gemeenschap.", "title": "Oplossen met \u00e9\u00e9n klik", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-15.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-15.png", "subtitle": "Dashboard", "text": "Voor elke deeloperatie toont de tegel de gedeelde en de ge\u00efnjecteerde energie over de laatste periode waarvoor gegevens beschikbaar zijn. De naam van de operatie leidt naar haar detailpagina.", "title": "Energie in \u00e9\u00e9n oogopslag", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-16.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-16.png", "subtitle": "Dashboard", "text": "De tegel toont de operaties van de gemeenschap met hun type. De link onderaan opent de volledige lijst.", "title": "Deelbewerkingen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 19, "width": 155.953125, "x": 779, "y": 472}, "selector": "[data-testid=\"sharing-operations-tile__link--all\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 19, "width": 155.953125, "x": 779, "y": 472}, "selector": "[data-testid=\"sharing-operations-tile__link--all\"]"}}, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-17.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-17.png", "subtitle": "Deeloperaties", "text": "De link brengt u naar het volledige beheer van de deeloperaties.", "title": "Alle operaties bekijken", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-21.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-21.png", "subtitle": "Dashboard", "text": "\u201cNieuwe deelnemers\u201d telt de verzonden uitnodigingen en de fiches die nog moeten worden ingevuld. \u201cRecente activiteit\u201d toont de laatste acties die in het auditlogboek van de gemeenschap zijn geregistreerd.", "title": "Nieuwe deelnemers en recente activiteit", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-22.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-22.png", "subtitle": "Dashboard", "text": "Facturatie, nieuws, dossiers en administratieve deadlines verschijnen alleen als de gemeenschap geabonneerd is op de bijbehorende module. Een gemeenschap zonder abonnement ziet deze tegels gewoon niet.", "title": "De geactiveerde modules", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-23.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-23.png", "subtitle": "Dashboard", "text": "Onderaan het dashboard toont de strook \u201cBeschikbare modules\u201d wat de gemeenschap nog niet gebruikt. Een beheerder kan ze hier activeren; een manager ziet aan wie hij ze moet vragen.", "title": "Beschikbare modules", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 134.875, "x": 1106.125, "y": 52}, "selector": "[data-testid=\"manager-dashboard__btn--refresh\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 134.875, "x": 1106.125, "y": 52}, "selector": "[data-testid=\"manager-dashboard__btn--refresh\"] button"}}, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-24.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-24.png", "subtitle": "Dashboard", "text": "De knop \u201cVernieuwen\u201d laadt alle tegels in \u00e9\u00e9n keer opnieuw, zonder de pagina te herladen \u2014 handig nadat u iets in een ander scherm hebt gecorrigeerd.", "title": "Vernieuwen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 12, "screenshot": "../assets/dashboard-manager-tour/nl/desktop/step-25.png", "subtitle": "Dashboard", "text": "De tegels laden een voor een opnieuw en krijgen weer hun gewone weergave met de meest recente gegevens.", "title": "Bijgewerkte gegevens", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 324, "x": 33, "y": 305}, "selector": "[data-testid=\"community-picker__btn--enter\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 324, "x": 33, "y": 305}, "selector": "[data-testid=\"community-picker__btn--enter\"] button"}}, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-07.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-07.png", "subtitle": "Startpagina", "text": "Open vanaf uw startpagina de gemeenschap waarin u wilt werken. Ze wordt uw actieve gemeenschap en u komt op haar dashboard terecht.", "title": "De gemeenschap betreden", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-09.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-09.png", "subtitle": "Overzicht", "text": "Het dashboard vat de toestand van de actieve gemeenschap samen: wat uw aandacht vraagt, de gedeelde energie, de operaties en de modules waarop de gemeenschap geabonneerd is.", "title": "Het dashboard", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-10.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-10.png", "subtitle": "Dashboard", "text": "De eerste tegel verzamelt wat blokkeert of dreigt te blokkeren: ontbrekende juridische gegevens, meters die op de netbeheerder wachten, operaties zonder verdeelsleutel. Elke regel leidt rechtstreeks naar het scherm waar u het kunt oplossen.", "title": "Aandachtspunten", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 57.515625, "x": 299.484375, "y": 366}, "selector": "[data-testid=\"readiness-tile__link--COMMUNITY_FIELD_MISSING\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 57.515625, "x": 299.484375, "y": 366}, "selector": "[data-testid=\"readiness-tile__link--COMMUNITY_FIELD_MISSING\"]"}}, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-11.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-11.png", "subtitle": "Aandachtspunten", "text": "Klik op \u201cOplossen\u201d: u komt op de betreffende pagina terecht, hier de gegevens van de gemeenschap.", "title": "Oplossen met \u00e9\u00e9n klik", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-15.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-15.png", "subtitle": "Dashboard", "text": "Voor elke deeloperatie toont de tegel de gedeelde en de ge\u00efnjecteerde energie over de laatste periode waarvoor gegevens beschikbaar zijn. De naam van de operatie leidt naar haar detailpagina.", "title": "Energie in \u00e9\u00e9n oogopslag", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-16.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-16.png", "subtitle": "Dashboard", "text": "De tegel toont de operaties van de gemeenschap met hun type. De link onderaan opent de volledige lijst.", "title": "Deelbewerkingen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 19, "width": 155.953125, "x": 33, "y": 820}, "selector": "[data-testid=\"sharing-operations-tile__link--all\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 19, "width": 155.953125, "x": 33, "y": 820}, "selector": "[data-testid=\"sharing-operations-tile__link--all\"]"}}, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-17.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-17.png", "subtitle": "Deeloperaties", "text": "De link brengt u naar het volledige beheer van de deeloperaties.", "title": "Alle operaties bekijken", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-21.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-21.png", "subtitle": "Dashboard", "text": "\u201cNieuwe deelnemers\u201d telt de verzonden uitnodigingen en de fiches die nog moeten worden ingevuld. \u201cRecente activiteit\u201d toont de laatste acties die in het auditlogboek van de gemeenschap zijn geregistreerd.", "title": "Nieuwe deelnemers en recente activiteit", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-22.png", "viewport": {"height": 844, "width": 390}}], "index": 9, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-22.png", "subtitle": "Dashboard", "text": "Facturatie, nieuws, dossiers en administratieve deadlines verschijnen alleen als de gemeenschap geabonneerd is op de bijbehorende module. Een gemeenschap zonder abonnement ziet deze tegels gewoon niet.", "title": "De geactiveerde modules", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-23.png", "viewport": {"height": 844, "width": 390}}], "index": 10, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-23.png", "subtitle": "Dashboard", "text": "Onderaan het dashboard toont de strook \u201cBeschikbare modules\u201d wat de gemeenschap nog niet gebruikt. Een beheerder kan ze hier activeren; een manager ziet aan wie hij ze moet vragen.", "title": "Beschikbare modules", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 134.875, "x": 37, "y": 219}, "selector": "[data-testid=\"manager-dashboard__btn--refresh\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 134.875, "x": 37, "y": 219}, "selector": "[data-testid=\"manager-dashboard__btn--refresh\"] button"}}, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-24.png", "viewport": {"height": 844, "width": 390}}], "index": 11, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-24.png", "subtitle": "Dashboard", "text": "De knop \u201cVernieuwen\u201d laadt alle tegels in \u00e9\u00e9n keer opnieuw, zonder de pagina te herladen \u2014 handig nadat u iets in een ander scherm hebt gecorrigeerd.", "title": "Vernieuwen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-25.png", "viewport": {"height": 844, "width": 390}}], "index": 12, "screenshot": "../assets/dashboard-manager-tour/nl/mobile/step-25.png", "subtitle": "Dashboard", "text": "De tegels laden een voor een opnieuw en krijgen weer hun gewone weergave met de meest recente gegevens.", "title": "Bijgewerkte gegevens", "viewport": {"height": 844, "width": 390}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Créer un sondage",
-    "en": "Create a poll"
+    "en": "Create a poll",
+    "nl": "Een peiling aanmaken",
+    "de": "Umfrage erstellen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir le tableau d'actualités",
-        "en": "Open the news board"
+        "en": "Open the news board",
+        "nl": "Het nieuwsbord openen",
+        "de": "Die Neuigkeitenseite öffnen"
       },
       "text": {
         "fr": "Dans la section « Communauté » de la barre latérale, cliquez sur « Actualités » pour accéder au tableau d'actualités de la communauté.",
-        "en": "In the sidebar's \"Community\" section, click \"News\" to open the community news board."
+        "en": "In the sidebar's \"Community\" section, click \"News\" to open the community news board.",
+        "nl": "Klik in de sectie “Gemeenschap” van de zijbalk op “Nieuws” om het nieuwsbord van de gemeenschap te openen.",
+        "de": "Klicken Sie im Bereich „Gemeinschaft“ der Seitenleiste auf „Aktuelles“, um die Neuigkeitenseite der Gemeinschaft zu öffnen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Het nieuwsbord openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en tik daarna in de sectie “Gemeenschap” op “Nieuws”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Die Neuigkeitenseite öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und tippen Sie dann im Bereich „Gemeinschaft“ auf „Aktuelles“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir le compositeur",
-        "en": "Open the composer"
+        "en": "Open the composer",
+        "nl": "Het opstelvenster openen",
+        "de": "Das Beitragsfenster öffnen"
       },
       "text": {
         "fr": "Cliquez sur « Nouvelle publication » pour ouvrir la fenêtre de rédaction.",
-        "en": "Click \"New post\" to open the compose dialog."
+        "en": "Click \"New post\" to open the compose dialog.",
+        "nl": "Klik op “Opstellen” om het venster “Nieuw bericht” te openen.",
+        "de": "Klicken Sie auf „Verfassen“, um das Fenster „Neuer Beitrag“ zu öffnen."
       },
       "subtitle": {
         "fr": "Rédaction",
-        "en": "Compose"
+        "en": "Compose",
+        "nl": "Opstellen",
+        "de": "Verfassen"
       },
       "captures": {
         "fr": {
@@ -268,6 +390,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1271.984375,
+                      "y": 52,
+                      "width": 119.015625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-board__compose\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 219,
+                      "width": 119.015625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-board__compose\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1271.484375,
+                      "y": 52,
+                      "width": 119.515625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-board__compose\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 219,
+                      "width": 119.515625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-board__compose\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -280,15 +498,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Choisir le type « Sondage »",
-        "en": "Switch to a poll"
+        "en": "Switch to a poll",
+        "nl": "Het type “Peiling” kiezen",
+        "de": "Den Typ „Umfrage“ wählen"
       },
       "text": {
         "fr": "En haut de la fenêtre, basculez sur l'onglet « Sondage ». Des champs supplémentaires apparaissent : question, options de réponse, date de clôture et visibilité.",
-        "en": "At the top of the dialog, switch to the \"Poll\" tab. Extra fields appear: question, answer options, closing date, and visibility."
+        "en": "At the top of the dialog, switch to the \"Poll\" tab. Extra fields appear: question, answer options, closing date, and visibility.",
+        "nl": "Schakel bovenaan het venster over naar het tabblad “Peiling”. Er verschijnen extra velden: vraag, antwoordopties, sluitingsdatum en zichtbaarheid.",
+        "de": "Wechseln Sie oben im Fenster zum Reiter „Umfrage“. Zusätzliche Felder erscheinen: Frage, Antwortoptionen, Enddatum und Sichtbarkeit."
       },
       "subtitle": {
         "fr": "Type de publication",
-        "en": "Post kind"
+        "en": "Post kind",
+        "nl": "Type bericht",
+        "de": "Beitragstyp"
       },
       "captures": {
         "fr": {
@@ -304,10 +528,10 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 531.78125,
-                      "y": 286.65625,
-                      "width": 103.765625,
-                      "height": 33.171875
+                      "x": 532.239013671875,
+                      "y": 287.0534973144531,
+                      "width": 103.5133056640625,
+                      "height": 33.0911865234375
                     },
                     "selector": "[data-testid=\"news-compose__kind--poll\"]"
                   }
@@ -327,10 +551,10 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 139.78125,
-                      "y": 97,
-                      "width": 103.765625,
-                      "height": 33.171875
+                      "x": 139.91574096679688,
+                      "y": 97.79158020019531,
+                      "width": 103.51289367675781,
+                      "height": 33.09107971191406
                     },
                     "selector": "[data-testid=\"news-compose__kind--poll\"]"
                   }
@@ -352,10 +576,10 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 490.2958068847656,
-                      "y": 287.594482421875,
-                      "width": 71.88156127929688,
-                      "height": 32.9813232421875
+                      "x": 488.96875,
+                      "y": 286.65625,
+                      "width": 72.296875,
+                      "height": 33.171875
                     },
                     "selector": "[data-testid=\"news-compose__kind--poll\"]"
                   }
@@ -375,9 +599,105 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 96.96875,
+                      "x": 97.12091064453125,
+                      "y": 97.50444030761719,
+                      "width": 72.18466186523438,
+                      "height": 33.120391845703125
+                    },
+                    "selector": "[data-testid=\"news-compose__kind--poll\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 505.84375,
+                      "y": 286.65625,
+                      "width": 91.09375,
+                      "height": 33.171875
+                    },
+                    "selector": "[data-testid=\"news-compose__kind--poll\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 113.84375,
                       "y": 97,
-                      "width": 72.296875,
+                      "width": 91.09375,
+                      "height": 33.171875
+                    },
+                    "selector": "[data-testid=\"news-compose__kind--poll\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 506.8125,
+                      "y": 286.65625,
+                      "width": 103.4375,
+                      "height": 33.171875
+                    },
+                    "selector": "[data-testid=\"news-compose__kind--poll\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114.8125,
+                      "y": 97,
+                      "width": 103.4375,
                       "height": 33.171875
                     },
                     "selector": "[data-testid=\"news-compose__kind--poll\"]"
@@ -398,15 +718,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Poser la question",
-        "en": "Ask the question"
+        "en": "Ask the question",
+        "nl": "De vraag stellen",
+        "de": "Die Frage stellen"
       },
       "text": {
         "fr": "Saisissez la question du sondage dans l'éditeur, comme pour une actualité classique.",
-        "en": "Type the poll question in the editor, just like a regular news post."
+        "en": "Type the poll question in the editor, just like a regular news post.",
+        "nl": "Typ de vraag van de peiling in de editor, net als bij een gewoon nieuwsbericht.",
+        "de": "Geben Sie die Frage der Umfrage im Editor ein, genau wie bei einem gewöhnlichen Beitrag."
       },
       "subtitle": {
         "fr": "Sondage",
-        "en": "Poll"
+        "en": "Poll",
+        "nl": "Peiling",
+        "de": "Umfrage"
       },
       "captures": {
         "fr": {
@@ -508,6 +834,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 406,
+                      "y": 299.078125,
+                      "width": 628,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"
+                  },
+                  "value": "Quand souhaitez-vous organiser la prochaine réunion ?"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 14,
+                      "y": 310.078125,
+                      "width": 362,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"
+                  },
+                  "value": "Quand souhaitez-vous organiser la prochaine réunion ?"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 406,
+                      "y": 299.078125,
+                      "width": 628,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"
+                  },
+                  "value": "Quand souhaitez-vous organiser la prochaine réunion ?"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 14,
+                      "y": 310.078125,
+                      "width": 362,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"
+                  },
+                  "value": "Quand souhaitez-vous organiser la prochaine réunion ?"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -520,15 +946,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Choix unique ou multiple",
-        "en": "Single or multiple choice"
+        "en": "Single or multiple choice",
+        "nl": "Enkele keuze of meerkeuze",
+        "de": "Einzel- oder Mehrfachauswahl"
       },
       "text": {
         "fr": "Choisissez si les membres peuvent sélectionner une seule réponse (« Choix unique ») ou plusieurs (« Choix multiple »). Nous gardons « Choix unique ».",
-        "en": "Choose whether members can select a single answer (\"Single choice\") or several (\"Multiple choice\"). We keep \"Single choice\"."
+        "en": "Choose whether members can select a single answer (\"Single choice\") or several (\"Multiple choice\"). We keep \"Single choice\".",
+        "nl": "Kies of de leden één antwoord (“Enkele keuze”) of meerdere antwoorden (“Meerkeuze”) kunnen selecteren. Wij houden “Enkele keuze” aan.",
+        "de": "Wählen Sie, ob die Mitglieder nur eine Antwort („Einzelauswahl“) oder mehrere („Mehrfachauswahl“) auswählen können. Wir behalten „Einzelauswahl“ bei."
       },
       "subtitle": {
         "fr": "Sondage",
-        "en": "Poll"
+        "en": "Poll",
+        "nl": "Peiling",
+        "de": "Umfrage"
       },
       "captures": {
         "fr": {
@@ -582,6 +1014,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -594,15 +1078,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ajouter les options de réponse",
-        "en": "Add the answer options"
+        "en": "Add the answer options",
+        "nl": "De antwoordopties toevoegen",
+        "de": "Die Antwortoptionen hinzufügen"
       },
       "text": {
         "fr": "Renseignez au moins deux options de réponse. Le bouton « Ajouter une option » en ajoute d'autres, et l'icône de corbeille en retire.",
-        "en": "Provide at least two answer options. The \"Add option\" button adds more, and the trash icon removes one."
+        "en": "Provide at least two answer options. The \"Add option\" button adds more, and the trash icon removes one.",
+        "nl": "Vul minstens twee antwoordopties in. Met de knop “Optie toevoegen” voegt u er meer toe, met het prullenbakpictogram verwijdert u er een.",
+        "de": "Geben Sie mindestens zwei Antwortoptionen ein. Die Schaltfläche „Option hinzufügen“ fügt weitere hinzu, das Papierkorbsymbol entfernt eine."
       },
       "subtitle": {
         "fr": "Sondage",
-        "en": "Poll"
+        "en": "Poll",
+        "nl": "Peiling",
+        "de": "Umfrage"
       },
       "captures": {
         "fr": {
@@ -704,6 +1194,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 705.0625,
+                      "width": 582,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__option-input--2\"]"
+                  },
+                  "value": "Samedi matin"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 801.0625,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__option-input--2\"]"
+                  },
+                  "value": "Samedi matin"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 705.0625,
+                      "width": 582,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__option-input--2\"]"
+                  },
+                  "value": "Samedi matin"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 801.0625,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__option-input--2\"]"
+                  },
+                  "value": "Samedi matin"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -716,15 +1306,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Définir une date de clôture",
-        "en": "Set a closing date"
+        "en": "Set a closing date",
+        "nl": "Een sluitingsdatum instellen",
+        "de": "Ein Enddatum festlegen"
       },
       "text": {
         "fr": "Choisissez la date et l'heure de clôture dans le calendrier. Après cette échéance, plus aucun vote n'est accepté et, selon la visibilité choisie, les résultats peuvent se dévoiler.",
-        "en": "Pick the closing date and time from the calendar. After this deadline no more votes are accepted and, depending on the chosen visibility, results may be revealed."
+        "en": "Pick the closing date and time from the calendar. After this deadline no more votes are accepted and, depending on the chosen visibility, results may be revealed.",
+        "nl": "Kies de sluitingsdatum en het sluitingsuur in de kalender. Na deze termijn wordt geen enkele stem meer aanvaard en kunnen de resultaten, afhankelijk van de gekozen zichtbaarheid, zichtbaar worden.",
+        "de": "Wählen Sie Datum und Uhrzeit des Endes im Kalender. Nach diesem Zeitpunkt werden keine Stimmen mehr angenommen, und je nach gewählter Sichtbarkeit können die Ergebnisse offengelegt werden."
       },
       "subtitle": {
         "fr": "Sondage",
-        "en": "Poll"
+        "en": "Poll",
+        "nl": "Peiling",
+        "de": "Umfrage"
       },
       "captures": {
         "fr": {
@@ -822,6 +1418,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 811.5625,
+                      "width": 590,
+                      "height": 42
+                    },
+                    "selector": "#news-expiry"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 440.5625,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "#news-expiry"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 811.5625,
+                      "width": 590,
+                      "height": 42
+                    },
+                    "selector": "#news-expiry"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 440.5625,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "#news-expiry"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -834,15 +1526,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Choisir qui voit les résultats",
-        "en": "Choose who sees the results"
+        "en": "Choose who sees the results",
+        "nl": "Kiezen wie de resultaten ziet",
+        "de": "Festlegen, wer die Ergebnisse sieht"
       },
       "text": {
         "fr": "Trois préréglages couvrent les cas les plus courants. Chacun combine ce que voient les gestionnaires, ce que voient les membres, et à quel moment.",
-        "en": "Three presets cover the most common cases. Each one combines what managers see, what members see, and when."
+        "en": "Three presets cover the most common cases. Each one combines what managers see, what members see, and when.",
+        "nl": "Drie voorinstellingen dekken de meest voorkomende gevallen. Elke voorinstelling combineert wat de beheerders zien, wat de leden zien, en wanneer.",
+        "de": "Drei Voreinstellungen decken die häufigsten Fälle ab. Jede kombiniert, was die Manager sehen, was die Mitglieder sehen, und wann."
       },
       "subtitle": {
         "fr": "Visibilité",
-        "en": "Visibility"
+        "en": "Visibility",
+        "nl": "Zichtbaarheid",
+        "de": "Sichtbarkeit"
       },
       "captures": {
         "fr": {
@@ -896,6 +1594,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -908,15 +1658,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Anonyme",
-        "en": "Anonymous"
+        "en": "Anonymous",
+        "nl": "Anoniem sentiment",
+        "de": "Anonyme Stimmung"
       },
       "text": {
         "fr": "Les membres ne voient que le nombre total de votes par option, et seulement après avoir voté eux-mêmes. Personne ne voit qui a voté quoi — les gestionnaires aussi n'ont que les totaux. Idéal pour un vote confidentiel.",
-        "en": "Members see only the total number of votes per option, and only after they have voted themselves. Nobody sees who voted for what — managers also get totals only. Ideal for a confidential vote."
+        "en": "Members see only the total number of votes per option, and only after they have voted themselves. Nobody sees who voted for what — managers also get totals only. Ideal for a confidential vote.",
+        "nl": "De leden zien alleen het totale aantal stemmen per optie, en pas nadat ze zelf hebben gestemd. Niemand ziet wie wat heeft gestemd — ook de beheerders krijgen alleen de totalen. Ideaal voor een vertrouwelijke stemming.",
+        "de": "Die Mitglieder sehen nur die Gesamtzahl der Stimmen pro Option, und erst nachdem sie selbst abgestimmt haben. Niemand sieht, wer wofür gestimmt hat — auch die Manager erhalten nur die Gesamtzahlen. Ideal für eine vertrauliche Abstimmung."
       },
       "subtitle": {
         "fr": "Visibilité — préréglage",
-        "en": "Visibility — preset"
+        "en": "Visibility — preset",
+        "nl": "Zichtbaarheid — voorinstelling",
+        "de": "Sichtbarkeit — Voreinstellung"
       },
       "captures": {
         "fr": {
@@ -1014,6 +1770,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 658.46875,
+                      "width": 204.65625,
+                      "height": 74.78125
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--anonymous\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 518.46875,
+                      "width": 364,
+                      "height": 74.78125
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--anonymous\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 629.46875,
+                      "width": 204.65625,
+                      "height": 103.90625
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--anonymous\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 518.46875,
+                      "width": 364,
+                      "height": 74.78125
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--anonymous\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1026,15 +1878,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Transparent",
-        "en": "Transparent"
+        "en": "Transparent",
+        "nl": "Transparant",
+        "de": "Transparent"
       },
       "text": {
         "fr": "Tout le monde voit les résultats complets immédiatement, y compris qui a voté pour quelle option, avant même d'avoir voté. Idéal pour une décision ouverte où chacun assume son choix.",
-        "en": "Everyone sees the full results immediately, including who voted for which option, even before voting. Ideal for an open decision where everyone owns their choice."
+        "en": "Everyone sees the full results immediately, including who voted for which option, even before voting. Ideal for an open decision where everyone owns their choice.",
+        "nl": "Iedereen ziet meteen de volledige resultaten, inclusief wie voor welke optie heeft gestemd, zelfs nog vóór het stemmen. Ideaal voor een open beslissing waarbij iedereen achter zijn keuze staat.",
+        "de": "Alle sehen sofort die vollständigen Ergebnisse, einschließlich wer für welche Option gestimmt hat, noch bevor sie selbst abgestimmt haben. Ideal für eine offene Entscheidung, bei der alle zu ihrer Wahl stehen."
       },
       "subtitle": {
         "fr": "Visibilité — préréglage",
-        "en": "Visibility — preset"
+        "en": "Visibility — preset",
+        "nl": "Zichtbaarheid — voorinstelling",
+        "de": "Sichtbarkeit — Voreinstellung"
       },
       "captures": {
         "fr": {
@@ -1132,6 +1990,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 617.65625,
+                      "y": 658.46875,
+                      "width": 204.671875,
+                      "height": 74.78125
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--transparent\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 601.25,
+                      "width": 364,
+                      "height": 60.21875
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--transparent\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 617.65625,
+                      "y": 629.46875,
+                      "width": 204.671875,
+                      "height": 103.90625
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--transparent\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 601.25,
+                      "width": 364,
+                      "height": 60.21875
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--transparent\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1144,15 +2098,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "À la clôture",
-        "en": "On close"
+        "en": "On close",
+        "nl": "Resultaten bij sluiting",
+        "de": "Ergebnisse bei Ende"
       },
       "text": {
         "fr": "Les membres ne découvrent les totaux qu'une fois le sondage clôturé ; avant cela, les résultats restent masqués. Les gestionnaires, eux, voient le détail (qui a voté quoi) à tout moment pour suivre la participation.",
-        "en": "Members only discover the totals once the poll closes; until then results stay hidden. Managers, however, see the breakdown (who voted for what) at any time to follow participation."
+        "en": "Members only discover the totals once the poll closes; until then results stay hidden. Managers, however, see the breakdown (who voted for what) at any time to follow participation.",
+        "nl": "De leden zien de totalen pas zodra de peiling gesloten is; tot dan blijven de resultaten verborgen. De beheerders zien daarentegen op elk moment het detail (wie wat heeft gestemd) om de deelname te volgen.",
+        "de": "Die Mitglieder sehen die Gesamtzahlen erst nach Ende der Umfrage; bis dahin bleiben die Ergebnisse verborgen. Die Manager hingegen sehen jederzeit die Details (wer wofür gestimmt hat), um die Beteiligung zu verfolgen."
       },
       "subtitle": {
         "fr": "Visibilité — préréglage",
-        "en": "Visibility — preset"
+        "en": "Visibility — preset",
+        "nl": "Zichtbaarheid — voorinstelling",
+        "de": "Sichtbarkeit — Voreinstellung"
       },
       "captures": {
         "fr": {
@@ -1250,6 +2210,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 830.328125,
+                      "y": 658.46875,
+                      "width": 204.671875,
+                      "height": 74.78125
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--on_close\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 669.46875,
+                      "width": 364,
+                      "height": 60.21875
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--on_close\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 830.328125,
+                      "y": 629.46875,
+                      "width": 204.671875,
+                      "height": 103.90625
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--on_close\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 669.46875,
+                      "width": 364,
+                      "height": 60.21875
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--on_close\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1262,15 +2318,21 @@
       "waitAfter": 400,
       "title": {
         "fr": "Réglage fin (avancé)",
-        "en": "Fine-grained control (advanced)"
+        "en": "Fine-grained control (advanced)",
+        "nl": "Fijnafstelling (geavanceerd)",
+        "de": "Feineinstellung (erweitert)"
       },
       "text": {
         "fr": "Le bouton « Avancé » dévoile trois réglages indépendants. Un préréglage n'est qu'un raccourci pour ces trois champs — vous pouvez les combiner librement.",
-        "en": "The \"Advanced\" button reveals three independent settings. A preset is just a shortcut for these three fields — you can combine them freely."
+        "en": "The \"Advanced\" button reveals three independent settings. A preset is just a shortcut for these three fields — you can combine them freely.",
+        "nl": "De knop “Geavanceerde instellingen” toont drie onafhankelijke instellingen. Een voorinstelling is slechts een snelkoppeling voor deze drie velden — u kunt ze vrij combineren.",
+        "de": "Die Schaltfläche „Erweiterte Einstellungen“ blendet drei unabhängige Einstellungen ein. Eine Voreinstellung ist nur eine Abkürzung für diese drei Felder — Sie können sie frei kombinieren."
       },
       "subtitle": {
         "fr": "Visibilité",
-        "en": "Visibility"
+        "en": "Visibility",
+        "nl": "Zichtbaarheid",
+        "de": "Sichtbarkeit"
       },
       "captures": {
         "fr": {
@@ -1368,6 +2430,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 738.84375,
+                      "width": 170.0625,
+                      "height": 26.71875
+                    },
+                    "selector": "[data-testid=\"news-compose__advanced-toggle\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 735.28125,
+                      "width": 170.0625,
+                      "height": 26.71875
+                    },
+                    "selector": "[data-testid=\"news-compose__advanced-toggle\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 738.96875,
+                      "width": 158.921875,
+                      "height": 26.71875
+                    },
+                    "selector": "[data-testid=\"news-compose__advanced-toggle\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 735.28125,
+                      "width": 158.921875,
+                      "height": 26.71875
+                    },
+                    "selector": "[data-testid=\"news-compose__advanced-toggle\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1380,15 +2538,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Visibilité gestionnaire",
-        "en": "Manager visibility"
+        "en": "Manager visibility",
+        "nl": "Zichtbaarheid voor beheerders",
+        "de": "Sichtbarkeit für Manager"
       },
       "text": {
         "fr": "Ce que voient les gestionnaires. « Agrégé » : uniquement les totaux par option. « Complet » : le détail nominatif, c'est-à-dire qui a voté pour chaque option.",
-        "en": "What managers see. \"Aggregate\": only the totals per option. \"Full\": the per-voter breakdown — who voted for each option."
+        "en": "What managers see. \"Aggregate\": only the totals per option. \"Full\": the per-voter breakdown — who voted for each option.",
+        "nl": "Wat de beheerders zien. “Alleen totalen”: uitsluitend de totalen per optie. “Detail per stemmer”: het detail op naam, d.w.z. wie voor elke optie heeft gestemd.",
+        "de": "Was die Manager sehen. „Nur Gesamtzahlen“: ausschließlich die Gesamtzahlen pro Option. „Details pro Stimme“: die namentliche Aufschlüsselung, also wer für welche Option gestimmt hat."
       },
       "subtitle": {
         "fr": "Visibilité — avancé",
-        "en": "Visibility — advanced"
+        "en": "Visibility — advanced",
+        "nl": "Zichtbaarheid — geavanceerd",
+        "de": "Sichtbarkeit — erweitert"
       },
       "captures": {
         "fr": {
@@ -1442,6 +2606,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1454,15 +2670,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Visibilité membre",
-        "en": "Member visibility"
+        "en": "Member visibility",
+        "nl": "Zichtbaarheid voor leden",
+        "de": "Sichtbarkeit für Mitglieder"
       },
       "text": {
         "fr": "Ce que les membres sont autorisés à voir. « Aucun » : jamais de résultats. « Agrégé » : les totaux. « Complet » : le détail des votes par personne.",
-        "en": "What members are allowed to see. \"None\": never any results. \"Aggregate\": the totals. \"Full\": the per-voter breakdown."
+        "en": "What members are allowed to see. \"None\": never any results. \"Aggregate\": the totals. \"Full\": the per-voter breakdown.",
+        "nl": "Wat de leden mogen zien. “Geen resultaten”: nooit resultaten. “Alleen totalen”: de totalen. “Detail per stemmer”: het detail van de stemmen per persoon.",
+        "de": "Was die Mitglieder sehen dürfen. „Keine Ergebnisse“: niemals Ergebnisse. „Nur Gesamtzahlen“: die Gesamtzahlen. „Details pro Stimme“: die Aufschlüsselung der Stimmen pro Person."
       },
       "subtitle": {
         "fr": "Visibilité — avancé",
-        "en": "Visibility — advanced"
+        "en": "Visibility — advanced",
+        "nl": "Zichtbaarheid — geavanceerd",
+        "de": "Sichtbarkeit — erweitert"
       },
       "captures": {
         "fr": {
@@ -1516,6 +2738,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1528,15 +2802,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Affichage membre",
-        "en": "Member display"
+        "en": "Member display",
+        "nl": "Weergave voor leden",
+        "de": "Anzeige für Mitglieder"
       },
       "text": {
         "fr": "Le moment où les membres voient ce qui leur est autorisé. « Jamais », « Avant de voter », « Après avoir voté », ou « À la clôture du sondage ». C'est ce réglage qui distingue, par exemple, un vote dont le résultat n'apparaît qu'une fois la participation enregistrée.",
-        "en": "When members see what they are allowed to. \"Never\", \"Before vote\", \"After vote\", or \"When the poll ends\". This setting is what distinguishes, for instance, a vote whose result only appears once participation is recorded."
+        "en": "When members see what they are allowed to. \"Never\", \"Before vote\", \"After vote\", or \"When the poll ends\". This setting is what distinguishes, for instance, a vote whose result only appears once participation is recorded.",
+        "nl": "Het moment waarop de leden zien wat ze mogen zien. “Nooit”, “Voor het stemmen”, “Na het stemmen” of “Bij sluiting”. Het is deze instelling die bijvoorbeeld een stemming onderscheidt waarvan het resultaat pas verschijnt zodra de deelname is geregistreerd.",
+        "de": "Der Zeitpunkt, zu dem die Mitglieder sehen, was ihnen erlaubt ist. „Nie“, „Vor der Abstimmung“, „Nach der Abstimmung“ oder „Bei Umfrageende“. Diese Einstellung unterscheidet zum Beispiel eine Abstimmung, deren Ergebnis erst erscheint, sobald die Teilnahme erfasst ist."
       },
       "subtitle": {
         "fr": "Visibilité — avancé",
-        "en": "Visibility — advanced"
+        "en": "Visibility — advanced",
+        "nl": "Zichtbaarheid — geavanceerd",
+        "de": "Sichtbarkeit — erweitert"
       },
       "captures": {
         "fr": {
@@ -1590,6 +2870,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1602,15 +2934,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Revenir à un préréglage",
-        "en": "Back to a preset"
+        "en": "Back to a preset",
+        "nl": "Terug naar een voorinstelling",
+        "de": "Zurück zu einer Voreinstellung"
       },
       "text": {
         "fr": "Pour finir, nous reprenons le préréglage « Anonyme », qui referme les réglages avancés et applique une combinaison cohérente prête à être publiée.",
-        "en": "To finish, we pick the \"Anonymous\" preset again, which collapses the advanced settings and applies a consistent, ready-to-publish combination."
+        "en": "To finish, we pick the \"Anonymous\" preset again, which collapses the advanced settings and applies a consistent, ready-to-publish combination.",
+        "nl": "Tot slot kiezen we opnieuw de voorinstelling “Anoniem sentiment”, die de geavanceerde instellingen sluit en een samenhangende combinatie toepast die klaar is om te publiceren.",
+        "de": "Zum Schluss wählen wir erneut die Voreinstellung „Anonyme Stimmung“, die die erweiterten Einstellungen schließt und eine stimmige, veröffentlichungsbereite Kombination anwendet."
       },
       "subtitle": {
         "fr": "Visibilité",
-        "en": "Visibility"
+        "en": "Visibility",
+        "nl": "Zichtbaarheid",
+        "de": "Sichtbarkeit"
       },
       "captures": {
         "fr": {
@@ -1708,6 +3046,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-40.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 658.46875,
+                      "width": 204.65625,
+                      "height": 74.78125
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--anonymous\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-40.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 518.46875,
+                      "width": 364,
+                      "height": 74.78125
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--anonymous\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-40.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 405,
+                      "y": 629.46875,
+                      "width": 204.65625,
+                      "height": 103.90625
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--anonymous\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-40.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 518.46875,
+                      "width": 364,
+                      "height": 74.78125
+                    },
+                    "selector": "[data-testid=\"news-compose__preset--anonymous\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1720,15 +3154,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Publier le sondage",
-        "en": "Publish the poll"
+        "en": "Publish the poll",
+        "nl": "De peiling publiceren",
+        "de": "Die Umfrage veröffentlichen"
       },
       "text": {
         "fr": "Cliquez sur « Publier ». Le sondage est diffusé à tous les membres, qui reçoivent une notification les invitant à voter.",
-        "en": "Click \"Publish\". The poll is broadcast to every member, who receives a notification inviting them to vote."
+        "en": "Click \"Publish\". The poll is broadcast to every member, who receives a notification inviting them to vote.",
+        "nl": "Klik op “Publiceren”. De peiling wordt naar alle leden verspreid, die een melding krijgen met de uitnodiging om te stemmen.",
+        "de": "Klicken Sie auf „Veröffentlichen“. Die Umfrage wird an alle Mitglieder verteilt, die eine Benachrichtigung mit der Einladung zur Abstimmung erhalten."
       },
       "subtitle": {
         "fr": "Sondage",
-        "en": "Poll"
+        "en": "Poll",
+        "nl": "Peiling",
+        "de": "Umfrage"
       },
       "captures": {
         "fr": {
@@ -1826,6 +3266,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 932.671875,
+                      "y": 792.15625,
+                      "width": 102.328125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 274.671875,
+                      "y": 788.59375,
+                      "width": 102.328125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 898.453125,
+                      "y": 792.28125,
+                      "width": 136.546875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 240.453125,
+                      "y": 788.59375,
+                      "width": 136.546875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1838,15 +3374,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Votre sondage est en ligne",
-        "en": "Your poll is live"
+        "en": "Your poll is live",
+        "nl": "Uw peiling staat online",
+        "de": "Ihre Umfrage ist online"
       },
       "text": {
         "fr": "Le sondage apparaît dans le tableau avec ses options. Les membres peuvent désormais voter ; les résultats s'afficheront selon la visibilité que vous avez choisie.",
-        "en": "The poll appears on the board with its options. Members can now vote; results will be shown according to the visibility you chose."
+        "en": "The poll appears on the board with its options. Members can now vote; results will be shown according to the visibility you chose.",
+        "nl": "De peiling verschijnt met haar opties op het nieuwsbord. De leden kunnen nu stemmen; de resultaten worden getoond volgens de zichtbaarheid die u hebt gekozen.",
+        "de": "Die Umfrage erscheint mit ihren Optionen auf der Neuigkeitenseite. Die Mitglieder können jetzt abstimmen; die Ergebnisse werden gemäß der von Ihnen gewählten Sichtbarkeit angezeigt."
       },
       "subtitle": {
         "fr": "Sondage",
-        "en": "Poll"
+        "en": "Poll",
+        "nl": "Peiling",
+        "de": "Umfrage"
       },
       "captures": {
         "fr": {
@@ -1892,6 +3434,58 @@
             "frames": [
               {
                 "screenshot": "../assets/news-poll-create/en/mobile/step-43.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/desktop/step-43.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/nl/mobile/step-43.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/desktop/step-43.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-poll-create/de/mobile/step-43.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

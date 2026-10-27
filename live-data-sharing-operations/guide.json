@@ -1,0 +1,825 @@
+{
+  "version": "1.1",
+  "slug": "live-data-sharing-operations",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Suivre le partage dans une opération",
+    "en": "Follow sharing within an operation",
+    "nl": "Het delen binnen een deelactiviteit volgen",
+    "de": "Teilen innerhalb eines Teilungsvorgangs verfolgen"
+  },
+  "locales": [
+    "fr",
+    "en",
+    "nl",
+    "de"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "scroll",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Le partage dans les opérations",
+        "en": "Sharing within the operations",
+        "nl": "Delen binnen de deeloperaties",
+        "de": "Teilen innerhalb der Teilungsoperationen"
+      },
+      "text": {
+        "fr": "Dès que des compteurs suivis appartiennent à une opération de partage, le tableau de bord estime, quart d'heure par quart d'heure, la part de la consommation couverte par la production de l'opération et la part de l'injection partagée. C'est une estimation parmi les compteurs suivis : les données du gestionnaire de réseau restent la référence.",
+        "en": "As soon as monitored meters belong to a sharing operation, the dashboard estimates, quarter-hour by quarter-hour, how much of the consumption the operation's production covered and how much of the injection was shared. It is an estimate among the monitored meters: the grid operator's data remains the reference.",
+        "nl": "Zodra opgevolgde meters tot een deeloperatie behoren, schat het dashboard kwartier per kwartier welk deel van het verbruik door de productie van de operatie wordt gedekt en welk deel van de injectie wordt gedeeld. Het is een schatting op basis van de opgevolgde meters: de gegevens van de netbeheerder blijven de referentie.",
+        "de": "Sobald überwachte Zähler zu einer Teilungsoperation gehören, schätzt die Übersicht Viertelstunde für Viertelstunde, welcher Anteil des Verbrauchs durch die Erzeugung der Operation gedeckt wird und welcher Anteil der Einspeisung geteilt wird. Es handelt sich um eine Schätzung anhand der überwachten Zähler: Die Daten des Netzbetreibers bleiben maßgeblich."
+      },
+      "subtitle": {
+        "fr": "Tableau de bord",
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/fr/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 196,
+                      "y": 365.6875,
+                      "width": 1116,
+                      "height": 388
+                    },
+                    "selector": "[data-testid=\"live-dashboard__sharing-card\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/fr/mobile/step-14.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 202.21875,
+                      "width": 322,
+                      "height": 460
+                    },
+                    "selector": "[data-testid=\"live-dashboard__sharing-card\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/en/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 196,
+                      "y": 365.6875,
+                      "width": 1116,
+                      "height": 388
+                    },
+                    "selector": "[data-testid=\"live-dashboard__sharing-card\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/en/mobile/step-14.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 222.375,
+                      "width": 322,
+                      "height": 460
+                    },
+                    "selector": "[data-testid=\"live-dashboard__sharing-card\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 196,
+                      "y": 365.6875,
+                      "width": 1116,
+                      "height": 388
+                    },
+                    "selector": "[data-testid=\"live-dashboard__sharing-card\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/nl/mobile/step-14.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 202.375,
+                      "width": 322,
+                      "height": 460
+                    },
+                    "selector": "[data-testid=\"live-dashboard__sharing-card\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 196,
+                      "y": 365.6875,
+                      "width": 1116,
+                      "height": 388
+                    },
+                    "selector": "[data-testid=\"live-dashboard__sharing-card\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/de/mobile/step-14.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 202.0625,
+                      "width": 322,
+                      "height": 460
+                    },
+                    "selector": "[data-testid=\"live-dashboard__sharing-card\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "scroll",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "La consommation prélevée sur le réseau",
+        "en": "Consumption drawn from the grid",
+        "nl": "Verbruik afgenomen van het net",
+        "de": "Aus dem Netz bezogener Verbrauch"
+      },
+      "text": {
+        "fr": "Ce graphique montre l'énergie que les compteurs suivis ont prélevée sur le réseau. La production solaire consommée sur place n'y figure pas : les compteurs ne voient que les échanges avec le réseau. Il reste masqué tant que trop peu de membres y contribuent.",
+        "en": "This chart shows the energy the monitored meters drew from the grid. Solar production used on site is not included: the meters only see the exchange with the grid. It stays hidden while too few members contribute.",
+        "nl": "Deze grafiek toont de energie die de opgevolgde meters van het net hebben afgenomen. Zonne-energie die ter plaatse wordt verbruikt, is niet inbegrepen: de meters zien alleen de uitwisseling met het net. De grafiek blijft verborgen zolang te weinig leden bijdragen.",
+        "de": "Dieses Diagramm zeigt die Energie, die die überwachten Zähler aus dem Netz bezogen haben. Vor Ort verbrauchter Solarstrom ist nicht enthalten: Die Zähler sehen nur den Austausch mit dem Netz. Das Diagramm bleibt ausgeblendet, solange zu wenige Mitglieder dazu beitragen."
+      },
+      "subtitle": {
+        "fr": "Tableau de bord",
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/fr/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 196,
+                      "y": -0.3125,
+                      "width": 1116,
+                      "height": 388
+                    },
+                    "selector": "[data-testid=\"live-dashboard__offtake-card\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/fr/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 0.21875,
+                      "width": 322,
+                      "height": 420
+                    },
+                    "selector": "[data-testid=\"live-dashboard__offtake-card\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/en/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 196,
+                      "y": -0.3125,
+                      "width": 1116,
+                      "height": 388
+                    },
+                    "selector": "[data-testid=\"live-dashboard__offtake-card\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/en/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 0.375,
+                      "width": 322,
+                      "height": 404
+                    },
+                    "selector": "[data-testid=\"live-dashboard__offtake-card\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/nl/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 196,
+                      "y": -0.3125,
+                      "width": 1116,
+                      "height": 388
+                    },
+                    "selector": "[data-testid=\"live-dashboard__offtake-card\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/nl/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 0.375,
+                      "width": 322,
+                      "height": 420
+                    },
+                    "selector": "[data-testid=\"live-dashboard__offtake-card\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/de/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 196,
+                      "y": -0.3125,
+                      "width": 1116,
+                      "height": 388
+                    },
+                    "selector": "[data-testid=\"live-dashboard__offtake-card\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/de/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 0.0625,
+                      "width": 322,
+                      "height": 404
+                    },
+                    "selector": "[data-testid=\"live-dashboard__offtake-card\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "custom",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Choisir une opération de partage",
+        "en": "Choose a sharing operation",
+        "nl": "Een deeloperatie kiezen",
+        "de": "Eine Teilungsoperation wählen"
+      },
+      "text": {
+        "fr": "En haut du tableau de bord, le « Périmètre » passe de toute la communauté à l'une de ses opérations de partage. Tous les chiffres et graphiques suivent ce choix.",
+        "en": "At the top of the dashboard, the \"Scope\" switches from the whole community to one of its sharing operations. Every figure and chart follows that choice.",
+        "nl": "Bovenaan het dashboard schakelt het “Bereik” over van de hele gemeenschap naar een van haar deeloperaties. Alle cijfers en grafieken volgen die keuze.",
+        "de": "Oben in der Übersicht wechselt der „Bereich“ von der gesamten Gemeinschaft zu einer ihrer Teilungsoperationen. Alle Zahlen und Diagramme folgen dieser Auswahl."
+      },
+      "subtitle": {
+        "fr": "Périmètre",
+        "en": "Scope",
+        "nl": "Bereik",
+        "de": "Bereich"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/fr/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 263.21875,
+                      "y": 271.84375,
+                      "width": 256,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"live-dashboard__scope-select\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/fr/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 401.375,
+                      "width": 256,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"live-dashboard__scope-select\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/en/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 241.671875,
+                      "y": 271.84375,
+                      "width": 256,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"live-dashboard__scope-select\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/en/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 79.671875,
+                      "y": 400.53125,
+                      "width": 256,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"live-dashboard__scope-select\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/nl/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 241.890625,
+                      "y": 271.84375,
+                      "width": 256,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"live-dashboard__scope-select\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/nl/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 79.890625,
+                      "y": 400.53125,
+                      "width": 256,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"live-dashboard__scope-select\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/de/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 249.328125,
+                      "y": 271.84375,
+                      "width": 256,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"live-dashboard__scope-select\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/de/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 87.328125,
+                      "y": 401.375,
+                      "width": 256,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"live-dashboard__scope-select\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Les chiffres de l'opération",
+        "en": "The operation's figures",
+        "nl": "De cijfers van de operatie",
+        "de": "Die Zahlen der Operation"
+      },
+      "text": {
+        "fr": "Pour l'opération choisie : sa production de la dernière heure complète, ses échanges avec le réseau, l'énergie partagée (estimation) et le nombre de compteurs suivis sur l'ensemble de ses compteurs. Les échanges avec le réseau et le partage restent masqués tant que l'opération compte trop peu de membres.",
+        "en": "For the chosen operation: its production over the last full hour, its exchanges with the grid, the shared energy (estimate) and how many of its meters are monitored. Grid exchanges and sharing stay hidden while the operation has too few members.",
+        "nl": "Voor de gekozen operatie: haar productie in het laatste volledige uur, haar uitwisselingen met het net, de gedeelde energie (schatting) en hoeveel van haar meters worden opgevolgd. De uitwisselingen met het net en het delen blijven verborgen zolang de operatie te weinig leden telt.",
+        "de": "Für die gewählte Operation: ihre Erzeugung in der letzten vollen Stunde, ihr Austausch mit dem Netz, die geteilte Energie (Schätzung) und wie viele ihrer Zähler überwacht werden. Netzaustausch und Teilen bleiben ausgeblendet, solange die Operation zu wenige Mitglieder hat."
+      },
+      "subtitle": {
+        "fr": "Opération de partage",
+        "en": "Sharing operation",
+        "nl": "Deeloperatie",
+        "de": "Teilungsoperation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/fr/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/en/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-sharing-operations/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -2,12 +2,16 @@
   "site": {
     "title": {
       "fr": "OptimCE — Guides utilisateur",
-      "en": "OptimCE — User guides"
+      "en": "OptimCE — User guides",
+      "nl": "OptimCE — Gebruikershandleidingen",
+      "de": "OptimCE — Benutzeranleitungen"
     }
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -17,10 +21,116 @@
   "defaultLayout": "desktop",
   "guides": [
     {
+      "slug": "onboarding-welcome",
+      "title": {
+        "fr": "Bienvenue sur OptimCE",
+        "en": "Welcome to OptimCE",
+        "nl": "Welkom bij OptimCE",
+        "de": "Willkommen bei OptimCE"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "onboarding-welcome.md",
+      "group": "welcome-tours",
+      "onboardingIndex": null,
+      "layouts": [
+        "desktop",
+        "mobile"
+      ],
+      "pages": {
+        "fr": "onboarding-welcome/fr.html",
+        "en": "onboarding-welcome/en.html",
+        "nl": "onboarding-welcome/nl.html",
+        "de": "onboarding-welcome/de.html"
+      }
+    },
+    {
+      "slug": "onboarding-member",
+      "title": {
+        "fr": "Vous êtes membre",
+        "en": "You are a member",
+        "nl": "U bent lid",
+        "de": "Sie sind Mitglied"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "onboarding-member.md",
+      "group": "welcome-tours",
+      "onboardingIndex": null,
+      "layouts": [
+        "desktop",
+        "mobile"
+      ],
+      "pages": {
+        "fr": "onboarding-member/fr.html",
+        "en": "onboarding-member/en.html",
+        "nl": "onboarding-member/nl.html",
+        "de": "onboarding-member/de.html"
+      }
+    },
+    {
+      "slug": "onboarding-manager",
+      "title": {
+        "fr": "Vous êtes gestionnaire",
+        "en": "You are a manager",
+        "nl": "U bent manager",
+        "de": "Sie sind Manager"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "onboarding-manager.md",
+      "group": "welcome-tours",
+      "onboardingIndex": null,
+      "layouts": [
+        "desktop",
+        "mobile"
+      ],
+      "pages": {
+        "fr": "onboarding-manager/fr.html",
+        "en": "onboarding-manager/en.html",
+        "nl": "onboarding-manager/nl.html",
+        "de": "onboarding-manager/de.html"
+      }
+    },
+    {
+      "slug": "onboarding-admin",
+      "title": {
+        "fr": "Vous êtes administrateur",
+        "en": "You are an administrator",
+        "nl": "U bent beheerder",
+        "de": "Sie sind Administrator"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "onboarding-admin.md",
+      "group": "welcome-tours",
+      "onboardingIndex": null,
+      "layouts": [
+        "desktop",
+        "mobile"
+      ],
+      "pages": {
+        "fr": "onboarding-admin/fr.html",
+        "en": "onboarding-admin/en.html",
+        "nl": "onboarding-admin/nl.html",
+        "de": "onboarding-admin/de.html"
+      }
+    },
+    {
       "slug": "auth-login",
       "title": {
         "fr": "Se connecter",
-        "en": "Sign in"
+        "en": "Sign in",
+        "nl": "Aanmelden",
+        "de": "Anmelden"
       },
       "modes": [
         "stepbystep",
@@ -35,14 +145,18 @@
       ],
       "pages": {
         "fr": "auth-login/fr.html",
-        "en": "auth-login/en.html"
+        "en": "auth-login/en.html",
+        "nl": "auth-login/nl.html",
+        "de": "auth-login/de.html"
       }
     },
     {
       "slug": "profile-update",
       "title": {
         "fr": "Mettre à jour son profil",
-        "en": "Update your profile"
+        "en": "Update your profile",
+        "nl": "Uw profiel bijwerken",
+        "de": "Ihr Profil aktualisieren"
       },
       "modes": [
         "stepbystep",
@@ -57,14 +171,18 @@
       ],
       "pages": {
         "fr": "profile-update/fr.html",
-        "en": "profile-update/en.html"
+        "en": "profile-update/en.html",
+        "nl": "profile-update/nl.html",
+        "de": "profile-update/de.html"
       }
     },
     {
       "slug": "notification-view",
       "title": {
         "fr": "Consulter ses notifications",
-        "en": "View your notifications"
+        "en": "View your notifications",
+        "nl": "Uw meldingen bekijken",
+        "de": "Ihre Benachrichtigungen ansehen"
       },
       "modes": [
         "stepbystep",
@@ -79,14 +197,18 @@
       ],
       "pages": {
         "fr": "notification-view/fr.html",
-        "en": "notification-view/en.html"
+        "en": "notification-view/en.html",
+        "nl": "notification-view/nl.html",
+        "de": "notification-view/de.html"
       }
     },
     {
       "slug": "community-activate",
       "title": {
         "fr": "Activer une communauté",
-        "en": "Activate a community"
+        "en": "Activate a community",
+        "nl": "Een gemeenschap activeren",
+        "de": "Gemeinschaft aktivieren"
       },
       "modes": [
         "stepbystep",
@@ -101,14 +223,18 @@
       ],
       "pages": {
         "fr": "community-activate/fr.html",
-        "en": "community-activate/en.html"
+        "en": "community-activate/en.html",
+        "nl": "community-activate/nl.html",
+        "de": "community-activate/de.html"
       }
     },
     {
       "slug": "community-join-inspect-key",
       "title": {
         "fr": "Rejoindre une communauté — vérifier la clé",
-        "en": "Join a community — verify the allocation key"
+        "en": "Join a community — verify the allocation key",
+        "nl": "Lid worden van een gemeenschap — de verdeelsleutel controleren",
+        "de": "Einer Gemeinschaft beitreten — Verteilungsschlüssel prüfen"
       },
       "modes": [
         "stepbystep",
@@ -123,14 +249,18 @@
       ],
       "pages": {
         "fr": "community-join-inspect-key/fr.html",
-        "en": "community-join-inspect-key/en.html"
+        "en": "community-join-inspect-key/en.html",
+        "nl": "community-join-inspect-key/nl.html",
+        "de": "community-join-inspect-key/de.html"
       }
     },
     {
       "slug": "community-join-inspect-meter",
       "title": {
         "fr": "Rejoindre une communauté — vérifier le compteur",
-        "en": "Join a community — verify the meter"
+        "en": "Join a community — verify the meter",
+        "nl": "Lid worden van een gemeenschap — de meter controleren",
+        "de": "Einer Gemeinschaft beitreten — Zähler prüfen"
       },
       "modes": [
         "stepbystep",
@@ -145,14 +275,18 @@
       ],
       "pages": {
         "fr": "community-join-inspect-meter/fr.html",
-        "en": "community-join-inspect-meter/en.html"
+        "en": "community-join-inspect-meter/en.html",
+        "nl": "community-join-inspect-meter/nl.html",
+        "de": "community-join-inspect-meter/de.html"
       }
     },
     {
       "slug": "key-create-gridform",
       "title": {
         "fr": "Créer une clé (formulaire)",
-        "en": "Create an allocation key (form)"
+        "en": "Create an allocation key (form)",
+        "nl": "Een verdeelsleutel aanmaken (formulier)",
+        "de": "Verteilungsschlüssel erstellen (Formular)"
       },
       "modes": [
         "stepbystep",
@@ -167,14 +301,18 @@
       ],
       "pages": {
         "fr": "key-create-gridform/fr.html",
-        "en": "key-create-gridform/en.html"
+        "en": "key-create-gridform/en.html",
+        "nl": "key-create-gridform/nl.html",
+        "de": "key-create-gridform/de.html"
       }
     },
     {
       "slug": "key-helper-tour",
       "title": {
         "fr": "Aide contextuelle — l'icône (i)",
-        "en": "Contextual help — the (i) icon"
+        "en": "Contextual help — the (i) icon",
+        "nl": "Contextuele hulp — het (i)-pictogram",
+        "de": "Kontexthilfe — das (i)-Symbol"
       },
       "modes": [
         "stepbystep",
@@ -189,14 +327,18 @@
       ],
       "pages": {
         "fr": "key-helper-tour/fr.html",
-        "en": "key-helper-tour/en.html"
+        "en": "key-helper-tour/en.html",
+        "nl": "key-helper-tour/nl.html",
+        "de": "key-helper-tour/de.html"
       }
     },
     {
       "slug": "key-create-wizard",
       "title": {
         "fr": "Créer une clé (assistant)",
-        "en": "Create an allocation key (wizard)"
+        "en": "Create an allocation key (wizard)",
+        "nl": "Een verdeelsleutel aanmaken (wizard)",
+        "de": "Verteilungsschlüssel erstellen (Assistent)"
       },
       "modes": [
         "stepbystep",
@@ -211,14 +353,18 @@
       ],
       "pages": {
         "fr": "key-create-wizard/fr.html",
-        "en": "key-create-wizard/en.html"
+        "en": "key-create-wizard/en.html",
+        "nl": "key-create-wizard/nl.html",
+        "de": "key-create-wizard/de.html"
       }
     },
     {
       "slug": "member-create",
       "title": {
         "fr": "Créer un membre",
-        "en": "Create a member"
+        "en": "Create a member",
+        "nl": "Een lid aanmaken",
+        "de": "Mitglied anlegen"
       },
       "modes": [
         "stepbystep",
@@ -233,14 +379,18 @@
       ],
       "pages": {
         "fr": "member-create/fr.html",
-        "en": "member-create/en.html"
+        "en": "member-create/en.html",
+        "nl": "member-create/nl.html",
+        "de": "member-create/de.html"
       }
     },
     {
       "slug": "member-update",
       "title": {
         "fr": "Modifier un membre",
-        "en": "Edit a member"
+        "en": "Edit a member",
+        "nl": "Een lid wijzigen",
+        "de": "Mitglied bearbeiten"
       },
       "modes": [
         "stepbystep",
@@ -255,14 +405,18 @@
       ],
       "pages": {
         "fr": "member-update/fr.html",
-        "en": "member-update/en.html"
+        "en": "member-update/en.html",
+        "nl": "member-update/nl.html",
+        "de": "member-update/de.html"
       }
     },
     {
       "slug": "meter-create",
       "title": {
         "fr": "Créer un compteur",
-        "en": "Create a meter"
+        "en": "Create a meter",
+        "nl": "Een meter aanmaken",
+        "de": "Zähler anlegen"
       },
       "modes": [
         "stepbystep",
@@ -277,14 +431,18 @@
       ],
       "pages": {
         "fr": "meter-create/fr.html",
-        "en": "meter-create/en.html"
+        "en": "meter-create/en.html",
+        "nl": "meter-create/nl.html",
+        "de": "meter-create/de.html"
       }
     },
     {
       "slug": "sharing-op-create",
       "title": {
         "fr": "Créer une opération de partage",
-        "en": "Create a sharing operation"
+        "en": "Create a sharing operation",
+        "nl": "Een deeloperatie aanmaken",
+        "de": "Teilungsoperation erstellen"
       },
       "modes": [
         "stepbystep",
@@ -299,14 +457,18 @@
       ],
       "pages": {
         "fr": "sharing-op-create/fr.html",
-        "en": "sharing-op-create/en.html"
+        "en": "sharing-op-create/en.html",
+        "nl": "sharing-op-create/nl.html",
+        "de": "sharing-op-create/de.html"
       }
     },
     {
       "slug": "sharing-op-inspect",
       "title": {
         "fr": "Inspecter une opération de partage",
-        "en": "Inspect a sharing operation"
+        "en": "Inspect a sharing operation",
+        "nl": "Een deeloperatie inspecteren",
+        "de": "Teilungsoperation im Detail ansehen"
       },
       "modes": [
         "stepbystep",
@@ -321,14 +483,18 @@
       ],
       "pages": {
         "fr": "sharing-op-inspect/fr.html",
-        "en": "sharing-op-inspect/en.html"
+        "en": "sharing-op-inspect/en.html",
+        "nl": "sharing-op-inspect/nl.html",
+        "de": "sharing-op-inspect/de.html"
       }
     },
     {
       "slug": "sharing-op-set-public",
       "title": {
         "fr": "Rendre une opération de partage publique",
-        "en": "Make a sharing operation public"
+        "en": "Make a sharing operation public",
+        "nl": "Een deeloperatie openbaar maken",
+        "de": "Teilungsoperation öffentlich machen"
       },
       "modes": [
         "stepbystep",
@@ -343,14 +509,18 @@
       ],
       "pages": {
         "fr": "sharing-op-set-public/fr.html",
-        "en": "sharing-op-set-public/en.html"
+        "en": "sharing-op-set-public/en.html",
+        "nl": "sharing-op-set-public/nl.html",
+        "de": "sharing-op-set-public/de.html"
       }
     },
     {
       "slug": "key-update",
       "title": {
         "fr": "Modifier une clé de répartition",
-        "en": "Edit an allocation key"
+        "en": "Edit an allocation key",
+        "nl": "Een verdeelsleutel bewerken",
+        "de": "Verteilungsschlüssel bearbeiten"
       },
       "modes": [
         "stepbystep",
@@ -365,14 +535,18 @@
       ],
       "pages": {
         "fr": "key-update/fr.html",
-        "en": "key-update/en.html"
+        "en": "key-update/en.html",
+        "nl": "key-update/nl.html",
+        "de": "key-update/de.html"
       }
     },
     {
       "slug": "meter-address-repair",
       "title": {
         "fr": "Corriger les adresses des compteurs",
-        "en": "Fix meter addresses"
+        "en": "Fix meter addresses",
+        "nl": "De adressen van meters corrigeren",
+        "de": "Zähleradressen korrigieren"
       },
       "modes": [
         "stepbystep",
@@ -387,14 +561,18 @@
       ],
       "pages": {
         "fr": "meter-address-repair/fr.html",
-        "en": "meter-address-repair/en.html"
+        "en": "meter-address-repair/en.html",
+        "nl": "meter-address-repair/nl.html",
+        "de": "meter-address-repair/de.html"
       }
     },
     {
       "slug": "meter-update",
       "title": {
         "fr": "Modifier un compteur",
-        "en": "Edit a meter"
+        "en": "Edit a meter",
+        "nl": "Een meter wijzigen",
+        "de": "Zähler bearbeiten"
       },
       "modes": [
         "stepbystep",
@@ -409,14 +587,18 @@
       ],
       "pages": {
         "fr": "meter-update/fr.html",
-        "en": "meter-update/en.html"
+        "en": "meter-update/en.html",
+        "nl": "meter-update/nl.html",
+        "de": "meter-update/de.html"
       }
     },
     {
       "slug": "meter-data-update",
       "title": {
         "fr": "Modifier les données du compteur",
-        "en": "Update meter data"
+        "en": "Update meter data",
+        "nl": "De metergegevens wijzigen",
+        "de": "Zählerdaten bearbeiten"
       },
       "modes": [
         "stepbystep",
@@ -431,14 +613,18 @@
       ],
       "pages": {
         "fr": "meter-data-update/fr.html",
-        "en": "meter-data-update/en.html"
+        "en": "meter-data-update/en.html",
+        "nl": "meter-data-update/nl.html",
+        "de": "meter-data-update/de.html"
       }
     },
     {
       "slug": "community-info-update",
       "title": {
         "fr": "Mettre à jour les infos de la communauté",
-        "en": "Update community info"
+        "en": "Update community info",
+        "nl": "De gemeenschapsinfo bijwerken",
+        "de": "Gemeinschaftsinfo aktualisieren"
       },
       "modes": [
         "stepbystep",
@@ -453,14 +639,18 @@
       ],
       "pages": {
         "fr": "community-info-update/fr.html",
-        "en": "community-info-update/en.html"
+        "en": "community-info-update/en.html",
+        "nl": "community-info-update/nl.html",
+        "de": "community-info-update/de.html"
       }
     },
     {
       "slug": "news-create",
       "title": {
         "fr": "Publier une actualité",
-        "en": "Publish a news"
+        "en": "Publish a news",
+        "nl": "Een nieuwsbericht publiceren",
+        "de": "Beitrag veröffentlichen"
       },
       "modes": [
         "stepbystep",
@@ -475,14 +665,18 @@
       ],
       "pages": {
         "fr": "news-create/fr.html",
-        "en": "news-create/en.html"
+        "en": "news-create/en.html",
+        "nl": "news-create/nl.html",
+        "de": "news-create/de.html"
       }
     },
     {
       "slug": "news-poll-create",
       "title": {
         "fr": "Créer un sondage",
-        "en": "Create a poll"
+        "en": "Create a poll",
+        "nl": "Een peiling aanmaken",
+        "de": "Umfrage erstellen"
       },
       "modes": [
         "stepbystep",
@@ -497,14 +691,18 @@
       ],
       "pages": {
         "fr": "news-poll-create/fr.html",
-        "en": "news-poll-create/en.html"
+        "en": "news-poll-create/en.html",
+        "nl": "news-poll-create/nl.html",
+        "de": "news-poll-create/de.html"
       }
     },
     {
       "slug": "sharing-op-add-meter",
       "title": {
         "fr": "Ajouter un compteur à une opération",
-        "en": "Add a meter to a sharing operation"
+        "en": "Add a meter to a sharing operation",
+        "nl": "Een meter aan een deeloperatie toevoegen",
+        "de": "Zähler zu einer Teilungsoperation hinzufügen"
       },
       "modes": [
         "stepbystep",
@@ -519,14 +717,18 @@
       ],
       "pages": {
         "fr": "sharing-op-add-meter/fr.html",
-        "en": "sharing-op-add-meter/en.html"
+        "en": "sharing-op-add-meter/en.html",
+        "nl": "sharing-op-add-meter/nl.html",
+        "de": "sharing-op-add-meter/de.html"
       }
     },
     {
       "slug": "annexes-subscribe",
       "title": {
         "fr": "S'abonner à un service annexe",
-        "en": "Subscribe to an annexe service"
+        "en": "Subscribe to an annexe service",
+        "nl": "Abonneren op een annexdienst",
+        "de": "Zusatzdienst abonnieren"
       },
       "modes": [
         "stepbystep",
@@ -541,14 +743,18 @@
       ],
       "pages": {
         "fr": "annexes-subscribe/fr.html",
-        "en": "annexes-subscribe/en.html"
+        "en": "annexes-subscribe/en.html",
+        "nl": "annexes-subscribe/nl.html",
+        "de": "annexes-subscribe/de.html"
       }
     },
     {
       "slug": "annexes-unsubscribe",
       "title": {
         "fr": "Se désabonner d'un service annexe",
-        "en": "Unsubscribe from an annexe service"
+        "en": "Unsubscribe from an annexe service",
+        "nl": "Een annexdienst opzeggen",
+        "de": "Zusatzdienst abbestellen"
       },
       "modes": [
         "stepbystep",
@@ -563,14 +769,18 @@
       ],
       "pages": {
         "fr": "annexes-unsubscribe/fr.html",
-        "en": "annexes-unsubscribe/en.html"
+        "en": "annexes-unsubscribe/en.html",
+        "nl": "annexes-unsubscribe/nl.html",
+        "de": "annexes-unsubscribe/de.html"
       }
     },
     {
       "slug": "algorithm-generate",
       "title": {
         "fr": "Générer des clés (OLAGSA)",
-        "en": "Generate keys (OLAGSA)"
+        "en": "Generate keys (OLAGSA)",
+        "nl": "Verdeelsleutels genereren (OLAGSA)",
+        "de": "Verteilungsschlüssel generieren (OLAGSA)"
       },
       "modes": [
         "stepbystep",
@@ -585,14 +795,18 @@
       ],
       "pages": {
         "fr": "algorithm-generate/fr.html",
-        "en": "algorithm-generate/en.html"
+        "en": "algorithm-generate/en.html",
+        "nl": "algorithm-generate/nl.html",
+        "de": "algorithm-generate/de.html"
       }
     },
     {
       "slug": "algorithm-delete-key",
       "title": {
         "fr": "Supprimer une clé générée",
-        "en": "Delete a generated key"
+        "en": "Delete a generated key",
+        "nl": "Een gegenereerde sleutel verwijderen",
+        "de": "Generierten Schlüssel löschen"
       },
       "modes": [
         "stepbystep",
@@ -607,14 +821,18 @@
       ],
       "pages": {
         "fr": "algorithm-delete-key/fr.html",
-        "en": "algorithm-delete-key/en.html"
+        "en": "algorithm-delete-key/en.html",
+        "nl": "algorithm-delete-key/nl.html",
+        "de": "algorithm-delete-key/de.html"
       }
     },
     {
       "slug": "algorithm-delete-generation",
       "title": {
         "fr": "Supprimer une génération",
-        "en": "Delete a generation"
+        "en": "Delete a generation",
+        "nl": "Een generatie verwijderen",
+        "de": "Generierung löschen"
       },
       "modes": [
         "stepbystep",
@@ -629,14 +847,18 @@
       ],
       "pages": {
         "fr": "algorithm-delete-generation/fr.html",
-        "en": "algorithm-delete-generation/en.html"
+        "en": "algorithm-delete-generation/en.html",
+        "nl": "algorithm-delete-generation/nl.html",
+        "de": "algorithm-delete-generation/de.html"
       }
     },
     {
       "slug": "simulation-run",
       "title": {
         "fr": "Simuler une clé de répartition",
-        "en": "Simulate an allocation key"
+        "en": "Simulate an allocation key",
+        "nl": "Een verdeelsleutel simuleren",
+        "de": "Verteilungsschlüssel simulieren"
       },
       "modes": [
         "stepbystep",
@@ -651,14 +873,18 @@
       ],
       "pages": {
         "fr": "simulation-run/fr.html",
-        "en": "simulation-run/en.html"
+        "en": "simulation-run/en.html",
+        "nl": "simulation-run/nl.html",
+        "de": "simulation-run/de.html"
       }
     },
     {
       "slug": "community-create",
       "title": {
         "fr": "Créer une communauté",
-        "en": "Create a community"
+        "en": "Create a community",
+        "nl": "Een gemeenschap aanmaken",
+        "de": "Gemeinschaft erstellen"
       },
       "modes": [
         "stepbystep",
@@ -673,14 +899,18 @@
       ],
       "pages": {
         "fr": "community-create/fr.html",
-        "en": "community-create/en.html"
+        "en": "community-create/en.html",
+        "nl": "community-create/nl.html",
+        "de": "community-create/de.html"
       }
     },
     {
       "slug": "community-users-manage",
       "title": {
         "fr": "Gérer les utilisateurs de la communauté",
-        "en": "Manage the community's users"
+        "en": "Manage the community's users",
+        "nl": "De gebruikers van de gemeenschap beheren",
+        "de": "Benutzer der Gemeinschaft verwalten"
       },
       "modes": [
         "stepbystep",
@@ -695,14 +925,18 @@
       ],
       "pages": {
         "fr": "community-users-manage/fr.html",
-        "en": "community-users-manage/en.html"
+        "en": "community-users-manage/en.html",
+        "nl": "community-users-manage/nl.html",
+        "de": "community-users-manage/de.html"
       }
     },
     {
       "slug": "community-managers-view",
       "title": {
         "fr": "Voir les gestionnaires de sa communauté",
-        "en": "See your community's managers"
+        "en": "See your community's managers",
+        "nl": "De beheerders van uw gemeenschap bekijken",
+        "de": "Manager Ihrer Gemeinschaft ansehen"
       },
       "modes": [
         "stepbystep",
@@ -717,14 +951,18 @@
       ],
       "pages": {
         "fr": "community-managers-view/fr.html",
-        "en": "community-managers-view/en.html"
+        "en": "community-managers-view/en.html",
+        "nl": "community-managers-view/nl.html",
+        "de": "community-managers-view/de.html"
       }
     },
     {
       "slug": "public-communities-browse",
       "title": {
         "fr": "Explorer les communautés publiques",
-        "en": "Explore the public communities directory"
+        "en": "Explore the public communities directory",
+        "nl": "Openbare gemeenschappen verkennen",
+        "de": "Öffentliche Gemeinschaften erkunden"
       },
       "modes": [
         "stepbystep",
@@ -739,14 +977,18 @@
       ],
       "pages": {
         "fr": "public-communities-browse/fr.html",
-        "en": "public-communities-browse/en.html"
+        "en": "public-communities-browse/en.html",
+        "nl": "public-communities-browse/nl.html",
+        "de": "public-communities-browse/de.html"
       }
     },
     {
       "slug": "audit-log-inspect",
       "title": {
         "fr": "Consulter le journal d'audit",
-        "en": "Consult the audit log"
+        "en": "Consult the audit log",
+        "nl": "Het auditlogboek raadplegen",
+        "de": "Audit-Protokoll einsehen"
       },
       "modes": [
         "stepbystep",
@@ -761,14 +1003,18 @@
       ],
       "pages": {
         "fr": "audit-log-inspect/fr.html",
-        "en": "audit-log-inspect/en.html"
+        "en": "audit-log-inspect/en.html",
+        "nl": "audit-log-inspect/nl.html",
+        "de": "audit-log-inspect/de.html"
       }
     },
     {
       "slug": "key-delete",
       "title": {
         "fr": "Supprimer une clé de répartition",
-        "en": "Delete an allocation key"
+        "en": "Delete an allocation key",
+        "nl": "Een verdeelsleutel verwijderen",
+        "de": "Verteilungsschlüssel löschen"
       },
       "modes": [
         "stepbystep",
@@ -783,14 +1029,18 @@
       ],
       "pages": {
         "fr": "key-delete/fr.html",
-        "en": "key-delete/en.html"
+        "en": "key-delete/en.html",
+        "nl": "key-delete/nl.html",
+        "de": "key-delete/de.html"
       }
     },
     {
       "slug": "member-create-company",
       "title": {
         "fr": "Créer un membre entreprise",
-        "en": "Create a company member"
+        "en": "Create a company member",
+        "nl": "Een bedrijf als lid aanmaken",
+        "de": "Unternehmen als Mitglied anlegen"
       },
       "modes": [
         "stepbystep",
@@ -805,14 +1055,18 @@
       ],
       "pages": {
         "fr": "member-create-company/fr.html",
-        "en": "member-create-company/en.html"
+        "en": "member-create-company/en.html",
+        "nl": "member-create-company/nl.html",
+        "de": "member-create-company/de.html"
       }
     },
     {
       "slug": "member-status-lifecycle",
       "title": {
         "fr": "Désactiver et réactiver un membre",
-        "en": "Deactivate and reactivate a member"
+        "en": "Deactivate and reactivate a member",
+        "nl": "Een lid deactiveren en opnieuw activeren",
+        "de": "Mitglied deaktivieren und reaktivieren"
       },
       "modes": [
         "stepbystep",
@@ -827,14 +1081,18 @@
       ],
       "pages": {
         "fr": "member-status-lifecycle/fr.html",
-        "en": "member-status-lifecycle/en.html"
+        "en": "member-status-lifecycle/en.html",
+        "nl": "member-status-lifecycle/nl.html",
+        "de": "member-status-lifecycle/de.html"
       }
     },
     {
       "slug": "member-document-upload",
       "title": {
         "fr": "Ajouter un document à un membre",
-        "en": "Upload a document to a member"
+        "en": "Upload a document to a member",
+        "nl": "Een document aan een lid toevoegen",
+        "de": "Dokument zu einem Mitglied hinzufügen"
       },
       "modes": [
         "stepbystep",
@@ -849,14 +1107,18 @@
       ],
       "pages": {
         "fr": "member-document-upload/fr.html",
-        "en": "member-document-upload/en.html"
+        "en": "member-document-upload/en.html",
+        "nl": "member-document-upload/nl.html",
+        "de": "member-document-upload/de.html"
       }
     },
     {
       "slug": "member-self-views",
       "title": {
         "fr": "Consulter sa fiche et son compteur",
-        "en": "Consult your own record and meter"
+        "en": "Consult your own record and meter",
+        "nl": "Uw eigen fiche en meter raadplegen",
+        "de": "Ihren Datensatz und Zähler einsehen"
       },
       "modes": [
         "stepbystep",
@@ -871,14 +1133,18 @@
       ],
       "pages": {
         "fr": "member-self-views/fr.html",
-        "en": "member-self-views/en.html"
+        "en": "member-self-views/en.html",
+        "nl": "member-self-views/nl.html",
+        "de": "member-self-views/de.html"
       }
     },
     {
       "slug": "meter-deactivate",
       "title": {
         "fr": "Désactiver un compteur",
-        "en": "Deactivate a meter"
+        "en": "Deactivate a meter",
+        "nl": "Een meter deactiveren",
+        "de": "Zähler deaktivieren"
       },
       "modes": [
         "stepbystep",
@@ -893,14 +1159,18 @@
       ],
       "pages": {
         "fr": "meter-deactivate/fr.html",
-        "en": "meter-deactivate/en.html"
+        "en": "meter-deactivate/en.html",
+        "nl": "meter-deactivate/nl.html",
+        "de": "meter-deactivate/de.html"
       }
     },
     {
       "slug": "sharing-op-update",
       "title": {
         "fr": "Modifier une opération de partage",
-        "en": "Edit a sharing operation"
+        "en": "Edit a sharing operation",
+        "nl": "Een deeloperatie bewerken",
+        "de": "Teilungsoperation bearbeiten"
       },
       "modes": [
         "stepbystep",
@@ -915,14 +1185,18 @@
       ],
       "pages": {
         "fr": "sharing-op-update/fr.html",
-        "en": "sharing-op-update/en.html"
+        "en": "sharing-op-update/en.html",
+        "nl": "sharing-op-update/nl.html",
+        "de": "sharing-op-update/de.html"
       }
     },
     {
       "slug": "billing-tarification-pay",
       "title": {
         "fr": "Facturer une opération, du tarif à l'encaissement",
-        "en": "Bill a sharing operation, from tariff to payment"
+        "en": "Bill a sharing operation, from tariff to payment",
+        "nl": "Een deeloperatie factureren, van tarief tot betaling",
+        "de": "Teilungsoperation abrechnen, vom Tarif bis zur Zahlung"
       },
       "modes": [
         "stepbystep",
@@ -937,14 +1211,18 @@
       ],
       "pages": {
         "fr": "billing-tarification-pay/fr.html",
-        "en": "billing-tarification-pay/en.html"
+        "en": "billing-tarification-pay/en.html",
+        "nl": "billing-tarification-pay/nl.html",
+        "de": "billing-tarification-pay/de.html"
       }
     },
     {
       "slug": "billing-member-view",
       "title": {
         "fr": "Consulter sa facture",
-        "en": "View your own bill"
+        "en": "View your own bill",
+        "nl": "Uw factuur bekijken",
+        "de": "Ihre Rechnung einsehen"
       },
       "modes": [
         "stepbystep",
@@ -959,14 +1237,18 @@
       ],
       "pages": {
         "fr": "billing-member-view/fr.html",
-        "en": "billing-member-view/en.html"
+        "en": "billing-member-view/en.html",
+        "nl": "billing-member-view/nl.html",
+        "de": "billing-member-view/de.html"
       }
     },
     {
       "slug": "admin-doc-dossier-create",
       "title": {
         "fr": "Créer un dossier administratif",
-        "en": "Create an administrative dossier"
+        "en": "Create an administrative dossier",
+        "nl": "Een administratief dossier aanmaken",
+        "de": "Verwaltungsdossier anlegen"
       },
       "modes": [
         "stepbystep",
@@ -981,14 +1263,18 @@
       ],
       "pages": {
         "fr": "admin-doc-dossier-create/fr.html",
-        "en": "admin-doc-dossier-create/en.html"
+        "en": "admin-doc-dossier-create/en.html",
+        "nl": "admin-doc-dossier-create/nl.html",
+        "de": "admin-doc-dossier-create/de.html"
       }
     },
     {
       "slug": "admin-doc-document-generate",
       "title": {
         "fr": "Générer un document depuis le CRM",
-        "en": "Generate a document from the CRM"
+        "en": "Generate a document from the CRM",
+        "nl": "Een document genereren vanuit het CRM",
+        "de": "Dokument aus dem CRM erzeugen"
       },
       "modes": [
         "stepbystep",
@@ -1003,14 +1289,18 @@
       ],
       "pages": {
         "fr": "admin-doc-document-generate/fr.html",
-        "en": "admin-doc-document-generate/en.html"
+        "en": "admin-doc-document-generate/en.html",
+        "nl": "admin-doc-document-generate/nl.html",
+        "de": "admin-doc-document-generate/de.html"
       }
     },
     {
       "slug": "admin-doc-upload-version",
       "title": {
         "fr": "Joindre un document existant",
-        "en": "Attach a document you already have"
+        "en": "Attach a document you already have",
+        "nl": "Een bestaand document bijvoegen",
+        "de": "Vorhandenes Dokument anhängen"
       },
       "modes": [
         "stepbystep",
@@ -1025,14 +1315,18 @@
       ],
       "pages": {
         "fr": "admin-doc-upload-version/fr.html",
-        "en": "admin-doc-upload-version/en.html"
+        "en": "admin-doc-upload-version/en.html",
+        "nl": "admin-doc-upload-version/nl.html",
+        "de": "admin-doc-upload-version/de.html"
       }
     },
     {
       "slug": "admin-doc-submit-deadline",
       "title": {
         "fr": "Déposer un dossier et suivre son échéance",
-        "en": "File a dossier and follow its deadline"
+        "en": "File a dossier and follow its deadline",
+        "nl": "Een dossier indienen en de termijn opvolgen",
+        "de": "Dossier einreichen und Frist verfolgen"
       },
       "modes": [
         "stepbystep",
@@ -1047,14 +1341,18 @@
       ],
       "pages": {
         "fr": "admin-doc-submit-deadline/fr.html",
-        "en": "admin-doc-submit-deadline/en.html"
+        "en": "admin-doc-submit-deadline/en.html",
+        "nl": "admin-doc-submit-deadline/nl.html",
+        "de": "admin-doc-submit-deadline/de.html"
       }
     },
     {
       "slug": "admin-doc-my-filings",
       "title": {
         "fr": "Voir ce qui a été déclaré à son sujet",
-        "en": "See what has been filed about you"
+        "en": "See what has been filed about you",
+        "nl": "Zien wat er over u is ingediend",
+        "de": "Sehen, was über Sie eingereicht wurde"
       },
       "modes": [
         "stepbystep",
@@ -1069,14 +1367,18 @@
       ],
       "pages": {
         "fr": "admin-doc-my-filings/fr.html",
-        "en": "admin-doc-my-filings/en.html"
+        "en": "admin-doc-my-filings/en.html",
+        "nl": "admin-doc-my-filings/nl.html",
+        "de": "admin-doc-my-filings/de.html"
       }
     },
     {
       "slug": "home-overview",
       "title": {
         "fr": "Sa page d'accueil",
-        "en": "Your home page"
+        "en": "Your home page",
+        "nl": "Uw startpagina",
+        "de": "Ihre Startseite"
       },
       "modes": [
         "stepbystep",
@@ -1091,14 +1393,18 @@
       ],
       "pages": {
         "fr": "home-overview/fr.html",
-        "en": "home-overview/en.html"
+        "en": "home-overview/en.html",
+        "nl": "home-overview/nl.html",
+        "de": "home-overview/de.html"
       }
     },
     {
       "slug": "dashboard-manager-tour",
       "title": {
         "fr": "Le tableau de bord du gestionnaire",
-        "en": "The manager dashboard"
+        "en": "The manager dashboard",
+        "nl": "Het beheerdersdashboard",
+        "de": "Die Übersicht für Manager"
       },
       "modes": [
         "stepbystep",
@@ -1113,14 +1419,18 @@
       ],
       "pages": {
         "fr": "dashboard-manager-tour/fr.html",
-        "en": "dashboard-manager-tour/en.html"
+        "en": "dashboard-manager-tour/en.html",
+        "nl": "dashboard-manager-tour/nl.html",
+        "de": "dashboard-manager-tour/de.html"
       }
     },
     {
       "slug": "dashboard-member-tour",
       "title": {
         "fr": "Le tableau de bord du membre",
-        "en": "The member dashboard"
+        "en": "The member dashboard",
+        "nl": "Het ledendashboard",
+        "de": "Die Übersicht für Mitglieder"
       },
       "modes": [
         "stepbystep",
@@ -1135,14 +1445,18 @@
       ],
       "pages": {
         "fr": "dashboard-member-tour/fr.html",
-        "en": "dashboard-member-tour/en.html"
+        "en": "dashboard-member-tour/en.html",
+        "nl": "dashboard-member-tour/nl.html",
+        "de": "dashboard-member-tour/de.html"
       }
     },
     {
       "slug": "notification-preferences",
       "title": {
         "fr": "Choisir ses notifications",
-        "en": "Choose your notifications"
+        "en": "Choose your notifications",
+        "nl": "Uw meldingen instellen",
+        "de": "Ihre Benachrichtigungen einstellen"
       },
       "modes": [
         "stepbystep",
@@ -1157,20 +1471,157 @@
       ],
       "pages": {
         "fr": "notification-preferences/fr.html",
-        "en": "notification-preferences/en.html"
+        "en": "notification-preferences/en.html",
+        "nl": "notification-preferences/nl.html",
+        "de": "notification-preferences/de.html"
+      }
+    },
+    {
+      "slug": "live-data-explore",
+      "title": {
+        "fr": "Découvrir les données en direct",
+        "en": "Discover Live data",
+        "nl": "Live gegevens ontdekken",
+        "de": "Live-Daten entdecken"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "live-data-explore.md",
+      "group": "live-data",
+      "onboardingIndex": null,
+      "layouts": [
+        "desktop",
+        "mobile"
+      ],
+      "pages": {
+        "fr": "live-data-explore/fr.html",
+        "en": "live-data-explore/en.html",
+        "nl": "live-data-explore/nl.html",
+        "de": "live-data-explore/de.html"
+      }
+    },
+    {
+      "slug": "live-data-device-enrol",
+      "title": {
+        "fr": "Connecter un appareil",
+        "en": "Connect a device",
+        "nl": "Een apparaat koppelen",
+        "de": "Gerät verbinden"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "live-data-device-enrol.md",
+      "group": "live-data",
+      "onboardingIndex": null,
+      "layouts": [
+        "desktop",
+        "mobile"
+      ],
+      "pages": {
+        "fr": "live-data-device-enrol/fr.html",
+        "en": "live-data-device-enrol/en.html",
+        "nl": "live-data-device-enrol/nl.html",
+        "de": "live-data-device-enrol/de.html"
+      }
+    },
+    {
+      "slug": "live-data-sharing-operations",
+      "title": {
+        "fr": "Suivre le partage dans une opération",
+        "en": "Follow sharing within an operation",
+        "nl": "Het delen binnen een deelactiviteit volgen",
+        "de": "Teilen innerhalb eines Teilungsvorgangs verfolgen"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "live-data-sharing-operations.md",
+      "group": "live-data",
+      "onboardingIndex": null,
+      "layouts": [
+        "desktop",
+        "mobile"
+      ],
+      "pages": {
+        "fr": "live-data-sharing-operations/fr.html",
+        "en": "live-data-sharing-operations/en.html",
+        "nl": "live-data-sharing-operations/nl.html",
+        "de": "live-data-sharing-operations/de.html"
+      }
+    },
+    {
+      "slug": "live-data-member-view",
+      "title": {
+        "fr": "Voir la production de mon opération",
+        "en": "See my operation's production",
+        "nl": "De productie van mijn deelactiviteit bekijken",
+        "de": "Erzeugung meines Teilungsvorgangs ansehen"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "live-data-member-view.md",
+      "group": "live-data",
+      "onboardingIndex": null,
+      "layouts": [
+        "desktop",
+        "mobile"
+      ],
+      "pages": {
+        "fr": "live-data-member-view/fr.html",
+        "en": "live-data-member-view/en.html",
+        "nl": "live-data-member-view/nl.html",
+        "de": "live-data-member-view/de.html"
       }
     }
   ],
   "groups": [
     {
+      "slug": "welcome-tours",
+      "title": {
+        "fr": "Visites de bienvenue",
+        "en": "Welcome tours",
+        "nl": "Welkomstrondleidingen",
+        "de": "Willkommenstouren"
+      },
+      "description": {
+        "fr": "Une visite par rôle : à votre arrivée, puis quand vous devenez membre, gestionnaire ou administrateur.",
+        "en": "One tour per role: when you arrive, then when you become a member, a manager or an administrator.",
+        "nl": "Eén rondleiding per rol: bij uw aankomst, en daarna wanneer u lid, manager of beheerder wordt.",
+        "de": "Eine Tour pro Rolle: bei Ihrer Ankunft und dann, wenn Sie Mitglied, Manager oder Administrator werden."
+      },
+      "guides": [
+        "onboarding-welcome",
+        "onboarding-member",
+        "onboarding-manager",
+        "onboarding-admin"
+      ],
+      "pages": {
+        "fr": "welcome-tours/fr.html",
+        "en": "welcome-tours/en.html",
+        "nl": "welcome-tours/nl.html",
+        "de": "welcome-tours/de.html"
+      }
+    },
+    {
       "slug": "account",
       "title": {
         "fr": "Compte",
-        "en": "Account"
+        "en": "Account",
+        "nl": "Account",
+        "de": "Konto"
       },
       "description": {
         "fr": "Connexion et gestion du profil.",
-        "en": "Sign in and manage your profile."
+        "en": "Sign in and manage your profile.",
+        "nl": "Aanmelden en profielbeheer.",
+        "de": "Anmeldung und Profilverwaltung."
       },
       "guides": [
         "auth-login",
@@ -1180,18 +1631,24 @@
       ],
       "pages": {
         "fr": "account/fr.html",
-        "en": "account/en.html"
+        "en": "account/en.html",
+        "nl": "account/nl.html",
+        "de": "account/de.html"
       }
     },
     {
       "slug": "dashboard",
       "title": {
         "fr": "Accueil et tableau de bord",
-        "en": "Home and dashboard"
+        "en": "Home and dashboard",
+        "nl": "Startpagina en dashboard",
+        "de": "Startseite und Übersicht"
       },
       "description": {
         "fr": "Se repérer après la connexion : la page d'accueil personnelle et le tableau de bord d'une communauté.",
-        "en": "Find your way after signing in: the personal home page and a community dashboard."
+        "en": "Find your way after signing in: the personal home page and a community dashboard.",
+        "nl": "Uw weg vinden na het aanmelden: de persoonlijke startpagina en het dashboard van een gemeenschap.",
+        "de": "Sich nach der Anmeldung zurechtfinden: die persönliche Startseite und die Übersicht einer Gemeinschaft."
       },
       "guides": [
         "home-overview",
@@ -1200,18 +1657,24 @@
       ],
       "pages": {
         "fr": "dashboard/fr.html",
-        "en": "dashboard/en.html"
+        "en": "dashboard/en.html",
+        "nl": "dashboard/nl.html",
+        "de": "dashboard/de.html"
       }
     },
     {
       "slug": "community",
       "title": {
         "fr": "Communauté",
-        "en": "Community"
+        "en": "Community",
+        "nl": "Gemeenschap",
+        "de": "Gemeinschaft"
       },
       "description": {
         "fr": "Activer une communauté et inspecter les clés/compteurs partagés.",
-        "en": "Activate a community and inspect shared allocation keys and meters."
+        "en": "Activate a community and inspect shared allocation keys and meters.",
+        "nl": "Een gemeenschap activeren en de gedeelde verdeelsleutels en meters bekijken.",
+        "de": "Eine Gemeinschaft aktivieren und die gemeinsam genutzten Verteilungsschlüssel und Zähler einsehen."
       },
       "guides": [
         "community-activate",
@@ -1226,18 +1689,24 @@
       ],
       "pages": {
         "fr": "community/fr.html",
-        "en": "community/en.html"
+        "en": "community/en.html",
+        "nl": "community/nl.html",
+        "de": "community/de.html"
       }
     },
     {
       "slug": "keys",
       "title": {
         "fr": "Clés",
-        "en": "Allocation keys"
+        "en": "Allocation keys",
+        "nl": "Verdeelsleutels",
+        "de": "Verteilungsschlüssel"
       },
       "description": {
         "fr": "Créer des clés de répartition (formulaire ou assistant).",
-        "en": "Create allocation keys (form or wizard)."
+        "en": "Create allocation keys (form or wizard).",
+        "nl": "Verdeelsleutels aanmaken (formulier of wizard).",
+        "de": "Verteilungsschlüssel erstellen (Formular oder Assistent)."
       },
       "guides": [
         "key-create-gridform",
@@ -1248,18 +1717,24 @@
       ],
       "pages": {
         "fr": "keys/fr.html",
-        "en": "keys/en.html"
+        "en": "keys/en.html",
+        "nl": "keys/nl.html",
+        "de": "keys/de.html"
       }
     },
     {
       "slug": "members",
       "title": {
         "fr": "Membres",
-        "en": "Members"
+        "en": "Members",
+        "nl": "Leden",
+        "de": "Mitglieder"
       },
       "description": {
         "fr": "Gérer les membres de la communauté.",
-        "en": "Manage community members."
+        "en": "Manage community members.",
+        "nl": "De leden van de gemeenschap beheren.",
+        "de": "Die Mitglieder der Gemeinschaft verwalten."
       },
       "guides": [
         "member-create",
@@ -1271,18 +1746,24 @@
       ],
       "pages": {
         "fr": "members/fr.html",
-        "en": "members/en.html"
+        "en": "members/en.html",
+        "nl": "members/nl.html",
+        "de": "members/de.html"
       }
     },
     {
       "slug": "meters",
       "title": {
         "fr": "Compteurs",
-        "en": "Meters"
+        "en": "Meters",
+        "nl": "Meters",
+        "de": "Zähler"
       },
       "description": {
         "fr": "Créer et configurer des compteurs.",
-        "en": "Create and configure meters."
+        "en": "Create and configure meters.",
+        "nl": "Meters aanmaken en configureren.",
+        "de": "Zähler anlegen und konfigurieren."
       },
       "guides": [
         "meter-create",
@@ -1293,18 +1774,24 @@
       ],
       "pages": {
         "fr": "meters/fr.html",
-        "en": "meters/en.html"
+        "en": "meters/en.html",
+        "nl": "meters/nl.html",
+        "de": "meters/de.html"
       }
     },
     {
       "slug": "sharing",
       "title": {
         "fr": "Opérations de partage",
-        "en": "Sharing operations"
+        "en": "Sharing operations",
+        "nl": "Deeloperaties",
+        "de": "Teilungsoperationen"
       },
       "description": {
         "fr": "Créer et inspecter les opérations de partage.",
-        "en": "Create and inspect sharing operations."
+        "en": "Create and inspect sharing operations.",
+        "nl": "Deeloperaties aanmaken en inspecteren.",
+        "de": "Teilungsoperationen erstellen und im Detail ansehen."
       },
       "guides": [
         "sharing-op-create",
@@ -1315,34 +1802,46 @@
       ],
       "pages": {
         "fr": "sharing/fr.html",
-        "en": "sharing/en.html"
+        "en": "sharing/en.html",
+        "nl": "sharing/nl.html",
+        "de": "sharing/de.html"
       }
     },
     {
       "slug": "annexes",
       "title": {
         "fr": "Services annexes",
-        "en": "Annexe services"
+        "en": "Annexe services",
+        "nl": "Annexdiensten",
+        "de": "Zusatzdienste"
       },
       "description": {
         "fr": "Gérer les abonnements aux services annexes et générer des clés via l'algorithme OLAGSA.",
-        "en": "Manage annexe service subscriptions and generate allocation keys via the OLAGSA algorithm."
+        "en": "Manage annexe service subscriptions and generate allocation keys via the OLAGSA algorithm.",
+        "nl": "Abonnementen op annexdiensten beheren en verdeelsleutels genereren met het OLAGSA-algoritme.",
+        "de": "Abonnements für Zusatzdienste verwalten und Verteilungsschlüssel mit dem OLAGSA-Algorithmus generieren."
       },
       "guides": [],
       "pages": {
         "fr": "annexes/fr.html",
-        "en": "annexes/en.html"
+        "en": "annexes/en.html",
+        "nl": "annexes/nl.html",
+        "de": "annexes/de.html"
       }
     },
     {
       "slug": "annexes-subscriptions",
       "title": {
         "fr": "Abonnements",
-        "en": "Subscriptions"
+        "en": "Subscriptions",
+        "nl": "Abonnementen",
+        "de": "Abonnements"
       },
       "description": {
         "fr": "S'abonner ou se désabonner d'un service annexe.",
-        "en": "Subscribe or unsubscribe from an annexe service."
+        "en": "Subscribe or unsubscribe from an annexe service.",
+        "nl": "Zich abonneren op een annexdienst of het abonnement opzeggen.",
+        "de": "Einen Zusatzdienst abonnieren oder abbestellen."
       },
       "guides": [
         "annexes-subscribe",
@@ -1350,18 +1849,24 @@
       ],
       "pages": {
         "fr": "annexes-subscriptions/fr.html",
-        "en": "annexes-subscriptions/en.html"
+        "en": "annexes-subscriptions/en.html",
+        "nl": "annexes-subscriptions/nl.html",
+        "de": "annexes-subscriptions/de.html"
       }
     },
     {
       "slug": "key-generation",
       "title": {
         "fr": "Génération de clés",
-        "en": "Key generation"
+        "en": "Key generation",
+        "nl": "Sleutelgeneratie",
+        "de": "Schlüsselgenerierung"
       },
       "description": {
         "fr": "Générer et gérer des clés de répartition via l'algorithme OLAGSA.",
-        "en": "Generate and manage allocation keys via the OLAGSA algorithm."
+        "en": "Generate and manage allocation keys via the OLAGSA algorithm.",
+        "nl": "Verdeelsleutels genereren en beheren met het OLAGSA-algoritme.",
+        "de": "Verteilungsschlüssel mit dem OLAGSA-Algorithmus generieren und verwalten."
       },
       "guides": [
         "algorithm-generate",
@@ -1370,36 +1875,48 @@
       ],
       "pages": {
         "fr": "key-generation/fr.html",
-        "en": "key-generation/en.html"
+        "en": "key-generation/en.html",
+        "nl": "key-generation/nl.html",
+        "de": "key-generation/de.html"
       }
     },
     {
       "slug": "simulation",
       "title": {
         "fr": "Simulation",
-        "en": "Simulation"
+        "en": "Simulation",
+        "nl": "Simulatie",
+        "de": "Simulation"
       },
       "description": {
         "fr": "Tester une clé de répartition enregistrée avec des données réelles de consommation et de production.",
-        "en": "Test a saved allocation key with real consumption and production data."
+        "en": "Test a saved allocation key with real consumption and production data.",
+        "nl": "Een opgeslagen verdeelsleutel testen met echte verbruiks- en productiegegevens.",
+        "de": "Einen gespeicherten Verteilungsschlüssel mit echten Verbrauchs- und Produktionsdaten testen."
       },
       "guides": [
         "simulation-run"
       ],
       "pages": {
         "fr": "simulation/fr.html",
-        "en": "simulation/en.html"
+        "en": "simulation/en.html",
+        "nl": "simulation/nl.html",
+        "de": "simulation/de.html"
       }
     },
     {
       "slug": "news",
       "title": {
         "fr": "Actualités",
-        "en": "News"
+        "en": "News",
+        "nl": "Nieuws",
+        "de": "Aktuelles"
       },
       "description": {
         "fr": "Publier des actualités et des sondages sur le tableau de la communauté.",
-        "en": "Publish news and polls on the community board."
+        "en": "Publish news and polls on the community board.",
+        "nl": "Nieuwsberichten en peilingen publiceren op het prikbord van de gemeenschap.",
+        "de": "Beiträge und Umfragen am Schwarzen Brett der Gemeinschaft veröffentlichen."
       },
       "guides": [
         "news-create",
@@ -1407,18 +1924,24 @@
       ],
       "pages": {
         "fr": "news/fr.html",
-        "en": "news/en.html"
+        "en": "news/en.html",
+        "nl": "news/nl.html",
+        "de": "news/de.html"
       }
     },
     {
       "slug": "billing",
       "title": {
         "fr": "Facturation",
-        "en": "Billing"
+        "en": "Billing",
+        "nl": "Facturatie",
+        "de": "Abrechnung"
       },
       "description": {
         "fr": "Tarifer l'énergie partagée, générer les factures et suivre les paiements.",
-        "en": "Price shared energy, generate invoices and track payments."
+        "en": "Price shared energy, generate invoices and track payments.",
+        "nl": "Tarieven bepalen voor gedeelde energie, facturen genereren en betalingen opvolgen.",
+        "de": "Tarife für geteilte Energie festlegen, Rechnungen erstellen und Zahlungen verfolgen."
       },
       "guides": [
         "billing-tarification-pay",
@@ -1426,18 +1949,24 @@
       ],
       "pages": {
         "fr": "billing/fr.html",
-        "en": "billing/en.html"
+        "en": "billing/en.html",
+        "nl": "billing/nl.html",
+        "de": "billing/de.html"
       }
     },
     {
       "slug": "administrative-document",
       "title": {
         "fr": "Documents administratifs",
-        "en": "Administrative documents"
+        "en": "Administrative documents",
+        "nl": "Administratieve documenten",
+        "de": "Verwaltungsdokumente"
       },
       "description": {
         "fr": "Suivre les dossiers déposés auprès de la CWaPE et du GRD, leurs documents et leurs échéances.",
-        "en": "Track the dossiers filed with the CWaPE and the grid operator, their documents and their deadlines."
+        "en": "Track the dossiers filed with the CWaPE and the grid operator, their documents and their deadlines.",
+        "nl": "De dossiers opvolgen die bij de CWaPE en de netbeheerder zijn ingediend, met hun documenten en termijnen.",
+        "de": "Die bei der CWaPE und dem Netzbetreiber eingereichten Dossiers mit ihren Dokumenten und Fristen verfolgen."
       },
       "guides": [
         "admin-doc-dossier-create",
@@ -1448,7 +1977,36 @@
       ],
       "pages": {
         "fr": "administrative-document/fr.html",
-        "en": "administrative-document/en.html"
+        "en": "administrative-document/en.html",
+        "nl": "administrative-document/nl.html",
+        "de": "administrative-document/de.html"
+      }
+    },
+    {
+      "slug": "live-data",
+      "title": {
+        "fr": "Données en direct",
+        "en": "Live data",
+        "nl": "Live gegevens",
+        "de": "Live-Daten"
+      },
+      "description": {
+        "fr": "Suivre au quart d’heure ce que mesurent les appareils installés chez les membres, et gérer ces appareils.",
+        "en": "Follow, quarter-hour by quarter-hour, what the devices at members’ premises measure, and manage those devices.",
+        "nl": "Per kwartier volgen wat de bij de leden geïnstalleerde apparaten meten, en die apparaten beheren.",
+        "de": "Viertelstündlich verfolgen, was die bei den Mitgliedern installierten Geräte messen, und diese Geräte verwalten."
+      },
+      "guides": [
+        "live-data-explore",
+        "live-data-device-enrol",
+        "live-data-sharing-operations",
+        "live-data-member-view"
+      ],
+      "pages": {
+        "fr": "live-data/fr.html",
+        "en": "live-data/en.html",
+        "nl": "live-data/nl.html",
+        "de": "live-data/de.html"
       }
     }
   ],
@@ -1456,11 +2014,15 @@
     "enabled": true,
     "title": {
       "fr": "Premiers pas",
-      "en": "Getting started"
+      "en": "Getting started",
+      "nl": "Eerste stappen",
+      "de": "Erste Schritte"
     },
     "description": {
       "fr": "Le parcours recommandé pour configurer une communauté de A à Z.",
-      "en": "The recommended path to configure a community from end to end."
+      "en": "The recommended path to configure a community from end to end.",
+      "nl": "Het aanbevolen traject om een gemeenschap van A tot Z in te richten.",
+      "de": "Der empfohlene Weg, um eine Gemeinschaft von A bis Z einzurichten."
     },
     "guides": [
       "auth-login",
@@ -1477,7 +2039,9 @@
     ],
     "pages": {
       "fr": "getting-started/fr.html",
-      "en": "getting-started/en.html"
+      "en": "getting-started/en.html",
+      "nl": "getting-started/nl.html",
+      "de": "getting-started/de.html"
     }
   },
   "navigation": [
@@ -1485,7 +2049,9 @@
       "kind": "onboarding",
       "title": {
         "fr": "Premiers pas",
-        "en": "Getting started"
+        "en": "Getting started",
+        "nl": "Eerste stappen",
+        "de": "Erste Schritte"
       },
       "path": "/getting-started",
       "guides": [
@@ -1504,14 +2070,81 @@
     },
     {
       "kind": "group",
+      "slug": "welcome-tours",
+      "title": {
+        "fr": "Visites de bienvenue",
+        "en": "Welcome tours",
+        "nl": "Welkomstrondleidingen",
+        "de": "Willkommenstouren"
+      },
+      "description": {
+        "fr": "Une visite par rôle : à votre arrivée, puis quand vous devenez membre, gestionnaire ou administrateur.",
+        "en": "One tour per role: when you arrive, then when you become a member, a manager or an administrator.",
+        "nl": "Eén rondleiding per rol: bij uw aankomst, en daarna wanneer u lid, manager of beheerder wordt.",
+        "de": "Eine Tour pro Rolle: bei Ihrer Ankunft und dann, wenn Sie Mitglied, Manager oder Administrator werden."
+      },
+      "path": "/welcome-tours",
+      "children": [
+        {
+          "kind": "guide",
+          "slug": "onboarding-welcome",
+          "title": {
+            "fr": "Bienvenue sur OptimCE",
+            "en": "Welcome to OptimCE",
+            "nl": "Welkom bij OptimCE",
+            "de": "Willkommen bei OptimCE"
+          },
+          "path": "/onboarding-welcome"
+        },
+        {
+          "kind": "guide",
+          "slug": "onboarding-member",
+          "title": {
+            "fr": "Vous êtes membre",
+            "en": "You are a member",
+            "nl": "U bent lid",
+            "de": "Sie sind Mitglied"
+          },
+          "path": "/onboarding-member"
+        },
+        {
+          "kind": "guide",
+          "slug": "onboarding-manager",
+          "title": {
+            "fr": "Vous êtes gestionnaire",
+            "en": "You are a manager",
+            "nl": "U bent manager",
+            "de": "Sie sind Manager"
+          },
+          "path": "/onboarding-manager"
+        },
+        {
+          "kind": "guide",
+          "slug": "onboarding-admin",
+          "title": {
+            "fr": "Vous êtes administrateur",
+            "en": "You are an administrator",
+            "nl": "U bent beheerder",
+            "de": "Sie sind Administrator"
+          },
+          "path": "/onboarding-admin"
+        }
+      ]
+    },
+    {
+      "kind": "group",
       "slug": "account",
       "title": {
         "fr": "Compte",
-        "en": "Account"
+        "en": "Account",
+        "nl": "Account",
+        "de": "Konto"
       },
       "description": {
         "fr": "Connexion et gestion du profil.",
-        "en": "Sign in and manage your profile."
+        "en": "Sign in and manage your profile.",
+        "nl": "Aanmelden en profielbeheer.",
+        "de": "Anmeldung und Profilverwaltung."
       },
       "path": "/account",
       "children": [
@@ -1520,7 +2153,9 @@
           "slug": "auth-login",
           "title": {
             "fr": "Se connecter",
-            "en": "Sign in"
+            "en": "Sign in",
+            "nl": "Aanmelden",
+            "de": "Anmelden"
           },
           "path": "/auth-login"
         },
@@ -1529,7 +2164,9 @@
           "slug": "profile-update",
           "title": {
             "fr": "Mettre à jour son profil",
-            "en": "Update your profile"
+            "en": "Update your profile",
+            "nl": "Uw profiel bijwerken",
+            "de": "Ihr Profil aktualisieren"
           },
           "path": "/profile-update"
         },
@@ -1538,7 +2175,9 @@
           "slug": "notification-view",
           "title": {
             "fr": "Consulter ses notifications",
-            "en": "View your notifications"
+            "en": "View your notifications",
+            "nl": "Uw meldingen bekijken",
+            "de": "Ihre Benachrichtigungen ansehen"
           },
           "path": "/notification-view"
         },
@@ -1547,7 +2186,9 @@
           "slug": "notification-preferences",
           "title": {
             "fr": "Choisir ses notifications",
-            "en": "Choose your notifications"
+            "en": "Choose your notifications",
+            "nl": "Uw meldingen instellen",
+            "de": "Ihre Benachrichtigungen einstellen"
           },
           "path": "/notification-preferences"
         }
@@ -1558,11 +2199,15 @@
       "slug": "dashboard",
       "title": {
         "fr": "Accueil et tableau de bord",
-        "en": "Home and dashboard"
+        "en": "Home and dashboard",
+        "nl": "Startpagina en dashboard",
+        "de": "Startseite und Übersicht"
       },
       "description": {
         "fr": "Se repérer après la connexion : la page d'accueil personnelle et le tableau de bord d'une communauté.",
-        "en": "Find your way after signing in: the personal home page and a community dashboard."
+        "en": "Find your way after signing in: the personal home page and a community dashboard.",
+        "nl": "Uw weg vinden na het aanmelden: de persoonlijke startpagina en het dashboard van een gemeenschap.",
+        "de": "Sich nach der Anmeldung zurechtfinden: die persönliche Startseite und die Übersicht einer Gemeinschaft."
       },
       "path": "/dashboard",
       "children": [
@@ -1571,7 +2216,9 @@
           "slug": "home-overview",
           "title": {
             "fr": "Sa page d'accueil",
-            "en": "Your home page"
+            "en": "Your home page",
+            "nl": "Uw startpagina",
+            "de": "Ihre Startseite"
           },
           "path": "/home-overview"
         },
@@ -1580,7 +2227,9 @@
           "slug": "dashboard-manager-tour",
           "title": {
             "fr": "Le tableau de bord du gestionnaire",
-            "en": "The manager dashboard"
+            "en": "The manager dashboard",
+            "nl": "Het beheerdersdashboard",
+            "de": "Die Übersicht für Manager"
           },
           "path": "/dashboard-manager-tour"
         },
@@ -1589,7 +2238,9 @@
           "slug": "dashboard-member-tour",
           "title": {
             "fr": "Le tableau de bord du membre",
-            "en": "The member dashboard"
+            "en": "The member dashboard",
+            "nl": "Het ledendashboard",
+            "de": "Die Übersicht für Mitglieder"
           },
           "path": "/dashboard-member-tour"
         }
@@ -1600,11 +2251,15 @@
       "slug": "community",
       "title": {
         "fr": "Communauté",
-        "en": "Community"
+        "en": "Community",
+        "nl": "Gemeenschap",
+        "de": "Gemeinschaft"
       },
       "description": {
         "fr": "Activer une communauté et inspecter les clés/compteurs partagés.",
-        "en": "Activate a community and inspect shared allocation keys and meters."
+        "en": "Activate a community and inspect shared allocation keys and meters.",
+        "nl": "Een gemeenschap activeren en de gedeelde verdeelsleutels en meters bekijken.",
+        "de": "Eine Gemeinschaft aktivieren und die gemeinsam genutzten Verteilungsschlüssel und Zähler einsehen."
       },
       "path": "/community",
       "children": [
@@ -1613,7 +2268,9 @@
           "slug": "community-activate",
           "title": {
             "fr": "Activer une communauté",
-            "en": "Activate a community"
+            "en": "Activate a community",
+            "nl": "Een gemeenschap activeren",
+            "de": "Gemeinschaft aktivieren"
           },
           "path": "/community-activate"
         },
@@ -1622,7 +2279,9 @@
           "slug": "community-join-inspect-key",
           "title": {
             "fr": "Rejoindre une communauté — vérifier la clé",
-            "en": "Join a community — verify the allocation key"
+            "en": "Join a community — verify the allocation key",
+            "nl": "Lid worden van een gemeenschap — de verdeelsleutel controleren",
+            "de": "Einer Gemeinschaft beitreten — Verteilungsschlüssel prüfen"
           },
           "path": "/community-join-inspect-key"
         },
@@ -1631,7 +2290,9 @@
           "slug": "community-join-inspect-meter",
           "title": {
             "fr": "Rejoindre une communauté — vérifier le compteur",
-            "en": "Join a community — verify the meter"
+            "en": "Join a community — verify the meter",
+            "nl": "Lid worden van een gemeenschap — de meter controleren",
+            "de": "Einer Gemeinschaft beitreten — Zähler prüfen"
           },
           "path": "/community-join-inspect-meter"
         },
@@ -1640,7 +2301,9 @@
           "slug": "community-info-update",
           "title": {
             "fr": "Mettre à jour les infos de la communauté",
-            "en": "Update community info"
+            "en": "Update community info",
+            "nl": "De gemeenschapsinfo bijwerken",
+            "de": "Gemeinschaftsinfo aktualisieren"
           },
           "path": "/community-info-update"
         },
@@ -1649,7 +2312,9 @@
           "slug": "community-create",
           "title": {
             "fr": "Créer une communauté",
-            "en": "Create a community"
+            "en": "Create a community",
+            "nl": "Een gemeenschap aanmaken",
+            "de": "Gemeinschaft erstellen"
           },
           "path": "/community-create"
         },
@@ -1658,7 +2323,9 @@
           "slug": "community-users-manage",
           "title": {
             "fr": "Gérer les utilisateurs de la communauté",
-            "en": "Manage the community's users"
+            "en": "Manage the community's users",
+            "nl": "De gebruikers van de gemeenschap beheren",
+            "de": "Benutzer der Gemeinschaft verwalten"
           },
           "path": "/community-users-manage"
         },
@@ -1667,7 +2334,9 @@
           "slug": "community-managers-view",
           "title": {
             "fr": "Voir les gestionnaires de sa communauté",
-            "en": "See your community's managers"
+            "en": "See your community's managers",
+            "nl": "De beheerders van uw gemeenschap bekijken",
+            "de": "Manager Ihrer Gemeinschaft ansehen"
           },
           "path": "/community-managers-view"
         },
@@ -1676,7 +2345,9 @@
           "slug": "public-communities-browse",
           "title": {
             "fr": "Explorer les communautés publiques",
-            "en": "Explore the public communities directory"
+            "en": "Explore the public communities directory",
+            "nl": "Openbare gemeenschappen verkennen",
+            "de": "Öffentliche Gemeinschaften erkunden"
           },
           "path": "/public-communities-browse"
         },
@@ -1685,7 +2356,9 @@
           "slug": "audit-log-inspect",
           "title": {
             "fr": "Consulter le journal d'audit",
-            "en": "Consult the audit log"
+            "en": "Consult the audit log",
+            "nl": "Het auditlogboek raadplegen",
+            "de": "Audit-Protokoll einsehen"
           },
           "path": "/audit-log-inspect"
         }
@@ -1696,11 +2369,15 @@
       "slug": "keys",
       "title": {
         "fr": "Clés",
-        "en": "Allocation keys"
+        "en": "Allocation keys",
+        "nl": "Verdeelsleutels",
+        "de": "Verteilungsschlüssel"
       },
       "description": {
         "fr": "Créer des clés de répartition (formulaire ou assistant).",
-        "en": "Create allocation keys (form or wizard)."
+        "en": "Create allocation keys (form or wizard).",
+        "nl": "Verdeelsleutels aanmaken (formulier of wizard).",
+        "de": "Verteilungsschlüssel erstellen (Formular oder Assistent)."
       },
       "path": "/keys",
       "children": [
@@ -1709,7 +2386,9 @@
           "slug": "key-create-gridform",
           "title": {
             "fr": "Créer une clé (formulaire)",
-            "en": "Create an allocation key (form)"
+            "en": "Create an allocation key (form)",
+            "nl": "Een verdeelsleutel aanmaken (formulier)",
+            "de": "Verteilungsschlüssel erstellen (Formular)"
           },
           "path": "/key-create-gridform"
         },
@@ -1718,7 +2397,9 @@
           "slug": "key-helper-tour",
           "title": {
             "fr": "Aide contextuelle — l'icône (i)",
-            "en": "Contextual help — the (i) icon"
+            "en": "Contextual help — the (i) icon",
+            "nl": "Contextuele hulp — het (i)-pictogram",
+            "de": "Kontexthilfe — das (i)-Symbol"
           },
           "path": "/key-helper-tour"
         },
@@ -1727,7 +2408,9 @@
           "slug": "key-create-wizard",
           "title": {
             "fr": "Créer une clé (assistant)",
-            "en": "Create an allocation key (wizard)"
+            "en": "Create an allocation key (wizard)",
+            "nl": "Een verdeelsleutel aanmaken (wizard)",
+            "de": "Verteilungsschlüssel erstellen (Assistent)"
           },
           "path": "/key-create-wizard"
         },
@@ -1736,7 +2419,9 @@
           "slug": "key-update",
           "title": {
             "fr": "Modifier une clé de répartition",
-            "en": "Edit an allocation key"
+            "en": "Edit an allocation key",
+            "nl": "Een verdeelsleutel bewerken",
+            "de": "Verteilungsschlüssel bearbeiten"
           },
           "path": "/key-update"
         },
@@ -1745,7 +2430,9 @@
           "slug": "key-delete",
           "title": {
             "fr": "Supprimer une clé de répartition",
-            "en": "Delete an allocation key"
+            "en": "Delete an allocation key",
+            "nl": "Een verdeelsleutel verwijderen",
+            "de": "Verteilungsschlüssel löschen"
           },
           "path": "/key-delete"
         }
@@ -1756,11 +2443,15 @@
       "slug": "members",
       "title": {
         "fr": "Membres",
-        "en": "Members"
+        "en": "Members",
+        "nl": "Leden",
+        "de": "Mitglieder"
       },
       "description": {
         "fr": "Gérer les membres de la communauté.",
-        "en": "Manage community members."
+        "en": "Manage community members.",
+        "nl": "De leden van de gemeenschap beheren.",
+        "de": "Die Mitglieder der Gemeinschaft verwalten."
       },
       "path": "/members",
       "children": [
@@ -1769,7 +2460,9 @@
           "slug": "member-create",
           "title": {
             "fr": "Créer un membre",
-            "en": "Create a member"
+            "en": "Create a member",
+            "nl": "Een lid aanmaken",
+            "de": "Mitglied anlegen"
           },
           "path": "/member-create"
         },
@@ -1778,7 +2471,9 @@
           "slug": "member-update",
           "title": {
             "fr": "Modifier un membre",
-            "en": "Edit a member"
+            "en": "Edit a member",
+            "nl": "Een lid wijzigen",
+            "de": "Mitglied bearbeiten"
           },
           "path": "/member-update"
         },
@@ -1787,7 +2482,9 @@
           "slug": "member-create-company",
           "title": {
             "fr": "Créer un membre entreprise",
-            "en": "Create a company member"
+            "en": "Create a company member",
+            "nl": "Een bedrijf als lid aanmaken",
+            "de": "Unternehmen als Mitglied anlegen"
           },
           "path": "/member-create-company"
         },
@@ -1796,7 +2493,9 @@
           "slug": "member-status-lifecycle",
           "title": {
             "fr": "Désactiver et réactiver un membre",
-            "en": "Deactivate and reactivate a member"
+            "en": "Deactivate and reactivate a member",
+            "nl": "Een lid deactiveren en opnieuw activeren",
+            "de": "Mitglied deaktivieren und reaktivieren"
           },
           "path": "/member-status-lifecycle"
         },
@@ -1805,7 +2504,9 @@
           "slug": "member-document-upload",
           "title": {
             "fr": "Ajouter un document à un membre",
-            "en": "Upload a document to a member"
+            "en": "Upload a document to a member",
+            "nl": "Een document aan een lid toevoegen",
+            "de": "Dokument zu einem Mitglied hinzufügen"
           },
           "path": "/member-document-upload"
         },
@@ -1814,7 +2515,9 @@
           "slug": "member-self-views",
           "title": {
             "fr": "Consulter sa fiche et son compteur",
-            "en": "Consult your own record and meter"
+            "en": "Consult your own record and meter",
+            "nl": "Uw eigen fiche en meter raadplegen",
+            "de": "Ihren Datensatz und Zähler einsehen"
           },
           "path": "/member-self-views"
         }
@@ -1825,11 +2528,15 @@
       "slug": "meters",
       "title": {
         "fr": "Compteurs",
-        "en": "Meters"
+        "en": "Meters",
+        "nl": "Meters",
+        "de": "Zähler"
       },
       "description": {
         "fr": "Créer et configurer des compteurs.",
-        "en": "Create and configure meters."
+        "en": "Create and configure meters.",
+        "nl": "Meters aanmaken en configureren.",
+        "de": "Zähler anlegen und konfigurieren."
       },
       "path": "/meters",
       "children": [
@@ -1838,7 +2545,9 @@
           "slug": "meter-create",
           "title": {
             "fr": "Créer un compteur",
-            "en": "Create a meter"
+            "en": "Create a meter",
+            "nl": "Een meter aanmaken",
+            "de": "Zähler anlegen"
           },
           "path": "/meter-create"
         },
@@ -1847,7 +2556,9 @@
           "slug": "meter-address-repair",
           "title": {
             "fr": "Corriger les adresses des compteurs",
-            "en": "Fix meter addresses"
+            "en": "Fix meter addresses",
+            "nl": "De adressen van meters corrigeren",
+            "de": "Zähleradressen korrigieren"
           },
           "path": "/meter-address-repair"
         },
@@ -1856,7 +2567,9 @@
           "slug": "meter-update",
           "title": {
             "fr": "Modifier un compteur",
-            "en": "Edit a meter"
+            "en": "Edit a meter",
+            "nl": "Een meter wijzigen",
+            "de": "Zähler bearbeiten"
           },
           "path": "/meter-update"
         },
@@ -1865,7 +2578,9 @@
           "slug": "meter-data-update",
           "title": {
             "fr": "Modifier les données du compteur",
-            "en": "Update meter data"
+            "en": "Update meter data",
+            "nl": "De metergegevens wijzigen",
+            "de": "Zählerdaten bearbeiten"
           },
           "path": "/meter-data-update"
         },
@@ -1874,7 +2589,9 @@
           "slug": "meter-deactivate",
           "title": {
             "fr": "Désactiver un compteur",
-            "en": "Deactivate a meter"
+            "en": "Deactivate a meter",
+            "nl": "Een meter deactiveren",
+            "de": "Zähler deaktivieren"
           },
           "path": "/meter-deactivate"
         }
@@ -1885,11 +2602,15 @@
       "slug": "sharing",
       "title": {
         "fr": "Opérations de partage",
-        "en": "Sharing operations"
+        "en": "Sharing operations",
+        "nl": "Deeloperaties",
+        "de": "Teilungsoperationen"
       },
       "description": {
         "fr": "Créer et inspecter les opérations de partage.",
-        "en": "Create and inspect sharing operations."
+        "en": "Create and inspect sharing operations.",
+        "nl": "Deeloperaties aanmaken en inspecteren.",
+        "de": "Teilungsoperationen erstellen und im Detail ansehen."
       },
       "path": "/sharing",
       "children": [
@@ -1898,7 +2619,9 @@
           "slug": "sharing-op-create",
           "title": {
             "fr": "Créer une opération de partage",
-            "en": "Create a sharing operation"
+            "en": "Create a sharing operation",
+            "nl": "Een deeloperatie aanmaken",
+            "de": "Teilungsoperation erstellen"
           },
           "path": "/sharing-op-create"
         },
@@ -1907,7 +2630,9 @@
           "slug": "sharing-op-inspect",
           "title": {
             "fr": "Inspecter une opération de partage",
-            "en": "Inspect a sharing operation"
+            "en": "Inspect a sharing operation",
+            "nl": "Een deeloperatie inspecteren",
+            "de": "Teilungsoperation im Detail ansehen"
           },
           "path": "/sharing-op-inspect"
         },
@@ -1916,7 +2641,9 @@
           "slug": "sharing-op-set-public",
           "title": {
             "fr": "Rendre une opération de partage publique",
-            "en": "Make a sharing operation public"
+            "en": "Make a sharing operation public",
+            "nl": "Een deeloperatie openbaar maken",
+            "de": "Teilungsoperation öffentlich machen"
           },
           "path": "/sharing-op-set-public"
         },
@@ -1925,7 +2652,9 @@
           "slug": "sharing-op-add-meter",
           "title": {
             "fr": "Ajouter un compteur à une opération",
-            "en": "Add a meter to a sharing operation"
+            "en": "Add a meter to a sharing operation",
+            "nl": "Een meter aan een deeloperatie toevoegen",
+            "de": "Zähler zu einer Teilungsoperation hinzufügen"
           },
           "path": "/sharing-op-add-meter"
         },
@@ -1934,7 +2663,9 @@
           "slug": "sharing-op-update",
           "title": {
             "fr": "Modifier une opération de partage",
-            "en": "Edit a sharing operation"
+            "en": "Edit a sharing operation",
+            "nl": "Een deeloperatie bewerken",
+            "de": "Teilungsoperation bearbeiten"
           },
           "path": "/sharing-op-update"
         }
@@ -1945,11 +2676,15 @@
       "slug": "annexes",
       "title": {
         "fr": "Services annexes",
-        "en": "Annexe services"
+        "en": "Annexe services",
+        "nl": "Annexdiensten",
+        "de": "Zusatzdienste"
       },
       "description": {
         "fr": "Gérer les abonnements aux services annexes et générer des clés via l'algorithme OLAGSA.",
-        "en": "Manage annexe service subscriptions and generate allocation keys via the OLAGSA algorithm."
+        "en": "Manage annexe service subscriptions and generate allocation keys via the OLAGSA algorithm.",
+        "nl": "Abonnementen op annexdiensten beheren en verdeelsleutels genereren met het OLAGSA-algoritme.",
+        "de": "Abonnements für Zusatzdienste verwalten und Verteilungsschlüssel mit dem OLAGSA-Algorithmus generieren."
       },
       "path": "/annexes",
       "children": [
@@ -1958,11 +2693,15 @@
           "slug": "annexes-subscriptions",
           "title": {
             "fr": "Abonnements",
-            "en": "Subscriptions"
+            "en": "Subscriptions",
+            "nl": "Abonnementen",
+            "de": "Abonnements"
           },
           "description": {
             "fr": "S'abonner ou se désabonner d'un service annexe.",
-            "en": "Subscribe or unsubscribe from an annexe service."
+            "en": "Subscribe or unsubscribe from an annexe service.",
+            "nl": "Zich abonneren op een annexdienst of het abonnement opzeggen.",
+            "de": "Einen Zusatzdienst abonnieren oder abbestellen."
           },
           "path": "/annexes-subscriptions",
           "children": [
@@ -1971,7 +2710,9 @@
               "slug": "annexes-subscribe",
               "title": {
                 "fr": "S'abonner à un service annexe",
-                "en": "Subscribe to an annexe service"
+                "en": "Subscribe to an annexe service",
+                "nl": "Abonneren op een annexdienst",
+                "de": "Zusatzdienst abonnieren"
               },
               "path": "/annexes-subscribe"
             },
@@ -1980,7 +2721,9 @@
               "slug": "annexes-unsubscribe",
               "title": {
                 "fr": "Se désabonner d'un service annexe",
-                "en": "Unsubscribe from an annexe service"
+                "en": "Unsubscribe from an annexe service",
+                "nl": "Een annexdienst opzeggen",
+                "de": "Zusatzdienst abbestellen"
               },
               "path": "/annexes-unsubscribe"
             }
@@ -1991,11 +2734,15 @@
           "slug": "key-generation",
           "title": {
             "fr": "Génération de clés",
-            "en": "Key generation"
+            "en": "Key generation",
+            "nl": "Sleutelgeneratie",
+            "de": "Schlüsselgenerierung"
           },
           "description": {
             "fr": "Générer et gérer des clés de répartition via l'algorithme OLAGSA.",
-            "en": "Generate and manage allocation keys via the OLAGSA algorithm."
+            "en": "Generate and manage allocation keys via the OLAGSA algorithm.",
+            "nl": "Verdeelsleutels genereren en beheren met het OLAGSA-algoritme.",
+            "de": "Verteilungsschlüssel mit dem OLAGSA-Algorithmus generieren und verwalten."
           },
           "path": "/key-generation",
           "children": [
@@ -2004,7 +2751,9 @@
               "slug": "algorithm-generate",
               "title": {
                 "fr": "Générer des clés (OLAGSA)",
-                "en": "Generate keys (OLAGSA)"
+                "en": "Generate keys (OLAGSA)",
+                "nl": "Verdeelsleutels genereren (OLAGSA)",
+                "de": "Verteilungsschlüssel generieren (OLAGSA)"
               },
               "path": "/algorithm-generate"
             },
@@ -2013,7 +2762,9 @@
               "slug": "algorithm-delete-key",
               "title": {
                 "fr": "Supprimer une clé générée",
-                "en": "Delete a generated key"
+                "en": "Delete a generated key",
+                "nl": "Een gegenereerde sleutel verwijderen",
+                "de": "Generierten Schlüssel löschen"
               },
               "path": "/algorithm-delete-key"
             },
@@ -2022,7 +2773,9 @@
               "slug": "algorithm-delete-generation",
               "title": {
                 "fr": "Supprimer une génération",
-                "en": "Delete a generation"
+                "en": "Delete a generation",
+                "nl": "Een generatie verwijderen",
+                "de": "Generierung löschen"
               },
               "path": "/algorithm-delete-generation"
             }
@@ -2033,11 +2786,15 @@
           "slug": "simulation",
           "title": {
             "fr": "Simulation",
-            "en": "Simulation"
+            "en": "Simulation",
+            "nl": "Simulatie",
+            "de": "Simulation"
           },
           "description": {
             "fr": "Tester une clé de répartition enregistrée avec des données réelles de consommation et de production.",
-            "en": "Test a saved allocation key with real consumption and production data."
+            "en": "Test a saved allocation key with real consumption and production data.",
+            "nl": "Een opgeslagen verdeelsleutel testen met echte verbruiks- en productiegegevens.",
+            "de": "Einen gespeicherten Verteilungsschlüssel mit echten Verbrauchs- und Produktionsdaten testen."
           },
           "path": "/simulation",
           "children": [
@@ -2046,7 +2803,9 @@
               "slug": "simulation-run",
               "title": {
                 "fr": "Simuler une clé de répartition",
-                "en": "Simulate an allocation key"
+                "en": "Simulate an allocation key",
+                "nl": "Een verdeelsleutel simuleren",
+                "de": "Verteilungsschlüssel simulieren"
               },
               "path": "/simulation-run"
             }
@@ -2057,11 +2816,15 @@
           "slug": "news",
           "title": {
             "fr": "Actualités",
-            "en": "News"
+            "en": "News",
+            "nl": "Nieuws",
+            "de": "Aktuelles"
           },
           "description": {
             "fr": "Publier des actualités et des sondages sur le tableau de la communauté.",
-            "en": "Publish news and polls on the community board."
+            "en": "Publish news and polls on the community board.",
+            "nl": "Nieuwsberichten en peilingen publiceren op het prikbord van de gemeenschap.",
+            "de": "Beiträge und Umfragen am Schwarzen Brett der Gemeinschaft veröffentlichen."
           },
           "path": "/news",
           "children": [
@@ -2070,7 +2833,9 @@
               "slug": "news-create",
               "title": {
                 "fr": "Publier une actualité",
-                "en": "Publish a news"
+                "en": "Publish a news",
+                "nl": "Een nieuwsbericht publiceren",
+                "de": "Beitrag veröffentlichen"
               },
               "path": "/news-create"
             },
@@ -2079,7 +2844,9 @@
               "slug": "news-poll-create",
               "title": {
                 "fr": "Créer un sondage",
-                "en": "Create a poll"
+                "en": "Create a poll",
+                "nl": "Een peiling aanmaken",
+                "de": "Umfrage erstellen"
               },
               "path": "/news-poll-create"
             }
@@ -2090,11 +2857,15 @@
           "slug": "billing",
           "title": {
             "fr": "Facturation",
-            "en": "Billing"
+            "en": "Billing",
+            "nl": "Facturatie",
+            "de": "Abrechnung"
           },
           "description": {
             "fr": "Tarifer l'énergie partagée, générer les factures et suivre les paiements.",
-            "en": "Price shared energy, generate invoices and track payments."
+            "en": "Price shared energy, generate invoices and track payments.",
+            "nl": "Tarieven bepalen voor gedeelde energie, facturen genereren en betalingen opvolgen.",
+            "de": "Tarife für geteilte Energie festlegen, Rechnungen erstellen und Zahlungen verfolgen."
           },
           "path": "/billing",
           "children": [
@@ -2103,7 +2874,9 @@
               "slug": "billing-tarification-pay",
               "title": {
                 "fr": "Facturer une opération, du tarif à l'encaissement",
-                "en": "Bill a sharing operation, from tariff to payment"
+                "en": "Bill a sharing operation, from tariff to payment",
+                "nl": "Een deeloperatie factureren, van tarief tot betaling",
+                "de": "Teilungsoperation abrechnen, vom Tarif bis zur Zahlung"
               },
               "path": "/billing-tarification-pay"
             },
@@ -2112,7 +2885,9 @@
               "slug": "billing-member-view",
               "title": {
                 "fr": "Consulter sa facture",
-                "en": "View your own bill"
+                "en": "View your own bill",
+                "nl": "Uw factuur bekijken",
+                "de": "Ihre Rechnung einsehen"
               },
               "path": "/billing-member-view"
             }
@@ -2123,11 +2898,15 @@
           "slug": "administrative-document",
           "title": {
             "fr": "Documents administratifs",
-            "en": "Administrative documents"
+            "en": "Administrative documents",
+            "nl": "Administratieve documenten",
+            "de": "Verwaltungsdokumente"
           },
           "description": {
             "fr": "Suivre les dossiers déposés auprès de la CWaPE et du GRD, leurs documents et leurs échéances.",
-            "en": "Track the dossiers filed with the CWaPE and the grid operator, their documents and their deadlines."
+            "en": "Track the dossiers filed with the CWaPE and the grid operator, their documents and their deadlines.",
+            "nl": "De dossiers opvolgen die bij de CWaPE en de netbeheerder zijn ingediend, met hun documenten en termijnen.",
+            "de": "Die bei der CWaPE und dem Netzbetreiber eingereichten Dossiers mit ihren Dokumenten und Fristen verfolgen."
           },
           "path": "/administrative-document",
           "children": [
@@ -2136,7 +2915,9 @@
               "slug": "admin-doc-dossier-create",
               "title": {
                 "fr": "Créer un dossier administratif",
-                "en": "Create an administrative dossier"
+                "en": "Create an administrative dossier",
+                "nl": "Een administratief dossier aanmaken",
+                "de": "Verwaltungsdossier anlegen"
               },
               "path": "/admin-doc-dossier-create"
             },
@@ -2145,7 +2926,9 @@
               "slug": "admin-doc-document-generate",
               "title": {
                 "fr": "Générer un document depuis le CRM",
-                "en": "Generate a document from the CRM"
+                "en": "Generate a document from the CRM",
+                "nl": "Een document genereren vanuit het CRM",
+                "de": "Dokument aus dem CRM erzeugen"
               },
               "path": "/admin-doc-document-generate"
             },
@@ -2154,7 +2937,9 @@
               "slug": "admin-doc-upload-version",
               "title": {
                 "fr": "Joindre un document existant",
-                "en": "Attach a document you already have"
+                "en": "Attach a document you already have",
+                "nl": "Een bestaand document bijvoegen",
+                "de": "Vorhandenes Dokument anhängen"
               },
               "path": "/admin-doc-upload-version"
             },
@@ -2163,7 +2948,9 @@
               "slug": "admin-doc-submit-deadline",
               "title": {
                 "fr": "Déposer un dossier et suivre son échéance",
-                "en": "File a dossier and follow its deadline"
+                "en": "File a dossier and follow its deadline",
+                "nl": "Een dossier indienen en de termijn opvolgen",
+                "de": "Dossier einreichen und Frist verfolgen"
               },
               "path": "/admin-doc-submit-deadline"
             },
@@ -2172,9 +2959,74 @@
               "slug": "admin-doc-my-filings",
               "title": {
                 "fr": "Voir ce qui a été déclaré à son sujet",
-                "en": "See what has been filed about you"
+                "en": "See what has been filed about you",
+                "nl": "Zien wat er over u is ingediend",
+                "de": "Sehen, was über Sie eingereicht wurde"
               },
               "path": "/admin-doc-my-filings"
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "slug": "live-data",
+          "title": {
+            "fr": "Données en direct",
+            "en": "Live data",
+            "nl": "Live gegevens",
+            "de": "Live-Daten"
+          },
+          "description": {
+            "fr": "Suivre au quart d’heure ce que mesurent les appareils installés chez les membres, et gérer ces appareils.",
+            "en": "Follow, quarter-hour by quarter-hour, what the devices at members’ premises measure, and manage those devices.",
+            "nl": "Per kwartier volgen wat de bij de leden geïnstalleerde apparaten meten, en die apparaten beheren.",
+            "de": "Viertelstündlich verfolgen, was die bei den Mitgliedern installierten Geräte messen, und diese Geräte verwalten."
+          },
+          "path": "/live-data",
+          "children": [
+            {
+              "kind": "guide",
+              "slug": "live-data-explore",
+              "title": {
+                "fr": "Découvrir les données en direct",
+                "en": "Discover Live data",
+                "nl": "Live gegevens ontdekken",
+                "de": "Live-Daten entdecken"
+              },
+              "path": "/live-data-explore"
+            },
+            {
+              "kind": "guide",
+              "slug": "live-data-device-enrol",
+              "title": {
+                "fr": "Connecter un appareil",
+                "en": "Connect a device",
+                "nl": "Een apparaat koppelen",
+                "de": "Gerät verbinden"
+              },
+              "path": "/live-data-device-enrol"
+            },
+            {
+              "kind": "guide",
+              "slug": "live-data-sharing-operations",
+              "title": {
+                "fr": "Suivre le partage dans une opération",
+                "en": "Follow sharing within an operation",
+                "nl": "Het delen binnen een deelactiviteit volgen",
+                "de": "Teilen innerhalb eines Teilungsvorgangs verfolgen"
+              },
+              "path": "/live-data-sharing-operations"
+            },
+            {
+              "kind": "guide",
+              "slug": "live-data-member-view",
+              "title": {
+                "fr": "Voir la production de mon opération",
+                "en": "See my operation's production",
+                "nl": "De productie van mijn deelactiviteit bekijken",
+                "de": "Erzeugung meines Teilungsvorgangs ansehen"
+              },
+              "path": "/live-data-member-view"
             }
           ]
         }

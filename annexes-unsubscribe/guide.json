@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Se désabonner d'un service annexe",
-    "en": "Unsubscribe from an annexe service"
+    "en": "Unsubscribe from an annexe service",
+    "nl": "Een annexdienst opzeggen",
+    "de": "Zusatzdienst abbestellen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir les services annexes",
-        "en": "Open annexe services"
+        "en": "Open annexe services",
+        "nl": "Annexdiensten openen",
+        "de": "Zusatzdienste öffnen"
       },
       "text": {
         "fr": "Dans la section « Communauté » de la barre latérale, cliquez sur « Services annexes » pour gérer les modules actifs de la communauté.",
-        "en": "In the sidebar's \"Community\" section, click \"Annexe services\" to manage the community's active modules."
+        "en": "In the sidebar's \"Community\" section, click \"Annexe services\" to manage the community's active modules.",
+        "nl": "Klik in de sectie “Gemeenschap” van de zijbalk op “Annexdiensten” om de actieve modules van de gemeenschap te beheren.",
+        "de": "Klicken Sie im Bereich „Gemeinschaft“ der Seitenleiste auf „Zusatzdienste“, um die aktiven Module der Gemeinschaft zu verwalten."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 398,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 398,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Annexdiensten openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en tik vervolgens in de sectie “Gemeenschap” op “Annexdiensten”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 398,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 398,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Zusatzdienste öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und tippen Sie dann im Bereich „Gemeinschaft“ auf „Zusatzdienste“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Module actif",
-        "en": "Module active"
+        "en": "Module active",
+        "nl": "Actieve module",
+        "de": "Aktives Modul"
       },
       "text": {
         "fr": "La carte « Génération de clés de répartition » est visible avec le badge « Activé ». Le bouton de désactivation (×) est disponible en haut à droite de la carte.",
-        "en": "The \"Allocation key generation\" card is visible with the \"Activated\" badge. The deactivation button (×) is available at the top right of the card."
+        "en": "The \"Allocation key generation\" card is visible with the \"Activated\" badge. The deactivation button (×) is available at the top right of the card.",
+        "nl": "De kaart “Generatie van verdeelsleutels” is zichtbaar met de badge “Geactiveerd”. De knop om de module uit te schakelen (×) staat rechtsboven op de kaart.",
+        "de": "Die Karte „Generierung von Verteilschlüsseln“ ist mit dem Badge „Aktiviert“ sichtbar. Die Schaltfläche zum Deaktivieren (×) befindet sich oben rechts auf der Karte."
       },
       "subtitle": {
         "fr": "Services annexes",
-        "en": "Annexe services"
+        "en": "Annexe services",
+        "nl": "Annexdiensten",
+        "de": "Zusatzdienste"
       },
       "captures": {
         "fr": {
@@ -224,6 +346,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/nl/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/de/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -236,15 +410,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Désactiver le module",
-        "en": "Deactivate the module"
+        "en": "Deactivate the module",
+        "nl": "Module uitschakelen",
+        "de": "Modul deaktivieren"
       },
       "text": {
         "fr": "Cliquez sur le bouton × en haut à droite de la carte pour désactiver le module. Une confirmation vous sera demandée avant la suppression.",
-        "en": "Click the × button at the top right of the card to deactivate the module. A confirmation will be required before removal."
+        "en": "Click the × button at the top right of the card to deactivate the module. A confirmation will be required before removal.",
+        "nl": "Klik op de knop × rechtsboven op de kaart om de module uit te schakelen. Vóór de verwijdering wordt u om een bevestiging gevraagd.",
+        "de": "Klicken Sie auf die Schaltfläche × oben rechts auf der Karte, um das Modul zu deaktivieren. Vor dem Entfernen werden Sie um eine Bestätigung gebeten."
       },
       "subtitle": {
         "fr": "Désabonnement",
-        "en": "Unsubscribe"
+        "en": "Unsubscribe",
+        "nl": "Uitschrijving",
+        "de": "Abmeldung"
       },
       "captures": {
         "fr": {
@@ -342,6 +522,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 477,
+                      "y": 163,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"annexes-services-list__btn--unsubscribe-algorithm\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 321,
+                      "y": 339,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"annexes-services-list__btn--unsubscribe-algorithm\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 477,
+                      "y": 163,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"annexes-services-list__btn--unsubscribe-algorithm\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/de/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 321,
+                      "y": 339,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"annexes-services-list__btn--unsubscribe-algorithm\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -354,15 +630,21 @@
       "waitAfter": 600,
       "title": {
         "fr": "Confirmer la désactivation",
-        "en": "Confirm deactivation"
+        "en": "Confirm deactivation",
+        "nl": "Uitschakeling bevestigen",
+        "de": "Deaktivierung bestätigen"
       },
       "text": {
         "fr": "Une fenêtre de confirmation s'affiche. Cliquez sur « Valider » pour confirmer la désactivation du module et la perte d'accès pour les membres.",
-        "en": "A confirmation dialog appears. Click \"Validate\" to confirm deactivating the module and revoking member access."
+        "en": "A confirmation dialog appears. Click \"Validate\" to confirm deactivating the module and revoking member access.",
+        "nl": "Er verschijnt een bevestigingsvenster. Klik op “Bevestigen” om de uitschakeling van de module en het verlies van toegang voor de leden te bevestigen.",
+        "de": "Ein Bestätigungsfenster wird angezeigt. Klicken Sie auf „Bestätigen“, um die Deaktivierung des Moduls und den Zugriffsverlust für die Mitglieder zu bestätigen."
       },
       "subtitle": {
         "fr": "Désabonnement",
-        "en": "Unsubscribe"
+        "en": "Unsubscribe",
+        "nl": "Uitschrijving",
+        "de": "Abmeldung"
       },
       "captures": {
         "fr": {
@@ -416,6 +698,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/nl/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/nl/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/de/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/de/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -428,15 +762,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Module désactivé",
-        "en": "Module deactivated"
+        "en": "Module deactivated",
+        "nl": "Module uitgeschakeld",
+        "de": "Modul deaktiviert"
       },
       "text": {
         "fr": "La grille est à nouveau vide : le module « Génération de clés de répartition » a été désactivé et n'est plus accessible depuis la communauté.",
-        "en": "The grid is empty again — the \"Allocation key generation\" module has been deactivated and is no longer accessible from the community."
+        "en": "The grid is empty again — the \"Allocation key generation\" module has been deactivated and is no longer accessible from the community.",
+        "nl": "Het raster is weer leeg: de module “Generatie van verdeelsleutels” is uitgeschakeld en is niet langer toegankelijk vanuit de gemeenschap.",
+        "de": "Das Raster ist wieder leer: Das Modul „Generierung von Verteilschlüsseln“ wurde deaktiviert und ist in der Gemeinschaft nicht mehr zugänglich."
       },
       "subtitle": {
         "fr": "Désabonnement",
-        "en": "Unsubscribe"
+        "en": "Unsubscribe",
+        "nl": "Uitschrijving",
+        "de": "Abmeldung"
       },
       "captures": {
         "fr": {
@@ -482,6 +822,58 @@
             "frames": [
               {
                 "screenshot": "../assets/annexes-unsubscribe/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/nl/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/nl/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/de/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-unsubscribe/de/mobile/step-32.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

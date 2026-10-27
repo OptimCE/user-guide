@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Consulter ses notifications",
-    "en": "View your notifications"
+    "en": "View your notifications",
+    "nl": "Uw meldingen bekijken",
+    "de": "Ihre Benachrichtigungen ansehen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 500,
       "title": {
         "fr": "Ouvrir les notifications",
-        "en": "Open notifications"
+        "en": "Open notifications",
+        "nl": "De meldingen openen",
+        "de": "Die Benachrichtigungen öffnen"
       },
       "text": {
         "fr": "Cliquez sur la cloche dans la barre latérale pour ouvrir le panneau des notifications. La notification d'invitation à rejoindre la communauté y apparaît, avec le nom de la communauté et le moment de réception.",
-        "en": "Click the bell in the sidebar to open the notifications panel. The invitation to join the community appears here, with the community name and when it was received."
+        "en": "Click the bell in the sidebar to open the notifications panel. The invitation to join the community appears here, with the community name and when it was received.",
+        "nl": "Klik op de bel in de zijbalk om het meldingenpaneel te openen. De melding van de uitnodiging om lid te worden van de gemeenschap verschijnt daar, met de naam van de gemeenschap en het tijdstip van ontvangst.",
+        "de": "Klicken Sie auf die Glocke in der Seitenleiste, um den Benachrichtigungsbereich zu öffnen. Die Benachrichtigung über die Einladung, der Gemeinschaft beizutreten, erscheint dort mit dem Namen der Gemeinschaft und dem Zeitpunkt des Empfangs."
       },
       "subtitle": {
         "fr": "Cloche de notification",
-        "en": "Notification bell"
+        "en": "Notification bell",
+        "nl": "Meldingsbel",
+        "de": "Benachrichtigungsglocke"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Notification bell"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-view/nl/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 173,
+                      "y": 16,
+                      "width": 36,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"notification-bell__trigger\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-view/nl/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 179.140625,
+                      "y": 16,
+                      "width": 36,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"notification-bell__trigger\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De meldingen openen",
+              "text": "Tik op de bel om het meldingenpaneel te openen. De melding van de uitnodiging om lid te worden van de gemeenschap verschijnt daar.",
+              "subtitle": "Meldingsbel"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-view/de/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 173,
+                      "y": 16,
+                      "width": 36,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"notification-bell__trigger\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-view/de/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 179.140625,
+                      "y": 16,
+                      "width": 36,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"notification-bell__trigger\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Die Benachrichtigungen öffnen",
+              "text": "Tippen Sie auf die Glocke, um den Benachrichtigungsbereich zu öffnen. Die Benachrichtigung über die Einladung, der Gemeinschaft beizutreten, erscheint dort.",
+              "subtitle": "Benachrichtigungsglocke"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Consulter la page des notifications",
-        "en": "View the notifications page"
+        "en": "View the notifications page",
+        "nl": "De meldingenpagina bekijken",
+        "de": "Die Benachrichtigungsseite aufrufen"
       },
       "text": {
         "fr": "La page des notifications regroupe l'ensemble de vos notifications. On y retrouve l'invitation à rejoindre la communauté, avec le nom de la communauté et la date de réception.",
-        "en": "The notifications page gathers all of your notifications. The invitation to join the community appears here, with the community name and the date it was received."
+        "en": "The notifications page gathers all of your notifications. The invitation to join the community appears here, with the community name and the date it was received.",
+        "nl": "De meldingenpagina bundelt al uw meldingen. U vindt er de uitnodiging om lid te worden van de gemeenschap terug, met de naam van de gemeenschap en de datum van ontvangst.",
+        "de": "Die Benachrichtigungsseite fasst alle Ihre Benachrichtigungen zusammen. Dort finden Sie die Einladung, der Gemeinschaft beizutreten, mit dem Namen der Gemeinschaft und dem Empfangsdatum."
       },
       "subtitle": {
         "fr": "Toutes vos notifications",
-        "en": "All your notifications"
+        "en": "All your notifications",
+        "nl": "Al uw meldingen",
+        "de": "Alle Ihre Benachrichtigungen"
       },
       "captures": {
         "fr": {
@@ -216,6 +338,58 @@
             "frames": [
               {
                 "screenshot": "../assets/notification-view/en/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-view/nl/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-view/nl/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-view/de/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/notification-view/de/mobile/step-19.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

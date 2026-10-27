@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Consulter sa facture",
-    "en": "View your own bill"
+    "en": "View your own bill",
+    "nl": "Uw factuur bekijken",
+    "de": "Ihre Rechnung einsehen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir mes factures",
-        "en": "Open my invoices"
+        "en": "Open my invoices",
+        "nl": "Mijn facturen openen",
+        "de": "Meine Rechnungen öffnen"
       },
       "text": {
         "fr": "Dans la section « Communauté » de la barre latérale, cliquez sur « Facturation » pour accéder à vos factures. En tant que membre, vous ne voyez que les vôtres.",
-        "en": "In the sidebar's \"Community\" section, click \"Billing\" to reach your invoices. As a member you only ever see your own."
+        "en": "In the sidebar's \"Community\" section, click \"Billing\" to reach your invoices. As a member you only ever see your own.",
+        "nl": "Klik in de sectie “Gemeenschap” van de zijbalk op “Facturatie” om uw facturen te bekijken. Als lid ziet u alleen uw eigen facturen.",
+        "de": "Klicken Sie im Abschnitt „Gemeinschaft“ der Seitenleiste auf „Abrechnung“, um Ihre Rechnungen aufzurufen. Als Mitglied sehen Sie nur Ihre eigenen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-member-view/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/billing\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-member-view/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/billing\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Mijn facturen openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en tik vervolgens in de sectie “Gemeenschap” op “Facturatie”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-member-view/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/billing\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-member-view/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/billing\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Meine Rechnungen öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und tippen Sie dann im Abschnitt „Gemeinschaft“ auf „Abrechnung“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Vos factures",
-        "en": "Your invoices"
+        "en": "Your invoices",
+        "nl": "Uw facturen",
+        "de": "Ihre Rechnungen"
       },
       "text": {
         "fr": "Voici l'espace « Mes factures ». Chaque carte correspond à une de vos factures, avec son numéro, son montant, son statut et sa communication structurée. Vous ne voyez que vos propres factures.",
-        "en": "This is the \"My invoices\" space. Each card is one of your invoices, with its number, amount, status and structured communication. You only ever see your own invoices."
+        "en": "This is the \"My invoices\" space. Each card is one of your invoices, with its number, amount, status and structured communication. You only ever see your own invoices.",
+        "nl": "Dit is de ruimte “Mijn facturen”. Elke kaart stelt een van uw facturen voor, met het nummer, het bedrag, de status en de gestructureerde mededeling. U ziet alleen uw eigen facturen.",
+        "de": "Dies ist der Bereich „Meine Rechnungen“. Jede Karte steht für eine Ihrer Rechnungen, mit Nummer, Betrag, Status und strukturierter Mitteilung. Sie sehen nur Ihre eigenen Rechnungen."
       },
       "subtitle": {
         "fr": "Facturation",
-        "en": "Billing"
+        "en": "Billing",
+        "nl": "Facturatie",
+        "de": "Abrechnung"
       },
       "captures": {
         "fr": {
@@ -216,6 +338,58 @@
             "frames": [
               {
                 "screenshot": "../assets/billing-member-view/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-member-view/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-member-view/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-member-view/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-member-view/de/mobile/step-20.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

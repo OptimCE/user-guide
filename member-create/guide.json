@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Créer un membre",
-    "en": "Create a member"
+    "en": "Create a member",
+    "nl": "Een lid aanmaken",
+    "de": "Mitglied anlegen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir mes communautés",
-        "en": "Open my communities"
+        "en": "Open my communities",
+        "nl": "Mijn gemeenschappen openen",
+        "de": "Meine Gemeinschaften öffnen"
       },
       "text": {
         "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Mes communautés » pour voir la liste des communautés où vous êtes inscrit·e.",
-        "en": "In the sidebar's profile menu, click \"My communities\" to see the list of communities you belong to."
+        "en": "In the sidebar's profile menu, click \"My communities\" to see the list of communities you belong to.",
+        "nl": "Klik in het profielmenu van de zijbalk op “Mijn gemeenschappen” om de lijst te zien van de gemeenschappen waarbij u bent aangesloten.",
+        "de": "Klicken Sie im Profilmenü der Seitenleiste auf „Meine Gemeinschaften“, um die Liste der Gemeinschaften anzuzeigen, bei denen Sie angemeldet sind."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Mijn gemeenschappen openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en vervolgens op “Mijn gemeenschappen” om de lijst te zien van de gemeenschappen waarbij u bent aangesloten.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Meine Gemeinschaften öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Meine Gemeinschaften“, um die Liste der Gemeinschaften anzuzeigen, bei denen Sie angemeldet sind.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir le groupe Membres",
-        "en": "Open the Members group"
+        "en": "Open the Members group",
+        "nl": "De groep Ledenbeheer openen",
+        "de": "Gruppe Mitgliederverwaltung öffnen"
       },
       "text": {
         "fr": "Dans la section « Gestion », cliquez sur « Gestion des membres » pour révéler le sous-menu (membres, compteurs, opérations de partage).",
-        "en": "In the \"Management\" section, click \"Members\" to reveal the submenu (members, meters, sharing operations)."
+        "en": "In the \"Management\" section, click \"Members\" to reveal the submenu (members, meters, sharing operations).",
+        "nl": "Klik in de sectie “Beheer” op “Ledenbeheer” om het submenu te tonen (leden, meters, deeloperaties).",
+        "de": "Klicken Sie im Abschnitt „Verwaltung“ auf „Mitgliederverwaltung“, um das Untermenü einzublenden (Mitglieder, Zähler, Teilungsoperationen)."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -278,6 +400,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De groep Ledenbeheer openen",
+              "text": "Tik in de navigatielade, sectie “Beheer”, op “Ledenbeheer” om het submenu te tonen (leden, meters, deeloperaties).",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Gruppe Mitgliederverwaltung öffnen",
+              "text": "Tippen Sie im Navigationsmenü im Abschnitt „Verwaltung“ auf „Mitgliederverwaltung“, um das Untermenü einzublenden (Mitglieder, Zähler, Teilungsoperationen).",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -290,15 +518,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir la liste des membres",
-        "en": "Open the members list"
+        "en": "Open the members list",
+        "nl": "De ledenlijst openen",
+        "de": "Mitgliederliste öffnen"
       },
       "text": {
         "fr": "Dans le sous-menu, cliquez sur « Membres » : c'est le point de départ pour ajouter une nouvelle personne à la communauté.",
-        "en": "In the submenu, click \"Members\" — this is the starting point for adding a new person to the community."
+        "en": "In the submenu, click \"Members\" — this is the starting point for adding a new person to the community.",
+        "nl": "Klik in het submenu op “Leden beheren”: dit is het vertrekpunt om een nieuwe persoon aan de gemeenschap toe te voegen.",
+        "de": "Klicken Sie im Untermenü auf „Mitglieder verwalten“: Hier beginnen Sie, wenn Sie eine neue Person zur Gemeinschaft hinzufügen möchten."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -406,6 +640,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De ledenlijst openen",
+              "text": "Tik in het submenu op “Leden beheren”: dit is het vertrekpunt om een nieuwe persoon aan de gemeenschap toe te voegen.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Mitgliederliste öffnen",
+              "text": "Tippen Sie im Untermenü auf „Mitglieder verwalten“: Hier beginnen Sie, wenn Sie eine neue Person zur Gemeinschaft hinzufügen möchten.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -418,15 +758,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Lancer la création d'un membre",
-        "en": "Start creating a member"
+        "en": "Start creating a member",
+        "nl": "Een lid aanmaken",
+        "de": "Erstellung eines Mitglieds starten"
       },
       "text": {
         "fr": "Cliquez sur « Ajouter un membre » en haut de la liste pour ouvrir l'assistant de création en quatre étapes.",
-        "en": "Click \"Add member\" at the top of the list to open the four-step creation wizard."
+        "en": "Click \"Add member\" at the top of the list to open the four-step creation wizard.",
+        "nl": "Klik bovenaan de lijst op “Toevoegen” om de wizard te openen waarmee u een lid in vier stappen aanmaakt.",
+        "de": "Klicken Sie oben in der Liste auf „Hinzufügen“, um den Erstellungsassistenten mit vier Schritten zu öffnen."
       },
       "subtitle": {
         "fr": "Ajout d'un membre",
-        "en": "Adding a member"
+        "en": "Adding a member",
+        "nl": "Lid toevoegen",
+        "de": "Mitglied hinzufügen"
       },
       "captures": {
         "fr": {
@@ -524,6 +870,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 688.734375,
+                      "y": 52,
+                      "width": 128.859375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 683.953125,
+                      "y": 61,
+                      "width": 134.375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -536,15 +978,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Choisir le type de membre",
-        "en": "Pick the member type"
+        "en": "Pick the member type",
+        "nl": "Het type lid kiezen",
+        "de": "Mitgliedstyp wählen"
       },
       "text": {
         "fr": "Sélectionnez « Particulier » pour créer un membre individuel. L'option « Entreprise » est réservée aux personnes morales et demandera des champs différents par la suite.",
-        "en": "Select \"Individual\" to create a personal member. The \"Company\" option is reserved for legal entities and asks for different fields later."
+        "en": "Select \"Individual\" to create a personal member. The \"Company\" option is reserved for legal entities and asks for different fields later.",
+        "nl": "Selecteer “Particulier” om een individueel lid aan te maken. De optie “Bedrijf” is bedoeld voor rechtspersonen en vraagt verderop om andere velden.",
+        "de": "Wählen Sie „Privatperson“, um ein Einzelmitglied zu erstellen. Die Option „Unternehmen“ ist juristischen Personen vorbehalten und fragt im weiteren Verlauf andere Felder ab."
       },
       "subtitle": {
         "fr": "Étape 1 — Type",
-        "en": "Step 1 — Type"
+        "en": "Step 1 — Type",
+        "nl": "Stap 1 — Type",
+        "de": "Schritt 1 — Typ"
       },
       "captures": {
         "fr": {
@@ -642,6 +1090,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 464,
+                      "y": 451,
+                      "width": 248,
+                      "height": 62
+                    },
+                    "selector": "[data-testid=\"new-member-type__card--individual\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 211,
+                      "width": 332,
+                      "height": 62
+                    },
+                    "selector": "[data-testid=\"new-member-type__card--individual\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 464,
+                      "y": 451,
+                      "width": 248,
+                      "height": 62
+                    },
+                    "selector": "[data-testid=\"new-member-type__card--individual\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 211,
+                      "width": 332,
+                      "height": 62
+                    },
+                    "selector": "[data-testid=\"new-member-type__card--individual\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -654,15 +1198,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Renseigner les informations personnelles",
-        "en": "Fill in the personal information"
+        "en": "Fill in the personal information",
+        "nl": "Persoonlijke informatie invullen",
+        "de": "Persönliche Informationen eingeben"
       },
       "text": {
         "fr": "Saisissez le numéro national, le nom, le prénom, l'adresse e-mail et le numéro de téléphone du nouveau membre. Tous ces champs sont obligatoires pour valider l'étape.",
-        "en": "Enter the national number, last name, first name, email address and phone number of the new member. All these fields are required to move past this step."
+        "en": "Enter the national number, last name, first name, email address and phone number of the new member. All these fields are required to move past this step.",
+        "nl": "Vul het rijksregisternummer, de naam, de voornaam, het e-mailadres en het telefoonnummer van het nieuwe lid in. Al deze velden zijn verplicht om de stap te bevestigen.",
+        "de": "Geben Sie die Nationalregisternummer, den Nachnamen, den Vornamen, die E-Mail-Adresse und die Telefonnummer des neuen Mitglieds ein. Alle diese Felder müssen ausgefüllt sein, um den Schritt abzuschließen."
       },
       "subtitle": {
         "fr": "Étape 2 — Identité",
-        "en": "Step 2 — Identity"
+        "en": "Step 2 — Identity",
+        "nl": "Stap 2 — Identiteit",
+        "de": "Schritt 2 — Identität"
       },
       "captures": {
         "fr": {
@@ -932,6 +1482,274 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/desktop/step-35-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 362.5,
+                        "width": 826,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--nrn\"]",
+                      "value": "85.06.22-456.78"
+                    },
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 438.5,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--surname\"]",
+                      "value": "E2EUser"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 438.5,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--name\"]",
+                      "value": "Testy"
+                    },
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 514.5,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--email\"]",
+                      "value": "e2e-testy@test.com"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 514.5,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--phone\"]",
+                      "value": "0412345678"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/mobile/step-35-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 195,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--nrn\"]",
+                      "value": "85.06.22-456.78"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 271,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--surname\"]",
+                      "value": "E2EUser"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 347,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--name\"]",
+                      "value": "Testy"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 423,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--email\"]",
+                      "value": "e2e-testy@test.com"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 499,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--phone\"]",
+                      "value": "0412345678"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/desktop/step-35-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 362.5,
+                        "width": 826,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--nrn\"]",
+                      "value": "85.06.22-456.78"
+                    },
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 438.5,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--surname\"]",
+                      "value": "E2EUser"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 438.5,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--name\"]",
+                      "value": "Testy"
+                    },
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 514.5,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--email\"]",
+                      "value": "e2e-testy@test.com"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 514.5,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--phone\"]",
+                      "value": "0412345678"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/mobile/step-35-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 195,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--nrn\"]",
+                      "value": "85.06.22-456.78"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 271,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--surname\"]",
+                      "value": "E2EUser"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 347,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--name\"]",
+                      "value": "Testy"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 423,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--email\"]",
+                      "value": "e2e-testy@test.com"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 499,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-informations__input--phone\"]",
+                      "value": "0412345678"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -944,15 +1762,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Renseigner l'adresse",
-        "en": "Enter the address"
+        "en": "Enter the address",
+        "nl": "Het adres invullen",
+        "de": "Adresse eingeben"
       },
       "text": {
         "fr": "Complétez l'adresse du domicile : rue, numéro, code postal et ville. Si l'adresse de facturation est identique, cochez la case « Même adresse » à l'étape suivante pour la réutiliser automatiquement.",
-        "en": "Fill in the home address: street, number, postcode and city. If the billing address is identical, tick the \"Same address\" checkbox right after to reuse it automatically."
+        "en": "Fill in the home address: street, number, postcode and city. If the billing address is identical, tick the \"Same address\" checkbox right after to reuse it automatically.",
+        "nl": "Vul het thuisadres in: straat, nummer, postcode en gemeente. Is het factuuradres hetzelfde, vink dan in de volgende stap het vakje “Zelfde adres voor facturering” aan om het automatisch over te nemen.",
+        "de": "Vervollständigen Sie die Wohnadresse: Straße, Hausnummer, Postleitzahl und Ort. Ist die Rechnungsadresse identisch, aktivieren Sie im nächsten Schritt das Kontrollkästchen „Gleiche Adresse für die Rechnungsstellung“, um sie automatisch zu übernehmen."
       },
       "subtitle": {
         "fr": "Étape 3 — Adresse",
-        "en": "Step 3 — Address"
+        "en": "Step 3 — Address",
+        "nl": "Stap 3 — Adres",
+        "de": "Schritt 3 — Adresse"
       },
       "captures": {
         "fr": {
@@ -1182,6 +2006,234 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/desktop/step-38-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 368,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-street\"]",
+                      "value": "Rue de Test"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 368,
+                        "width": 194.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-number\"]",
+                      "value": "42"
+                    },
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 444,
+                        "width": 194.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 517.5,
+                        "y": 444,
+                        "width": 615.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/mobile/step-38-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 335,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-street\"]",
+                      "value": "Rue de Test"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 411,
+                        "width": 158,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-number\"]",
+                      "value": "42"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 487,
+                        "width": 100,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 145,
+                        "y": 487,
+                        "width": 216,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/desktop/step-38-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 368,
+                        "width": 405,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-street\"]",
+                      "value": "Rue de Test"
+                    },
+                    {
+                      "bbox": {
+                        "x": 728,
+                        "y": 368,
+                        "width": 194.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-number\"]",
+                      "value": "42"
+                    },
+                    {
+                      "bbox": {
+                        "x": 307,
+                        "y": 444,
+                        "width": 194.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 517.5,
+                        "y": 444,
+                        "width": 615.5,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/mobile/step-38-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 335,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-street\"]",
+                      "value": "Rue de Test"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 411,
+                        "width": 158,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-number\"]",
+                      "value": "42"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 487,
+                        "width": 100,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-postcode\"]",
+                      "value": "1000"
+                    },
+                    {
+                      "bbox": {
+                        "x": 145,
+                        "y": 487,
+                        "width": 216,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"new-member-address__input--home-city\"]",
+                      "value": "Bruxelles"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1194,15 +2246,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Renseigner les coordonnées bancaires",
-        "en": "Enter the banking details"
+        "en": "Enter the banking details",
+        "nl": "De bankgegevens invullen",
+        "de": "Bankdaten eingeben"
       },
       "text": {
         "fr": "Saisissez l'IBAN du membre : il est utilisé pour les remboursements liés aux opérations de partage. Le format est validé en temps réel.",
-        "en": "Enter the member's IBAN — it is used for refunds tied to sharing operations. The format is validated as you type."
+        "en": "Enter the member's IBAN — it is used for refunds tied to sharing operations. The format is validated as you type.",
+        "nl": "Vul het IBAN van het lid in: het wordt gebruikt voor terugbetalingen in verband met deeloperaties. Het formaat wordt in realtime gecontroleerd.",
+        "de": "Geben Sie die IBAN des Mitglieds ein: Sie wird für Rückerstattungen im Zusammenhang mit Teilungsoperationen verwendet. Das Format wird in Echtzeit geprüft."
       },
       "subtitle": {
         "fr": "Étape 4 — Banque",
-        "en": "Step 4 — Banking"
+        "en": "Step 4 — Banking",
+        "nl": "Stap 4 — Bank",
+        "de": "Schritt 4 — Bank"
       },
       "captures": {
         "fr": {
@@ -1304,6 +2362,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/desktop/step-42.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 307,
+                      "y": 468.5,
+                      "width": 448,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"
+                  },
+                  "value": "BE68539007547034"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/mobile/step-42.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 227,
+                      "width": 332,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"
+                  },
+                  "value": "BE68539007547034"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/desktop/step-42.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 307,
+                      "y": 468.5,
+                      "width": 448,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"
+                  },
+                  "value": "BE68539007547034"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/mobile/step-42.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 227,
+                      "width": 332,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__input--iban\"]"
+                  },
+                  "value": "BE68539007547034"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1316,15 +2474,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Valider la création",
-        "en": "Submit the new member"
+        "en": "Submit the new member",
+        "nl": "Aanmaak bevestigen",
+        "de": "Erstellung bestätigen"
       },
       "text": {
         "fr": "Cliquez sur « Valider » pour envoyer le formulaire au CRM. Le membre est créé immédiatement et associé à la communauté active.",
-        "en": "Click \"Submit\" to send the form to the CRM. The member is created immediately and attached to the active community."
+        "en": "Click \"Submit\" to send the form to the CRM. The member is created immediately and attached to the active community.",
+        "nl": "Klik op “Bevestigen” om het formulier naar het CRM te verzenden. Het lid wordt onmiddellijk aangemaakt en gekoppeld aan de actieve gemeenschap.",
+        "de": "Klicken Sie auf „Bestätigen“, um das Formular an das CRM zu senden. Das Mitglied wird sofort erstellt und der aktiven Gemeinschaft zugeordnet."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -1422,6 +2586,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/desktop/step-43.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1003,
+                      "y": 551.5,
+                      "width": 130,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/mobile/step-43.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 231,
+                      "y": 310,
+                      "width": 130,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/desktop/step-43.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1005.359375,
+                      "y": 551.5,
+                      "width": 127.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/mobile/step-43.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 233.359375,
+                      "y": 310,
+                      "width": 127.640625,
+                      "height": 66
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1434,15 +2694,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Reporter l'ajout d'un compteur",
-        "en": "Skip adding a meter"
+        "en": "Skip adding a meter",
+        "nl": "Meter later toevoegen",
+        "de": "Zähler später hinzufügen"
       },
       "text": {
         "fr": "Une fenêtre propose d'enchaîner avec la création d'un compteur. Choisissez « Non » pour terminer ici — vous pourrez toujours ajouter un compteur plus tard depuis la fiche du membre.",
-        "en": "A dialog offers to chain into meter creation. Pick \"No\" to stop here — you can always add a meter later from the member's detail page."
+        "en": "A dialog offers to chain into meter creation. Pick \"No\" to stop here — you can always add a meter later from the member's detail page.",
+        "nl": "Een venster stelt voor om meteen een meter aan te maken. Kies “Nee” om hier te stoppen — u kunt later altijd nog een meter toevoegen vanuit de ledenfiche.",
+        "de": "Ein Fenster schlägt vor, direkt mit dem Erstellen eines Zählers fortzufahren. Wählen Sie „Nein“, um hier abzuschließen — Sie können später jederzeit über die Detailseite des Mitglieds einen Zähler hinzufügen."
       },
       "subtitle": {
         "fr": "Boîte de dialogue",
-        "en": "Confirmation dialog"
+        "en": "Confirmation dialog",
+        "nl": "Dialoogvenster",
+        "de": "Dialogfenster"
       },
       "captures": {
         "fr": {
@@ -1540,6 +2806,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/desktop/step-45.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 794.328125,
+                      "y": 485,
+                      "width": 63.28125,
+                      "height": 42
+                    },
+                    "selector": "button.p-confirmdialog-reject-button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/mobile/step-45.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 249.203125,
+                      "y": 465,
+                      "width": 63.28125,
+                      "height": 42
+                    },
+                    "selector": "button.p-confirmdialog-reject-button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/desktop/step-45.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 846.078125,
+                      "y": 485,
+                      "width": 68.296875,
+                      "height": 42
+                    },
+                    "selector": "button.p-confirmdialog-reject-button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/mobile/step-45.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 244.1875,
+                      "y": 465,
+                      "width": 68.296875,
+                      "height": 42
+                    },
+                    "selector": "button.p-confirmdialog-reject-button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1552,15 +2914,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Membre créé",
-        "en": "Member created"
+        "en": "Member created",
+        "nl": "Lid aangemaakt",
+        "de": "Mitglied erstellt"
       },
       "text": {
         "fr": "La fiche du nouveau membre s'affiche : son nom complet apparaît dans l'en-tête et toutes les informations saisies sont visibles. Le membre est désormais utilisable dans les opérations de partage.",
-        "en": "The new member's detail page is now visible: their full name shows in the header and every field you entered is rendered. The member is ready to use in sharing operations."
+        "en": "The new member's detail page is now visible: their full name shows in the header and every field you entered is rendered. The member is ready to use in sharing operations.",
+        "nl": "De fiche van het nieuwe lid wordt weergegeven: de volledige naam staat in de kop en alle ingevoerde gegevens zijn zichtbaar. Het lid kan nu in deeloperaties worden gebruikt.",
+        "de": "Die Detailseite des neuen Mitglieds wird angezeigt: Der vollständige Name erscheint in der Kopfzeile, und alle eingegebenen Informationen sind sichtbar. Das Mitglied kann nun in Teilungsoperationen verwendet werden."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -1606,6 +2974,58 @@
             "frames": [
               {
                 "screenshot": "../assets/member-create/en/mobile/step-51.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/desktop/step-51.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/nl/mobile/step-51.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/desktop/step-51.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-create/de/mobile/step-51.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Créer une clé (formulaire)",
-    "en": "Create an allocation key (form)"
+    "en": "Create an allocation key (form)",
+    "nl": "Een verdeelsleutel aanmaken (formulier)",
+    "de": "Verteilungsschlüssel erstellen (Formular)"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ajouter une clé",
-        "en": "Add a key"
+        "en": "Add a key",
+        "nl": "Een sleutel toevoegen",
+        "de": "Einen Schlüssel hinzufügen"
       },
       "text": {
         "fr": "Cliquez sur « Ajouter » : OptimCE vous demande d'abord comment vous souhaitez construire la nouvelle clé de répartition.",
-        "en": "Click \"Add\" — OptimCE first asks how you want to build the new allocation key."
+        "en": "Click \"Add\" — OptimCE first asks how you want to build the new allocation key.",
+        "nl": "Klik op “Toevoegen”: OptimCE vraagt u eerst hoe u de nieuwe verdeelsleutel wilt opbouwen.",
+        "de": "Klicken Sie auf „Hinzufügen“: OptimCE fragt Sie zunächst, wie Sie den neuen Verteilungsschlüssel aufbauen möchten."
       },
       "subtitle": {
         "fr": "Création d'une clé",
-        "en": "Creating a key"
+        "en": "Creating a key",
+        "nl": "Een sleutel aanmaken",
+        "de": "Einen Schlüssel erstellen"
       },
       "captures": {
         "fr": {
@@ -140,6 +150,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1240.140625,
+                      "y": 52,
+                      "width": 128.859375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"keys-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 128.859375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"keys-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1234.625,
+                      "y": 52,
+                      "width": 134.375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"keys-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 134.375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"keys-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -152,15 +258,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Choisir le mode",
-        "en": "Choose the mode"
+        "en": "Choose the mode",
+        "nl": "De modus kiezen",
+        "de": "Den Modus wählen"
       },
       "text": {
         "fr": "Deux manières de construire une clé vous sont proposées. Choisissez « Éditeur complet » pour saisir directement les itérations et les pourcentages dans la grille.",
-        "en": "Two ways of building a key are offered. Pick \"Full editor\" to type the iterations and percentages straight into the grid."
+        "en": "Two ways of building a key are offered. Pick \"Full editor\" to type the iterations and percentages straight into the grid.",
+        "nl": "U krijgt twee manieren aangeboden om een sleutel op te bouwen. Kies “Volledige aanmaak” om de iteraties en de percentages rechtstreeks in de tabel in te voeren.",
+        "de": "Ihnen werden zwei Möglichkeiten angeboten, einen Schlüssel aufzubauen. Wählen Sie „Vollständige Erstellung“, um die Iterationen und die Prozentsätze direkt in die Tabelle einzugeben."
       },
       "subtitle": {
         "fr": "Création d'une clé",
-        "en": "Creating a key"
+        "en": "Creating a key",
+        "nl": "Een sleutel aanmaken",
+        "de": "Einen Schlüssel erstellen"
       },
       "captures": {
         "fr": {
@@ -258,6 +370,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 375,
+                      "width": 243,
+                      "height": 184
+                    },
+                    "selector": "[data-testid=\"key-creation-mode__card--full\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 149,
+                      "width": 364,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"key-creation-mode__card--full\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 375,
+                      "width": 243,
+                      "height": 184
+                    },
+                    "selector": "[data-testid=\"key-creation-mode__card--full\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 169,
+                      "width": 364,
+                      "height": 168
+                    },
+                    "selector": "[data-testid=\"key-creation-mode__card--full\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -270,15 +478,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Identifier la clé",
-        "en": "Name the key"
+        "en": "Name the key",
+        "nl": "De sleutel benoemen",
+        "de": "Den Schlüssel benennen"
       },
       "text": {
         "fr": "Donnez un nom et une description à la nouvelle clé de répartition. Ces informations apparaîtront dans la liste des clés et aident à la retrouver plus tard.",
-        "en": "Give the new allocation key a name and a description. This metadata appears in the key list and makes it easier to find later."
+        "en": "Give the new allocation key a name and a description. This metadata appears in the key list and makes it easier to find later.",
+        "nl": "Geef de nieuwe verdeelsleutel een naam en een beschrijving. Deze gegevens verschijnen in de lijst met sleutels en helpen u om hem later terug te vinden.",
+        "de": "Geben Sie dem neuen Verteilungsschlüssel einen Namen und eine Beschreibung. Diese Angaben erscheinen in der Schlüsselliste und helfen Ihnen, ihn später wiederzufinden."
       },
       "subtitle": {
         "fr": "Identification de la clé",
-        "en": "Key identification"
+        "en": "Key identification",
+        "nl": "Identificatie van de sleutel",
+        "de": "Identifikation des Schlüssels"
       },
       "captures": {
         "fr": {
@@ -428,6 +642,154 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/desktop/step-21-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 260,
+                        "width": 1237,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-update__input--name\"]",
+                      "value": "E2E key"
+                    },
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 348,
+                        "width": 1237,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-update__textarea--description\"]",
+                      "value": "A demo key during the E2E test"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/mobile/step-21-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 336,
+                        "width": 315,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-update__input--name\"]",
+                      "value": "E2E key"
+                    },
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 424,
+                        "width": 315,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-update__textarea--description\"]",
+                      "value": "A demo key during the E2E test"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/desktop/step-21-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 260,
+                        "width": 1237,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-update__input--name\"]",
+                      "value": "E2E key"
+                    },
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 348,
+                        "width": 1237,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-update__textarea--description\"]",
+                      "value": "A demo key during the E2E test"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/mobile/step-21-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 336,
+                        "width": 315,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-update__input--name\"]",
+                      "value": "E2E key"
+                    },
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 424,
+                        "width": 315,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-update__textarea--description\"]",
+                      "value": "A demo key during the E2E test"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -440,15 +802,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ajouter une itération",
-        "en": "Add an iteration"
+        "en": "Add an iteration",
+        "nl": "Een iteratie toevoegen",
+        "de": "Eine Iteration hinzufügen"
       },
       "text": {
         "fr": "Cliquez sur « Ajouter une itération » : la grille initialise un nouveau bloc avec un premier consommateur prêt à être édité.",
-        "en": "Click \"Add iteration\" — the grid spawns a fresh iteration block with an initial consumer row ready to edit."
+        "en": "Click \"Add iteration\" — the grid spawns a fresh iteration block with an initial consumer row ready to edit.",
+        "nl": "Klik op “Iteratie toevoegen”: de tabel maakt een nieuw blok aan met een eerste verbruiker die klaar is om te bewerken.",
+        "de": "Klicken Sie auf „Iteration hinzufügen“: Die Tabelle legt einen neuen Block mit einem ersten Verbraucher an, der bereit zur Bearbeitung ist."
       },
       "subtitle": {
         "fr": "Première itération",
-        "en": "First iteration"
+        "en": "First iteration",
+        "nl": "Eerste iteratie",
+        "de": "Erste Iteration"
       },
       "captures": {
         "fr": {
@@ -546,6 +914,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 555,
+                      "width": 183.25,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-iteration\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 631,
+                      "width": 183.25,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-iteration\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 555,
+                      "width": 198.296875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-iteration\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 631,
+                      "width": 198.296875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-iteration\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -558,15 +1022,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ajouter des consommateurs",
-        "en": "Add consumers"
+        "en": "Add consumers",
+        "nl": "Verbruikers toevoegen",
+        "de": "Verbraucher hinzufügen"
       },
       "text": {
         "fr": "Cliquez sur « Ajouter un consommateur » autant de fois que nécessaire pour atteindre le nombre voulu — trois lignes dans ce scénario.",
-        "en": "Click \"Add consumer\" as many times as needed to reach the desired count — three rows in this scenario."
+        "en": "Click \"Add consumer\" as many times as needed to reach the desired count — three rows in this scenario.",
+        "nl": "Klik zo vaak als nodig op “Verbruiker toevoegen” om het gewenste aantal te bereiken — drie rijen in dit scenario.",
+        "de": "Klicken Sie so oft wie nötig auf „Verbraucher hinzufügen“, um die gewünschte Anzahl zu erreichen — in diesem Szenario drei Zeilen."
       },
       "subtitle": {
         "fr": "Première itération",
-        "en": "First iteration"
+        "en": "First iteration",
+        "nl": "Eerste iteratie",
+        "de": "Erste Iteration"
       },
       "captures": {
         "fr": {
@@ -631,7 +1101,7 @@
                   "target": {
                     "bbox": {
                       "x": 535.84375,
-                      "y": 385,
+                      "y": 429,
                       "width": 168.421875,
                       "height": 42
                     },
@@ -654,8 +1124,104 @@
                   "target": {
                     "bbox": {
                       "x": 33,
-                      "y": 501,
+                      "y": 731,
                       "width": 168.421875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-consumer\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 576.9375,
+                      "y": 385,
+                      "width": 206.953125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-consumer\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 501,
+                      "width": 206.953125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-consumer\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 609.546875,
+                      "y": 429,
+                      "width": 224.5,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-consumer\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 501,
+                      "width": 224.5,
                       "height": 42
                     },
                     "selector": "[data-testid=\"key-update__btn--add-consumer\"]"
@@ -676,15 +1242,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Configurer l'itération",
-        "en": "Configure the iteration"
+        "en": "Configure the iteration",
+        "nl": "De iteratie instellen",
+        "de": "Die Iteration konfigurieren"
       },
       "text": {
         "fr": "Saisissez 70% de l'énergie pour cette itération, nommez les trois consommateurs (Cons1, Cons2, Cons3) et fixez manuellement la répartition 40/40/20.",
-        "en": "Set 70% of the energy for this iteration, name the three consumers (Cons1, Cons2, Cons3) and manually split the share 40/40/20."
+        "en": "Set 70% of the energy for this iteration, name the three consumers (Cons1, Cons2, Cons3) and manually split the share 40/40/20.",
+        "nl": "Voer 70% van de energie in voor deze iteratie, geef de drie verbruikers een naam (Cons1, Cons2, Cons3) en stel de verdeling 40/40/20 handmatig in.",
+        "de": "Geben Sie 70% der Energie für diese Iteration ein, benennen Sie die drei Verbraucher (Cons1, Cons2, Cons3) und legen Sie die Aufteilung 40/40/20 manuell fest."
       },
       "subtitle": {
         "fr": "Première itération",
-        "en": "First iteration"
+        "en": "First iteration",
+        "nl": "Eerste iteratie",
+        "de": "Erste Iteration"
       },
       "captures": {
         "fr": {
@@ -751,7 +1323,7 @@
                   "target": {
                     "bbox": {
                       "x": 131,
-                      "y": 513,
+                      "y": 557,
                       "width": 1246,
                       "height": 249
                     },
@@ -766,6 +1338,106 @@
             "frames": [
               {
                 "screenshot": "../assets/key-create-gridform/en/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 461,
+                      "width": 324,
+                      "height": 249
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "70% — Cons1 40 / Cons2 40 / Cons3 20"
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 513,
+                      "width": 1246,
+                      "height": 249
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "70% — Cons1 40 / Cons2 40 / Cons3 20"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 595,
+                      "width": 324,
+                      "height": 249
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "70% — Cons1 40 / Cons2 40 / Cons3 20"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 557,
+                      "width": 1246,
+                      "height": 249
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "70% — Cons1 40 / Cons2 40 / Cons3 20"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/mobile/step-25.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -798,15 +1470,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ajouter une itération prorata",
-        "en": "Add a prorata iteration"
+        "en": "Add a prorata iteration",
+        "nl": "Een pro-rata iteratie toevoegen",
+        "de": "Eine Pro-rata-Iteration hinzufügen"
       },
       "text": {
         "fr": "Cliquez sur « Ajouter une itération prorata » : les noms des consommateurs sont repris automatiquement et les pourcentages seront calculés selon la consommation réelle.",
-        "en": "Click \"Add prorata iteration\" — consumer names are carried over automatically and the percentages will be computed from actual consumption."
+        "en": "Click \"Add prorata iteration\" — consumer names are carried over automatically and the percentages will be computed from actual consumption.",
+        "nl": "Klik op “Pro-rata iteratie toevoegen”: de namen van de verbruikers worden automatisch overgenomen en de percentages worden berekend op basis van het werkelijke verbruik.",
+        "de": "Klicken Sie auf „Pro-rata-Iteration hinzufügen“: Die Namen der Verbraucher werden automatisch übernommen, und die Prozentsätze werden nach dem tatsächlichen Verbrauch berechnet."
       },
       "subtitle": {
         "fr": "Deuxième itération",
-        "en": "Second iteration"
+        "en": "Second iteration",
+        "nl": "Tweede iteratie",
+        "de": "Zweite Iteration"
       },
       "captures": {
         "fr": {
@@ -871,7 +1549,7 @@
                   "target": {
                     "bbox": {
                       "x": 307,
-                      "y": 385,
+                      "y": 429,
                       "width": 220.84375,
                       "height": 42
                     },
@@ -894,8 +1572,104 @@
                   "target": {
                     "bbox": {
                       "x": 33,
-                      "y": 367,
+                      "y": 233,
                       "width": 220.84375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 322.25,
+                      "y": 385,
+                      "width": 246.6875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 367,
+                      "width": 246.6875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 337.296875,
+                      "y": 429,
+                      "width": 264.25,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 367,
+                      "width": 264.25,
                       "height": 42
                     },
                     "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"
@@ -916,15 +1690,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Définir la pondération",
-        "en": "Set the weight"
+        "en": "Set the weight",
+        "nl": "De weging instellen",
+        "de": "Die Gewichtung festlegen"
       },
       "text": {
         "fr": "Saisissez 30% comme pondération de la deuxième itération afin que la somme des deux itérations atteigne 100% de l'énergie.",
-        "en": "Type 30% as the weight of the second iteration so the two iterations together reach 100% of the energy."
+        "en": "Type 30% as the weight of the second iteration so the two iterations together reach 100% of the energy.",
+        "nl": "Voer 30% in als weging van de tweede iteratie, zodat de twee iteraties samen 100% van de energie bereiken.",
+        "de": "Geben Sie 30% als Gewichtung der zweiten Iteration ein, damit die beiden Iterationen zusammen 100% der Energie ergeben."
       },
       "subtitle": {
         "fr": "Deuxième itération",
-        "en": "Second iteration"
+        "en": "Second iteration",
+        "nl": "Tweede iteratie",
+        "de": "Zweite Iteration"
       },
       "captures": {
         "fr": {
@@ -991,7 +1771,7 @@
                   "target": {
                     "bbox": {
                       "x": 131,
-                      "y": 513,
+                      "y": 549,
                       "width": 1246,
                       "height": 351
                     },
@@ -1006,6 +1786,106 @@
             "frames": [
               {
                 "screenshot": "../assets/key-create-gridform/en/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 461,
+                      "width": 324,
+                      "height": 351
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "30%"
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 513,
+                      "width": 1246,
+                      "height": 351
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "30%"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 493,
+                      "width": 324,
+                      "height": 351
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "30%"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 549,
+                      "width": 1246,
+                      "height": 351
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "30%"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/mobile/step-27.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -1038,15 +1918,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Itération recalculée",
-        "en": "Iteration recomputed"
+        "en": "Iteration recomputed",
+        "nl": "Iteratie herberekend",
+        "de": "Iteration neu berechnet"
       },
       "text": {
         "fr": "Dès que la pondération est validée (touche Entrée ou clic ailleurs), toute la deuxième itération est recalculée automatiquement selon le mode prorata.",
-        "en": "As soon as the weight is committed (Enter or clicking outside the cell), the whole second iteration is recomputed automatically in prorata mode."
+        "en": "As soon as the weight is committed (Enter or clicking outside the cell), the whole second iteration is recomputed automatically in prorata mode.",
+        "nl": "Zodra de weging bevestigd is (Enter-toets of ergens anders klikken), wordt de hele tweede iteratie automatisch herberekend volgens de pro-rata-modus.",
+        "de": "Sobald die Gewichtung bestätigt ist (Eingabetaste oder Klick an eine andere Stelle), wird die gesamte zweite Iteration automatisch im Pro-rata-Modus neu berechnet."
       },
       "subtitle": {
         "fr": "Deuxième itération",
-        "en": "Second iteration"
+        "en": "Second iteration",
+        "nl": "Tweede iteratie",
+        "de": "Zweite Iteration"
       },
       "captures": {
         "fr": {
@@ -1100,6 +1986,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1112,15 +2050,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Relire la configuration",
-        "en": "Review the configuration"
+        "en": "Review the configuration",
+        "nl": "De configuratie nakijken",
+        "de": "Die Konfiguration überprüfen"
       },
       "text": {
         "fr": "Parcourez la grille complète pour vérifier les itérations, les noms et les pourcentages avant d'enregistrer la clé.",
-        "en": "Scan the full grid to confirm the iterations, names and percentages before saving the key."
+        "en": "Scan the full grid to confirm the iterations, names and percentages before saving the key.",
+        "nl": "Overloop de volledige tabel om de iteraties, de namen en de percentages te controleren voordat u de sleutel opslaat.",
+        "de": "Gehen Sie die vollständige Tabelle durch, um die Iterationen, die Namen und die Prozentsätze zu prüfen, bevor Sie den Schlüssel speichern."
       },
       "subtitle": {
         "fr": "Validation finale",
-        "en": "Final review"
+        "en": "Final review",
+        "nl": "Laatste controle",
+        "de": "Abschließende Prüfung"
       },
       "captures": {
         "fr": {
@@ -1174,6 +2118,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1186,15 +2182,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Clé créée",
-        "en": "Key created"
+        "en": "Key created",
+        "nl": "Sleutel aangemaakt",
+        "de": "Schlüssel erstellt"
       },
       "text": {
         "fr": "La nouvelle clé « E2E key » apparaît dans la liste des clés de répartition de la communauté, prête à être utilisée par une opération de partage.",
-        "en": "The new \"E2E key\" shows up in the community's allocation keys list, ready to be used by a sharing operation."
+        "en": "The new \"E2E key\" shows up in the community's allocation keys list, ready to be used by a sharing operation.",
+        "nl": "De nieuwe sleutel “E2E key” verschijnt in de lijst met verdeelsleutels van de gemeenschap, klaar om door een deeloperatie te worden gebruikt.",
+        "de": "Der neue Schlüssel „E2E key“ erscheint in der Liste der Verteilungsschlüssel der Gemeinschaft, bereit für den Einsatz in einer Teilungsoperation."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -1240,6 +2242,58 @@
             "frames": [
               {
                 "screenshot": "../assets/key-create-gridform/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/nl/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-create-gridform/de/mobile/step-32.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

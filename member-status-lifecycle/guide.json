@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Désactiver et réactiver un membre",
-    "en": "Deactivate and reactivate a member"
+    "en": "Deactivate and reactivate a member",
+    "nl": "Een lid deactiveren en opnieuw activeren",
+    "de": "Mitglied deaktivieren und reaktivieren"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir la liste des membres",
-        "en": "Open the members list"
+        "en": "Open the members list",
+        "nl": "De ledenlijst openen",
+        "de": "Mitgliederliste öffnen"
       },
       "text": {
         "fr": "Dans la section « Gestion », ouvrez « Gestion des membres » puis cliquez sur « Membres ».",
-        "en": "In the \"Management\" section, open \"Members\" then click \"Members\"."
+        "en": "In the \"Management\" section, open \"Members\" then click \"Members\".",
+        "nl": "Open in de sectie “Beheer” het menu “Ledenbeheer” en klik vervolgens op “Leden beheren”.",
+        "de": "Öffnen Sie im Abschnitt „Verwaltung“ den Eintrag „Mitgliederverwaltung“ und klicken Sie dann auf „Mitglieder verwalten“."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/nl/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/nl/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De ledenlijst openen",
+              "text": "Open in de navigatielade “Ledenbeheer” en tik vervolgens op “Leden beheren”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/de/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/de/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 544.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Mitgliederliste öffnen",
+              "text": "Öffnen Sie im Navigationsmenü „Mitgliederverwaltung“ und tippen Sie dann auf „Mitglieder verwalten“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 1500,
       "title": {
         "fr": "Rechercher le membre",
-        "en": "Find the member"
+        "en": "Find the member",
+        "nl": "Het lid zoeken",
+        "de": "Mitglied suchen"
       },
       "text": {
         "fr": "Recherchez le membre par son nom. Nous prenons ici un membre sans compteur actif, car un membre rattaché à un compteur actif ne peut pas être désactivé.",
-        "en": "Search the member by name. Here we pick a member with no active meter, because a member tied to an active meter cannot be deactivated."
+        "en": "Search the member by name. Here we pick a member with no active meter, because a member tied to an active meter cannot be deactivated.",
+        "nl": "Zoek het lid op naam. We nemen hier een lid zonder actieve meter, want een lid dat aan een actieve meter gekoppeld is, kan niet worden gedeactiveerd.",
+        "de": "Suchen Sie das Mitglied nach seinem Namen. Wir wählen hier ein Mitglied ohne aktiven Zähler, denn ein Mitglied, das mit einem aktiven Zähler verknüpft ist, kann nicht deaktiviert werden."
       },
       "subtitle": {
         "fr": "Cycle de vie d'un membre",
-        "en": "Member lifecycle"
+        "en": "Member lifecycle",
+        "nl": "Levenscyclus van een lid",
+        "de": "Lebenszyklus eines Mitglieds"
       },
       "captures": {
         "fr": {
@@ -272,6 +394,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/nl/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 299,
+                      "y": 181,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__input--search\"] input"
+                  },
+                  "value": "E2E Solo Member"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/nl/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 181,
+                      "y": 481,
+                      "width": 176,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__input--search\"] input"
+                  },
+                  "value": "E2E Solo Member"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/de/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 299,
+                      "y": 199,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__input--search\"] input"
+                  },
+                  "value": "E2E Solo Member"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/de/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 181,
+                      "y": 457,
+                      "width": 176,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"members-list__input--search\"] input"
+                  },
+                  "value": "E2E Solo Member"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -284,15 +506,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir la fiche du membre",
-        "en": "Open the member record"
+        "en": "Open the member record",
+        "nl": "De ledenfiche openen",
+        "de": "Detailseite des Mitglieds öffnen"
       },
       "text": {
         "fr": "Cliquez sur la ligne du membre dans le tableau pour ouvrir sa fiche.",
-        "en": "Click the member's row in the table to open their record."
+        "en": "Click the member's row in the table to open their record.",
+        "nl": "Klik op de rij van het lid in de tabel om de fiche te openen.",
+        "de": "Klicken Sie in der Tabelle auf die Zeile des Mitglieds, um seine Detailseite zu öffnen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -400,6 +628,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 305,
+                      "width": 1280,
+                      "height": 51.65625
+                    },
+                    "selector": "[data-testid=\"members-list__row--desktop--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/nl/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 719,
+                      "width": 358,
+                      "height": 124.65625
+                    },
+                    "selector": "[data-testid=\"members-list__card--mobile--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De ledenfiche openen",
+              "text": "Tik op de kaart van het lid om de fiche te openen.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 323,
+                      "width": 1280,
+                      "height": 51.65625
+                    },
+                    "selector": "[data-testid=\"members-list__row--desktop--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/de/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 719,
+                      "width": 358,
+                      "height": 124.65625
+                    },
+                    "selector": "[data-testid=\"members-list__card--mobile--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Detailseite des Mitglieds öffnen",
+              "text": "Tippen Sie auf die Karte des Mitglieds, um seine Detailseite zu öffnen.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -412,15 +746,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Fiche du membre actif",
-        "en": "Active member record"
+        "en": "Active member record",
+        "nl": "Fiche van het actieve lid",
+        "de": "Detailseite des aktiven Mitglieds"
       },
       "text": {
         "fr": "Le membre est actif : sa pastille de statut est verte et un onglet « Compteur » est disponible. Les boutons d'action permettent de le désactiver ou de le mettre en attente.",
-        "en": "The member is active: its status badge is green and a \"Meter\" tab is available. The action buttons let you deactivate it or put it on hold."
+        "en": "The member is active: its status badge is green and a \"Meter\" tab is available. The action buttons let you deactivate it or put it on hold.",
+        "nl": "Het lid is actief: het statuslabel is groen en er is een tabblad “Meters” beschikbaar. Met de actieknoppen kunt u het lid deactiveren of in behandeling plaatsen.",
+        "de": "Das Mitglied ist aktiv: Sein Status-Badge ist grün, und eine Registerkarte „Zähler“ ist verfügbar. Mit den Aktionsschaltflächen können Sie es deaktivieren oder in die Warteliste setzen."
       },
       "subtitle": {
         "fr": "Cycle de vie d'un membre",
-        "en": "Member lifecycle"
+        "en": "Member lifecycle",
+        "nl": "Levenscyclus van een lid",
+        "de": "Lebenszyklus eines Mitglieds"
       },
       "captures": {
         "fr": {
@@ -474,6 +814,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/de/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -486,15 +878,21 @@
       "waitAfter": 1500,
       "title": {
         "fr": "Désactiver le membre",
-        "en": "Deactivate the member"
+        "en": "Deactivate the member",
+        "nl": "Het lid deactiveren",
+        "de": "Mitglied deaktivieren"
       },
       "text": {
         "fr": "Cliquez sur « Désactiver ». Le changement de statut est immédiat, sans confirmation supplémentaire.",
-        "en": "Click \"Deactivate\". The status change is immediate, with no extra confirmation."
+        "en": "Click \"Deactivate\". The status change is immediate, with no extra confirmation.",
+        "nl": "Klik op “Deactiveren”. De statuswijziging gebeurt onmiddellijk, zonder bijkomende bevestiging.",
+        "de": "Klicken Sie auf „Deaktivieren“. Die Statusänderung erfolgt sofort, ohne zusätzliche Bestätigung."
       },
       "subtitle": {
         "fr": "Cycle de vie d'un membre",
-        "en": "Member lifecycle"
+        "en": "Member lifecycle",
+        "nl": "Levenscyclus van een lid",
+        "de": "Lebenszyklus eines Mitglieds"
       },
       "captures": {
         "fr": {
@@ -592,6 +990,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/nl/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 879.71875,
+                      "y": 88,
+                      "width": 135.921875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--deactivate\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/nl/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 308,
+                      "width": 135.921875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--deactivate\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/de/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 864.546875,
+                      "y": 88,
+                      "width": 141,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--deactivate\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/de/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 308,
+                      "width": 141,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--deactivate\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -604,15 +1098,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Membre désactivé",
-        "en": "Member deactivated"
+        "en": "Member deactivated",
+        "nl": "Lid gedeactiveerd",
+        "de": "Mitglied deaktiviert"
       },
       "text": {
         "fr": "La pastille passe à « Inactif » et l'onglet « Compteur » disparaît : un membre inactif ne peut plus être rattaché à un compteur.",
-        "en": "The badge switches to \"Inactive\" and the \"Meter\" tab disappears: an inactive member can no longer be tied to a meter."
+        "en": "The badge switches to \"Inactive\" and the \"Meter\" tab disappears: an inactive member can no longer be tied to a meter.",
+        "nl": "Het label verandert in “Gedeactiveerd” en het tabblad “Meters” verdwijnt: een inactief lid kan niet langer aan een meter worden gekoppeld.",
+        "de": "Das Badge wechselt zu „Deaktiviert“, und die Registerkarte „Zähler“ verschwindet: Ein inaktives Mitglied kann nicht mehr mit einem Zähler verknüpft werden."
       },
       "subtitle": {
         "fr": "Cycle de vie d'un membre",
-        "en": "Member lifecycle"
+        "en": "Member lifecycle",
+        "nl": "Levenscyclus van een lid",
+        "de": "Lebenszyklus eines Mitglieds"
       },
       "captures": {
         "fr": {
@@ -666,6 +1166,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/nl/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/nl/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/de/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/de/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -678,15 +1230,21 @@
       "waitAfter": 1500,
       "title": {
         "fr": "Réactiver le membre",
-        "en": "Reactivate the member"
+        "en": "Reactivate the member",
+        "nl": "Het lid opnieuw activeren",
+        "de": "Mitglied reaktivieren"
       },
       "text": {
         "fr": "Le bouton « Activer » réactive le membre. Vous pouvez ainsi gérer tout le cycle de vie d'un membre depuis sa fiche.",
-        "en": "The \"Activate\" button reactivates the member. You can manage a member's whole lifecycle from its record."
+        "en": "The \"Activate\" button reactivates the member. You can manage a member's whole lifecycle from its record.",
+        "nl": "De knop “Activeren” activeert het lid opnieuw. Zo beheert u de volledige levenscyclus van een lid vanuit de ledenfiche.",
+        "de": "Die Schaltfläche „Aktivieren“ reaktiviert das Mitglied. So verwalten Sie den gesamten Lebenszyklus eines Mitglieds über seine Detailseite."
       },
       "subtitle": {
         "fr": "Cycle de vie d'un membre",
-        "en": "Member lifecycle"
+        "en": "Member lifecycle",
+        "nl": "Levenscyclus van een lid",
+        "de": "Lebenszyklus eines Mitglieds"
       },
       "captures": {
         "fr": {
@@ -784,6 +1342,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/nl/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 897.296875,
+                      "y": 88,
+                      "width": 118.34375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--activate\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/nl/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 308,
+                      "width": 118.34375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--activate\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/de/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 882.140625,
+                      "y": 88,
+                      "width": 123.40625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--activate\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/de/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 308,
+                      "width": 123.40625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--activate\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -796,15 +1450,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Membre réactivé",
-        "en": "Member reactivated"
+        "en": "Member reactivated",
+        "nl": "Lid opnieuw geactiveerd",
+        "de": "Mitglied reaktiviert"
       },
       "text": {
         "fr": "La pastille repasse à « Actif » et l'onglet « Compteur » réapparaît. Le membre est de nouveau pleinement opérationnel.",
-        "en": "The badge returns to \"Active\" and the \"Meter\" tab reappears. The member is fully operational again."
+        "en": "The badge returns to \"Active\" and the \"Meter\" tab reappears. The member is fully operational again.",
+        "nl": "Het label staat weer op “Geactiveerd” en het tabblad “Meters” verschijnt opnieuw. Het lid is opnieuw volledig operationeel.",
+        "de": "Das Badge wechselt zurück zu „Aktiviert“, und die Registerkarte „Zähler“ erscheint wieder. Das Mitglied ist wieder voll einsatzfähig."
       },
       "subtitle": {
         "fr": "Cycle de vie d'un membre",
-        "en": "Member lifecycle"
+        "en": "Member lifecycle",
+        "nl": "Levenscyclus van een lid",
+        "de": "Lebenszyklus eines Mitglieds"
       },
       "captures": {
         "fr": {
@@ -850,6 +1510,58 @@
             "frames": [
               {
                 "screenshot": "../assets/member-status-lifecycle/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/nl/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/nl/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/de/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-status-lifecycle/de/mobile/step-32.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

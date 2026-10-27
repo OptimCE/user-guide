@@ -1,0 +1,625 @@
+{
+  "version": "1.1",
+  "slug": "live-data-member-view",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Voir la production de mon opération",
+    "en": "See my operation's production",
+    "nl": "De productie van mijn deelactiviteit bekijken",
+    "de": "Erzeugung meines Teilungsvorgangs ansehen"
+  },
+  "locales": [
+    "fr",
+    "en",
+    "nl",
+    "de"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les données en direct",
+        "en": "Open Live data",
+        "nl": "Live gegevens openen",
+        "de": "Live-Daten öffnen"
+      },
+      "text": {
+        "fr": "Dans la barre latérale, cliquez sur « Données en direct ». Le lien apparaît dès que votre communauté est abonnée au module.",
+        "en": "In the sidebar, click \"Live data\". The link appears as soon as your community is subscribed to the module.",
+        "nl": "Klik in de zijbalk op “Live gegevens”. De link verschijnt zodra uw gemeenschap op de module geabonneerd is.",
+        "de": "Klicken Sie in der Seitenleiste auf „Live-Daten“. Der Link erscheint, sobald Ihre Gemeinschaft das Modul abonniert hat."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/fr/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 474,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/live-data\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/fr/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 474,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/live-data\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir les données en direct",
+              "text": "Touchez l'icône du menu pour ouvrir le tiroir, puis « Données en direct ». Le lien apparaît dès que votre communauté est abonnée au module.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/en/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 474,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/live-data\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/en/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 474,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/live-data\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open Live data",
+              "text": "Tap the menu icon to open the drawer, then \"Live data\". The link appears as soon as your community is subscribed to the module.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/nl/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 474,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/live-data\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/nl/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 474,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/live-data\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Live gegevens openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en vervolgens op “Live gegevens”. De link verschijnt zodra uw gemeenschap op de module geabonneerd is.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/de/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 474,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/live-data\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/de/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 474,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/live-data\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Live-Daten öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Live-Daten“. Der Link erscheint, sobald Ihre Gemeinschaft das Modul abonniert hat.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "La production de votre opération de partage",
+        "en": "The production of your sharing operation",
+        "nl": "De productie van uw deeloperatie",
+        "de": "Die Erzeugung Ihrer Teilungsoperation"
+      },
+      "text": {
+        "fr": "La page montre la production de l'opération de partage à laquelle participe votre compteur, quart d'heure par quart d'heure. Ces chiffres sont indicatifs : les données du gestionnaire de réseau restent la référence pour la répartition et la facturation.",
+        "en": "The page shows the production of the sharing operation your meter takes part in, quarter-hour by quarter-hour. These figures are indicative: the grid operator's data remains the reference for allocation and invoicing.",
+        "nl": "De pagina toont de productie van de deeloperatie waaraan uw meter deelneemt, kwartier per kwartier. Deze cijfers zijn indicatief: de gegevens van de netbeheerder blijven de referentie voor de verdeling en de facturatie.",
+        "de": "Die Seite zeigt die Erzeugung der Teilungsoperation, an der Ihr Zähler teilnimmt, Viertelstunde für Viertelstunde. Diese Werte sind indikativ: Die Daten des Netzbetreibers bleiben maßgeblich für die Verteilung und die Abrechnung."
+      },
+      "subtitle": {
+        "fr": "Données en direct",
+        "en": "Live data",
+        "nl": "Live gegevens",
+        "de": "Live-Daten"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/fr/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/fr/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/en/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/en/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/nl/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/nl/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/de/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/de/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Choisir la période",
+        "en": "Choose the period",
+        "nl": "Periode kiezen",
+        "de": "Zeitraum wählen"
+      },
+      "text": {
+        "fr": "Affichez les dernières 24 heures (par quart d'heure), 7 jours (par heure) ou 30 jours (par jour).",
+        "en": "Show the last 24 hours (per quarter-hour), 7 days (per hour) or 30 days (per day).",
+        "nl": "Toon de laatste 24 uur (per kwartier), 7 dagen (per uur) of 30 dagen (per dag).",
+        "de": "Zeigen Sie die letzten 24 Stunden (pro Viertelstunde), 7 Tage (pro Stunde) oder 30 Tage (pro Tag) an."
+      },
+      "subtitle": {
+        "fr": "Données en direct",
+        "en": "Live data",
+        "nl": "Live gegevens",
+        "de": "Live-Daten"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/fr/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1218.84375,
+                      "y": 256.84375,
+                      "width": 91.15625,
+                      "height": 40.84375
+                    },
+                    "selector": "[data-testid=\"live-member-view__window\"] .p-togglebutton"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/fr/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 222.796875,
+                      "y": 571.375,
+                      "width": 91.15625,
+                      "height": 40.84375
+                    },
+                    "selector": "[data-testid=\"live-member-view__window\"] .p-togglebutton"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/en/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1221.8125,
+                      "y": 256.84375,
+                      "width": 88.1875,
+                      "height": 40.84375
+                    },
+                    "selector": "[data-testid=\"live-member-view__window\"] .p-togglebutton"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/en/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 212.625,
+                      "y": 528.53125,
+                      "width": 88.1875,
+                      "height": 40.84375
+                    },
+                    "selector": "[data-testid=\"live-member-view__window\"] .p-togglebutton"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1209.359375,
+                      "y": 256.84375,
+                      "width": 100.640625,
+                      "height": 40.84375
+                    },
+                    "selector": "[data-testid=\"live-member-view__window\"] .p-togglebutton"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 208.546875,
+                      "y": 548.53125,
+                      "width": 100.640625,
+                      "height": 40.84375
+                    },
+                    "selector": "[data-testid=\"live-member-view__window\"] .p-togglebutton"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1221.0625,
+                      "y": 256.84375,
+                      "width": 88.9375,
+                      "height": 40.84375
+                    },
+                    "selector": "[data-testid=\"live-member-view__window\"] .p-togglebutton"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-member-view/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 232.4375,
+                      "y": 571.375,
+                      "width": 88.9375,
+                      "height": 40.84375
+                    },
+                    "selector": "[data-testid=\"live-member-view__window\"] .p-togglebutton"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

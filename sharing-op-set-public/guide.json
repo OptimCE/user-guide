@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Rendre une opération de partage publique",
-    "en": "Make a sharing operation public"
+    "en": "Make a sharing operation public",
+    "nl": "Een deeloperatie openbaar maken",
+    "de": "Teilungsoperation öffentlich machen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 500,
       "title": {
         "fr": "Ouvrir le groupe Membres",
-        "en": "Open the Members group"
+        "en": "Open the Members group",
+        "nl": "Groep Ledenbeheer openen",
+        "de": "Gruppe Mitgliederverwaltung öffnen"
       },
       "text": {
         "fr": "Dans la section « Gestion » de la barre latérale, cliquez sur « Gestion des membres » pour révéler le sous-menu contenant notamment les opérations de partage.",
-        "en": "In the sidebar's \"Management\" section, click the Members group to reveal the submenu that includes sharing operations."
+        "en": "In the sidebar's \"Management\" section, click the Members group to reveal the submenu that includes sharing operations.",
+        "nl": "Klik in de sectie “Beheer” van de zijbalk op “Ledenbeheer” om het submenu te tonen dat onder meer de deeloperaties bevat.",
+        "de": "Klicken Sie im Abschnitt „Verwaltung“ der Seitenleiste auf „Mitgliederverwaltung“, um das Untermenü einzublenden, das unter anderem die Teilungsoperationen enthält."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Groep Ledenbeheer openen",
+              "text": "Tik in de navigatielade, in de sectie “Beheer”, op “Ledenbeheer” om het submenu met de deeloperaties te tonen.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Gruppe Mitgliederverwaltung öffnen",
+              "text": "Tippen Sie im Navigationsmenü im Abschnitt „Verwaltung“ auf „Mitgliederverwaltung“, um das Untermenü mit den Teilungsoperationen einzublenden.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Accéder aux opérations de partage",
-        "en": "Access sharing operations"
+        "en": "Access sharing operations",
+        "nl": "Naar de deeloperaties gaan",
+        "de": "Teilungsoperationen aufrufen"
       },
       "text": {
         "fr": "Dans le sous-menu, cliquez sur « Opérations de partage » pour accéder à la liste des opérations de partage d'énergie de votre communauté.",
-        "en": "In the submenu, click \"Sharing operations\" to access the list of energy sharing operations for your community."
+        "en": "In the submenu, click \"Sharing operations\" to access the list of energy sharing operations for your community.",
+        "nl": "Klik in het submenu op “Deeloperaties” om de lijst met de energiedeeloperaties van uw gemeenschap te openen.",
+        "de": "Klicken Sie im Untermenü auf „Teilungsoperationen“, um die Liste der Energieteilungsoperationen Ihrer Gemeinschaft aufzurufen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -278,6 +400,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 613.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--2\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 613.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--2\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Naar de deeloperaties gaan",
+              "text": "Tik in het submenu op “Deeloperaties” om de lijst met de energiedeeloperaties van uw gemeenschap te openen.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 613.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--2\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 613.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--2\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Teilungsoperationen aufrufen",
+              "text": "Tippen Sie im Untermenü auf „Teilungsoperationen“, um die Liste der Energieteilungsoperationen Ihrer Gemeinschaft aufzurufen.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -290,15 +518,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ajouter une opération",
-        "en": "Add an operation"
+        "en": "Add an operation",
+        "nl": "Een operatie toevoegen",
+        "de": "Eine Operation hinzufügen"
       },
       "text": {
         "fr": "Cliquez sur « Ajouter » pour ouvrir le dialogue de création d'une nouvelle opération de partage. Par défaut, toute nouvelle opération est créée en mode privé : elle n'est pas encore visible dans l'annuaire public.",
-        "en": "Click \"Add\" to open the dialog for creating a new sharing operation. By default, every new operation is created in private mode: it is not yet visible in the public directory."
+        "en": "Click \"Add\" to open the dialog for creating a new sharing operation. By default, every new operation is created in private mode: it is not yet visible in the public directory.",
+        "nl": "Klik op “Toevoegen” om het venster voor het aanmaken van een nieuwe deeloperatie te openen. Standaard wordt elke nieuwe operatie in privémodus aangemaakt: ze is nog niet zichtbaar in de openbare gids.",
+        "de": "Klicken Sie auf „Hinzufügen“, um den Dialog zum Erstellen einer neuen Teilungsoperation zu öffnen. Standardmäßig wird jede neue Operation im privaten Modus erstellt: Sie ist im öffentlichen Verzeichnis noch nicht sichtbar."
       },
       "subtitle": {
         "fr": "Création d'une opération",
-        "en": "Creating an operation"
+        "en": "Creating an operation",
+        "nl": "Een operatie aanmaken",
+        "de": "Eine Operation erstellen"
       },
       "captures": {
         "fr": {
@@ -396,6 +630,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1240.140625,
+                      "y": 52,
+                      "width": 128.859375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"operations-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 128.859375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"operations-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1234.625,
+                      "y": 52,
+                      "width": 134.375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"operations-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 134.375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"operations-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -408,15 +738,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Nommer l'opération",
-        "en": "Name the operation"
+        "en": "Name the operation",
+        "nl": "De operatie een naam geven",
+        "de": "Die Operation benennen"
       },
       "text": {
         "fr": "Saisissez un nom pour la nouvelle opération. Ce nom sera visible dans la liste de gestion et dans l'annuaire public une fois l'opération rendue publique.",
-        "en": "Type a name for the new operation. This name will appear in the management list and in the public directory once the operation is made public."
+        "en": "Type a name for the new operation. This name will appear in the management list and in the public directory once the operation is made public.",
+        "nl": "Voer een naam in voor de nieuwe operatie. Deze naam is zichtbaar in de beheerlijst en, zodra de operatie openbaar is gemaakt, in de openbare gids.",
+        "de": "Geben Sie einen Namen für die neue Operation ein. Dieser Name ist in der Verwaltungsliste sichtbar und, sobald die Operation öffentlich gemacht wurde, im öffentlichen Verzeichnis."
       },
       "subtitle": {
         "fr": "Identification",
-        "en": "Identification"
+        "en": "Identification",
+        "nl": "Identificatie",
+        "de": "Identifikation"
       },
       "captures": {
         "fr": {
@@ -518,6 +854,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 416.640625,
+                      "y": 344,
+                      "width": 606.703125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-creation__input--name\"]"
+                  },
+                  "value": "E2E Energy Sharing"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 65.78125,
+                      "y": 248,
+                      "width": 258.4375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-creation__input--name\"]"
+                  },
+                  "value": "E2E Energy Sharing"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 360.15625,
+                      "y": 344,
+                      "width": 719.671875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-creation__input--name\"]"
+                  },
+                  "value": "E2E Energy Sharing"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 39.6875,
+                      "y": 248,
+                      "width": 310.609375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-creation__input--name\"]"
+                  },
+                  "value": "E2E Energy Sharing"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -530,15 +966,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Sélectionner le type Local",
-        "en": "Select the Local type"
+        "en": "Select the Local type",
+        "nl": "Type “Binnen een gebouw” selecteren",
+        "de": "Typ „Innerhalb eines Gebäudes“ auswählen"
       },
       "text": {
         "fr": "Sélectionnez le type « Local » pour une opération de partage au sein d'un même bâtiment. Ce type, comme les types CER et CEC, peut être rendu public pour apparaître dans l'annuaire des communautés d'énergie.",
-        "en": "Select the \"Local\" type for sharing within a single building. This type, like CER and CEC, can be made public to appear in the energy community directory."
+        "en": "Select the \"Local\" type for sharing within a single building. This type, like CER and CEC, can be made public to appear in the energy community directory.",
+        "nl": "Selecteer het type “Binnen een gebouw” voor een deeloperatie binnen eenzelfde gebouw. Net als de types CER en CEC kan dit type openbaar worden gemaakt om in de gids van de energiegemeenschappen te verschijnen.",
+        "de": "Wählen Sie den Typ „Innerhalb eines Gebäudes“ für eine Teilungsoperation in ein und demselben Gebäude. Wie die Typen CER und CEC kann dieser Typ öffentlich gemacht werden, um im Verzeichnis der Energiegemeinschaften zu erscheinen."
       },
       "subtitle": {
         "fr": "Type de partage",
-        "en": "Sharing type"
+        "en": "Sharing type",
+        "nl": "Type deling",
+        "de": "Teilungstyp"
       },
       "captures": {
         "fr": {
@@ -636,6 +1078,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 416.640625,
+                      "y": 428,
+                      "width": 194.234375,
+                      "height": 56
+                    },
+                    "selector": "[data-testid=\"op-creation__card--type--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 65.78125,
+                      "y": 332,
+                      "width": 258.4375,
+                      "height": 56
+                    },
+                    "selector": "[data-testid=\"op-creation__card--type--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 360.15625,
+                      "y": 428,
+                      "width": 231.890625,
+                      "height": 56
+                    },
+                    "selector": "[data-testid=\"op-creation__card--type--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 39.6875,
+                      "y": 332,
+                      "width": 310.609375,
+                      "height": 56
+                    },
+                    "selector": "[data-testid=\"op-creation__card--type--0\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -648,15 +1186,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Saisir la commune",
-        "en": "Type the municipality"
+        "en": "Type the municipality",
+        "nl": "Gemeente invoeren",
+        "de": "Gemeinde eingeben"
       },
       "text": {
         "fr": "Tapez les premières lettres d'une commune pour voir les suggestions. La commune rattachée à l'opération sera affichée dans l'annuaire public pour aider les citoyens à trouver une initiative proche de chez eux.",
-        "en": "Type the first letters of a municipality to see suggestions. The municipality linked to the operation will be shown in the public directory to help citizens find an initiative near them."
+        "en": "Type the first letters of a municipality to see suggestions. The municipality linked to the operation will be shown in the public directory to help citizens find an initiative near them.",
+        "nl": "Typ de eerste letters van een gemeente om suggesties te zien. De gemeente die aan de operatie is gekoppeld, wordt in de openbare gids getoond om burgers te helpen een initiatief bij hen in de buurt te vinden.",
+        "de": "Geben Sie die ersten Buchstaben einer Gemeinde ein, um Vorschläge zu sehen. Die mit der Operation verknüpfte Gemeinde wird im öffentlichen Verzeichnis angezeigt, damit Bürger eine Initiative in ihrer Nähe finden."
       },
       "subtitle": {
         "fr": "Communes couvertes",
-        "en": "Covered municipalities"
+        "en": "Covered municipalities",
+        "nl": "Gedekte gemeenten",
+        "de": "Abgedeckte Gemeinden"
       },
       "captures": {
         "fr": {
@@ -758,6 +1302,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 429.640625,
+                      "y": 535,
+                      "width": 580.703125,
+                      "height": 24
+                    },
+                    "selector": "#municipalities"
+                  },
+                  "value": "Anderl"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 78.78125,
+                      "y": 575,
+                      "width": 232.4375,
+                      "height": 24
+                    },
+                    "selector": "#municipalities"
+                  },
+                  "value": "Anderl"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 373.15625,
+                      "y": 535,
+                      "width": 693.671875,
+                      "height": 24
+                    },
+                    "selector": "#municipalities"
+                  },
+                  "value": "Anderl"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 52.6875,
+                      "y": 575,
+                      "width": 284.609375,
+                      "height": 24
+                    },
+                    "selector": "#municipalities"
+                  },
+                  "value": "Anderl"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -770,15 +1414,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Sélectionner Anderlecht",
-        "en": "Select Anderlecht"
+        "en": "Select Anderlecht",
+        "nl": "Anderlecht selecteren",
+        "de": "Anderlecht auswählen"
       },
       "text": {
         "fr": "Cliquez sur la première suggestion (Anderlecht) pour l'associer à l'opération. Les communes couvertes apparaîtront dans l'annuaire public pour chaque opération publique, permettant aux citoyens de filtrer par localité.",
-        "en": "Click the first suggestion (Anderlecht) to associate it with the operation. Covered municipalities will be shown in the public directory for each public operation, allowing citizens to filter by locality."
+        "en": "Click the first suggestion (Anderlecht) to associate it with the operation. Covered municipalities will be shown in the public directory for each public operation, allowing citizens to filter by locality.",
+        "nl": "Klik op de eerste suggestie (Anderlecht) om ze aan de operatie te koppelen. De gedekte gemeenten verschijnen voor elke openbare operatie in de openbare gids, zodat burgers op plaats kunnen filteren.",
+        "de": "Klicken Sie auf den ersten Vorschlag (Anderlecht), um ihn mit der Operation zu verknüpfen. Die abgedeckten Gemeinden werden für jede öffentliche Operation im öffentlichen Verzeichnis angezeigt, sodass Bürger nach Ort filtern können."
       },
       "subtitle": {
         "fr": "Confirmation de la commune",
-        "en": "Confirming the municipality"
+        "en": "Confirming the municipality",
+        "nl": "Gemeente bevestigen",
+        "de": "Gemeinde bestätigen"
       },
       "captures": {
         "fr": {
@@ -876,6 +1526,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 421.640625,
+                      "y": 575,
+                      "width": 597,
+                      "height": 52
+                    },
+                    "selector": ".p-autocomplete-overlay [role=\"option\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 70.78125,
+                      "y": 615,
+                      "width": 248,
+                      "height": 52
+                    },
+                    "selector": ".p-autocomplete-overlay [role=\"option\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 365.15625,
+                      "y": 575,
+                      "width": 710,
+                      "height": 52
+                    },
+                    "selector": ".p-autocomplete-overlay [role=\"option\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 44.6875,
+                      "y": 615,
+                      "width": 301,
+                      "height": 52
+                    },
+                    "selector": ".p-autocomplete-overlay [role=\"option\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -888,15 +1634,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Opération créée",
-        "en": "Operation created"
+        "en": "Operation created",
+        "nl": "Operatie aangemaakt",
+        "de": "Operation erstellt"
       },
       "text": {
         "fr": "La nouvelle opération « E2E Energy Sharing » apparaît dans la liste. Elle est pour l'instant en mode privé : elle n'est visible que par les gestionnaires de la communauté et n'apparaît pas encore dans l'annuaire public.",
-        "en": "The new \"E2E Energy Sharing\" appears in the list. It is currently private: visible only to community managers and not yet shown in the public directory."
+        "en": "The new \"E2E Energy Sharing\" appears in the list. It is currently private: visible only to community managers and not yet shown in the public directory.",
+        "nl": "De nieuwe operatie “E2E Energy Sharing” verschijnt in de lijst. Ze staat voorlopig in privémodus: ze is alleen zichtbaar voor de beheerders van de gemeenschap en verschijnt nog niet in de openbare gids.",
+        "de": "Die neue Operation „E2E Energy Sharing“ erscheint in der Liste. Sie ist vorerst im privaten Modus: Sie ist nur für die Manager der Gemeinschaft sichtbar und erscheint noch nicht im öffentlichen Verzeichnis."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -950,6 +1702,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -962,15 +1766,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir la fiche",
-        "en": "Open the detail"
+        "en": "Open the detail",
+        "nl": "Detailpagina openen",
+        "de": "Detailseite öffnen"
       },
       "text": {
         "fr": "Cliquez sur la ligne de la nouvelle opération pour ouvrir sa fiche détaillée et accéder aux paramètres de visibilité.",
-        "en": "Click the new operation's row to open its detail page and access the visibility settings."
+        "en": "Click the new operation's row to open its detail page and access the visibility settings.",
+        "nl": "Klik op de rij van de nieuwe operatie om haar detailpagina te openen en de zichtbaarheidsinstellingen te bereiken.",
+        "de": "Klicken Sie auf die Zeile der neuen Operation, um ihre Detailseite zu öffnen und zu den Sichtbarkeitseinstellungen zu gelangen."
       },
       "subtitle": {
         "fr": "Détail de l'opération",
-        "en": "Operation detail"
+        "en": "Operation detail",
+        "nl": "Details van de operatie",
+        "de": "Details der Operation"
       },
       "captures": {
         "fr": {
@@ -1068,6 +1878,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 203.96875
+                    },
+                    "selector": "[data-testid=\"operations-list__table\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 264,
+                      "width": 358,
+                      "height": 579.9375
+                    },
+                    "selector": "[data-testid=\"operations-list__table\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 203.96875
+                    },
+                    "selector": "[data-testid=\"operations-list__table\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 264,
+                      "width": 358,
+                      "height": 579.9375
+                    },
+                    "selector": "[data-testid=\"operations-list__table\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1080,15 +1986,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Visibilité privée par défaut",
-        "en": "Private by default"
+        "en": "Private by default",
+        "nl": "Standaard privé",
+        "de": "Standardmäßig privat"
       },
       "text": {
         "fr": "Le bouton grisé « PRIVÉ » dans l'en-tête indique que cette opération n'est pas encore visible dans l'annuaire public. Les citoyens qui cherchent une opération de partage dans leur commune ne pourront pas la trouver tant qu'elle reste privée.",
-        "en": "The grey \"PRIVATE\" button in the header shows that this operation is not yet visible in the public directory. Citizens searching for a sharing operation in their municipality cannot find it as long as it remains private."
+        "en": "The grey \"PRIVATE\" button in the header shows that this operation is not yet visible in the public directory. Citizens searching for a sharing operation in their municipality cannot find it as long as it remains private.",
+        "nl": "De grijze knop “Privé” in de kop geeft aan dat deze operatie nog niet zichtbaar is in de openbare gids. Burgers die een deeloperatie in hun gemeente zoeken, kunnen ze niet vinden zolang ze privé blijft.",
+        "de": "Die graue Schaltfläche „Privat“ im Kopfbereich zeigt an, dass diese Operation im öffentlichen Verzeichnis noch nicht sichtbar ist. Bürger, die eine Teilungsoperation in ihrer Gemeinde suchen, können sie nicht finden, solange sie privat bleibt."
       },
       "subtitle": {
         "fr": "Paramètre de visibilité",
-        "en": "Visibility setting"
+        "en": "Visibility setting",
+        "nl": "Zichtbaarheidsinstelling",
+        "de": "Sichtbarkeitseinstellung"
       },
       "captures": {
         "fr": {
@@ -1142,6 +2054,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-40.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-40.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/desktop/step-40.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/mobile/step-40.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1154,15 +2118,21 @@
       "waitAfter": 2000,
       "title": {
         "fr": "Rendre l'opération publique",
-        "en": "Make the operation public"
+        "en": "Make the operation public",
+        "nl": "De operatie openbaar maken",
+        "de": "Die Operation öffentlich machen"
       },
       "text": {
         "fr": "Cliquez sur le bouton de visibilité pour basculer l'opération en mode public. Ce changement est immédiatement enregistré : l'opération devient visible dans l'annuaire des communautés d'énergie pour tous les citoyens.",
-        "en": "Click the visibility button to switch the operation to public mode. The change is saved immediately: the operation becomes visible in the energy community directory for all citizens."
+        "en": "Click the visibility button to switch the operation to public mode. The change is saved immediately: the operation becomes visible in the energy community directory for all citizens.",
+        "nl": "Klik op de zichtbaarheidsknop om de operatie naar de openbare modus over te schakelen. Deze wijziging wordt meteen opgeslagen: de operatie wordt voor alle burgers zichtbaar in de gids van de energiegemeenschappen.",
+        "de": "Klicken Sie auf die Sichtbarkeitsschaltfläche, um die Operation in den öffentlichen Modus zu schalten. Diese Änderung wird sofort gespeichert: Die Operation wird für alle Bürger im Verzeichnis der Energiegemeinschaften sichtbar."
       },
       "subtitle": {
         "fr": "Modifier la visibilité",
-        "en": "Changing visibility"
+        "en": "Changing visibility",
+        "nl": "Zichtbaarheid wijzigen",
+        "de": "Sichtbarkeit ändern"
       },
       "captures": {
         "fr": {
@@ -1260,6 +2230,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1283.046875,
+                      "y": 88,
+                      "width": 85.953125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-view__btn--toggle-visibility\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 165.5625,
+                      "y": 296,
+                      "width": 85.953125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-view__btn--toggle-visibility\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1277.5625,
+                      "y": 88,
+                      "width": 91.4375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-view__btn--toggle-visibility\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 173.28125,
+                      "y": 296,
+                      "width": 91.4375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"op-view__btn--toggle-visibility\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1272,15 +2338,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "L'opération est maintenant publique",
-        "en": "Operation is now public"
+        "en": "Operation is now public",
+        "nl": "De operatie is nu openbaar",
+        "de": "Die Operation ist jetzt öffentlich"
       },
       "text": {
         "fr": "Le bouton passe au vert et affiche « PUBLIC ». Tout citoyen peut désormais trouver cette opération dans l'annuaire des communautés d'énergie, filtrer par commune et contacter la communauté pour demander à y participer.",
-        "en": "The button turns green and shows \"PUBLIC\". Any citizen can now find this operation in the energy community directory, filter by municipality, and contact the community to request participation."
+        "en": "The button turns green and shows \"PUBLIC\". Any citizen can now find this operation in the energy community directory, filter by municipality, and contact the community to request participation.",
+        "nl": "De knop wordt groen en toont “Openbaar”. Elke burger kan deze operatie nu vinden in de gids van de energiegemeenschappen, op gemeente filteren en contact opnemen met de gemeenschap om deelname aan te vragen.",
+        "de": "Die Schaltfläche wird grün und zeigt „Öffentlich“. Alle Bürger können diese Operation nun im Verzeichnis der Energiegemeinschaften finden, nach Gemeinde filtern und die Gemeinschaft kontaktieren, um eine Teilnahme anzufragen."
       },
       "subtitle": {
         "fr": "Visibilité confirmée",
-        "en": "Visibility confirmed"
+        "en": "Visibility confirmed",
+        "nl": "Zichtbaarheid bevestigd",
+        "de": "Sichtbarkeit bestätigt"
       },
       "captures": {
         "fr": {
@@ -1334,6 +2406,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-42.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-42.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/desktop/step-42.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/mobile/step-42.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1346,15 +2470,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Annuaire public des communautés",
-        "en": "Public energy community directory"
+        "en": "Public energy community directory",
+        "nl": "Openbare gids van de gemeenschappen",
+        "de": "Öffentliches Verzeichnis der Gemeinschaften"
       },
       "text": {
         "fr": "La page « Communautés d'énergie » est accessible à tous, sans connexion requise. Elle liste les communautés qui disposent d'au moins une opération de partage publique, avec la possibilité de filtrer par commune pour découvrir une initiative locale.",
-        "en": "The \"Energy communities\" page is accessible to everyone without login. It lists communities that have at least one public sharing operation, with a municipality filter to discover local initiatives."
+        "en": "The \"Energy communities\" page is accessible to everyone without login. It lists communities that have at least one public sharing operation, with a municipality filter to discover local initiatives.",
+        "nl": "De pagina “Beschikbare openbare gemeenschappen” is voor iedereen toegankelijk, zonder aanmelding. Ze toont de gemeenschappen die minstens één openbare deeloperatie hebben, met de mogelijkheid om op gemeente te filteren en zo een lokaal initiatief te ontdekken.",
+        "de": "Die Seite „Verfügbare öffentliche Gemeinschaften“ ist für alle ohne Anmeldung zugänglich. Sie listet die Gemeinschaften auf, die mindestens eine öffentliche Teilungsoperation haben, und bietet einen Filter nach Gemeinde, um eine lokale Initiative zu entdecken."
       },
       "subtitle": {
         "fr": "Vue citoyenne",
-        "en": "Citizen view"
+        "en": "Citizen view",
+        "nl": "Burgerweergave",
+        "de": "Bürgeransicht"
       },
       "captures": {
         "fr": {
@@ -1408,6 +2538,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-43.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-43.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/desktop/step-43.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/mobile/step-43.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1420,15 +2602,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Développer une communauté",
-        "en": "Expand a community"
+        "en": "Expand a community",
+        "nl": "Een gemeenschap openklappen",
+        "de": "Eine Gemeinschaft aufklappen"
       },
       "text": {
         "fr": "Cliquez sur une communauté pour afficher ses opérations de partage publiques. Pour chaque opération, le type et les communes couvertes sont visibles — des informations essentielles pour un citoyen qui cherche une initiative proche de chez lui.",
-        "en": "Click a community to display its public sharing operations. For each operation, the type and covered municipalities are shown — essential information for a citizen looking for a local initiative."
+        "en": "Click a community to display its public sharing operations. For each operation, the type and covered municipalities are shown — essential information for a citizen looking for a local initiative.",
+        "nl": "Klik op een gemeenschap om haar openbare deeloperaties te tonen. Voor elke operatie zijn het type en de gedekte gemeenten zichtbaar — essentiële informatie voor een burger die een initiatief bij hem in de buurt zoekt.",
+        "de": "Klicken Sie auf eine Gemeinschaft, um ihre öffentlichen Teilungsoperationen anzuzeigen. Für jede Operation sind der Typ und die abgedeckten Gemeinden sichtbar — wesentliche Informationen für Bürger, die eine Initiative in ihrer Nähe suchen."
       },
       "subtitle": {
         "fr": "Opérations disponibles",
-        "en": "Available operations"
+        "en": "Available operations",
+        "nl": "Beschikbare operaties",
+        "de": "Verfügbare Operationen"
       },
       "captures": {
         "fr": {
@@ -1526,6 +2714,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-45.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 115,
+                      "y": 307,
+                      "width": 1278,
+                      "height": 64
+                    },
+                    "selector": "[data-testid=\"public-community-list__btn--accordion--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-45.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 17,
+                      "y": 508,
+                      "width": 356,
+                      "height": 64
+                    },
+                    "selector": "[data-testid=\"public-community-list__btn--accordion--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/desktop/step-45.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 115,
+                      "y": 307,
+                      "width": 1278,
+                      "height": 64
+                    },
+                    "selector": "[data-testid=\"public-community-list__btn--accordion--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/mobile/step-45.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 17,
+                      "y": 508,
+                      "width": 356,
+                      "height": 72
+                    },
+                    "selector": "[data-testid=\"public-community-list__btn--accordion--0\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1538,15 +2822,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "L'opération apparaît dans l'annuaire",
-        "en": "Operation visible in the directory"
+        "en": "Operation visible in the directory",
+        "nl": "De operatie verschijnt in de gids",
+        "de": "Die Operation erscheint im Verzeichnis"
       },
       "text": {
         "fr": "L'opération « E2E Energy Sharing » est maintenant visible dans l'annuaire public, avec son type et la commune d'Anderlecht. C'est exactement ce qu'un citoyen verra lorsqu'il cherchera une opération de partage d'énergie dans sa région pour rejoindre une communauté locale.",
-        "en": "\"E2E Energy Sharing\" is now visible in the public directory, with its type and the municipality of Anderlecht. This is exactly what a citizen will see when searching for an energy sharing operation in their region to join a local community."
+        "en": "\"E2E Energy Sharing\" is now visible in the public directory, with its type and the municipality of Anderlecht. This is exactly what a citizen will see when searching for an energy sharing operation in their region to join a local community.",
+        "nl": "De operatie “E2E Energy Sharing” is nu zichtbaar in de openbare gids, met haar type en de gemeente Anderlecht. Dit is precies wat een burger ziet wanneer hij in zijn regio een energiedeeloperatie zoekt om zich bij een lokale gemeenschap aan te sluiten.",
+        "de": "Die Operation „E2E Energy Sharing“ ist jetzt im öffentlichen Verzeichnis sichtbar, mit ihrem Typ und der Gemeinde Anderlecht. Genau das sehen Bürger, wenn sie in ihrer Region nach einer Energieteilungsoperation suchen, um einer lokalen Gemeinschaft beizutreten."
       },
       "subtitle": {
         "fr": "Découverte citoyenne",
-        "en": "Citizen discovery"
+        "en": "Citizen discovery",
+        "nl": "Ontdekking door burgers",
+        "de": "Entdeckung durch Bürger"
       },
       "captures": {
         "fr": {
@@ -1592,6 +2882,58 @@
             "frames": [
               {
                 "screenshot": "../assets/sharing-op-set-public/en/mobile/step-47.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-47.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-47.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/desktop/step-47.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/sharing-op-set-public/de/mobile/step-47.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Créer un dossier administratif",
-    "en": "Create an administrative dossier"
+    "en": "Create an administrative dossier",
+    "nl": "Een administratief dossier aanmaken",
+    "de": "Verwaltungsdossier anlegen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir les documents administratifs",
-        "en": "Open the administrative documents"
+        "en": "Open the administrative documents",
+        "nl": "Administratieve documenten openen",
+        "de": "Verwaltungsdokumente öffnen"
       },
       "text": {
         "fr": "Dans la barre latérale, cliquez sur « Documents administratifs ». Le lien apparaît dès que la communauté est abonnée au module.",
-        "en": "In the sidebar, click \"Administrative documents\". The link appears as soon as the community is subscribed to the module."
+        "en": "In the sidebar, click \"Administrative documents\". The link appears as soon as the community is subscribed to the module.",
+        "nl": "Klik in de zijbalk op “Administratieve documenten”. De link verschijnt zodra de gemeenschap op de module is geabonneerd.",
+        "de": "Klicken Sie in der Seitenleiste auf „Verwaltungsdokumente“. Der Link erscheint, sobald die Gemeinschaft das Modul abonniert hat."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Administratieve documenten openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en daarna op “Administratieve documenten”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Verwaltungsdokumente öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Verwaltungsdokumente“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 500,
       "title": {
         "fr": "Aucun dossier pour le moment",
-        "en": "No dossier yet"
+        "en": "No dossier yet",
+        "nl": "Nog geen dossier",
+        "de": "Noch kein Dossier"
       },
       "text": {
         "fr": "Cette page suit les dossiers déposés auprès de la CWaPE et du gestionnaire de réseau. Chaque dossier concerne une seule opération de partage : une communauté qui en exploite plusieurs dépose un dossier par opération.",
-        "en": "This page tracks the dossiers filed with the CWaPE and the grid operator. Every dossier concerns exactly one sharing operation: a community running several operations files one dossier per operation."
+        "en": "This page tracks the dossiers filed with the CWaPE and the grid operator. Every dossier concerns exactly one sharing operation: a community running several operations files one dossier per operation.",
+        "nl": "Op deze pagina volgt u de dossiers op die bij de CWaPE en de netbeheerder zijn ingediend. Elk dossier betreft één enkele deeloperatie: een gemeenschap die er meerdere beheert, dient per operatie een dossier in.",
+        "de": "Diese Seite verfolgt die bei der CWaPE und dem Netzbetreiber eingereichten Dossiers. Jedes Dossier betrifft genau eine Teilungsoperation: Eine Gemeinschaft, die mehrere betreibt, reicht pro Operation ein Dossier ein."
       },
       "subtitle": {
         "fr": "Documents administratifs",
-        "en": "Administrative documents"
+        "en": "Administrative documents",
+        "nl": "Administratieve documenten",
+        "de": "Verwaltungsdokumente"
       },
       "captures": {
         "fr": {
@@ -224,6 +346,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -236,15 +410,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Créer un dossier",
-        "en": "Create a dossier"
+        "en": "Create a dossier",
+        "nl": "Dossier aanmaken",
+        "de": "Dossier anlegen"
       },
       "text": {
         "fr": "Cliquez sur « Nouveau dossier » pour ouvrir le formulaire de création.",
-        "en": "Click \"New dossier\" to open the creation form."
+        "en": "Click \"New dossier\" to open the creation form.",
+        "nl": "Klik op “Nieuw dossier” om het aanmaakformulier te openen.",
+        "de": "Klicken Sie auf „Neues Dossier“, um das Formular zum Anlegen zu öffnen."
       },
       "subtitle": {
         "fr": "Nouveau dossier",
-        "en": "New dossier"
+        "en": "New dossier",
+        "nl": "Nieuw dossier",
+        "de": "Neues Dossier"
       },
       "captures": {
         "fr": {
@@ -342,6 +522,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1095.609375,
+                      "y": 233,
+                      "width": 152.390625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-list__btn--create\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 399,
+                      "width": 152.390625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-list__btn--create\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1094.65625,
+                      "y": 233,
+                      "width": 153.34375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-list__btn--create\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 419,
+                      "width": 153.34375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-list__btn--create\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -354,15 +630,21 @@
       "waitAfter": 700,
       "title": {
         "fr": "Choisir le type de dossier",
-        "en": "Choose the dossier type"
+        "en": "Choose the dossier type",
+        "nl": "Type dossier kiezen",
+        "de": "Dossiertyp wählen"
       },
       "text": {
         "fr": "Le type détermine les échéances réglementaires qui seront calculées ensuite. Ici, une notification de création de communauté.",
-        "en": "The type decides which regulatory deadlines are derived later. Here, a community creation notification."
+        "en": "The type decides which regulatory deadlines are derived later. Here, a community creation notification.",
+        "nl": "Het type bepaalt welke wettelijke termijnen daarna worden berekend. Hier een kennisgeving van oprichting van een gemeenschap.",
+        "de": "Der Typ bestimmt, welche regulatorischen Fristen anschließend berechnet werden. Hier eine Gründungsmeldung für eine Gemeinschaft."
       },
       "subtitle": {
         "fr": "Nouveau dossier",
-        "en": "New dossier"
+        "en": "New dossier",
+        "nl": "Nieuw dossier",
+        "de": "Neues Dossier"
       },
       "captures": {
         "fr": {
@@ -460,6 +742,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 291.8125,
+                      "width": 502,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__select--type\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 117,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__select--type\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 291.8125,
+                      "width": 502,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__select--type\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 117,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__select--type\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -472,15 +850,21 @@
       "waitAfter": 700,
       "title": {
         "fr": "Choisir l'opération de partage",
-        "en": "Choose the sharing operation"
+        "en": "Choose the sharing operation",
+        "nl": "Deeloperatie kiezen",
+        "de": "Teilungsoperation wählen"
       },
       "text": {
         "fr": "Sélectionnez l'opération de partage concernée. C'est elle qui fournira les membres et les compteurs repris dans les documents du dossier.",
-        "en": "Pick the sharing operation the filing is about. It supplies the members and meters that the dossier's documents will list."
+        "en": "Pick the sharing operation the filing is about. It supplies the members and meters that the dossier's documents will list.",
+        "nl": "Selecteer de betrokken deeloperatie. Zij levert de leden en meters die in de documenten van het dossier worden opgenomen.",
+        "de": "Wählen Sie die betreffende Teilungsoperation. Sie liefert die Mitglieder und Zähler, die in den Dokumenten des Dossiers aufgeführt werden."
       },
       "subtitle": {
         "fr": "Nouveau dossier",
-        "en": "New dossier"
+        "en": "New dossier",
+        "nl": "Nieuw dossier",
+        "de": "Neues Dossier"
       },
       "captures": {
         "fr": {
@@ -578,6 +962,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 373.8125,
+                      "width": 502,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__select--operation\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 199,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__select--operation\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 373.8125,
+                      "width": 502,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__select--operation\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 199,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__select--operation\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -590,15 +1070,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Titre et référence",
-        "en": "Title and reference"
+        "en": "Title and reference",
+        "nl": "Titel en referentie",
+        "de": "Bezeichnung und Aktenzeichen"
       },
       "text": {
         "fr": "Le titre est libre : il vous sert à retrouver le dossier. La référence est celle attribuée par l'autorité — elle identifie le dossier de façon unique et reste modifiable plus tard.",
-        "en": "The title is free text — it is how you will recognise the dossier. The reference is the one assigned by the authority; it identifies the dossier uniquely and stays editable later."
+        "en": "The title is free text — it is how you will recognise the dossier. The reference is the one assigned by the authority; it identifies the dossier uniquely and stays editable later.",
+        "nl": "De titel is vrij te kiezen: hij helpt u het dossier terug te vinden. De referentie is die welke de bevoegde instantie heeft toegekend — ze identificeert het dossier op unieke wijze en kan later nog worden gewijzigd.",
+        "de": "Die Bezeichnung ist frei wählbar: Sie hilft Ihnen, das Dossier wiederzufinden. Das Aktenzeichen ist das von der Behörde vergebene — es identifiziert das Dossier eindeutig und bleibt später änderbar."
       },
       "subtitle": {
         "fr": "Nouveau dossier",
-        "en": "New dossier"
+        "en": "New dossier",
+        "nl": "Nieuw dossier",
+        "de": "Neues Dossier"
       },
       "captures": {
         "fr": {
@@ -700,6 +1186,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 561,
+                      "width": 502,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__input--external-ref\"]"
+                  },
+                  "value": "CWAPE-2026-0042"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 386.1875,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__input--external-ref\"]"
+                  },
+                  "value": "CWAPE-2026-0042"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 561,
+                      "width": 502,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__input--external-ref\"]"
+                  },
+                  "value": "CWAPE-2026-0042"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 386.1875,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__input--external-ref\"]"
+                  },
+                  "value": "CWAPE-2026-0042"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -712,15 +1298,21 @@
       "waitAfter": 1500,
       "title": {
         "fr": "Créer",
-        "en": "Create"
+        "en": "Create",
+        "nl": "Aanmaken",
+        "de": "Anlegen"
       },
       "text": {
         "fr": "Validez : le dossier est créé et vient s'ajouter au tableau de suivi.",
-        "en": "Submit: the dossier is created and joins the tracking table."
+        "en": "Submit: the dossier is created and joins the tracking table.",
+        "nl": "Bevestig: het dossier wordt aangemaakt en komt in de opvolgingstabel terecht.",
+        "de": "Bestätigen Sie: Das Dossier wird angelegt und in die Dossierliste aufgenommen."
       },
       "subtitle": {
         "fr": "Nouveau dossier",
-        "en": "New dossier"
+        "en": "New dossier",
+        "nl": "Nieuw dossier",
+        "de": "Neues Dossier"
       },
       "captures": {
         "fr": {
@@ -818,6 +1410,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 868.09375,
+                      "y": 650.1875,
+                      "width": 102.90625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 274.09375,
+                      "y": 494.5625,
+                      "width": 102.90625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 884.765625,
+                      "y": 650.1875,
+                      "width": 86.234375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 290.765625,
+                      "y": 494.5625,
+                      "width": 86.234375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -830,15 +1518,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Le dossier est créé",
-        "en": "The dossier is created"
+        "en": "The dossier is created",
+        "nl": "Het dossier is aangemaakt",
+        "de": "Das Dossier ist angelegt"
       },
       "text": {
         "fr": "Le dossier apparaît dans le tableau avec le statut « En préparation ». Tant qu'il n'est pas soumis, il reste modifiable et aucune échéance ne court.",
-        "en": "The dossier shows up in the table with the status \"In preparation\". Until it is submitted it stays editable and no deadline is running."
+        "en": "The dossier shows up in the table with the status \"In preparation\". Until it is submitted it stays editable and no deadline is running.",
+        "nl": "Het dossier verschijnt in de tabel met de status “In voorbereiding”. Zolang het niet is ingediend, blijft het bewerkbaar en loopt er geen enkele termijn.",
+        "de": "Das Dossier erscheint in der Tabelle mit dem Status „In Vorbereitung“. Solange es nicht eingereicht ist, bleibt es bearbeitbar, und es läuft keine Frist."
       },
       "subtitle": {
         "fr": "Suivi des dossiers",
-        "en": "Tracking dossiers"
+        "en": "Tracking dossiers",
+        "nl": "Opvolging van dossiers",
+        "de": "Dossierverfolgung"
       },
       "captures": {
         "fr": {
@@ -892,6 +1586,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -904,15 +1650,21 @@
       "waitAfter": 1500,
       "title": {
         "fr": "Ouvrir le dossier",
-        "en": "Open the dossier"
+        "en": "Open the dossier",
+        "nl": "Dossier openen",
+        "de": "Dossier öffnen"
       },
       "text": {
         "fr": "Cliquez n'importe où sur la ligne pour ouvrir la fiche du dossier.",
-        "en": "Click anywhere on the row to open the dossier page."
+        "en": "Click anywhere on the row to open the dossier page.",
+        "nl": "Klik ergens op de rij om de dossierpagina te openen.",
+        "de": "Klicken Sie an einer beliebigen Stelle auf die Zeile, um die Dossierseite zu öffnen."
       },
       "subtitle": {
         "fr": "Suivi des dossiers",
-        "en": "Tracking dossiers"
+        "en": "Tracking dossiers",
+        "nl": "Opvolging van dossiers",
+        "de": "Dossierverfolgung"
       },
       "captures": {
         "fr": {
@@ -1010,6 +1762,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 260,
+                      "y": 554,
+                      "width": 988,
+                      "height": 73
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 725,
+                      "width": 764.15625,
+                      "height": 85
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 260,
+                      "y": 530,
+                      "width": 988,
+                      "height": 53
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 737,
+                      "width": 819.9375,
+                      "height": 73
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1022,15 +1870,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "La fiche du dossier",
-        "en": "The dossier page"
+        "en": "The dossier page",
+        "nl": "De dossierpagina",
+        "de": "Die Dossierseite"
       },
       "text": {
         "fr": "La fiche rassemble tout ce qui concerne le dossier : ses documents, ses échéances et l'historique de ses changements de statut. Les boutons en haut proposent les seuls changements de statut autorisés à cet instant.",
-        "en": "The dossier page gathers everything about the filing: its documents, its deadlines and the history of its status changes. The buttons at the top offer only the status changes that are legal right now."
+        "en": "The dossier page gathers everything about the filing: its documents, its deadlines and the history of its status changes. The buttons at the top offer only the status changes that are legal right now.",
+        "nl": "De pagina bundelt alles over het dossier: de documenten, de termijnen en de historiek van de statuswijzigingen. De knoppen bovenaan bieden alleen de statuswijzigingen aan die op dat moment zijn toegestaan.",
+        "de": "Die Seite bündelt alles rund um das Dossier: seine Dokumente, seine Fristen und den Verlauf seiner Statusänderungen. Die Schaltflächen oben bieten nur die Statusänderungen an, die in diesem Moment zulässig sind."
       },
       "subtitle": {
         "fr": "Suivi des dossiers",
-        "en": "Tracking dossiers"
+        "en": "Tracking dossiers",
+        "nl": "Opvolging van dossiers",
+        "de": "Dossierverfolgung"
       },
       "captures": {
         "fr": {
@@ -1076,6 +1930,58 @@
             "frames": [
               {
                 "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-32.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

@@ -1,0 +1,1441 @@
+{
+  "version": "1.1",
+  "slug": "live-data-device-enrol",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Connecter un appareil",
+    "en": "Connect a device",
+    "nl": "Een apparaat koppelen",
+    "de": "Gerät verbinden"
+  },
+  "locales": [
+    "fr",
+    "en",
+    "nl",
+    "de"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 500,
+      "title": {
+        "fr": "Ouvrir l'onglet Appareils",
+        "en": "Open the Devices tab",
+        "nl": "Het tabblad Apparaten openen",
+        "de": "Registerkarte Geräte öffnen"
+      },
+      "text": {
+        "fr": "Dans la console des données en direct, ouvrez l'onglet « Appareils ». Un appareil est le boîtier branché sur le compteur d'un membre (port P1) ou sur son onduleur : il transmet un relevé tous les quarts d'heure.",
+        "en": "In the Live data console, open the \"Devices\" tab. A device is the box plugged into a member's meter (P1 port) or inverter: it sends a reading every quarter-hour.",
+        "nl": "Open in de console Live gegevens het tabblad “Apparaten”. Een apparaat is het kastje dat op de meter van een lid (P1-poort) of op diens omvormer is aangesloten: het stuurt elk kwartier een meting door.",
+        "de": "Öffnen Sie in der Live-Daten-Konsole die Registerkarte „Geräte“. Ein Gerät ist die Box, die am Zähler eines Mitglieds (P1-Anschluss) oder an dessen Wechselrichter angeschlossen ist: Sie sendet jede Viertelstunde einen Messwert."
+      },
+      "subtitle": {
+        "fr": "Données en direct",
+        "en": "Live data",
+        "nl": "Live gegevens",
+        "de": "Live-Daten"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/fr/desktop/step-11.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 331.203125,
+                      "y": 200.84375,
+                      "width": 103.734375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--devices\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/fr/mobile/step-11.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 169.203125,
+                      "y": 387.375,
+                      "width": 103.734375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--devices\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/en/desktop/step-11.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 292.828125,
+                      "y": 200.84375,
+                      "width": 91.203125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--devices\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/en/mobile/step-11.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 130.828125,
+                      "y": 364.53125,
+                      "width": 91.203125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--devices\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/nl/desktop/step-11.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 292.828125,
+                      "y": 200.84375,
+                      "width": 111.984375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--devices\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/nl/mobile/step-11.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 130.828125,
+                      "y": 364.53125,
+                      "width": 111.984375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--devices\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/de/desktop/step-11.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 283.109375,
+                      "y": 200.84375,
+                      "width": 84.125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--devices\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/de/mobile/step-11.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 121.109375,
+                      "y": 387.375,
+                      "width": 84.125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"live-data-hub__tab--devices\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 500,
+      "title": {
+        "fr": "Ajouter un appareil",
+        "en": "Add a device",
+        "nl": "Apparaat toevoegen",
+        "de": "Gerät hinzufügen"
+      },
+      "text": {
+        "fr": "Cliquez sur « Ajouter un appareil ».",
+        "en": "Click \"Add a device\".",
+        "nl": "Klik op “Apparaat toevoegen”.",
+        "de": "Klicken Sie auf „Gerät hinzufügen“."
+      },
+      "subtitle": {
+        "fr": "Appareils",
+        "en": "Devices",
+        "nl": "Apparaten",
+        "de": "Geräte"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/fr/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1122.171875,
+                      "y": 271.84375,
+                      "width": 189.828125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"live-devices__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/fr/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 166.171875,
+                      "y": 458.375,
+                      "width": 189.828125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"live-devices__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/en/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1168.359375,
+                      "y": 271.84375,
+                      "width": 143.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"live-devices__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/en/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 212.359375,
+                      "y": 435.53125,
+                      "width": 143.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"live-devices__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/nl/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1113.734375,
+                      "y": 271.84375,
+                      "width": 198.265625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"live-devices__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/nl/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 157.734375,
+                      "y": 435.53125,
+                      "width": 198.265625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"live-devices__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/de/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1135.96875,
+                      "y": 271.84375,
+                      "width": 176.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"live-devices__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/de/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 179.96875,
+                      "y": 458.375,
+                      "width": 176.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"live-devices__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 700,
+      "title": {
+        "fr": "Nommer l'appareil et choisir son compteur",
+        "en": "Name the device and choose its meter",
+        "nl": "Apparaat benoemen en de meter kiezen",
+        "de": "Gerät benennen und Zähler auswählen"
+      },
+      "text": {
+        "fr": "Donnez à l'appareil un nom parlant, puis choisissez dans la liste le compteur auquel il est raccordé. La liste reprend les compteurs actifs de la communauté, chacun avec son EAN, son adresse et son titulaire. Un compteur qui a déjà un appareil est grisé : chaque compteur ne peut avoir qu'un seul appareil actif — révoquez l'ancien pour libérer le compteur.",
+        "en": "Give the device a meaningful name, then choose the meter it is connected to from the list. The list shows the community's active meters, each with its EAN, address and holder. A meter that already has a device is greyed out: each meter can have only one active device — revoke the old one to free the meter.",
+        "nl": "Geef het apparaat een duidelijke naam en kies dan in de lijst de meter waarop het is aangesloten. De lijst toont de actieve meters van de gemeenschap, elk met zijn EAN, adres en houder. Een meter die al een apparaat heeft, is grijs weergegeven: elke meter kan maar één actief apparaat hebben — trek het oude in om de meter vrij te maken.",
+        "de": "Geben Sie dem Gerät einen aussagekräftigen Namen und wählen Sie dann in der Liste den Zähler aus, an den es angeschlossen ist. Die Liste zeigt die aktiven Zähler der Gemeinschaft, jeweils mit EAN, Adresse und Inhaber. Ein Zähler, der bereits ein Gerät hat, ist ausgegraut: Jeder Zähler kann nur ein aktives Gerät haben — widerrufen Sie das alte, um den Zähler freizugeben."
+      },
+      "subtitle": {
+        "fr": "Nouvel appareil",
+        "en": "New device",
+        "nl": "Nieuw apparaat",
+        "de": "Neues Gerät"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 490,
+                      "y": 574,
+                      "width": 460,
+                      "height": 52
+                    },
+                    "selector": ".p-select-overlay .p-select-option[aria-label^=\"541448200000000001\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 18,
+                      "y": 356,
+                      "width": 354,
+                      "height": 52
+                    },
+                    "selector": ".p-select-overlay .p-select-option[aria-label^=\"541448200000000001\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 490,
+                      "y": 574,
+                      "width": 460,
+                      "height": 52
+                    },
+                    "selector": ".p-select-overlay .p-select-option[aria-label^=\"541448200000000001\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 18,
+                      "y": 356,
+                      "width": 354,
+                      "height": 52
+                    },
+                    "selector": ".p-select-overlay .p-select-option[aria-label^=\"541448200000000001\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 490,
+                      "y": 574,
+                      "width": 460,
+                      "height": 52
+                    },
+                    "selector": ".p-select-overlay .p-select-option[aria-label^=\"541448200000000001\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 18,
+                      "y": 356,
+                      "width": 354,
+                      "height": 52
+                    },
+                    "selector": ".p-select-overlay .p-select-option[aria-label^=\"541448200000000001\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 490,
+                      "y": 574,
+                      "width": 460,
+                      "height": 52
+                    },
+                    "selector": ".p-select-overlay .p-select-option[aria-label^=\"541448200000000001\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 18,
+                      "y": 356,
+                      "width": 354,
+                      "height": 52
+                    },
+                    "selector": ".p-select-overlay .p-select-option[aria-label^=\"541448200000000001\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Créer l'appareil",
+        "en": "Create the device",
+        "nl": "Apparaat aanmaken",
+        "de": "Gerät anlegen"
+      },
+      "text": {
+        "fr": "Cliquez sur « Créer ». La case « injection pure » ne se coche que pour un site qui ne consomme rien : cochée à tort, elle sous-estimerait la production de la communauté sans aucune erreur visible.",
+        "en": "Click \"Create\". Only tick \"pure injection\" for a site that consumes nothing: ticked by mistake, it would understate the community's production without any visible error.",
+        "nl": "Klik op “Aanmaken”. Vink het vakje voor pure injectie (“Achter deze meter wordt niets verbruikt”) alleen aan voor een site die niets verbruikt: ten onrechte aangevinkt, zou het de productie van de gemeenschap onderschatten zonder enige zichtbare fout.",
+        "de": "Klicken Sie auf „Anlegen“. Kreuzen Sie das Kästchen für reine Einspeisung („Hinter diesem Zähler wird nichts verbraucht“) nur bei einem Standort an, der nichts verbraucht: Fälschlich angekreuzt, würde es die Erzeugung der Gemeinschaft unterschätzen, ohne dass ein Fehler sichtbar wird."
+      },
+      "subtitle": {
+        "fr": "Nouvel appareil",
+        "en": "New device",
+        "nl": "Nieuw apparaat",
+        "de": "Neues Gerät"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/fr/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 890.359375,
+                      "y": 607.5,
+                      "width": 64.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"device-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/fr/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 312.359375,
+                      "y": 390,
+                      "width": 64.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"device-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/en/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 882.234375,
+                      "y": 607.5,
+                      "width": 72.765625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"device-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/en/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 304.234375,
+                      "y": 390,
+                      "width": 72.765625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"device-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/nl/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 852.09375,
+                      "y": 607.5,
+                      "width": 102.90625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"device-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/nl/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 274.09375,
+                      "y": 390,
+                      "width": 102.90625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"device-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/de/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 868.765625,
+                      "y": 607.5,
+                      "width": 86.234375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"device-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/de/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 290.765625,
+                      "y": 406,
+                      "width": 86.234375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"device-create-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 500,
+      "title": {
+        "fr": "Le code d'enrôlement",
+        "en": "The enrolment code",
+        "nl": "De aanmeldcode",
+        "de": "Der Registrierungscode"
+      },
+      "text": {
+        "fr": "L'appareil est créé et son code d'enrôlement s'affiche aussitôt, en clair et en QR code. Saisissez-le (ou scannez-le) dans l'appareil. Il n'est affiché qu'une seule fois, ne sert qu'une fois et expire après 72 heures ; en cas de perte, émettez-en un nouveau depuis la liste — l'ancien cesse alors de fonctionner.",
+        "en": "The device is created and its enrolment code shows immediately, as text and as a QR code. Type it (or scan it) into the device. It is shown only once, works only once and expires after 72 hours; if it is lost, issue a new one from the list — the old one then stops working.",
+        "nl": "Het apparaat is aangemaakt en zijn aanmeldcode verschijnt meteen, in leesbare tekst en als QR-code. Voer hem in op het apparaat (of scan hem). Hij wordt maar één keer getoond, werkt maar één keer en verloopt na 72 uur; bent u hem kwijt, geef dan vanuit de lijst een nieuwe uit — de oude werkt dan niet meer.",
+        "de": "Das Gerät ist angelegt und sein Registrierungscode wird sofort angezeigt, als Klartext und als QR-Code. Geben Sie ihn am Gerät ein (oder scannen Sie ihn). Er wird nur ein einziges Mal angezeigt, funktioniert nur einmal und läuft nach 72 Stunden ab; geht er verloren, stellen Sie in der Liste einen neuen aus — der alte funktioniert dann nicht mehr."
+      },
+      "subtitle": {
+        "fr": "Code d'enrôlement",
+        "en": "Enrolment code",
+        "nl": "Aanmeldcode",
+        "de": "Registrierungscode"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/fr/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/en/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "En attente d'enrôlement",
+        "en": "Awaiting enrolment",
+        "nl": "Wacht op aanmelding",
+        "de": "Wartet auf Registrierung"
+      },
+      "text": {
+        "fr": "Tant que l'appareil n'a pas utilisé son code, il est « en attente d'enrôlement » et « jamais vu ». L'encadré explique quoi vérifier : l'appareil est-il alimenté et connecté au réseau ?",
+        "en": "Until the device has used its code, it is \"awaiting enrolment\" and \"never seen\". The box below says what to check: is the device powered and connected to the network?",
+        "nl": "Zolang het apparaat zijn code niet heeft gebruikt, staat het op “Wacht op aanmelding” en “Nooit gezien”. Het kader legt uit wat u moet nagaan: krijgt het apparaat stroom en is het met het netwerk verbonden?",
+        "de": "Solange das Gerät seinen Code nicht verwendet hat, steht es auf „Wartet auf Registrierung“ und „Nie gesehen“. Der Hinweiskasten erklärt, was zu prüfen ist: Ist das Gerät mit Strom versorgt und mit dem Netzwerk verbunden?"
+      },
+      "subtitle": {
+        "fr": "Appareils",
+        "en": "Devices",
+        "nl": "Apparaten",
+        "de": "Geräte"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/fr/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/fr/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/en/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/nl/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/de/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/de/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 500,
+      "title": {
+        "fr": "L'appareil transmet",
+        "en": "The device is reporting",
+        "nl": "Het apparaat rapporteert",
+        "de": "Das Gerät sendet"
+      },
+      "text": {
+        "fr": "Dès que l'appareil a utilisé son code, il est « enrôlé » et « transmet ». La ligne affiche aussi le nom et la version de son logiciel et l'heure de sa dernière transmission. Un appareil qui se tait, se déconnecte ou n'envoie que des zéros passe en rouge avec la marche à suivre.",
+        "en": "As soon as the device has used its code, it is \"enrolled\" and \"reporting\". The row also shows its software name and version and when it last reported. A device that goes silent, disconnects or sends only zeros turns red with what to do about it.",
+        "nl": "Zodra het apparaat zijn code heeft gebruikt, staat het op “Aangemeld” en “Rapporteert”. De rij toont ook de naam en versie van zijn software en het tijdstip van zijn laatste transmissie. Een apparaat dat zwijgt, de verbinding verliest of alleen nullen stuurt, wordt rood, met de te volgen stappen.",
+        "de": "Sobald das Gerät seinen Code verwendet hat, steht es auf „Registriert“ und „Sendet“. Die Zeile zeigt außerdem Name und Version seiner Software sowie den Zeitpunkt seiner letzten Übertragung. Ein Gerät, das verstummt, die Verbindung verliert oder nur Nullwerte sendet, wird rot markiert, zusammen mit dem weiteren Vorgehen."
+      },
+      "subtitle": {
+        "fr": "Appareils",
+        "en": "Devices",
+        "nl": "Apparaten",
+        "de": "Geräte"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/fr/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/fr/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/en/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/en/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/nl/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/nl/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/de/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/de/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Le parc est en bonne santé",
+        "en": "The fleet is healthy",
+        "nl": "Het apparatenpark is gezond",
+        "de": "Der Gerätepark ist in gutem Zustand"
+      },
+      "text": {
+        "fr": "L'onglet « État du parc » le confirme : tous les appareils transmettent normalement et aucune mesure n'a été rejetée. Les chiffres du tableau de bord suivent au prochain calcul, tous les quarts d'heure.",
+        "en": "The \"Fleet status\" tab confirms it: every device is reporting normally and no reading was rejected. The dashboard figures follow at the next computation, every quarter-hour.",
+        "nl": "Het tabblad “Status apparaten” bevestigt het: alle apparaten rapporteren normaal en er werd geen enkele meting geweigerd. De cijfers van het dashboard volgen bij de volgende berekening, elk kwartier.",
+        "de": "Die Registerkarte „Gerätestatus“ bestätigt es: Alle Geräte senden normal und kein Messwert wurde abgelehnt. Die Zahlen der Übersicht folgen bei der nächsten Berechnung, jede Viertelstunde."
+      },
+      "subtitle": {
+        "fr": "État du parc",
+        "en": "Fleet status",
+        "nl": "Status apparaten",
+        "de": "Gerätestatus"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/fr/desktop/step-44.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/fr/mobile/step-44.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/en/desktop/step-44.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/en/mobile/step-44.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/nl/desktop/step-44.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/nl/mobile/step-44.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/de/desktop/step-44.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/live-data-device-enrol/de/mobile/step-44.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

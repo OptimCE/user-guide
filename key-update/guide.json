@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Modifier une clé de répartition",
-    "en": "Edit an allocation key"
+    "en": "Edit an allocation key",
+    "nl": "Een verdeelsleutel bewerken",
+    "de": "Verteilungsschlüssel bearbeiten"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir la liste des clés",
-        "en": "Open the keys list"
+        "en": "Open the keys list",
+        "nl": "De lijst met sleutels openen",
+        "de": "Die Schlüsselliste öffnen"
       },
       "text": {
         "fr": "Depuis le menu Gestion, ouvrez la liste des clés de répartition de la communauté pour retrouver celle à modifier.",
-        "en": "From the Management menu, open the community's allocation keys list to find the one you want to modify."
+        "en": "From the Management menu, open the community's allocation keys list to find the one you want to modify.",
+        "nl": "Open via het menu Beheer de lijst met verdeelsleutels van de gemeenschap om de sleutel te vinden die u wilt wijzigen.",
+        "de": "Öffnen Sie über das Menü Verwaltung die Liste der Verteilungsschlüssel der Gemeinschaft, um den zu ändernden Schlüssel zu finden."
       },
       "subtitle": {
         "fr": "Point de départ",
-        "en": "Starting point"
+        "en": "Starting point",
+        "nl": "Startpunt",
+        "de": "Ausgangspunkt"
       },
       "captures": {
         "fr": {
@@ -96,6 +106,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/nl/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/nl/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/de/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/de/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -108,15 +170,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Sélectionner la clé",
-        "en": "Select the key"
+        "en": "Select the key",
+        "nl": "De sleutel selecteren",
+        "de": "Den Schlüssel auswählen"
       },
       "text": {
         "fr": "Cliquez sur la ligne de la clé que vous souhaitez modifier pour ouvrir sa fiche détaillée.",
-        "en": "Click the row of the key you want to modify to open its detail page."
+        "en": "Click the row of the key you want to modify to open its detail page.",
+        "nl": "Klik op de rij van de sleutel die u wilt wijzigen om de detailpagina ervan te openen.",
+        "de": "Klicken Sie auf die Zeile des Schlüssels, den Sie ändern möchten, um seine Detailseite zu öffnen."
       },
       "subtitle": {
         "fr": "Choix de la clé",
-        "en": "Pick the key"
+        "en": "Pick the key",
+        "nl": "Keuze van de sleutel",
+        "de": "Auswahl des Schlüssels"
       },
       "captures": {
         "fr": {
@@ -224,6 +292,112 @@
               "subtitle": "Pick the key"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/nl/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 305,
+                      "width": 1280,
+                      "height": 45
+                    },
+                    "selector": "[data-testid=\"keys-list__row--desktop--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 486,
+                      "width": 358,
+                      "height": 130
+                    },
+                    "selector": "[data-testid=\"keys-list__row--mobile--1\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De sleutel selecteren",
+              "text": "Tik op de kaart van de sleutel die u wilt wijzigen om de detailpagina ervan te openen.",
+              "subtitle": "Keuze van de sleutel"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/de/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 305,
+                      "width": 1280,
+                      "height": 45
+                    },
+                    "selector": "[data-testid=\"keys-list__row--desktop--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 486,
+                      "width": 358,
+                      "height": 130
+                    },
+                    "selector": "[data-testid=\"keys-list__row--mobile--1\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Den Schlüssel auswählen",
+              "text": "Tippen Sie auf die Karte des Schlüssels, den Sie ändern möchten, um seine Detailseite zu öffnen.",
+              "subtitle": "Auswahl des Schlüssels"
+            }
+          }
         }
       }
     },
@@ -236,15 +410,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Passer en édition",
-        "en": "Switch to edit mode"
+        "en": "Switch to edit mode",
+        "nl": "Naar de bewerkmodus",
+        "de": "In den Bearbeitungsmodus wechseln"
       },
       "text": {
         "fr": "Cliquez sur « Modifier » : la clé s'ouvre dans le même éditeur que celui utilisé pour la création, mais pré-rempli avec les valeurs existantes.",
-        "en": "Click \"Update\" — the key opens in the same editor used for creation, pre-filled with the existing values."
+        "en": "Click \"Update\" — the key opens in the same editor used for creation, pre-filled with the existing values.",
+        "nl": "Klik op “Bijwerken”: de sleutel opent in dezelfde editor als bij het aanmaken, maar vooraf ingevuld met de bestaande waarden.",
+        "de": "Klicken Sie auf „Aktualisieren“: Der Schlüssel öffnet sich im selben Editor wie bei der Erstellung, jedoch mit den bestehenden Werten vorausgefüllt."
       },
       "subtitle": {
         "fr": "Mode modification",
-        "en": "Edit mode"
+        "en": "Edit mode",
+        "nl": "Bewerkmodus",
+        "de": "Bearbeitungsmodus"
       },
       "captures": {
         "fr": {
@@ -342,6 +522,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 954.25,
+                      "y": 84,
+                      "width": 120.421875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-view__btn--update\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 251,
+                      "width": 120.421875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-view__btn--update\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 945,
+                      "y": 84,
+                      "width": 144.0625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-view__btn--update\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 251,
+                      "width": 144.0625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"key-view__btn--update\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -354,15 +630,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Renommer la clé",
-        "en": "Rename the key"
+        "en": "Rename the key",
+        "nl": "De sleutel hernoemen",
+        "de": "Den Schlüssel umbenennen"
       },
       "text": {
         "fr": "Modifiez le nom et la description pour refléter le nouvel usage de la clé. Ces champs apparaissent dans la liste et facilitent sa recherche.",
-        "en": "Edit the name and description to reflect the key's new purpose. These fields appear in the list and make it easier to find."
+        "en": "Edit the name and description to reflect the key's new purpose. These fields appear in the list and make it easier to find.",
+        "nl": "Wijzig de naam en de beschrijving zodat ze het nieuwe gebruik van de sleutel weerspiegelen. Deze velden verschijnen in de lijst en maken de sleutel makkelijker terug te vinden.",
+        "de": "Ändern Sie den Namen und die Beschreibung, damit sie den neuen Verwendungszweck des Schlüssels widerspiegeln. Diese Felder erscheinen in der Liste und erleichtern die Suche."
       },
       "subtitle": {
         "fr": "Identification",
-        "en": "Identification"
+        "en": "Identification",
+        "nl": "Identificatie",
+        "de": "Identifikation"
       },
       "captures": {
         "fr": {
@@ -512,6 +794,154 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/nl/desktop/step-22-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 260,
+                        "width": 1237,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-update__input--name\"]",
+                      "value": "Key 1 (updated)"
+                    },
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 348,
+                        "width": 1237,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-update__textarea--description\"]",
+                      "value": "Updated description after E2E modification"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/nl/mobile/step-22-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 0,
+                        "width": 315,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-update__input--name\"]",
+                      "value": "Key 1 (updated)"
+                    },
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 88,
+                        "width": 315,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-update__textarea--description\"]",
+                      "value": "Updated description after E2E modification"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/de/desktop/step-22-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 260,
+                        "width": 1237,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-update__input--name\"]",
+                      "value": "Key 1 (updated)"
+                    },
+                    {
+                      "bbox": {
+                        "x": 137,
+                        "y": 348,
+                        "width": 1237,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-update__textarea--description\"]",
+                      "value": "Updated description after E2E modification"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/de/mobile/step-22-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 0,
+                        "width": 315,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"key-update__input--name\"]",
+                      "value": "Key 1 (updated)"
+                    },
+                    {
+                      "bbox": {
+                        "x": 39,
+                        "y": 88,
+                        "width": 315,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"key-update__textarea--description\"]",
+                      "value": "Updated description after E2E modification"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -524,15 +954,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Rééquilibrer les consommateurs",
-        "en": "Rebalance the consumers"
+        "en": "Rebalance the consumers",
+        "nl": "De verbruikers herverdelen",
+        "de": "Die Verbraucher neu gewichten"
       },
       "text": {
         "fr": "Double-cliquez sur les pourcentages des consommateurs pour les modifier — ici on passe de 50/50 à 60/40. La somme par itération doit toujours faire 100%.",
-        "en": "Double-click the consumer percentages to edit them — here we move from 50/50 to 60/40. The per-iteration total must still equal 100%."
+        "en": "Double-click the consumer percentages to edit them — here we move from 50/50 to 60/40. The per-iteration total must still equal 100%.",
+        "nl": "Dubbelklik op de percentages van de verbruikers om ze te wijzigen — hier gaan we van 50/50 naar 60/40. De som per iteratie moet altijd 100% bedragen.",
+        "de": "Doppelklicken Sie auf die Prozentsätze der Verbraucher, um sie zu ändern — hier von 50/50 auf 60/40. Die Summe pro Iteration muss immer 100% ergeben."
       },
       "subtitle": {
         "fr": "Répartition",
-        "en": "Allocation"
+        "en": "Allocation",
+        "nl": "Verdeling",
+        "de": "Aufteilung"
       },
       "captures": {
         "fr": {
@@ -634,6 +1070,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 651,
+                      "width": 1246,
+                      "height": 249
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "60 / 40"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 523,
+                      "width": 324,
+                      "height": 249
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "60 / 40"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 131,
+                      "y": 651,
+                      "width": 1246,
+                      "height": 249
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "60 / 40"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 523,
+                      "width": 324,
+                      "height": 249
+                    },
+                    "selector": "[data-testid=\"key-update__grid--data\"]"
+                  },
+                  "value": "60 / 40"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -646,15 +1182,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Vérifier avant d'enregistrer",
-        "en": "Review before saving"
+        "en": "Review before saving",
+        "nl": "Controleren vóór het opslaan",
+        "de": "Vor dem Speichern prüfen"
       },
       "text": {
         "fr": "Relisez la grille complète : nom, description et nouveaux pourcentages doivent correspondre à l'intention avant l'enregistrement.",
-        "en": "Scan the whole grid: name, description and the new percentages must match what you intended before you save."
+        "en": "Scan the whole grid: name, description and the new percentages must match what you intended before you save.",
+        "nl": "Controleer de volledige tabel: naam, beschrijving en nieuwe percentages moeten overeenkomen met wat u bedoelt, voordat u opslaat.",
+        "de": "Prüfen Sie die vollständige Tabelle: Name, Beschreibung und neue Prozentsätze müssen vor dem Speichern Ihrer Absicht entsprechen."
       },
       "subtitle": {
         "fr": "Validation finale",
-        "en": "Final review"
+        "en": "Final review",
+        "nl": "Laatste controle",
+        "de": "Abschließende Prüfung"
       },
       "captures": {
         "fr": {
@@ -708,6 +1250,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -720,15 +1314,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Enregistrer les modifications",
-        "en": "Save the changes"
+        "en": "Save the changes",
+        "nl": "De wijzigingen opslaan",
+        "de": "Die Änderungen speichern"
       },
       "text": {
         "fr": "Cliquez sur le bouton d'enregistrement : l'application valide les pourcentages et renvoie vers la liste des clés.",
-        "en": "Click the save button — the app validates the percentages and redirects you back to the keys list."
+        "en": "Click the save button — the app validates the percentages and redirects you back to the keys list.",
+        "nl": "Klik op de knop om op te slaan: de applicatie controleert de percentages en brengt u terug naar de lijst met sleutels.",
+        "de": "Klicken Sie auf die Schaltfläche zum Speichern: Die Anwendung prüft die Prozentsätze und leitet Sie zur Schlüsselliste zurück."
       },
       "subtitle": {
         "fr": "Sauvegarde",
-        "en": "Persist"
+        "en": "Persist",
+        "nl": "Opslaan",
+        "de": "Speichern"
       },
       "captures": {
         "fr": {
@@ -826,6 +1426,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/nl/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 682.171875,
+                      "y": 815,
+                      "width": 143.65625,
+                      "height": 49
+                    },
+                    "selector": "[data-testid=\"key-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/nl/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 123.171875,
+                      "y": 795,
+                      "width": 143.65625,
+                      "height": 49
+                    },
+                    "selector": "[data-testid=\"key-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/de/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 690.78125,
+                      "y": 815,
+                      "width": 126.421875,
+                      "height": 49
+                    },
+                    "selector": "[data-testid=\"key-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/de/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 131.78125,
+                      "y": 795,
+                      "width": 126.421875,
+                      "height": 49
+                    },
+                    "selector": "[data-testid=\"key-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -838,15 +1534,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Modifications enregistrées",
-        "en": "Changes persisted"
+        "en": "Changes persisted",
+        "nl": "Wijzigingen opgeslagen",
+        "de": "Änderungen gespeichert"
       },
       "text": {
         "fr": "La fiche détaillée affiche désormais la nouvelle description : la clé a bien été mise à jour côté serveur.",
-        "en": "The detail page now shows the new description — the key has been successfully updated on the server."
+        "en": "The detail page now shows the new description — the key has been successfully updated on the server.",
+        "nl": "De detailpagina toont nu de nieuwe beschrijving: de sleutel is wel degelijk bijgewerkt op de server.",
+        "de": "Die Detailseite zeigt jetzt die neue Beschreibung: Der Schlüssel wurde auf dem Server erfolgreich aktualisiert."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -892,6 +1594,58 @@
             "frames": [
               {
                 "screenshot": "../assets/key-update/en/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/nl/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/nl/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/de/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/key-update/de/mobile/step-29.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Consulter sa fiche et son compteur",
-    "en": "Consult your own record and meter"
+    "en": "Consult your own record and meter",
+    "nl": "Uw eigen fiche en meter raadplegen",
+    "de": "Ihren Datensatz und Zähler einsehen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir votre profil",
-        "en": "Open your profile"
+        "en": "Open your profile",
+        "nl": "Uw profiel openen",
+        "de": "Ihr Profil öffnen"
       },
       "text": {
         "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Profil » pour accéder à votre espace personnel.",
-        "en": "In the sidebar's profile menu, click \"Profile\" to reach your personal space."
+        "en": "In the sidebar's profile menu, click \"Profile\" to reach your personal space.",
+        "nl": "Klik in het profielmenu van de zijbalk op “Profiel” om naar uw persoonlijke ruimte te gaan.",
+        "de": "Klicken Sie im Profilmenü der Seitenleiste auf „Profil“, um Ihren persönlichen Bereich aufzurufen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Uw profiel openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en daarna op “Profiel”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 143.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ihr Profil öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Profil“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Vos représentations",
-        "en": "Your memberships"
+        "en": "Your memberships",
+        "nl": "Uw vertegenwoordigingen",
+        "de": "Ihre Vertretungen"
       },
       "text": {
         "fr": "L'onglet « Représentations » liste les membres de la communauté que vous représentez. Cliquez sur une ligne pour ouvrir sa fiche.",
-        "en": "The \"Representations\" tab lists the community members you represent. Click a row to open its record."
+        "en": "The \"Representations\" tab lists the community members you represent. Click a row to open its record.",
+        "nl": "Het tabblad “Vertegenwoordigingen” toont de leden van de gemeenschap die u vertegenwoordigt. Klik op een rij om de fiche ervan te openen.",
+        "de": "Die Registerkarte „Vertretungen“ listet die Mitglieder der Gemeinschaft auf, die Sie vertreten. Klicken Sie auf eine Zeile, um den zugehörigen Datensatz zu öffnen."
       },
       "subtitle": {
         "fr": "Profil",
-        "en": "Profile"
+        "en": "Profile",
+        "nl": "Profiel",
+        "de": "Profil"
       },
       "captures": {
         "fr": {
@@ -268,6 +390,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 470.3125,
+                      "y": 362,
+                      "width": 203.171875,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--representations\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 171.3125,
+                      "y": 393.84375,
+                      "width": 203.171875,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--representations\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 429.703125,
+                      "y": 362,
+                      "width": 132.125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--representations\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 241.703125,
+                      "y": 393.84375,
+                      "width": 132.125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--representations\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -280,15 +498,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir sa fiche de membre",
-        "en": "Open your member record"
+        "en": "Open your member record",
+        "nl": "De ledenfiche openen",
+        "de": "Den Mitgliederdatensatz öffnen"
       },
       "text": {
         "fr": "Cliquez sur la ligne correspondant au membre que vous représentez pour afficher sa fiche complète.",
-        "en": "Click the row for the member you represent to display their full record."
+        "en": "Click the row for the member you represent to display their full record.",
+        "nl": "Klik op de rij van het lid dat u vertegenwoordigt om de volledige fiche ervan weer te geven.",
+        "de": "Klicken Sie auf die Zeile des Mitglieds, das Sie vertreten, um seinen vollständigen Datensatz anzuzeigen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -396,6 +620,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/nl/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 132,
+                      "y": 596,
+                      "width": 1244,
+                      "height": 53
+                    },
+                    "selector": "[data-testid=\"representations__row--desktop--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 655.84375,
+                      "width": 322,
+                      "height": 187.65625
+                    },
+                    "selector": "[data-testid=\"representations__row--mobile--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De ledenfiche openen",
+              "text": "Tik op de rij van het lid dat u vertegenwoordigt om de volledige fiche ervan weer te geven.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/de/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 132,
+                      "y": 596,
+                      "width": 1244,
+                      "height": 53
+                    },
+                    "selector": "[data-testid=\"representations__row--desktop--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 655.84375,
+                      "width": 322,
+                      "height": 187.65625
+                    },
+                    "selector": "[data-testid=\"representations__row--mobile--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Den Mitgliederdatensatz öffnen",
+              "text": "Tippen Sie auf die Zeile des Mitglieds, das Sie vertreten, um seinen vollständigen Datensatz anzuzeigen.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -408,15 +738,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Votre fiche de membre",
-        "en": "Your member record"
+        "en": "Your member record",
+        "nl": "Uw ledenfiche",
+        "de": "Ihr Mitgliederdatensatz"
       },
       "text": {
         "fr": "Votre fiche de membre s'affiche en lecture seule : informations personnelles, coordonnées bancaires et gestionnaire associé. Pour toute correction, contactez le gestionnaire de la communauté.",
-        "en": "Your member record is shown read-only: personal information, banking details, and the associated manager. For any correction, contact the community manager."
+        "en": "Your member record is shown read-only: personal information, banking details, and the associated manager. For any correction, contact the community manager.",
+        "nl": "Uw ledenfiche wordt alleen-lezen weergegeven: persoonlijke gegevens, bankgegevens en de gekoppelde beheerder. Neem voor elke correctie contact op met de beheerder van de gemeenschap.",
+        "de": "Ihr Mitgliederdatensatz wird schreibgeschützt angezeigt: persönliche Angaben, Bankdaten und der zugeordnete Manager. Wenden Sie sich für jede Korrektur an den Manager der Gemeinschaft."
       },
       "subtitle": {
         "fr": "Consultation",
-        "en": "Read-only view"
+        "en": "Read-only view",
+        "nl": "Raadpleging",
+        "de": "Einsicht"
       },
       "captures": {
         "fr": {
@@ -470,6 +806,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -482,15 +870,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Vos compteurs",
-        "en": "Your meters"
+        "en": "Your meters",
+        "nl": "Uw meters",
+        "de": "Ihre Zähler"
       },
       "text": {
         "fr": "L'onglet « Compteurs » liste les compteurs rattachés aux membres que vous représentez. Cliquez sur une ligne pour consulter le compteur en détail.",
-        "en": "The \"Meters\" tab lists the meters attached to the members you represent. Click a row to inspect a meter in detail."
+        "en": "The \"Meters\" tab lists the meters attached to the members you represent. Click a row to inspect a meter in detail.",
+        "nl": "Het tabblad “Meters” toont de meters die gekoppeld zijn aan de leden die u vertegenwoordigt. Klik op een rij om de meter in detail te bekijken.",
+        "de": "Die Registerkarte „Zähler“ listet die Zähler der Mitglieder auf, die Sie vertreten. Klicken Sie auf eine Zeile, um den Zähler im Detail anzuzeigen."
       },
       "subtitle": {
         "fr": "Profil",
-        "en": "Profile"
+        "en": "Profile",
+        "nl": "Profiel",
+        "de": "Profil"
       },
       "captures": {
         "fr": {
@@ -588,6 +982,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 362,
+                      "width": 86.40625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--meters\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 393.84375,
+                      "width": 86.40625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--meters\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 362,
+                      "width": 81.65625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--meters\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/de/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 393.84375,
+                      "width": 81.65625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"profile-tabs__tab--meters\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -600,15 +1090,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir son compteur",
-        "en": "Open your meter"
+        "en": "Open your meter",
+        "nl": "De meter openen",
+        "de": "Den Zähler öffnen"
       },
       "text": {
         "fr": "Cliquez sur la ligne du compteur pour consulter son détail et ses relevés.",
-        "en": "Click the meter's row to consult its detail and its readings."
+        "en": "Click the meter's row to consult its detail and its readings.",
+        "nl": "Klik op de rij van de meter om de details en meetgegevens ervan te bekijken.",
+        "de": "Klicken Sie auf die Zeile des Zählers, um seine Details und Messwerte anzuzeigen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -716,6 +1212,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/nl/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 132,
+                      "y": 596,
+                      "width": 1244,
+                      "height": 65
+                    },
+                    "selector": "[data-testid=\"meters__row--desktop--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 532.84375,
+                      "width": 322,
+                      "height": 310.65625
+                    },
+                    "selector": "[data-testid=\"meters__row--mobile--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De meter openen",
+              "text": "Tik op de rij van de meter om de details en meetgegevens ervan te bekijken.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/de/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 132,
+                      "y": 596,
+                      "width": 1244,
+                      "height": 65
+                    },
+                    "selector": "[data-testid=\"meters__row--desktop--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/de/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 532.84375,
+                      "width": 322,
+                      "height": 310.65625
+                    },
+                    "selector": "[data-testid=\"meters__row--mobile--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Den Zähler öffnen",
+              "text": "Tippen Sie auf die Zeile des Zählers, um seine Details und Messwerte anzuzeigen.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -728,15 +1330,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Votre compteur",
-        "en": "Your meter"
+        "en": "Your meter",
+        "nl": "Uw meter",
+        "de": "Ihr Zähler"
       },
       "text": {
         "fr": "La vue du compteur affiche ses caractéristiques et son statut. Les onglets vous permettent de voir la configuration actuelle, l'historique, les périodes futures et la consommation.",
-        "en": "The meter view shows its characteristics and status. The tabs let you see the current configuration, history, upcoming periods, and consumption."
+        "en": "The meter view shows its characteristics and status. The tabs let you see the current configuration, history, upcoming periods, and consumption.",
+        "nl": "De meterweergave toont de kenmerken en de status van de meter. Via de tabbladen ziet u de huidige configuratie, de historiek, de toekomstige periodes en het verbruik.",
+        "de": "Die Zähleransicht zeigt seine Merkmale und seinen Status. Über die Registerkarten sehen Sie die aktuelle Konfiguration, den Verlauf, die künftigen Zeiträume und den Verbrauch."
       },
       "subtitle": {
         "fr": "Consultation",
-        "en": "Read-only view"
+        "en": "Read-only view",
+        "nl": "Raadpleging",
+        "de": "Einsicht"
       },
       "captures": {
         "fr": {
@@ -790,6 +1398,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/nl/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/nl/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/de/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/de/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -802,15 +1462,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "La consommation",
-        "en": "Consumption"
+        "en": "Consumption",
+        "nl": "Het verbruik",
+        "de": "Der Verbrauch"
       },
       "text": {
         "fr": "L'onglet « Consommation » présente les relevés de votre compteur. Lorsqu'aucune donnée n'est encore disponible, un message vous l'indique.",
-        "en": "The \"Consumption\" tab presents your meter's readings. When no data is available yet, a message tells you so."
+        "en": "The \"Consumption\" tab presents your meter's readings. When no data is available yet, a message tells you so.",
+        "nl": "Het tabblad “Verbruiksopvolging” toont de meetgegevens van uw meter. Wanneer er nog geen gegevens beschikbaar zijn, meldt een bericht u dat.",
+        "de": "Die Registerkarte „Verbrauchsverfolgung“ zeigt die Messwerte Ihres Zählers. Wenn noch keine Daten verfügbar sind, weist Sie eine Meldung darauf hin."
       },
       "subtitle": {
         "fr": "Consultation",
-        "en": "Read-only view"
+        "en": "Read-only view",
+        "nl": "Raadpleging",
+        "de": "Einsicht"
       },
       "captures": {
         "fr": {
@@ -900,6 +1566,102 @@
                       "x": 154.1875,
                       "y": 394,
                       "width": 219.6875,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"meter-view-me__tab--consumption\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/nl/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 669.375,
+                      "y": 425,
+                      "width": 177.765625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"meter-view-me__tab--consumption\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/nl/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 196.375,
+                      "y": 394,
+                      "width": 177.765625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"meter-view-me__tab--consumption\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/de/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 584.90625,
+                      "y": 425,
+                      "width": 196.609375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"meter-view-me__tab--consumption\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-self-views/de/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 176.90625,
+                      "y": 394,
+                      "width": 196.609375,
                       "height": 57
                     },
                     "selector": "[data-testid=\"meter-view-me__tab--consumption\"]"

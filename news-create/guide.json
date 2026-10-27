@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Publier une actualité",
-    "en": "Publish a news"
+    "en": "Publish a news",
+    "nl": "Een nieuwsbericht publiceren",
+    "de": "Beitrag veröffentlichen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir le tableau d'actualités",
-        "en": "Open the news board"
+        "en": "Open the news board",
+        "nl": "Het nieuwsbord openen",
+        "de": "Neuigkeiten-Pinnwand öffnen"
       },
       "text": {
         "fr": "Dans la section « Communauté » de la barre latérale, cliquez sur « Actualités » pour accéder au tableau d'actualités de la communauté.",
-        "en": "In the sidebar's \"Community\" section, click \"News\" to open the community news board."
+        "en": "In the sidebar's \"Community\" section, click \"News\" to open the community news board.",
+        "nl": "Klik in de sectie “Gemeenschap” van de zijbalk op “Nieuws” om het nieuwsbord van de gemeenschap te openen.",
+        "de": "Klicken Sie im Bereich „Gemeinschaft“ der Seitenleiste auf „Aktuelles“, um die Neuigkeiten-Pinnwand der Gemeinschaft aufzurufen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Het nieuwsbord openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en tik vervolgens in de sectie “Gemeenschap” op “Nieuws”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/news\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Neuigkeiten-Pinnwand öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und tippen Sie dann im Bereich „Gemeinschaft“ auf „Aktuelles“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Le tableau d'actualités",
-        "en": "The news board"
+        "en": "The news board",
+        "nl": "Het nieuwsbord",
+        "de": "Die Neuigkeiten-Pinnwand"
       },
       "text": {
         "fr": "Le tableau d'actualités s'affiche. Il est encore vide : aucune actualité n'a été publiée. En tant que gestionnaire, vous pouvez en créer une avec le bouton « Nouvelle publication ».",
-        "en": "The news board is shown. It is still empty — no news has been published yet. As a manager you can create one with the \"New post\" button."
+        "en": "The news board is shown. It is still empty — no news has been published yet. As a manager you can create one with the \"New post\" button.",
+        "nl": "Het nieuwsbord wordt weergegeven. Het is nog leeg: er is nog geen nieuws gepubliceerd. Als beheerder kunt u een bericht aanmaken met de knop “Opstellen”.",
+        "de": "Die Neuigkeiten-Pinnwand wird angezeigt. Sie ist noch leer: Es wurden noch keine Neuigkeiten veröffentlicht. Als Manager können Sie mit der Schaltfläche „Verfassen“ einen Beitrag erstellen."
       },
       "subtitle": {
         "fr": "Actualités",
-        "en": "News"
+        "en": "News",
+        "nl": "Nieuws",
+        "de": "Aktuelles"
       },
       "captures": {
         "fr": {
@@ -224,6 +346,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -236,15 +410,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir le compositeur",
-        "en": "Open the composer"
+        "en": "Open the composer",
+        "nl": "Het opstelvenster openen",
+        "de": "Das Verfassen-Fenster öffnen"
       },
       "text": {
         "fr": "Cliquez sur « Nouvelle publication » en haut à droite pour ouvrir la fenêtre de rédaction.",
-        "en": "Click \"New post\" in the top right to open the compose dialog."
+        "en": "Click \"New post\" in the top right to open the compose dialog.",
+        "nl": "Klik rechtsboven op “Opstellen” om het venster “Nieuw bericht” te openen.",
+        "de": "Klicken Sie oben rechts auf „Verfassen“, um das Fenster „Neuer Beitrag“ zu öffnen."
       },
       "subtitle": {
         "fr": "Rédaction",
-        "en": "Compose"
+        "en": "Compose",
+        "nl": "Opstellen",
+        "de": "Verfassen"
       },
       "captures": {
         "fr": {
@@ -342,6 +522,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/nl/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1271.984375,
+                      "y": 52,
+                      "width": 119.015625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-board__compose\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/nl/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 219,
+                      "width": 119.015625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-board__compose\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/de/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1271.484375,
+                      "y": 52,
+                      "width": 119.515625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-board__compose\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/de/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 219,
+                      "width": 119.515625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-board__compose\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -354,15 +630,21 @@
       "waitAfter": 600,
       "title": {
         "fr": "Rédiger une actualité",
-        "en": "Compose a news"
+        "en": "Compose a news",
+        "nl": "Een nieuwsbericht opstellen",
+        "de": "Eine Neuigkeit verfassen"
       },
       "text": {
         "fr": "La fenêtre s'ouvre sur le type « Publication ». L'onglet « Sondage » permettrait plutôt de créer un sondage — ici nous publions une simple actualité.",
-        "en": "The dialog opens on the \"Post\" kind. The \"Poll\" tab would create a poll instead — here we publish a plain news post."
+        "en": "The dialog opens on the \"Post\" kind. The \"Poll\" tab would create a poll instead — here we publish a plain news post.",
+        "nl": "Het venster opent op het type “Bericht”. Met het tabblad “Peiling” zou u in plaats daarvan een peiling aanmaken — hier publiceren we een gewoon nieuwsbericht.",
+        "de": "Das Fenster öffnet sich mit dem Typ „Beitrag“. Über die Registerkarte „Umfrage“ würden Sie stattdessen eine Umfrage erstellen — hier veröffentlichen wir eine einfache Neuigkeit."
       },
       "subtitle": {
         "fr": "Rédaction",
-        "en": "Compose"
+        "en": "Compose",
+        "nl": "Opstellen",
+        "de": "Verfassen"
       },
       "captures": {
         "fr": {
@@ -416,6 +698,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -428,15 +762,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Écrire le message",
-        "en": "Write the message"
+        "en": "Write the message",
+        "nl": "Het bericht schrijven",
+        "de": "Die Nachricht schreiben"
       },
       "text": {
         "fr": "Saisissez le contenu de votre actualité dans l'éditeur. La barre d'outils permet de mettre en forme le texte (titres, gras, listes, liens).",
-        "en": "Type your news content in the editor. The toolbar lets you format the text (headings, bold, lists, links)."
+        "en": "Type your news content in the editor. The toolbar lets you format the text (headings, bold, lists, links).",
+        "nl": "Typ de inhoud van uw nieuwsbericht in de editor. Met de werkbalk kunt u de tekst opmaken (titels, vet, lijsten, links).",
+        "de": "Geben Sie den Inhalt Ihrer Neuigkeit im Editor ein. Über die Symbolleiste können Sie den Text formatieren (Überschriften, Fettdruck, Listen, Links)."
       },
       "subtitle": {
         "fr": "Rédaction",
-        "en": "Compose"
+        "en": "Compose",
+        "nl": "Opstellen",
+        "de": "Verfassen"
       },
       "captures": {
         "fr": {
@@ -538,6 +878,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/nl/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 406,
+                      "y": 455.734375,
+                      "width": 628,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"
+                  },
+                  "value": "Bienvenue sur le tableau des actualités de la communauté !"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/nl/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 14,
+                      "y": 310.078125,
+                      "width": 362,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"
+                  },
+                  "value": "Bienvenue sur le tableau des actualités de la communauté !"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/de/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 406,
+                      "y": 455.734375,
+                      "width": 628,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"
+                  },
+                  "value": "Bienvenue sur le tableau des actualités de la communauté !"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/de/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 14,
+                      "y": 310.078125,
+                      "width": 362,
+                      "height": 152
+                    },
+                    "selector": "[data-testid=\"news-compose__body\"] [contenteditable=\"true\"]"
+                  },
+                  "value": "Bienvenue sur le tableau des actualités de la communauté !"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -550,15 +990,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Publier",
-        "en": "Publish"
+        "en": "Publish",
+        "nl": "Publiceren",
+        "de": "Veröffentlichen"
       },
       "text": {
         "fr": "Cliquez sur « Publier » pour diffuser l'actualité à tous les membres de la communauté.",
-        "en": "Click \"Publish\" to broadcast the news to every member of the community."
+        "en": "Click \"Publish\" to broadcast the news to every member of the community.",
+        "nl": "Klik op “Publiceren” om het nieuwsbericht naar alle leden van de gemeenschap te verspreiden.",
+        "de": "Klicken Sie auf „Veröffentlichen“, um die Neuigkeit an alle Mitglieder der Gemeinschaft zu verbreiten."
       },
       "subtitle": {
         "fr": "Rédaction",
-        "en": "Compose"
+        "en": "Compose",
+        "nl": "Opstellen",
+        "de": "Verfassen"
       },
       "captures": {
         "fr": {
@@ -656,6 +1102,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/nl/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 932.671875,
+                      "y": 659.328125,
+                      "width": 102.328125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 274.671875,
+                      "y": 657.671875,
+                      "width": 102.328125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/de/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 898.453125,
+                      "y": 659.328125,
+                      "width": 136.546875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 240.453125,
+                      "y": 657.671875,
+                      "width": 136.546875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"news-compose__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -668,15 +1210,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Votre actualité est publiée",
-        "en": "Your news is published"
+        "en": "Your news is published",
+        "nl": "Uw nieuwsbericht is gepubliceerd",
+        "de": "Ihre Neuigkeit ist veröffentlicht"
       },
       "text": {
         "fr": "L'actualité apparaît en tête du tableau, signée par son auteur. Tous les membres de la communauté la voient et reçoivent une notification.",
-        "en": "The news appears at the top of the board, signed by its author. Every member of the community sees it and receives a notification."
+        "en": "The news appears at the top of the board, signed by its author. Every member of the community sees it and receives a notification.",
+        "nl": "Het nieuwsbericht verschijnt bovenaan het bord, ondertekend door de auteur. Alle leden van de gemeenschap zien het en ontvangen een melding.",
+        "de": "Die Neuigkeit erscheint oben auf der Pinnwand, unterzeichnet von ihrem Verfasser. Alle Mitglieder der Gemeinschaft sehen sie und erhalten eine Benachrichtigung."
       },
       "subtitle": {
         "fr": "Actualités",
-        "en": "News"
+        "en": "News",
+        "nl": "Nieuws",
+        "de": "Aktuelles"
       },
       "captures": {
         "fr": {
@@ -722,6 +1270,58 @@
             "frames": [
               {
                 "screenshot": "../assets/news-create/en/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/nl/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/nl/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/de/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/news-create/de/mobile/step-28.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

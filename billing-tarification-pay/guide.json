@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Facturer une opération, du tarif à l'encaissement",
-    "en": "Bill a sharing operation, from tariff to payment"
+    "en": "Bill a sharing operation, from tariff to payment",
+    "nl": "Een deeloperatie factureren, van tarief tot betaling",
+    "de": "Teilungsoperation abrechnen, vom Tarif bis zur Zahlung"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir la facturation",
-        "en": "Open billing"
+        "en": "Open billing",
+        "nl": "De facturatie openen",
+        "de": "Die Abrechnung öffnen"
       },
       "text": {
         "fr": "Dans la section « Communauté » de la barre latérale, cliquez sur « Facturation » pour ouvrir le module de facturation de la communauté.",
-        "en": "In the sidebar's \"Community\" section, click \"Billing\" to open the community's billing module."
+        "en": "In the sidebar's \"Community\" section, click \"Billing\" to open the community's billing module.",
+        "nl": "Klik in de sectie “Gemeenschap” van de zijbalk op “Facturatie” om de facturatiemodule van de gemeenschap te openen.",
+        "de": "Klicken Sie im Bereich „Gemeinschaft“ der Seitenleiste auf „Abrechnung“, um das Abrechnungsmodul der Gemeinschaft zu öffnen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/billing\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/billing\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De facturatie openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en tik daarna in de sectie “Gemeenschap” op “Facturatie”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/billing\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/billing\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Die Abrechnung öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und tippen Sie dann im Bereich „Gemeinschaft“ auf „Abrechnung“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Le module de facturation",
-        "en": "The billing module"
+        "en": "The billing module",
+        "nl": "De facturatiemodule",
+        "de": "Das Abrechnungsmodul"
       },
       "text": {
         "fr": "Le module s'ouvre sur l'onglet « Tarifs ». C'est ici que vous définissez le prix de l'énergie partagée avant de générer les factures. Les onglets « Générer une facture » et « Tableau de suivi » viennent ensuite.",
-        "en": "The module opens on the \"Tariffs\" tab. This is where you set the price of the shared energy before generating invoices. The \"Generate\" and \"Tracking\" tabs come next."
+        "en": "The module opens on the \"Tariffs\" tab. This is where you set the price of the shared energy before generating invoices. The \"Generate\" and \"Tracking\" tabs come next.",
+        "nl": "De module opent op het tabblad “Tarieven”. Hier legt u de prijs van de gedeelde energie vast voordat u de facturen genereert. Daarna volgen de tabbladen “Factuur genereren” en “Overzicht”.",
+        "de": "Das Modul öffnet sich auf der Registerkarte „Tarife“. Hier legen Sie den Preis der geteilten Energie fest, bevor Sie die Rechnungen erstellen. Danach folgen die Registerkarten „Rechnung erstellen“ und „Übersicht“."
       },
       "subtitle": {
         "fr": "Facturation",
-        "en": "Billing"
+        "en": "Billing",
+        "nl": "Facturatie",
+        "de": "Abrechnung"
       },
       "captures": {
         "fr": {
@@ -224,6 +346,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -236,15 +410,21 @@
       "waitAfter": 700,
       "title": {
         "fr": "Choisir l'opération de partage",
-        "en": "Pick the sharing operation"
+        "en": "Pick the sharing operation",
+        "nl": "De deeloperatie kiezen",
+        "de": "Die Teilungsoperation wählen"
       },
       "text": {
         "fr": "Sélectionnez l'opération de partage à facturer — ici « Public Wind Sharing ». Les tarifs et les factures sont toujours rattachés à une opération.",
-        "en": "Select the sharing operation to bill — here \"Public Wind Sharing\". Tariffs and invoices are always scoped to an operation."
+        "en": "Select the sharing operation to bill — here \"Public Wind Sharing\". Tariffs and invoices are always scoped to an operation.",
+        "nl": "Selecteer de te factureren deeloperatie — hier “Public Wind Sharing”. Tarieven en facturen zijn altijd aan een operatie gekoppeld.",
+        "de": "Wählen Sie die abzurechnende Teilungsoperation — hier „Public Wind Sharing“. Tarife und Rechnungen sind immer einer Operation zugeordnet."
       },
       "subtitle": {
         "fr": "Étape 1 — Tarifs",
-        "en": "Step 1 — Tariffs"
+        "en": "Step 1 — Tariffs",
+        "nl": "Stap 1 — Tarieven",
+        "de": "Schritt 1 — Tarife"
       },
       "captures": {
         "fr": {
@@ -342,6 +522,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 260,
+                      "y": 241,
+                      "width": 448,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariffs-panel__select--operation\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 359,
+                      "width": 322,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariffs-panel__select--operation\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 260,
+                      "y": 241,
+                      "width": 448,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariffs-panel__select--operation\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 359,
+                      "width": 322,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariffs-panel__select--operation\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -354,15 +630,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ajouter un tarif",
-        "en": "Add a tariff"
+        "en": "Add a tariff",
+        "nl": "Een tarief toevoegen",
+        "de": "Einen Tarif hinzufügen"
       },
       "text": {
         "fr": "Cliquez sur « Nouveau tarif » pour ouvrir la fenêtre de création. Par défaut, le tarif porte sur la vente aux consommateurs et s'applique à toute l'opération.",
-        "en": "Click \"New tariff\" to open the creation dialog. By default the tariff covers consumer selling and applies to the whole operation."
+        "en": "Click \"New tariff\" to open the creation dialog. By default the tariff covers consumer selling and applies to the whole operation.",
+        "nl": "Klik op “Nieuw tarief” om het aanmaakvenster te openen. Standaard geldt het tarief voor de verkoop aan verbruikers en voor de hele operatie.",
+        "de": "Klicken Sie auf „Neuer Tarif“, um das Erstellungsfenster zu öffnen. Standardmäßig betrifft der Tarif den Verkauf an Verbraucher und gilt für die gesamte Operation."
       },
       "subtitle": {
         "fr": "Étape 1 — Tarifs",
-        "en": "Step 1 — Tariffs"
+        "en": "Step 1 — Tariffs",
+        "nl": "Stap 1 — Tarieven",
+        "de": "Schritt 1 — Tarife"
       },
       "captures": {
         "fr": {
@@ -460,6 +742,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1108.953125,
+                      "y": 241,
+                      "width": 139.046875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariffs-panel__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 409,
+                      "width": 139.046875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariffs-panel__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1117.8125,
+                      "y": 241,
+                      "width": 130.1875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariffs-panel__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 409,
+                      "width": 130.1875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariffs-panel__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -472,15 +850,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Renseigner le tarif",
-        "en": "Fill in the tariff"
+        "en": "Fill in the tariff",
+        "nl": "Het tarief invullen",
+        "de": "Den Tarif ausfüllen"
       },
       "text": {
         "fr": "Indiquez le prix du kWh partagé (0,1200 €), la date de début de validité et un libellé. Le type « Vente au consommateur » et la portée « Global » conviennent pour facturer toute l'opération.",
-        "en": "Enter the shared-kWh price (0.1200 EUR), the start of validity and a label. The \"Consumer selling\" kind and \"Global\" scope are right for billing the whole operation."
+        "en": "Enter the shared-kWh price (0.1200 EUR), the start of validity and a label. The \"Consumer selling\" kind and \"Global\" scope are right for billing the whole operation.",
+        "nl": "Geef de prijs per gedeelde kWh op (0,1200 €), de begindatum van de geldigheid en een label. De soort “Verkoopprijs voor verbruiker” en het bereik “Globaal” zijn geschikt om de hele operatie te factureren.",
+        "de": "Geben Sie den Preis pro geteilter kWh (0,1200 €), den Beginn der Gültigkeit und eine Bezeichnung ein. Die Art „Verkaufspreis für Verbraucher“ und der Geltungsbereich „Global“ eignen sich, um die gesamte Operation abzurechnen."
       },
       "subtitle": {
         "fr": "Étape 1 — Tarifs",
-        "en": "Step 1 — Tariffs"
+        "en": "Step 1 — Tariffs",
+        "nl": "Stap 1 — Tarieven",
+        "de": "Schritt 1 — Tarife"
       },
       "captures": {
         "fr": {
@@ -582,6 +966,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 602,
+                      "width": 502,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariff-dialog__input--label\"]"
+                  },
+                  "value": "Tarif standard"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 523,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariff-dialog__input--label\"]"
+                  },
+                  "value": "Tarif standard"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 602,
+                      "width": 502,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariff-dialog__input--label\"]"
+                  },
+                  "value": "Tarif standard"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 523,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariff-dialog__input--label\"]"
+                  },
+                  "value": "Tarif standard"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -594,15 +1078,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Créer le tarif",
-        "en": "Create the tariff"
+        "en": "Create the tariff",
+        "nl": "Het tarief aanmaken",
+        "de": "Den Tarif erstellen"
       },
       "text": {
         "fr": "Cliquez sur « Créer le tarif ». Il apparaît aussitôt dans la liste et servira au calcul des factures.",
-        "en": "Click \"Create tariff\". It appears immediately in the list and will be used to compute the invoices."
+        "en": "Click \"Create tariff\". It appears immediately in the list and will be used to compute the invoices.",
+        "nl": "Klik op “Tarief aanmaken”. Het verschijnt meteen in de lijst en wordt gebruikt om de facturen te berekenen.",
+        "de": "Klicken Sie auf „Tarif erstellen“. Er erscheint sofort in der Liste und wird zur Berechnung der Rechnungen verwendet."
       },
       "subtitle": {
         "fr": "Étape 1 — Tarifs",
-        "en": "Step 1 — Tariffs"
+        "en": "Step 1 — Tariffs",
+        "nl": "Stap 1 — Tarieven",
+        "de": "Schritt 1 — Tarife"
       },
       "captures": {
         "fr": {
@@ -700,6 +1190,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 826.328125,
+                      "y": 668,
+                      "width": 144.671875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariff-dialog__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 232.328125,
+                      "y": 589,
+                      "width": 144.671875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariff-dialog__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 847.546875,
+                      "y": 668,
+                      "width": 123.453125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariff-dialog__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 253.546875,
+                      "y": 589,
+                      "width": 123.453125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariff-dialog__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -712,15 +1298,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ajouter un tarif de rachat",
-        "en": "Add a buyback tariff"
+        "en": "Add a buyback tariff",
+        "nl": "Een terugkooptarief toevoegen",
+        "de": "Einen Rückkauftarif hinzufügen"
       },
       "text": {
         "fr": "L'opération éolienne compte des producteurs : leur injection partagée doit aussi être tarifée. Ouvrez à nouveau « Nouveau tarif » pour créer un tarif de rachat.",
-        "en": "The wind operation has producers: their shared injection must be priced too. Open \"New tariff\" again to create a buyback tariff."
+        "en": "The wind operation has producers: their shared injection must be priced too. Open \"New tariff\" again to create a buyback tariff.",
+        "nl": "De windoperatie telt producenten: ook voor hun gedeelde injectie is een tarief nodig. Open opnieuw “Nieuw tarief” om een terugkooptarief aan te maken.",
+        "de": "Die Windoperation umfasst Erzeuger: Auch ihre geteilte Einspeisung braucht einen Tarif. Öffnen Sie erneut „Neuer Tarif“, um einen Rückkauftarif zu erstellen."
       },
       "subtitle": {
         "fr": "Étape 1 — Tarifs",
-        "en": "Step 1 — Tariffs"
+        "en": "Step 1 — Tariffs",
+        "nl": "Stap 1 — Tarieven",
+        "de": "Schritt 1 — Tarife"
       },
       "captures": {
         "fr": {
@@ -818,6 +1410,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1108.953125,
+                      "y": 241,
+                      "width": 139.046875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariffs-panel__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 409,
+                      "width": 139.046875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariffs-panel__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1117.8125,
+                      "y": 241,
+                      "width": 130.1875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariffs-panel__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 409,
+                      "width": 130.1875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariffs-panel__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -830,15 +1518,21 @@
       "waitAfter": 500,
       "title": {
         "fr": "Choisir le type « Rachat producteur »",
-        "en": "Choose the \"Producer buyback\" kind"
+        "en": "Choose the \"Producer buyback\" kind",
+        "nl": "De soort “Terugkoopprijs voor producent” kiezen",
+        "de": "Die Art „Rückkaufpreis für Erzeuger“ wählen"
       },
       "text": {
         "fr": "Sélectionnez le type « Rachat au producteur ». Ce tarif rémunère l'énergie que les producteurs injectent et partagent avec la communauté.",
-        "en": "Select the \"Producer buyback\" kind. This tariff pays for the energy producers inject and share with the community."
+        "en": "Select the \"Producer buyback\" kind. This tariff pays for the energy producers inject and share with the community.",
+        "nl": "Selecteer de soort “Terugkoopprijs voor producent”. Dit tarief vergoedt de energie die de producenten injecteren en met de gemeenschap delen.",
+        "de": "Wählen Sie die Art „Rückkaufpreis für Erzeuger“. Dieser Tarif vergütet die Energie, die die Erzeuger einspeisen und mit der Gemeinschaft teilen."
       },
       "subtitle": {
         "fr": "Étape 1 — Tarifs",
-        "en": "Step 1 — Tariffs"
+        "en": "Step 1 — Tariffs",
+        "nl": "Stap 1 — Tarieven",
+        "de": "Schritt 1 — Tarife"
       },
       "captures": {
         "fr": {
@@ -936,6 +1630,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 274,
+                      "width": 502,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariff-dialog__select--kind\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 117,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariff-dialog__select--kind\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 469,
+                      "y": 274,
+                      "width": 502,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariff-dialog__select--kind\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 117,
+                      "width": 364,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"tariff-dialog__select--kind\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -948,15 +1738,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Les tarifs sont enregistrés",
-        "en": "The tariffs are saved"
+        "en": "The tariffs are saved",
+        "nl": "De tarieven zijn opgeslagen",
+        "de": "Die Tarife sind gespeichert"
       },
       "text": {
         "fr": "L'opération dispose désormais d'un tarif de vente aux consommateurs et d'un tarif de rachat aux producteurs. Passons à la génération des factures.",
-        "en": "The operation now has a consumer-selling tariff and a producer-buyback tariff. Let's move on to generating the invoices."
+        "en": "The operation now has a consumer-selling tariff and a producer-buyback tariff. Let's move on to generating the invoices.",
+        "nl": "De operatie heeft nu een verkooptarief voor verbruikers en een terugkooptarief voor producenten. Tijd om de facturen te genereren.",
+        "de": "Die Operation verfügt jetzt über einen Verkaufstarif für Verbraucher und einen Rückkauftarif für Erzeuger. Gehen wir zur Erstellung der Rechnungen über."
       },
       "subtitle": {
         "fr": "Étape 1 — Tarifs",
-        "en": "Step 1 — Tariffs"
+        "en": "Step 1 — Tariffs",
+        "nl": "Stap 1 — Tarieven",
+        "de": "Schritt 1 — Tarife"
       },
       "captures": {
         "fr": {
@@ -1010,6 +1806,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1022,15 +1870,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Aller à la génération",
-        "en": "Go to generation"
+        "en": "Go to generation",
+        "nl": "Naar het genereren",
+        "de": "Zur Erstellung"
       },
       "text": {
         "fr": "Ouvrez l'onglet « Générer une facture ». C'est ici que l'on importe les données de consommation et que l'on lance le calcul des factures sur une période.",
-        "en": "Open the \"Generate\" tab. This is where you import the consumption data and launch the invoice computation over a period."
+        "en": "Open the \"Generate\" tab. This is where you import the consumption data and launch the invoice computation over a period.",
+        "nl": "Open het tabblad “Factuur genereren”. Hier importeert u de verbruiksgegevens en start u de berekening van de facturen over een periode.",
+        "de": "Öffnen Sie die Registerkarte „Rechnung erstellen“. Hier importieren Sie die Verbrauchsdaten und starten die Berechnung der Rechnungen für einen Zeitraum."
       },
       "subtitle": {
         "fr": "Étape 2 — Générer",
-        "en": "Step 2 — Generate"
+        "en": "Step 2 — Generate",
+        "nl": "Stap 2 — Genereren",
+        "de": "Schritt 2 — Erstellen"
       },
       "captures": {
         "fr": {
@@ -1128,6 +1982,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 338.0625,
+                      "y": 146,
+                      "width": 168.03125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"billing__tab--generate\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 112.0625,
+                      "y": 264,
+                      "width": 168.03125,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"billing__tab--generate\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 317.75,
+                      "y": 146,
+                      "width": 174.734375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"billing__tab--generate\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 91.75,
+                      "y": 264,
+                      "width": 174.734375,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"billing__tab--generate\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1140,15 +2090,21 @@
       "waitAfter": 700,
       "title": {
         "fr": "Choisir l'opération à facturer",
-        "en": "Pick the operation to bill"
+        "en": "Pick the operation to bill",
+        "nl": "De te factureren operatie kiezen",
+        "de": "Die abzurechnende Operation wählen"
       },
       "text": {
         "fr": "Sélectionnez de nouveau « Public Wind Sharing ». La zone d'import des relevés de consommation apparaît.",
-        "en": "Select \"Public Wind Sharing\" again. The consumption-import area appears."
+        "en": "Select \"Public Wind Sharing\" again. The consumption-import area appears.",
+        "nl": "Selecteer opnieuw “Public Wind Sharing”. De zone om de verbruiksmeetgegevens te importeren verschijnt.",
+        "de": "Wählen Sie erneut „Public Wind Sharing“. Der Importbereich für die Verbrauchsmesswerte erscheint."
       },
       "subtitle": {
         "fr": "Étape 2 — Générer",
-        "en": "Step 2 — Generate"
+        "en": "Step 2 — Generate",
+        "nl": "Stap 2 — Genereren",
+        "de": "Schritt 2 — Erstellen"
       },
       "captures": {
         "fr": {
@@ -1246,6 +2202,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-40.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 277,
+                      "y": 258,
+                      "width": 954,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"run-generate__select--operation\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-40.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 51,
+                      "y": 376,
+                      "width": 288,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"run-generate__select--operation\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-40.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 277,
+                      "y": 258,
+                      "width": 954,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"run-generate__select--operation\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-40.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 51,
+                      "y": 376,
+                      "width": 288,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"run-generate__select--operation\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1258,15 +2310,21 @@
       "waitAfter": 1500,
       "title": {
         "fr": "Importer les relevés RESA",
-        "en": "Import the RESA metering file"
+        "en": "Import the RESA metering file",
+        "nl": "De RESA-meetgegevens importeren",
+        "de": "Die RESA-Messwerte importieren"
       },
       "text": {
         "fr": "Déposez le fichier RESA de l'opération (relevés 15 minutes du mois) dans la zone d'import. Il fournit l'énergie partagée qui sera facturée.",
-        "en": "Drop the operation's RESA file (the month's 15-minute readings) into the import zone. It provides the shared energy that will be billed."
+        "en": "Drop the operation's RESA file (the month's 15-minute readings) into the import zone. It provides the shared energy that will be billed.",
+        "nl": "Zet het RESA-bestand van de operatie (de kwartierwaarden van de maand) neer in de importzone. Het levert de gedeelde energie die zal worden gefactureerd.",
+        "de": "Legen Sie die RESA-Datei der Operation (die Viertelstundenwerte des Monats) im Importbereich ab. Sie liefert die geteilte Energie, die abgerechnet wird."
       },
       "subtitle": {
         "fr": "Étape 2 — Générer",
-        "en": "Step 2 — Generate"
+        "en": "Step 2 — Generate",
+        "nl": "Stap 2 — Genereren",
+        "de": "Schritt 2 — Erstellen"
       },
       "captures": {
         "fr": {
@@ -1364,6 +2422,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 294,
+                      "y": 443,
+                      "width": 920,
+                      "height": 135
+                    },
+                    "selector": "[data-testid=\"consumption-upload__dropzone\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 68,
+                      "y": 593,
+                      "width": 254,
+                      "height": 183
+                    },
+                    "selector": "[data-testid=\"consumption-upload__dropzone\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 294,
+                      "y": 443,
+                      "width": 920,
+                      "height": 135
+                    },
+                    "selector": "[data-testid=\"consumption-upload__dropzone\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 68,
+                      "y": 597,
+                      "width": 254,
+                      "height": 183
+                    },
+                    "selector": "[data-testid=\"consumption-upload__dropzone\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1376,15 +2530,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Définir la période",
-        "en": "Set the period"
+        "en": "Set the period",
+        "nl": "De periode bepalen",
+        "de": "Den Zeitraum festlegen"
       },
       "text": {
         "fr": "Choisissez la période à facturer — ici février 2025, le mois couvert par le fichier importé. La facturation portera sur l'énergie partagée de cette période.",
-        "en": "Choose the period to bill — here February 2025, the month covered by the imported file. Billing will cover that period's shared energy."
+        "en": "Choose the period to bill — here February 2025, the month covered by the imported file. Billing will cover that period's shared energy.",
+        "nl": "Kies de te factureren periode — hier februari 2025, de maand die het geïmporteerde bestand dekt. De facturatie heeft betrekking op de gedeelde energie van die periode.",
+        "de": "Wählen Sie den abzurechnenden Zeitraum — hier Februar 2025, den Monat, den die importierte Datei abdeckt. Die Abrechnung umfasst die geteilte Energie dieses Zeitraums."
       },
       "subtitle": {
         "fr": "Étape 2 — Générer",
-        "en": "Step 2 — Generate"
+        "en": "Step 2 — Generate",
+        "nl": "Stap 2 — Genereren",
+        "de": "Schritt 2 — Erstellen"
       },
       "captures": {
         "fr": {
@@ -1438,6 +2598,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-44.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-44.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-44.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-44.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1450,15 +2662,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Générer les factures",
-        "en": "Generate the invoices"
+        "en": "Generate the invoices",
+        "nl": "De facturen genereren",
+        "de": "Die Rechnungen erstellen"
       },
       "text": {
         "fr": "Cliquez sur « Générer ». Le calcul s'exécute en arrière-plan : dès qu'il se termine, les factures de chaque membre de l'opération apparaissent.",
-        "en": "Click \"Generate\". The computation runs in the background: as soon as it finishes, one invoice per operation member appears."
+        "en": "Click \"Generate\". The computation runs in the background: as soon as it finishes, one invoice per operation member appears.",
+        "nl": "Klik op “Genereren”. De berekening loopt op de achtergrond: zodra ze klaar is, verschijnen de facturen van elk lid van de operatie.",
+        "de": "Klicken Sie auf „Erstellen“. Die Berechnung läuft im Hintergrund: Sobald sie abgeschlossen ist, erscheinen die Rechnungen jedes Mitglieds der Operation."
       },
       "subtitle": {
         "fr": "Étape 2 — Générer",
-        "en": "Step 2 — Generate"
+        "en": "Step 2 — Generate",
+        "nl": "Stap 2 — Genereren",
+        "de": "Schritt 2 — Erstellen"
       },
       "captures": {
         "fr": {
@@ -1556,6 +2774,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-45.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 277,
+                      "y": 800.796875,
+                      "width": 125.390625,
+                      "height": 21
+                    },
+                    "selector": "[data-testid=\"run-generate__btn--generate\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-45.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 51,
+                      "y": 761.59375,
+                      "width": 125.390625,
+                      "height": 21
+                    },
+                    "selector": "[data-testid=\"run-generate__btn--generate\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-45.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 277,
+                      "y": 800.796875,
+                      "width": 111.59375,
+                      "height": 21
+                    },
+                    "selector": "[data-testid=\"run-generate__btn--generate\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-45.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 51,
+                      "y": 761.796875,
+                      "width": 111.59375,
+                      "height": 21
+                    },
+                    "selector": "[data-testid=\"run-generate__btn--generate\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1568,15 +2882,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Les factures sont générées",
-        "en": "The invoices are generated"
+        "en": "The invoices are generated",
+        "nl": "De facturen zijn gegenereerd",
+        "de": "Die Rechnungen sind erstellt"
       },
       "text": {
         "fr": "Chaque membre de l'opération a désormais une facture au statut « Brouillon ». Il reste à l'émettre puis à enregistrer son paiement.",
-        "en": "Each operation member now has a \"Draft\" invoice. It remains to issue it and then record its payment."
+        "en": "Each operation member now has a \"Draft\" invoice. It remains to issue it and then record its payment.",
+        "nl": "Elk lid van de operatie heeft nu een factuur met de status “Concept”. U moet ze nog uitreiken en daarna de betaling ervan registreren.",
+        "de": "Jedes Mitglied der Operation hat jetzt eine Rechnung mit dem Status „Entwurf“. Es bleibt, sie auszustellen und anschließend ihre Zahlung zu erfassen."
       },
       "subtitle": {
         "fr": "Étape 2 — Générer",
-        "en": "Step 2 — Generate"
+        "en": "Step 2 — Generate",
+        "nl": "Stap 2 — Genereren",
+        "de": "Schritt 2 — Erstellen"
       },
       "captures": {
         "fr": {
@@ -1630,6 +2950,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-47.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-47.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-47.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-47.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1642,15 +3014,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Émettre la facture",
-        "en": "Issue the invoice"
+        "en": "Issue the invoice",
+        "nl": "De factuur uitreiken",
+        "de": "Die Rechnung ausstellen"
       },
       "text": {
         "fr": "Cliquez sur l'icône « Émettre » d'une facture. Un numéro légal et une communication structurée lui sont attribués, et son statut passe à « Émise ».",
-        "en": "Click an invoice's \"Issue\" icon. It gets a legal number and a structured communication, and its status becomes \"Issued\"."
+        "en": "Click an invoice's \"Issue\" icon. It gets a legal number and a structured communication, and its status becomes \"Issued\".",
+        "nl": "Klik op het pictogram “Uitreiken” van een factuur. Ze krijgt een wettelijk nummer en een gestructureerde mededeling, en haar status wordt “Uitgereikt”.",
+        "de": "Klicken Sie bei einer Rechnung auf das Symbol „Ausstellen“. Sie erhält eine gesetzliche Nummer und eine strukturierte Mitteilung, und ihr Status wechselt zu „Ausgestellt“."
       },
       "subtitle": {
         "fr": "Étape 3 — Émettre et encaisser",
-        "en": "Step 3 — Issue and collect"
+        "en": "Step 3 — Issue and collect",
+        "nl": "Stap 3 — Uitreiken en innen",
+        "de": "Schritt 3 — Ausstellen und Zahlung erfassen"
       },
       "captures": {
         "fr": {
@@ -1748,6 +3126,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-48.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1167,
+                      "y": 434.296875,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "app-run-generate [data-testid=\"invoice-list__btn--issue\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-48.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 83,
+                      "y": 405.59375,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "app-run-generate [data-testid=\"invoice-list__btn--issue\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-48.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1167,
+                      "y": 434.296875,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "app-run-generate [data-testid=\"invoice-list__btn--issue\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-48.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 83,
+                      "y": 405.796875,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "app-run-generate [data-testid=\"invoice-list__btn--issue\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1760,15 +3234,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Enregistrer un paiement",
-        "en": "Register a payment"
+        "en": "Register a payment",
+        "nl": "Een betaling registreren",
+        "de": "Eine Zahlung erfassen"
       },
       "text": {
         "fr": "Une fois la facture émise, l'icône « Enregistrer un paiement » (portefeuille) apparaît. Cliquez dessus pour ouvrir la fenêtre de paiement.",
-        "en": "Once the invoice is issued, the \"Register a payment\" (wallet) icon appears. Click it to open the payment dialog."
+        "en": "Once the invoice is issued, the \"Register a payment\" (wallet) icon appears. Click it to open the payment dialog.",
+        "nl": "Zodra de factuur is uitgereikt, verschijnt het pictogram “Betaling registreren” (portefeuille). Klik erop om het betalingsvenster te openen.",
+        "de": "Sobald die Rechnung ausgestellt ist, erscheint das Symbol „Zahlung erfassen“ (Geldbörse). Klicken Sie darauf, um das Zahlungsfenster zu öffnen."
       },
       "subtitle": {
         "fr": "Étape 3 — Émettre et encaisser",
-        "en": "Step 3 — Issue and collect"
+        "en": "Step 3 — Issue and collect",
+        "nl": "Stap 3 — Uitreiken en innen",
+        "de": "Schritt 3 — Ausstellen und Zahlung erfassen"
       },
       "captures": {
         "fr": {
@@ -1866,6 +3346,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-50.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1131,
+                      "y": 434.296875,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "app-run-generate [data-testid=\"invoice-list__btn--pay\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-50.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 119,
+                      "y": 437.59375,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "app-run-generate [data-testid=\"invoice-list__btn--pay\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-50.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1131,
+                      "y": 434.296875,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "app-run-generate [data-testid=\"invoice-list__btn--pay\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-50.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 119,
+                      "y": 437.796875,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "app-run-generate [data-testid=\"invoice-list__btn--pay\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1878,15 +3454,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Valider le paiement",
-        "en": "Confirm the payment"
+        "en": "Confirm the payment",
+        "nl": "De betaling bevestigen",
+        "de": "Die Zahlung bestätigen"
       },
       "text": {
         "fr": "Le montant est pré-rempli avec le total de la facture et le mode de paiement par défaut est « Virement ». Cliquez sur « Enregistrer le paiement » : la facture passe au statut « Payée ».",
-        "en": "The amount is prefilled with the invoice total and the default method is \"Bank transfer\". Click \"Register payment\": the invoice moves to \"Paid\"."
+        "en": "The amount is prefilled with the invoice total and the default method is \"Bank transfer\". Click \"Register payment\": the invoice moves to \"Paid\".",
+        "nl": "Het bedrag is vooraf ingevuld met het totaal van de factuur en de standaardbetaalmethode is “Overschrijving”. Klik op “Betaling registreren”: de factuur krijgt de status “Betaald”.",
+        "de": "Der Betrag ist mit dem Gesamtbetrag der Rechnung vorausgefüllt und die Standard-Zahlungsmethode ist „Banküberweisung“. Klicken Sie auf „Zahlung erfassen“: Die Rechnung erhält den Status „Bezahlt“."
       },
       "subtitle": {
         "fr": "Étape 3 — Émettre et encaisser",
-        "en": "Step 3 — Issue and collect"
+        "en": "Step 3 — Issue and collect",
+        "nl": "Stap 3 — Uitreiken en innen",
+        "de": "Schritt 3 — Ausstellen und Zahlung erfassen"
       },
       "captures": {
         "fr": {
@@ -1984,6 +3566,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-52.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 786.28125,
+                      "y": 627,
+                      "width": 168.71875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"payment-dialog__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-52.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 208.28125,
+                      "y": 429,
+                      "width": 168.71875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"payment-dialog__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-52.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 804.78125,
+                      "y": 627,
+                      "width": 150.21875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"payment-dialog__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-52.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 226.78125,
+                      "y": 429,
+                      "width": 150.21875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"payment-dialog__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1996,15 +3674,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "La facture est payée",
-        "en": "The invoice is paid"
+        "en": "The invoice is paid",
+        "nl": "De factuur is betaald",
+        "de": "Die Rechnung ist bezahlt"
       },
       "text": {
         "fr": "Le paiement est enregistré et la facture porte désormais le statut « Payée ». Le cycle complet — tarif, génération, émission, encaissement — est terminé.",
-        "en": "The payment is recorded and the invoice now carries the \"Paid\" status. The full cycle — tariff, generation, issue, payment — is complete."
+        "en": "The payment is recorded and the invoice now carries the \"Paid\" status. The full cycle — tariff, generation, issue, payment — is complete.",
+        "nl": "De betaling is geregistreerd en de factuur heeft nu de status “Betaald”. De volledige cyclus — tarief, generatie, uitreiking, inning — is voltooid.",
+        "de": "Die Zahlung ist erfasst und die Rechnung trägt nun den Status „Bezahlt“. Der gesamte Zyklus — Tarif, Erstellung, Ausstellung, Zahlungseingang — ist abgeschlossen."
       },
       "subtitle": {
         "fr": "Facturation",
-        "en": "Billing"
+        "en": "Billing",
+        "nl": "Facturatie",
+        "de": "Abrechnung"
       },
       "captures": {
         "fr": {
@@ -2050,6 +3734,58 @@
             "frames": [
               {
                 "screenshot": "../assets/billing-tarification-pay/en/mobile/step-54.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/desktop/step-54.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/nl/mobile/step-54.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/desktop/step-54.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/billing-tarification-pay/de/mobile/step-54.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

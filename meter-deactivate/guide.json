@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Désactiver un compteur",
-    "en": "Deactivate a meter"
+    "en": "Deactivate a meter",
+    "nl": "Een meter deactiveren",
+    "de": "Zähler deaktivieren"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Fiche du compteur",
-        "en": "Meter detail"
+        "en": "Meter detail",
+        "nl": "Detailpagina van de meter",
+        "de": "Detailseite des Zählers"
       },
       "text": {
         "fr": "Ouvrez la fiche du compteur à désactiver. Le bouton « Désactiver » permet de programmer la fin de son activité à une date donnée.",
-        "en": "Open the detail of the meter to deactivate. The \"Deactivate\" button schedules the end of its activity on a given date."
+        "en": "Open the detail of the meter to deactivate. The \"Deactivate\" button schedules the end of its activity on a given date.",
+        "nl": "Open de detailpagina van de meter die u wilt deactiveren. Met de knop “Meter deactiveren” plant u het einde van zijn activiteit op een bepaalde datum.",
+        "de": "Öffnen Sie die Detailseite des Zählers, den Sie deaktivieren möchten. Mit der Schaltfläche „Zähler deaktivieren“ planen Sie das Ende seiner Aktivität zu einem bestimmten Datum."
       },
       "subtitle": {
         "fr": "Désactivation d'un compteur",
-        "en": "Deactivating a meter"
+        "en": "Deactivating a meter",
+        "nl": "Een meter deactiveren",
+        "de": "Einen Zähler deaktivieren"
       },
       "captures": {
         "fr": {
@@ -96,6 +106,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/nl/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/nl/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/de/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/de/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -108,15 +170,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Choisir la date de fin",
-        "en": "Choose the end date"
+        "en": "Choose the end date",
+        "nl": "Einddatum kiezen",
+        "de": "Enddatum wählen"
       },
       "text": {
         "fr": "Sélectionnez la date à partir de laquelle le compteur ne sera plus actif.",
-        "en": "Select the date from which the meter will no longer be active."
+        "en": "Select the date from which the meter will no longer be active.",
+        "nl": "Selecteer de datum vanaf wanneer de meter niet meer actief zal zijn.",
+        "de": "Wählen Sie das Datum, ab dem der Zähler nicht mehr aktiv ist."
       },
       "subtitle": {
         "fr": "Désactivation d'un compteur",
-        "en": "Deactivating a meter"
+        "en": "Deactivating a meter",
+        "nl": "Een meter deactiveren",
+        "de": "Einen Zähler deaktivieren"
       },
       "captures": {
         "fr": {
@@ -214,6 +282,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/nl/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 666.984375,
+                      "y": 432,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-deactivation__datepicker--date\"] input"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/nl/mobile/step-16.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 416,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-deactivation__datepicker--date\"] input"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/de/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 671.796875,
+                      "y": 432,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-deactivation__datepicker--date\"] input"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/de/mobile/step-16.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 416,
+                      "width": 207,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-deactivation__datepicker--date\"] input"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -226,15 +390,21 @@
       "waitAfter": 1500,
       "title": {
         "fr": "Valider la désactivation",
-        "en": "Confirm the deactivation"
+        "en": "Confirm the deactivation",
+        "nl": "Deactivering bevestigen",
+        "de": "Deaktivierung bestätigen"
       },
       "text": {
         "fr": "Cliquez sur « Désactiver » : une période inactive est ajoutée au compteur à partir de la date choisie.",
-        "en": "Click \"Deactivate\": an inactive period is added to the meter from the chosen date."
+        "en": "Click \"Deactivate\": an inactive period is added to the meter from the chosen date.",
+        "nl": "Klik op “Deactiveren”: er wordt vanaf de gekozen datum een inactieve periode aan de meter toegevoegd.",
+        "de": "Klicken Sie auf „Deaktivieren“: Dem Zähler wird ab dem gewählten Datum ein inaktiver Zeitraum hinzugefügt."
       },
       "subtitle": {
         "fr": "Désactivation d'un compteur",
-        "en": "Deactivating a meter"
+        "en": "Deactivating a meter",
+        "nl": "Een meter deactiveren",
+        "de": "Einen Zähler deaktivieren"
       },
       "captures": {
         "fr": {
@@ -252,7 +422,7 @@
                     "bbox": {
                       "x": 520.171875,
                       "y": 486,
-                      "width": 102.03125,
+                      "width": 101.125,
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-deactivation__button--submit\"] button"
@@ -275,7 +445,7 @@
                     "bbox": {
                       "x": 13,
                       "y": 470,
-                      "width": 102.03125,
+                      "width": 101.125,
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-deactivation__button--submit\"] button"
@@ -300,7 +470,7 @@
                     "bbox": {
                       "x": 534.65625,
                       "y": 486,
-                      "width": 72.84375,
+                      "width": 102.203125,
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-deactivation__button--submit\"] button"
@@ -323,7 +493,103 @@
                     "bbox": {
                       "x": 13,
                       "y": 470,
-                      "width": 72.84375,
+                      "width": 102.203125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-deactivation__button--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/nl/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 526.015625,
+                      "y": 486,
+                      "width": 111.921875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-deactivation__button--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 470,
+                      "width": 111.921875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-deactivation__button--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/de/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 521.203125,
+                      "y": 486,
+                      "width": 117,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-deactivation__button--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 13,
+                      "y": 470,
+                      "width": 117,
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-deactivation__button--submit\"] button"
@@ -344,15 +610,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Désactivation programmée",
-        "en": "Scheduled deactivation"
+        "en": "Scheduled deactivation",
+        "nl": "Geplande deactivering",
+        "de": "Geplante Deaktivierung"
       },
       "text": {
         "fr": "L'onglet « Futur » montre la période inactive à venir : le compteur restera actif jusqu'à la date choisie, puis sera désactivé.",
-        "en": "The \"Future\" tab shows the upcoming inactive period: the meter stays active until the chosen date, then is deactivated."
+        "en": "The \"Future\" tab shows the upcoming inactive period: the meter stays active until the chosen date, then is deactivated.",
+        "nl": "Het tabblad “Toekomstige gegevens” toont de komende inactieve periode: de meter blijft actief tot de gekozen datum en wordt daarna gedeactiveerd.",
+        "de": "Die Registerkarte „Zukünftige Daten“ zeigt den bevorstehenden inaktiven Zeitraum: Der Zähler bleibt bis zum gewählten Datum aktiv und wird danach deaktiviert."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -398,6 +670,58 @@
             "frames": [
               {
                 "screenshot": "../assets/meter-deactivate/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-deactivate/de/mobile/step-20.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

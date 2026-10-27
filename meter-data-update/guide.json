@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Modifier les données du compteur",
-    "en": "Update meter data"
+    "en": "Update meter data",
+    "nl": "De metergegevens wijzigen",
+    "de": "Zählerdaten bearbeiten"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Liste des compteurs",
-        "en": "Meters list"
+        "en": "Meters list",
+        "nl": "Lijst met meters",
+        "de": "Zählerliste"
       },
       "text": {
         "fr": "Ouvrez la liste des compteurs de la communauté active. Repérez le compteur dont vous souhaitez mettre à jour la configuration courante.",
-        "en": "Open the active community's meter list and locate the meter whose current configuration you want to update."
+        "en": "Open the active community's meter list and locate the meter whose current configuration you want to update.",
+        "nl": "Open de lijst met meters van de actieve gemeenschap. Zoek de meter waarvan u de huidige configuratie wilt bijwerken.",
+        "de": "Öffnen Sie die Zählerliste der aktiven Gemeinschaft. Suchen Sie den Zähler, dessen aktuelle Konfiguration Sie aktualisieren möchten."
       },
       "subtitle": {
         "fr": "Sélection du compteur",
-        "en": "Picking the meter"
+        "en": "Picking the meter",
+        "nl": "Meter kiezen",
+        "de": "Zählerauswahl"
       },
       "captures": {
         "fr": {
@@ -96,6 +106,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -108,15 +170,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir la fiche du compteur",
-        "en": "Open the meter detail"
+        "en": "Open the meter detail",
+        "nl": "De meterfiche openen",
+        "de": "Zählerdetail öffnen"
       },
       "text": {
         "fr": "Cliquez sur la ligne du compteur (EAN 123456789012345678) pour ouvrir sa fiche détaillée et accéder à ses données actuelles.",
-        "en": "Click the meter row (EAN 123456789012345678) to open its detail page and reach the current meter-data view."
+        "en": "Click the meter row (EAN 123456789012345678) to open its detail page and reach the current meter-data view.",
+        "nl": "Klik op de rij van de meter (EAN 123456789012345678) om de detailfiche te openen en de huidige gegevens te bekijken.",
+        "de": "Klicken Sie auf die Zeile des Zählers (EAN 123456789012345678), um seine Detailansicht zu öffnen und seine aktuellen Daten aufzurufen."
       },
       "subtitle": {
         "fr": "Sélection du compteur",
-        "en": "Picking the meter"
+        "en": "Picking the meter",
+        "nl": "Meter kiezen",
+        "de": "Zählerauswahl"
       },
       "captures": {
         "fr": {
@@ -224,6 +292,112 @@
               "subtitle": "Picking the meter"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 487
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 0,
+                      "width": 358,
+                      "height": 1935.9375
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De meterfiche openen",
+              "text": "Tik op de kaart van de meter (EAN 123456789012345678) om de detailfiche te openen en de huidige gegevens te bekijken.",
+              "subtitle": "Meter kiezen"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 487
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 0,
+                      "width": 358,
+                      "height": 1935.9375
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Zählerdetail öffnen",
+              "text": "Tippen Sie auf die Karte des Zählers (EAN 123456789012345678), um seine Detailansicht zu öffnen und seine aktuellen Daten aufzurufen.",
+              "subtitle": "Zählerauswahl"
+            }
+          }
         }
       }
     },
@@ -236,15 +410,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Compteur actif",
-        "en": "Active meter"
+        "en": "Active meter",
+        "nl": "Actieve meter",
+        "de": "Aktiver Zähler"
       },
       "text": {
         "fr": "La fiche affiche les caractéristiques courantes. Le bouton « Mettre à jour les données » n'est proposé que pour un compteur actif — c'est notre point d'entrée.",
-        "en": "The detail page shows the current configuration. The \"Update data\" action is only exposed when the meter is active — that is our entry point."
+        "en": "The detail page shows the current configuration. The \"Update data\" action is only exposed when the meter is active — that is our entry point.",
+        "nl": "De fiche toont de huidige kenmerken. De knop “Bijwerken” wordt alleen aangeboden voor een actieve meter — dat is ons startpunt.",
+        "de": "Die Detailansicht zeigt die aktuellen Merkmale. Die Schaltfläche „Aktualisieren“ wird nur für einen aktiven Zähler angeboten — das ist unser Einstiegspunkt."
       },
       "subtitle": {
         "fr": "Détail du compteur",
-        "en": "Meter detail"
+        "en": "Meter detail",
+        "nl": "Meterdetail",
+        "de": "Zählerdetail"
       },
       "captures": {
         "fr": {
@@ -298,6 +478,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -310,15 +542,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir le formulaire",
-        "en": "Open the form"
+        "en": "Open the form",
+        "nl": "Het formulier openen",
+        "de": "Formular öffnen"
       },
       "text": {
         "fr": "Cliquez sur « Mettre à jour les données » : un dialogue s'ouvre, pré-rempli avec la configuration courante du compteur — description, puissances, tarif, type de client et propriétaire.",
-        "en": "Click \"Update data\" — a dialog opens, pre-populated with the meter's current configuration: description, powers, rate, client type and owner."
+        "en": "Click \"Update data\" — a dialog opens, pre-populated with the meter's current configuration: description, powers, rate, client type and owner.",
+        "nl": "Klik op “Bijwerken”: er opent een dialoogvenster, vooraf ingevuld met de huidige configuratie van de meter — beschrijving, vermogens, tarief, klanttype en houder.",
+        "de": "Klicken Sie auf „Aktualisieren“: Ein Dialog öffnet sich, vorausgefüllt mit der aktuellen Konfiguration des Zählers — Beschreibung, Leistungen, Tarif, Kundentyp und Inhaber."
       },
       "subtitle": {
         "fr": "Modification des données",
-        "en": "Editing the data"
+        "en": "Editing the data",
+        "nl": "Gegevens wijzigen",
+        "de": "Daten ändern"
       },
       "captures": {
         "fr": {
@@ -416,6 +654,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1127.671875,
+                      "y": 88,
+                      "width": 120.421875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-view__btn--update\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 226.890625,
+                      "y": 260,
+                      "width": 120.421875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-view__btn--update\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1088.65625,
+                      "y": 88,
+                      "width": 144.0625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-view__btn--update\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 310,
+                      "width": 144.0625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-view__btn--update\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -428,15 +762,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ajuster les valeurs énergétiques",
-        "en": "Adjust the energy values"
+        "en": "Adjust the energy values",
+        "nl": "De energiewaarden aanpassen",
+        "de": "Energiewerte anpassen"
       },
       "text": {
         "fr": "Modifiez la description, la puissance de prélèvement et l'ampérage. Ces nouveaux chiffres alimenteront immédiatement les calculs de répartition des opérations de partage.",
-        "en": "Edit the description, the sampling power and the amperage. These updated figures feed straight into the sharing-operation allocation calculations."
+        "en": "Edit the description, the sampling power and the amperage. These updated figures feed straight into the sharing-operation allocation calculations.",
+        "nl": "Wijzig de beschrijving, het afnamevermogen en het amperage. Deze nieuwe cijfers worden meteen gebruikt in de verdelingsberekeningen van de deeloperaties.",
+        "de": "Ändern Sie die Beschreibung, die Entnahmeleistung und die Stromstärke. Diese neuen Werte fließen sofort in die Verteilungsberechnungen der Teilungsoperationen ein."
       },
       "subtitle": {
         "fr": "Caractéristiques énergétiques",
-        "en": "Energy characteristics"
+        "en": "Energy characteristics",
+        "nl": "Energiekenmerken",
+        "de": "Energetische Merkmale"
       },
       "captures": {
         "fr": {
@@ -499,9 +839,9 @@
                   "targets": [
                     {
                       "bbox": {
-                        "x": 37,
-                        "y": 173.203125,
-                        "width": 316,
+                        "x": 29,
+                        "y": 143,
+                        "width": 332,
                         "height": 114
                       },
                       "selector": "[data-testid=\"meter-data-update__textarea--description\"]",
@@ -509,9 +849,9 @@
                     },
                     {
                       "bbox": {
-                        "x": 37,
-                        "y": 378.203125,
-                        "width": 316,
+                        "x": 29,
+                        "y": 348,
+                        "width": 332,
                         "height": 42
                       },
                       "selector": "[data-testid=\"meter-data-update__input--sampling-power\"]",
@@ -519,9 +859,9 @@
                     },
                     {
                       "bbox": {
-                        "x": 37,
-                        "y": 530.203125,
-                        "width": 316,
+                        "x": 29,
+                        "y": 500,
+                        "width": 332,
                         "height": 42
                       },
                       "selector": "[data-testid=\"meter-data-update__input--amperage\"]",
@@ -593,9 +933,9 @@
                   "targets": [
                     {
                       "bbox": {
-                        "x": 37,
-                        "y": 153.203125,
-                        "width": 316,
+                        "x": 29,
+                        "y": 123,
+                        "width": 332,
                         "height": 114
                       },
                       "selector": "[data-testid=\"meter-data-update__textarea--description\"]",
@@ -603,9 +943,9 @@
                     },
                     {
                       "bbox": {
-                        "x": 37,
-                        "y": 358.203125,
-                        "width": 316,
+                        "x": 29,
+                        "y": 328,
+                        "width": 332,
                         "height": 42
                       },
                       "selector": "[data-testid=\"meter-data-update__input--sampling-power\"]",
@@ -613,9 +953,197 @@
                     },
                     {
                       "bbox": {
-                        "x": 37,
-                        "y": 510.203125,
-                        "width": 316,
+                        "x": 29,
+                        "y": 480,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-data-update__input--amperage\"]",
+                      "value": "63"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/desktop/step-23-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 257,
+                        "y": 156,
+                        "width": 926,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"meter-data-update__textarea--description\"]",
+                      "value": "Mise à jour E2E — configuration révisée"
+                    },
+                    {
+                      "bbox": {
+                        "x": 257,
+                        "y": 361,
+                        "width": 298,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-data-update__input--sampling-power\"]",
+                      "value": "12"
+                    },
+                    {
+                      "bbox": {
+                        "x": 885,
+                        "y": 361,
+                        "width": 298,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-data-update__input--amperage\"]",
+                      "value": "63"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/mobile/step-23-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 123,
+                        "width": 332,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"meter-data-update__textarea--description\"]",
+                      "value": "Mise à jour E2E — configuration révisée"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 328,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-data-update__input--sampling-power\"]",
+                      "value": "12"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 480,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-data-update__input--amperage\"]",
+                      "value": "63"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/desktop/step-23-a.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 257,
+                        "y": 156,
+                        "width": 926,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"meter-data-update__textarea--description\"]",
+                      "value": "Mise à jour E2E — configuration révisée"
+                    },
+                    {
+                      "bbox": {
+                        "x": 257,
+                        "y": 361,
+                        "width": 298,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-data-update__input--sampling-power\"]",
+                      "value": "12"
+                    },
+                    {
+                      "bbox": {
+                        "x": 885,
+                        "y": 361,
+                        "width": 298,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-data-update__input--amperage\"]",
+                      "value": "63"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/mobile/step-23-a.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 123,
+                        "width": 332,
+                        "height": 114
+                      },
+                      "selector": "[data-testid=\"meter-data-update__textarea--description\"]",
+                      "value": "Mise à jour E2E — configuration révisée"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 328,
+                        "width": 332,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"meter-data-update__input--sampling-power\"]",
+                      "value": "12"
+                    },
+                    {
+                      "bbox": {
+                        "x": 29,
+                        "y": 480,
+                        "width": 332,
                         "height": 42
                       },
                       "selector": "[data-testid=\"meter-data-update__input--amperage\"]",
@@ -635,18 +1163,24 @@
       "action": "select-option",
       "interactive": true,
       "screenshotWhen": "after",
-      "waitAfter": 0,
+      "waitAfter": 700,
       "title": {
-        "fr": "Choisir le GRD",
-        "en": "Pick the DSO"
+        "fr": "Choisir le gestionnaire de réseau",
+        "en": "Pick the network operator",
+        "nl": "De netbeheerder kiezen",
+        "de": "Netzbetreiber auswählen"
       },
       "text": {
-        "fr": "Sélectionnez le gestionnaire de réseau de distribution auquel le compteur est raccordé. Ce champ est obligatoire pour valider la nouvelle configuration.",
-        "en": "Select the distribution grid operator the meter is connected to. This field is mandatory to validate the new configuration."
+        "fr": "Dans le champ « Gestionnaire de réseau », sélectionnez le gestionnaire du réseau de distribution auquel le compteur est raccordé. Ce champ est obligatoire pour valider la nouvelle configuration.",
+        "en": "In the \"Network operator\" field, select the distribution grid operator the meter is connected to. This field is mandatory to validate the new configuration.",
+        "nl": "Selecteer in het veld “Netbeheerder” de distributienetbeheerder waarop de meter is aangesloten. Dit veld is verplicht om de nieuwe configuratie te bevestigen.",
+        "de": "Wählen Sie im Feld „Netzbetreiber“ den Verteilnetzbetreiber aus, an den der Zähler angeschlossen ist. Dieses Feld ist erforderlich, um die neue Konfiguration zu bestätigen."
       },
       "subtitle": {
         "fr": "Configuration réseau",
-        "en": "Grid configuration"
+        "en": "Grid configuration",
+        "nl": "Netconfiguratie",
+        "de": "Netzkonfiguration"
       },
       "captures": {
         "fr": {
@@ -685,9 +1219,9 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 37,
-                      "y": 759.203125,
-                      "width": 316,
+                      "x": 29,
+                      "y": 732,
+                      "width": 332,
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-data-update__select--grd\"]"
@@ -733,9 +1267,105 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 37,
-                      "y": 742.203125,
-                      "width": 316,
+                      "x": 29,
+                      "y": 712,
+                      "width": 332,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-data-update__select--grd\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 885,
+                      "y": 441,
+                      "width": 298,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-data-update__select--grd\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 712,
+                      "width": 332,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-data-update__select--grd\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 885,
+                      "y": 441,
+                      "width": 298,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-data-update__select--grd\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 712,
+                      "width": 332,
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-data-update__select--grd\"]"
@@ -756,15 +1386,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Changer le profil de consommation",
-        "en": "Change the consumption profile"
+        "en": "Change the consumption profile",
+        "nl": "Het verbruiksprofiel wijzigen",
+        "de": "Verbrauchsprofil ändern"
       },
       "text": {
         "fr": "Basculez le tarif sur « bi-horaire » et le type de client sur « professionnel » pour refléter le nouveau profil de consommation du compteur.",
-        "en": "Switch the rate to \"bi-hourly\" and the client type to \"professional\" to mirror the meter's new consumption profile."
+        "en": "Switch the rate to \"bi-hourly\" and the client type to \"professional\" to mirror the meter's new consumption profile.",
+        "nl": "Zet het tarief op “Tweeuurtarief” en het klanttype op “Professioneel” om het nieuwe verbruiksprofiel van de meter weer te geven.",
+        "de": "Stellen Sie den Tarif auf „Zweitarif“ und den Kundentyp auf „Gewerblich“ um, um das neue Verbrauchsprofil des Zählers abzubilden."
       },
       "subtitle": {
         "fr": "Caractéristiques financières",
-        "en": "Financial characteristics"
+        "en": "Financial characteristics",
+        "nl": "Financiële kenmerken",
+        "de": "Finanzielle Merkmale"
       },
       "captures": {
         "fr": {
@@ -803,9 +1439,9 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 37,
-                      "y": 649.203125,
-                      "width": 316,
+                      "x": 29,
+                      "y": 649,
+                      "width": 332,
                       "height": 46
                     },
                     "selector": "[data-testid=\"meter-data-update__radio-card--client-type--2\"]"
@@ -851,9 +1487,105 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 37,
-                      "y": 639.203125,
-                      "width": 316,
+                      "x": 29,
+                      "y": 639,
+                      "width": 332,
+                      "height": 46
+                    },
+                    "selector": "[data-testid=\"meter-data-update__radio-card--client-type--2\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 569.65625,
+                      "y": 658,
+                      "width": 300.671875,
+                      "height": 46
+                    },
+                    "selector": "[data-testid=\"meter-data-update__radio-card--client-type--2\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 639,
+                      "width": 332,
+                      "height": 46
+                    },
+                    "selector": "[data-testid=\"meter-data-update__radio-card--client-type--2\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 569.65625,
+                      "y": 658,
+                      "width": 300.671875,
+                      "height": 46
+                    },
+                    "selector": "[data-testid=\"meter-data-update__radio-card--client-type--2\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 639,
+                      "width": 332,
                       "height": 46
                     },
                     "selector": "[data-testid=\"meter-data-update__radio-card--client-type--2\"]"
@@ -874,15 +1606,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Fixer la date d'effet",
-        "en": "Set the effective date"
+        "en": "Set the effective date",
+        "nl": "De ingangsdatum vastleggen",
+        "de": "Gültigkeitsdatum festlegen"
       },
       "text": {
         "fr": "Choisissez la date à partir de laquelle la nouvelle configuration s'applique. Cette date est obligatoire pour valider la modification.",
-        "en": "Pick the date from which the new configuration takes effect. This field is required to validate the change."
+        "en": "Pick the date from which the new configuration takes effect. This field is required to validate the change.",
+        "nl": "Kies de datum vanaf wanneer de nieuwe configuratie geldt. Deze datum is verplicht om de wijziging te bevestigen.",
+        "de": "Wählen Sie das Datum, ab dem die neue Konfiguration gilt. Dieses Datum ist erforderlich, um die Änderung zu bestätigen."
       },
       "subtitle": {
         "fr": "Date d'effet",
-        "en": "Effective date"
+        "en": "Effective date",
+        "nl": "Ingangsdatum",
+        "de": "Gültigkeitsdatum"
       },
       "captures": {
         "fr": {
@@ -921,9 +1659,9 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 37,
-                      "y": 636.203125,
-                      "width": 316,
+                      "x": 29,
+                      "y": 686,
+                      "width": 332,
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-data-update__datepicker--start-date\"]"
@@ -969,9 +1707,105 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 37,
-                      "y": 636.203125,
-                      "width": 316,
+                      "x": 29,
+                      "y": 686,
+                      "width": 332,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-data-update__datepicker--start-date\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 885,
+                      "y": 742,
+                      "width": 298,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-data-update__datepicker--start-date\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 686,
+                      "width": 332,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-data-update__datepicker--start-date\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 885,
+                      "y": 742,
+                      "width": 298,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-data-update__datepicker--start-date\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 686,
+                      "width": 332,
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-data-update__datepicker--start-date\"]"
@@ -992,15 +1826,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Enregistrer la mise à jour",
-        "en": "Save the update"
+        "en": "Save the update",
+        "nl": "De wijziging opslaan",
+        "de": "Aktualisierung speichern"
       },
       "text": {
         "fr": "Cliquez sur « Valider » : le formulaire est envoyé au CRM, qui remplace la configuration courante du compteur. Le dialogue se ferme dès la confirmation.",
-        "en": "Click \"Validate\" — the form is sent to the CRM, which replaces the meter's current configuration. The dialog closes once the change is acknowledged."
+        "en": "Click \"Validate\" — the form is sent to the CRM, which replaces the meter's current configuration. The dialog closes once the change is acknowledged.",
+        "nl": "Klik op “Bevestigen”: het formulier wordt naar het CRM gestuurd, dat de huidige configuratie van de meter vervangt. Het dialoogvenster sluit zodra de wijziging is bevestigd.",
+        "de": "Klicken Sie auf „Bestätigen“: Das Formular wird an das CRM gesendet, das die aktuelle Konfiguration des Zählers ersetzt. Der Dialog schließt sich, sobald die Bestätigung eingeht."
       },
       "subtitle": {
         "fr": "Enregistrement",
-        "en": "Saving"
+        "en": "Saving",
+        "nl": "Opslaan",
+        "de": "Speichern"
       },
       "captures": {
         "fr": {
@@ -1039,8 +1879,8 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 252.125,
-                      "y": 731.203125,
+                      "x": 260.125,
+                      "y": 781,
                       "width": 100.875,
                       "height": 42
                     },
@@ -1087,9 +1927,105 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 244.015625,
-                      "y": 731.203125,
+                      "x": 252.015625,
+                      "y": 781,
                       "width": 108.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-data-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1053,
+                      "y": 812,
+                      "width": 130,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-data-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 231,
+                      "y": 781,
+                      "width": 130,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-data-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1055.359375,
+                      "y": 812,
+                      "width": 127.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"meter-data-update__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 233.359375,
+                      "y": 781,
+                      "width": 127.640625,
                       "height": 42
                     },
                     "selector": "[data-testid=\"meter-data-update__btn--submit\"]"
@@ -1110,15 +2046,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Mise à jour confirmée",
-        "en": "Update confirmed"
+        "en": "Update confirmed",
+        "nl": "Wijziging bevestigd",
+        "de": "Aktualisierung bestätigt"
       },
       "text": {
         "fr": "De retour sur la fiche, la nouvelle description, l'ampérage de 63 A et le tarif bi-horaire apparaissent dans les cartes de données — les modifications sont bien persistées côté serveur.",
-        "en": "Back on the detail page, the new description, the 63 A amperage and the bi-hourly rate appear in the data cards — the changes have been persisted server-side."
+        "en": "Back on the detail page, the new description, the 63 A amperage and the bi-hourly rate appear in the data cards — the changes have been persisted server-side.",
+        "nl": "Terug op de fiche verschijnen de nieuwe beschrijving, het amperage van 63 A en het tweeuurtarief in de gegevenskaarten — de wijzigingen zijn wel degelijk op de server opgeslagen.",
+        "de": "Zurück in der Detailansicht erscheinen die neue Beschreibung, die Stromstärke von 63 A und der Zweitarif in den Datenkarten — die Änderungen wurden serverseitig gespeichert."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -1164,6 +2106,58 @@
             "frames": [
               {
                 "screenshot": "../assets/meter-data-update/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/nl/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/meter-data-update/de/mobile/step-32.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Ajouter un document à un membre",
-    "en": "Upload a document to a member"
+    "en": "Upload a document to a member",
+    "nl": "Een document aan een lid toevoegen",
+    "de": "Dokument zu einem Mitglied hinzufügen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Onglet Documents",
-        "en": "Documents tab"
+        "en": "Documents tab",
+        "nl": "Tabblad Documenten",
+        "de": "Registerkarte Dokumente"
       },
       "text": {
         "fr": "Ouvrez l'onglet « Documents » de la fiche du membre. Vous pouvez y consulter les documents existants et en ajouter de nouveaux.",
-        "en": "Open the member's \"Documents\" tab. You can review existing documents and add new ones."
+        "en": "Open the member's \"Documents\" tab. You can review existing documents and add new ones.",
+        "nl": "Open het tabblad “Documenten” op de detailpagina van het lid. Hier kunt u de bestaande documenten bekijken en nieuwe toevoegen.",
+        "de": "Öffnen Sie die Registerkarte „Dokumente“ auf der Detailseite des Mitglieds. Dort können Sie die vorhandenen Dokumente einsehen und neue hinzufügen."
       },
       "subtitle": {
         "fr": "Documents d'un membre",
-        "en": "Member documents"
+        "en": "Member documents",
+        "nl": "Documenten van een lid",
+        "de": "Dokumente eines Mitglieds"
       },
       "captures": {
         "fr": {
@@ -140,6 +150,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/nl/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 340.890625,
+                      "y": 719,
+                      "width": 129.421875,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"member-view-tabs__tab--documents\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/nl/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 242.890625,
+                      "y": 394,
+                      "width": 129.421875,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"member-view-tabs__tab--documents\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/de/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 308.734375,
+                      "y": 719,
+                      "width": 120.96875,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"member-view-tabs__tab--documents\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/de/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 210.734375,
+                      "y": 394,
+                      "width": 120.96875,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"member-view-tabs__tab--documents\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -152,15 +258,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ajouter un document",
-        "en": "Add a document"
+        "en": "Add a document",
+        "nl": "Document toevoegen",
+        "de": "Dokument hinzufügen"
       },
       "text": {
         "fr": "Cliquez sur « Ajouter un document » pour ouvrir la fenêtre d'import.",
-        "en": "Click \"Add document\" to open the upload dialog."
+        "en": "Click \"Add document\" to open the upload dialog.",
+        "nl": "Klik op “Document toevoegen” om het uploadvenster te openen.",
+        "de": "Klicken Sie auf „Dokument hinzufügen“, um das Upload-Fenster zu öffnen."
       },
       "subtitle": {
         "fr": "Documents d'un membre",
-        "en": "Member documents"
+        "en": "Member documents",
+        "nl": "Documenten van een lid",
+        "de": "Dokumente eines Mitglieds"
       },
       "captures": {
         "fr": {
@@ -258,6 +370,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/nl/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 132,
+                      "y": 820,
+                      "width": 207.34375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view-documents-tab__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/nl/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 768,
+                      "width": 207.34375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view-documents-tab__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/de/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 132,
+                      "y": 820,
+                      "width": 212.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view-documents-tab__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/de/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 768,
+                      "width": 212.875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view-documents-tab__btn--add\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -270,15 +478,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Choisir le fichier",
-        "en": "Choose the file"
+        "en": "Choose the file",
+        "nl": "Bestand kiezen",
+        "de": "Datei auswählen"
       },
       "text": {
         "fr": "Sélectionnez le fichier à téléverser depuis votre ordinateur (ou glissez-le dans la zone prévue).",
-        "en": "Select the file to upload from your computer (or drag it into the drop zone)."
+        "en": "Select the file to upload from your computer (or drag it into the drop zone).",
+        "nl": "Selecteer het bestand dat u wilt uploaden vanaf uw computer (of sleep het naar de daarvoor bestemde zone).",
+        "de": "Wählen Sie die hochzuladende Datei auf Ihrem Computer aus (oder ziehen Sie sie in den dafür vorgesehenen Bereich)."
       },
       "subtitle": {
         "fr": "Documents d'un membre",
-        "en": "Member documents"
+        "en": "Member documents",
+        "nl": "Documenten van een lid",
+        "de": "Dokumente eines Mitglieds"
       },
       "captures": {
         "fr": {
@@ -376,6 +590,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/nl/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 450.3125,
+                      "y": 409,
+                      "width": 539.375,
+                      "height": 108
+                    },
+                    "selector": "[data-testid=\"member-add-document__label--drag-drop\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 369,
+                      "width": 332,
+                      "height": 132
+                    },
+                    "selector": "[data-testid=\"member-add-document__label--drag-drop\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/de/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 461.796875,
+                      "y": 409,
+                      "width": 516.40625,
+                      "height": 108
+                    },
+                    "selector": "[data-testid=\"member-add-document__label--drag-drop\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 369,
+                      "width": 332,
+                      "height": 132
+                    },
+                    "selector": "[data-testid=\"member-add-document__label--drag-drop\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -388,15 +698,21 @@
       "waitAfter": 2000,
       "title": {
         "fr": "Téléverser",
-        "en": "Upload"
+        "en": "Upload",
+        "nl": "Uploaden",
+        "de": "Hochladen"
       },
       "text": {
         "fr": "Cliquez sur « Téléverser » : le document est enregistré et rattaché au membre.",
-        "en": "Click \"Upload\": the document is saved and attached to the member."
+        "en": "Click \"Upload\": the document is saved and attached to the member.",
+        "nl": "Klik op “Dit document uploaden”: het document wordt opgeslagen en aan het lid gekoppeld.",
+        "de": "Klicken Sie auf „Dieses Dokument hochladen“: Das Dokument wird gespeichert und dem Mitglied zugeordnet."
       },
       "subtitle": {
         "fr": "Documents d'un membre",
-        "en": "Member documents"
+        "en": "Member documents",
+        "nl": "Documenten van een lid",
+        "de": "Dokumente eines Mitglieds"
       },
       "captures": {
         "fr": {
@@ -494,6 +810,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/nl/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 458.3125,
+                      "y": 529,
+                      "width": 193.84375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-add-document__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/nl/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 513,
+                      "width": 193.84375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-add-document__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/de/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 469.796875,
+                      "y": 529,
+                      "width": 228.140625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-add-document__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/de/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 513,
+                      "width": 228.140625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-add-document__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -506,15 +918,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Document ajouté",
-        "en": "Document added"
+        "en": "Document added",
+        "nl": "Document toegevoegd",
+        "de": "Dokument hinzugefügt"
       },
       "text": {
         "fr": "Le document « e2e-document.pdf » figure désormais dans la liste des documents du membre.",
-        "en": "The document \"e2e-document.pdf\" now appears in the member's document list."
+        "en": "The document \"e2e-document.pdf\" now appears in the member's document list.",
+        "nl": "Het document “e2e-document.pdf” staat nu in de documentenlijst van het lid.",
+        "de": "Das Dokument „e2e-document.pdf“ erscheint jetzt in der Dokumentenliste des Mitglieds."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -560,6 +978,58 @@
             "frames": [
               {
                 "screenshot": "../assets/member-document-upload/en/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/nl/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/nl/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/de/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-document-upload/de/mobile/step-19.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

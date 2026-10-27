@@ -8,13 +8,14 @@
     <link rel="canonical" href="https://guide.optimce.be/community-managers-view/fr.html">
     <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/community-managers-view/fr.html">
     <link rel="alternate" hreflang="en" href="https://guide.optimce.be/community-managers-view/en.html">
+    <link rel="alternate" hreflang="nl" href="https://guide.optimce.be/community-managers-view/nl.html">
+    <link rel="alternate" hreflang="de" href="https://guide.optimce.be/community-managers-view/de.html">
     <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/community-managers-view/fr.html">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Voir les gestionnaires de sa communauté">
     <meta property="og:description" content="Voir qui gère sa communauté, rechercher un gestionnaire et filtrer la liste.">
     <meta property="og:url" content="https://guide.optimce.be/community-managers-view/fr.html">
     <meta property="og:site_name" content="OptimCE — Guides utilisateur">
-    <meta property="og:locale" content="fr">
     <meta property="og:image" content="https://guide.optimce.be/assets/community-managers-view/fr/desktop/step-14.png">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="../assets/guides.css">
@@ -25,10 +26,8 @@
           var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
           document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
         } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
-        // Synchronise the saved language preference with the file we just loaded.
-        // The user landed on this <locale>.html either by clicking a link rewritten
-        // to honour their preference or by direct entry — either way, that's the
-        // current truth.
+        // Remember the language of the file we just loaded: interactive.html is one
+        // URL for every locale and opens in this language when no ?lang= is given.
         try { localStorage.setItem("oce-lang", "fr"); } catch (e) {}
       })();
     </script>
@@ -54,17 +53,27 @@
         </nav>
 
         <div class="steppy-header-actions">
-            <nav class="steppy-locale-switch" aria-label="Language">
-                <ul>
-                    <li>
-                        <span aria-current="true">Français</span>
-                    </li>
-                    <li>
-                        <a href="./en.html">English</a>
-                    </li>
-                </ul>
-            </nav>
-            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
+<label class="steppy-locale-select">
+    <span class="steppy-visually-hidden">Langue</span>
+    <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <select autocomplete="off">        <option value="./fr.html" lang="fr" selected>Français</option>        <option value="./en.html" lang="en">English</option>        <option value="./nl.html" lang="nl">Nederlands</option>        <option value="./de.html" lang="de">Deutsch</option>    </select>
+    <svg class="steppy-locale-select-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</label>
+<script>
+  (function () {
+    var sel = document.querySelector(".steppy-locale-select select");
+    if (!sel) return;
+    sel.addEventListener("change", function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+    // Back from the language just picked can restore this page from the
+    // bfcache with that option still showing — snap it back to this page's own.
+    window.addEventListener("pageshow", function () {
+      var own = sel.querySelector("option[selected]");
+      if (own) sel.value = own.value;
+    });
+  })();
+</script>            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
                 <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                 <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
             </button>
@@ -75,7 +84,7 @@
                     <span aria-current="true">Pas à pas</span>
                 </li>
                 <li>
-                    <a href="./interactive.html">Interactif</a>
+                    <a href="./interactive.html?lang=fr">Interactif</a>
                 </li>
             </ul>
         </nav>
@@ -100,6 +109,8 @@
     <div class="steppy-role-badge">
         <span class="i18n-fr">Guide utilisateur</span>
         <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
     </div>
 
     <div class="steppy-step" data-step-index="1">
@@ -110,7 +121,7 @@
         <div class="steppy-step-subtitle">Navigation</div>
         <div class="steppy-step-content">Dans la barre latérale, la section « Utilisateurs » vous donne accès à la liste des gestionnaires de votre communauté — les personnes qui l'administrent.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/community-managers-view/fr/desktop/step-14.png" alt="Step 1" loading="lazy">
+            <img src="../assets/community-managers-view/fr/desktop/step-14.png" alt="1. Voir les gestionnaires" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -124,7 +135,7 @@
         <div class="steppy-step-subtitle">Transparence</div>
         <div class="steppy-step-content">Cette page liste les administrateurs et gestionnaires de la communauté avec leur rôle. Vous pouvez filtrer par rôle ou rechercher une personne. C'est une vue de consultation : vous ne pouvez rien modifier.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/community-managers-view/fr/desktop/step-20.png" alt="Step 2" loading="lazy">
+            <img src="../assets/community-managers-view/fr/desktop/step-20.png" alt="2. Les gestionnaires de votre communauté" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -138,7 +149,7 @@
         <div class="steppy-step-subtitle">Recherche</div>
         <div class="steppy-step-content">Saisissez un nom ou une adresse e-mail pour filtrer la liste et retrouver rapidement une personne précise.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/community-managers-view/fr/desktop/step-23.png" alt="Step 3" loading="lazy">
+            <img src="../assets/community-managers-view/fr/desktop/step-23.png" alt="3. Rechercher un gestionnaire" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -152,7 +163,7 @@
         <div class="steppy-step-subtitle">Recherche</div>
         <div class="steppy-step-content">Le bouton « Réinitialiser les filtres » efface la recherche et réaffiche l'ensemble des gestionnaires.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/community-managers-view/fr/desktop/step-25.png" alt="Step 4" loading="lazy">
+            <img src="../assets/community-managers-view/fr/desktop/step-25.png" alt="4. Réinitialiser la recherche" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -167,6 +178,8 @@
     <div class="steppy-role-badge">
         <span class="i18n-fr">Guide utilisateur</span>
         <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
     </div>
 
     <div class="steppy-step" data-step-index="1">
@@ -177,7 +190,7 @@
         <div class="steppy-step-subtitle">Navigation</div>
         <div class="steppy-step-content">Touchez l'icône du menu pour ouvrir le tiroir, puis dans la section « Utilisateurs » touchez l'entrée pour voir les gestionnaires.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/community-managers-view/fr/mobile/step-17.png" alt="Step 1" loading="lazy">
+            <img src="../assets/community-managers-view/fr/mobile/step-17.png" alt="1. Voir les gestionnaires" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -191,7 +204,7 @@
         <div class="steppy-step-subtitle">Transparence</div>
         <div class="steppy-step-content">Cette page liste les administrateurs et gestionnaires de la communauté avec leur rôle. Vous pouvez filtrer par rôle ou rechercher une personne. C'est une vue de consultation : vous ne pouvez rien modifier.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/community-managers-view/fr/mobile/step-21.png" alt="Step 2" loading="lazy">
+            <img src="../assets/community-managers-view/fr/mobile/step-21.png" alt="2. Les gestionnaires de votre communauté" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -205,7 +218,7 @@
         <div class="steppy-step-subtitle">Recherche</div>
         <div class="steppy-step-content">Saisissez un nom ou une adresse e-mail pour filtrer la liste et retrouver rapidement une personne précise.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/community-managers-view/fr/mobile/step-23.png" alt="Step 3" loading="lazy">
+            <img src="../assets/community-managers-view/fr/mobile/step-23.png" alt="3. Rechercher un gestionnaire" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -219,7 +232,7 @@
         <div class="steppy-step-subtitle">Recherche</div>
         <div class="steppy-step-content">Le bouton « Réinitialiser les filtres » efface la recherche et réaffiche l'ensemble des gestionnaires.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/community-managers-view/fr/mobile/step-25.png" alt="Step 4" loading="lazy">
+            <img src="../assets/community-managers-view/fr/mobile/step-25.png" alt="4. Réinitialiser la recherche" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>

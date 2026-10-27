@@ -1,0 +1,1501 @@
+{
+  "version": "1.1",
+  "slug": "onboarding-manager",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Vous êtes gestionnaire",
+    "en": "You are a manager",
+    "nl": "U bent manager",
+    "de": "Sie sind Manager"
+  },
+  "locales": [
+    "fr",
+    "en",
+    "nl",
+    "de"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 2000,
+      "title": {
+        "fr": "Vous êtes gestionnaire",
+        "en": "You are a manager",
+        "nl": "U bent manager",
+        "de": "Sie sind Manager"
+      },
+      "text": {
+        "fr": "Vous gérez désormais cette communauté : sa carte affiche votre nouveau rôle. Cliquez sur **« Ouvrir ma communauté »** — son tableau de bord n'est plus celui d'un membre.",
+        "en": "You now manage this community: its card shows your new role. Click **\"Open my community\"** — its dashboard is no longer a member's.",
+        "nl": "U beheert voortaan deze gemeenschap: haar kaart toont uw nieuwe rol. Klik op **“Mijn gemeenschap openen”** — haar dashboard is niet langer dat van een lid.",
+        "de": "Sie verwalten jetzt diese Gemeinschaft: Ihre Karte zeigt Ihre neue Rolle. Klicken Sie auf **„Meine Gemeinschaft öffnen“** — ihre Übersicht ist nicht mehr die eines Mitglieds."
+      },
+      "subtitle": {
+        "fr": "Page d'accueil",
+        "en": "Home page",
+        "nl": "Startpagina",
+        "de": "Startseite"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/fr/desktop/step-07.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 387,
+                      "y": 265,
+                      "width": 342,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/fr/mobile/step-07.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 325,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/en/desktop/step-07.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 387,
+                      "y": 265,
+                      "width": 342,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/en/mobile/step-07.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 305,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/nl/desktop/step-07.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 387,
+                      "y": 265,
+                      "width": 342,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/nl/mobile/step-07.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 305,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/de/desktop/step-07.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 387,
+                      "y": 265,
+                      "width": 342,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/de/mobile/step-07.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 305,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Le tableau de bord du gestionnaire",
+        "en": "The manager dashboard",
+        "nl": "Het managersdashboard",
+        "de": "Die Übersicht für Manager"
+      },
+      "text": {
+        "fr": "Le tableau de bord résume maintenant toute la communauté. **« Points à vérifier »** liste ce qui bloque, avec un lien vers l'écran où le corriger ; suivent l'énergie partagée, les opérations et l'activité récente.",
+        "en": "The dashboard now sums up the whole community. **\"Things to check\"** lists what is blocking, with a link to the screen where you fix it; then come the shared energy, the operations and the recent activity.",
+        "nl": "Het dashboard vat nu de hele gemeenschap samen. **“Aandachtspunten”** toont wat blokkeert, met een link naar het scherm waar u het oplost; daarna volgen de gedeelde energie, de operaties en de recente activiteit.",
+        "de": "Die Übersicht fasst jetzt die ganze Gemeinschaft zusammen. **„Zu prüfende Punkte“** listet auf, was blockiert, mit einem Link zu dem Bildschirm, auf dem Sie es beheben; danach folgen die geteilte Energie, die Operationen und die letzte Aktivität."
+      },
+      "subtitle": {
+        "fr": "Tableau de bord",
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/fr/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/fr/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/en/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/en/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/nl/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/nl/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/de/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/de/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "La section « Gestion »",
+        "en": "The \"Management\" section",
+        "nl": "De sectie “Beheer”",
+        "de": "Der Abschnitt „Verwaltung“"
+      },
+      "text": {
+        "fr": "Votre rôle a ajouté la section **« Gestion »** à la barre latérale : les clefs de répartition, les membres, les compteurs et les opérations de partage, les utilisateurs de la communauté et le journal d'audit.",
+        "en": "Your role added the **\"Management\"** section to the sidebar: the allocation keys, the members, meters and sharing operations, the community's users and the audit log.",
+        "nl": "Uw rol heeft de sectie **“Beheer”** aan de zijbalk toegevoegd: de verdeelsleutels, de leden, meters en deeloperaties, de gebruikers van de gemeenschap en het auditlogboek.",
+        "de": "Ihre Rolle hat den Abschnitt **„Verwaltung“** in die Seitenleiste gebracht: die Verteilungsschlüssel, die Mitglieder, Zähler und Teilungsoperationen, die Benutzer der Gemeinschaft und das Audit-Protokoll."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/fr/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/fr/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ],
+            "content": {
+              "title": "La section « Gestion »",
+              "text": "Votre rôle a ajouté la section **« Gestion »** au menu : les clefs de répartition, les membres, les compteurs et les opérations de partage, les utilisateurs de la communauté et le journal d'audit.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/en/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/en/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ],
+            "content": {
+              "title": "The \"Management\" section",
+              "text": "Your role added the **\"Management\"** section to the menu: the allocation keys, the members, meters and sharing operations, the community's users and the audit log.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/nl/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/nl/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ],
+            "content": {
+              "title": "De sectie “Beheer”",
+              "text": "Uw rol heeft de sectie **“Beheer”** aan het menu toegevoegd: de verdeelsleutels, de leden, meters en deeloperaties, de gebruikers van de gemeenschap en het auditlogboek.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/de/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/de/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ],
+            "content": {
+              "title": "Der Abschnitt „Verwaltung“",
+              "text": "Ihre Rolle hat den Abschnitt **„Verwaltung“** ins Menü gebracht: die Verteilungsschlüssel, die Mitglieder, Zähler und Teilungsoperationen, die Benutzer der Gemeinschaft und das Audit-Protokoll.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Membres, compteurs, opérations",
+        "en": "Members, meters, operations",
+        "nl": "Leden, meters, operaties",
+        "de": "Mitglieder, Zähler, Operationen"
+      },
+      "text": {
+        "fr": "**« Gestionnaire de membres »** regroupe le quotidien de la communauté : **« Gérer les membres »**, **« Gérer les compteurs »** et **« Opérations de partage »**.",
+        "en": "**\"Member manager\"** groups the community's day-to-day work: **\"Manage members\"**, **\"Manage meters\"** and **\"Sharing operations\"**.",
+        "nl": "**“Ledenbeheer”** groepeert het dagelijkse werk van de gemeenschap: **“Leden beheren”**, **“Meters beheren”** en **“Deeloperaties”**.",
+        "de": "**„Mitgliederverwaltung“** fasst die tägliche Arbeit der Gemeinschaft zusammen: **„Mitglieder verwalten“**, **„Zähler verwalten“** und **„Teilungsoperationen“**."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/fr/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 614.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/fr/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 614.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/en/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 614.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/en/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 614.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/nl/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 614.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/nl/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 614.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/de/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 614.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/de/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 614.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les membres",
+        "en": "Open the members",
+        "nl": "De leden openen",
+        "de": "Die Mitglieder öffnen"
+      },
+      "text": {
+        "fr": "Cliquez sur **« Gérer les membres »**.",
+        "en": "Click **\"Manage members\"**.",
+        "nl": "Klik op **“Leden beheren”**.",
+        "de": "Klicken Sie auf **„Mitglieder verwalten“**."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/fr/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 658.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 658.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir les membres",
+              "text": "Touchez **« Gérer les membres »**.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/en/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 658.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 658.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the members",
+              "text": "Tap **\"Manage members\"**.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/nl/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 658.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 658.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De leden openen",
+              "text": "Tik op **“Leden beheren”**.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/de/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 658.5,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 658.5,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--0\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Die Mitglieder öffnen",
+              "text": "Tippen Sie auf **„Mitglieder verwalten“**.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ajouter et inviter des membres",
+        "en": "Add and invite members",
+        "nl": "Leden toevoegen en uitnodigen",
+        "de": "Mitglieder hinzufügen und einladen"
+      },
+      "text": {
+        "fr": "Ici, vous tenez la liste des membres. **« Ajouter »** encode une fiche ; **« Inviter un nouveau membre »** envoie un e-mail pour que la personne la complète elle-même et accède à son espace.",
+        "en": "Here you keep the list of members. **\"Add\"** fills in a record; **\"Invite a new member\"** sends an email so the person completes it themselves and gets access to their own space.",
+        "nl": "Hier houdt u de ledenlijst bij. **“Toevoegen”** maakt een fiche aan; **“Nieuw lid uitnodigen”** stuurt een e-mail zodat de persoon ze zelf aanvult en toegang krijgt tot zijn eigen ruimte.",
+        "de": "Hier führen Sie die Mitgliederliste. **„Hinzufügen“** legt einen Datensatz an; **„Neues Mitglied einladen“** sendet eine E-Mail, damit die Person ihn selbst vervollständigt und Zugang zu ihrem eigenen Bereich erhält."
+      },
+      "subtitle": {
+        "fr": "Membres",
+        "en": "Members",
+        "nl": "Leden",
+        "de": "Mitglieder"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/fr/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/fr/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/en/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/en/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Les clefs de répartition",
+        "en": "The allocation keys",
+        "nl": "De verdeelsleutels",
+        "de": "Die Verteilungsschlüssel"
+      },
+      "text": {
+        "fr": "Dans la section **« Gestion »**, cliquez sur **« Gestionnaire de clefs »**.",
+        "en": "In the **\"Management\"** section, click **\"Key manager\"**.",
+        "nl": "Klik in de sectie **“Beheer”** op **“Verdeelsleutelbeheer”**.",
+        "de": "Klicken Sie im Abschnitt **„Verwaltung“** auf **„Verteilungsschlüsselverwaltung“**."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/fr/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 576.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--keys\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/fr/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 576.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--keys\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Les clefs de répartition",
+              "text": "Dans la section **« Gestion »** du menu, touchez **« Gestionnaire de clefs »**.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/en/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 576.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--keys\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 576.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--keys\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "The allocation keys",
+              "text": "In the menu's **\"Management\"** section, tap **\"Key manager\"**.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 576.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--keys\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 576.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--keys\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De verdeelsleutels",
+              "text": "Tik in de sectie **“Beheer”** van het menu op **“Verdeelsleutelbeheer”**.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 576.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--keys\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/de/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 576.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--keys\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Die Verteilungsschlüssel",
+              "text": "Tippen Sie im Abschnitt **„Verwaltung“** des Menüs auf **„Verteilungsschlüsselverwaltung“**.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Les clefs de répartition",
+        "en": "Allocation keys",
+        "nl": "De verdeelsleutels",
+        "de": "Die Verteilungsschlüssel"
+      },
+      "text": {
+        "fr": "Une clef de répartition fixe comment l'énergie partagée est répartie entre les consommateurs d'une opération. **« Ajouter »** vous laisse choisir entre le formulaire complet et un assistant pas à pas. Le **« Guide utilisateur »** propose une visite détaillée de chacun de ces écrans.",
+        "en": "An allocation key sets how the shared energy is split between an operation's consumers. **\"Add\"** lets you choose between the full form and a step-by-step wizard. The **\"User guide\"** offers a detailed tour of each of these screens.",
+        "nl": "Een verdeelsleutel bepaalt hoe de gedeelde energie wordt verdeeld over de verbruikers van een operatie. Met **“Toevoegen”** kiest u tussen het volledige formulier en een stapsgewijze wizard. De **“Gebruikershandleiding”** biedt een uitgebreide rondleiding voor elk van deze schermen.",
+        "de": "Ein Verteilungsschlüssel legt fest, wie die geteilte Energie auf die Verbraucher einer Operation aufgeteilt wird. Mit **„Hinzufügen“** wählen Sie zwischen dem vollständigen Formular und einem Schritt-für-Schritt-Assistenten. Das **„Benutzerhandbuch“** bietet für jeden dieser Bildschirme eine ausführliche Tour."
+      },
+      "subtitle": {
+        "fr": "Clefs de répartition",
+        "en": "Allocation keys",
+        "nl": "Verdeelsleutels",
+        "de": "Verteilungsschlüssel"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/fr/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/fr/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/en/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/en/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/nl/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/nl/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/de/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-manager/de/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

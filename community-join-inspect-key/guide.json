@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Rejoindre une communauté — vérifier la clé",
-    "en": "Join a community — verify the allocation key"
+    "en": "Join a community — verify the allocation key",
+    "nl": "Lid worden van een gemeenschap — de verdeelsleutel controleren",
+    "de": "Einer Gemeinschaft beitreten — Verteilungsschlüssel prüfen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir mes communautés",
-        "en": "Open my communities"
+        "en": "Open my communities",
+        "nl": "Mijn gemeenschappen openen",
+        "de": "Meine Gemeinschaften öffnen"
       },
       "text": {
         "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Mes communautés » pour voir la liste des communautés où vous êtes inscrit·e.",
-        "en": "In the sidebar's profile menu, click \"My communities\" to see the list of communities you belong to."
+        "en": "In the sidebar's profile menu, click \"My communities\" to see the list of communities you belong to.",
+        "nl": "Klik in het profielmenu van de zijbalk op “Mijn gemeenschappen” om de lijst te zien van de gemeenschappen waarvan u lid bent.",
+        "de": "Klicken Sie im Profilmenü der Seitenleiste auf „Meine Gemeinschaften“, um die Liste der Gemeinschaften anzuzeigen, denen Sie angehören."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/nl/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/nl/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Mijn gemeenschappen openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en vervolgens op “Mijn gemeenschappen” om de lijst te zien van de gemeenschappen waarvan u lid bent.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/de/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/de/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Meine Gemeinschaften öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Meine Gemeinschaften“, um die Liste der Gemeinschaften anzuzeigen, denen Sie angehören.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir les clés",
-        "en": "Open the keys"
+        "en": "Open the keys",
+        "nl": "Verdeelsleutels openen",
+        "de": "Verteilungsschlüssel öffnen"
       },
       "text": {
         "fr": "Dans la section « Gestion » de la barre latérale, cliquez sur « Clés » pour afficher les clés de répartition de la communauté active.",
-        "en": "In the sidebar's \"Management\" section, click \"Keys\" to display the active community's allocation keys."
+        "en": "In the sidebar's \"Management\" section, click \"Keys\" to display the active community's allocation keys.",
+        "nl": "Klik in de sectie “Beheer” van de zijbalk op “Verdeelsleutelbeheer” om de verdeelsleutels van de actieve gemeenschap te tonen.",
+        "de": "Klicken Sie im Abschnitt „Verwaltung“ der Seitenleiste auf „Verteilungsschlüsselverwaltung“, um die Verteilungsschlüssel der aktiven Gemeinschaft anzuzeigen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -278,6 +400,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Verdeelsleutels openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en tik vervolgens in de sectie “Beheer” op “Verdeelsleutelbeheer” om de verdeelsleutels van de actieve gemeenschap te tonen.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Verteilungsschlüssel öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und tippen Sie dann im Abschnitt „Verwaltung“ auf „Verteilungsschlüsselverwaltung“, um die Verteilungsschlüssel der aktiven Gemeinschaft anzuzeigen.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -290,15 +518,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir une clé",
-        "en": "Open a key"
+        "en": "Open a key",
+        "nl": "Een sleutel openen",
+        "de": "Schlüssel öffnen"
       },
       "text": {
         "fr": "Cliquez sur la première ligne du tableau pour afficher la fiche détaillée de cette clé de répartition.",
-        "en": "Click the first row of the table to open the detail view for that allocation key."
+        "en": "Click the first row of the table to open the detail view for that allocation key.",
+        "nl": "Klik op de eerste rij van de tabel om de detailfiche van deze verdeelsleutel te openen.",
+        "de": "Klicken Sie auf die erste Zeile der Tabelle, um die Detailansicht dieses Verteilungsschlüssels zu öffnen."
       },
       "subtitle": {
         "fr": "Liste des clés",
-        "en": "Allocation keys list"
+        "en": "Allocation keys list",
+        "nl": "Lijst met sleutels",
+        "de": "Schlüsselliste"
       },
       "captures": {
         "fr": {
@@ -406,6 +640,112 @@
               "subtitle": "Allocation keys list"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/nl/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 305,
+                      "width": 1280,
+                      "height": 45
+                    },
+                    "selector": "[data-testid=\"keys-list__row--desktop--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/nl/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 486,
+                      "width": 358,
+                      "height": 130
+                    },
+                    "selector": "[data-testid=\"keys-list__row--mobile--1\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Een sleutel openen",
+              "text": "Tik op de eerste kaart om de detailfiche van deze verdeelsleutel te openen.",
+              "subtitle": "Lijst met sleutels"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/de/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 305,
+                      "width": 1280,
+                      "height": 45
+                    },
+                    "selector": "[data-testid=\"keys-list__row--desktop--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/de/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 486,
+                      "width": 358,
+                      "height": 130
+                    },
+                    "selector": "[data-testid=\"keys-list__row--mobile--1\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Schlüssel öffnen",
+              "text": "Tippen Sie auf die erste Karte, um die Detailansicht dieses Verteilungsschlüssels zu öffnen.",
+              "subtitle": "Schlüsselliste"
+            }
+          }
         }
       }
     },
@@ -418,15 +758,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Identification de la clé",
-        "en": "Key identification"
+        "en": "Key identification",
+        "nl": "Identificatie van de sleutel",
+        "de": "Identifikation des Schlüssels"
       },
       "text": {
         "fr": "La fiche affiche le nom et la description de la clé telle qu'elle a été configurée — ces métadonnées aident à la retrouver dans la liste.",
-        "en": "The detail page shows the key's name and description as configured — this metadata helps you locate it in the list."
+        "en": "The detail page shows the key's name and description as configured — this metadata helps you locate it in the list.",
+        "nl": "De fiche toont de naam en de beschrijving van de sleutel zoals die werd geconfigureerd — deze metagegevens helpen om hem in de lijst terug te vinden.",
+        "de": "Die Detailansicht zeigt den Namen und die Beschreibung des Schlüssels so, wie er konfiguriert wurde — diese Metadaten helfen, ihn in der Liste wiederzufinden."
       },
       "subtitle": {
         "fr": "Détail de la clé",
-        "en": "Key detail"
+        "en": "Key detail",
+        "nl": "Sleuteldetail",
+        "de": "Schlüsseldetail"
       },
       "captures": {
         "fr": {
@@ -480,6 +826,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/nl/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/nl/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/de/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/de/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -492,15 +890,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Itérations et consommateurs",
-        "en": "Iterations and consumers"
+        "en": "Iterations and consumers",
+        "nl": "Iteraties en verbruikers",
+        "de": "Iterationen und Verbraucher"
       },
       "text": {
         "fr": "Le tableau détaille les itérations et les consommateurs associés à cette clé, avec les pourcentages d'allocation calculés ou saisis.",
-        "en": "The grid lists the iterations and consumers linked to this key, along with the allocation percentages — either computed or set manually."
+        "en": "The grid lists the iterations and consumers linked to this key, along with the allocation percentages — either computed or set manually.",
+        "nl": "De tabel toont de iteraties en de verbruikers die aan deze sleutel gekoppeld zijn, met de berekende of handmatig ingevoerde toewijzingspercentages.",
+        "de": "Die Tabelle zeigt die Iterationen und Verbraucher dieses Schlüssels mit den berechneten oder manuell eingegebenen Zuteilungsprozentsätzen."
       },
       "subtitle": {
         "fr": "Détail de la clé",
-        "en": "Key detail"
+        "en": "Key detail",
+        "nl": "Sleuteldetail",
+        "de": "Schlüsseldetail"
       },
       "captures": {
         "fr": {
@@ -546,6 +950,58 @@
             "frames": [
               {
                 "screenshot": "../assets/community-join-inspect-key/en/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/nl/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/nl/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/de/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-key/de/mobile/step-36.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

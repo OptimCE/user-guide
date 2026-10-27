@@ -8,13 +8,14 @@
     <link rel="canonical" href="https://guide.optimce.be/key-create-gridform/fr.html">
     <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/key-create-gridform/fr.html">
     <link rel="alternate" hreflang="en" href="https://guide.optimce.be/key-create-gridform/en.html">
+    <link rel="alternate" hreflang="nl" href="https://guide.optimce.be/key-create-gridform/nl.html">
+    <link rel="alternate" hreflang="de" href="https://guide.optimce.be/key-create-gridform/de.html">
     <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/key-create-gridform/fr.html">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Créer une clé (formulaire)">
     <meta property="og:description" content="Créer une clé de répartition directement dans l&#39;éditeur en grille, avec plusieurs itérations et pondérations.">
     <meta property="og:url" content="https://guide.optimce.be/key-create-gridform/fr.html">
     <meta property="og:site_name" content="OptimCE — Guides utilisateur">
-    <meta property="og:locale" content="fr">
     <meta property="og:image" content="https://guide.optimce.be/assets/key-create-gridform/fr/desktop/step-17.png">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="../assets/guides.css">
@@ -25,10 +26,8 @@
           var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
           document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
         } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
-        // Synchronise the saved language preference with the file we just loaded.
-        // The user landed on this <locale>.html either by clicking a link rewritten
-        // to honour their preference or by direct entry — either way, that's the
-        // current truth.
+        // Remember the language of the file we just loaded: interactive.html is one
+        // URL for every locale and opens in this language when no ?lang= is given.
         try { localStorage.setItem("oce-lang", "fr"); } catch (e) {}
       })();
     </script>
@@ -54,17 +53,27 @@
         </nav>
 
         <div class="steppy-header-actions">
-            <nav class="steppy-locale-switch" aria-label="Language">
-                <ul>
-                    <li>
-                        <span aria-current="true">Français</span>
-                    </li>
-                    <li>
-                        <a href="./en.html">English</a>
-                    </li>
-                </ul>
-            </nav>
-            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
+<label class="steppy-locale-select">
+    <span class="steppy-visually-hidden">Langue</span>
+    <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <select autocomplete="off">        <option value="./fr.html" lang="fr" selected>Français</option>        <option value="./en.html" lang="en">English</option>        <option value="./nl.html" lang="nl">Nederlands</option>        <option value="./de.html" lang="de">Deutsch</option>    </select>
+    <svg class="steppy-locale-select-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</label>
+<script>
+  (function () {
+    var sel = document.querySelector(".steppy-locale-select select");
+    if (!sel) return;
+    sel.addEventListener("change", function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+    // Back from the language just picked can restore this page from the
+    // bfcache with that option still showing — snap it back to this page's own.
+    window.addEventListener("pageshow", function () {
+      var own = sel.querySelector("option[selected]");
+      if (own) sel.value = own.value;
+    });
+  })();
+</script>            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
                 <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                 <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
             </button>
@@ -75,7 +84,7 @@
                     <span aria-current="true">Pas à pas</span>
                 </li>
                 <li>
-                    <a href="./interactive.html">Interactif</a>
+                    <a href="./interactive.html?lang=fr">Interactif</a>
                 </li>
             </ul>
         </nav>
@@ -100,6 +109,8 @@
     <div class="steppy-role-badge">
         <span class="i18n-fr">Guide utilisateur</span>
         <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
     </div>
 
     <div class="steppy-step" data-step-index="1">
@@ -110,7 +121,7 @@
         <div class="steppy-step-subtitle">Création d'une clé</div>
         <div class="steppy-step-content">Cliquez sur « Ajouter » : OptimCE vous demande d'abord comment vous souhaitez construire la nouvelle clé de répartition.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/desktop/step-17.png" alt="Step 1" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/desktop/step-17.png" alt="1. Ajouter une clé" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -124,7 +135,7 @@
         <div class="steppy-step-subtitle">Création d'une clé</div>
         <div class="steppy-step-content">Deux manières de construire une clé vous sont proposées. Choisissez « Éditeur complet » pour saisir directement les itérations et les pourcentages dans la grille.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/desktop/step-19.png" alt="Step 2" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/desktop/step-19.png" alt="2. Choisir le mode" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -138,7 +149,7 @@
         <div class="steppy-step-subtitle">Identification de la clé</div>
         <div class="steppy-step-content">Donnez un nom et une description à la nouvelle clé de répartition. Ces informations apparaîtront dans la liste des clés et aident à la retrouver plus tard.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/desktop/step-21-a.png" alt="Step 3" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/desktop/step-21-a.png" alt="3. Identifier la clé" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -152,7 +163,7 @@
         <div class="steppy-step-subtitle">Première itération</div>
         <div class="steppy-step-content">Cliquez sur « Ajouter une itération » : la grille initialise un nouveau bloc avec un premier consommateur prêt à être édité.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/desktop/step-22.png" alt="Step 4" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/desktop/step-22.png" alt="4. Ajouter une itération" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -166,7 +177,7 @@
         <div class="steppy-step-subtitle">Première itération</div>
         <div class="steppy-step-content">Cliquez sur « Ajouter un consommateur » autant de fois que nécessaire pour atteindre le nombre voulu — trois lignes dans ce scénario.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/desktop/step-24.png" alt="Step 5" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/desktop/step-24.png" alt="5. Ajouter des consommateurs" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -180,7 +191,7 @@
         <div class="steppy-step-subtitle">Première itération</div>
         <div class="steppy-step-content">Saisissez 70% de l'énergie pour cette itération, nommez les trois consommateurs (Cons1, Cons2, Cons3) et fixez manuellement la répartition 40/40/20.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/desktop/step-25.png" alt="Step 6" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/desktop/step-25.png" alt="6. Configurer l'itération" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -194,7 +205,7 @@
         <div class="steppy-step-subtitle">Deuxième itération</div>
         <div class="steppy-step-content">Cliquez sur « Ajouter une itération prorata » : les noms des consommateurs sont repris automatiquement et les pourcentages seront calculés selon la consommation réelle.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/desktop/step-26.png" alt="Step 7" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/desktop/step-26.png" alt="7. Ajouter une itération prorata" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -208,7 +219,7 @@
         <div class="steppy-step-subtitle">Deuxième itération</div>
         <div class="steppy-step-content">Saisissez 30% comme pondération de la deuxième itération afin que la somme des deux itérations atteigne 100% de l'énergie.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/desktop/step-27.png" alt="Step 8" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/desktop/step-27.png" alt="8. Définir la pondération" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -222,7 +233,7 @@
         <div class="steppy-step-subtitle">Deuxième itération</div>
         <div class="steppy-step-content">Dès que la pondération est validée (touche Entrée ou clic ailleurs), toute la deuxième itération est recalculée automatiquement selon le mode prorata.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/desktop/step-28.png" alt="Step 9" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/desktop/step-28.png" alt="9. Itération recalculée" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -236,7 +247,7 @@
         <div class="steppy-step-subtitle">Validation finale</div>
         <div class="steppy-step-content">Parcourez la grille complète pour vérifier les itérations, les noms et les pourcentages avant d'enregistrer la clé.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/desktop/step-29.png" alt="Step 10" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/desktop/step-29.png" alt="10. Relire la configuration" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -250,7 +261,7 @@
         <div class="steppy-step-subtitle">Confirmation</div>
         <div class="steppy-step-content">La nouvelle clé « E2E key » apparaît dans la liste des clés de répartition de la communauté, prête à être utilisée par une opération de partage.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/desktop/step-32.png" alt="Step 11" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/desktop/step-32.png" alt="11. Clé créée" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -265,6 +276,8 @@
     <div class="steppy-role-badge">
         <span class="i18n-fr">Guide utilisateur</span>
         <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
     </div>
 
     <div class="steppy-step" data-step-index="1">
@@ -275,7 +288,7 @@
         <div class="steppy-step-subtitle">Création d'une clé</div>
         <div class="steppy-step-content">Cliquez sur « Ajouter » : OptimCE vous demande d'abord comment vous souhaitez construire la nouvelle clé de répartition.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/mobile/step-17.png" alt="Step 1" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/mobile/step-17.png" alt="1. Ajouter une clé" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -289,7 +302,7 @@
         <div class="steppy-step-subtitle">Création d'une clé</div>
         <div class="steppy-step-content">Deux manières de construire une clé vous sont proposées. Choisissez « Éditeur complet » pour saisir directement les itérations et les pourcentages dans la grille.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/mobile/step-19.png" alt="Step 2" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/mobile/step-19.png" alt="2. Choisir le mode" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -303,7 +316,7 @@
         <div class="steppy-step-subtitle">Identification de la clé</div>
         <div class="steppy-step-content">Donnez un nom et une description à la nouvelle clé de répartition. Ces informations apparaîtront dans la liste des clés et aident à la retrouver plus tard.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/mobile/step-21-a.png" alt="Step 3" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/mobile/step-21-a.png" alt="3. Identifier la clé" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -317,7 +330,7 @@
         <div class="steppy-step-subtitle">Première itération</div>
         <div class="steppy-step-content">Cliquez sur « Ajouter une itération » : la grille initialise un nouveau bloc avec un premier consommateur prêt à être édité.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/mobile/step-22.png" alt="Step 4" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/mobile/step-22.png" alt="4. Ajouter une itération" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -331,7 +344,7 @@
         <div class="steppy-step-subtitle">Première itération</div>
         <div class="steppy-step-content">Cliquez sur « Ajouter un consommateur » autant de fois que nécessaire pour atteindre le nombre voulu — trois lignes dans ce scénario.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/mobile/step-24.png" alt="Step 5" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/mobile/step-24.png" alt="5. Ajouter des consommateurs" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -345,7 +358,7 @@
         <div class="steppy-step-subtitle">Première itération</div>
         <div class="steppy-step-content">Saisissez 70% de l'énergie pour cette itération, nommez les trois consommateurs (Cons1, Cons2, Cons3) et fixez manuellement la répartition 40/40/20.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/mobile/step-25.png" alt="Step 6" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/mobile/step-25.png" alt="6. Configurer l'itération" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -359,7 +372,7 @@
         <div class="steppy-step-subtitle">Deuxième itération</div>
         <div class="steppy-step-content">Cliquez sur « Ajouter une itération prorata » : les noms des consommateurs sont repris automatiquement et les pourcentages seront calculés selon la consommation réelle.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/mobile/step-26.png" alt="Step 7" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/mobile/step-26.png" alt="7. Ajouter une itération prorata" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -373,7 +386,7 @@
         <div class="steppy-step-subtitle">Deuxième itération</div>
         <div class="steppy-step-content">Saisissez 30% comme pondération de la deuxième itération afin que la somme des deux itérations atteigne 100% de l'énergie.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/mobile/step-27.png" alt="Step 8" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/mobile/step-27.png" alt="8. Définir la pondération" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -387,7 +400,7 @@
         <div class="steppy-step-subtitle">Deuxième itération</div>
         <div class="steppy-step-content">Dès que la pondération est validée (touche Entrée ou clic ailleurs), toute la deuxième itération est recalculée automatiquement selon le mode prorata.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/mobile/step-28.png" alt="Step 9" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/mobile/step-28.png" alt="9. Itération recalculée" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -401,7 +414,7 @@
         <div class="steppy-step-subtitle">Validation finale</div>
         <div class="steppy-step-content">Parcourez la grille complète pour vérifier les itérations, les noms et les pourcentages avant d'enregistrer la clé.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/mobile/step-29.png" alt="Step 10" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/mobile/step-29.png" alt="10. Relire la configuration" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -415,7 +428,7 @@
         <div class="steppy-step-subtitle">Confirmation</div>
         <div class="steppy-step-content">La nouvelle clé « E2E key » apparaît dans la liste des clés de répartition de la communauté, prête à être utilisée par une opération de partage.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/fr/mobile/step-32.png" alt="Step 11" loading="lazy">
+            <img src="../assets/key-create-gridform/fr/mobile/step-32.png" alt="11. Clé créée" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>

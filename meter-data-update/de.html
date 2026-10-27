@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zählerdaten bearbeiten — OptimCE — Benutzeranleitungen</title>
+    <meta name="description" content="Die technischen Daten eines aktiven Zählers überarbeiten: Entnahmeleistung, Stromstärke, Tarif und Kundentyp.">
+    <link rel="canonical" href="https://guide.optimce.be/meter-data-update/de.html">
+    <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/meter-data-update/fr.html">
+    <link rel="alternate" hreflang="en" href="https://guide.optimce.be/meter-data-update/en.html">
+    <link rel="alternate" hreflang="nl" href="https://guide.optimce.be/meter-data-update/nl.html">
+    <link rel="alternate" hreflang="de" href="https://guide.optimce.be/meter-data-update/de.html">
+    <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/meter-data-update/fr.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Zählerdaten bearbeiten">
+    <meta property="og:description" content="Die technischen Daten eines aktiven Zählers überarbeiten: Entnahmeleistung, Stromstärke, Tarif und Kundentyp.">
+    <meta property="og:url" content="https://guide.optimce.be/meter-data-update/de.html">
+    <meta property="og:site_name" content="OptimCE — Benutzeranleitungen">
+    <meta property="og:image" content="https://guide.optimce.be/assets/meter-data-update/de/desktop/step-15.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Remember the language of the file we just loaded: interactive.html is one
+        // URL for every locale and opens in this language when no ?lang= is given.
+        try { localStorage.setItem("oce-lang", "de"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.de.html" aria-label="OptimCE — Benutzeranleitungen">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.de.html">OptimCE — Benutzeranleitungen</a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.de.html">Startseite</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../meters/de.html">Zähler</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">Zählerdaten bearbeiten</span>
+        </nav>
+
+        <div class="steppy-header-actions">
+<label class="steppy-locale-select">
+    <span class="steppy-visually-hidden">Sprache</span>
+    <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <select autocomplete="off">        <option value="./fr.html" lang="fr">Français</option>        <option value="./en.html" lang="en">English</option>        <option value="./nl.html" lang="nl">Nederlands</option>        <option value="./de.html" lang="de" selected>Deutsch</option>    </select>
+    <svg class="steppy-locale-select-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</label>
+<script>
+  (function () {
+    var sel = document.querySelector(".steppy-locale-select select");
+    if (!sel) return;
+    sel.addEventListener("change", function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+    // Back from the language just picked can restore this page from the
+    // bfcache with that option still showing — snap it back to this page's own.
+    window.addEventListener("pageshow", function () {
+      var own = sel.querySelector("option[selected]");
+      if (own) sel.value = own.value;
+    });
+  })();
+</script>            <button type="button" class="oce-theme-toggle" aria-label="Design wechseln">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-mode-switch" aria-label="Guide mode">
+            <ul>
+                <li>
+                    <span aria-current="true">Schritt für Schritt</span>
+                </li>
+                <li>
+                    <a href="./interactive.html?lang=de">Interaktiv</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Zählerdaten bearbeiten</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Zählerliste</span>
+        </h2>
+        <div class="steppy-step-subtitle">Zählerauswahl</div>
+        <div class="steppy-step-content">Öffnen Sie die Zählerliste der aktiven Gemeinschaft. Suchen Sie den Zähler, dessen aktuelle Konfiguration Sie aktualisieren möchten.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/desktop/step-15.png" alt="1. Zählerliste" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Zählerdetail öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Zählerauswahl</div>
+        <div class="steppy-step-content">Klicken Sie auf die Zeile des Zählers (EAN 123456789012345678), um seine Detailansicht zu öffnen und seine aktuellen Daten aufzurufen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/desktop/step-16.png" alt="2. Zählerdetail öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Aktiver Zähler</span>
+        </h2>
+        <div class="steppy-step-subtitle">Zählerdetail</div>
+        <div class="steppy-step-content">Die Detailansicht zeigt die aktuellen Merkmale. Die Schaltfläche „Aktualisieren“ wird nur für einen aktiven Zähler angeboten — das ist unser Einstiegspunkt.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/desktop/step-19.png" alt="3. Aktiver Zähler" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Formular öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Daten ändern</div>
+        <div class="steppy-step-content">Klicken Sie auf „Aktualisieren“: Ein Dialog öffnet sich, vorausgefüllt mit der aktuellen Konfiguration des Zählers — Beschreibung, Leistungen, Tarif, Kundentyp und Inhaber.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/desktop/step-20.png" alt="4. Formular öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Energiewerte anpassen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Energetische Merkmale</div>
+        <div class="steppy-step-content">Ändern Sie die Beschreibung, die Entnahmeleistung und die Stromstärke. Diese neuen Werte fließen sofort in die Verteilungsberechnungen der Teilungsoperationen ein.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/desktop/step-23-a.png" alt="5. Energiewerte anpassen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Netzbetreiber auswählen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Netzkonfiguration</div>
+        <div class="steppy-step-content">Wählen Sie im Feld „Netzbetreiber“ den Verteilnetzbetreiber aus, an den der Zähler angeschlossen ist. Dieses Feld ist erforderlich, um die neue Konfiguration zu bestätigen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/desktop/step-24.png" alt="6. Netzbetreiber auswählen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Verbrauchsprofil ändern</span>
+        </h2>
+        <div class="steppy-step-subtitle">Finanzielle Merkmale</div>
+        <div class="steppy-step-content">Stellen Sie den Tarif auf „Zweitarif“ und den Kundentyp auf „Gewerblich“ um, um das neue Verbrauchsprofil des Zählers abzubilden.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/desktop/step-26.png" alt="7. Verbrauchsprofil ändern" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Gültigkeitsdatum festlegen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Gültigkeitsdatum</div>
+        <div class="steppy-step-content">Wählen Sie das Datum, ab dem die neue Konfiguration gilt. Dieses Datum ist erforderlich, um die Änderung zu bestätigen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/desktop/step-27.png" alt="8. Gültigkeitsdatum festlegen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Aktualisierung speichern</span>
+        </h2>
+        <div class="steppy-step-subtitle">Speichern</div>
+        <div class="steppy-step-content">Klicken Sie auf „Bestätigen“: Das Formular wird an das CRM gesendet, das die aktuelle Konfiguration des Zählers ersetzt. Der Dialog schließt sich, sobald die Bestätigung eingeht.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/desktop/step-28.png" alt="9. Aktualisierung speichern" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Aktualisierung bestätigt</span>
+        </h2>
+        <div class="steppy-step-subtitle">Bestätigung</div>
+        <div class="steppy-step-content">Zurück in der Detailansicht erscheinen die neue Beschreibung, die Stromstärke von 63 A und der Zweitarif in den Datenkarten — die Änderungen wurden serverseitig gespeichert.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/desktop/step-32.png" alt="10. Aktualisierung bestätigt" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Zählerdaten bearbeiten</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Zählerliste</span>
+        </h2>
+        <div class="steppy-step-subtitle">Zählerauswahl</div>
+        <div class="steppy-step-content">Öffnen Sie die Zählerliste der aktiven Gemeinschaft. Suchen Sie den Zähler, dessen aktuelle Konfiguration Sie aktualisieren möchten.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/mobile/step-15.png" alt="1. Zählerliste" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Zählerdetail öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Zählerauswahl</div>
+        <div class="steppy-step-content">Tippen Sie auf die Karte des Zählers (EAN 123456789012345678), um seine Detailansicht zu öffnen und seine aktuellen Daten aufzurufen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/mobile/step-17.png" alt="2. Zählerdetail öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Aktiver Zähler</span>
+        </h2>
+        <div class="steppy-step-subtitle">Zählerdetail</div>
+        <div class="steppy-step-content">Die Detailansicht zeigt die aktuellen Merkmale. Die Schaltfläche „Aktualisieren“ wird nur für einen aktiven Zähler angeboten — das ist unser Einstiegspunkt.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/mobile/step-19.png" alt="3. Aktiver Zähler" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Formular öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Daten ändern</div>
+        <div class="steppy-step-content">Klicken Sie auf „Aktualisieren“: Ein Dialog öffnet sich, vorausgefüllt mit der aktuellen Konfiguration des Zählers — Beschreibung, Leistungen, Tarif, Kundentyp und Inhaber.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/mobile/step-20.png" alt="4. Formular öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Energiewerte anpassen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Energetische Merkmale</div>
+        <div class="steppy-step-content">Ändern Sie die Beschreibung, die Entnahmeleistung und die Stromstärke. Diese neuen Werte fließen sofort in die Verteilungsberechnungen der Teilungsoperationen ein.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/mobile/step-23-a.png" alt="5. Energiewerte anpassen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Netzbetreiber auswählen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Netzkonfiguration</div>
+        <div class="steppy-step-content">Wählen Sie im Feld „Netzbetreiber“ den Verteilnetzbetreiber aus, an den der Zähler angeschlossen ist. Dieses Feld ist erforderlich, um die neue Konfiguration zu bestätigen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/mobile/step-24.png" alt="6. Netzbetreiber auswählen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Verbrauchsprofil ändern</span>
+        </h2>
+        <div class="steppy-step-subtitle">Finanzielle Merkmale</div>
+        <div class="steppy-step-content">Stellen Sie den Tarif auf „Zweitarif“ und den Kundentyp auf „Gewerblich“ um, um das neue Verbrauchsprofil des Zählers abzubilden.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/mobile/step-26.png" alt="7. Verbrauchsprofil ändern" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Gültigkeitsdatum festlegen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Gültigkeitsdatum</div>
+        <div class="steppy-step-content">Wählen Sie das Datum, ab dem die neue Konfiguration gilt. Dieses Datum ist erforderlich, um die Änderung zu bestätigen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/mobile/step-27.png" alt="8. Gültigkeitsdatum festlegen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Aktualisierung speichern</span>
+        </h2>
+        <div class="steppy-step-subtitle">Speichern</div>
+        <div class="steppy-step-content">Klicken Sie auf „Bestätigen“: Das Formular wird an das CRM gesendet, das die aktuelle Konfiguration des Zählers ersetzt. Der Dialog schließt sich, sobald die Bestätigung eingeht.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/mobile/step-28.png" alt="9. Aktualisierung speichern" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Aktualisierung bestätigt</span>
+        </h2>
+        <div class="steppy-step-subtitle">Bestätigung</div>
+        <div class="steppy-step-content">Zurück in der Detailansicht erscheinen die neue Beschreibung, die Stromstärke von 63 A und der Zweitarif in den Datenkarten — die Änderungen wurden serverseitig gespeichert.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/meter-data-update/de/mobile/step-32.png" alt="10. Aktualisierung bestätigt" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p>Erstellt mit Steppy.</p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/meter-data-update/de/desktop/step-15.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/meter-data-update/de/desktop/step-15.png", "subtitle": "Z\u00e4hlerauswahl", "text": "\u00d6ffnen Sie die Z\u00e4hlerliste der aktiven Gemeinschaft. Suchen Sie den Z\u00e4hler, dessen aktuelle Konfiguration Sie aktualisieren m\u00f6chten.", "title": "Z\u00e4hlerliste", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 487, "width": 1280, "x": 114, "y": 256}, "selector": "[data-testid=\"meters-list__table--meters\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 487, "width": 1280, "x": 114, "y": 256}, "selector": "[data-testid=\"meters-list__table--meters\"]"}, "value": null}, "screenshot": "../assets/meter-data-update/de/desktop/step-16.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/meter-data-update/de/desktop/step-16.png", "subtitle": "Z\u00e4hlerauswahl", "text": "Klicken Sie auf die Zeile des Z\u00e4hlers (EAN 123456789012345678), um seine Detailansicht zu \u00f6ffnen und seine aktuellen Daten aufzurufen.", "title": "Z\u00e4hlerdetail \u00f6ffnen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/meter-data-update/de/desktop/step-19.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/meter-data-update/de/desktop/step-19.png", "subtitle": "Z\u00e4hlerdetail", "text": "Die Detailansicht zeigt die aktuellen Merkmale. Die Schaltfl\u00e4che \u201eAktualisieren\u201c wird nur f\u00fcr einen aktiven Z\u00e4hler angeboten \u2014 das ist unser Einstiegspunkt.", "title": "Aktiver Z\u00e4hler", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 144.0625, "x": 1088.65625, "y": 88}, "selector": "[data-testid=\"meter-view__btn--update\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 144.0625, "x": 1088.65625, "y": 88}, "selector": "[data-testid=\"meter-view__btn--update\"]"}}, "screenshot": "../assets/meter-data-update/de/desktop/step-20.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/meter-data-update/de/desktop/step-20.png", "subtitle": "Daten \u00e4ndern", "text": "Klicken Sie auf \u201eAktualisieren\u201c: Ein Dialog \u00f6ffnet sich, vorausgef\u00fcllt mit der aktuellen Konfiguration des Z\u00e4hlers \u2014 Beschreibung, Leistungen, Tarif, Kundentyp und Inhaber.", "title": "Formular \u00f6ffnen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 114, "width": 926, "x": 257, "y": 156}, "selector": "[data-testid=\"meter-data-update__textarea--description\"]", "value": "Mise \u00e0 jour E2E \u2014 configuration r\u00e9vis\u00e9e"}, {"bbox": {"height": 42, "width": 298, "x": 257, "y": 361}, "selector": "[data-testid=\"meter-data-update__input--sampling-power\"]", "value": "12"}, {"bbox": {"height": 42, "width": 298, "x": 885, "y": 361}, "selector": "[data-testid=\"meter-data-update__input--amperage\"]", "value": "63"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 114, "width": 926, "x": 257, "y": 156}, "selector": "[data-testid=\"meter-data-update__textarea--description\"]", "value": "Mise \u00e0 jour E2E \u2014 configuration r\u00e9vis\u00e9e"}, {"bbox": {"height": 42, "width": 298, "x": 257, "y": 361}, "selector": "[data-testid=\"meter-data-update__input--sampling-power\"]", "value": "12"}, {"bbox": {"height": 42, "width": 298, "x": 885, "y": 361}, "selector": "[data-testid=\"meter-data-update__input--amperage\"]", "value": "63"}]}, "screenshot": "../assets/meter-data-update/de/desktop/step-23-a.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/meter-data-update/de/desktop/step-23-a.png", "subtitle": "Energetische Merkmale", "text": "\u00c4ndern Sie die Beschreibung, die Entnahmeleistung und die Stromst\u00e4rke. Diese neuen Werte flie\u00dfen sofort in die Verteilungsberechnungen der Teilungsoperationen ein.", "title": "Energiewerte anpassen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 298, "x": 885, "y": 441}, "selector": "[data-testid=\"meter-data-update__select--grd\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 298, "x": 885, "y": 441}, "selector": "[data-testid=\"meter-data-update__select--grd\"]"}}, "screenshot": "../assets/meter-data-update/de/desktop/step-24.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/meter-data-update/de/desktop/step-24.png", "subtitle": "Netzkonfiguration", "text": "W\u00e4hlen Sie im Feld \u201eNetzbetreiber\u201c den Verteilnetzbetreiber aus, an den der Z\u00e4hler angeschlossen ist. Dieses Feld ist erforderlich, um die neue Konfiguration zu best\u00e4tigen.", "title": "Netzbetreiber ausw\u00e4hlen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 46, "width": 300.671875, "x": 569.65625, "y": 658}, "selector": "[data-testid=\"meter-data-update__radio-card--client-type--2\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 46, "width": 300.671875, "x": 569.65625, "y": 658}, "selector": "[data-testid=\"meter-data-update__radio-card--client-type--2\"]"}}, "screenshot": "../assets/meter-data-update/de/desktop/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/meter-data-update/de/desktop/step-26.png", "subtitle": "Finanzielle Merkmale", "text": "Stellen Sie den Tarif auf \u201eZweitarif\u201c und den Kundentyp auf \u201eGewerblich\u201c um, um das neue Verbrauchsprofil des Z\u00e4hlers abzubilden.", "title": "Verbrauchsprofil \u00e4ndern", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 298, "x": 885, "y": 742}, "selector": "[data-testid=\"meter-data-update__datepicker--start-date\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 298, "x": 885, "y": 742}, "selector": "[data-testid=\"meter-data-update__datepicker--start-date\"]"}}, "screenshot": "../assets/meter-data-update/de/desktop/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/meter-data-update/de/desktop/step-27.png", "subtitle": "G\u00fcltigkeitsdatum", "text": "W\u00e4hlen Sie das Datum, ab dem die neue Konfiguration gilt. Dieses Datum ist erforderlich, um die \u00c4nderung zu best\u00e4tigen.", "title": "G\u00fcltigkeitsdatum festlegen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 127.640625, "x": 1055.359375, "y": 812}, "selector": "[data-testid=\"meter-data-update__btn--submit\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 127.640625, "x": 1055.359375, "y": 812}, "selector": "[data-testid=\"meter-data-update__btn--submit\"]"}}, "screenshot": "../assets/meter-data-update/de/desktop/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/meter-data-update/de/desktop/step-28.png", "subtitle": "Speichern", "text": "Klicken Sie auf \u201eBest\u00e4tigen\u201c: Das Formular wird an das CRM gesendet, das die aktuelle Konfiguration des Z\u00e4hlers ersetzt. Der Dialog schlie\u00dft sich, sobald die Best\u00e4tigung eingeht.", "title": "Aktualisierung speichern", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/meter-data-update/de/desktop/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/meter-data-update/de/desktop/step-32.png", "subtitle": "Best\u00e4tigung", "text": "Zur\u00fcck in der Detailansicht erscheinen die neue Beschreibung, die Stromst\u00e4rke von 63 A und der Zweitarif in den Datenkarten \u2014 die \u00c4nderungen wurden serverseitig gespeichert.", "title": "Aktualisierung best\u00e4tigt", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/meter-data-update/de/mobile/step-15.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/meter-data-update/de/mobile/step-15.png", "subtitle": "Z\u00e4hlerauswahl", "text": "\u00d6ffnen Sie die Z\u00e4hlerliste der aktiven Gemeinschaft. Suchen Sie den Z\u00e4hler, dessen aktuelle Konfiguration Sie aktualisieren m\u00f6chten.", "title": "Z\u00e4hlerliste", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 1935.9375, "width": 358, "x": 16, "y": 0}, "selector": "[data-testid=\"meters-list__table--meters\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 1935.9375, "width": 358, "x": 16, "y": 0}, "selector": "[data-testid=\"meters-list__table--meters\"]"}, "value": null}, "screenshot": "../assets/meter-data-update/de/mobile/step-17.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/meter-data-update/de/mobile/step-17.png", "subtitle": "Z\u00e4hlerauswahl", "text": "Tippen Sie auf die Karte des Z\u00e4hlers (EAN 123456789012345678), um seine Detailansicht zu \u00f6ffnen und seine aktuellen Daten aufzurufen.", "title": "Z\u00e4hlerdetail \u00f6ffnen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/meter-data-update/de/mobile/step-19.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/meter-data-update/de/mobile/step-19.png", "subtitle": "Z\u00e4hlerdetail", "text": "Die Detailansicht zeigt die aktuellen Merkmale. Die Schaltfl\u00e4che \u201eAktualisieren\u201c wird nur f\u00fcr einen aktiven Z\u00e4hler angeboten \u2014 das ist unser Einstiegspunkt.", "title": "Aktiver Z\u00e4hler", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 144.0625, "x": 37, "y": 310}, "selector": "[data-testid=\"meter-view__btn--update\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 144.0625, "x": 37, "y": 310}, "selector": "[data-testid=\"meter-view__btn--update\"]"}}, "screenshot": "../assets/meter-data-update/de/mobile/step-20.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/meter-data-update/de/mobile/step-20.png", "subtitle": "Daten \u00e4ndern", "text": "Klicken Sie auf \u201eAktualisieren\u201c: Ein Dialog \u00f6ffnet sich, vorausgef\u00fcllt mit der aktuellen Konfiguration des Z\u00e4hlers \u2014 Beschreibung, Leistungen, Tarif, Kundentyp und Inhaber.", "title": "Formular \u00f6ffnen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 114, "width": 332, "x": 29, "y": 123}, "selector": "[data-testid=\"meter-data-update__textarea--description\"]", "value": "Mise \u00e0 jour E2E \u2014 configuration r\u00e9vis\u00e9e"}, {"bbox": {"height": 42, "width": 332, "x": 29, "y": 328}, "selector": "[data-testid=\"meter-data-update__input--sampling-power\"]", "value": "12"}, {"bbox": {"height": 42, "width": 332, "x": 29, "y": 480}, "selector": "[data-testid=\"meter-data-update__input--amperage\"]", "value": "63"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 114, "width": 332, "x": 29, "y": 123}, "selector": "[data-testid=\"meter-data-update__textarea--description\"]", "value": "Mise \u00e0 jour E2E \u2014 configuration r\u00e9vis\u00e9e"}, {"bbox": {"height": 42, "width": 332, "x": 29, "y": 328}, "selector": "[data-testid=\"meter-data-update__input--sampling-power\"]", "value": "12"}, {"bbox": {"height": 42, "width": 332, "x": 29, "y": 480}, "selector": "[data-testid=\"meter-data-update__input--amperage\"]", "value": "63"}]}, "screenshot": "../assets/meter-data-update/de/mobile/step-23-a.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/meter-data-update/de/mobile/step-23-a.png", "subtitle": "Energetische Merkmale", "text": "\u00c4ndern Sie die Beschreibung, die Entnahmeleistung und die Stromst\u00e4rke. Diese neuen Werte flie\u00dfen sofort in die Verteilungsberechnungen der Teilungsoperationen ein.", "title": "Energiewerte anpassen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 332, "x": 29, "y": 712}, "selector": "[data-testid=\"meter-data-update__select--grd\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 332, "x": 29, "y": 712}, "selector": "[data-testid=\"meter-data-update__select--grd\"]"}}, "screenshot": "../assets/meter-data-update/de/mobile/step-24.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/meter-data-update/de/mobile/step-24.png", "subtitle": "Netzkonfiguration", "text": "W\u00e4hlen Sie im Feld \u201eNetzbetreiber\u201c den Verteilnetzbetreiber aus, an den der Z\u00e4hler angeschlossen ist. Dieses Feld ist erforderlich, um die neue Konfiguration zu best\u00e4tigen.", "title": "Netzbetreiber ausw\u00e4hlen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 46, "width": 332, "x": 29, "y": 639}, "selector": "[data-testid=\"meter-data-update__radio-card--client-type--2\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 46, "width": 332, "x": 29, "y": 639}, "selector": "[data-testid=\"meter-data-update__radio-card--client-type--2\"]"}}, "screenshot": "../assets/meter-data-update/de/mobile/step-26.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/meter-data-update/de/mobile/step-26.png", "subtitle": "Finanzielle Merkmale", "text": "Stellen Sie den Tarif auf \u201eZweitarif\u201c und den Kundentyp auf \u201eGewerblich\u201c um, um das neue Verbrauchsprofil des Z\u00e4hlers abzubilden.", "title": "Verbrauchsprofil \u00e4ndern", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 332, "x": 29, "y": 686}, "selector": "[data-testid=\"meter-data-update__datepicker--start-date\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 332, "x": 29, "y": 686}, "selector": "[data-testid=\"meter-data-update__datepicker--start-date\"]"}}, "screenshot": "../assets/meter-data-update/de/mobile/step-27.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/meter-data-update/de/mobile/step-27.png", "subtitle": "G\u00fcltigkeitsdatum", "text": "W\u00e4hlen Sie das Datum, ab dem die neue Konfiguration gilt. Dieses Datum ist erforderlich, um die \u00c4nderung zu best\u00e4tigen.", "title": "G\u00fcltigkeitsdatum festlegen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 127.640625, "x": 233.359375, "y": 781}, "selector": "[data-testid=\"meter-data-update__btn--submit\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 127.640625, "x": 233.359375, "y": 781}, "selector": "[data-testid=\"meter-data-update__btn--submit\"]"}}, "screenshot": "../assets/meter-data-update/de/mobile/step-28.png", "viewport": {"height": 844, "width": 390}}], "index": 9, "screenshot": "../assets/meter-data-update/de/mobile/step-28.png", "subtitle": "Speichern", "text": "Klicken Sie auf \u201eBest\u00e4tigen\u201c: Das Formular wird an das CRM gesendet, das die aktuelle Konfiguration des Z\u00e4hlers ersetzt. Der Dialog schlie\u00dft sich, sobald die Best\u00e4tigung eingeht.", "title": "Aktualisierung speichern", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/meter-data-update/de/mobile/step-32.png", "viewport": {"height": 844, "width": 390}}], "index": 10, "screenshot": "../assets/meter-data-update/de/mobile/step-32.png", "subtitle": "Best\u00e4tigung", "text": "Zur\u00fcck in der Detailansicht erscheinen die neue Beschreibung, die Stromst\u00e4rke von 63 A und der Zweitarif in den Datenkarten \u2014 die \u00c4nderungen wurden serverseitig gespeichert.", "title": "Aktualisierung best\u00e4tigt", "viewport": {"height": 844, "width": 390}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

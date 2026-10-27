@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Modifier un membre",
-    "en": "Edit a member"
+    "en": "Edit a member",
+    "nl": "Een lid wijzigen",
+    "de": "Mitglied bearbeiten"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir la liste des membres",
-        "en": "Open the members list"
+        "en": "Open the members list",
+        "nl": "De ledenlijst openen",
+        "de": "Mitgliederliste öffnen"
       },
       "text": {
         "fr": "Depuis le menu de gestion, ouvrez la liste des membres pour retrouver la personne dont vous souhaitez mettre à jour les informations.",
-        "en": "From the management menu, open the members list to locate the person whose information you want to update."
+        "en": "From the management menu, open the members list to locate the person whose information you want to update.",
+        "nl": "Open via het beheermenu de ledenlijst om de persoon terug te vinden van wie u de gegevens wilt bijwerken.",
+        "de": "Öffnen Sie über das Verwaltungsmenü die Mitgliederliste, um die Person zu finden, deren Informationen Sie aktualisieren möchten."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -96,6 +106,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/nl/mobile/step-14.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/de/mobile/step-14.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -108,15 +170,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Sélectionner le membre",
-        "en": "Select the member"
+        "en": "Select the member",
+        "nl": "Het lid selecteren",
+        "de": "Mitglied auswählen"
       },
       "text": {
         "fr": "Cliquez sur la ligne correspondant au membre à mettre à jour — ici « Member One » — pour ouvrir sa fiche détaillée.",
-        "en": "Click the row of the member you want to update — here \"Member One\" — to open their detail page."
+        "en": "Click the row of the member you want to update — here \"Member One\" — to open their detail page.",
+        "nl": "Klik op de rij van het lid dat u wilt bijwerken — hier “Member One” — om de detailfiche te openen.",
+        "de": "Klicken Sie auf die Zeile des zu aktualisierenden Mitglieds — hier „Member One“ —, um seine Detailseite zu öffnen."
       },
       "subtitle": {
         "fr": "Recherche du membre",
-        "en": "Find the member"
+        "en": "Find the member",
+        "nl": "Het lid zoeken",
+        "de": "Mitglied suchen"
       },
       "captures": {
         "fr": {
@@ -214,6 +282,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/nl/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 358.9375
+                    },
+                    "selector": "[data-testid=\"members-list__table\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/nl/mobile/step-16.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 24,
+                      "width": 358,
+                      "height": 819.9375
+                    },
+                    "selector": "[data-testid=\"members-list__table\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/de/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 274,
+                      "width": 1280,
+                      "height": 358.9375
+                    },
+                    "selector": "[data-testid=\"members-list__table\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/de/mobile/step-16.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 24,
+                      "width": 358,
+                      "height": 819.9375
+                    },
+                    "selector": "[data-testid=\"members-list__table\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -226,15 +390,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir le formulaire de modification",
-        "en": "Open the modification form"
+        "en": "Open the modification form",
+        "nl": "Het wijzigingsformulier openen",
+        "de": "Bearbeitungsformular öffnen"
       },
       "text": {
         "fr": "Cliquez sur « Modifier » dans l'en-tête de la fiche : la fenêtre de mise à jour s'ouvre, pré-remplie avec les informations actuelles du membre.",
-        "en": "Click \"Modify\" in the member header — the update dialog opens, pre-populated with the member's current information."
+        "en": "Click \"Modify\" in the member header — the update dialog opens, pre-populated with the member's current information.",
+        "nl": "Klik op “Wijzigen” in de kop van de fiche: het venster voor het bijwerken wordt geopend, vooraf ingevuld met de huidige gegevens van het lid.",
+        "de": "Klicken Sie im Kopfbereich der Detailseite auf „Bearbeiten“: Das Aktualisierungsfenster öffnet sich, vorausgefüllt mit den aktuellen Informationen des Mitglieds."
       },
       "subtitle": {
         "fr": "Modification du membre",
-        "en": "Editing the member"
+        "en": "Editing the member",
+        "nl": "Lid wijzigen",
+        "de": "Mitglied bearbeiten"
       },
       "captures": {
         "fr": {
@@ -332,6 +502,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1256.09375,
+                      "y": 88,
+                      "width": 112.90625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--modify\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 408,
+                      "width": 112.90625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--modify\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1240.71875,
+                      "y": 88,
+                      "width": 128.28125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--modify\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 408,
+                      "width": 128.28125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"member-view__btn--modify\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -344,15 +610,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Saisir les nouvelles informations",
-        "en": "Enter the new information"
+        "en": "Enter the new information",
+        "nl": "De nieuwe gegevens invullen",
+        "de": "Neue Informationen eingeben"
       },
       "text": {
         "fr": "Mettez à jour le prénom et l'adresse e-mail dans les champs correspondants. Les autres informations restent inchangées et sont conservées telles quelles.",
-        "en": "Update the first name and email address in the matching fields. The other fields stay as they were and are preserved unchanged."
+        "en": "Update the first name and email address in the matching fields. The other fields stay as they were and are preserved unchanged.",
+        "nl": "Werk de voornaam en het e-mailadres bij in de overeenkomstige velden. De overige gegevens blijven ongewijzigd en worden behouden zoals ze zijn.",
+        "de": "Aktualisieren Sie den Vornamen und die E-Mail-Adresse in den entsprechenden Feldern. Die übrigen Informationen bleiben unverändert und werden so beibehalten."
       },
       "subtitle": {
         "fr": "Modification du membre",
-        "en": "Editing the member"
+        "en": "Editing the member",
+        "nl": "Lid wijzigen",
+        "de": "Mitglied bearbeiten"
       },
       "captures": {
         "fr": {
@@ -454,6 +726,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/nl/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 307,
+                      "y": 514.5,
+                      "width": 405,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-informations__input--email\"]"
+                  },
+                  "value": "johnny@test.com"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/nl/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 423,
+                      "width": 332,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-informations__input--email\"]"
+                  },
+                  "value": "johnny@test.com"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/de/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 307,
+                      "y": 514.5,
+                      "width": 405,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-informations__input--email\"]"
+                  },
+                  "value": "johnny@test.com"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/de/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 423,
+                      "width": 332,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-informations__input--email\"]"
+                  },
+                  "value": "johnny@test.com"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -466,15 +838,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Enregistrer les modifications",
-        "en": "Save the changes"
+        "en": "Save the changes",
+        "nl": "De wijzigingen opslaan",
+        "de": "Änderungen speichern"
       },
       "text": {
         "fr": "Parcourez les étapes adresses et coordonnées bancaires sans rien changer, puis cliquez sur « Valider » pour envoyer les nouvelles informations au CRM.",
-        "en": "Step through the address and banking panels without changing anything, then click \"Save\" to send the updated information to the CRM."
+        "en": "Step through the address and banking panels without changing anything, then click \"Save\" to send the updated information to the CRM.",
+        "nl": "Doorloop de stappen voor de adressen en de bankgegevens zonder iets te wijzigen en klik vervolgens op “Bevestigen” om de nieuwe gegevens naar het CRM te verzenden.",
+        "de": "Durchlaufen Sie die Schritte für Adressen und Bankdaten, ohne etwas zu ändern, und klicken Sie dann auf „Bestätigen“, um die neuen Informationen an das CRM zu senden."
       },
       "subtitle": {
         "fr": "Validation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Validatie",
+        "de": "Validierung"
       },
       "captures": {
         "fr": {
@@ -572,6 +950,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/nl/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1003,
+                      "y": 551.5,
+                      "width": 130,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/nl/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 231,
+                      "y": 310,
+                      "width": 130,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/de/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1005.359375,
+                      "y": 551.5,
+                      "width": 127.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/de/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 233.359375,
+                      "y": 310,
+                      "width": 127.640625,
+                      "height": 66
+                    },
+                    "selector": "[data-testid=\"new-member-banking-info__btn--submit\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -584,15 +1058,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Membre mis à jour",
-        "en": "Member updated"
+        "en": "Member updated",
+        "nl": "Lid bijgewerkt",
+        "de": "Mitglied aktualisiert"
       },
       "text": {
         "fr": "De retour sur la fiche du membre, le nouveau prénom et la nouvelle adresse e-mail sont visibles immédiatement — la modification a bien été persistée côté serveur.",
-        "en": "Back on the member's detail page, the new first name and email address show up right away — the change has been persisted server-side."
+        "en": "Back on the member's detail page, the new first name and email address show up right away — the change has been persisted server-side.",
+        "nl": "Terug op de ledenfiche zijn de nieuwe voornaam en het nieuwe e-mailadres meteen zichtbaar — de wijziging is wel degelijk op de server opgeslagen.",
+        "de": "Zurück auf der Detailseite des Mitglieds sind der neue Vorname und die neue E-Mail-Adresse sofort sichtbar — die Änderung wurde serverseitig gespeichert."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -638,6 +1118,58 @@
             "frames": [
               {
                 "screenshot": "../assets/member-update/en/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/nl/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/nl/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/de/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/member-update/de/mobile/step-35.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

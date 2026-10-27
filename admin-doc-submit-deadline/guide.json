@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Déposer un dossier et suivre son échéance",
-    "en": "File a dossier and follow its deadline"
+    "en": "File a dossier and follow its deadline",
+    "nl": "Een dossier indienen en de termijn opvolgen",
+    "de": "Dossier einreichen und Frist verfolgen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir les documents administratifs",
-        "en": "Open the administrative documents"
+        "en": "Open the administrative documents",
+        "nl": "Administratieve documenten openen",
+        "de": "Verwaltungsdokumente öffnen"
       },
       "text": {
         "fr": "Dans la barre latérale, cliquez sur « Documents administratifs ».",
-        "en": "In the sidebar, click \"Administrative documents\"."
+        "en": "In the sidebar, click \"Administrative documents\".",
+        "nl": "Klik in de zijbalk op “Administratieve documenten”.",
+        "de": "Klicken Sie in der Seitenleiste auf „Verwaltungsdokumente“."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Administratieve documenten openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en daarna op “Administratieve documenten”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Verwaltungsdokumente öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Verwaltungsdokumente“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 1500,
       "title": {
         "fr": "Ouvrir le dossier",
-        "en": "Open the dossier"
+        "en": "Open the dossier",
+        "nl": "Het dossier openen",
+        "de": "Das Dossier öffnen"
       },
       "text": {
         "fr": "Ouvrez le dossier dont vous voulez enregistrer le dépôt.",
-        "en": "Open the dossier whose filing you want to record."
+        "en": "Open the dossier whose filing you want to record.",
+        "nl": "Open het dossier waarvan u de indiening wilt vastleggen.",
+        "de": "Öffnen Sie das Dossier, dessen Einreichung Sie erfassen möchten."
       },
       "subtitle": {
         "fr": "Documents administratifs",
-        "en": "Administrative documents"
+        "en": "Administrative documents",
+        "nl": "Administratieve documenten",
+        "de": "Verwaltungsdokumente"
       },
       "captures": {
         "fr": {
@@ -268,6 +390,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 260,
+                      "y": 554,
+                      "width": 988,
+                      "height": 73
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 705,
+                      "width": 764.15625,
+                      "height": 105
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 260,
+                      "y": 554,
+                      "width": 988,
+                      "height": 73
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 34,
+                      "y": 725,
+                      "width": 819.9375,
+                      "height": 85
+                    },
+                    "selector": "[data-testid=\"dossier-list__row--0\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -280,15 +498,21 @@
       "waitAfter": 500,
       "title": {
         "fr": "Un dossier en préparation",
-        "en": "A dossier in preparation"
+        "en": "A dossier in preparation",
+        "nl": "Een dossier in voorbereiding",
+        "de": "Ein Dossier in Vorbereitung"
       },
       "text": {
         "fr": "Tant que le dossier est « En préparation », rien n'est attendu de vous par le régulateur. Les boutons en haut ne proposent que les changements de statut légitimes à ce stade.",
-        "en": "While the dossier is \"In preparation\", the regulator expects nothing from you. The buttons at the top only offer the status changes that make sense at this stage."
+        "en": "While the dossier is \"In preparation\", the regulator expects nothing from you. The buttons at the top only offer the status changes that make sense at this stage.",
+        "nl": "Zolang het dossier “In voorbereiding” is, verwacht de regulator niets van u. De knoppen bovenaan bieden alleen de statuswijzigingen aan die in dit stadium zijn toegestaan.",
+        "de": "Solange das Dossier „In Vorbereitung“ ist, erwartet die Regulierungsbehörde nichts von Ihnen. Die Schaltflächen oben bieten nur die Statusänderungen an, die in diesem Stadium zulässig sind."
       },
       "subtitle": {
         "fr": "Suivi des dossiers",
-        "en": "Tracking dossiers"
+        "en": "Tracking dossiers",
+        "nl": "Dossieropvolging",
+        "de": "Dossierverfolgung"
       },
       "captures": {
         "fr": {
@@ -342,6 +566,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -354,15 +630,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Marquer le dossier comme soumis",
-        "en": "Mark the dossier as submitted"
+        "en": "Mark the dossier as submitted",
+        "nl": "Het dossier als ingediend markeren",
+        "de": "Das Dossier als eingereicht markieren"
       },
       "text": {
         "fr": "Vous déposez le dossier auprès de l'autorité par vos moyens habituels ; ici, vous enregistrez que ce dépôt a eu lieu.",
-        "en": "You file the dossier with the authority through your usual channel; here you record that the filing happened."
+        "en": "You file the dossier with the authority through your usual channel; here you record that the filing happened.",
+        "nl": "U dient het dossier via uw gebruikelijke kanalen in bij de bevoegde overheid; hier legt u vast dat die indiening heeft plaatsgevonden.",
+        "de": "Sie reichen das Dossier auf Ihrem üblichen Weg bei der Behörde ein; hier erfassen Sie, dass diese Einreichung stattgefunden hat."
       },
       "subtitle": {
         "fr": "Suivi des dossiers",
-        "en": "Tracking dossiers"
+        "en": "Tracking dossiers",
+        "nl": "Dossieropvolging",
+        "de": "Dossierverfolgung"
       },
       "captures": {
         "fr": {
@@ -460,6 +742,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 263,
+                      "y": 222,
+                      "width": 108.265625,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 534,
+                      "width": 108.265625,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 263,
+                      "y": 222,
+                      "width": 114.890625,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 534,
+                      "width": 114.890625,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -472,15 +850,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "La date de dépôt",
-        "en": "The filing date"
+        "en": "The filing date",
+        "nl": "De datum van indiening",
+        "de": "Das Übermittlungsdatum"
       },
       "text": {
         "fr": "La date de dépôt n'est pas une formalité : c'est elle qui fait courir les délais réglementaires. Choisissez la date réelle du dépôt.",
-        "en": "The filing date is not a formality: it is what starts the regulatory clocks. Pick the date the dossier was really filed."
+        "en": "The filing date is not a formality: it is what starts the regulatory clocks. Pick the date the dossier was really filed.",
+        "nl": "De datum van indiening is geen formaliteit: vanaf die datum lopen de reglementaire termijnen. Kies de werkelijke datum van de indiening.",
+        "de": "Das Übermittlungsdatum ist keine Formalität: Mit ihm beginnen die regulatorischen Fristen zu laufen. Wählen Sie das tatsächliche Datum der Einreichung."
       },
       "subtitle": {
         "fr": "Changer le statut",
-        "en": "Change status"
+        "en": "Change status",
+        "nl": "Status wijzigen",
+        "de": "Status ändern"
       },
       "captures": {
         "fr": {
@@ -534,6 +918,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -546,15 +982,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Le dossier est soumis",
-        "en": "The dossier is submitted"
+        "en": "The dossier is submitted",
+        "nl": "Het dossier is ingediend",
+        "de": "Das Dossier ist eingereicht"
       },
       "text": {
         "fr": "Le statut change et les actions proposées changent avec lui : un dossier soumis peut être déclaré complet, corrigé, ou devenir caduc.",
-        "en": "The status changes and the available actions change with it: a submitted dossier can be declared complete, corrected, or lapse."
+        "en": "The status changes and the available actions change with it: a submitted dossier can be declared complete, corrected, or lapse.",
+        "nl": "De status verandert en de voorgestelde acties veranderen mee: een ingediend dossier kan volledig worden verklaard, worden gecorrigeerd of vervallen.",
+        "de": "Der Status ändert sich und mit ihm die angebotenen Aktionen: Ein eingereichtes Dossier kann für vollständig erklärt, korrigiert werden oder verfallen."
       },
       "subtitle": {
         "fr": "Suivi des dossiers",
-        "en": "Tracking dossiers"
+        "en": "Tracking dossiers",
+        "nl": "Dossieropvolging",
+        "de": "Dossierverfolgung"
       },
       "captures": {
         "fr": {
@@ -608,6 +1050,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -620,15 +1114,21 @@
       "waitAfter": 1500,
       "title": {
         "fr": "Voir les échéances",
-        "en": "See the deadlines"
+        "en": "See the deadlines",
+        "nl": "De termijnen bekijken",
+        "de": "Die Fristen anzeigen"
       },
       "text": {
         "fr": "L'onglet « Échéances » montre ce que le dépôt vient de déclencher.",
-        "en": "The \"Deadlines\" tab shows what the filing has just triggered."
+        "en": "The \"Deadlines\" tab shows what the filing has just triggered.",
+        "nl": "Het tabblad “Termijnen” toont wat de indiening zojuist in gang heeft gezet.",
+        "de": "Die Registerkarte „Fristen“ zeigt, was die Einreichung soeben ausgelöst hat."
       },
       "subtitle": {
         "fr": "Suivi des dossiers",
-        "en": "Tracking dossiers"
+        "en": "Tracking dossiers",
+        "nl": "Dossieropvolging",
+        "de": "Dossierverfolgung"
       },
       "captures": {
         "fr": {
@@ -726,6 +1226,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 371.421875,
+                      "y": 298,
+                      "width": 107.40625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 145.421875,
+                      "y": 649,
+                      "width": 107.40625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 362.96875,
+                      "y": 298,
+                      "width": 84.5625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 136.96875,
+                      "y": 649,
+                      "width": 84.5625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -738,15 +1334,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Une échéance est apparue",
-        "en": "A deadline has appeared"
+        "en": "A deadline has appeared",
+        "nl": "Er is een termijn verschenen",
+        "de": "Eine Frist ist erschienen"
       },
       "text": {
         "fr": "Vous n'encodez jamais une échéance à la main : OptimCE la calcule à partir du type de dossier, de la région et de la date que vous venez d'enregistrer.",
-        "en": "You never enter a deadline by hand: OptimCE derives it from the dossier type, the region and the date you have just recorded."
+        "en": "You never enter a deadline by hand: OptimCE derives it from the dossier type, the region and the date you have just recorded.",
+        "nl": "U voert een termijn nooit handmatig in: OptimCE berekent hem op basis van het dossiertype, het gewest en de datum die u zojuist hebt vastgelegd.",
+        "de": "Sie erfassen eine Frist nie von Hand: OptimCE berechnet sie aus dem Dossiertyp, der Region und dem Datum, das Sie soeben erfasst haben."
       },
       "subtitle": {
         "fr": "Échéances",
-        "en": "Deadlines"
+        "en": "Deadlines",
+        "nl": "Termijnen",
+        "de": "Fristen"
       },
       "captures": {
         "fr": {
@@ -800,6 +1402,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -812,15 +1466,21 @@
       "waitAfter": 1500,
       "title": {
         "fr": "Toutes les échéances",
-        "en": "Every deadline"
+        "en": "Every deadline",
+        "nl": "Alle termijnen",
+        "de": "Alle Fristen"
       },
       "text": {
         "fr": "L'onglet « Échéances » de la page principale rassemble les échéances de tous les dossiers, pour savoir d'un coup d'œil ce qui arrive à terme.",
-        "en": "The \"Deadlines\" tab of the main page gathers the deadlines of every dossier, so you can see at a glance what is coming due."
+        "en": "The \"Deadlines\" tab of the main page gathers the deadlines of every dossier, so you can see at a glance what is coming due.",
+        "nl": "Het tabblad “Termijnen” van de hoofdpagina bundelt de termijnen van alle dossiers, zodat u in één oogopslag ziet wat binnenkort vervalt.",
+        "de": "Die Registerkarte „Fristen“ der Hauptseite fasst die Fristen aller Dossiers zusammen, damit Sie auf einen Blick sehen, was demnächst fällig wird."
       },
       "subtitle": {
         "fr": "Documents administratifs",
-        "en": "Administrative documents"
+        "en": "Administrative documents",
+        "nl": "Administratieve documenten",
+        "de": "Verwaltungsdokumente"
       },
       "captures": {
         "fr": {
@@ -918,6 +1578,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 338.4375,
+                      "y": 146,
+                      "width": 107.40625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 112.4375,
+                      "y": 264,
+                      "width": 107.40625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 338.4375,
+                      "y": 146,
+                      "width": 84.5625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 112.4375,
+                      "y": 284,
+                      "width": 84.5625,
+                      "height": 57
+                    },
+                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -930,15 +1686,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Le tableau des échéances",
-        "en": "The deadline board"
+        "en": "The deadline board",
+        "nl": "Het overzicht van de termijnen",
+        "de": "Die Fristenübersicht"
       },
       "text": {
         "fr": "Chaque ligne renvoie à son dossier et indique la date limite. Le filtre affiche par défaut les échéances encore ouvertes.",
-        "en": "Every row links back to its dossier and shows the due date. The filter shows the still-open deadlines by default."
+        "en": "Every row links back to its dossier and shows the due date. The filter shows the still-open deadlines by default.",
+        "nl": "Elke rij verwijst naar het bijbehorende dossier en vermeldt de vervaldatum. De filter toont standaard de termijnen die nog openstaan.",
+        "de": "Jede Zeile verweist auf ihr Dossier und zeigt das Fälligkeitsdatum. Der Filter zeigt standardmäßig die noch offenen Fristen."
       },
       "subtitle": {
         "fr": "Échéances",
-        "en": "Deadlines"
+        "en": "Deadlines",
+        "nl": "Termijnen",
+        "de": "Fristen"
       },
       "captures": {
         "fr": {
@@ -992,6 +1754,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1004,15 +1818,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Clôturer une échéance",
-        "en": "Close a deadline"
+        "en": "Close a deadline",
+        "nl": "Een termijn afsluiten",
+        "de": "Eine Frist abschließen"
       },
       "text": {
         "fr": "Quand l'obligation est remplie, marquez l'échéance comme respectée. Elle quitte la liste des échéances ouvertes sans disparaître de l'historique.",
-        "en": "Once the obligation is fulfilled, mark the deadline as met. It leaves the open list without disappearing from the record."
+        "en": "Once the obligation is fulfilled, mark the deadline as met. It leaves the open list without disappearing from the record.",
+        "nl": "Wanneer aan de verplichting is voldaan, markeert u de termijn als nagekomen. Hij verdwijnt uit de lijst van openstaande termijnen, maar blijft in de historiek bewaard.",
+        "de": "Sobald die Verpflichtung erfüllt ist, markieren Sie die Frist als erfüllt. Sie verschwindet aus der Liste der offenen Fristen, bleibt aber im Verlauf erhalten."
       },
       "subtitle": {
         "fr": "Échéances",
-        "en": "Deadlines"
+        "en": "Deadlines",
+        "nl": "Termijnen",
+        "de": "Fristen"
       },
       "captures": {
         "fr": {
@@ -1028,7 +1848,7 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 1097.859375,
+                      "x": 1097.234375,
                       "y": 466,
                       "width": 32,
                       "height": 32
@@ -1051,7 +1871,7 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 275.59375,
+                      "x": 276.453125,
                       "y": 757,
                       "width": 32,
                       "height": 32
@@ -1076,7 +1896,7 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 1083.828125,
+                      "x": 1083.09375,
                       "y": 466,
                       "width": 32,
                       "height": 32
@@ -1099,8 +1919,104 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 275.546875,
+                      "x": 276.40625,
                       "y": 761,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1092.96875,
+                      "y": 466,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 275.6875,
+                      "y": 813,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1087.90625,
+                      "y": 466,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 274.65625,
+                      "y": 765,
                       "width": 32,
                       "height": 32
                     },
@@ -1122,15 +2038,21 @@
       "waitAfter": 2000,
       "title": {
         "fr": "Confirmer",
-        "en": "Confirm"
+        "en": "Confirm",
+        "nl": "Bevestigen",
+        "de": "Bestätigen"
       },
       "text": {
         "fr": "Confirmez : l'échéance passe au statut « Respectée » et le tableau des échéances ouvertes se vide.",
-        "en": "Confirm: the deadline moves to \"Met\" and the open-deadline board empties."
+        "en": "Confirm: the deadline moves to \"Met\" and the open-deadline board empties.",
+        "nl": "Bevestig: de termijn krijgt de status “Nagekomen” en het overzicht van de openstaande termijnen wordt leeg.",
+        "de": "Bestätigen Sie: Die Frist erhält den Status „Erfüllt“ und die Übersicht der offenen Fristen leert sich."
       },
       "subtitle": {
         "fr": "Échéances",
-        "en": "Deadlines"
+        "en": "Deadlines",
+        "nl": "Termijnen",
+        "de": "Fristen"
       },
       "captures": {
         "fr": {
@@ -1224,6 +2146,98 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 970.953125,
+                      "y": 481,
+                      "width": 105,
+                      "height": 42
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 264,
+                      "y": 477,
+                      "width": 105,
+                      "height": 42
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-36.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 950.65625,
+                      "y": 481,
+                      "width": 102.640625,
+                      "height": 42
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-36.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 266.359375,
+                      "y": 477,
+                      "width": 102.640625,
+                      "height": 42
+                    }
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1236,15 +2250,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Plus rien en attente",
-        "en": "Nothing pending"
+        "en": "Nothing pending",
+        "nl": "Niets meer in afwachting",
+        "de": "Nichts mehr ausstehend"
       },
       "text": {
         "fr": "Le tableau ne montre plus d'échéance ouverte. L'historique du dossier, lui, garde la trace de ce qui a été fait et quand.",
-        "en": "The board shows no open deadline any more. The dossier history still keeps a record of what was done and when."
+        "en": "The board shows no open deadline any more. The dossier history still keeps a record of what was done and when.",
+        "nl": "Het overzicht toont geen openstaande termijn meer. De historiek van het dossier houdt wel bij wat er is gedaan en wanneer.",
+        "de": "Die Übersicht zeigt keine offene Frist mehr. Der Verlauf des Dossiers hält jedoch fest, was wann getan wurde."
       },
       "subtitle": {
         "fr": "Échéances",
-        "en": "Deadlines"
+        "en": "Deadlines",
+        "nl": "Termijnen",
+        "de": "Fristen"
       },
       "captures": {
         "fr": {
@@ -1290,6 +2310,58 @@
             "frames": [
               {
                 "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-37.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

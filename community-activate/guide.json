@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Activer une communauté",
-    "en": "Activate a community"
+    "en": "Activate a community",
+    "nl": "Een gemeenschap activeren",
+    "de": "Gemeinschaft aktivieren"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 500,
       "title": {
         "fr": "Vos communautés",
-        "en": "Your communities"
+        "en": "Your communities",
+        "nl": "Uw gemeenschappen",
+        "de": "Ihre Gemeinschaften"
       },
       "text": {
         "fr": "Après la connexion, vous arrivez sur votre page d'accueil. Elle liste les communautés dont vous faites partie, avec votre rôle dans chacune.",
-        "en": "After signing in you land on your home page. It lists the communities you belong to, along with your role in each one."
+        "en": "After signing in you land on your home page. It lists the communities you belong to, along with your role in each one.",
+        "nl": "Na het aanmelden komt u op uw startpagina terecht. Die toont de gemeenschappen waarvan u deel uitmaakt, met uw rol in elk ervan.",
+        "de": "Nach der Anmeldung gelangen Sie auf Ihre Startseite. Sie listet die Gemeinschaften auf, denen Sie angehören, mit Ihrer Rolle in jeder davon."
       },
       "subtitle": {
         "fr": "Page d'accueil",
-        "en": "Home page"
+        "en": "Home page",
+        "nl": "Startpagina",
+        "de": "Startseite"
       },
       "captures": {
         "fr": {
@@ -96,6 +106,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/nl/desktop/step-07.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/nl/mobile/step-07.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/de/desktop/step-07.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/de/mobile/step-07.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -108,15 +170,21 @@
       "waitAfter": 1500,
       "title": {
         "fr": "Entrer dans la communauté",
-        "en": "Enter the community"
+        "en": "Enter the community",
+        "nl": "De gemeenschap betreden",
+        "de": "Die Gemeinschaft betreten"
       },
       "text": {
         "fr": "Cliquez sur le bouton de la carte de la Test Community pour l'ouvrir. C'est elle qui devient votre communauté active : le menu de gestion et toutes les pages qui suivent s'y rapportent.",
-        "en": "Click the button on the Test Community card to open it. That community becomes your active one: the management menu and every page that follows relate to it."
+        "en": "Click the button on the Test Community card to open it. That community becomes your active one: the management menu and every page that follows relate to it.",
+        "nl": "Klik op de knop op de kaart van de Test Community om ze te openen. Zij wordt uw actieve gemeenschap: het beheermenu en alle volgende pagina's hebben erop betrekking.",
+        "de": "Klicken Sie auf die Schaltfläche auf der Karte der Test Community, um sie zu öffnen. Sie wird zu Ihrer aktiven Gemeinschaft: Das Verwaltungsmenü und alle folgenden Seiten beziehen sich auf sie."
       },
       "subtitle": {
         "fr": "Choix de la communauté active",
-        "en": "Choosing the active community"
+        "en": "Choosing the active community",
+        "nl": "Keuze van de actieve gemeenschap",
+        "de": "Auswahl der aktiven Gemeinschaft"
       },
       "captures": {
         "fr": {
@@ -214,6 +282,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/nl/desktop/step-08.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 387,
+                      "y": 265,
+                      "width": 342,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/nl/mobile/step-08.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 305,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/de/desktop/step-08.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 387,
+                      "y": 265,
+                      "width": 342,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/de/mobile/step-08.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 305,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-picker__btn--enter\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -226,15 +390,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Menu de gestion débloqué",
-        "en": "Management menu unlocked"
+        "en": "Management menu unlocked",
+        "nl": "Beheermenu ontgrendeld",
+        "de": "Verwaltungsmenü freigeschaltet"
       },
       "text": {
         "fr": "Un nouveau menu « Gestion » apparaît dans la barre latérale, donnant accès aux clés, compteurs et opérations de partage de la communauté.",
-        "en": "A new \"Management\" menu appears in the sidebar, granting access to the community's keys, meters and sharing operations."
+        "en": "A new \"Management\" menu appears in the sidebar, granting access to the community's keys, meters and sharing operations.",
+        "nl": "Er verschijnt een nieuw menu “Beheer” in de zijbalk, dat toegang geeft tot de verdeelsleutels, meters en deeloperaties van de gemeenschap.",
+        "de": "Ein neues Menü „Verwaltung“ erscheint in der Seitenleiste und gibt Zugriff auf die Verteilungsschlüssel, Zähler und Teilungsoperationen der Gemeinschaft."
       },
       "subtitle": {
         "fr": "Activation de la communauté",
-        "en": "Activating the community"
+        "en": "Activating the community",
+        "nl": "Activering van de gemeenschap",
+        "de": "Aktivierung der Gemeinschaft"
       },
       "captures": {
         "fr": {
@@ -288,6 +458,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/nl/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/nl/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/de/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/de/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -300,15 +522,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir les clés",
-        "en": "Open the keys"
+        "en": "Open the keys",
+        "nl": "De verdeelsleutels openen",
+        "de": "Die Verteilungsschlüssel öffnen"
       },
       "text": {
         "fr": "Dans la section « Gestion » de la barre latérale, cliquez sur « Clés » pour afficher les clés de répartition de la communauté active.",
-        "en": "In the sidebar's \"Management\" section, click \"Keys\" to display the active community's allocation keys."
+        "en": "In the sidebar's \"Management\" section, click \"Keys\" to display the active community's allocation keys.",
+        "nl": "Klik in de sectie “Beheer” van de zijbalk op “Verdeelsleutelbeheer” om de verdeelsleutels van de actieve gemeenschap weer te geven.",
+        "de": "Klicken Sie im Bereich „Verwaltung“ der Seitenleiste auf „Verteilungsschlüsselverwaltung“, um die Verteilungsschlüssel der aktiven Gemeinschaft anzuzeigen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -416,6 +644,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/nl/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/nl/mobile/step-16.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De verdeelsleutels openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en tik daarna in de sectie “Beheer” op “Verdeelsleutelbeheer” om de verdeelsleutels van de actieve gemeenschap weer te geven.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/de/desktop/step-13.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/de/mobile/step-16.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Die Verteilungsschlüssel öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und tippen Sie dann im Bereich „Verwaltung“ auf „Verteilungsschlüsselverwaltung“, um die Verteilungsschlüssel der aktiven Gemeinschaft anzuzeigen.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -428,15 +762,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Liste des clés de répartition",
-        "en": "Allocation keys list"
+        "en": "Allocation keys list",
+        "nl": "Lijst van verdeelsleutels",
+        "de": "Liste der Verteilungsschlüssel"
       },
       "text": {
         "fr": "Le tableau « Clés » affiche les clés de répartition déjà configurées dans la communauté, avec leur nom et leur description.",
-        "en": "The \"Keys\" table shows the allocation keys already configured in the community, with their name and description."
+        "en": "The \"Keys\" table shows the allocation keys already configured in the community, with their name and description.",
+        "nl": "De tabel “Verdeelsleutels” toont de verdeelsleutels die al in de gemeenschap zijn ingesteld, met hun naam en beschrijving.",
+        "de": "Die Tabelle „Verteilungsschlüssel“ zeigt die bereits in der Gemeinschaft eingerichteten Verteilungsschlüssel mit ihrem Namen und ihrer Beschreibung."
       },
       "subtitle": {
         "fr": "Découverte de la gestion",
-        "en": "Exploring management"
+        "en": "Exploring management",
+        "nl": "Kennismaking met het beheer",
+        "de": "Erkundung der Verwaltung"
       },
       "captures": {
         "fr": {
@@ -490,6 +830,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/nl/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/nl/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/de/desktop/step-19.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/de/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -502,15 +894,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir le groupe Membres",
-        "en": "Open the Members group"
+        "en": "Open the Members group",
+        "nl": "De groep Ledenbeheer openen",
+        "de": "Die Gruppe Mitgliederverwaltung öffnen"
       },
       "text": {
         "fr": "Dans la section « Gestion », cliquez sur « Gestion des membres » pour révéler le sous-menu (membres, compteurs, opérations de partage).",
-        "en": "In the \"Management\" section, click \"Members\" to reveal the submenu (members, meters, sharing operations)."
+        "en": "In the \"Management\" section, click \"Members\" to reveal the submenu (members, meters, sharing operations).",
+        "nl": "Klik in de sectie “Beheer” op “Ledenbeheer” om het submenu te tonen (leden, meters, deeloperaties).",
+        "de": "Klicken Sie im Bereich „Verwaltung“ auf „Mitgliederverwaltung“, um das Untermenü einzublenden (Mitglieder, Zähler, Teilungsoperationen)."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -618,6 +1016,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/nl/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De groep Ledenbeheer openen",
+              "text": "Tik in de navigatielade, sectie “Beheer”, op “Ledenbeheer” om het submenu te tonen (leden, meters, deeloperaties).",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/de/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Die Gruppe Mitgliederverwaltung öffnen",
+              "text": "Tippen Sie im Navigationsmenü im Bereich „Verwaltung“ auf „Mitgliederverwaltung“, um das Untermenü einzublenden (Mitglieder, Zähler, Teilungsoperationen).",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -630,15 +1134,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir la liste des compteurs",
-        "en": "Open the meters list"
+        "en": "Open the meters list",
+        "nl": "De lijst van meters openen",
+        "de": "Die Zählerliste öffnen"
       },
       "text": {
         "fr": "Dans le sous-menu, cliquez sur « Compteurs » pour afficher la liste des compteurs de la communauté.",
-        "en": "In the submenu, click \"Meters\" to display the community's meters."
+        "en": "In the submenu, click \"Meters\" to display the community's meters.",
+        "nl": "Klik in het submenu op “Meters beheren” om de lijst van meters van de gemeenschap weer te geven.",
+        "de": "Klicken Sie im Untermenü auf „Zähler verwalten“, um die Liste der Zähler der Gemeinschaft anzuzeigen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -746,6 +1256,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 579,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 579,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--1\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De lijst van meters openen",
+              "text": "Tik in het submenu op “Meters beheren” om de lijst van meters van de gemeenschap weer te geven.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 579,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/de/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 579,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--1\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Die Zählerliste öffnen",
+              "text": "Tippen Sie im Untermenü auf „Zähler verwalten“, um die Liste der Zähler der Gemeinschaft anzuzeigen.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -758,15 +1374,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Liste des compteurs",
-        "en": "Meters list"
+        "en": "Meters list",
+        "nl": "Lijst van meters",
+        "de": "Liste der Zähler"
       },
       "text": {
         "fr": "Le tableau « Compteurs » liste les compteurs associés à la communauté, identifiés par leur EAN et leur numéro de compteur.",
-        "en": "The \"Meters\" table lists the meters linked to the community, identified by their EAN and meter number."
+        "en": "The \"Meters\" table lists the meters linked to the community, identified by their EAN and meter number.",
+        "nl": "De tabel “Meters” toont de meters die aan de gemeenschap zijn gekoppeld, herkenbaar aan hun EAN en meternummer.",
+        "de": "Die Tabelle „Zähler“ listet die der Gemeinschaft zugeordneten Zähler auf, identifiziert durch ihren EAN und ihre Zählernummer."
       },
       "subtitle": {
         "fr": "Découverte de la gestion",
-        "en": "Exploring management"
+        "en": "Exploring management",
+        "nl": "Kennismaking met het beheer",
+        "de": "Erkundung der Verwaltung"
       },
       "captures": {
         "fr": {
@@ -812,6 +1434,58 @@
             "frames": [
               {
                 "screenshot": "../assets/community-activate/en/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/nl/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/de/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-activate/de/mobile/step-30.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

@@ -8,13 +8,14 @@
     <link rel="canonical" href="https://guide.optimce.be/getting-started/fr.html">
     <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/getting-started/fr.html">
     <link rel="alternate" hreflang="en" href="https://guide.optimce.be/getting-started/en.html">
+    <link rel="alternate" hreflang="nl" href="https://guide.optimce.be/getting-started/nl.html">
+    <link rel="alternate" hreflang="de" href="https://guide.optimce.be/getting-started/de.html">
     <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/getting-started/fr.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Premiers pas">
     <meta property="og:description" content="Le parcours recommandé pour configurer une communauté de A à Z.">
     <meta property="og:url" content="https://guide.optimce.be/getting-started/fr.html">
     <meta property="og:site_name" content="OptimCE — Guides utilisateur">
-    <meta property="og:locale" content="fr">
     <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="../assets/guides.css">
     <script>
@@ -47,17 +48,27 @@
         </nav>
 
         <div class="steppy-header-actions">
-            <nav class="steppy-locale-switch" aria-label="Language">
-                <ul>
-                    <li>
-                        <span aria-current="true">Français</span>
-                    </li>
-                    <li>
-                        <a href="./en.html" hreflang="en">English</a>
-                    </li>
-                </ul>
-            </nav>
-            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
+<label class="steppy-locale-select">
+    <span class="steppy-visually-hidden">Langue</span>
+    <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <select autocomplete="off">        <option value="./fr.html" lang="fr" selected>Français</option>        <option value="./en.html" lang="en">English</option>        <option value="./nl.html" lang="nl">Nederlands</option>        <option value="./de.html" lang="de">Deutsch</option>    </select>
+    <svg class="steppy-locale-select-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</label>
+<script>
+  (function () {
+    var sel = document.querySelector(".steppy-locale-select select");
+    if (!sel) return;
+    sel.addEventListener("change", function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+    // Back from the language just picked can restore this page from the
+    // bfcache with that option still showing — snap it back to this page's own.
+    window.addEventListener("pageshow", function () {
+      var own = sel.querySelector("option[selected]");
+      if (own) sel.value = own.value;
+    });
+  })();
+</script>            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
                 <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                 <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
             </button>

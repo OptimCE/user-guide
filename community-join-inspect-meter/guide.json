@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Rejoindre une communauté — vérifier le compteur",
-    "en": "Join a community — verify the meter"
+    "en": "Join a community — verify the meter",
+    "nl": "Lid worden van een gemeenschap — de meter controleren",
+    "de": "Einer Gemeinschaft beitreten — Zähler prüfen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir mes communautés",
-        "en": "Open my communities"
+        "en": "Open my communities",
+        "nl": "Mijn gemeenschappen openen",
+        "de": "Meine Gemeinschaften öffnen"
       },
       "text": {
         "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Mes communautés » pour voir la liste des communautés où vous êtes inscrit·e.",
-        "en": "In the sidebar's profile menu, click \"My communities\" to see the list of communities you belong to."
+        "en": "In the sidebar's profile menu, click \"My communities\" to see the list of communities you belong to.",
+        "nl": "Klik in het profielmenu van de zijbalk op “Mijn gemeenschappen” om de lijst te zien van de gemeenschappen waarbij u bent ingeschreven.",
+        "de": "Klicken Sie im Profilmenü der Seitenleiste auf „Meine Gemeinschaften“, um die Liste der Gemeinschaften zu sehen, denen Sie angehören."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/nl/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/nl/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Mijn gemeenschappen openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en vervolgens op “Mijn gemeenschappen” om de lijst te zien van de gemeenschappen waarbij u bent ingeschreven.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/de/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/de/mobile/step-13.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Meine Gemeinschaften öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Meine Gemeinschaften“, um die Liste der Gemeinschaften zu sehen, denen Sie angehören.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir le groupe Membres",
-        "en": "Open the Members group"
+        "en": "Open the Members group",
+        "nl": "Groep Ledenbeheer openen",
+        "de": "Gruppe Mitgliederverwaltung öffnen"
       },
       "text": {
         "fr": "Dans la section « Gestion », cliquez sur « Gestion des membres » pour révéler le sous-menu (membres, compteurs, opérations de partage).",
-        "en": "In the \"Management\" section, click \"Members\" to reveal the submenu (members, meters, sharing operations)."
+        "en": "In the \"Management\" section, click \"Members\" to reveal the submenu (members, meters, sharing operations).",
+        "nl": "Klik in de sectie “Beheer” op “Ledenbeheer” om het submenu (leden, meters, deeloperaties) te tonen.",
+        "de": "Klicken Sie im Abschnitt „Verwaltung“ auf „Mitgliederverwaltung“, um das Untermenü (Mitglieder, Zähler, Teilungsoperationen) einzublenden."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -278,6 +400,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Groep Ledenbeheer openen",
+              "text": "Tik in de navigatielade, in de sectie “Beheer”, op “Ledenbeheer” om het submenu (leden, meters, deeloperaties) te tonen.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/de/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 500.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Gruppe Mitgliederverwaltung öffnen",
+              "text": "Tippen Sie im Navigationsmenü im Abschnitt „Verwaltung“ auf „Mitgliederverwaltung“, um das Untermenü (Mitglieder, Zähler, Teilungsoperationen) einzublenden.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -290,15 +518,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir la liste des compteurs",
-        "en": "Open the meters list"
+        "en": "Open the meters list",
+        "nl": "Meterlijst openen",
+        "de": "Zählerliste öffnen"
       },
       "text": {
         "fr": "Dans le sous-menu, cliquez sur « Compteurs » pour afficher la liste des compteurs de la communauté.",
-        "en": "In the submenu, click \"Meters\" to display the community's meters."
+        "en": "In the submenu, click \"Meters\" to display the community's meters.",
+        "nl": "Klik in het submenu op “Meters beheren” om de lijst met meters van de gemeenschap te tonen.",
+        "de": "Klicken Sie im Untermenü auf „Zähler verwalten“, um die Liste der Zähler der Gemeinschaft anzuzeigen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -406,6 +640,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 579,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/nl/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 579,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--1\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Meterlijst openen",
+              "text": "Tik in het submenu op “Meters beheren” om de lijst met meters van de gemeenschap te tonen.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 579,
+                      "width": 215,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--1\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/de/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 36,
+                      "y": 579,
+                      "width": 256,
+                      "height": 33.5
+                    },
+                    "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--1\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Zählerliste öffnen",
+              "text": "Tippen Sie im Untermenü auf „Zähler verwalten“, um die Liste der Zähler der Gemeinschaft anzuzeigen.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -418,15 +758,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir un compteur",
-        "en": "Open a meter"
+        "en": "Open a meter",
+        "nl": "Een meter openen",
+        "de": "Einen Zähler öffnen"
       },
       "text": {
         "fr": "Cliquez sur le premier compteur de la liste pour afficher sa fiche détaillée — la sélection se fait par l'EAN du compteur.",
-        "en": "Click the first meter in the list to open its detail page — the row is matched by the meter's EAN."
+        "en": "Click the first meter in the list to open its detail page — the row is matched by the meter's EAN.",
+        "nl": "Klik op de eerste meter in de lijst om zijn detailpagina te openen — de selectie gebeurt op basis van de EAN van de meter.",
+        "de": "Klicken Sie auf den ersten Zähler in der Liste, um seine Detailseite zu öffnen — die Auswahl erfolgt über die EAN des Zählers."
       },
       "subtitle": {
         "fr": "Liste des compteurs",
-        "en": "Meters list"
+        "en": "Meters list",
+        "nl": "Meterlijst",
+        "de": "Zählerliste"
       },
       "captures": {
         "fr": {
@@ -534,6 +880,112 @@
               "subtitle": "Meters list"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/nl/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 487
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/nl/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 0,
+                      "width": 358,
+                      "height": 1935.9375
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Een meter openen",
+              "text": "Tik op de kaart van de eerste meter om zijn detailpagina te openen — de selectie gebeurt op basis van de EAN van de meter.",
+              "subtitle": "Meterlijst"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/de/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 256,
+                      "width": 1280,
+                      "height": 487
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/de/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 0,
+                      "width": 358,
+                      "height": 1935.9375
+                    },
+                    "selector": "[data-testid=\"meters-list__table--meters\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Einen Zähler öffnen",
+              "text": "Tippen Sie auf die Karte des ersten Zählers, um seine Detailseite zu öffnen — die Auswahl erfolgt über die EAN des Zählers.",
+              "subtitle": "Zählerliste"
+            }
+          }
         }
       }
     },
@@ -546,15 +998,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "EAN du compteur",
-        "en": "Meter EAN"
+        "en": "Meter EAN",
+        "nl": "EAN van de meter",
+        "de": "EAN des Zählers"
       },
       "text": {
         "fr": "L'en-tête de la fiche affiche l'EAN du compteur tel qu'il est enregistré dans la base — c'est l'identifiant unique du point de comptage.",
-        "en": "The hero shows the meter's EAN as stored in the database — this is the unique identifier of the metering point."
+        "en": "The hero shows the meter's EAN as stored in the database — this is the unique identifier of the metering point.",
+        "nl": "De kop van de detailpagina toont de EAN van de meter zoals die in de database is opgeslagen — dit is de unieke identificatie van het meetpunt.",
+        "de": "Der Kopfbereich der Detailseite zeigt die EAN des Zählers so, wie sie in der Datenbank gespeichert ist — sie ist die eindeutige Kennung des Zählpunkts."
       },
       "subtitle": {
         "fr": "Détail du compteur",
-        "en": "Meter detail"
+        "en": "Meter detail",
+        "nl": "Meterdetails",
+        "de": "Zählerdetails"
       },
       "captures": {
         "fr": {
@@ -608,6 +1066,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/nl/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/nl/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/de/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/de/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -620,15 +1130,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Caractéristiques techniques",
-        "en": "Technical characteristics"
+        "en": "Technical characteristics",
+        "nl": "Technische kenmerken",
+        "de": "Technische Merkmale"
       },
       "text": {
         "fr": "La carte technique reprend le numéro physique du compteur et la fréquence de relevé — utile pour confirmer que la fiche correspond bien à l'appareil installé.",
-        "en": "The technical card lists the physical meter number and the reading frequency — handy for confirming the page matches the installed device."
+        "en": "The technical card lists the physical meter number and the reading frequency — handy for confirming the page matches the installed device.",
+        "nl": "De technische kaart vermeldt het fysieke meternummer en de leesfrequentie — handig om na te gaan of de pagina wel overeenkomt met het geïnstalleerde toestel.",
+        "de": "Die technische Karte enthält die physische Zählernummer und die Ablesefrequenz — nützlich, um zu bestätigen, dass die Seite tatsächlich dem installierten Gerät entspricht."
       },
       "subtitle": {
         "fr": "Détail du compteur",
-        "en": "Meter detail"
+        "en": "Meter detail",
+        "nl": "Meterdetails",
+        "de": "Zählerdetails"
       },
       "captures": {
         "fr": {
@@ -682,6 +1198,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/nl/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/nl/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/de/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/de/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -694,15 +1262,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Onglets de consultation",
-        "en": "Browsing tabs"
+        "en": "Browsing tabs",
+        "nl": "Raadpleegtabbladen",
+        "de": "Ansichtsregisterkarten"
       },
       "text": {
         "fr": "Les onglets permettent de naviguer entre les données actuelles, l'historique, les valeurs futures et la consommation calculée du compteur.",
-        "en": "The tabs let you switch between actual, historical, future and computed consumption data for this meter."
+        "en": "The tabs let you switch between actual, historical, future and computed consumption data for this meter.",
+        "nl": "Met de tabbladen navigeert u tussen de actuele gegevens, de historiek, de toekomstige waarden en het berekende verbruik van de meter.",
+        "de": "Über die Registerkarten wechseln Sie zwischen den aktuellen Daten, dem Verlauf, den zukünftigen Werten und dem berechneten Verbrauch des Zählers."
       },
       "subtitle": {
         "fr": "Onglets de données",
-        "en": "Data tabs"
+        "en": "Data tabs",
+        "nl": "Gegevenstabbladen",
+        "de": "Datenregisterkarten"
       },
       "captures": {
         "fr": {
@@ -748,6 +1322,58 @@
             "frames": [
               {
                 "screenshot": "../assets/community-join-inspect-meter/en/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/nl/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/nl/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/de/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-join-inspect-meter/de/mobile/step-39.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

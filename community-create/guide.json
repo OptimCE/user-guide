@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Créer une communauté",
-    "en": "Create a community"
+    "en": "Create a community",
+    "nl": "Een gemeenschap aanmaken",
+    "de": "Gemeinschaft erstellen"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir mes communautés",
-        "en": "Open my communities"
+        "en": "Open my communities",
+        "nl": "Mijn gemeenschappen openen",
+        "de": "Meine Gemeinschaften öffnen"
       },
       "text": {
         "fr": "Dans le menu de profil de la barre latérale, cliquez sur « Mes communautés » pour voir la liste des communautés où vous êtes inscrit·e et en créer de nouvelles.",
-        "en": "In the sidebar's profile menu, click \"My communities\" to see the communities you belong to and create new ones."
+        "en": "In the sidebar's profile menu, click \"My communities\" to see the communities you belong to and create new ones.",
+        "nl": "Klik in het profielmenu van de zijbalk op “Mijn gemeenschappen” om de gemeenschappen te zien waarvan u lid bent en nieuwe aan te maken.",
+        "de": "Klicken Sie im Profilmenü der Seitenleiste auf „Meine Gemeinschaften“, um die Gemeinschaften zu sehen, denen Sie angehören, und neue zu erstellen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Mijn gemeenschappen openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en daarna op “Mijn gemeenschappen”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/desktop/step-09.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 219.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--profile\"] a[href=\"/users/communities\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Meine Gemeinschaften öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Meine Gemeinschaften“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Créer une communauté",
-        "en": "Create a community"
+        "en": "Create a community",
+        "nl": "Gemeenschap aanmaken",
+        "de": "Gemeinschaft erstellen"
       },
       "text": {
         "fr": "Cliquez sur « Créer une communauté » en haut de la liste pour ouvrir la fenêtre de création.",
-        "en": "Click \"Create a community\" above the list to open the creation dialog."
+        "en": "Click \"Create a community\" above the list to open the creation dialog.",
+        "nl": "Klik bovenaan de lijst op “Gemeenschap aanmaken” om het aanmaakvenster te openen.",
+        "de": "Klicken Sie oberhalb der Liste auf „Gemeinschaft erstellen“, um das Erstellungsfenster zu öffnen."
       },
       "subtitle": {
         "fr": "Nouvelle communauté",
-        "en": "New community"
+        "en": "New community",
+        "nl": "Nieuwe gemeenschap",
+        "de": "Neue Gemeinschaft"
       },
       "captures": {
         "fr": {
@@ -268,6 +390,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1138.1875,
+                      "y": 52,
+                      "width": 230.8125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"user-communities__button--create\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 230.8125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"user-communities__button--create\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1153.265625,
+                      "y": 52,
+                      "width": 215.734375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"user-communities__button--create\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/mobile/step-15.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 215.734375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"user-communities__button--create\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -280,15 +498,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Nommer la communauté",
-        "en": "Name the community"
+        "en": "Name the community",
+        "nl": "De gemeenschap een naam geven",
+        "de": "Gemeinschaft benennen"
       },
       "text": {
         "fr": "Saisissez le nom de la communauté. Le régulateur est présélectionné (CWaPE pour la Wallonie) ; adaptez-le si votre communauté dépend d'un autre régulateur régional.",
-        "en": "Enter the community name. The regulator is preselected (CWaPE for Wallonia); change it if your community reports to a different regional regulator."
+        "en": "Enter the community name. The regulator is preselected (CWaPE for Wallonia); change it if your community reports to a different regional regulator.",
+        "nl": "Voer de naam van de gemeenschap in. De regulator is vooraf geselecteerd (CWaPE voor Wallonië); pas dit aan als uw gemeenschap onder een andere gewestelijke regulator valt.",
+        "de": "Geben Sie den Namen der Gemeinschaft ein. Die Regulierungsbehörde ist vorausgewählt (CWaPE für die Wallonie); passen Sie sie an, wenn Ihre Gemeinschaft einer anderen regionalen Regulierungsbehörde untersteht."
       },
       "subtitle": {
         "fr": "Nouvelle communauté",
-        "en": "New community"
+        "en": "New community",
+        "nl": "Nieuwe gemeenschap",
+        "de": "Neue Gemeinschaft"
       },
       "captures": {
         "fr": {
@@ -390,6 +614,106 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 586.984375,
+                      "y": 405,
+                      "width": 266.015625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-dialog__input--name\"]"
+                  },
+                  "value": "E2E Community"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 61.984375,
+                      "y": 377,
+                      "width": 266.015625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-dialog__input--name\"]"
+                  },
+                  "value": "E2E Community"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 596.40625,
+                      "y": 405,
+                      "width": 247.171875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-dialog__input--name\"]"
+                  },
+                  "value": "E2E Community"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 71.40625,
+                      "y": 377,
+                      "width": 247.171875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-dialog__input--name\"]"
+                  },
+                  "value": "E2E Community"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -402,15 +726,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Valider la création",
-        "en": "Confirm the creation"
+        "en": "Confirm the creation",
+        "nl": "Aanmaak bevestigen",
+        "de": "Erstellung bestätigen"
       },
       "text": {
         "fr": "Cliquez sur « Valider ». La communauté est créée dans le CRM et dans le fournisseur d'identité, et vous en devenez automatiquement l'administrateur.",
-        "en": "Click \"Confirm\". The community is created in the CRM and the identity provider, and you automatically become its administrator."
+        "en": "Click \"Confirm\". The community is created in the CRM and the identity provider, and you automatically become its administrator.",
+        "nl": "Klik op “Bevestigen”. De gemeenschap wordt aangemaakt in het CRM en bij de identiteitsprovider, en u wordt er automatisch de beheerder van.",
+        "de": "Klicken Sie auf „Bestätigen“. Die Gemeinschaft wird im CRM und beim Identitätsanbieter angelegt, und Sie werden automatisch ihr Administrator."
       },
       "subtitle": {
         "fr": "Confirmation",
-        "en": "Confirmation"
+        "en": "Confirmation",
+        "nl": "Bevestiging",
+        "de": "Bestätigung"
       },
       "captures": {
         "fr": {
@@ -508,6 +838,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 586.984375,
+                      "y": 535,
+                      "width": 105,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-dialog__button--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 61.984375,
+                      "y": 507,
+                      "width": 105,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-dialog__button--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 596.40625,
+                      "y": 535,
+                      "width": 102.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-dialog__button--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/mobile/step-18.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 71.40625,
+                      "y": 507,
+                      "width": 102.640625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"community-dialog__button--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -520,15 +946,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Votre nouvelle communauté",
-        "en": "Your new community"
+        "en": "Your new community",
+        "nl": "Uw nieuwe gemeenschap",
+        "de": "Ihre neue Gemeinschaft"
       },
       "text": {
         "fr": "« E2E Community » figure maintenant dans votre liste. Il ne reste plus qu'à l'activer pour commencer à la configurer.",
-        "en": "\"E2E Community\" now appears in your list. All that's left is to activate it and start setting it up."
+        "en": "\"E2E Community\" now appears in your list. All that's left is to activate it and start setting it up.",
+        "nl": "“E2E Community” staat nu in uw lijst. U hoeft ze alleen nog te activeren om met de configuratie te beginnen.",
+        "de": "„E2E Community“ erscheint jetzt in Ihrer Liste. Sie müssen sie nur noch aktivieren, um mit der Einrichtung zu beginnen."
       },
       "subtitle": {
         "fr": "Liste des communautés",
-        "en": "Communities list"
+        "en": "Communities list",
+        "nl": "Lijst van gemeenschappen",
+        "de": "Liste der Gemeinschaften"
       },
       "captures": {
         "fr": {
@@ -582,6 +1014,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -594,15 +1078,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Vous êtes administrateur",
-        "en": "You are the administrator"
+        "en": "You are the administrator",
+        "nl": "U bent beheerder",
+        "de": "Sie sind Administrator"
       },
       "text": {
         "fr": "La section « Gestion » apparaît dans la barre latérale : en tant que créateur, vous êtes administrateur de la communauté et avez accès à tous ses outils.",
-        "en": "The \"Management\" section appears in the sidebar: as its creator, you are the community administrator and have access to all its tools."
+        "en": "The \"Management\" section appears in the sidebar: as its creator, you are the community administrator and have access to all its tools.",
+        "nl": "De sectie “Beheer” verschijnt in de zijbalk: als maker bent u beheerder van de gemeenschap en hebt u toegang tot al haar tools.",
+        "de": "Der Bereich „Verwaltung“ erscheint in der Seitenleiste: Als Ersteller sind Sie Administrator der Gemeinschaft und haben Zugriff auf alle ihre Werkzeuge."
       },
       "subtitle": {
         "fr": "Communauté active",
-        "en": "Active community"
+        "en": "Active community",
+        "nl": "Actieve gemeenschap",
+        "de": "Aktive Gemeinschaft"
       },
       "captures": {
         "fr": {
@@ -656,6 +1146,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -668,15 +1210,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Aucune clé pour l'instant",
-        "en": "No keys yet"
+        "en": "No keys yet",
+        "nl": "Nog geen verdeelsleutels",
+        "de": "Noch keine Verteilungsschlüssel"
       },
       "text": {
         "fr": "Une communauté toute neuve n'a encore aucune clé de répartition. L'écran vous invite à en créer votre première.",
-        "en": "A brand-new community has no allocation keys yet. The screen invites you to create your first one."
+        "en": "A brand-new community has no allocation keys yet. The screen invites you to create your first one.",
+        "nl": "Een gloednieuwe gemeenschap heeft nog geen enkele verdeelsleutel. Het scherm nodigt u uit om uw eerste aan te maken.",
+        "de": "Eine brandneue Gemeinschaft hat noch keinen Verteilungsschlüssel. Der Bildschirm lädt Sie ein, Ihren ersten anzulegen."
       },
       "subtitle": {
         "fr": "Point de départ",
-        "en": "Starting point"
+        "en": "Starting point",
+        "nl": "Startpunt",
+        "de": "Ausgangspunkt"
       },
       "captures": {
         "fr": {
@@ -730,6 +1278,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -742,15 +1342,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Aucun membre pour l'instant",
-        "en": "No members yet"
+        "en": "No members yet",
+        "nl": "Nog geen leden",
+        "de": "Noch keine Mitglieder"
       },
       "text": {
         "fr": "De la même façon, la liste des membres est vide. Vous ajouterez vos membres un à un ou par invitation.",
-        "en": "Likewise, the members list is empty. You will add your members one by one or by invitation."
+        "en": "Likewise, the members list is empty. You will add your members one by one or by invitation.",
+        "nl": "Ook de ledenlijst is leeg. U voegt uw leden één voor één of via een uitnodiging toe.",
+        "de": "Ebenso ist die Mitgliederliste leer. Sie fügen Ihre Mitglieder einzeln oder per Einladung hinzu."
       },
       "subtitle": {
         "fr": "Point de départ",
-        "en": "Starting point"
+        "en": "Starting point",
+        "nl": "Startpunt",
+        "de": "Ausgangspunkt"
       },
       "captures": {
         "fr": {
@@ -804,6 +1410,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -816,15 +1474,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Aucun compteur pour l'instant",
-        "en": "No meters yet"
+        "en": "No meters yet",
+        "nl": "Nog geen meters",
+        "de": "Noch keine Zähler"
       },
       "text": {
         "fr": "Enfin, aucun compteur n'est encore rattaché. Votre communauté est prête : membres, compteurs et clés de répartition se configurent ensuite depuis ces mêmes écrans.",
-        "en": "Finally, no meters are attached yet. Your community is ready: members, meters and allocation keys are set up next from these very screens."
+        "en": "Finally, no meters are attached yet. Your community is ready: members, meters and allocation keys are set up next from these very screens.",
+        "nl": "Ten slotte is er nog geen enkele meter gekoppeld. Uw gemeenschap is klaar: leden, meters en verdeelsleutels stelt u vervolgens in vanuit deze schermen.",
+        "de": "Schließlich ist noch kein Zähler zugeordnet. Ihre Gemeinschaft ist bereit: Mitglieder, Zähler und Verteilungsschlüssel richten Sie anschließend über genau diese Bildschirme ein."
       },
       "subtitle": {
         "fr": "Point de départ",
-        "en": "Starting point"
+        "en": "Starting point",
+        "nl": "Startpunt",
+        "de": "Ausgangspunkt"
       },
       "captures": {
         "fr": {
@@ -870,6 +1534,58 @@
             "frames": [
               {
                 "screenshot": "../assets/community-create/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/nl/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/community-create/de/mobile/step-32.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

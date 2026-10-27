@@ -8,13 +8,14 @@
     <link rel="canonical" href="https://guide.optimce.be/key-create-gridform/en.html">
     <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/key-create-gridform/fr.html">
     <link rel="alternate" hreflang="en" href="https://guide.optimce.be/key-create-gridform/en.html">
+    <link rel="alternate" hreflang="nl" href="https://guide.optimce.be/key-create-gridform/nl.html">
+    <link rel="alternate" hreflang="de" href="https://guide.optimce.be/key-create-gridform/de.html">
     <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/key-create-gridform/fr.html">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Create an allocation key (form)">
     <meta property="og:description" content="Create an allocation key directly in the grid editor, with several iterations and weightings.">
     <meta property="og:url" content="https://guide.optimce.be/key-create-gridform/en.html">
     <meta property="og:site_name" content="OptimCE — User guides">
-    <meta property="og:locale" content="en">
     <meta property="og:image" content="https://guide.optimce.be/assets/key-create-gridform/en/desktop/step-17.png">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="../assets/guides.css">
@@ -25,10 +26,8 @@
           var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
           document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
         } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
-        // Synchronise the saved language preference with the file we just loaded.
-        // The user landed on this <locale>.html either by clicking a link rewritten
-        // to honour their preference or by direct entry — either way, that's the
-        // current truth.
+        // Remember the language of the file we just loaded: interactive.html is one
+        // URL for every locale and opens in this language when no ?lang= is given.
         try { localStorage.setItem("oce-lang", "en"); } catch (e) {}
       })();
     </script>
@@ -54,17 +53,27 @@
         </nav>
 
         <div class="steppy-header-actions">
-            <nav class="steppy-locale-switch" aria-label="Language">
-                <ul>
-                    <li>
-                        <a href="./fr.html">Français</a>
-                    </li>
-                    <li>
-                        <span aria-current="true">English</span>
-                    </li>
-                </ul>
-            </nav>
-            <button type="button" class="oce-theme-toggle" aria-label="Toggle theme">
+<label class="steppy-locale-select">
+    <span class="steppy-visually-hidden">Language</span>
+    <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <select autocomplete="off">        <option value="./fr.html" lang="fr">Français</option>        <option value="./en.html" lang="en" selected>English</option>        <option value="./nl.html" lang="nl">Nederlands</option>        <option value="./de.html" lang="de">Deutsch</option>    </select>
+    <svg class="steppy-locale-select-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</label>
+<script>
+  (function () {
+    var sel = document.querySelector(".steppy-locale-select select");
+    if (!sel) return;
+    sel.addEventListener("change", function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+    // Back from the language just picked can restore this page from the
+    // bfcache with that option still showing — snap it back to this page's own.
+    window.addEventListener("pageshow", function () {
+      var own = sel.querySelector("option[selected]");
+      if (own) sel.value = own.value;
+    });
+  })();
+</script>            <button type="button" class="oce-theme-toggle" aria-label="Toggle theme">
                 <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                 <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
             </button>
@@ -75,7 +84,7 @@
                     <span aria-current="true">Step by step</span>
                 </li>
                 <li>
-                    <a href="./interactive.html">Interactive</a>
+                    <a href="./interactive.html?lang=en">Interactive</a>
                 </li>
             </ul>
         </nav>
@@ -100,6 +109,8 @@
     <div class="steppy-role-badge">
         <span class="i18n-fr">Guide utilisateur</span>
         <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
     </div>
 
     <div class="steppy-step" data-step-index="1">
@@ -110,7 +121,7 @@
         <div class="steppy-step-subtitle">Creating a key</div>
         <div class="steppy-step-content">Click &quot;Add&quot; — OptimCE first asks how you want to build the new allocation key.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/desktop/step-17.png" alt="Step 1" loading="lazy">
+            <img src="../assets/key-create-gridform/en/desktop/step-17.png" alt="1. Add a key" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -124,7 +135,7 @@
         <div class="steppy-step-subtitle">Creating a key</div>
         <div class="steppy-step-content">Two ways of building a key are offered. Pick &quot;Full editor&quot; to type the iterations and percentages straight into the grid.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/desktop/step-19.png" alt="Step 2" loading="lazy">
+            <img src="../assets/key-create-gridform/en/desktop/step-19.png" alt="2. Choose the mode" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -138,7 +149,7 @@
         <div class="steppy-step-subtitle">Key identification</div>
         <div class="steppy-step-content">Give the new allocation key a name and a description. This metadata appears in the key list and makes it easier to find later.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/desktop/step-21-a.png" alt="Step 3" loading="lazy">
+            <img src="../assets/key-create-gridform/en/desktop/step-21-a.png" alt="3. Name the key" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -152,7 +163,7 @@
         <div class="steppy-step-subtitle">First iteration</div>
         <div class="steppy-step-content">Click &quot;Add iteration&quot; — the grid spawns a fresh iteration block with an initial consumer row ready to edit.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/desktop/step-22.png" alt="Step 4" loading="lazy">
+            <img src="../assets/key-create-gridform/en/desktop/step-22.png" alt="4. Add an iteration" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -166,7 +177,7 @@
         <div class="steppy-step-subtitle">First iteration</div>
         <div class="steppy-step-content">Click &quot;Add consumer&quot; as many times as needed to reach the desired count — three rows in this scenario.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/desktop/step-24.png" alt="Step 5" loading="lazy">
+            <img src="../assets/key-create-gridform/en/desktop/step-24.png" alt="5. Add consumers" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -180,7 +191,7 @@
         <div class="steppy-step-subtitle">First iteration</div>
         <div class="steppy-step-content">Set 70% of the energy for this iteration, name the three consumers (Cons1, Cons2, Cons3) and manually split the share 40/40/20.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/desktop/step-25.png" alt="Step 6" loading="lazy">
+            <img src="../assets/key-create-gridform/en/desktop/step-25.png" alt="6. Configure the iteration" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -194,7 +205,7 @@
         <div class="steppy-step-subtitle">Second iteration</div>
         <div class="steppy-step-content">Click &quot;Add prorata iteration&quot; — consumer names are carried over automatically and the percentages will be computed from actual consumption.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/desktop/step-26.png" alt="Step 7" loading="lazy">
+            <img src="../assets/key-create-gridform/en/desktop/step-26.png" alt="7. Add a prorata iteration" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -208,7 +219,7 @@
         <div class="steppy-step-subtitle">Second iteration</div>
         <div class="steppy-step-content">Type 30% as the weight of the second iteration so the two iterations together reach 100% of the energy.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/desktop/step-27.png" alt="Step 8" loading="lazy">
+            <img src="../assets/key-create-gridform/en/desktop/step-27.png" alt="8. Set the weight" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -222,7 +233,7 @@
         <div class="steppy-step-subtitle">Second iteration</div>
         <div class="steppy-step-content">As soon as the weight is committed (Enter or clicking outside the cell), the whole second iteration is recomputed automatically in prorata mode.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/desktop/step-28.png" alt="Step 9" loading="lazy">
+            <img src="../assets/key-create-gridform/en/desktop/step-28.png" alt="9. Iteration recomputed" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -236,7 +247,7 @@
         <div class="steppy-step-subtitle">Final review</div>
         <div class="steppy-step-content">Scan the full grid to confirm the iterations, names and percentages before saving the key.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/desktop/step-29.png" alt="Step 10" loading="lazy">
+            <img src="../assets/key-create-gridform/en/desktop/step-29.png" alt="10. Review the configuration" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -250,7 +261,7 @@
         <div class="steppy-step-subtitle">Confirmation</div>
         <div class="steppy-step-content">The new &quot;E2E key&quot; shows up in the community's allocation keys list, ready to be used by a sharing operation.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/desktop/step-32.png" alt="Step 11" loading="lazy">
+            <img src="../assets/key-create-gridform/en/desktop/step-32.png" alt="11. Key created" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -265,6 +276,8 @@
     <div class="steppy-role-badge">
         <span class="i18n-fr">Guide utilisateur</span>
         <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
     </div>
 
     <div class="steppy-step" data-step-index="1">
@@ -275,7 +288,7 @@
         <div class="steppy-step-subtitle">Creating a key</div>
         <div class="steppy-step-content">Click &quot;Add&quot; — OptimCE first asks how you want to build the new allocation key.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/mobile/step-17.png" alt="Step 1" loading="lazy">
+            <img src="../assets/key-create-gridform/en/mobile/step-17.png" alt="1. Add a key" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -289,7 +302,7 @@
         <div class="steppy-step-subtitle">Creating a key</div>
         <div class="steppy-step-content">Two ways of building a key are offered. Pick &quot;Full editor&quot; to type the iterations and percentages straight into the grid.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/mobile/step-19.png" alt="Step 2" loading="lazy">
+            <img src="../assets/key-create-gridform/en/mobile/step-19.png" alt="2. Choose the mode" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -303,7 +316,7 @@
         <div class="steppy-step-subtitle">Key identification</div>
         <div class="steppy-step-content">Give the new allocation key a name and a description. This metadata appears in the key list and makes it easier to find later.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/mobile/step-21-a.png" alt="Step 3" loading="lazy">
+            <img src="../assets/key-create-gridform/en/mobile/step-21-a.png" alt="3. Name the key" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -317,7 +330,7 @@
         <div class="steppy-step-subtitle">First iteration</div>
         <div class="steppy-step-content">Click &quot;Add iteration&quot; — the grid spawns a fresh iteration block with an initial consumer row ready to edit.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/mobile/step-22.png" alt="Step 4" loading="lazy">
+            <img src="../assets/key-create-gridform/en/mobile/step-22.png" alt="4. Add an iteration" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -331,7 +344,7 @@
         <div class="steppy-step-subtitle">First iteration</div>
         <div class="steppy-step-content">Click &quot;Add consumer&quot; as many times as needed to reach the desired count — three rows in this scenario.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/mobile/step-24.png" alt="Step 5" loading="lazy">
+            <img src="../assets/key-create-gridform/en/mobile/step-24.png" alt="5. Add consumers" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -345,7 +358,7 @@
         <div class="steppy-step-subtitle">First iteration</div>
         <div class="steppy-step-content">Set 70% of the energy for this iteration, name the three consumers (Cons1, Cons2, Cons3) and manually split the share 40/40/20.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/mobile/step-25.png" alt="Step 6" loading="lazy">
+            <img src="../assets/key-create-gridform/en/mobile/step-25.png" alt="6. Configure the iteration" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -359,7 +372,7 @@
         <div class="steppy-step-subtitle">Second iteration</div>
         <div class="steppy-step-content">Click &quot;Add prorata iteration&quot; — consumer names are carried over automatically and the percentages will be computed from actual consumption.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/mobile/step-26.png" alt="Step 7" loading="lazy">
+            <img src="../assets/key-create-gridform/en/mobile/step-26.png" alt="7. Add a prorata iteration" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -373,7 +386,7 @@
         <div class="steppy-step-subtitle">Second iteration</div>
         <div class="steppy-step-content">Type 30% as the weight of the second iteration so the two iterations together reach 100% of the energy.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/mobile/step-27.png" alt="Step 8" loading="lazy">
+            <img src="../assets/key-create-gridform/en/mobile/step-27.png" alt="8. Set the weight" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -387,7 +400,7 @@
         <div class="steppy-step-subtitle">Second iteration</div>
         <div class="steppy-step-content">As soon as the weight is committed (Enter or clicking outside the cell), the whole second iteration is recomputed automatically in prorata mode.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/mobile/step-28.png" alt="Step 9" loading="lazy">
+            <img src="../assets/key-create-gridform/en/mobile/step-28.png" alt="9. Iteration recomputed" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -401,7 +414,7 @@
         <div class="steppy-step-subtitle">Final review</div>
         <div class="steppy-step-content">Scan the full grid to confirm the iterations, names and percentages before saving the key.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/mobile/step-29.png" alt="Step 10" loading="lazy">
+            <img src="../assets/key-create-gridform/en/mobile/step-29.png" alt="10. Review the configuration" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -415,7 +428,7 @@
         <div class="steppy-step-subtitle">Confirmation</div>
         <div class="steppy-step-content">The new &quot;E2E key&quot; shows up in the community's allocation keys list, ready to be used by a sharing operation.</div>
         <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/key-create-gridform/en/mobile/step-32.png" alt="Step 11" loading="lazy">
+            <img src="../assets/key-create-gridform/en/mobile/step-32.png" alt="11. Key created" loading="lazy">
             <div class="steppy-cursor" aria-hidden="true"></div>
             <div class="steppy-ripple" aria-hidden="true"></div>
             <div class="steppy-kbd" aria-hidden="true"></div>
@@ -446,7 +459,7 @@
       })();
     </script>
     <script>
-      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 80.03125, "x": 1288.96875, "y": 52}, "selector": "[data-testid=\"keys-list__btn--add\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 80.03125, "x": 1288.96875, "y": 52}, "selector": "[data-testid=\"keys-list__btn--add\"]"}}, "screenshot": "../assets/key-create-gridform/en/desktop/step-17.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/key-create-gridform/en/desktop/step-17.png", "subtitle": "Creating a key", "text": "Click \"Add\" \u2014 OptimCE first asks how you want to build the new allocation key.", "title": "Add a key", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 184, "width": 243, "x": 469, "y": 375}, "selector": "[data-testid=\"key-creation-mode__card--full\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 184, "width": 243, "x": 469, "y": 375}, "selector": "[data-testid=\"key-creation-mode__card--full\"]"}}, "screenshot": "../assets/key-create-gridform/en/desktop/step-19.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/key-create-gridform/en/desktop/step-19.png", "subtitle": "Creating a key", "text": "Two ways of building a key are offered. Pick \"Full editor\" to type the iterations and percentages straight into the grid.", "title": "Choose the mode", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 1237, "x": 137, "y": 260}, "selector": "[data-testid=\"key-update__input--name\"]", "value": "E2E key"}, {"bbox": {"height": 114, "width": 1237, "x": 137, "y": 348}, "selector": "[data-testid=\"key-update__textarea--description\"]", "value": "A demo key during the E2E test"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 1237, "x": 137, "y": 260}, "selector": "[data-testid=\"key-update__input--name\"]", "value": "E2E key"}, {"bbox": {"height": 114, "width": 1237, "x": 137, "y": 348}, "selector": "[data-testid=\"key-update__textarea--description\"]", "value": "A demo key during the E2E test"}]}, "screenshot": "../assets/key-create-gridform/en/desktop/step-21-a.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/key-create-gridform/en/desktop/step-21-a.png", "subtitle": "Key identification", "text": "Give the new allocation key a name and a description. This metadata appears in the key list and makes it easier to find later.", "title": "Name the key", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168, "x": 131, "y": 555}, "selector": "[data-testid=\"key-update__btn--add-iteration\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168, "x": 131, "y": 555}, "selector": "[data-testid=\"key-update__btn--add-iteration\"]"}}, "screenshot": "../assets/key-create-gridform/en/desktop/step-22.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/key-create-gridform/en/desktop/step-22.png", "subtitle": "First iteration", "text": "Click \"Add iteration\" \u2014 the grid spawns a fresh iteration block with an initial consumer row ready to edit.", "title": "Add an iteration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168.421875, "x": 535.84375, "y": 385}, "selector": "[data-testid=\"key-update__btn--add-consumer\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168.421875, "x": 535.84375, "y": 385}, "selector": "[data-testid=\"key-update__btn--add-consumer\"]"}}, "screenshot": "../assets/key-create-gridform/en/desktop/step-24.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/key-create-gridform/en/desktop/step-24.png", "subtitle": "First iteration", "text": "Click \"Add consumer\" as many times as needed to reach the desired count \u2014 three rows in this scenario.", "title": "Add consumers", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 249, "width": 1246, "x": 131, "y": 513}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "70% \u2014 Cons1 40 / Cons2 40 / Cons3 20"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 249, "width": 1246, "x": 131, "y": 513}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "70% \u2014 Cons1 40 / Cons2 40 / Cons3 20"}, "screenshot": "../assets/key-create-gridform/en/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/key-create-gridform/en/desktop/step-25.png", "subtitle": "First iteration", "text": "Set 70% of the energy for this iteration, name the three consumers (Cons1, Cons2, Cons3) and manually split the share 40/40/20.", "title": "Configure the iteration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 220.84375, "x": 307, "y": 385}, "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 220.84375, "x": 307, "y": 385}, "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"}}, "screenshot": "../assets/key-create-gridform/en/desktop/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/key-create-gridform/en/desktop/step-26.png", "subtitle": "Second iteration", "text": "Click \"Add prorata iteration\" \u2014 consumer names are carried over automatically and the percentages will be computed from actual consumption.", "title": "Add a prorata iteration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 351, "width": 1246, "x": 131, "y": 513}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "30%"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 351, "width": 1246, "x": 131, "y": 513}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "30%"}, "screenshot": "../assets/key-create-gridform/en/desktop/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/key-create-gridform/en/desktop/step-27.png", "subtitle": "Second iteration", "text": "Type 30% as the weight of the second iteration so the two iterations together reach 100% of the energy.", "title": "Set the weight", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/en/desktop/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/key-create-gridform/en/desktop/step-28.png", "subtitle": "Second iteration", "text": "As soon as the weight is committed (Enter or clicking outside the cell), the whole second iteration is recomputed automatically in prorata mode.", "title": "Iteration recomputed", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/en/desktop/step-29.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/key-create-gridform/en/desktop/step-29.png", "subtitle": "Final review", "text": "Scan the full grid to confirm the iterations, names and percentages before saving the key.", "title": "Review the configuration", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/en/desktop/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/key-create-gridform/en/desktop/step-32.png", "subtitle": "Confirmation", "text": "The new \"E2E key\" shows up in the community\u0027s allocation keys list, ready to be used by a sharing operation.", "title": "Key created", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 80.03125, "x": 37, "y": 239}, "selector": "[data-testid=\"keys-list__btn--add\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 80.03125, "x": 37, "y": 239}, "selector": "[data-testid=\"keys-list__btn--add\"]"}}, "screenshot": "../assets/key-create-gridform/en/mobile/step-17.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/key-create-gridform/en/mobile/step-17.png", "subtitle": "Creating a key", "text": "Click \"Add\" \u2014 OptimCE first asks how you want to build the new allocation key.", "title": "Add a key", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 152, "width": 364, "x": 13, "y": 169}, "selector": "[data-testid=\"key-creation-mode__card--full\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 152, "width": 364, "x": 13, "y": 169}, "selector": "[data-testid=\"key-creation-mode__card--full\"]"}}, "screenshot": "../assets/key-create-gridform/en/mobile/step-19.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/key-create-gridform/en/mobile/step-19.png", "subtitle": "Creating a key", "text": "Two ways of building a key are offered. Pick \"Full editor\" to type the iterations and percentages straight into the grid.", "title": "Choose the mode", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 315, "x": 39, "y": 336}, "selector": "[data-testid=\"key-update__input--name\"]", "value": "E2E key"}, {"bbox": {"height": 114, "width": 315, "x": 39, "y": 424}, "selector": "[data-testid=\"key-update__textarea--description\"]", "value": "A demo key during the E2E test"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 315, "x": 39, "y": 336}, "selector": "[data-testid=\"key-update__input--name\"]", "value": "E2E key"}, {"bbox": {"height": 114, "width": 315, "x": 39, "y": 424}, "selector": "[data-testid=\"key-update__textarea--description\"]", "value": "A demo key during the E2E test"}]}, "screenshot": "../assets/key-create-gridform/en/mobile/step-21-a.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/key-create-gridform/en/mobile/step-21-a.png", "subtitle": "Key identification", "text": "Give the new allocation key a name and a description. This metadata appears in the key list and makes it easier to find later.", "title": "Name the key", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168, "x": 33, "y": 631}, "selector": "[data-testid=\"key-update__btn--add-iteration\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168, "x": 33, "y": 631}, "selector": "[data-testid=\"key-update__btn--add-iteration\"]"}}, "screenshot": "../assets/key-create-gridform/en/mobile/step-22.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/key-create-gridform/en/mobile/step-22.png", "subtitle": "First iteration", "text": "Click \"Add iteration\" \u2014 the grid spawns a fresh iteration block with an initial consumer row ready to edit.", "title": "Add an iteration", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168.421875, "x": 33, "y": 501}, "selector": "[data-testid=\"key-update__btn--add-consumer\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168.421875, "x": 33, "y": 501}, "selector": "[data-testid=\"key-update__btn--add-consumer\"]"}}, "screenshot": "../assets/key-create-gridform/en/mobile/step-24.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/key-create-gridform/en/mobile/step-24.png", "subtitle": "First iteration", "text": "Click \"Add consumer\" as many times as needed to reach the desired count \u2014 three rows in this scenario.", "title": "Add consumers", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 249, "width": 324, "x": 33, "y": 595}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "70% \u2014 Cons1 40 / Cons2 40 / Cons3 20"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 249, "width": 324, "x": 33, "y": 595}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "70% \u2014 Cons1 40 / Cons2 40 / Cons3 20"}, "screenshot": "../assets/key-create-gridform/en/mobile/step-25.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/key-create-gridform/en/mobile/step-25.png", "subtitle": "First iteration", "text": "Set 70% of the energy for this iteration, name the three consumers (Cons1, Cons2, Cons3) and manually split the share 40/40/20.", "title": "Configure the iteration", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 220.84375, "x": 33, "y": 367}, "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 220.84375, "x": 33, "y": 367}, "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"}}, "screenshot": "../assets/key-create-gridform/en/mobile/step-26.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/key-create-gridform/en/mobile/step-26.png", "subtitle": "Second iteration", "text": "Click \"Add prorata iteration\" \u2014 consumer names are carried over automatically and the percentages will be computed from actual consumption.", "title": "Add a prorata iteration", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 351, "width": 324, "x": 33, "y": 493}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "30%"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 351, "width": 324, "x": 33, "y": 493}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "30%"}, "screenshot": "../assets/key-create-gridform/en/mobile/step-27.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/key-create-gridform/en/mobile/step-27.png", "subtitle": "Second iteration", "text": "Type 30% as the weight of the second iteration so the two iterations together reach 100% of the energy.", "title": "Set the weight", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/en/mobile/step-28.png", "viewport": {"height": 844, "width": 390}}], "index": 9, "screenshot": "../assets/key-create-gridform/en/mobile/step-28.png", "subtitle": "Second iteration", "text": "As soon as the weight is committed (Enter or clicking outside the cell), the whole second iteration is recomputed automatically in prorata mode.", "title": "Iteration recomputed", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/en/mobile/step-29.png", "viewport": {"height": 844, "width": 390}}], "index": 10, "screenshot": "../assets/key-create-gridform/en/mobile/step-29.png", "subtitle": "Final review", "text": "Scan the full grid to confirm the iterations, names and percentages before saving the key.", "title": "Review the configuration", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/en/mobile/step-32.png", "viewport": {"height": 844, "width": 390}}], "index": 11, "screenshot": "../assets/key-create-gridform/en/mobile/step-32.png", "subtitle": "Confirmation", "text": "The new \"E2E key\" shows up in the community\u0027s allocation keys list, ready to be used by a sharing operation.", "title": "Key created", "viewport": {"height": 844, "width": 390}}]};
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 80.03125, "x": 1288.96875, "y": 52}, "selector": "[data-testid=\"keys-list__btn--add\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 80.03125, "x": 1288.96875, "y": 52}, "selector": "[data-testid=\"keys-list__btn--add\"]"}}, "screenshot": "../assets/key-create-gridform/en/desktop/step-17.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/key-create-gridform/en/desktop/step-17.png", "subtitle": "Creating a key", "text": "Click \"Add\" \u2014 OptimCE first asks how you want to build the new allocation key.", "title": "Add a key", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 184, "width": 243, "x": 469, "y": 375}, "selector": "[data-testid=\"key-creation-mode__card--full\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 184, "width": 243, "x": 469, "y": 375}, "selector": "[data-testid=\"key-creation-mode__card--full\"]"}}, "screenshot": "../assets/key-create-gridform/en/desktop/step-19.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/key-create-gridform/en/desktop/step-19.png", "subtitle": "Creating a key", "text": "Two ways of building a key are offered. Pick \"Full editor\" to type the iterations and percentages straight into the grid.", "title": "Choose the mode", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 1237, "x": 137, "y": 260}, "selector": "[data-testid=\"key-update__input--name\"]", "value": "E2E key"}, {"bbox": {"height": 114, "width": 1237, "x": 137, "y": 348}, "selector": "[data-testid=\"key-update__textarea--description\"]", "value": "A demo key during the E2E test"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 1237, "x": 137, "y": 260}, "selector": "[data-testid=\"key-update__input--name\"]", "value": "E2E key"}, {"bbox": {"height": 114, "width": 1237, "x": 137, "y": 348}, "selector": "[data-testid=\"key-update__textarea--description\"]", "value": "A demo key during the E2E test"}]}, "screenshot": "../assets/key-create-gridform/en/desktop/step-21-a.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/key-create-gridform/en/desktop/step-21-a.png", "subtitle": "Key identification", "text": "Give the new allocation key a name and a description. This metadata appears in the key list and makes it easier to find later.", "title": "Name the key", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168, "x": 131, "y": 555}, "selector": "[data-testid=\"key-update__btn--add-iteration\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168, "x": 131, "y": 555}, "selector": "[data-testid=\"key-update__btn--add-iteration\"]"}}, "screenshot": "../assets/key-create-gridform/en/desktop/step-22.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/key-create-gridform/en/desktop/step-22.png", "subtitle": "First iteration", "text": "Click \"Add iteration\" \u2014 the grid spawns a fresh iteration block with an initial consumer row ready to edit.", "title": "Add an iteration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168.421875, "x": 535.84375, "y": 429}, "selector": "[data-testid=\"key-update__btn--add-consumer\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168.421875, "x": 535.84375, "y": 429}, "selector": "[data-testid=\"key-update__btn--add-consumer\"]"}}, "screenshot": "../assets/key-create-gridform/en/desktop/step-24.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/key-create-gridform/en/desktop/step-24.png", "subtitle": "First iteration", "text": "Click \"Add consumer\" as many times as needed to reach the desired count \u2014 three rows in this scenario.", "title": "Add consumers", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 249, "width": 1246, "x": 131, "y": 557}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "70% \u2014 Cons1 40 / Cons2 40 / Cons3 20"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 249, "width": 1246, "x": 131, "y": 557}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "70% \u2014 Cons1 40 / Cons2 40 / Cons3 20"}, "screenshot": "../assets/key-create-gridform/en/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/key-create-gridform/en/desktop/step-25.png", "subtitle": "First iteration", "text": "Set 70% of the energy for this iteration, name the three consumers (Cons1, Cons2, Cons3) and manually split the share 40/40/20.", "title": "Configure the iteration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 220.84375, "x": 307, "y": 429}, "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 220.84375, "x": 307, "y": 429}, "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"}}, "screenshot": "../assets/key-create-gridform/en/desktop/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/key-create-gridform/en/desktop/step-26.png", "subtitle": "Second iteration", "text": "Click \"Add prorata iteration\" \u2014 consumer names are carried over automatically and the percentages will be computed from actual consumption.", "title": "Add a prorata iteration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 351, "width": 1246, "x": 131, "y": 549}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "30%"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 351, "width": 1246, "x": 131, "y": 549}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "30%"}, "screenshot": "../assets/key-create-gridform/en/desktop/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/key-create-gridform/en/desktop/step-27.png", "subtitle": "Second iteration", "text": "Type 30% as the weight of the second iteration so the two iterations together reach 100% of the energy.", "title": "Set the weight", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/en/desktop/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/key-create-gridform/en/desktop/step-28.png", "subtitle": "Second iteration", "text": "As soon as the weight is committed (Enter or clicking outside the cell), the whole second iteration is recomputed automatically in prorata mode.", "title": "Iteration recomputed", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/en/desktop/step-29.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/key-create-gridform/en/desktop/step-29.png", "subtitle": "Final review", "text": "Scan the full grid to confirm the iterations, names and percentages before saving the key.", "title": "Review the configuration", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/en/desktop/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/key-create-gridform/en/desktop/step-32.png", "subtitle": "Confirmation", "text": "The new \"E2E key\" shows up in the community\u0027s allocation keys list, ready to be used by a sharing operation.", "title": "Key created", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 80.03125, "x": 37, "y": 239}, "selector": "[data-testid=\"keys-list__btn--add\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 80.03125, "x": 37, "y": 239}, "selector": "[data-testid=\"keys-list__btn--add\"]"}}, "screenshot": "../assets/key-create-gridform/en/mobile/step-17.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/key-create-gridform/en/mobile/step-17.png", "subtitle": "Creating a key", "text": "Click \"Add\" \u2014 OptimCE first asks how you want to build the new allocation key.", "title": "Add a key", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 152, "width": 364, "x": 13, "y": 169}, "selector": "[data-testid=\"key-creation-mode__card--full\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 152, "width": 364, "x": 13, "y": 169}, "selector": "[data-testid=\"key-creation-mode__card--full\"]"}}, "screenshot": "../assets/key-create-gridform/en/mobile/step-19.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/key-create-gridform/en/mobile/step-19.png", "subtitle": "Creating a key", "text": "Two ways of building a key are offered. Pick \"Full editor\" to type the iterations and percentages straight into the grid.", "title": "Choose the mode", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 315, "x": 39, "y": 336}, "selector": "[data-testid=\"key-update__input--name\"]", "value": "E2E key"}, {"bbox": {"height": 114, "width": 315, "x": 39, "y": 424}, "selector": "[data-testid=\"key-update__textarea--description\"]", "value": "A demo key during the E2E test"}]}, "frames": [{"cursor": {"kind": "type-multi", "targets": [{"bbox": {"height": 42, "width": 315, "x": 39, "y": 336}, "selector": "[data-testid=\"key-update__input--name\"]", "value": "E2E key"}, {"bbox": {"height": 114, "width": 315, "x": 39, "y": 424}, "selector": "[data-testid=\"key-update__textarea--description\"]", "value": "A demo key during the E2E test"}]}, "screenshot": "../assets/key-create-gridform/en/mobile/step-21-a.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/key-create-gridform/en/mobile/step-21-a.png", "subtitle": "Key identification", "text": "Give the new allocation key a name and a description. This metadata appears in the key list and makes it easier to find later.", "title": "Name the key", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168, "x": 33, "y": 631}, "selector": "[data-testid=\"key-update__btn--add-iteration\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168, "x": 33, "y": 631}, "selector": "[data-testid=\"key-update__btn--add-iteration\"]"}}, "screenshot": "../assets/key-create-gridform/en/mobile/step-22.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/key-create-gridform/en/mobile/step-22.png", "subtitle": "First iteration", "text": "Click \"Add iteration\" \u2014 the grid spawns a fresh iteration block with an initial consumer row ready to edit.", "title": "Add an iteration", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168.421875, "x": 33, "y": 731}, "selector": "[data-testid=\"key-update__btn--add-consumer\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 168.421875, "x": 33, "y": 731}, "selector": "[data-testid=\"key-update__btn--add-consumer\"]"}}, "screenshot": "../assets/key-create-gridform/en/mobile/step-24.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/key-create-gridform/en/mobile/step-24.png", "subtitle": "First iteration", "text": "Click \"Add consumer\" as many times as needed to reach the desired count \u2014 three rows in this scenario.", "title": "Add consumers", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 249, "width": 324, "x": 33, "y": 461}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "70% \u2014 Cons1 40 / Cons2 40 / Cons3 20"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 249, "width": 324, "x": 33, "y": 461}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "70% \u2014 Cons1 40 / Cons2 40 / Cons3 20"}, "screenshot": "../assets/key-create-gridform/en/mobile/step-25.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/key-create-gridform/en/mobile/step-25.png", "subtitle": "First iteration", "text": "Set 70% of the energy for this iteration, name the three consumers (Cons1, Cons2, Cons3) and manually split the share 40/40/20.", "title": "Configure the iteration", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 220.84375, "x": 33, "y": 233}, "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 220.84375, "x": 33, "y": 233}, "selector": "[data-testid=\"key-update__btn--add-prorata-iteration\"]"}}, "screenshot": "../assets/key-create-gridform/en/mobile/step-26.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/key-create-gridform/en/mobile/step-26.png", "subtitle": "Second iteration", "text": "Click \"Add prorata iteration\" \u2014 consumer names are carried over automatically and the percentages will be computed from actual consumption.", "title": "Add a prorata iteration", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 351, "width": 324, "x": 33, "y": 461}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "30%"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 351, "width": 324, "x": 33, "y": 461}, "selector": "[data-testid=\"key-update__grid--data\"]"}, "value": "30%"}, "screenshot": "../assets/key-create-gridform/en/mobile/step-27.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/key-create-gridform/en/mobile/step-27.png", "subtitle": "Second iteration", "text": "Type 30% as the weight of the second iteration so the two iterations together reach 100% of the energy.", "title": "Set the weight", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/en/mobile/step-28.png", "viewport": {"height": 844, "width": 390}}], "index": 9, "screenshot": "../assets/key-create-gridform/en/mobile/step-28.png", "subtitle": "Second iteration", "text": "As soon as the weight is committed (Enter or clicking outside the cell), the whole second iteration is recomputed automatically in prorata mode.", "title": "Iteration recomputed", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/en/mobile/step-29.png", "viewport": {"height": 844, "width": 390}}], "index": 10, "screenshot": "../assets/key-create-gridform/en/mobile/step-29.png", "subtitle": "Final review", "text": "Scan the full grid to confirm the iterations, names and percentages before saving the key.", "title": "Review the configuration", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/key-create-gridform/en/mobile/step-32.png", "viewport": {"height": 844, "width": 390}}], "index": 11, "screenshot": "../assets/key-create-gridform/en/mobile/step-32.png", "subtitle": "Confirmation", "text": "The new \"E2E key\" shows up in the community\u0027s allocation keys list, ready to be used by a sharing operation.", "title": "Key created", "viewport": {"height": 844, "width": 390}}]};
       window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
       window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
       window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};

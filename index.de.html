@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OptimCE — Benutzeranleitungen</title>
+    <meta name="description" content="Schritt-für-Schritt-Anleitungen für OptimCE: eine Energiegemeinschaft verwalten — ihre Mitglieder, Zähler, Verteilungsschlüssel, Teilungsoperationen und Abrechnung.">
+    <link rel="canonical" href="https://guide.optimce.be/index.de.html">
+    <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/">
+    <link rel="alternate" hreflang="en" href="https://guide.optimce.be/index.en.html">
+    <link rel="alternate" hreflang="nl" href="https://guide.optimce.be/index.nl.html">
+    <link rel="alternate" hreflang="de" href="https://guide.optimce.be/index.de.html">
+    <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="OptimCE — Benutzeranleitungen">
+    <meta property="og:description" content="Schritt-für-Schritt-Anleitungen für OptimCE: eine Energiegemeinschaft verwalten — ihre Mitglieder, Zähler, Verteilungsschlüssel, Teilungsoperationen und Abrechnung.">
+    <meta property="og:url" content="https://guide.optimce.be/index.de.html">
+    <meta property="og:site_name" content="OptimCE — Benutzeranleitungen">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="./assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var savedTheme = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", savedTheme || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // The file we just loaded IS the language choice — record it so
+        // interactive.html (one URL for every locale) opens in the same one.
+        try { localStorage.setItem("oce-lang", "de"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body>
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="./index.de.html" aria-label="OptimCE — Benutzeranleitungen">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <span class="steppy-site-title">OptimCE — Benutzeranleitungen</span>
+
+        <div class="steppy-header-actions">
+<label class="steppy-locale-select">
+    <span class="steppy-visually-hidden">Sprache</span>
+    <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <select autocomplete="off">        <option value="./index.html" lang="fr">Français</option>        <option value="./index.en.html" lang="en">English</option>        <option value="./index.nl.html" lang="nl">Nederlands</option>        <option value="./index.de.html" lang="de" selected>Deutsch</option>    </select>
+    <svg class="steppy-locale-select-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</label>
+<script>
+  (function () {
+    var sel = document.querySelector(".steppy-locale-select select");
+    if (!sel) return;
+    sel.addEventListener("change", function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+    // Back from the language just picked can restore this page from the
+    // bfcache with that option still showing — snap it back to this page's own.
+    window.addEventListener("pageshow", function () {
+      var own = sel.querySelector("option[selected]");
+      if (own) sel.value = own.value;
+    });
+  })();
+</script>            <button type="button" class="oce-theme-toggle" aria-label="Helles/dunkles Design umschalten" title="Design wechseln">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4"/>
+                    <path d="M12 2v2"/><path d="M12 20v2"/>
+                    <path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/>
+                    <path d="M2 12h2"/><path d="M20 12h2"/>
+                    <path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="steppy-main">
+        <section class="steppy-index">
+            <div class="steppy-hero">
+                <div class="steppy-hero-eyebrow">Dokumentation</div>
+                <h1>OptimCE — Benutzeranleitungen</h1>
+                <p class="steppy-hero-lede">Schritt-für-Schritt-Anleitungen zur Einrichtung einer Energiegemeinschaft: Anmeldung, Mitgliederverwaltung, Verteilungsschlüssel, Zähler und Teilungsoperationen.</p>
+            </div>
+
+            <ul class="steppy-index-list">
+                <li class="steppy-index-onboarding">
+                    <a href="./getting-started/de.html">
+                        <div>
+                            <span class="steppy-index-eyebrow">Geführter Rundgang</span>
+                            <span class="steppy-index-title">Erste Schritte</span>
+                            <span class="steppy-index-desc">Der empfohlene Weg, die Anwendung von Anfang bis Ende kennenzulernen, in 11 Schritten.</span>
+                        </div>
+                        <span class="steppy-index-meta">11 Schritte</span>
+                    </a>
+                </li>
+                <li class="steppy-index-group">
+                    <a href="./welcome-tours/de.html">
+                        <span class="steppy-index-eyebrow">Modul</span>
+                        <span class="steppy-index-title">Willkommenstouren</span>
+                        <span class="steppy-index-desc">Eine Tour pro Rolle: bei Ihrer Ankunft und dann, wenn Sie Mitglied, Manager oder Administrator werden.</span>
+                        <span class="steppy-index-meta">4 Anleitungen</span>
+                    </a>
+                </li>
+                <li class="steppy-index-group">
+                    <a href="./account/de.html">
+                        <span class="steppy-index-eyebrow">Modul</span>
+                        <span class="steppy-index-title">Konto</span>
+                        <span class="steppy-index-desc">Anmeldung und Profilverwaltung.</span>
+                        <span class="steppy-index-meta">4 Anleitungen</span>
+                    </a>
+                </li>
+                <li class="steppy-index-group">
+                    <a href="./dashboard/de.html">
+                        <span class="steppy-index-eyebrow">Modul</span>
+                        <span class="steppy-index-title">Startseite und Übersicht</span>
+                        <span class="steppy-index-desc">Sich nach der Anmeldung zurechtfinden: die persönliche Startseite und die Übersicht einer Gemeinschaft.</span>
+                        <span class="steppy-index-meta">3 Anleitungen</span>
+                    </a>
+                </li>
+                <li class="steppy-index-group">
+                    <a href="./community/de.html">
+                        <span class="steppy-index-eyebrow">Modul</span>
+                        <span class="steppy-index-title">Gemeinschaft</span>
+                        <span class="steppy-index-desc">Eine Gemeinschaft aktivieren und die gemeinsam genutzten Verteilungsschlüssel und Zähler einsehen.</span>
+                        <span class="steppy-index-meta">9 Anleitungen</span>
+                    </a>
+                </li>
+                <li class="steppy-index-group">
+                    <a href="./keys/de.html">
+                        <span class="steppy-index-eyebrow">Modul</span>
+                        <span class="steppy-index-title">Verteilungsschlüssel</span>
+                        <span class="steppy-index-desc">Verteilungsschlüssel erstellen (Formular oder Assistent).</span>
+                        <span class="steppy-index-meta">5 Anleitungen</span>
+                    </a>
+                </li>
+                <li class="steppy-index-group">
+                    <a href="./members/de.html">
+                        <span class="steppy-index-eyebrow">Modul</span>
+                        <span class="steppy-index-title">Mitglieder</span>
+                        <span class="steppy-index-desc">Die Mitglieder der Gemeinschaft verwalten.</span>
+                        <span class="steppy-index-meta">6 Anleitungen</span>
+                    </a>
+                </li>
+                <li class="steppy-index-group">
+                    <a href="./meters/de.html">
+                        <span class="steppy-index-eyebrow">Modul</span>
+                        <span class="steppy-index-title">Zähler</span>
+                        <span class="steppy-index-desc">Zähler anlegen und konfigurieren.</span>
+                        <span class="steppy-index-meta">5 Anleitungen</span>
+                    </a>
+                </li>
+                <li class="steppy-index-group">
+                    <a href="./sharing/de.html">
+                        <span class="steppy-index-eyebrow">Modul</span>
+                        <span class="steppy-index-title">Teilungsoperationen</span>
+                        <span class="steppy-index-desc">Teilungsoperationen erstellen und im Detail ansehen.</span>
+                        <span class="steppy-index-meta">5 Anleitungen</span>
+                    </a>
+                </li>
+                <li class="steppy-index-group">
+                    <a href="./annexes/de.html">
+                        <span class="steppy-index-eyebrow">Modul</span>
+                        <span class="steppy-index-title">Zusatzdienste</span>
+                        <span class="steppy-index-desc">Abonnements für Zusatzdienste verwalten und Verteilungsschlüssel mit dem OLAGSA-Algorithmus generieren.</span>
+                        <span class="steppy-index-meta">7 Anleitungen</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="steppy-site-footer">
+        <p>Erstellt mit Steppy.</p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+</body>
+</html>

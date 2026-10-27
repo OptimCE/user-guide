@@ -29,6 +29,8 @@
     --oce-border: #e1dcc6;
     --oce-border-strong: #c8c0a0;
     --oce-accent: #b08a3a;
+    /* Bold step text: brandgreen.600 of the app's preset, 5.1:1 on white. */
+    --oce-strong: #2e7d32;
     --oce-primary-glow: rgba(67, 160, 71, 0.35);
 
     --oce-kbd-bg: #181e18;
@@ -81,6 +83,8 @@
     --oce-border: #2c3a2e;
     --oce-border-strong: #4a5a4c;
     --oce-accent: #d4b572;
+    /* brandgreen.300 on the dark cards. */
+    --oce-strong: #81c784;
     --oce-primary-glow: rgba(102, 187, 106, 0.40);
 
     --oce-kbd-bg: #f0f4f0;
@@ -166,11 +170,15 @@ a { color: var(--oce-primary-dark); }
 
 ::selection { background: var(--oce-primary); color: #fff; }
 
-/* Locale-driven visibility — set on <html lang="..."> and toggled per-page
-   either by Steppy emitting different lang attributes (per-guide locale files)
-   or by the on-page language switcher script (index, group, onboarding). */
-:root[lang="en"] .i18n-fr,
-:root:not([lang="en"]) .i18n-en {
+/* Locale-driven visibility for chrome rendered once per language as
+   .i18n-<loc> spans: the guide fragment's role badge (build.py passes it no
+   locale) and all of interactive.html (one file for every locale; its script
+   sets <html lang> from ?lang= / the player). Only the span matching <html lang>
+   shows. A new locale needs a line here as well as in steppy.guide.config.ts. */
+:root:not([lang="fr"]) .i18n-fr,
+:root:not([lang="en"]) .i18n-en,
+:root:not([lang="nl"]) .i18n-nl,
+:root:not([lang="de"]) .i18n-de {
     display: none !important;
 }
 
@@ -278,57 +286,85 @@ a.steppy-site-title:hover { color: var(--oce-primary-dark); }
     gap: 12px;
 }
 
-.steppy-locale-switch { margin: 0; }
-.steppy-locale-switch ul {
-    list-style: none;
-    margin: 0;
-    padding: 4px;
-    display: inline-flex;
-    gap: 2px;
-    background: var(--oce-paper-deep);
-    border: 1px solid var(--oce-border);
-    border-radius: 999px;
-}
-
-.steppy-locale-switch a,
-.steppy-locale-switch span,
-.steppy-locale-switch button {
+/* Language picker (_locale_select.html.j2) — a native <select> dressed as a
+   pill the height of the theme toggle next to it, with a globe on the left and
+   a chevron on the right (both absolutely placed, click-through). */
+.steppy-locale-select {
+    position: relative;
     display: inline-flex;
     align-items: center;
-    padding: 5px 12px;
-    border-radius: 999px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: none;
-    background: transparent;
+    margin: 0;
     color: var(--oce-text-muted);
-    cursor: pointer;
-    transition: background 150ms ease, color 150ms ease;
-    font-family: var(--font-body);
 }
 
-.steppy-locale-switch a:hover,
-.steppy-locale-switch button:hover {
+.steppy-locale-select select {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 36px;
+    margin: 0;
+    padding: 0 32px 0 34px;
+    border: 1px solid var(--oce-border);
+    border-radius: 999px;
+    background-color: var(--oce-card);
+    color: var(--oce-ink);
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.steppy-locale-select select:hover {
+    border-color: var(--oce-border-strong);
+    background-color: var(--oce-card-tint);
+}
+
+.steppy-locale-select select:focus-visible {
+    outline: 2px solid var(--oce-primary);
+    outline-offset: 3px;
+}
+
+/* The open option list is drawn by the OS; give it the page's colours. */
+.steppy-locale-select option {
+    background-color: var(--oce-card);
     color: var(--oce-ink);
 }
 
-.steppy-locale-switch span[aria-current="true"],
-.steppy-locale-switch button[aria-current="true"] {
-    background: var(--oce-ink);
-    color: var(--oce-paper);
-    box-shadow: 0 1px 2px rgba(14, 31, 18, 0.2);
+.steppy-locale-select svg {
+    position: absolute;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+    pointer-events: none;
 }
 
-:root[data-theme="dark"] .steppy-locale-switch span[aria-current="true"],
-:root[data-theme="dark"] .steppy-locale-switch button[aria-current="true"] {
-    background: var(--oce-primary-light);
-    color: var(--oce-paper-deep);
+.steppy-locale-select-icon { left: 12px; }
+.steppy-locale-select-chevron { right: 12px; width: 14px; height: 14px; }
+
+.steppy-locale-select select:hover ~ .steppy-locale-select-chevron,
+.steppy-locale-select select:focus-visible ~ .steppy-locale-select-chevron {
+    color: var(--oce-ink);
 }
 
-/* Layout switch — same pill shape as the locale switch, sits next to it. */
+:root[data-theme="dark"] .steppy-locale-select select {
+    color-scheme: dark;
+}
+
+.steppy-visually-hidden {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Layout switch — pill-shaped segmented control, like the mode switch. */
 .steppy-layout-switch { margin: 0; }
 .steppy-layout-switch ul {
     list-style: none;
@@ -390,7 +426,7 @@ a.steppy-site-title:hover { color: var(--oce-primary-dark); }
     border-radius: 999px;
 }
 
-/* Direct-child selectors only — the inner <span class="i18n-fr">/<span class="i18n-en">
+/* Direct-child selectors only — the inner <span class="i18n-<loc>"> spans
    inside each link must NOT pick up the pill's display/padding, or they get
    their own nested inline-flex box and the font baseline shifts. */
 .steppy-mode-switch li > a,
@@ -1397,7 +1433,7 @@ a.steppy-site-title:hover { color: var(--oce-primary-dark); }
     .steppy-site-header,
     .steppy-site-footer,
     .oce-theme-toggle,
-    .steppy-locale-switch,
+    .steppy-locale-select,
     .steppy-layout-switch,
     .steppy-mode-switch,
     .steppy-onboarding-strip { display: none; }
@@ -1477,3 +1513,9 @@ a.steppy-site-title:hover { color: var(--oce-primary-dark); }
         font-size: 14px;
     }
 }
+/* textStyles (steppy.guide.config.ts) */
+:root {
+  --steppy-strong-weight: 700;
+  --steppy-strong-color: var(--oce-strong);
+}
+.steppy-guide .steppy-step-content strong { font-weight: var(--steppy-strong-weight, bolder); color: var(--steppy-strong-color, inherit); }

@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Verteilungsschlüssel generieren (OLAGSA) — OptimCE — Benutzeranleitungen</title>
+    <meta name="description" content="Verteilungsschlüssel mit dem OLAGSA-Algorithmus aus Messdaten generieren und anschließend einen davon speichern.">
+    <link rel="canonical" href="https://guide.optimce.be/algorithm-generate/de.html">
+    <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/algorithm-generate/fr.html">
+    <link rel="alternate" hreflang="en" href="https://guide.optimce.be/algorithm-generate/en.html">
+    <link rel="alternate" hreflang="nl" href="https://guide.optimce.be/algorithm-generate/nl.html">
+    <link rel="alternate" hreflang="de" href="https://guide.optimce.be/algorithm-generate/de.html">
+    <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/algorithm-generate/fr.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Verteilungsschlüssel generieren (OLAGSA)">
+    <meta property="og:description" content="Verteilungsschlüssel mit dem OLAGSA-Algorithmus aus Messdaten generieren und anschließend einen davon speichern.">
+    <meta property="og:url" content="https://guide.optimce.be/algorithm-generate/de.html">
+    <meta property="og:site_name" content="OptimCE — Benutzeranleitungen">
+    <meta property="og:image" content="https://guide.optimce.be/assets/algorithm-generate/de/desktop/step-20.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Remember the language of the file we just loaded: interactive.html is one
+        // URL for every locale and opens in this language when no ?lang= is given.
+        try { localStorage.setItem("oce-lang", "de"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.de.html" aria-label="OptimCE — Benutzeranleitungen">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.de.html">OptimCE — Benutzeranleitungen</a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.de.html">Startseite</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../key-generation/de.html">Schlüsselgenerierung</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">Verteilungsschlüssel generieren (OLAGSA)</span>
+        </nav>
+
+        <div class="steppy-header-actions">
+<label class="steppy-locale-select">
+    <span class="steppy-visually-hidden">Sprache</span>
+    <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <select autocomplete="off">        <option value="./fr.html" lang="fr">Français</option>        <option value="./en.html" lang="en">English</option>        <option value="./nl.html" lang="nl">Nederlands</option>        <option value="./de.html" lang="de" selected>Deutsch</option>    </select>
+    <svg class="steppy-locale-select-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</label>
+<script>
+  (function () {
+    var sel = document.querySelector(".steppy-locale-select select");
+    if (!sel) return;
+    sel.addEventListener("change", function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+    // Back from the language just picked can restore this page from the
+    // bfcache with that option still showing — snap it back to this page's own.
+    window.addEventListener("pageshow", function () {
+      var own = sel.querySelector("option[selected]");
+      if (own) sel.value = own.value;
+    });
+  })();
+</script>            <button type="button" class="oce-theme-toggle" aria-label="Design wechseln">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-mode-switch" aria-label="Guide mode">
+            <ul>
+                <li>
+                    <span aria-current="true">Schritt für Schritt</span>
+                </li>
+                <li>
+                    <a href="./interactive.html?lang=de">Interaktiv</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Verteilungsschlüssel generieren (OLAGSA)</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Zusatzdienste öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Klicken Sie im Abschnitt „Gemeinschaft“ der Seitenleiste auf „Zusatzdienste“, um die aktiven Module der Gemeinschaft aufzurufen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-20.png" alt="1. Zusatzdienste öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Generierungsmodul verfügbar</span>
+        </h2>
+        <div class="steppy-step-subtitle">Zusatzdienste</div>
+        <div class="steppy-step-content">Die Karte „Generierung von Verteilschlüsseln“ wird mit dem Badge „Aktiviert“ angezeigt. Klicken Sie darauf, um das Generierungsmodul zu öffnen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-26.png" alt="2. Generierungsmodul verfügbar" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Generierungsmodul öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Klicken Sie auf die Karte, um das OLAGSA-Modul zur Generierung von Verteilungsschlüsseln zu öffnen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-27.png" alt="3. Generierungsmodul öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Seite zur Schlüsselgenerierung</span>
+        </h2>
+        <div class="steppy-step-subtitle">OLAGSA-Modul</div>
+        <div class="steppy-step-content">Die Seite zur Generierung von Verteilungsschlüsseln wird mit dem Konfigurationsformular angezeigt. Wählen Sie den Algorithmus aus, geben Sie die Parameter ein und importieren Sie Ihre Datendatei, um eine neue Generierung zu starten.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-29.png" alt="4. Seite zur Schlüsselgenerierung" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>OLAGSA-Algorithmus auswählen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Konfiguration</div>
+        <div class="steppy-step-content">Klicken Sie auf die Auswahlliste „Algorithmus“ und wählen Sie „OLAGSA“. Daraufhin erscheint das Formular mit den Parametern dieses genetischen Algorithmus.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-30.png" alt="5. OLAGSA-Algorithmus auswählen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Generierung und Einspeisung benennen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Konfiguration</div>
+        <div class="steppy-step-content">Geben Sie einen Namen für diese Generierung (interne Kennung) und den Namen der zugehörigen Einspeisung ein — hier „Production“, um die Produktionsdaten zu verwenden.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-33.png" alt="6. Generierung und Einspeisung benennen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Anzahl der Iterationen festlegen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Hauptparameter</div>
+        <div class="steppy-step-content">Geben Sie „3“ in das Feld „Anzahl der Iterationen“ ein. Dieser Parameter legt die Anzahl unabhängiger Lösungen fest, die der genetische Algorithmus OLAGSA berechnet.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-34.png" alt="7. Anzahl der Iterationen festlegen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Erweiterte Optionen öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">OLAGSA-Parameter</div>
+        <div class="steppy-step-content">Klicken Sie auf „Erweiterte Optionen“, um die Hyperparameter des genetischen Algorithmus anzuzeigen: Populationsgröße, Kreuzungsrate, Mutationsrate usw.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-35.png" alt="8. Erweiterte Optionen öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Hyperparameter des genetischen Algorithmus</span>
+        </h2>
+        <div class="steppy-step-subtitle">Erweiterte Optionen</div>
+        <div class="steppy-step-content">Die erweiterten Parameter von OLAGSA werden angezeigt: Generationen, Populationsgröße, artenübergreifende und arteninterne Kreuzungsrate, Mutationsrate, erwartete Artenanzahl und maximale Anzahl an Generationen ohne Verbesserung. Die Standardwerte eignen sich für die meisten Anwendungsfälle.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-37.png" alt="9. Hyperparameter des genetischen Algorithmus" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Datendatei importieren</span>
+        </h2>
+        <div class="steppy-step-subtitle">Eingabedaten</div>
+        <div class="steppy-step-content">Ziehen Sie Ihre CSV-Datei in den Importbereich oder klicken Sie darauf, um die Datendatei für die Generierung auszuwählen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-38.png" alt="10. Datendatei importieren" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Generierung starten</span>
+        </h2>
+        <div class="steppy-step-subtitle">Ausführung</div>
+        <div class="steppy-step-content">Klicken Sie auf „Generierung starten“, um die Aufgabe an die OLAGSA-Engine zu übermitteln. Die Generierung erscheint sofort in der Liste mit dem Status „Ausstehend“.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-39.png" alt="11. Generierung starten" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>Generierung übermittelt</span>
+        </h2>
+        <div class="steppy-step-subtitle">Statusverfolgung</div>
+        <div class="steppy-step-content">Die Generierung „Test Run 1“ erscheint in der Liste. Ein blinkender orangefarbener Punkt zeigt an, dass sie auf die Verarbeitung wartet; er wird grün, sobald die OLAGSA-Engine fertig ist.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-41.png" alt="12. Generierung übermittelt" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="13">
+        <h2>
+            <span class="steppy-step-number">13</span>
+            <span>Generierung erfolgreich abgeschlossen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Statusverfolgung</div>
+        <div class="steppy-step-content">Der Punkt wird grün: Die Generierung ist abgeschlossen. Die Verteilungsschlüssel wurden berechnet und können durch Aufklappen der Zeile eingesehen werden.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-45.png" alt="13. Generierung erfolgreich abgeschlossen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="14">
+        <h2>
+            <span class="steppy-step-number">14</span>
+            <span>Generierte Verteilungsschlüssel</span>
+        </h2>
+        <div class="steppy-step-subtitle">Ergebnisse</div>
+        <div class="steppy-step-content">Die Liste der berechneten Schlüssel erscheint unter der Generierung. Jeder Schlüssel entspricht einer optimierten OLAGSA-Lösung. Klicken Sie auf einen Schlüssel, um seine detaillierte Verteilung anzuzeigen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-48.png" alt="14. Generierte Verteilungsschlüssel" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="15">
+        <h2>
+            <span class="steppy-step-number">15</span>
+            <span>Schlüsseldetail und Verteilung pro Iteration</span>
+        </h2>
+        <div class="steppy-step-subtitle">Prüfung</div>
+        <div class="steppy-step-content">Die Verteilungstabelle dieses Schlüssels wird angezeigt, mit den vom Algorithmus berechneten Werten. Mit der Schaltfläche „Schlüssel in /keys speichern“ legen Sie diesen Schlüssel in der Verteilungsschlüsselverwaltung ab.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-51.png" alt="15. Schlüsseldetail und Verteilung pro Iteration" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="16">
+        <h2>
+            <span class="steppy-step-number">16</span>
+            <span>Schlüssel im Modul speichern</span>
+        </h2>
+        <div class="steppy-step-subtitle">Speichern</div>
+        <div class="steppy-step-content">Klicken Sie auf „Schlüssel in /keys speichern“, um diesen Verteilungsschlüssel in der Verteilungsschlüsselverwaltung abzulegen, wo er über die Verwaltung der Gemeinschaft zugänglich ist.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-52.png" alt="16. Schlüssel im Modul speichern" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="17">
+        <h2>
+            <span class="steppy-step-number">17</span>
+            <span>Speichern bestätigen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Speichern</div>
+        <div class="steppy-step-content">Ein Bestätigungsdialog wird angezeigt. Klicken Sie auf die Bestätigungsschaltfläche, um diesen Verteilungsschlüssel endgültig in der Verteilungsschlüsselverwaltung zu speichern.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-54.png" alt="17. Speichern bestätigen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="18">
+        <h2>
+            <span class="steppy-step-number">18</span>
+            <span>Verteilungsschlüssel öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Klicken Sie im Abschnitt „Verwaltung“ der Seitenleiste auf „Verteilungsschlüsselverwaltung“, um die für die aktive Gemeinschaft gespeicherten Verteilungsschlüssel anzuzeigen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-59.png" alt="18. Verteilungsschlüssel öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="19">
+        <h2>
+            <span class="steppy-step-number">19</span>
+            <span>Schlüssel in der Verteilungsschlüsselverwaltung sichtbar</span>
+        </h2>
+        <div class="steppy-step-subtitle">Endergebnis</div>
+        <div class="steppy-step-content">Der aus dem OLAGSA-Modul gespeicherte Schlüssel erscheint jetzt in der Liste der Verteilungsschlüssel der Gemeinschaft. Er steht berechtigten Mitgliedern zur Verfügung.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/desktop/step-65.png" alt="19. Schlüssel in der Verteilungsschlüsselverwaltung sichtbar" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Verteilungsschlüssel generieren (OLAGSA)</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Zusatzdienste öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und tippen Sie dann im Abschnitt „Gemeinschaft“ auf „Zusatzdienste“.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-23.png" alt="1. Zusatzdienste öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Generierungsmodul verfügbar</span>
+        </h2>
+        <div class="steppy-step-subtitle">Zusatzdienste</div>
+        <div class="steppy-step-content">Die Karte „Generierung von Verteilschlüsseln“ wird mit dem Badge „Aktiviert“ angezeigt. Klicken Sie darauf, um das Generierungsmodul zu öffnen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-26.png" alt="2. Generierungsmodul verfügbar" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Generierungsmodul öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Klicken Sie auf die Karte, um das OLAGSA-Modul zur Generierung von Verteilungsschlüsseln zu öffnen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-27.png" alt="3. Generierungsmodul öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>Seite zur Schlüsselgenerierung</span>
+        </h2>
+        <div class="steppy-step-subtitle">OLAGSA-Modul</div>
+        <div class="steppy-step-content">Die Seite zur Generierung von Verteilungsschlüsseln wird mit dem Konfigurationsformular angezeigt. Wählen Sie den Algorithmus aus, geben Sie die Parameter ein und importieren Sie Ihre Datendatei, um eine neue Generierung zu starten.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-29.png" alt="4. Seite zur Schlüsselgenerierung" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>OLAGSA-Algorithmus auswählen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Konfiguration</div>
+        <div class="steppy-step-content">Klicken Sie auf die Auswahlliste „Algorithmus“ und wählen Sie „OLAGSA“. Daraufhin erscheint das Formular mit den Parametern dieses genetischen Algorithmus.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-30.png" alt="5. OLAGSA-Algorithmus auswählen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Generierung und Einspeisung benennen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Konfiguration</div>
+        <div class="steppy-step-content">Geben Sie einen Namen für diese Generierung (interne Kennung) und den Namen der zugehörigen Einspeisung ein — hier „Production“, um die Produktionsdaten zu verwenden.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-33.png" alt="6. Generierung und Einspeisung benennen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Anzahl der Iterationen festlegen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Hauptparameter</div>
+        <div class="steppy-step-content">Geben Sie „3“ in das Feld „Anzahl der Iterationen“ ein. Dieser Parameter legt die Anzahl unabhängiger Lösungen fest, die der genetische Algorithmus OLAGSA berechnet.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-34.png" alt="7. Anzahl der Iterationen festlegen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Erweiterte Optionen öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">OLAGSA-Parameter</div>
+        <div class="steppy-step-content">Klicken Sie auf „Erweiterte Optionen“, um die Hyperparameter des genetischen Algorithmus anzuzeigen: Populationsgröße, Kreuzungsrate, Mutationsrate usw.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-35.png" alt="8. Erweiterte Optionen öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Hyperparameter des genetischen Algorithmus</span>
+        </h2>
+        <div class="steppy-step-subtitle">Erweiterte Optionen</div>
+        <div class="steppy-step-content">Die erweiterten Parameter von OLAGSA werden angezeigt: Generationen, Populationsgröße, artenübergreifende und arteninterne Kreuzungsrate, Mutationsrate, erwartete Artenanzahl und maximale Anzahl an Generationen ohne Verbesserung. Die Standardwerte eignen sich für die meisten Anwendungsfälle.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-37.png" alt="9. Hyperparameter des genetischen Algorithmus" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Datendatei importieren</span>
+        </h2>
+        <div class="steppy-step-subtitle">Eingabedaten</div>
+        <div class="steppy-step-content">Ziehen Sie Ihre CSV-Datei in den Importbereich oder klicken Sie darauf, um die Datendatei für die Generierung auszuwählen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-38.png" alt="10. Datendatei importieren" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>Generierung starten</span>
+        </h2>
+        <div class="steppy-step-subtitle">Ausführung</div>
+        <div class="steppy-step-content">Klicken Sie auf „Generierung starten“, um die Aufgabe an die OLAGSA-Engine zu übermitteln. Die Generierung erscheint sofort in der Liste mit dem Status „Ausstehend“.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-39.png" alt="11. Generierung starten" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>Generierung übermittelt</span>
+        </h2>
+        <div class="steppy-step-subtitle">Statusverfolgung</div>
+        <div class="steppy-step-content">Die Generierung „Test Run 1“ erscheint in der Liste. Ein blinkender orangefarbener Punkt zeigt an, dass sie auf die Verarbeitung wartet; er wird grün, sobald die OLAGSA-Engine fertig ist.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-41.png" alt="12. Generierung übermittelt" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="13">
+        <h2>
+            <span class="steppy-step-number">13</span>
+            <span>Generierung erfolgreich abgeschlossen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Statusverfolgung</div>
+        <div class="steppy-step-content">Der Punkt wird grün: Die Generierung ist abgeschlossen. Die Verteilungsschlüssel wurden berechnet und können durch Aufklappen der Zeile eingesehen werden.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-45.png" alt="13. Generierung erfolgreich abgeschlossen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="14">
+        <h2>
+            <span class="steppy-step-number">14</span>
+            <span>Generierte Verteilungsschlüssel</span>
+        </h2>
+        <div class="steppy-step-subtitle">Ergebnisse</div>
+        <div class="steppy-step-content">Die Liste der berechneten Schlüssel erscheint unter der Generierung. Jeder Schlüssel entspricht einer optimierten OLAGSA-Lösung. Klicken Sie auf einen Schlüssel, um seine detaillierte Verteilung anzuzeigen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-48.png" alt="14. Generierte Verteilungsschlüssel" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="15">
+        <h2>
+            <span class="steppy-step-number">15</span>
+            <span>Schlüsseldetail und Verteilung pro Iteration</span>
+        </h2>
+        <div class="steppy-step-subtitle">Prüfung</div>
+        <div class="steppy-step-content">Die Verteilungstabelle dieses Schlüssels wird angezeigt, mit den vom Algorithmus berechneten Werten. Mit der Schaltfläche „Schlüssel in /keys speichern“ legen Sie diesen Schlüssel in der Verteilungsschlüsselverwaltung ab.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-51.png" alt="15. Schlüsseldetail und Verteilung pro Iteration" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="16">
+        <h2>
+            <span class="steppy-step-number">16</span>
+            <span>Schlüssel im Modul speichern</span>
+        </h2>
+        <div class="steppy-step-subtitle">Speichern</div>
+        <div class="steppy-step-content">Klicken Sie auf „Schlüssel in /keys speichern“, um diesen Verteilungsschlüssel in der Verteilungsschlüsselverwaltung abzulegen, wo er über die Verwaltung der Gemeinschaft zugänglich ist.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-52.png" alt="16. Schlüssel im Modul speichern" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="17">
+        <h2>
+            <span class="steppy-step-number">17</span>
+            <span>Speichern bestätigen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Speichern</div>
+        <div class="steppy-step-content">Ein Bestätigungsdialog wird angezeigt. Klicken Sie auf die Bestätigungsschaltfläche, um diesen Verteilungsschlüssel endgültig in der Verteilungsschlüsselverwaltung zu speichern.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-54.png" alt="17. Speichern bestätigen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="18">
+        <h2>
+            <span class="steppy-step-number">18</span>
+            <span>Verteilungsschlüssel öffnen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigation</div>
+        <div class="steppy-step-content">Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und tippen Sie dann im Abschnitt „Verwaltung“ auf „Verteilungsschlüsselverwaltung“, um die Verteilungsschlüssel anzuzeigen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-62.png" alt="18. Verteilungsschlüssel öffnen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="19">
+        <h2>
+            <span class="steppy-step-number">19</span>
+            <span>Schlüssel in der Verteilungsschlüsselverwaltung sichtbar</span>
+        </h2>
+        <div class="steppy-step-subtitle">Endergebnis</div>
+        <div class="steppy-step-content">Der aus dem OLAGSA-Modul gespeicherte Schlüssel erscheint jetzt in der Liste der Verteilungsschlüssel der Gemeinschaft. Er steht berechtigten Mitgliedern zur Verfügung.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/algorithm-generate/de/mobile/step-65.png" alt="19. Schlüssel in der Verteilungsschlüsselverwaltung sichtbar" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p>Erstellt mit Steppy.</p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 398}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 398}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"}}, "screenshot": "../assets/algorithm-generate/de/desktop/step-20.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/algorithm-generate/de/desktop/step-20.png", "subtitle": "Navigation", "text": "Klicken Sie im Abschnitt \u201eGemeinschaft\u201c der Seitenleiste auf \u201eZusatzdienste\u201c, um die aktiven Module der Gemeinschaft aufzurufen.", "title": "Zusatzdienste \u00f6ffnen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/desktop/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/algorithm-generate/de/desktop/step-26.png", "subtitle": "Zusatzdienste", "text": "Die Karte \u201eGenerierung von Verteilschl\u00fcsseln\u201c wird mit dem Badge \u201eAktiviert\u201c angezeigt. Klicken Sie darauf, um das Generierungsmodul zu \u00f6ffnen.", "title": "Generierungsmodul verf\u00fcgbar", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 171, "width": 416, "x": 114, "y": 142}, "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 171, "width": 416, "x": 114, "y": 142}, "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"}}, "screenshot": "../assets/algorithm-generate/de/desktop/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/algorithm-generate/de/desktop/step-27.png", "subtitle": "Navigation", "text": "Klicken Sie auf die Karte, um das OLAGSA-Modul zur Generierung von Verteilungsschl\u00fcsseln zu \u00f6ffnen.", "title": "Generierungsmodul \u00f6ffnen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/desktop/step-29.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/algorithm-generate/de/desktop/step-29.png", "subtitle": "OLAGSA-Modul", "text": "Die Seite zur Generierung von Verteilungsschl\u00fcsseln wird mit dem Konfigurationsformular angezeigt. W\u00e4hlen Sie den Algorithmus aus, geben Sie die Parameter ein und importieren Sie Ihre Datendatei, um eine neue Generierung zu starten.", "title": "Seite zur Schl\u00fcsselgenerierung", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 396.65625, "x": 139, "y": 241}, "selector": "[data-testid=\"algorithm-hub__select--algorithm\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 396.65625, "x": 139, "y": 241}, "selector": "[data-testid=\"algorithm-hub__select--algorithm\"]"}}, "screenshot": "../assets/algorithm-generate/de/desktop/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/algorithm-generate/de/desktop/step-30.png", "subtitle": "Konfiguration", "text": "Klicken Sie auf die Auswahlliste \u201eAlgorithmus\u201c und w\u00e4hlen Sie \u201eOLAGSA\u201c. Daraufhin erscheint das Formular mit den Parametern dieses genetischen Algorithmus.", "title": "OLAGSA-Algorithmus ausw\u00e4hlen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 607, "x": 762, "y": 461}, "selector": "[data-testid=\"algorithm-hub__input--injection-name\"]"}, "value": "Production"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 607, "x": 762, "y": 461}, "selector": "[data-testid=\"algorithm-hub__input--injection-name\"]"}, "value": "Production"}, "screenshot": "../assets/algorithm-generate/de/desktop/step-33.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/algorithm-generate/de/desktop/step-33.png", "subtitle": "Konfiguration", "text": "Geben Sie einen Namen f\u00fcr diese Generierung (interne Kennung) und den Namen der zugeh\u00f6rigen Einspeisung ein \u2014 hier \u201eProduction\u201c, um die Produktionsdaten zu verwenden.", "title": "Generierung und Einspeisung benennen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 607, "x": 139, "y": 804}, "selector": "[data-testid=\"algo-form__input--iterations\"] input"}, "value": "3"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 607, "x": 139, "y": 804}, "selector": "[data-testid=\"algo-form__input--iterations\"] input"}, "value": "3"}, "screenshot": "../assets/algorithm-generate/de/desktop/step-34.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/algorithm-generate/de/desktop/step-34.png", "subtitle": "Hauptparameter", "text": "Geben Sie \u201e3\u201c in das Feld \u201eAnzahl der Iterationen\u201c ein. Dieser Parameter legt die Anzahl unabh\u00e4ngiger L\u00f6sungen fest, die der genetische Algorithmus OLAGSA berechnet.", "title": "Anzahl der Iterationen festlegen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 152.703125, "x": 139, "y": 879.5}, "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 152.703125, "x": 139, "y": 879.5}, "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"}}, "screenshot": "../assets/algorithm-generate/de/desktop/step-35.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/algorithm-generate/de/desktop/step-35.png", "subtitle": "OLAGSA-Parameter", "text": "Klicken Sie auf \u201eErweiterte Optionen\u201c, um die Hyperparameter des genetischen Algorithmus anzuzeigen: Populationsgr\u00f6\u00dfe, Kreuzungsrate, Mutationsrate usw.", "title": "Erweiterte Optionen \u00f6ffnen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/desktop/step-37.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/algorithm-generate/de/desktop/step-37.png", "subtitle": "Erweiterte Optionen", "text": "Die erweiterten Parameter von OLAGSA werden angezeigt: Generationen, Populationsgr\u00f6\u00dfe, arten\u00fcbergreifende und arteninterne Kreuzungsrate, Mutationsrate, erwartete Artenanzahl und maximale Anzahl an Generationen ohne Verbesserung. Die Standardwerte eignen sich f\u00fcr die meisten Anwendungsf\u00e4lle.", "title": "Hyperparameter des genetischen Algorithmus", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 128, "width": 1230, "x": 139, "y": 563}, "selector": "[data-testid=\"algorithm-hub__dropzone\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 128, "width": 1230, "x": 139, "y": 563}, "selector": "[data-testid=\"algorithm-hub__dropzone\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/de/desktop/step-38.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/algorithm-generate/de/desktop/step-38.png", "subtitle": "Eingabedaten", "text": "Ziehen Sie Ihre CSV-Datei in den Importbereich oder klicken Sie darauf, um die Datendatei f\u00fcr die Generierung auszuw\u00e4hlen.", "title": "Datendatei importieren", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 195.671875, "x": 1173.328125, "y": 624}, "selector": "[data-testid=\"algorithm-hub__btn--submit\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 195.671875, "x": 1173.328125, "y": 624}, "selector": "[data-testid=\"algorithm-hub__btn--submit\"] button"}}, "screenshot": "../assets/algorithm-generate/de/desktop/step-39.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/algorithm-generate/de/desktop/step-39.png", "subtitle": "Ausf\u00fchrung", "text": "Klicken Sie auf \u201eGenerierung starten\u201c, um die Aufgabe an die OLAGSA-Engine zu \u00fcbermitteln. Die Generierung erscheint sofort in der Liste mit dem Status \u201eAusstehend\u201c.", "title": "Generierung starten", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/desktop/step-41.png", "viewport": {"height": 900, "width": 1440}}], "index": 12, "screenshot": "../assets/algorithm-generate/de/desktop/step-41.png", "subtitle": "Statusverfolgung", "text": "Die Generierung \u201eTest Run 1\u201c erscheint in der Liste. Ein blinkender orangefarbener Punkt zeigt an, dass sie auf die Verarbeitung wartet; er wird gr\u00fcn, sobald die OLAGSA-Engine fertig ist.", "title": "Generierung \u00fcbermittelt", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/desktop/step-45.png", "viewport": {"height": 900, "width": 1440}}], "index": 13, "screenshot": "../assets/algorithm-generate/de/desktop/step-45.png", "subtitle": "Statusverfolgung", "text": "Der Punkt wird gr\u00fcn: Die Generierung ist abgeschlossen. Die Verteilungsschl\u00fcssel wurden berechnet und k\u00f6nnen durch Aufklappen der Zeile eingesehen werden.", "title": "Generierung erfolgreich abgeschlossen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/desktop/step-48.png", "viewport": {"height": 900, "width": 1440}}], "index": 14, "screenshot": "../assets/algorithm-generate/de/desktop/step-48.png", "subtitle": "Ergebnisse", "text": "Die Liste der berechneten Schl\u00fcssel erscheint unter der Generierung. Jeder Schl\u00fcssel entspricht einer optimierten OLAGSA-L\u00f6sung. Klicken Sie auf einen Schl\u00fcssel, um seine detaillierte Verteilung anzuzeigen.", "title": "Generierte Verteilungsschl\u00fcssel", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/desktop/step-51.png", "viewport": {"height": 900, "width": 1440}}], "index": 15, "screenshot": "../assets/algorithm-generate/de/desktop/step-51.png", "subtitle": "Pr\u00fcfung", "text": "Die Verteilungstabelle dieses Schl\u00fcssels wird angezeigt, mit den vom Algorithmus berechneten Werten. Mit der Schaltfl\u00e4che \u201eSchl\u00fcssel in /keys speichern\u201c legen Sie diesen Schl\u00fcssel in der Verteilungsschl\u00fcsselverwaltung ab.", "title": "Schl\u00fcsseldetail und Verteilung pro Iteration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 32, "x": 1288, "y": 851.5}, "selector": "[data-testid^=\"key-row__btn--save--\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 32, "x": 1288, "y": 851.5}, "selector": "[data-testid^=\"key-row__btn--save--\"] button"}}, "screenshot": "../assets/algorithm-generate/de/desktop/step-52.png", "viewport": {"height": 900, "width": 1440}}], "index": 16, "screenshot": "../assets/algorithm-generate/de/desktop/step-52.png", "subtitle": "Speichern", "text": "Klicken Sie auf \u201eSchl\u00fcssel in /keys speichern\u201c, um diesen Verteilungsschl\u00fcssel in der Verteilungsschl\u00fcsselverwaltung abzulegen, wo er \u00fcber die Verwaltung der Gemeinschaft zug\u00e4nglich ist.", "title": "Schl\u00fcssel im Modul speichern", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/desktop/step-54.png", "viewport": {"height": 900, "width": 1440}}], "index": 17, "screenshot": "../assets/algorithm-generate/de/desktop/step-54.png", "subtitle": "Speichern", "text": "Ein Best\u00e4tigungsdialog wird angezeigt. Klicken Sie auf die Best\u00e4tigungsschaltfl\u00e4che, um diesen Verteilungsschl\u00fcssel endg\u00fcltig in der Verteilungsschl\u00fcsselverwaltung zu speichern.", "title": "Speichern best\u00e4tigen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 462.5}, "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 462.5}, "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"}}, "screenshot": "../assets/algorithm-generate/de/desktop/step-59.png", "viewport": {"height": 900, "width": 1440}}], "index": 18, "screenshot": "../assets/algorithm-generate/de/desktop/step-59.png", "subtitle": "Navigation", "text": "Klicken Sie im Abschnitt \u201eVerwaltung\u201c der Seitenleiste auf \u201eVerteilungsschl\u00fcsselverwaltung\u201c, um die f\u00fcr die aktive Gemeinschaft gespeicherten Verteilungsschl\u00fcssel anzuzeigen.", "title": "Verteilungsschl\u00fcssel \u00f6ffnen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/desktop/step-65.png", "viewport": {"height": 900, "width": 1440}}], "index": 19, "screenshot": "../assets/algorithm-generate/de/desktop/step-65.png", "subtitle": "Endergebnis", "text": "Der aus dem OLAGSA-Modul gespeicherte Schl\u00fcssel erscheint jetzt in der Liste der Verteilungsschl\u00fcssel der Gemeinschaft. Er steht berechtigten Mitgliedern zur Verf\u00fcgung.", "title": "Schl\u00fcssel in der Verteilungsschl\u00fcsselverwaltung sichtbar", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 398}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 398}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"}}, "screenshot": "../assets/algorithm-generate/de/mobile/step-23.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/algorithm-generate/de/mobile/step-23.png", "subtitle": "Navigation", "text": "Tippen Sie auf das Men\u00fcsymbol, um das Navigationsmen\u00fc zu \u00f6ffnen, und tippen Sie dann im Abschnitt \u201eGemeinschaft\u201c auf \u201eZusatzdienste\u201c.", "title": "Zusatzdienste \u00f6ffnen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/mobile/step-26.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/algorithm-generate/de/mobile/step-26.png", "subtitle": "Zusatzdienste", "text": "Die Karte \u201eGenerierung von Verteilschl\u00fcsseln\u201c wird mit dem Badge \u201eAktiviert\u201c angezeigt. Klicken Sie darauf, um das Generierungsmodul zu \u00f6ffnen.", "title": "Generierungsmodul verf\u00fcgbar", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 171, "width": 358, "x": 16, "y": 318}, "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 171, "width": 358, "x": 16, "y": 318}, "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"}}, "screenshot": "../assets/algorithm-generate/de/mobile/step-27.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/algorithm-generate/de/mobile/step-27.png", "subtitle": "Navigation", "text": "Klicken Sie auf die Karte, um das OLAGSA-Modul zur Generierung von Verteilungsschl\u00fcsseln zu \u00f6ffnen.", "title": "Generierungsmodul \u00f6ffnen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/mobile/step-29.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/algorithm-generate/de/mobile/step-29.png", "subtitle": "OLAGSA-Modul", "text": "Die Seite zur Generierung von Verteilungsschl\u00fcsseln wird mit dem Konfigurationsformular angezeigt. W\u00e4hlen Sie den Algorithmus aus, geben Sie die Parameter ein und importieren Sie Ihre Datendatei, um eine neue Generierung zu starten.", "title": "Seite zur Schl\u00fcsselgenerierung", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 413}, "selector": "[data-testid=\"algorithm-hub__select--algorithm\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 413}, "selector": "[data-testid=\"algorithm-hub__select--algorithm\"]"}}, "screenshot": "../assets/algorithm-generate/de/mobile/step-30.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/algorithm-generate/de/mobile/step-30.png", "subtitle": "Konfiguration", "text": "Klicken Sie auf die Auswahlliste \u201eAlgorithmus\u201c und w\u00e4hlen Sie \u201eOLAGSA\u201c. Daraufhin erscheint das Formular mit den Parametern dieses genetischen Algorithmus.", "title": "OLAGSA-Algorithmus ausw\u00e4hlen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 24, "y": 401}, "selector": "[data-testid=\"algorithm-hub__input--injection-name\"]"}, "value": "Production"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 24, "y": 401}, "selector": "[data-testid=\"algorithm-hub__input--injection-name\"]"}, "value": "Production"}, "screenshot": "../assets/algorithm-generate/de/mobile/step-33.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/algorithm-generate/de/mobile/step-33.png", "subtitle": "Konfiguration", "text": "Geben Sie einen Namen f\u00fcr diese Generierung (interne Kennung) und den Namen der zugeh\u00f6rigen Einspeisung ein \u2014 hier \u201eProduction\u201c, um die Produktionsdaten zu verwenden.", "title": "Generierung und Einspeisung benennen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 736.796875}, "selector": "[data-testid=\"algo-form__input--iterations\"] input"}, "value": "3"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 316, "x": 37, "y": 736.796875}, "selector": "[data-testid=\"algo-form__input--iterations\"] input"}, "value": "3"}, "screenshot": "../assets/algorithm-generate/de/mobile/step-34.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/algorithm-generate/de/mobile/step-34.png", "subtitle": "Hauptparameter", "text": "Geben Sie \u201e3\u201c in das Feld \u201eAnzahl der Iterationen\u201c ein. Dieser Parameter legt die Anzahl unabh\u00e4ngiger L\u00f6sungen fest, die der genetische Algorithmus OLAGSA berechnet.", "title": "Anzahl der Iterationen festlegen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 152.703125, "x": 37, "y": 824.296875}, "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 20, "width": 152.703125, "x": 37, "y": 824.296875}, "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"}}, "screenshot": "../assets/algorithm-generate/de/mobile/step-35.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/algorithm-generate/de/mobile/step-35.png", "subtitle": "OLAGSA-Parameter", "text": "Klicken Sie auf \u201eErweiterte Optionen\u201c, um die Hyperparameter des genetischen Algorithmus anzuzeigen: Populationsgr\u00f6\u00dfe, Kreuzungsrate, Mutationsrate usw.", "title": "Erweiterte Optionen \u00f6ffnen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/mobile/step-37.png", "viewport": {"height": 844, "width": 390}}], "index": 9, "screenshot": "../assets/algorithm-generate/de/mobile/step-37.png", "subtitle": "Erweiterte Optionen", "text": "Die erweiterten Parameter von OLAGSA werden angezeigt: Generationen, Populationsgr\u00f6\u00dfe, arten\u00fcbergreifende und arteninterne Kreuzungsrate, Mutationsrate, erwartete Artenanzahl und maximale Anzahl an Generationen ohne Verbesserung. Die Standardwerte eignen sich f\u00fcr die meisten Anwendungsf\u00e4lle.", "title": "Hyperparameter des genetischen Algorithmus", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 104.796875, "width": 316, "x": 37, "y": 531}, "selector": "[data-testid=\"algorithm-hub__dropzone\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 104.796875, "width": 316, "x": 37, "y": 531}, "selector": "[data-testid=\"algorithm-hub__dropzone\"]"}, "value": null}, "screenshot": "../assets/algorithm-generate/de/mobile/step-38.png", "viewport": {"height": 844, "width": 390}}], "index": 10, "screenshot": "../assets/algorithm-generate/de/mobile/step-38.png", "subtitle": "Eingabedaten", "text": "Ziehen Sie Ihre CSV-Datei in den Importbereich oder klicken Sie darauf, um die Datendatei f\u00fcr die Generierung auszuw\u00e4hlen.", "title": "Datendatei importieren", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 195.671875, "x": 37, "y": 512}, "selector": "[data-testid=\"algorithm-hub__btn--submit\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 195.671875, "x": 37, "y": 512}, "selector": "[data-testid=\"algorithm-hub__btn--submit\"] button"}}, "screenshot": "../assets/algorithm-generate/de/mobile/step-39.png", "viewport": {"height": 844, "width": 390}}], "index": 11, "screenshot": "../assets/algorithm-generate/de/mobile/step-39.png", "subtitle": "Ausf\u00fchrung", "text": "Klicken Sie auf \u201eGenerierung starten\u201c, um die Aufgabe an die OLAGSA-Engine zu \u00fcbermitteln. Die Generierung erscheint sofort in der Liste mit dem Status \u201eAusstehend\u201c.", "title": "Generierung starten", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/mobile/step-41.png", "viewport": {"height": 844, "width": 390}}], "index": 12, "screenshot": "../assets/algorithm-generate/de/mobile/step-41.png", "subtitle": "Statusverfolgung", "text": "Die Generierung \u201eTest Run 1\u201c erscheint in der Liste. Ein blinkender orangefarbener Punkt zeigt an, dass sie auf die Verarbeitung wartet; er wird gr\u00fcn, sobald die OLAGSA-Engine fertig ist.", "title": "Generierung \u00fcbermittelt", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/mobile/step-45.png", "viewport": {"height": 844, "width": 390}}], "index": 13, "screenshot": "../assets/algorithm-generate/de/mobile/step-45.png", "subtitle": "Statusverfolgung", "text": "Der Punkt wird gr\u00fcn: Die Generierung ist abgeschlossen. Die Verteilungsschl\u00fcssel wurden berechnet und k\u00f6nnen durch Aufklappen der Zeile eingesehen werden.", "title": "Generierung erfolgreich abgeschlossen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/mobile/step-48.png", "viewport": {"height": 844, "width": 390}}], "index": 14, "screenshot": "../assets/algorithm-generate/de/mobile/step-48.png", "subtitle": "Ergebnisse", "text": "Die Liste der berechneten Schl\u00fcssel erscheint unter der Generierung. Jeder Schl\u00fcssel entspricht einer optimierten OLAGSA-L\u00f6sung. Klicken Sie auf einen Schl\u00fcssel, um seine detaillierte Verteilung anzuzeigen.", "title": "Generierte Verteilungsschl\u00fcssel", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/mobile/step-51.png", "viewport": {"height": 844, "width": 390}}], "index": 15, "screenshot": "../assets/algorithm-generate/de/mobile/step-51.png", "subtitle": "Pr\u00fcfung", "text": "Die Verteilungstabelle dieses Schl\u00fcssels wird angezeigt, mit den vom Algorithmus berechneten Werten. Mit der Schaltfl\u00e4che \u201eSchl\u00fcssel in /keys speichern\u201c legen Sie diesen Schl\u00fcssel in der Verteilungsschl\u00fcsselverwaltung ab.", "title": "Schl\u00fcsseldetail und Verteilung pro Iteration", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 32, "x": 268, "y": 793.796875}, "selector": "[data-testid^=\"key-row__btn--save--\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 32, "x": 268, "y": 793.796875}, "selector": "[data-testid^=\"key-row__btn--save--\"] button"}}, "screenshot": "../assets/algorithm-generate/de/mobile/step-52.png", "viewport": {"height": 844, "width": 390}}], "index": 16, "screenshot": "../assets/algorithm-generate/de/mobile/step-52.png", "subtitle": "Speichern", "text": "Klicken Sie auf \u201eSchl\u00fcssel in /keys speichern\u201c, um diesen Verteilungsschl\u00fcssel in der Verteilungsschl\u00fcsselverwaltung abzulegen, wo er \u00fcber die Verwaltung der Gemeinschaft zug\u00e4nglich ist.", "title": "Schl\u00fcssel im Modul speichern", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/mobile/step-54.png", "viewport": {"height": 844, "width": 390}}], "index": 17, "screenshot": "../assets/algorithm-generate/de/mobile/step-54.png", "subtitle": "Speichern", "text": "Ein Best\u00e4tigungsdialog wird angezeigt. Klicken Sie auf die Best\u00e4tigungsschaltfl\u00e4che, um diesen Verteilungsschl\u00fcssel endg\u00fcltig in der Verteilungsschl\u00fcsselverwaltung zu speichern.", "title": "Speichern best\u00e4tigen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 462.5}, "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 462.5}, "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"}}, "screenshot": "../assets/algorithm-generate/de/mobile/step-62.png", "viewport": {"height": 844, "width": 390}}], "index": 18, "screenshot": "../assets/algorithm-generate/de/mobile/step-62.png", "subtitle": "Navigation", "text": "Tippen Sie auf das Men\u00fcsymbol, um das Navigationsmen\u00fc zu \u00f6ffnen, und tippen Sie dann im Abschnitt \u201eVerwaltung\u201c auf \u201eVerteilungsschl\u00fcsselverwaltung\u201c, um die Verteilungsschl\u00fcssel anzuzeigen.", "title": "Verteilungsschl\u00fcssel \u00f6ffnen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/algorithm-generate/de/mobile/step-65.png", "viewport": {"height": 844, "width": 390}}], "index": 19, "screenshot": "../assets/algorithm-generate/de/mobile/step-65.png", "subtitle": "Endergebnis", "text": "Der aus dem OLAGSA-Modul gespeicherte Schl\u00fcssel erscheint jetzt in der Liste der Verteilungsschl\u00fcssel der Gemeinschaft. Er steht berechtigten Mitgliedern zur Verf\u00fcgung.", "title": "Schl\u00fcssel in der Verteilungsschl\u00fcsselverwaltung sichtbar", "viewport": {"height": 844, "width": 390}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

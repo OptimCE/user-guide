@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "S'abonner à un service annexe",
-    "en": "Subscribe to an annexe service"
+    "en": "Subscribe to an annexe service",
+    "nl": "Abonneren op een annexdienst",
+    "de": "Zusatzdienst abonnieren"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir les services annexes",
-        "en": "Open annexe services"
+        "en": "Open annexe services",
+        "nl": "Annexdiensten openen",
+        "de": "Zusatzdienste öffnen"
       },
       "text": {
         "fr": "Dans la section « Communauté » de la barre latérale, cliquez sur « Services annexes » pour accéder aux modules complémentaires disponibles pour la communauté.",
-        "en": "In the sidebar's \"Community\" section, click \"Annexe services\" to access the optional modules available for the community."
+        "en": "In the sidebar's \"Community\" section, click \"Annexe services\" to access the optional modules available for the community.",
+        "nl": "Klik in de sectie “Gemeenschap” van de zijbalk op “Annexdiensten” om de aanvullende modules te openen die voor de gemeenschap beschikbaar zijn.",
+        "de": "Klicken Sie im Abschnitt „Gemeinschaft“ der Seitenleiste auf „Zusatzdienste“, um die für die Gemeinschaft verfügbaren Zusatzmodule aufzurufen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 398,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 398,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Annexdiensten openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en tik vervolgens in de sectie “Gemeenschap” op “Annexdiensten”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 398,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 398,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Zusatzdienste öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und tippen Sie dann im Abschnitt „Gemeinschaft“ auf „Zusatzdienste“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Aucun module activé",
-        "en": "No modules active"
+        "en": "No modules active",
+        "nl": "Geen module geactiveerd",
+        "de": "Kein Modul aktiviert"
       },
       "text": {
         "fr": "La page « Services annexes » s'affiche vide : aucun module complémentaire n'est encore activé pour cette communauté.",
-        "en": "The \"Annexe services\" page is empty — no optional module has been activated for this community yet."
+        "en": "The \"Annexe services\" page is empty — no optional module has been activated for this community yet.",
+        "nl": "De pagina “Annexdiensten” is leeg: er is nog geen enkele aanvullende module geactiveerd voor deze gemeenschap.",
+        "de": "Die Seite „Zusatzdienste“ ist leer: Für diese Gemeinschaft ist noch kein Zusatzmodul aktiviert."
       },
       "subtitle": {
         "fr": "Services annexes",
-        "en": "Annexe services"
+        "en": "Annexe services",
+        "nl": "Annexdiensten",
+        "de": "Zusatzdienste"
       },
       "captures": {
         "fr": {
@@ -224,6 +346,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -236,15 +410,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ajouter un module",
-        "en": "Add a module"
+        "en": "Add a module",
+        "nl": "Module toevoegen",
+        "de": "Modul hinzufügen"
       },
       "text": {
         "fr": "Cliquez sur « Ajouter un module » en haut à droite pour ouvrir le catalogue des modules disponibles pour cette communauté.",
-        "en": "Click \"Add a module\" in the top right to open the catalogue of available modules for this community."
+        "en": "Click \"Add a module\" in the top right to open the catalogue of available modules for this community.",
+        "nl": "Klik rechtsboven op “Module toevoegen” om de catalogus te openen van de modules die voor deze gemeenschap beschikbaar zijn.",
+        "de": "Klicken Sie oben rechts auf „Modul hinzufügen“, um den Katalog der für diese Gemeinschaft verfügbaren Module zu öffnen."
       },
       "subtitle": {
         "fr": "Abonnement",
-        "en": "Subscribe"
+        "en": "Subscribe",
+        "nl": "Abonnement",
+        "de": "Abonnement"
       },
       "captures": {
         "fr": {
@@ -342,6 +522,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/nl/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1181.328125,
+                      "y": 52,
+                      "width": 187.671875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"annexes-services-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/nl/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 187.671875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"annexes-services-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/de/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1185.171875,
+                      "y": 52,
+                      "width": 183.828125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"annexes-services-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/de/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 239,
+                      "width": 183.828125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"annexes-services-list__btn--add\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -354,15 +630,21 @@
       "waitAfter": 600,
       "title": {
         "fr": "Choisir un module",
-        "en": "Choose a module"
+        "en": "Choose a module",
+        "nl": "Een module kiezen",
+        "de": "Modul auswählen"
       },
       "text": {
         "fr": "Le dialogue liste les modules disponibles. Ici, le module « Génération de clés de répartition » est proposé avec sa description.",
-        "en": "The dialog lists available modules. Here, the \"Allocation key generation\" module is offered with its description."
+        "en": "The dialog lists available modules. Here, the \"Allocation key generation\" module is offered with its description.",
+        "nl": "Het dialoogvenster toont de beschikbare modules. Hier wordt de module “Generatie van verdeelsleutels” aangeboden, samen met de beschrijving ervan.",
+        "de": "Der Dialog listet die verfügbaren Module auf. Hier wird das Modul „Generierung von Verteilschlüsseln“ mit seiner Beschreibung angeboten."
       },
       "subtitle": {
         "fr": "Abonnement",
-        "en": "Subscribe"
+        "en": "Subscribe",
+        "nl": "Abonnement",
+        "de": "Abonnement"
       },
       "captures": {
         "fr": {
@@ -416,6 +698,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -428,15 +762,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Activer le module",
-        "en": "Activate the module"
+        "en": "Activate the module",
+        "nl": "De module activeren",
+        "de": "Modul aktivieren"
       },
       "text": {
         "fr": "Cliquez sur « Ajouter » en face du module « Génération de clés de répartition » pour l'activer dans la communauté.",
-        "en": "Click \"Add\" next to the \"Allocation key generation\" module to activate it for the community."
+        "en": "Click \"Add\" next to the \"Allocation key generation\" module to activate it for the community.",
+        "nl": "Klik op “Toevoegen” naast de module “Generatie van verdeelsleutels” om de module voor de gemeenschap te activeren.",
+        "de": "Klicken Sie neben dem Modul „Generierung von Verteilschlüsseln“ auf „Hinzufügen“, um es für die Gemeinschaft zu aktivieren."
       },
       "subtitle": {
         "fr": "Abonnement",
-        "en": "Subscribe"
+        "en": "Subscribe",
+        "nl": "Abonnement",
+        "de": "Abonnement"
       },
       "captures": {
         "fr": {
@@ -453,7 +793,7 @@
                   "target": {
                     "bbox": {
                       "x": 895.8125,
-                      "y": 243,
+                      "y": 188,
                       "width": 91.1875,
                       "height": 35
                     },
@@ -501,7 +841,7 @@
                   "target": {
                     "bbox": {
                       "x": 916.71875,
-                      "y": 259,
+                      "y": 212,
                       "width": 70.28125,
                       "height": 35
                     },
@@ -534,6 +874,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 874,
+                      "y": 196,
+                      "width": 113,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"add-annex-dialog__item--algorithm\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 243,
+                      "y": 192.203125,
+                      "width": 113,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"add-annex-dialog__item--algorithm\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 869.171875,
+                      "y": 188,
+                      "width": 117.828125,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"add-annex-dialog__item--algorithm\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 243.78125,
+                      "y": 192.203125,
+                      "width": 117.828125,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"add-annex-dialog__item--algorithm\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -546,15 +982,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Module activé",
-        "en": "Module activated"
+        "en": "Module activated",
+        "nl": "Module geactiveerd",
+        "de": "Modul aktiviert"
       },
       "text": {
         "fr": "La carte « Génération de clés de répartition » apparaît dans la grille avec le badge « Activé » : le module est maintenant accessible depuis cette page.",
-        "en": "The \"Allocation key generation\" card appears in the grid with the \"Activated\" badge — the module is now accessible from this page."
+        "en": "The \"Allocation key generation\" card appears in the grid with the \"Activated\" badge — the module is now accessible from this page.",
+        "nl": "De kaart “Generatie van verdeelsleutels” verschijnt in het raster met de badge “Geactiveerd”: de module is nu toegankelijk vanaf deze pagina.",
+        "de": "Die Karte „Generierung von Verteilschlüsseln“ erscheint mit dem Badge „Aktiviert“ im Raster: Das Modul ist jetzt über diese Seite zugänglich."
       },
       "subtitle": {
         "fr": "Abonnement",
-        "en": "Subscribe"
+        "en": "Subscribe",
+        "nl": "Abonnement",
+        "de": "Abonnement"
       },
       "captures": {
         "fr": {
@@ -600,6 +1042,58 @@
             "frames": [
               {
                 "screenshot": "../assets/annexes-subscribe/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/nl/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/de/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/annexes-subscribe/de/mobile/step-26.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

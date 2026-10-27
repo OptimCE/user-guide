@@ -1,0 +1,1437 @@
+{
+  "version": "1.1",
+  "slug": "onboarding-admin",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Vous êtes administrateur",
+    "en": "You are an administrator",
+    "nl": "U bent beheerder",
+    "de": "Sie sind Administrator"
+  },
+  "locales": [
+    "fr",
+    "en",
+    "nl",
+    "de"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Vous êtes administrateur",
+        "en": "You are an administrator",
+        "nl": "U bent beheerder",
+        "de": "Sie sind Administrator"
+      },
+      "text": {
+        "fr": "Vous avez tout ce qu'a un gestionnaire, ce tableau de bord compris, plus trois décisions qui n'appartiennent qu'à vous : les modules que la communauté utilise, qui la gère avec vous, et ses informations légales.",
+        "en": "You have everything a manager has, this dashboard included, plus three decisions that are yours alone: the modules the community uses, who runs it with you, and its legal details.",
+        "nl": "U hebt alles wat een manager heeft, dit dashboard inbegrepen, plus drie beslissingen die alleen u neemt: de modules die de gemeenschap gebruikt, wie haar samen met u beheert, en haar juridische gegevens.",
+        "de": "Sie haben alles, was ein Manager hat, diese Übersicht eingeschlossen, und dazu drei Entscheidungen, die nur Ihnen zustehen: die Module, die die Gemeinschaft nutzt, wer sie mit Ihnen verwaltet, und ihre rechtlichen Angaben."
+      },
+      "subtitle": {
+        "fr": "Tableau de bord",
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Les modules",
+        "en": "Modules",
+        "nl": "De modules",
+        "de": "Die Module"
+      },
+      "text": {
+        "fr": "Tant que des modules ne sont pas activés, le tableau de bord les propose dans **« Modules disponibles »** : **« Activer »** y abonne la communauté. Un gestionnaire, lui, est invité à vous le demander. Vous les retrouvez tous dans **« Services annexes »**.",
+        "en": "As long as some modules are not enabled, the dashboard offers them in **\"Available modules\"**: **\"Enable\"** subscribes the community there. A manager is told to ask you instead. You find them all in **\"Annex services\"**.",
+        "nl": "Zolang er modules niet geactiveerd zijn, stelt het dashboard ze voor in **“Beschikbare modules”**: **“Activeren”** abonneert de gemeenschap erop. Een manager wordt gevraagd het aan u te vragen. U vindt ze allemaal terug in **“Annexdiensten”**.",
+        "de": "Solange Module nicht aktiviert sind, bietet die Übersicht sie unter **„Verfügbare Module“** an: **„Aktivieren“** abonniert die Gemeinschaft dafür. Ein Manager wird gebeten, sich dafür an Sie zu wenden. Sie finden sie alle unter **„Zusatzdienste“**."
+      },
+      "subtitle": {
+        "fr": "Tableau de bord",
+        "en": "Dashboard",
+        "nl": "Dashboard",
+        "de": "Übersicht"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "La section « Gestion »",
+        "en": "The \"Management\" section",
+        "nl": "De sectie “Beheer”",
+        "de": "Der Abschnitt „Verwaltung“"
+      },
+      "text": {
+        "fr": "Comme administrateur, vous gardez la section **« Gestion »** des gestionnaires. Sa page **« Utilisateurs »** est celle où vous choisissez qui gère la communauté avec vous.",
+        "en": "As an administrator, you keep the managers' **\"Management\"** section. Its **\"Users\"** page is where you choose who runs the community with you.",
+        "nl": "Als beheerder behoudt u de sectie **“Beheer”** van de managers. Op de pagina **“Gebruikers”** kiest u wie de gemeenschap samen met u beheert.",
+        "de": "Als Administrator behalten Sie den Abschnitt **„Verwaltung“** der Manager. Auf der Seite **„Benutzer“** legen Sie fest, wer die Gemeinschaft mit Ihnen verwaltet."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/desktop/step-15.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/mobile/step-19.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Les utilisateurs de la communauté",
+        "en": "The community's users",
+        "nl": "De gebruikers van de gemeenschap",
+        "de": "Die Benutzer der Gemeinschaft"
+      },
+      "text": {
+        "fr": "Dans la section **« Gestion »**, cliquez sur **« Utilisateurs »**.",
+        "en": "In the **\"Management\"** section, click **\"Users\"**.",
+        "nl": "Klik in de sectie **“Beheer”** op **“Gebruikers”**.",
+        "de": "Klicken Sie im Abschnitt **„Verwaltung“** auf **„Benutzer“**."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 652.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--communities_users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 652.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--communities_users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Les utilisateurs de la communauté",
+              "text": "Dans la section **« Gestion »** du menu, touchez **« Utilisateurs »**.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 652.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--communities_users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 652.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--communities_users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "The community's users",
+              "text": "In the menu's **\"Management\"** section, tap **\"Users\"**.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 652.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--communities_users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 652.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--communities_users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De gebruikers van de gemeenschap",
+              "text": "Tik in de sectie **“Beheer”** van het menu op **“Gebruikers”**.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/desktop/step-16.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 652.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--communities_users\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 652.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--communities_users\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Die Benutzer der Gemeinschaft",
+              "text": "Tippen Sie im Abschnitt **„Verwaltung“** des Menüs auf **„Benutzer“**.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Inviter un gestionnaire",
+        "en": "Invite a manager",
+        "nl": "Een manager uitnodigen",
+        "de": "Einen Manager einladen"
+      },
+      "text": {
+        "fr": "Seul un administrateur peut faire entrer un gestionnaire : **« Inviter un gestionnaire »** lui envoie une invitation par e-mail, qu'il accepte depuis ses invitations.",
+        "en": "Only an administrator can bring in a manager: **\"Invite a manager\"** sends them an invitation by email, which they accept from their invitations.",
+        "nl": "Alleen een beheerder kan een manager toevoegen: **“Een manager uitnodigen”** stuurt hem een uitnodiging per e-mail, die hij aanvaardt vanuit zijn uitnodigingen.",
+        "de": "Nur ein Administrator kann einen Manager hinzufügen: **„Einen Manager einladen“** sendet ihm eine Einladung per E-Mail, die er in seinen Einladungen annimmt."
+      },
+      "subtitle": {
+        "fr": "Utilisateur de la communauté",
+        "en": "Community users",
+        "nl": "Gebruiker van de gemeenschap",
+        "de": "Benutzer der Gemeinschaft"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Invitations et rôles",
+        "en": "Invitations and roles",
+        "nl": "Uitnodigingen en rollen",
+        "de": "Einladungen und Rollen"
+      },
+      "text": {
+        "fr": "**« Voir invitation en attente »** montre qui n'a pas encore répondu. Dans la liste, vous seul pouvez changer le rôle d'un utilisateur — membre, gestionnaire ou administrateur — ou le retirer de la communauté.",
+        "en": "**\"View pending invitations\"** shows who has not answered yet. In the list, you alone can change a user's role — member, manager or administrator — or remove them from the community.",
+        "nl": "**“Uitnodigingen in behandeling bekijken”** toont wie nog niet heeft geantwoord. In de lijst kunt alleen u de rol van een gebruiker wijzigen — lid, manager of beheerder — of hem uit de gemeenschap verwijderen.",
+        "de": "**„Ausstehende Einladungen anzeigen“** zeigt, wer noch nicht geantwortet hat. In der Liste können nur Sie die Rolle eines Benutzers ändern — Mitglied, Manager oder Administrator — oder ihn aus der Gemeinschaft entfernen."
+      },
+      "subtitle": {
+        "fr": "Utilisateur de la communauté",
+        "en": "Community users",
+        "nl": "Gebruiker van de gemeenschap",
+        "de": "Benutzer der Gemeinschaft"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "La section « Communauté »",
+        "en": "The \"Community\" section",
+        "nl": "De sectie “Gemeenschap”",
+        "de": "Der Abschnitt „Gemeinschaft“"
+      },
+      "text": {
+        "fr": "La section **« Communauté »** mène au tableau de bord, aux infos de la communauté et à ses services annexes. Sa page **« Infos communauté »** porte les informations légales que vous seul pouvez changer.",
+        "en": "The **\"Community\"** section leads to the dashboard, the community info and its annex services. Its **\"Community info\"** page holds the legal details only you can change.",
+        "nl": "De sectie **“Gemeenschap”** leidt naar het dashboard, de gemeenschapsinfo en haar annexdiensten. Op de pagina **“Gemeenschapsinfo”** staan de juridische gegevens die alleen u kunt wijzigen.",
+        "de": "Der Abschnitt **„Gemeinschaft“** führt zur Übersicht, zur Gemeinschaftsinfo und zu ihren Zusatzdiensten. Auf der Seite **„Gemeinschaftsinfo“** stehen die rechtlichen Angaben, die nur Sie ändern können."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Les infos de la communauté",
+        "en": "The community info",
+        "nl": "De gemeenschapsinfo",
+        "de": "Die Gemeinschaftsinfo"
+      },
+      "text": {
+        "fr": "Dans la section **« Communauté »**, cliquez sur **« Infos communauté »**.",
+        "en": "In the **\"Community\"** section, click **\"Community info\"**.",
+        "nl": "Klik in de sectie **“Gemeenschap”** op **“Gemeenschapsinfo”**.",
+        "de": "Klicken Sie im Abschnitt **„Gemeinschaft“** auf **„Gemeinschaftsinfo“**."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 360,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--communities_info\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 360,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--communities_info\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Les infos de la communauté",
+              "text": "Dans la section **« Communauté »** du menu, touchez **« Infos communauté »**.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 360,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--communities_info\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 360,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--communities_info\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "The community info",
+              "text": "In the menu's **\"Community\"** section, tap **\"Community info\"**.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 360,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--communities_info\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 360,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--communities_info\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De gemeenschapsinfo",
+              "text": "Tik in de sectie **“Gemeenschap”** van het menu op **“Gemeenschapsinfo”**.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 360,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--communities_info\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 360,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--communities_info\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Die Gemeinschaftsinfo",
+              "text": "Tippen Sie im Abschnitt **„Gemeinschaft“** des Menüs auf **„Gemeinschaftsinfo“**.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Les informations légales",
+        "en": "The legal details",
+        "nl": "De juridische gegevens",
+        "de": "Die rechtlichen Angaben"
+      },
+      "text": {
+        "fr": "Membres et gestionnaires lisent ces informations ; vous seul pouvez les changer. **« Modifier »** ouvre le nom, la description, l'adresse, le numéro d'entreprise et l'IBAN — ce qui figure ensuite sur les factures et les documents officiels.",
+        "en": "Members and managers read this information; only you can change it. **\"Edit\"** opens the name, description, address, company number and IBAN — what then appears on invoices and official documents.",
+        "nl": "Leden en managers lezen deze gegevens; alleen u kunt ze wijzigen. **“Bewerken”** opent de naam, de beschrijving, het adres, het ondernemingsnummer en het IBAN — wat daarna op de facturen en de officiële documenten staat.",
+        "de": "Mitglieder und Manager lesen diese Angaben; nur Sie können sie ändern. **„Bearbeiten“** öffnet den Namen, die Beschreibung, die Adresse, die Unternehmensnummer und die IBAN — was danach auf den Rechnungen und den offiziellen Dokumenten erscheint."
+      },
+      "subtitle": {
+        "fr": "Infos de la communauté",
+        "en": "Community info",
+        "nl": "Gemeenschapsinfo",
+        "de": "Gemeinschaftsinfo"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/fr/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/en/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/nl/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-admin/de/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

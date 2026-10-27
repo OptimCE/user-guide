@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Een deeloperatie openbaar maken — OptimCE — Gebruikershandleidingen</title>
+    <meta name="description" content="Een deeloperatie openbaar maken zodat ze verschijnt in de lijst van openbare energiegemeenschappen.">
+    <link rel="canonical" href="https://guide.optimce.be/sharing-op-set-public/nl.html">
+    <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/sharing-op-set-public/fr.html">
+    <link rel="alternate" hreflang="en" href="https://guide.optimce.be/sharing-op-set-public/en.html">
+    <link rel="alternate" hreflang="nl" href="https://guide.optimce.be/sharing-op-set-public/nl.html">
+    <link rel="alternate" hreflang="de" href="https://guide.optimce.be/sharing-op-set-public/de.html">
+    <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/sharing-op-set-public/fr.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Een deeloperatie openbaar maken">
+    <meta property="og:description" content="Een deeloperatie openbaar maken zodat ze verschijnt in de lijst van openbare energiegemeenschappen.">
+    <meta property="og:url" content="https://guide.optimce.be/sharing-op-set-public/nl.html">
+    <meta property="og:site_name" content="OptimCE — Gebruikershandleidingen">
+    <meta property="og:image" content="https://guide.optimce.be/assets/sharing-op-set-public/nl/desktop/step-17.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+        // Remember the language of the file we just loaded: interactive.html is one
+        // URL for every locale and opens in this language when no ?lang= is given.
+        try { localStorage.setItem("oce-lang", "nl"); } catch (e) {}
+      })();
+    </script>
+</head>
+<body data-active-layout="desktop">
+    <header class="steppy-site-header">
+        <a class="oce-logo-link" href="../index.nl.html" aria-label="OptimCE — Gebruikershandleidingen">
+            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+            </svg>
+        </a>
+        <a class="steppy-site-title" href="../index.nl.html">OptimCE — Gebruikershandleidingen</a>
+        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.nl.html">Startpagina</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <a href="../sharing/nl.html">Deeloperaties</a>
+            <span class="steppy-breadcrumb-sep">›</span>
+            <span aria-current="page">Een deeloperatie openbaar maken</span>
+        </nav>
+
+        <div class="steppy-header-actions">
+<label class="steppy-locale-select">
+    <span class="steppy-visually-hidden">Taal</span>
+    <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <select autocomplete="off">        <option value="./fr.html" lang="fr">Français</option>        <option value="./en.html" lang="en">English</option>        <option value="./nl.html" lang="nl" selected>Nederlands</option>        <option value="./de.html" lang="de">Deutsch</option>    </select>
+    <svg class="steppy-locale-select-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</label>
+<script>
+  (function () {
+    var sel = document.querySelector(".steppy-locale-select select");
+    if (!sel) return;
+    sel.addEventListener("change", function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+    // Back from the language just picked can restore this page from the
+    // bfcache with that option still showing — snap it back to this page's own.
+    window.addEventListener("pageshow", function () {
+      var own = sel.querySelector("option[selected]");
+      if (own) sel.value = own.value;
+    });
+  })();
+</script>            <button type="button" class="oce-theme-toggle" aria-label="Thema wisselen">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </button>
+        </div>
+        <nav class="steppy-mode-switch" aria-label="Guide mode">
+            <ul>
+                <li>
+                    <span aria-current="true">Stap voor stap</span>
+                </li>
+                <li>
+                    <a href="./interactive.html?lang=nl">Interactief</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="steppy-layout-switch" aria-label="Layout">
+            <ul>
+                <li>
+                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
+                </li>
+                <li>
+                    <button type="button" data-layout="mobile" >Mobile</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="steppy-onboarding-strip" aria-label="Voortgang Aan de slag">
+        <span class="steppy-onboarding-strip-progress">
+            <a href="../getting-started/nl.html">Eerste stappen</a>
+            <span class="steppy-onboarding-strip-position">Stap 11 van 11</span>
+        </span>
+        <span class="steppy-onboarding-strip-nav">
+            <a class="steppy-onboarding-prev" href="../sharing-op-create/nl.html?onboarding=1">‹ Een deeloperatie aanmaken</a>
+            <span class="steppy-onboarding-next steppy-onboarding-disabled" aria-disabled="true">Klaar</span>
+        </span>
+    </nav>
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Een deeloperatie openbaar maken</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Groep Ledenbeheer openen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigatie</div>
+        <div class="steppy-step-content">Klik in de sectie “Beheer” van de zijbalk op “Ledenbeheer” om het submenu te tonen dat onder meer de deeloperaties bevat.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/desktop/step-17.png" alt="1. Groep Ledenbeheer openen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Naar de deeloperaties gaan</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigatie</div>
+        <div class="steppy-step-content">Klik in het submenu op “Deeloperaties” om de lijst met de energiedeeloperaties van uw gemeenschap te openen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/desktop/step-18.png" alt="2. Naar de deeloperaties gaan" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Een operatie toevoegen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Een operatie aanmaken</div>
+        <div class="steppy-step-content">Klik op “Toevoegen” om het venster voor het aanmaken van een nieuwe deeloperatie te openen. Standaard wordt elke nieuwe operatie in privémodus aangemaakt: ze is nog niet zichtbaar in de openbare gids.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/desktop/step-25.png" alt="3. Een operatie toevoegen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>De operatie een naam geven</span>
+        </h2>
+        <div class="steppy-step-subtitle">Identificatie</div>
+        <div class="steppy-step-content">Voer een naam in voor de nieuwe operatie. Deze naam is zichtbaar in de beheerlijst en, zodra de operatie openbaar is gemaakt, in de openbare gids.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/desktop/step-27.png" alt="4. De operatie een naam geven" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Type “Binnen een gebouw” selecteren</span>
+        </h2>
+        <div class="steppy-step-subtitle">Type deling</div>
+        <div class="steppy-step-content">Selecteer het type “Binnen een gebouw” voor een deeloperatie binnen eenzelfde gebouw. Net als de types CER en CEC kan dit type openbaar worden gemaakt om in de gids van de energiegemeenschappen te verschijnen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/desktop/step-28.png" alt="5. Type “Binnen een gebouw” selecteren" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Gemeente invoeren</span>
+        </h2>
+        <div class="steppy-step-subtitle">Gedekte gemeenten</div>
+        <div class="steppy-step-content">Typ de eerste letters van een gemeente om suggesties te zien. De gemeente die aan de operatie is gekoppeld, wordt in de openbare gids getoond om burgers te helpen een initiatief bij hen in de buurt te vinden.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/desktop/step-30.png" alt="6. Gemeente invoeren" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Anderlecht selecteren</span>
+        </h2>
+        <div class="steppy-step-subtitle">Gemeente bevestigen</div>
+        <div class="steppy-step-content">Klik op de eerste suggestie (Anderlecht) om ze aan de operatie te koppelen. De gedekte gemeenten verschijnen voor elke openbare operatie in de openbare gids, zodat burgers op plaats kunnen filteren.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/desktop/step-31.png" alt="7. Anderlecht selecteren" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Operatie aangemaakt</span>
+        </h2>
+        <div class="steppy-step-subtitle">Bevestiging</div>
+        <div class="steppy-step-content">De nieuwe operatie “E2E Energy Sharing” verschijnt in de lijst. Ze staat voorlopig in privémodus: ze is alleen zichtbaar voor de beheerders van de gemeenschap en verschijnt nog niet in de openbare gids.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/desktop/step-35.png" alt="8. Operatie aangemaakt" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Detailpagina openen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Details van de operatie</div>
+        <div class="steppy-step-content">Klik op de rij van de nieuwe operatie om haar detailpagina te openen en de zichtbaarheidsinstellingen te bereiken.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/desktop/step-36.png" alt="9. Detailpagina openen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Standaard privé</span>
+        </h2>
+        <div class="steppy-step-subtitle">Zichtbaarheidsinstelling</div>
+        <div class="steppy-step-content">De grijze knop “Privé” in de kop geeft aan dat deze operatie nog niet zichtbaar is in de openbare gids. Burgers die een deeloperatie in hun gemeente zoeken, kunnen ze niet vinden zolang ze privé blijft.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/desktop/step-40.png" alt="10. Standaard privé" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>De operatie openbaar maken</span>
+        </h2>
+        <div class="steppy-step-subtitle">Zichtbaarheid wijzigen</div>
+        <div class="steppy-step-content">Klik op de zichtbaarheidsknop om de operatie naar de openbare modus over te schakelen. Deze wijziging wordt meteen opgeslagen: de operatie wordt voor alle burgers zichtbaar in de gids van de energiegemeenschappen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/desktop/step-41.png" alt="11. De operatie openbaar maken" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>De operatie is nu openbaar</span>
+        </h2>
+        <div class="steppy-step-subtitle">Zichtbaarheid bevestigd</div>
+        <div class="steppy-step-content">De knop wordt groen en toont “Openbaar”. Elke burger kan deze operatie nu vinden in de gids van de energiegemeenschappen, op gemeente filteren en contact opnemen met de gemeenschap om deelname aan te vragen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/desktop/step-42.png" alt="12. De operatie is nu openbaar" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="13">
+        <h2>
+            <span class="steppy-step-number">13</span>
+            <span>Openbare gids van de gemeenschappen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Burgerweergave</div>
+        <div class="steppy-step-content">De pagina “Beschikbare openbare gemeenschappen” is voor iedereen toegankelijk, zonder aanmelding. Ze toont de gemeenschappen die minstens één openbare deeloperatie hebben, met de mogelijkheid om op gemeente te filteren en zo een lokaal initiatief te ontdekken.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/desktop/step-43.png" alt="13. Openbare gids van de gemeenschappen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="14">
+        <h2>
+            <span class="steppy-step-number">14</span>
+            <span>Een gemeenschap openklappen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Beschikbare operaties</div>
+        <div class="steppy-step-content">Klik op een gemeenschap om haar openbare deeloperaties te tonen. Voor elke operatie zijn het type en de gedekte gemeenten zichtbaar — essentiële informatie voor een burger die een initiatief bij hem in de buurt zoekt.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/desktop/step-45.png" alt="14. Een gemeenschap openklappen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="15">
+        <h2>
+            <span class="steppy-step-number">15</span>
+            <span>De operatie verschijnt in de gids</span>
+        </h2>
+        <div class="steppy-step-subtitle">Ontdekking door burgers</div>
+        <div class="steppy-step-content">De operatie “E2E Energy Sharing” is nu zichtbaar in de openbare gids, met haar type en de gemeente Anderlecht. Dit is precies wat een burger ziet wanneer hij in zijn regio een energiedeeloperatie zoekt om zich bij een lokale gemeenschap aan te sluiten.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/desktop/step-47.png" alt="15. De operatie verschijnt in de gids" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Een deeloperatie openbaar maken</h1>
+    <div class="steppy-role-badge">
+        <span class="i18n-fr">Guide utilisateur</span>
+        <span class="i18n-en">User guide</span>
+        <span class="i18n-nl">Gebruikershandleiding</span>
+        <span class="i18n-de">Benutzerhandbuch</span>
+    </div>
+
+    <div class="steppy-step" data-step-index="1">
+        <h2>
+            <span class="steppy-step-number">1</span>
+            <span>Groep Ledenbeheer openen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigatie</div>
+        <div class="steppy-step-content">Tik in de navigatielade, in de sectie “Beheer”, op “Ledenbeheer” om het submenu met de deeloperaties te tonen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/mobile/step-21.png" alt="1. Groep Ledenbeheer openen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <h2>
+            <span class="steppy-step-number">2</span>
+            <span>Naar de deeloperaties gaan</span>
+        </h2>
+        <div class="steppy-step-subtitle">Navigatie</div>
+        <div class="steppy-step-content">Tik in het submenu op “Deeloperaties” om de lijst met de energiedeeloperaties van uw gemeenschap te openen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/mobile/step-22.png" alt="2. Naar de deeloperaties gaan" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <h2>
+            <span class="steppy-step-number">3</span>
+            <span>Een operatie toevoegen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Een operatie aanmaken</div>
+        <div class="steppy-step-content">Klik op “Toevoegen” om het venster voor het aanmaken van een nieuwe deeloperatie te openen. Standaard wordt elke nieuwe operatie in privémodus aangemaakt: ze is nog niet zichtbaar in de openbare gids.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/mobile/step-25.png" alt="3. Een operatie toevoegen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <h2>
+            <span class="steppy-step-number">4</span>
+            <span>De operatie een naam geven</span>
+        </h2>
+        <div class="steppy-step-subtitle">Identificatie</div>
+        <div class="steppy-step-content">Voer een naam in voor de nieuwe operatie. Deze naam is zichtbaar in de beheerlijst en, zodra de operatie openbaar is gemaakt, in de openbare gids.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/mobile/step-27.png" alt="4. De operatie een naam geven" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <h2>
+            <span class="steppy-step-number">5</span>
+            <span>Type “Binnen een gebouw” selecteren</span>
+        </h2>
+        <div class="steppy-step-subtitle">Type deling</div>
+        <div class="steppy-step-content">Selecteer het type “Binnen een gebouw” voor een deeloperatie binnen eenzelfde gebouw. Net als de types CER en CEC kan dit type openbaar worden gemaakt om in de gids van de energiegemeenschappen te verschijnen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/mobile/step-28.png" alt="5. Type “Binnen een gebouw” selecteren" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <h2>
+            <span class="steppy-step-number">6</span>
+            <span>Gemeente invoeren</span>
+        </h2>
+        <div class="steppy-step-subtitle">Gedekte gemeenten</div>
+        <div class="steppy-step-content">Typ de eerste letters van een gemeente om suggesties te zien. De gemeente die aan de operatie is gekoppeld, wordt in de openbare gids getoond om burgers te helpen een initiatief bij hen in de buurt te vinden.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/mobile/step-30.png" alt="6. Gemeente invoeren" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <h2>
+            <span class="steppy-step-number">7</span>
+            <span>Anderlecht selecteren</span>
+        </h2>
+        <div class="steppy-step-subtitle">Gemeente bevestigen</div>
+        <div class="steppy-step-content">Klik op de eerste suggestie (Anderlecht) om ze aan de operatie te koppelen. De gedekte gemeenten verschijnen voor elke openbare operatie in de openbare gids, zodat burgers op plaats kunnen filteren.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/mobile/step-31.png" alt="7. Anderlecht selecteren" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <h2>
+            <span class="steppy-step-number">8</span>
+            <span>Operatie aangemaakt</span>
+        </h2>
+        <div class="steppy-step-subtitle">Bevestiging</div>
+        <div class="steppy-step-content">De nieuwe operatie “E2E Energy Sharing” verschijnt in de lijst. Ze staat voorlopig in privémodus: ze is alleen zichtbaar voor de beheerders van de gemeenschap en verschijnt nog niet in de openbare gids.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/mobile/step-35.png" alt="8. Operatie aangemaakt" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <h2>
+            <span class="steppy-step-number">9</span>
+            <span>Detailpagina openen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Details van de operatie</div>
+        <div class="steppy-step-content">Klik op de rij van de nieuwe operatie om haar detailpagina te openen en de zichtbaarheidsinstellingen te bereiken.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/mobile/step-36.png" alt="9. Detailpagina openen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <h2>
+            <span class="steppy-step-number">10</span>
+            <span>Standaard privé</span>
+        </h2>
+        <div class="steppy-step-subtitle">Zichtbaarheidsinstelling</div>
+        <div class="steppy-step-content">De grijze knop “Privé” in de kop geeft aan dat deze operatie nog niet zichtbaar is in de openbare gids. Burgers die een deeloperatie in hun gemeente zoeken, kunnen ze niet vinden zolang ze privé blijft.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/mobile/step-40.png" alt="10. Standaard privé" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <h2>
+            <span class="steppy-step-number">11</span>
+            <span>De operatie openbaar maken</span>
+        </h2>
+        <div class="steppy-step-subtitle">Zichtbaarheid wijzigen</div>
+        <div class="steppy-step-content">Klik op de zichtbaarheidsknop om de operatie naar de openbare modus over te schakelen. Deze wijziging wordt meteen opgeslagen: de operatie wordt voor alle burgers zichtbaar in de gids van de energiegemeenschappen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/mobile/step-41.png" alt="11. De operatie openbaar maken" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="12">
+        <h2>
+            <span class="steppy-step-number">12</span>
+            <span>De operatie is nu openbaar</span>
+        </h2>
+        <div class="steppy-step-subtitle">Zichtbaarheid bevestigd</div>
+        <div class="steppy-step-content">De knop wordt groen en toont “Openbaar”. Elke burger kan deze operatie nu vinden in de gids van de energiegemeenschappen, op gemeente filteren en contact opnemen met de gemeenschap om deelname aan te vragen.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/mobile/step-42.png" alt="12. De operatie is nu openbaar" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="13">
+        <h2>
+            <span class="steppy-step-number">13</span>
+            <span>Openbare gids van de gemeenschappen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Burgerweergave</div>
+        <div class="steppy-step-content">De pagina “Beschikbare openbare gemeenschappen” is voor iedereen toegankelijk, zonder aanmelding. Ze toont de gemeenschappen die minstens één openbare deeloperatie hebben, met de mogelijkheid om op gemeente te filteren en zo een lokaal initiatief te ontdekken.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/mobile/step-43.png" alt="13. Openbare gids van de gemeenschappen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="14">
+        <h2>
+            <span class="steppy-step-number">14</span>
+            <span>Een gemeenschap openklappen</span>
+        </h2>
+        <div class="steppy-step-subtitle">Beschikbare operaties</div>
+        <div class="steppy-step-content">Klik op een gemeenschap om haar openbare deeloperaties te tonen. Voor elke operatie zijn het type en de gedekte gemeenten zichtbaar — essentiële informatie voor een burger die een initiatief bij hem in de buurt zoekt.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/mobile/step-45.png" alt="14. Een gemeenschap openklappen" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="15">
+        <h2>
+            <span class="steppy-step-number">15</span>
+            <span>De operatie verschijnt in de gids</span>
+        </h2>
+        <div class="steppy-step-subtitle">Ontdekking door burgers</div>
+        <div class="steppy-step-content">De operatie “E2E Energy Sharing” is nu zichtbaar in de openbare gids, met haar type en de gemeente Anderlecht. Dit is precies wat een burger ziet wanneer hij in zijn regio een energiedeeloperatie zoekt om zich bij een lokale gemeenschap aan te sluiten.</div>
+        <div class="steppy-stage" data-frame-index="0">
+            <img src="../assets/sharing-op-set-public/nl/mobile/step-47.png" alt="15. De operatie verschijnt in de gids" loading="lazy">
+            <div class="steppy-cursor" aria-hidden="true"></div>
+            <div class="steppy-ripple" aria-hidden="true"></div>
+            <div class="steppy-kbd" aria-hidden="true"></div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+    <footer class="steppy-site-footer">
+        <p>Gegenereerd door Steppy.</p>
+    </footer>
+
+    <script>
+      (function () {
+        function bind() {
+          var btn = document.querySelector(".oce-theme-toggle");
+          if (!btn) return;
+          btn.addEventListener("click", function () {
+            var current = document.documentElement.getAttribute("data-theme") || "light";
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+          });
+        }
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+        else bind();
+      })();
+    </script>
+    <script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"}}, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-17.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-17.png", "subtitle": "Navigatie", "text": "Klik in de sectie \u201cBeheer\u201d van de zijbalk op \u201cLedenbeheer\u201d om het submenu te tonen dat onder meer de deeloperaties bevat.", "title": "Groep Ledenbeheer openen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 33.5, "width": 215, "x": 36, "y": 613.5}, "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--2\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 33.5, "width": 215, "x": 36, "y": 613.5}, "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--2\"]"}}, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-18.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-18.png", "subtitle": "Navigatie", "text": "Klik in het submenu op \u201cDeeloperaties\u201d om de lijst met de energiedeeloperaties van uw gemeenschap te openen.", "title": "Naar de deeloperaties gaan", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 128.859375, "x": 1240.140625, "y": 52}, "selector": "[data-testid=\"operations-list__btn--add\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 128.859375, "x": 1240.140625, "y": 52}, "selector": "[data-testid=\"operations-list__btn--add\"]"}}, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-25.png", "subtitle": "Een operatie aanmaken", "text": "Klik op \u201cToevoegen\u201d om het venster voor het aanmaken van een nieuwe deeloperatie te openen. Standaard wordt elke nieuwe operatie in priv\u00e9modus aangemaakt: ze is nog niet zichtbaar in de openbare gids.", "title": "Een operatie toevoegen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 606.703125, "x": 416.640625, "y": 344}, "selector": "[data-testid=\"op-creation__input--name\"]"}, "value": "E2E Energy Sharing"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 606.703125, "x": 416.640625, "y": 344}, "selector": "[data-testid=\"op-creation__input--name\"]"}, "value": "E2E Energy Sharing"}, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-27.png", "subtitle": "Identificatie", "text": "Voer een naam in voor de nieuwe operatie. Deze naam is zichtbaar in de beheerlijst en, zodra de operatie openbaar is gemaakt, in de openbare gids.", "title": "De operatie een naam geven", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 56, "width": 194.234375, "x": 416.640625, "y": 428}, "selector": "[data-testid=\"op-creation__card--type--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 56, "width": 194.234375, "x": 416.640625, "y": 428}, "selector": "[data-testid=\"op-creation__card--type--0\"]"}}, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-28.png", "subtitle": "Type deling", "text": "Selecteer het type \u201cBinnen een gebouw\u201d voor een deeloperatie binnen eenzelfde gebouw. Net als de types CER en CEC kan dit type openbaar worden gemaakt om in de gids van de energiegemeenschappen te verschijnen.", "title": "Type \u201cBinnen een gebouw\u201d selecteren", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 24, "width": 580.703125, "x": 429.640625, "y": 535}, "selector": "#municipalities"}, "value": "Anderl"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 24, "width": 580.703125, "x": 429.640625, "y": 535}, "selector": "#municipalities"}, "value": "Anderl"}, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-30.png", "subtitle": "Gedekte gemeenten", "text": "Typ de eerste letters van een gemeente om suggesties te zien. De gemeente die aan de operatie is gekoppeld, wordt in de openbare gids getoond om burgers te helpen een initiatief bij hen in de buurt te vinden.", "title": "Gemeente invoeren", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 52, "width": 597, "x": 421.640625, "y": 575}, "selector": ".p-autocomplete-overlay [role=\"option\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 52, "width": 597, "x": 421.640625, "y": 575}, "selector": ".p-autocomplete-overlay [role=\"option\"]"}, "value": null}, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-31.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-31.png", "subtitle": "Gemeente bevestigen", "text": "Klik op de eerste suggestie (Anderlecht) om ze aan de operatie te koppelen. De gedekte gemeenten verschijnen voor elke openbare operatie in de openbare gids, zodat burgers op plaats kunnen filteren.", "title": "Anderlecht selecteren", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-35.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-35.png", "subtitle": "Bevestiging", "text": "De nieuwe operatie \u201cE2E Energy Sharing\u201d verschijnt in de lijst. Ze staat voorlopig in priv\u00e9modus: ze is alleen zichtbaar voor de beheerders van de gemeenschap en verschijnt nog niet in de openbare gids.", "title": "Operatie aangemaakt", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 203.96875, "width": 1280, "x": 114, "y": 256}, "selector": "[data-testid=\"operations-list__table\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 203.96875, "width": 1280, "x": 114, "y": 256}, "selector": "[data-testid=\"operations-list__table\"]"}, "value": null}, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-36.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-36.png", "subtitle": "Details van de operatie", "text": "Klik op de rij van de nieuwe operatie om haar detailpagina te openen en de zichtbaarheidsinstellingen te bereiken.", "title": "Detailpagina openen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-40.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-40.png", "subtitle": "Zichtbaarheidsinstelling", "text": "De grijze knop \u201cPriv\u00e9\u201d in de kop geeft aan dat deze operatie nog niet zichtbaar is in de openbare gids. Burgers die een deeloperatie in hun gemeente zoeken, kunnen ze niet vinden zolang ze priv\u00e9 blijft.", "title": "Standaard priv\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 85.953125, "x": 1283.046875, "y": 88}, "selector": "[data-testid=\"op-view__btn--toggle-visibility\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 85.953125, "x": 1283.046875, "y": 88}, "selector": "[data-testid=\"op-view__btn--toggle-visibility\"]"}}, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-41.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-41.png", "subtitle": "Zichtbaarheid wijzigen", "text": "Klik op de zichtbaarheidsknop om de operatie naar de openbare modus over te schakelen. Deze wijziging wordt meteen opgeslagen: de operatie wordt voor alle burgers zichtbaar in de gids van de energiegemeenschappen.", "title": "De operatie openbaar maken", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-42.png", "viewport": {"height": 900, "width": 1440}}], "index": 12, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-42.png", "subtitle": "Zichtbaarheid bevestigd", "text": "De knop wordt groen en toont \u201cOpenbaar\u201d. Elke burger kan deze operatie nu vinden in de gids van de energiegemeenschappen, op gemeente filteren en contact opnemen met de gemeenschap om deelname aan te vragen.", "title": "De operatie is nu openbaar", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-43.png", "viewport": {"height": 900, "width": 1440}}], "index": 13, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-43.png", "subtitle": "Burgerweergave", "text": "De pagina \u201cBeschikbare openbare gemeenschappen\u201d is voor iedereen toegankelijk, zonder aanmelding. Ze toont de gemeenschappen die minstens \u00e9\u00e9n openbare deeloperatie hebben, met de mogelijkheid om op gemeente te filteren en zo een lokaal initiatief te ontdekken.", "title": "Openbare gids van de gemeenschappen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 64, "width": 1278, "x": 115, "y": 307}, "selector": "[data-testid=\"public-community-list__btn--accordion--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 64, "width": 1278, "x": 115, "y": 307}, "selector": "[data-testid=\"public-community-list__btn--accordion--0\"]"}}, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-45.png", "viewport": {"height": 900, "width": 1440}}], "index": 14, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-45.png", "subtitle": "Beschikbare operaties", "text": "Klik op een gemeenschap om haar openbare deeloperaties te tonen. Voor elke operatie zijn het type en de gedekte gemeenten zichtbaar \u2014 essenti\u00eble informatie voor een burger die een initiatief bij hem in de buurt zoekt.", "title": "Een gemeenschap openklappen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-47.png", "viewport": {"height": 900, "width": 1440}}], "index": 15, "screenshot": "../assets/sharing-op-set-public/nl/desktop/step-47.png", "subtitle": "Ontdekking door burgers", "text": "De operatie \u201cE2E Energy Sharing\u201d is nu zichtbaar in de openbare gids, met haar type en de gemeente Anderlecht. Dit is precies wat een burger ziet wanneer hij in zijn regio een energiedeeloperatie zoekt om zich bij een lokale gemeenschap aan te sluiten.", "title": "De operatie verschijnt in de gids", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 500.5}, "selector": "[data-testid=\"navbar__menu--management\"] [data-testid=\"sidebar-multi-elements__container\"]"}}, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-21.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-21.png", "subtitle": "Navigatie", "text": "Tik in de navigatielade, in de sectie \u201cBeheer\u201d, op \u201cLedenbeheer\u201d om het submenu met de deeloperaties te tonen.", "title": "Groep Ledenbeheer openen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 33.5, "width": 256, "x": 36, "y": 613.5}, "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--2\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 33.5, "width": 256, "x": 36, "y": 613.5}, "selector": "[data-testid=\"sidebar-multi-elements__submenu-link--2\"]"}}, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-22.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-22.png", "subtitle": "Navigatie", "text": "Tik in het submenu op \u201cDeeloperaties\u201d om de lijst met de energiedeeloperaties van uw gemeenschap te openen.", "title": "Naar de deeloperaties gaan", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 128.859375, "x": 37, "y": 239}, "selector": "[data-testid=\"operations-list__btn--add\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 128.859375, "x": 37, "y": 239}, "selector": "[data-testid=\"operations-list__btn--add\"]"}}, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-25.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-25.png", "subtitle": "Een operatie aanmaken", "text": "Klik op \u201cToevoegen\u201d om het venster voor het aanmaken van een nieuwe deeloperatie te openen. Standaard wordt elke nieuwe operatie in priv\u00e9modus aangemaakt: ze is nog niet zichtbaar in de openbare gids.", "title": "Een operatie toevoegen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 258.4375, "x": 65.78125, "y": 248}, "selector": "[data-testid=\"op-creation__input--name\"]"}, "value": "E2E Energy Sharing"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 258.4375, "x": 65.78125, "y": 248}, "selector": "[data-testid=\"op-creation__input--name\"]"}, "value": "E2E Energy Sharing"}, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-27.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-27.png", "subtitle": "Identificatie", "text": "Voer een naam in voor de nieuwe operatie. Deze naam is zichtbaar in de beheerlijst en, zodra de operatie openbaar is gemaakt, in de openbare gids.", "title": "De operatie een naam geven", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 56, "width": 258.4375, "x": 65.78125, "y": 332}, "selector": "[data-testid=\"op-creation__card--type--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 56, "width": 258.4375, "x": 65.78125, "y": 332}, "selector": "[data-testid=\"op-creation__card--type--0\"]"}}, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-28.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-28.png", "subtitle": "Type deling", "text": "Selecteer het type \u201cBinnen een gebouw\u201d voor een deeloperatie binnen eenzelfde gebouw. Net als de types CER en CEC kan dit type openbaar worden gemaakt om in de gids van de energiegemeenschappen te verschijnen.", "title": "Type \u201cBinnen een gebouw\u201d selecteren", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 24, "width": 232.4375, "x": 78.78125, "y": 575}, "selector": "#municipalities"}, "value": "Anderl"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 24, "width": 232.4375, "x": 78.78125, "y": 575}, "selector": "#municipalities"}, "value": "Anderl"}, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-30.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-30.png", "subtitle": "Gedekte gemeenten", "text": "Typ de eerste letters van een gemeente om suggesties te zien. De gemeente die aan de operatie is gekoppeld, wordt in de openbare gids getoond om burgers te helpen een initiatief bij hen in de buurt te vinden.", "title": "Gemeente invoeren", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 52, "width": 248, "x": 70.78125, "y": 615}, "selector": ".p-autocomplete-overlay [role=\"option\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 52, "width": 248, "x": 70.78125, "y": 615}, "selector": ".p-autocomplete-overlay [role=\"option\"]"}, "value": null}, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-31.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-31.png", "subtitle": "Gemeente bevestigen", "text": "Klik op de eerste suggestie (Anderlecht) om ze aan de operatie te koppelen. De gedekte gemeenten verschijnen voor elke openbare operatie in de openbare gids, zodat burgers op plaats kunnen filteren.", "title": "Anderlecht selecteren", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-35.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-35.png", "subtitle": "Bevestiging", "text": "De nieuwe operatie \u201cE2E Energy Sharing\u201d verschijnt in de lijst. Ze staat voorlopig in priv\u00e9modus: ze is alleen zichtbaar voor de beheerders van de gemeenschap en verschijnt nog niet in de openbare gids.", "title": "Operatie aangemaakt", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 579.9375, "width": 358, "x": 16, "y": 264}, "selector": "[data-testid=\"operations-list__table\"]"}, "value": null}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 579.9375, "width": 358, "x": 16, "y": 264}, "selector": "[data-testid=\"operations-list__table\"]"}, "value": null}, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-36.png", "viewport": {"height": 844, "width": 390}}], "index": 9, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-36.png", "subtitle": "Details van de operatie", "text": "Klik op de rij van de nieuwe operatie om haar detailpagina te openen en de zichtbaarheidsinstellingen te bereiken.", "title": "Detailpagina openen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-40.png", "viewport": {"height": 844, "width": 390}}], "index": 10, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-40.png", "subtitle": "Zichtbaarheidsinstelling", "text": "De grijze knop \u201cPriv\u00e9\u201d in de kop geeft aan dat deze operatie nog niet zichtbaar is in de openbare gids. Burgers die een deeloperatie in hun gemeente zoeken, kunnen ze niet vinden zolang ze priv\u00e9 blijft.", "title": "Standaard priv\u00e9", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 85.953125, "x": 165.5625, "y": 296}, "selector": "[data-testid=\"op-view__btn--toggle-visibility\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 85.953125, "x": 165.5625, "y": 296}, "selector": "[data-testid=\"op-view__btn--toggle-visibility\"]"}}, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-41.png", "viewport": {"height": 844, "width": 390}}], "index": 11, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-41.png", "subtitle": "Zichtbaarheid wijzigen", "text": "Klik op de zichtbaarheidsknop om de operatie naar de openbare modus over te schakelen. Deze wijziging wordt meteen opgeslagen: de operatie wordt voor alle burgers zichtbaar in de gids van de energiegemeenschappen.", "title": "De operatie openbaar maken", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-42.png", "viewport": {"height": 844, "width": 390}}], "index": 12, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-42.png", "subtitle": "Zichtbaarheid bevestigd", "text": "De knop wordt groen en toont \u201cOpenbaar\u201d. Elke burger kan deze operatie nu vinden in de gids van de energiegemeenschappen, op gemeente filteren en contact opnemen met de gemeenschap om deelname aan te vragen.", "title": "De operatie is nu openbaar", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-43.png", "viewport": {"height": 844, "width": 390}}], "index": 13, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-43.png", "subtitle": "Burgerweergave", "text": "De pagina \u201cBeschikbare openbare gemeenschappen\u201d is voor iedereen toegankelijk, zonder aanmelding. Ze toont de gemeenschappen die minstens \u00e9\u00e9n openbare deeloperatie hebben, met de mogelijkheid om op gemeente te filteren en zo een lokaal initiatief te ontdekken.", "title": "Openbare gids van de gemeenschappen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 64, "width": 356, "x": 17, "y": 508}, "selector": "[data-testid=\"public-community-list__btn--accordion--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 64, "width": 356, "x": 17, "y": 508}, "selector": "[data-testid=\"public-community-list__btn--accordion--0\"]"}}, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-45.png", "viewport": {"height": 844, "width": 390}}], "index": 14, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-45.png", "subtitle": "Beschikbare operaties", "text": "Klik op een gemeenschap om haar openbare deeloperaties te tonen. Voor elke operatie zijn het type en de gedekte gemeenten zichtbaar \u2014 essenti\u00eble informatie voor een burger die een initiatief bij hem in de buurt zoekt.", "title": "Een gemeenschap openklappen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-47.png", "viewport": {"height": 844, "width": 390}}], "index": 15, "screenshot": "../assets/sharing-op-set-public/nl/mobile/step-47.png", "subtitle": "Ontdekking door burgers", "text": "De operatie \u201cE2E Energy Sharing\u201d is nu zichtbaar in de openbare gids, met haar type en de gemeente Anderlecht. Dit is precies wat een burger ziet wanneer hij in zijn regio een energiedeeloperatie zoekt om zich bij een lokale gemeenschap aan te sluiten.", "title": "De operatie verschijnt in de gids", "viewport": {"height": 844, "width": 390}}]};
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
+      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      (function () {
+        const persistKey = 'steppy:active-layout';
+        const manualKey = 'steppy:layout-manual';
+        const layouts = ["desktop", "mobile"];
+        const defaultLayout = "desktop";
+        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
+        const desktopLayout = layouts.indexOf('desktop') !== -1
+          ? 'desktop'
+          : (layouts[0] || defaultLayout);
+        const mql = window.matchMedia('(max-width: 768px)');
+
+        function readStorage(key) {
+          try { return localStorage.getItem(key); } catch (_) { return null; }
+        }
+        function writeStorage(key, value) {
+          try { localStorage.setItem(key, value); } catch (_) {}
+        }
+        function viewportLayout() {
+          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
+        }
+
+        function applyLayout(name) {
+          if (layouts.indexOf(name) === -1) return;
+          document.body.setAttribute('data-active-layout', name);
+          document.querySelectorAll('.steppy-layout').forEach(function (el) {
+            if (el.getAttribute('data-layout') === name) {
+              el.classList.add('steppy-layout-active');
+            } else {
+              el.classList.remove('steppy-layout-active');
+            }
+          });
+          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+            if (b.getAttribute('data-layout') === name) {
+              b.setAttribute('aria-current', 'true');
+            } else {
+              b.removeAttribute('aria-current');
+            }
+          });
+          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
+            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
+            window.__STEPPY_ACTIVE_LAYOUT__ = name;
+          }
+          writeStorage(persistKey, name);
+          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
+        }
+
+        const persisted = readStorage(persistKey);
+        const manual = readStorage(manualKey) === '1';
+        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
+          ? persisted
+          : viewportLayout();
+        applyLayout(initial);
+
+        function onViewportChange() {
+          if (readStorage(manualKey) === '1') return;
+          applyLayout(viewportLayout());
+        }
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', onViewportChange);
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(onViewportChange);
+        }
+
+        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
+          b.addEventListener('click', function () {
+            writeStorage(manualKey, '1');
+            applyLayout(b.getAttribute('data-layout'));
+          });
+        });
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

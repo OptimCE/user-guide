@@ -5,11 +5,15 @@
   "role": "admin",
   "title": {
     "fr": "Générer des clés (OLAGSA)",
-    "en": "Generate keys (OLAGSA)"
+    "en": "Generate keys (OLAGSA)",
+    "nl": "Verdeelsleutels genereren (OLAGSA)",
+    "de": "Verteilungsschlüssel generieren (OLAGSA)"
   },
   "locales": [
     "fr",
-    "en"
+    "en",
+    "nl",
+    "de"
   ],
   "defaultLocale": "fr",
   "layouts": [
@@ -34,15 +38,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir les services annexes",
-        "en": "Open annexe services"
+        "en": "Open annexe services",
+        "nl": "Annexdiensten openen",
+        "de": "Zusatzdienste öffnen"
       },
       "text": {
         "fr": "Dans la section « Communauté » de la barre latérale, cliquez sur « Services annexes » pour accéder aux modules actifs de la communauté.",
-        "en": "In the sidebar's \"Community\" section, click \"Annexe services\" to access the community's active modules."
+        "en": "In the sidebar's \"Community\" section, click \"Annexe services\" to access the community's active modules.",
+        "nl": "Klik in de sectie “Gemeenschap” van de zijbalk op “Annexdiensten” om de actieve modules van de gemeenschap te openen.",
+        "de": "Klicken Sie im Abschnitt „Gemeinschaft“ der Seitenleiste auf „Zusatzdienste“, um die aktiven Module der Gemeinschaft aufzurufen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -150,6 +160,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 398,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 398,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Annexdiensten openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en tik vervolgens in de sectie “Gemeenschap” op “Annexdiensten”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 398,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 398,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/annexes-services\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Zusatzdienste öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und tippen Sie dann im Abschnitt „Gemeinschaft“ auf „Zusatzdienste“.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -162,15 +278,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Module de génération disponible",
-        "en": "Generation module available"
+        "en": "Generation module available",
+        "nl": "Generatiemodule beschikbaar",
+        "de": "Generierungsmodul verfügbar"
       },
       "text": {
         "fr": "La carte « Génération de clés de répartition » est visible avec le badge « Activé ». Cliquez dessus pour ouvrir le module de génération.",
-        "en": "The \"Allocation key generation\" card is visible with the \"Activated\" badge. Click it to open the generation module."
+        "en": "The \"Allocation key generation\" card is visible with the \"Activated\" badge. Click it to open the generation module.",
+        "nl": "De kaart “Generatie van verdeelsleutels” is zichtbaar met de badge “Geactiveerd”. Klik erop om de generatiemodule te openen.",
+        "de": "Die Karte „Generierung von Verteilschlüsseln“ wird mit dem Badge „Aktiviert“ angezeigt. Klicken Sie darauf, um das Generierungsmodul zu öffnen."
       },
       "subtitle": {
         "fr": "Services annexes",
-        "en": "Annexe services"
+        "en": "Annexe services",
+        "nl": "Annexdiensten",
+        "de": "Zusatzdienste"
       },
       "captures": {
         "fr": {
@@ -224,6 +346,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -236,15 +410,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir le module de génération",
-        "en": "Open the generation module"
+        "en": "Open the generation module",
+        "nl": "De generatiemodule openen",
+        "de": "Generierungsmodul öffnen"
       },
       "text": {
         "fr": "Cliquez sur la carte pour ouvrir le module de génération de clés de répartition OLAGSA.",
-        "en": "Click the card to open the OLAGSA allocation key generation module."
+        "en": "Click the card to open the OLAGSA allocation key generation module.",
+        "nl": "Klik op de kaart om de OLAGSA-module voor het genereren van verdeelsleutels te openen.",
+        "de": "Klicken Sie auf die Karte, um das OLAGSA-Modul zur Generierung von Verteilungsschlüsseln zu öffnen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -342,6 +522,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 142,
+                      "width": 416,
+                      "height": 171
+                    },
+                    "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 318,
+                      "width": 358,
+                      "height": 171
+                    },
+                    "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 114,
+                      "y": 142,
+                      "width": 416,
+                      "height": 171
+                    },
+                    "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 318,
+                      "width": 358,
+                      "height": 171
+                    },
+                    "selector": "[data-testid=\"annexes-services-list__card--algorithm\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -354,15 +630,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Page de génération de clés",
-        "en": "Key generation page"
+        "en": "Key generation page",
+        "nl": "Pagina voor sleutelgeneratie",
+        "de": "Seite zur Schlüsselgenerierung"
       },
       "text": {
         "fr": "La page de génération de clés de répartition s'affiche avec le formulaire de configuration. Sélectionnez l'algorithme, renseignez les paramètres et importez votre fichier de données pour lancer une nouvelle génération.",
-        "en": "The allocation key generation page displays the configuration form. Select the algorithm, fill in the parameters, and upload your data file to launch a new generation."
+        "en": "The allocation key generation page displays the configuration form. Select the algorithm, fill in the parameters, and upload your data file to launch a new generation.",
+        "nl": "De pagina voor het genereren van verdeelsleutels verschijnt met het configuratieformulier. Selecteer het algoritme, vul de parameters in en importeer uw gegevensbestand om een nieuwe generatie te starten.",
+        "de": "Die Seite zur Generierung von Verteilungsschlüsseln wird mit dem Konfigurationsformular angezeigt. Wählen Sie den Algorithmus aus, geben Sie die Parameter ein und importieren Sie Ihre Datendatei, um eine neue Generierung zu starten."
       },
       "subtitle": {
         "fr": "Module OLAGSA",
-        "en": "OLAGSA module"
+        "en": "OLAGSA module",
+        "nl": "OLAGSA-module",
+        "de": "OLAGSA-Modul"
       },
       "captures": {
         "fr": {
@@ -416,6 +698,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-29.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -428,15 +762,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Sélectionner l'algorithme OLAGSA",
-        "en": "Select the OLAGSA algorithm"
+        "en": "Select the OLAGSA algorithm",
+        "nl": "Het OLAGSA-algoritme selecteren",
+        "de": "OLAGSA-Algorithmus auswählen"
       },
       "text": {
         "fr": "Cliquez sur le menu déroulant « Algorithme » et sélectionnez « OLAGSA ». Le formulaire de paramètres propres à cet algorithme génétique s'affiche alors.",
-        "en": "Click the \"Algorithm\" dropdown and select \"OLAGSA\". The parameter form specific to this genetic algorithm then appears."
+        "en": "Click the \"Algorithm\" dropdown and select \"OLAGSA\". The parameter form specific to this genetic algorithm then appears.",
+        "nl": "Klik op de vervolgkeuzelijst “Algoritme” en selecteer “OLAGSA”. Het formulier met de parameters die eigen zijn aan dit genetische algoritme verschijnt dan.",
+        "de": "Klicken Sie auf die Auswahlliste „Algorithmus“ und wählen Sie „OLAGSA“. Daraufhin erscheint das Formular mit den Parametern dieses genetischen Algorithmus."
       },
       "subtitle": {
         "fr": "Configuration",
-        "en": "Configuration"
+        "en": "Configuration",
+        "nl": "Configuratie",
+        "de": "Konfiguration"
       },
       "captures": {
         "fr": {
@@ -534,6 +874,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 139,
+                      "y": 241,
+                      "width": 396.65625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"algorithm-hub__select--algorithm\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 413,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"algorithm-hub__select--algorithm\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-30.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 139,
+                      "y": 241,
+                      "width": 396.65625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"algorithm-hub__select--algorithm\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-30.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 413,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"algorithm-hub__select--algorithm\"]"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -546,15 +982,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Nommer la génération et l'injection",
-        "en": "Name the generation and injection"
+        "en": "Name the generation and injection",
+        "nl": "Generatie en injectie benoemen",
+        "de": "Generierung und Einspeisung benennen"
       },
       "text": {
         "fr": "Saisissez un nom pour cette génération (identifiant interne) et le nom de l'injection correspondante — ici « Production » pour cibler les données de production.",
-        "en": "Enter a name for this generation (internal identifier) and the corresponding injection name — here \"Production\" to target production data."
+        "en": "Enter a name for this generation (internal identifier) and the corresponding injection name — here \"Production\" to target production data.",
+        "nl": "Voer een naam in voor deze generatie (interne identificatie) en de naam van de bijbehorende injectie — hier “Production”, om de productiegegevens te gebruiken.",
+        "de": "Geben Sie einen Namen für diese Generierung (interne Kennung) und den Namen der zugehörigen Einspeisung ein — hier „Production“, um die Produktionsdaten zu verwenden."
       },
       "subtitle": {
         "fr": "Configuration",
-        "en": "Configuration"
+        "en": "Configuration",
+        "nl": "Configuratie",
+        "de": "Konfiguration"
       },
       "captures": {
         "fr": {
@@ -644,7 +1086,107 @@
                   "kind": "type",
                   "target": {
                     "bbox": {
-                      "x": 11,
+                      "x": 27,
+                      "y": 401,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"algorithm-hub__input--injection-name\"]"
+                  },
+                  "value": "Production"
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 762,
+                      "y": 461,
+                      "width": 607,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"algorithm-hub__input--injection-name\"]"
+                  },
+                  "value": "Production"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 27,
+                      "y": 401,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"algorithm-hub__input--injection-name\"]"
+                  },
+                  "value": "Production"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-33.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 762,
+                      "y": 461,
+                      "width": 607,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"algorithm-hub__input--injection-name\"]"
+                  },
+                  "value": "Production"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-33.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 24,
                       "y": 401,
                       "width": 316,
                       "height": 42
@@ -668,15 +1210,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Définir le nombre d'itérations",
-        "en": "Set the number of iterations"
+        "en": "Set the number of iterations",
+        "nl": "Het aantal iteraties instellen",
+        "de": "Anzahl der Iterationen festlegen"
       },
       "text": {
         "fr": "Saisissez « 3 » dans le champ « Itérations ». Ce paramètre définit le nombre de solutions indépendantes calculées par l'algorithme génétique OLAGSA.",
-        "en": "Enter \"3\" in the \"Iterations\" field. This parameter defines the number of independent solutions computed by the OLAGSA genetic algorithm."
+        "en": "Enter \"3\" in the \"Iterations\" field. This parameter defines the number of independent solutions computed by the OLAGSA genetic algorithm.",
+        "nl": "Voer “3” in het veld “Aantal iteraties” in. Deze parameter bepaalt hoeveel onafhankelijke oplossingen het genetische OLAGSA-algoritme berekent.",
+        "de": "Geben Sie „3“ in das Feld „Anzahl der Iterationen“ ein. Dieser Parameter legt die Anzahl unabhängiger Lösungen fest, die der genetische Algorithmus OLAGSA berechnet."
       },
       "subtitle": {
         "fr": "Paramètres principaux",
-        "en": "Main parameters"
+        "en": "Main parameters",
+        "nl": "Hoofdparameters",
+        "de": "Hauptparameter"
       },
       "captures": {
         "fr": {
@@ -766,7 +1314,107 @@
                   "kind": "type",
                   "target": {
                     "bbox": {
-                      "x": 11,
+                      "x": 27,
+                      "y": 736.796875,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"algo-form__input--iterations\"] input"
+                  },
+                  "value": "3"
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 139,
+                      "y": 804,
+                      "width": 607,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"algo-form__input--iterations\"] input"
+                  },
+                  "value": "3"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 27,
+                      "y": 736.796875,
+                      "width": 316,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"algo-form__input--iterations\"] input"
+                  },
+                  "value": "3"
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-34.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 139,
+                      "y": 804,
+                      "width": 607,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"algo-form__input--iterations\"] input"
+                  },
+                  "value": "3"
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-34.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
                       "y": 736.796875,
                       "width": 316,
                       "height": 42
@@ -790,15 +1438,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Ouvrir les paramètres avancés",
-        "en": "Open advanced parameters"
+        "en": "Open advanced parameters",
+        "nl": "Geavanceerde opties openen",
+        "de": "Erweiterte Optionen öffnen"
       },
       "text": {
         "fr": "Cliquez sur « Paramètres avancés » pour afficher les hyperparamètres de l'algorithme génétique : taille de population, taux de croisement, taux de mutation, etc.",
-        "en": "Click \"Advanced parameters\" to reveal the genetic algorithm's hyperparameters: population size, crossover rates, mutation rate, and more."
+        "en": "Click \"Advanced parameters\" to reveal the genetic algorithm's hyperparameters: population size, crossover rates, mutation rate, and more.",
+        "nl": "Klik op “Geavanceerde opties” om de hyperparameters van het genetische algoritme te tonen: populatiegrootte, kruisingssnelheid, mutatiesnelheid, enz.",
+        "de": "Klicken Sie auf „Erweiterte Optionen“, um die Hyperparameter des genetischen Algorithmus anzuzeigen: Populationsgröße, Kreuzungsrate, Mutationsrate usw."
       },
       "subtitle": {
         "fr": "Paramètres OLAGSA",
-        "en": "OLAGSA parameters"
+        "en": "OLAGSA parameters",
+        "nl": "OLAGSA-parameters",
+        "de": "OLAGSA-Parameter"
       },
       "captures": {
         "fr": {
@@ -886,8 +1540,104 @@
                   "target": {
                     "bbox": {
                       "x": 37,
-                      "y": 499.296875,
+                      "y": 824.296875,
                       "width": 138.578125,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 139,
+                      "y": 879.5,
+                      "width": 156.078125,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 824.296875,
+                      "width": 156.078125,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-35.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 139,
+                      "y": 879.5,
+                      "width": 152.703125,
+                      "height": 20
+                    },
+                    "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-35.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 824.296875,
+                      "width": 152.703125,
                       "height": 20
                     },
                     "selector": "[data-testid=\"algo-form__btn--toggle-advanced\"]"
@@ -908,15 +1658,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Hyperparamètres de l'algorithme génétique",
-        "en": "Genetic algorithm hyperparameters"
+        "en": "Genetic algorithm hyperparameters",
+        "nl": "Hyperparameters van het genetische algoritme",
+        "de": "Hyperparameter des genetischen Algorithmus"
       },
       "text": {
         "fr": "Les paramètres avancés d'OLAGSA s'affichent : générations, taille de population, taux de croisement inter-espèces et intra-espèces, taux de mutation, nombre d'espèces attendues et nombre maximum de générations sans amélioration. Les valeurs par défaut conviennent pour la plupart des usages.",
-        "en": "OLAGSA's advanced parameters are displayed: generations, population size, inter-species and intra-species crossover rates, mutation rate, expected species count, and maximum generations without improvement. Default values suit most use cases."
+        "en": "OLAGSA's advanced parameters are displayed: generations, population size, inter-species and intra-species crossover rates, mutation rate, expected species count, and maximum generations without improvement. Default values suit most use cases.",
+        "nl": "De geavanceerde parameters van OLAGSA verschijnen: generaties, populatiegrootte, kruisingssnelheid tussen en binnen soorten, mutatiesnelheid, verwacht aantal soorten en maximum aantal generaties zonder verbetering. De standaardwaarden volstaan voor de meeste toepassingen.",
+        "de": "Die erweiterten Parameter von OLAGSA werden angezeigt: Generationen, Populationsgröße, artenübergreifende und arteninterne Kreuzungsrate, Mutationsrate, erwartete Artenanzahl und maximale Anzahl an Generationen ohne Verbesserung. Die Standardwerte eignen sich für die meisten Anwendungsfälle."
       },
       "subtitle": {
         "fr": "Paramètres avancés",
-        "en": "Advanced parameters"
+        "en": "Advanced parameters",
+        "nl": "Geavanceerde opties",
+        "de": "Erweiterte Optionen"
       },
       "captures": {
         "fr": {
@@ -970,6 +1726,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-37.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-37.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -982,15 +1790,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Importer le fichier de données",
-        "en": "Import the data file"
+        "en": "Import the data file",
+        "nl": "Het gegevensbestand importeren",
+        "de": "Datendatei importieren"
       },
       "text": {
         "fr": "Glissez votre fichier CSV dans la zone d'import ou cliquez dessus pour sélectionner le fichier de données à utiliser pour la génération.",
-        "en": "Drag your CSV file into the import zone or click it to select the data file to use for generation."
+        "en": "Drag your CSV file into the import zone or click it to select the data file to use for generation.",
+        "nl": "Sleep uw CSV-bestand naar de importzone of klik erop om het gegevensbestand te selecteren dat voor de generatie moet worden gebruikt.",
+        "de": "Ziehen Sie Ihre CSV-Datei in den Importbereich oder klicken Sie darauf, um die Datendatei für die Generierung auszuwählen."
       },
       "subtitle": {
         "fr": "Données d'entrée",
-        "en": "Input data"
+        "en": "Input data",
+        "nl": "Invoergegevens",
+        "de": "Eingabedaten"
       },
       "captures": {
         "fr": {
@@ -1078,7 +1892,103 @@
                   "target": {
                     "bbox": {
                       "x": 37,
-                      "y": 206,
+                      "y": 531,
+                      "width": 316,
+                      "height": 104.796875
+                    },
+                    "selector": "[data-testid=\"algorithm-hub__dropzone\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 139,
+                      "y": 563,
+                      "width": 1230,
+                      "height": 128
+                    },
+                    "selector": "[data-testid=\"algorithm-hub__dropzone\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 531,
+                      "width": 316,
+                      "height": 104.796875
+                    },
+                    "selector": "[data-testid=\"algorithm-hub__dropzone\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-38.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 139,
+                      "y": 563,
+                      "width": 1230,
+                      "height": 128
+                    },
+                    "selector": "[data-testid=\"algorithm-hub__dropzone\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-38.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 531,
                       "width": 316,
                       "height": 104.796875
                     },
@@ -1100,15 +2010,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Lancer la génération",
-        "en": "Launch the generation"
+        "en": "Launch the generation",
+        "nl": "De generatie starten",
+        "de": "Generierung starten"
       },
       "text": {
         "fr": "Cliquez sur « Lancer la génération » pour soumettre la tâche au moteur OLAGSA. La génération apparaît immédiatement dans la liste avec le statut « En attente ».",
-        "en": "Click \"Launch generation\" to submit the task to the OLAGSA engine. The generation immediately appears in the list with a \"Pending\" status."
+        "en": "Click \"Launch generation\" to submit the task to the OLAGSA engine. The generation immediately appears in the list with a \"Pending\" status.",
+        "nl": "Klik op “Generatie starten” om de taak naar de OLAGSA-engine te sturen. De generatie verschijnt meteen in de lijst met de status “In behandeling”.",
+        "de": "Klicken Sie auf „Generierung starten“, um die Aufgabe an die OLAGSA-Engine zu übermitteln. Die Generierung erscheint sofort in der Liste mit dem Status „Ausstehend“."
       },
       "subtitle": {
         "fr": "Exécution",
-        "en": "Execution"
+        "en": "Execution",
+        "nl": "Uitvoering",
+        "de": "Ausführung"
       },
       "captures": {
         "fr": {
@@ -1206,6 +2122,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1193.4375,
+                      "y": 624,
+                      "width": 175.5625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"algorithm-hub__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 511.5,
+                      "width": 175.5625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"algorithm-hub__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-39.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1173.328125,
+                      "y": 624,
+                      "width": 195.671875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"algorithm-hub__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-39.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 37,
+                      "y": 512,
+                      "width": 195.671875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"algorithm-hub__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1218,15 +2230,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Génération soumise",
-        "en": "Generation submitted"
+        "en": "Generation submitted",
+        "nl": "Generatie ingediend",
+        "de": "Generierung übermittelt"
       },
       "text": {
         "fr": "La génération « Test Run 1 » apparaît dans la liste. Un point orange clignotant indique qu'elle est en attente de traitement ; il devient vert dès que le moteur OLAGSA a terminé.",
-        "en": "The \"Test Run 1\" generation appears in the list. A pulsing orange dot indicates it is pending processing; it turns green once the OLAGSA engine has finished."
+        "en": "The \"Test Run 1\" generation appears in the list. A pulsing orange dot indicates it is pending processing; it turns green once the OLAGSA engine has finished.",
+        "nl": "De generatie “Test Run 1” verschijnt in de lijst. Een knipperende oranje stip geeft aan dat ze op verwerking wacht; de stip wordt groen zodra de OLAGSA-engine klaar is.",
+        "de": "Die Generierung „Test Run 1“ erscheint in der Liste. Ein blinkender orangefarbener Punkt zeigt an, dass sie auf die Verarbeitung wartet; er wird grün, sobald die OLAGSA-Engine fertig ist."
       },
       "subtitle": {
         "fr": "Suivi du statut",
-        "en": "Status tracking"
+        "en": "Status tracking",
+        "nl": "Statusopvolging",
+        "de": "Statusverfolgung"
       },
       "captures": {
         "fr": {
@@ -1280,6 +2298,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-41.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-41.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1292,15 +2362,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Génération terminée avec succès",
-        "en": "Generation completed"
+        "en": "Generation completed",
+        "nl": "Generatie met succes voltooid",
+        "de": "Generierung erfolgreich abgeschlossen"
       },
       "text": {
         "fr": "Le point passe au vert : la génération est terminée. Les clés de répartition ont été calculées et sont prêtes à être consultées en déroulant la ligne.",
-        "en": "The dot turns green — the generation is complete. The allocation keys have been computed and are ready to view by expanding the row."
+        "en": "The dot turns green — the generation is complete. The allocation keys have been computed and are ready to view by expanding the row.",
+        "nl": "De stip wordt groen: de generatie is voltooid. De verdeelsleutels zijn berekend en kunnen worden bekeken door de rij uit te klappen.",
+        "de": "Der Punkt wird grün: Die Generierung ist abgeschlossen. Die Verteilungsschlüssel wurden berechnet und können durch Aufklappen der Zeile eingesehen werden."
       },
       "subtitle": {
         "fr": "Suivi du statut",
-        "en": "Status tracking"
+        "en": "Status tracking",
+        "nl": "Statusopvolging",
+        "de": "Statusverfolgung"
       },
       "captures": {
         "fr": {
@@ -1354,6 +2430,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-45.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-45.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-45.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-45.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1366,15 +2494,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Clés de répartition générées",
-        "en": "Allocation keys generated"
+        "en": "Allocation keys generated",
+        "nl": "Gegenereerde verdeelsleutels",
+        "de": "Generierte Verteilungsschlüssel"
       },
       "text": {
         "fr": "La liste des clés calculées apparaît sous la génération. Chaque clé correspond à une solution OLAGSA optimisée. Cliquez sur une clé pour afficher sa répartition détaillée.",
-        "en": "The list of computed keys appears under the generation. Each key corresponds to one optimised OLAGSA solution. Click a key to view its detailed allocation."
+        "en": "The list of computed keys appears under the generation. Each key corresponds to one optimised OLAGSA solution. Click a key to view its detailed allocation.",
+        "nl": "De lijst met berekende sleutels verschijnt onder de generatie. Elke sleutel komt overeen met een geoptimaliseerde OLAGSA-oplossing. Klik op een sleutel om de gedetailleerde verdeling te bekijken.",
+        "de": "Die Liste der berechneten Schlüssel erscheint unter der Generierung. Jeder Schlüssel entspricht einer optimierten OLAGSA-Lösung. Klicken Sie auf einen Schlüssel, um seine detaillierte Verteilung anzuzeigen."
       },
       "subtitle": {
         "fr": "Résultats",
-        "en": "Results"
+        "en": "Results",
+        "nl": "Resultaten",
+        "de": "Ergebnisse"
       },
       "captures": {
         "fr": {
@@ -1428,6 +2562,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-48.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-48.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-48.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-48.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1440,15 +2626,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Détail de la clé et répartition par itération",
-        "en": "Key detail and per-iteration allocation"
+        "en": "Key detail and per-iteration allocation",
+        "nl": "Sleuteldetail en verdeling per iteratie",
+        "de": "Schlüsseldetail und Verteilung pro Iteration"
       },
       "text": {
         "fr": "Le tableau de répartition s'affiche pour cette clé, détaillant les valeurs calculées par l'algorithme. Le bouton « Enregistrer » permet de sauvegarder cette clé dans le module Clés.",
-        "en": "The allocation table is shown for this key, detailing the values computed by the algorithm. The \"Save\" button lets you store this key in the Keys module."
+        "en": "The allocation table is shown for this key, detailing the values computed by the algorithm. The \"Save\" button lets you store this key in the Keys module.",
+        "nl": "De verdelingstabel van deze sleutel verschijnt, met de waarden die het algoritme heeft berekend. Met de knop “Sleutel opslaan in /keys” bewaart u deze sleutel in Verdeelsleutelbeheer.",
+        "de": "Die Verteilungstabelle dieses Schlüssels wird angezeigt, mit den vom Algorithmus berechneten Werten. Mit der Schaltfläche „Schlüssel in /keys speichern“ legen Sie diesen Schlüssel in der Verteilungsschlüsselverwaltung ab."
       },
       "subtitle": {
         "fr": "Inspection",
-        "en": "Inspection"
+        "en": "Inspection",
+        "nl": "Inspectie",
+        "de": "Prüfung"
       },
       "captures": {
         "fr": {
@@ -1502,6 +2694,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-51.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-51.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-51.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-51.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1514,15 +2758,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Enregistrer la clé dans le module",
-        "en": "Save the key to the module"
+        "en": "Save the key to the module",
+        "nl": "De sleutel in de module opslaan",
+        "de": "Schlüssel im Modul speichern"
       },
       "text": {
         "fr": "Cliquez sur « Enregistrer » pour sauvegarder cette clé de répartition dans le module Clés, où elle sera accessible depuis la gestion de la communauté.",
-        "en": "Click \"Save\" to store this allocation key in the Keys module, where it will be accessible from the community management section."
+        "en": "Click \"Save\" to store this allocation key in the Keys module, where it will be accessible from the community management section.",
+        "nl": "Klik op “Sleutel opslaan in /keys” om deze verdeelsleutel te bewaren in Verdeelsleutelbeheer, waar de sleutel toegankelijk is vanuit het beheer van de gemeenschap.",
+        "de": "Klicken Sie auf „Schlüssel in /keys speichern“, um diesen Verteilungsschlüssel in der Verteilungsschlüsselverwaltung abzulegen, wo er über die Verwaltung der Gemeinschaft zugänglich ist."
       },
       "subtitle": {
         "fr": "Sauvegarde",
-        "en": "Save"
+        "en": "Save",
+        "nl": "Opslaan",
+        "de": "Speichern"
       },
       "captures": {
         "fr": {
@@ -1620,6 +2870,102 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-52.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1288,
+                      "y": 851.5,
+                      "width": 32,
+                      "height": 35
+                    },
+                    "selector": "[data-testid^=\"key-row__btn--save--\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-52.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 268,
+                      "y": 794.296875,
+                      "width": 32,
+                      "height": 35
+                    },
+                    "selector": "[data-testid^=\"key-row__btn--save--\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-52.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1288,
+                      "y": 851.5,
+                      "width": 32,
+                      "height": 35
+                    },
+                    "selector": "[data-testid^=\"key-row__btn--save--\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-52.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 268,
+                      "y": 793.796875,
+                      "width": 32,
+                      "height": 35
+                    },
+                    "selector": "[data-testid^=\"key-row__btn--save--\"] button"
+                  }
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -1632,15 +2978,21 @@
       "waitAfter": 600,
       "title": {
         "fr": "Confirmer l'enregistrement",
-        "en": "Confirm saving the key"
+        "en": "Confirm saving the key",
+        "nl": "Opslaan bevestigen",
+        "de": "Speichern bestätigen"
       },
       "text": {
         "fr": "Une fenêtre de confirmation s'affiche. Cliquez sur le bouton de validation pour enregistrer définitivement cette clé de répartition dans le module Clés.",
-        "en": "A confirmation dialog appears. Click the confirm button to permanently save this allocation key to the Keys module."
+        "en": "A confirmation dialog appears. Click the confirm button to permanently save this allocation key to the Keys module.",
+        "nl": "Er verschijnt een bevestigingsvenster. Klik op de bevestigingsknop om deze verdeelsleutel definitief op te slaan in Verdeelsleutelbeheer.",
+        "de": "Ein Bestätigungsdialog wird angezeigt. Klicken Sie auf die Bestätigungsschaltfläche, um diesen Verteilungsschlüssel endgültig in der Verteilungsschlüsselverwaltung zu speichern."
       },
       "subtitle": {
         "fr": "Sauvegarde",
-        "en": "Save"
+        "en": "Save",
+        "nl": "Opslaan",
+        "de": "Speichern"
       },
       "captures": {
         "fr": {
@@ -1694,6 +3046,58 @@
               }
             ]
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-54.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-54.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-54.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-54.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
         }
       }
     },
@@ -1706,15 +3110,21 @@
       "waitAfter": 1000,
       "title": {
         "fr": "Ouvrir les clés",
-        "en": "Open the keys"
+        "en": "Open the keys",
+        "nl": "Verdeelsleutels openen",
+        "de": "Verteilungsschlüssel öffnen"
       },
       "text": {
         "fr": "Dans la section « Gestion » de la barre latérale, cliquez sur « Clés » pour afficher les clés de répartition enregistrées pour la communauté active.",
-        "en": "In the sidebar's \"Management\" section, click \"Keys\" to display the allocation keys saved for the active community."
+        "en": "In the sidebar's \"Management\" section, click \"Keys\" to display the allocation keys saved for the active community.",
+        "nl": "Klik in de sectie “Beheer” van de zijbalk op “Verdeelsleutelbeheer” om de verdeelsleutels te tonen die voor de actieve gemeenschap zijn opgeslagen.",
+        "de": "Klicken Sie im Abschnitt „Verwaltung“ der Seitenleiste auf „Verteilungsschlüsselverwaltung“, um die für die aktive Gemeinschaft gespeicherten Verteilungsschlüssel anzuzeigen."
       },
       "subtitle": {
         "fr": "Navigation",
-        "en": "Navigation"
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
       },
       "captures": {
         "fr": {
@@ -1822,6 +3232,112 @@
               "subtitle": "Navigation"
             }
           }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-59.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-62.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Verdeelsleutels openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en tik vervolgens in de sectie “Beheer” op “Verdeelsleutelbeheer” om de verdeelsleutels te tonen.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-59.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-62.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 462.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/keys\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Verteilungsschlüssel öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und tippen Sie dann im Abschnitt „Verwaltung“ auf „Verteilungsschlüsselverwaltung“, um die Verteilungsschlüssel anzuzeigen.",
+              "subtitle": "Navigation"
+            }
+          }
         }
       }
     },
@@ -1834,15 +3350,21 @@
       "waitAfter": 0,
       "title": {
         "fr": "Clé visible dans le module Clés",
-        "en": "Key visible in the Keys module"
+        "en": "Key visible in the Keys module",
+        "nl": "Sleutel zichtbaar in Verdeelsleutelbeheer",
+        "de": "Schlüssel in der Verteilungsschlüsselverwaltung sichtbar"
       },
       "text": {
         "fr": "La clé enregistrée depuis le module OLAGSA apparaît maintenant dans la liste des clés de répartition de la communauté. Elle est disponible pour les membres autorisés.",
-        "en": "The key saved from the OLAGSA module now appears in the community's allocation keys list. It is available to authorised members."
+        "en": "The key saved from the OLAGSA module now appears in the community's allocation keys list. It is available to authorised members.",
+        "nl": "De sleutel die vanuit de OLAGSA-module werd opgeslagen, verschijnt nu in de lijst met verdeelsleutels van de gemeenschap. Hij is beschikbaar voor de gemachtigde leden.",
+        "de": "Der aus dem OLAGSA-Modul gespeicherte Schlüssel erscheint jetzt in der Liste der Verteilungsschlüssel der Gemeinschaft. Er steht berechtigten Mitgliedern zur Verfügung."
       },
       "subtitle": {
         "fr": "Résultat final",
-        "en": "Final result"
+        "en": "Final result",
+        "nl": "Eindresultaat",
+        "de": "Endergebnis"
       },
       "captures": {
         "fr": {
@@ -1888,6 +3410,58 @@
             "frames": [
               {
                 "screenshot": "../assets/algorithm-generate/en/mobile/step-65.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/desktop/step-65.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/nl/mobile/step-65.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/desktop/step-65.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/algorithm-generate/de/mobile/step-65.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

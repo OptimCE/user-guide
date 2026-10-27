@@ -6,15 +6,16 @@
     <title>OptimCE — User guides</title>
     <meta name="description" content="Step-by-step guides for OptimCE: run an energy community — its members, meters, allocation keys, sharing operations and billing.">
     <link rel="canonical" href="https://guide.optimce.be/index.en.html">
-    <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/index.html">
+    <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/">
     <link rel="alternate" hreflang="en" href="https://guide.optimce.be/index.en.html">
-    <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/index.html">
+    <link rel="alternate" hreflang="nl" href="https://guide.optimce.be/index.nl.html">
+    <link rel="alternate" hreflang="de" href="https://guide.optimce.be/index.de.html">
+    <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="OptimCE — User guides">
     <meta property="og:description" content="Step-by-step guides for OptimCE: run an energy community — its members, meters, allocation keys, sharing operations and billing.">
     <meta property="og:url" content="https://guide.optimce.be/index.en.html">
     <meta property="og:site_name" content="OptimCE — User guides">
-    <meta property="og:locale" content="en">
     <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="./assets/guides.css">
     <script>
@@ -24,8 +25,8 @@
           var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
           document.documentElement.setAttribute("data-theme", savedTheme || (prefersDark ? "dark" : "light"));
         } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
-        // The file we just loaded IS the language choice — record it so guide
-        // pages opened from here keep the same locale.
+        // The file we just loaded IS the language choice — record it so
+        // interactive.html (one URL for every locale) opens in the same one.
         try { localStorage.setItem("oce-lang", "en"); } catch (e) {}
       })();
     </script>
@@ -44,17 +45,27 @@
         <span class="steppy-site-title">OptimCE — User guides</span>
 
         <div class="steppy-header-actions">
-            <nav class="steppy-locale-switch" aria-label="Language">
-                <ul>
-                    <li>
-                        <a href="./index.html" hreflang="fr">Français</a>
-                    </li>
-                    <li>
-                        <span aria-current="true">English</span>
-                    </li>
-                </ul>
-            </nav>
-            <button type="button" class="oce-theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+<label class="steppy-locale-select">
+    <span class="steppy-visually-hidden">Language</span>
+    <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <select autocomplete="off">        <option value="./index.html" lang="fr">Français</option>        <option value="./index.en.html" lang="en" selected>English</option>        <option value="./index.nl.html" lang="nl">Nederlands</option>        <option value="./index.de.html" lang="de">Deutsch</option>    </select>
+    <svg class="steppy-locale-select-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</label>
+<script>
+  (function () {
+    var sel = document.querySelector(".steppy-locale-select select");
+    if (!sel) return;
+    sel.addEventListener("change", function () {
+      if (sel.value) window.location.href = sel.value;
+    });
+    // Back from the language just picked can restore this page from the
+    // bfcache with that option still showing — snap it back to this page's own.
+    window.addEventListener("pageshow", function () {
+      var own = sel.querySelector("option[selected]");
+      if (own) sel.value = own.value;
+    });
+  })();
+</script>            <button type="button" class="oce-theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
                 <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
                 </svg>
@@ -86,6 +97,14 @@
                             <span class="steppy-index-desc">The recommended path to discover the application end-to-end, in 11 steps.</span>
                         </div>
                         <span class="steppy-index-meta">11 steps</span>
+                    </a>
+                </li>
+                <li class="steppy-index-group">
+                    <a href="./welcome-tours/en.html">
+                        <span class="steppy-index-eyebrow">Module</span>
+                        <span class="steppy-index-title">Welcome tours</span>
+                        <span class="steppy-index-desc">One tour per role: when you arrive, then when you become a member, a manager or an administrator.</span>
+                        <span class="steppy-index-meta">4 guides</span>
                     </a>
                 </li>
                 <li class="steppy-index-group">
@@ -149,7 +168,7 @@
                         <span class="steppy-index-eyebrow">Module</span>
                         <span class="steppy-index-title">Annexe services</span>
                         <span class="steppy-index-desc">Manage annexe service subscriptions and generate allocation keys via the OLAGSA algorithm.</span>
-                        <span class="steppy-index-meta">6 guides</span>
+                        <span class="steppy-index-meta">7 guides</span>
                     </a>
                 </li>
             </ul>
