@@ -1,8 +1,11 @@
 /* OptimCE static guide stylesheet — overrides the bundled steppy CSS.
-   Editorial doc-site treatment paired to the OptimCE green palette.
-   Display: Fraunces (variable serif). Body: Plus Jakarta Sans. */
+   "Journey" design: a deep-green band (header, title, role tabs) over a light
+   page; one colour per role (static/_roles.html.j2), set as --role / --role-soft
+   by the .oce-role--<slug> class, so a component painted with var(--role)
+   takes the colour of whatever role it sits in.
+   Display: Bricolage Grotesque. Body: Figtree. */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..800,0..100&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:ital,wght@0,400..800;1,400..600&display=swap');
 
 :root {
     --steppy-cursor-size: 24px;
@@ -14,26 +17,33 @@
     --oce-primary: #43a047;
     --oce-primary-dark: #1b5e20;
     --oce-primary-light: #81c784;
-    --oce-primary-soft: #d9ebd9;
-
-    --oce-paper: #f7f4eb;
-    --oce-paper-deep: #ede7d4;
-    --oce-card: #ffffff;
-    --oce-card-tint: #fbfaf3;
-    --oce-bg: var(--oce-paper);
-
-    --oce-ink: #0e1f12;
-    --oce-text: #181e18;
-    --oce-text-muted: #6a7867;
-    --oce-text-soft: #94a191;
-    --oce-border: #e1dcc6;
-    --oce-border-strong: #c8c0a0;
-    --oce-accent: #b08a3a;
-    /* Bold step text: brandgreen.600 of the app's preset, 5.1:1 on white. */
-    --oce-strong: #2e7d32;
+    --oce-primary-soft: #e1f0df;
     --oce-primary-glow: rgba(67, 160, 71, 0.35);
 
-    --oce-kbd-bg: #181e18;
+    /* The band: header, page title and role tabs. Same green in both themes,
+       a shade deeper in dark so it still separates from the page. */
+    --oce-band: #0f2e14;
+    --oce-band-ink: #ffffff;
+    --oce-band-muted: #c4d9c6;
+    --oce-band-line: rgba(255, 255, 255, 0.22);
+    --oce-band-fill: rgba(255, 255, 255, 0.09);
+
+    --oce-paper: #f3f6f2;
+    --oce-paper-deep: #e8eee6;
+    --oce-card: #ffffff;
+    --oce-stage: #eef3ed;
+    --oce-bg: var(--oce-paper);
+
+    --oce-ink: #0f1d11;
+    --oce-text: #0f1d11;
+    --oce-text-muted: #55625a;
+    --oce-border: #dfe6de;
+    --oce-border-strong: #c3cfc2;
+    /* Bold step text: brandgreen.600 of the app's preset, 5.1:1 on white. */
+    --oce-strong: #2e7d32;
+    --oce-link: #1f6b25;
+
+    --oce-kbd-bg: #0f1d11;
     --oce-kbd-fg: #f0f4f0;
 
     --steppy-z-screenshot: 1;
@@ -41,23 +51,31 @@
     --steppy-z-ripple: 11;
     --steppy-z-glyph: 12;
 
-    --font-display: 'Fraunces', 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+    --font-body: 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-mono: ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace;
 
-    --oce-shadow-sm: 0 1px 2px rgba(14, 31, 18, 0.04), 0 2px 6px rgba(14, 31, 18, 0.04);
-    --oce-shadow-md: 0 2px 4px rgba(14, 31, 18, 0.04), 0 8px 24px rgba(14, 31, 18, 0.08);
-    --oce-shadow-lg: 0 4px 12px rgba(14, 31, 18, 0.06), 0 24px 48px rgba(14, 31, 18, 0.12);
+    --oce-shadow-sm: 0 1px 2px rgba(15, 46, 20, 0.05), 0 2px 6px rgba(15, 46, 20, 0.05);
+    --oce-shadow-md: 0 2px 4px rgba(15, 46, 20, 0.05), 0 10px 28px rgba(15, 46, 20, 0.09);
+    --oce-shadow-lg: 0 6px 16px rgba(15, 46, 20, 0.08), 0 28px 56px rgba(15, 46, 20, 0.14);
 
-    --oce-radius-sm: 8px;
-    --oce-radius-md: 14px;
+    --oce-radius-sm: 10px;
+    --oce-radius-md: 16px;
     --oce-radius-lg: 22px;
 
-    /* Height of the sticky .steppy-site-header: 18px padding x2 + the 36px logo
-       (the tallest flex item) + the 1px bottom border. Anything that positions
-       itself against the viewport top has to subtract this, which today means
-       the interactive player's sticky rail — see the --steppy-* block below. */
-    --oce-header-h: 73px;
+    --oce-wrap: 1240px;
+    --oce-gutter: 32px;
+
+    /* Height of the sticky header of interactive.html (the only page where the
+       header sticks; elsewhere it sits inside the band). The player's sidebar
+       rail subtracts it — see the --steppy-* block below. */
+    --oce-header-h: 77px;
+
+    /* Neutral role defaults, for any element outside an .oce-role--* scope. */
+    --role: #2e7d32;
+    --role-soft: #e1f0df;
+    --role-on: #ffffff;
+    --role-light: #81c784;
 }
 
 :root[data-theme="dark"] {
@@ -69,31 +87,51 @@
     --oce-primary: #66bb6a;
     --oce-primary-dark: #43a047;
     --oce-primary-light: #a5d6a7;
-    --oce-primary-soft: #1b3a1f;
-
-    --oce-paper: #0c130d;
-    --oce-paper-deep: #060a07;
-    --oce-card: #131c14;
-    --oce-card-tint: #182219;
-
-    --oce-ink: #ecf2ec;
-    --oce-text: #f0f4f0;
-    --oce-text-muted: #93a395;
-    --oce-text-soft: #6f7e71;
-    --oce-border: #2c3a2e;
-    --oce-border-strong: #4a5a4c;
-    --oce-accent: #d4b572;
-    /* brandgreen.300 on the dark cards. */
-    --oce-strong: #81c784;
+    --oce-primary-soft: #173019;
     --oce-primary-glow: rgba(102, 187, 106, 0.40);
 
-    --oce-kbd-bg: #f0f4f0;
-    --oce-kbd-fg: #181e18;
+    --oce-band: #0a1f0d;
+    --oce-band-line: rgba(255, 255, 255, 0.18);
+
+    --oce-paper: #0b120c;
+    --oce-paper-deep: #070b07;
+    --oce-card: #121b13;
+    --oce-stage: #0e160f;
+
+    --oce-ink: #ecf2ec;
+    --oce-text: #ecf2ec;
+    --oce-text-muted: #9fb0a1;
+    --oce-border: #273428;
+    --oce-border-strong: #3d4d3f;
+    /* brandgreen.300 on the dark cards. */
+    --oce-strong: #81c784;
+    --oce-link: #8fd19a;
+
+    --oce-kbd-bg: #ecf2ec;
+    --oce-kbd-fg: #0f1d11;
 
     --oce-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.3);
-    --oce-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.35), 0 8px 24px rgba(0, 0, 0, 0.45);
-    --oce-shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.4), 0 24px 48px rgba(0, 0, 0, 0.6);
+    --oce-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.35), 0 10px 28px rgba(0, 0, 0, 0.45);
+    --oce-shadow-lg: 0 6px 16px rgba(0, 0, 0, 0.4), 0 28px 56px rgba(0, 0, 0, 0.6);
+
+    --role: #81c784;
+    --role-soft: #173019;
+    --role-on: #0b120c;
 }
+
+/* ── Roles ───────────────────────────────────────────────────────────────
+   One colour per role. Each pair differs in lightness as well as hue, and the
+   text always names the role, so colour is never the only cue. --role-on is the
+   text on a solid --role fill; --role-light is the role on the dark band. */
+.oce-role--everyone { --role: #4f5f53; --role-soft: #e7ece5; --role-on: #ffffff; --role-light: #b4c2b6; }
+.oce-role--member   { --role: #2e7d32; --role-soft: #e1f0df; --role-on: #ffffff; --role-light: #81c784; }
+.oce-role--manager  { --role: #0a6380; --role-soft: #dcecf2; --role-on: #ffffff; --role-light: #6cc3de; }
+.oce-role--admin    { --role: #8a4a12; --role-soft: #f4e6d6; --role-on: #ffffff; --role-light: #e0a56a; }
+
+:root[data-theme="dark"] .oce-role--everyone { --role: #b4c2b6; --role-soft: #1d251f; --role-on: #0b120c; }
+:root[data-theme="dark"] .oce-role--member   { --role: #81c784; --role-soft: #173019; --role-on: #0b120c; }
+:root[data-theme="dark"] .oce-role--manager  { --role: #6cc3de; --role-soft: #10303b; --role-on: #0b120c; }
+:root[data-theme="dark"] .oce-role--admin    { --role: #e0a56a; --role-soft: #3a2614; --role-on: #0b120c; }
 
 /* ── Interactive player (<steppy-guide> web component) ──────────────────
    The interactive mode is the Lit <steppy-guide> custom element. Its Shadow
@@ -147,34 +185,27 @@ body {
     margin: 0;
     min-height: 100vh;
     font-family: var(--font-body);
-    font-feature-settings: 'ss01', 'cv11';
+    font-size: 16px;
     color: var(--oce-text);
     background: var(--oce-paper);
-    background-image:
-        radial-gradient(1200px 600px at 100% -10%, rgba(67, 160, 71, 0.08), transparent 60%),
-        radial-gradient(900px 500px at -10% 100%, rgba(176, 138, 58, 0.06), transparent 60%);
-    background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.55;
 }
 
-:root[data-theme="dark"] body {
-    background-image:
-        radial-gradient(1200px 600px at 100% -10%, rgba(102, 187, 106, 0.08), transparent 60%),
-        radial-gradient(900px 500px at -10% 100%, rgba(212, 181, 114, 0.05), transparent 60%);
-}
-
-a { color: var(--oce-primary-dark); }
-:root[data-theme="dark"] a { color: var(--oce-primary-light); }
+a { color: var(--oce-link); }
 
 ::selection { background: var(--oce-primary); color: #fff; }
 
+[hidden] { display: none !important; }
+
+:focus-visible { outline: 2px solid var(--oce-primary); outline-offset: 3px; }
+
 /* Locale-driven visibility for chrome rendered once per language as
-   .i18n-<loc> spans: the guide fragment's role badge (build.py passes it no
-   locale) and all of interactive.html (one file for every locale; its script
-   sets <html lang> from ?lang= / the player). Only the span matching <html lang>
-   shows. A new locale needs a line here as well as in steppy.guide.config.ts. */
+   .i18n-<loc> spans: all of interactive.html (one file for every locale; its
+   script sets <html lang> from ?lang= / the player). Only the span matching
+   <html lang> shows. A new locale needs a line here as well as in
+   steppy.guide.config.ts. */
 :root:not([lang="fr"]) .i18n-fr,
 :root:not([lang="en"]) .i18n-en,
 :root:not([lang="nl"]) .i18n-nl,
@@ -182,148 +213,121 @@ a { color: var(--oce-primary-dark); }
     display: none !important;
 }
 
-/* ── Site chrome ─────────────────────────────────────────────────────── */
+.steppy-visually-hidden {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ── Band + header ───────────────────────────────────────────────────── */
+
+.oce-band {
+    background: var(--oce-band);
+    color: var(--oce-band-ink);
+}
 
 .steppy-site-header {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    flex-wrap: wrap;
-    padding: 18px 40px;
-    background: rgba(255, 255, 255, 0.78);
-    backdrop-filter: saturate(140%) blur(10px);
-    -webkit-backdrop-filter: saturate(140%) blur(10px);
-    border-bottom: 1px solid var(--oce-border);
     position: sticky;
     top: 0;
     z-index: 30;
-    box-shadow: 0 1px 0 rgba(67, 160, 71, 0.06);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px 18px;
+    padding: 18px max(var(--oce-gutter), calc((100% - var(--oce-wrap)) / 2 + var(--oce-gutter)));
+    background: var(--oce-band);
+    color: var(--oce-band-ink);
 }
 
-:root[data-theme="dark"] .steppy-site-header {
-    background: rgba(19, 28, 20, 0.78);
-}
-
-.steppy-site-header::before {
-    content: "";
-    position: absolute;
-    inset: 0 0 auto 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--oce-primary-dark), var(--oce-primary), var(--oce-primary-light));
-    opacity: 0.9;
-}
+/* Inside the band the header scrolls away with it; only interactive.html,
+   where the header is a direct child of <body>, keeps it sticky. */
+.oce-band > .steppy-site-header { position: static; }
 
 .oce-logo-link {
     display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    flex-shrink: 0;
-    border-radius: 8px;
-    transition: transform 200ms cubic-bezier(0.34, 1.56, 0.64, 1);
+    flex: none;
+    border-radius: 10px;
+    transition: transform 200ms ease;
 }
-
 .oce-logo-link:hover { transform: rotate(-6deg); }
-.oce-logo-link:focus-visible { outline: 2px solid var(--oce-primary); outline-offset: 4px; }
 
-.oce-logo {
-    width: 36px;
-    height: 36px;
-    display: block;
-    filter: drop-shadow(0 1px 2px rgba(27, 94, 32, 0.18));
-}
+.oce-logo { width: 38px; height: 34px; display: block; }
+/* The two darkest leaves vanish on the band: lift them. */
+.steppy-site-header .oce-logo path:nth-child(1) { fill: #81c784; }
+.steppy-site-header .oce-logo path:nth-child(4) { fill: #43a047; }
 
 .steppy-site-title {
     font-family: var(--font-display);
-    font-optical-sizing: auto;
-    font-variation-settings: 'opsz' 32, 'SOFT' 30;
-    font-size: 19px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
     letter-spacing: -0.01em;
-    color: var(--oce-ink);
+    color: var(--oce-band-ink);
     text-decoration: none;
 }
-
-a.steppy-site-title:hover { color: var(--oce-primary-dark); }
+a.steppy-site-title:hover { text-decoration: underline; text-underline-offset: 4px; }
 
 .steppy-breadcrumb {
-    font-family: var(--font-body);
-    font-size: 13px;
-    color: var(--oce-text-muted);
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 4px;
-    letter-spacing: 0.01em;
+    align-items: center;
+    gap: 6px 8px;
+    font-size: 14px;
+    color: var(--oce-band-muted);
+    min-width: 0;
 }
-
 .steppy-breadcrumb a {
-    color: var(--oce-text-muted);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: color 150ms ease, border-color 150ms ease;
+    color: var(--oce-band-ink);
+    text-decoration: underline;
+    text-decoration-color: var(--oce-band-line);
+    text-underline-offset: 4px;
 }
-
-.steppy-breadcrumb a:hover {
-    color: var(--oce-primary-dark);
-    border-bottom-color: var(--oce-primary);
-}
-
-.steppy-breadcrumb-sep {
-    color: var(--oce-text-soft);
-    margin: 0 4px;
-    font-weight: 400;
-}
-
-.steppy-breadcrumb [aria-current="page"] {
-    color: var(--oce-ink);
-    font-weight: 500;
-}
+.steppy-breadcrumb a:hover { text-decoration-color: currentColor; }
+.steppy-breadcrumb-sep { opacity: 0.6; }
+.steppy-breadcrumb [aria-current="page"] { color: var(--oce-band-muted); }
 
 .steppy-header-actions {
     margin-left: auto;
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
 }
 
+.steppy-site-header :focus-visible,
+.oce-band :focus-visible { outline-color: #ffffff; }
+
 /* Language picker (_locale_select.html.j2) — a native <select> dressed as a
-   pill the height of the theme toggle next to it, with a globe on the left and
-   a chevron on the right (both absolutely placed, click-through). */
+   pill, globe on the left, chevron on the right (both click-through). */
 .steppy-locale-select {
     position: relative;
     display: inline-flex;
     align-items: center;
     margin: 0;
-    color: var(--oce-text-muted);
+    color: var(--oce-band-muted);
 }
 
 .steppy-locale-select select {
     -webkit-appearance: none;
     appearance: none;
-    height: 36px;
+    height: 44px;
     margin: 0;
-    padding: 0 32px 0 34px;
-    border: 1px solid var(--oce-border);
+    padding: 0 34px 0 36px;
+    border: 1px solid var(--oce-band-line);
     border-radius: 999px;
-    background-color: var(--oce-card);
-    color: var(--oce-ink);
+    background-color: transparent;
+    color: var(--oce-band-ink);
     font-family: var(--font-body);
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
-    letter-spacing: 0.01em;
     cursor: pointer;
-    transition: border-color 150ms ease, background-color 150ms ease;
+    transition: background-color 150ms ease;
 }
-
-.steppy-locale-select select:hover {
-    border-color: var(--oce-border-strong);
-    background-color: var(--oce-card-tint);
-}
-
-.steppy-locale-select select:focus-visible {
-    outline: 2px solid var(--oce-primary);
-    outline-offset: 3px;
-}
+.steppy-locale-select select:hover { background-color: var(--oce-band-fill); }
 
 /* The open option list is drawn by the OS; give it the page's colours. */
 .steppy-locale-select option {
@@ -339,1013 +343,674 @@ a.steppy-site-title:hover { color: var(--oce-primary-dark); }
     transform: translateY(-50%);
     pointer-events: none;
 }
+.steppy-locale-select-icon { left: 13px; }
+.steppy-locale-select-chevron { right: 13px; width: 14px; height: 14px; }
 
-.steppy-locale-select-icon { left: 12px; }
-.steppy-locale-select-chevron { right: 12px; width: 14px; height: 14px; }
+:root[data-theme="dark"] .steppy-locale-select select { color-scheme: dark; }
 
-.steppy-locale-select select:hover ~ .steppy-locale-select-chevron,
-.steppy-locale-select select:focus-visible ~ .steppy-locale-select-chevron {
-    color: var(--oce-ink);
-}
-
-:root[data-theme="dark"] .steppy-locale-select select {
-    color-scheme: dark;
-}
-
-.steppy-visually-hidden {
-    position: absolute !important;
-    width: 1px;
-    height: 1px;
+.oce-theme-toggle {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
     padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-    border: 0;
+    border: 1px solid var(--oce-band-line);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--oce-band-ink);
+    cursor: pointer;
+    transition: background-color 150ms ease;
+}
+.oce-theme-toggle:hover { background: var(--oce-band-fill); }
+.oce-theme-toggle svg { width: 18px; height: 18px; }
+.oce-theme-toggle .icon-sun  { display: none; }
+.oce-theme-toggle .icon-moon { display: block; }
+:root[data-theme="dark"] .oce-theme-toggle .icon-sun  { display: block; }
+:root[data-theme="dark"] .oce-theme-toggle .icon-moon { display: none; }
+
+/* Band body: eyebrow, title, lede, audience, tabs. */
+.oce-band-inner {
+    max-width: var(--oce-wrap);
+    margin: 0 auto;
+    padding: 36px var(--oce-gutter) 0;
+}
+.oce-band--compact .oce-band-inner { padding-top: 20px; padding-bottom: 36px; }
+
+.oce-eyebrow {
+    margin: 0 0 12px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--oce-band-muted);
 }
 
-/* Layout switch — pill-shaped segmented control, like the mode switch. */
+.oce-display {
+    margin: 0;
+    max-width: 900px;
+    font-family: var(--font-display);
+    font-size: clamp(36px, 5.4vw, 64px);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+}
+.oce-band--compact .oce-display { font-size: clamp(32px, 4.2vw, 50px); }
+
+.oce-lede {
+    margin: 16px 0 0;
+    max-width: 680px;
+    font-size: 19px;
+    color: var(--oce-band-muted);
+    text-wrap: pretty;
+}
+
+.oce-audience {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0 0;
+    font-size: 14px;
+}
+.oce-audience-label { color: var(--oce-band-muted); font-weight: 600; margin-right: 2px; }
+
+.oce-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 4px 12px 4px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    background: var(--role-soft);
+    color: var(--role);
+}
+.oce-band .oce-chip { background: var(--oce-band-fill); color: var(--oce-band-ink); }
+
+.oce-dot {
+    flex: none;
+    width: 9px;
+    height: 9px;
+    border-radius: 999px;
+    background: var(--role);
+}
+.oce-band .oce-dot { background: var(--role-light); }
+
+.oce-band-cta { margin: 24px 0 0; }
+
+.oce-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 48px;
+    padding: 0 22px;
+    border-radius: 999px;
+    background: var(--role-light);
+    color: #0b120c;
+    font-weight: 800;
+    text-decoration: none;
+}
+.oce-button::after { content: "→"; transition: transform 150ms ease; }
+.oce-button:hover::after { transform: translateX(3px); }
+
+/* Role tabs: they sit on the band's bottom edge and the active one merges
+   into the page below it. */
+.oce-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 32px;
+}
+
+.oce-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 52px;
+    padding: 0 22px;
+    border-radius: 16px 16px 0 0;
+    background: var(--oce-band-fill);
+    color: var(--oce-band-ink);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 150ms ease;
+}
+.oce-tab:hover { background: rgba(255, 255, 255, 0.16); }
+.oce-tab .oce-dot { background: var(--role-light); }
+.oce-tab[aria-selected="true"] { background: var(--oce-paper); color: var(--oce-ink); }
+.oce-tab[aria-selected="true"] .oce-dot { background: var(--role); }
+
+/* ── Home ────────────────────────────────────────────────────────────── */
+
+.oce-home {
+    max-width: var(--oce-wrap);
+    margin: 0 auto;
+    padding: 36px var(--oce-gutter) 96px;
+}
+
+.oce-ladder {
+    padding: 26px 30px 24px;
+    border-radius: var(--oce-radius-lg);
+    background: var(--oce-card);
+    border: 1px solid var(--oce-border);
+    box-shadow: var(--oce-shadow-sm);
+}
+html:not(.oce-js) .oce-ladder { display: none; }
+
+.oce-ladder-sum { margin: 0 0 18px; font-size: 17px; font-weight: 600; }
+.oce-ladder-sum strong { color: var(--role); font-weight: 800; }
+
+.oce-rungs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.oce-rung { position: relative; display: flex; flex-direction: column; gap: 10px; padding-right: 12px; }
+.oce-rung::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 40px;
+    right: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--oce-border);
+}
+.oce-rung:last-child::after { display: none; }
+.oce-rung.is-reached:not(.is-current)::after { background: var(--role); }
+
+.oce-rung-mark {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    border: 2px solid var(--oce-border);
+    background: var(--oce-card);
+    color: var(--oce-text-muted);
+    font-weight: 800;
+    font-size: 14px;
+}
+.oce-rung.is-reached .oce-rung-mark { background: var(--role); border-color: var(--role); color: var(--role-on); }
+.oce-rung.is-current .oce-rung-mark { box-shadow: 0 0 0 5px var(--role-soft); }
+
+.oce-rung-text { display: flex; flex-direction: column; }
+.oce-rung-name { font-weight: 700; color: var(--oce-text-muted); }
+.oce-rung.is-reached .oce-rung-name { color: var(--oce-ink); }
+.oce-rung-count { font-size: 14px; color: var(--oce-text-muted); }
+
+.oce-role-secs {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin-top: 44px;
+}
+
+.oce-role-head h2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 14px;
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 40px;
+    font-weight: 750;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+.oce-role-head h2 a { color: inherit; text-decoration: none; }
+.oce-role-head h2 a:hover { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px; }
+.oce-role-head > p:last-child { margin: 8px 0 0; max-width: 720px; color: var(--oce-text-muted); font-size: 17px; }
+
+.oce-count {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: var(--oce-text-muted);
+}
+
+/* An inherited section (the guides of a role below the one picked). */
+.oce-inherited-note { display: none; }
+.oce-role-sec.is-inherited { padding-top: 40px; border-top: 2px dashed var(--oce-border-strong); }
+.oce-role-sec.is-inherited .oce-inherited-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 10px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: var(--role-soft);
+    color: var(--role);
+    font-size: 13px;
+    font-weight: 800;
+}
+.oce-role-sec.is-inherited .oce-role-head h2 { font-size: 30px; }
+
+/* Tour card ("Commencer ici"). */
+.oce-tour { margin-top: 24px; }
+
+.oce-tour-link {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: var(--oce-radius-lg);
+    overflow: hidden;
+    background: var(--role-soft);
+    border: 1px solid var(--oce-border);
+    color: var(--oce-ink);
+    text-decoration: none;
+    transition: box-shadow 200ms ease, transform 200ms ease;
+}
+.oce-tour-link:hover { box-shadow: var(--oce-shadow-md); transform: translateY(-2px); }
+
+.oce-tour-text {
+    flex: 1 1 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 34px 36px;
+}
+.oce-tour-eyebrow {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--role);
+}
+.oce-tour-title {
+    font-family: var(--font-display);
+    font-size: clamp(26px, 3vw, 36px);
+    font-weight: 750;
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+}
+.oce-tour-cta {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 48px;
+    margin-top: 6px;
+    padding: 0 22px;
+    border-radius: 999px;
+    background: var(--role);
+    color: var(--role-on);
+    font-weight: 800;
+}
+.oce-tour-cta::after { content: "→"; transition: transform 150ms ease; }
+.oce-tour-link:hover .oce-tour-cta::after { transform: translateX(3px); }
+
+.oce-tour-shot {
+    flex: 1 1 460px;
+    min-width: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 28px 0 0 28px;
+}
+.oce-tour-shot img {
+    display: block;
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    object-position: 0 0;
+    border-radius: 14px 0 0 0;
+    border: 1px solid var(--oce-border);
+    border-width: 1px 0 0 1px;
+    box-shadow: 0 10px 40px rgba(15, 46, 20, 0.18);
+}
+
+.oce-tour-more {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.oce-tour-more a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 0 16px;
+    border-radius: 999px;
+    border: 1px solid var(--oce-border);
+    background: var(--oce-card);
+    color: var(--oce-ink);
+    font-weight: 600;
+    text-decoration: none;
+}
+.oce-tour-more a::before { content: "▶"; font-size: 10px; color: var(--role); }
+.oce-tour-more a:hover { border-color: var(--role); }
+
+/* In an inherited section the tour shrinks to a one-line card. */
+.oce-role-sec.is-inherited .oce-tour-shot { display: none; }
+.oce-role-sec.is-inherited .oce-tour-text { padding: 20px 24px; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 6px 16px; }
+.oce-role-sec.is-inherited .oce-tour-title { font-size: 22px; flex: 1 1 260px; }
+.oce-role-sec.is-inherited .oce-tour-eyebrow { flex-basis: 100%; }
+.oce-role-sec.is-inherited .oce-tour-cta { margin-top: 0; }
+
+/* Modules and guide cards. */
+.oce-module { margin-top: 40px; }
+
+.oce-module-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.oce-module-head h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+.oce-module-head h3 a { color: inherit; text-decoration: none; }
+.oce-module-head h3 a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.oce-module-desc { margin: 4px 0 0; max-width: 760px; color: var(--oce-text-muted); }
+
+.oce-cards {
+    list-style: none;
+    margin: 16px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 12px;
+}
+.oce-cards > li { display: flex; }
+
+.oce-card {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 76px;
+    padding: 12px 18px 12px 12px;
+    border-radius: var(--oce-radius-md);
+    border: 1px solid var(--oce-border);
+    background: var(--oce-card);
+    color: var(--oce-ink);
+    text-decoration: none;
+    transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+}
+.oce-card:hover { border-color: var(--role); box-shadow: var(--oce-shadow-sm); transform: translateY(-1px); }
+
+.oce-card-num {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: var(--role-soft);
+    color: var(--role);
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 800;
+}
+.oce-card-title { font-weight: 700; line-height: 1.3; }
+
+/* ── Group pages (a role, or one of its modules) ─────────────────────── */
+
+.oce-group {
+    max-width: var(--oce-wrap);
+    margin: 0 auto;
+    padding: 40px var(--oce-gutter) 96px;
+}
+.oce-group > .oce-tour { margin-top: 0; }
+
+.oce-section-title {
+    margin: 48px 0 16px;
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+.oce-group > .oce-section-title:first-child { margin-top: 0; }
+
+.oce-module-cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+}
+.oce-module-cards > li { display: flex; }
+
+.oce-module-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 22px 24px;
+    border-radius: var(--oce-radius-lg);
+    border: 1px solid var(--oce-border);
+    border-top: 5px solid var(--role);
+    background: var(--oce-card);
+    color: var(--oce-ink);
+    text-decoration: none;
+    transition: box-shadow 150ms ease, transform 150ms ease;
+}
+.oce-module-card:hover { box-shadow: var(--oce-shadow-md); transform: translateY(-2px); }
+.oce-module-card-title { font-family: var(--font-display); font-size: 22px; font-weight: 700; }
+.oce-module-card-desc { color: var(--oce-text-muted); font-size: 15px; }
+.oce-module-card-meta { margin-top: auto; padding-top: 8px; font-size: 14px; font-weight: 700; color: var(--role); }
+
+.oce-cards--wide { margin-top: 0; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+
+.oce-empty { color: var(--oce-text-muted); }
+
+.oce-includes {
+    margin-top: 56px;
+    padding: 28px 30px;
+    border-radius: var(--oce-radius-lg);
+    background: var(--oce-card);
+    border: 1px solid var(--oce-border);
+}
+.oce-includes .oce-section-title { margin-top: 0; font-size: 22px; }
+.oce-includes ul { list-style: none; margin: 0 0 16px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.oce-includes-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 0 16px;
+    border-radius: 999px;
+    background: var(--role-soft);
+    color: var(--role);
+    font-weight: 700;
+    text-decoration: none;
+}
+.oce-includes p { margin: 0; font-weight: 600; }
+
+/* ── Guide page ──────────────────────────────────────────────────────── */
+
+.oce-guide-switches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+/* Segmented controls (mode + layout), on the band. */
+.steppy-mode-switch,
 .steppy-layout-switch { margin: 0; }
+
+.steppy-mode-switch ul,
 .steppy-layout-switch ul {
     list-style: none;
     margin: 0;
     padding: 4px;
     display: inline-flex;
     gap: 2px;
-    background: var(--oce-paper-deep);
-    border: 1px solid var(--oce-border);
     border-radius: 999px;
+    background: var(--oce-band-fill);
+    border: 1px solid var(--oce-band-line);
 }
 
+/* Direct-child selectors only — the inner <span class="i18n-<loc>"> spans of
+   interactive.html must not each get a pill of their own. */
+.steppy-mode-switch li > a,
+.steppy-mode-switch li > span,
 .steppy-layout-switch button {
     display: inline-flex;
     align-items: center;
-    padding: 5px 12px;
+    min-height: 38px;
+    padding: 0 16px;
+    border: 0;
     border-radius: 999px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    border: none;
     background: transparent;
-    color: var(--oce-text-muted);
-    cursor: pointer;
-    transition: background 150ms ease, color 150ms ease;
+    color: var(--oce-band-ink);
     font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
 }
-
-.steppy-layout-switch button:hover {
-    color: var(--oce-ink);
-}
-
+.steppy-mode-switch li > a:hover,
+.steppy-layout-switch button:hover { background: var(--oce-band-fill); }
+.steppy-mode-switch li > span[aria-current="true"],
 .steppy-layout-switch button[aria-current="true"] {
-    background: var(--oce-ink);
-    color: var(--oce-paper);
-    box-shadow: 0 1px 2px rgba(14, 31, 18, 0.2);
+    background: var(--oce-paper);
+    color: var(--oce-ink);
+    font-weight: 800;
+}
+/* steppy-detect.js sets html[data-steppy-layout] before the first paint but
+   moves aria-current only once the page has loaded: follow the attribute, so a
+   phone never shows the "Ordinateur" pill lit above the mobile screenshots. */
+html[data-steppy-layout] .steppy-layout-switch button[aria-current="true"] {
+    background: transparent;
+    color: var(--oce-band-ink);
+    font-weight: 600;
+}
+html[data-steppy-layout="desktop"] .steppy-layout-switch button[data-layout="desktop"],
+html[data-steppy-layout="mobile"] .steppy-layout-switch button[data-layout="mobile"] {
+    background: var(--oce-paper);
+    color: var(--oce-ink);
+    font-weight: 800;
 }
 
-:root[data-theme="dark"] .steppy-layout-switch button[aria-current="true"] {
-    background: var(--oce-primary-light);
-    color: var(--oce-paper-deep);
-}
-
-/* Show only the active layout's fragment. The toggle JS adds
-   .steppy-layout-active to the matching wrapper. */
+/* Show only the active layout's fragment. steppy-detect.js shows the one in
+   use from html[data-steppy-layout] before the first paint (its own injected
+   rules win over these), and moves .steppy-layout-active once loaded. */
 .steppy-layout { display: none; }
 .steppy-layout.steppy-layout-active { display: block; }
 
-.steppy-mode-switch { margin: 0; }
-.steppy-mode-switch ul {
-    list-style: none;
-    margin: 0;
-    padding: 4px;
-    display: inline-flex;
-    gap: 2px;
-    background: var(--oce-paper-deep);
-    border: 1px solid var(--oce-border);
-    border-radius: 999px;
+/* "Step N of M" — sticks under the viewport top while the steps scroll. */
+.oce-progress {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: color-mix(in srgb, var(--oce-paper) 92%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--oce-border);
 }
-
-/* Direct-child selectors only — the inner <span class="i18n-<loc>"> spans
-   inside each link must NOT pick up the pill's display/padding, or they get
-   their own nested inline-flex box and the font baseline shifts. */
-.steppy-mode-switch li > a,
-.steppy-mode-switch li > span {
-    display: inline-flex;
+.oce-progress-inner {
+    max-width: var(--oce-wrap);
+    margin: 0 auto;
+    padding: 12px var(--oce-gutter);
+    display: flex;
     align-items: center;
-    padding: 5px 12px;
-    border-radius: 999px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--oce-text-muted);
-    text-decoration: none;
-    transition: background 150ms ease, color 150ms ease;
-    font-family: var(--font-body);
+    gap: 16px;
 }
-
-.steppy-mode-switch li > a:hover {
-    color: var(--oce-ink);
-}
-
-.steppy-mode-switch li > span[aria-current="true"] {
-    background: var(--oce-ink);
-    color: var(--oce-paper);
-    box-shadow: 0 1px 2px rgba(14, 31, 18, 0.2);
-}
-
-:root[data-theme="dark"] .steppy-mode-switch li > span[aria-current="true"] {
-    background: var(--oce-primary-light);
-    color: var(--oce-paper-deep);
-}
-
-.oce-theme-toggle {
-    flex-shrink: 0;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border: 1px solid var(--oce-border);
-    background-color: var(--oce-card);
-    color: var(--oce-ink);
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    transition: transform 250ms cubic-bezier(0.34, 1.56, 0.64, 1), background 150ms ease, color 150ms ease, border-color 150ms ease;
-}
-
-.oce-theme-toggle:hover {
-    background-color: var(--oce-ink);
-    border-color: var(--oce-ink);
-    color: var(--oce-paper);
-    transform: rotate(-12deg);
-}
-
-.oce-theme-toggle:focus-visible { outline: 2px solid var(--oce-primary); outline-offset: 3px; }
-.oce-theme-toggle svg { width: 16px; height: 16px; }
-.oce-theme-toggle .icon-sun  { display: none; }
-.oce-theme-toggle .icon-moon { display: block; }
-:root[data-theme="dark"] .oce-theme-toggle .icon-sun  { display: block; }
-:root[data-theme="dark"] .oce-theme-toggle .icon-moon { display: none; }
+.oce-progress-label { flex: none; font-weight: 800; font-size: 14px; font-variant-numeric: tabular-nums; }
+.oce-progress-track { flex: 1; height: 6px; border-radius: 999px; background: var(--oce-border); overflow: hidden; }
+.oce-progress-fill { display: block; width: 0; height: 100%; border-radius: 999px; background: var(--role); transition: width 250ms ease; }
 
 .steppy-main {
-    padding: 56px 28px 96px;
-    max-width: 1120px;
+    max-width: var(--oce-wrap);
     margin: 0 auto;
+    padding: 32px var(--oce-gutter) 96px;
 }
 
-.steppy-site-footer {
-    padding: 32px 32px 40px;
-    text-align: center;
-    color: var(--oce-text-soft);
-    font-size: 12px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    border-top: 1px solid var(--oce-border);
-    background: transparent;
-    margin-top: 48px;
-}
-
-.steppy-site-footer p { margin: 0; }
-.steppy-site-footer a { color: var(--oce-text-muted); text-decoration: none; border-bottom: 1px solid var(--oce-border-strong); }
-
-/* ── Index hero & cards ──────────────────────────────────────────────── */
-
-.steppy-index { max-width: 980px; margin: 0 auto; }
-
-.steppy-hero {
-    margin-bottom: 56px;
-    position: relative;
-    isolation: isolate;
-}
-
-.steppy-hero-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--oce-primary-dark);
-    margin-bottom: 22px;
-}
-
-.steppy-hero-eyebrow::before {
-    content: "";
-    width: 28px;
+/* Guide body. The fragment's <h1> stays for the outline; the band shows it. */
+.steppy-guide { margin: 0; }
+.steppy-guide > h1 {
+    position: absolute !important;
+    width: 1px;
     height: 1px;
-    background: currentColor;
-    display: inline-block;
-}
-
-.steppy-hero h1,
-.steppy-index h1 {
-    font-family: var(--font-display);
-    font-optical-sizing: auto;
-    font-variation-settings: 'opsz' 96, 'SOFT' 40;
-    font-weight: 500;
-    font-size: clamp(36px, 5.4vw, 56px);
-    line-height: 1.04;
-    letter-spacing: -0.02em;
-    color: var(--oce-ink);
-    margin: 0 0 18px;
-    border: 0;
-    padding: 0;
-}
-
-.steppy-hero-lede {
-    font-size: 18px;
-    color: var(--oce-text-muted);
-    max-width: 56ch;
-    margin: 0;
-    line-height: 1.55;
-}
-
-.steppy-section-title {
-    font-family: var(--font-display);
-    font-variation-settings: 'opsz' 36, 'SOFT' 30;
-    font-weight: 500;
-    font-size: 22px;
-    letter-spacing: -0.01em;
-    color: var(--oce-ink);
-    margin: 48px 0 20px;
-    display: flex;
-    align-items: baseline;
-    gap: 14px;
-}
-
-.steppy-section-title::after {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: var(--oce-border);
-}
-
-.steppy-index-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 18px;
-}
-
-@media (min-width: 720px) {
-    .steppy-index-list { grid-template-columns: repeat(2, 1fr); }
-}
-
-/* Onboarding featured card — spans full row at top, hero treatment */
-.steppy-index-onboarding {
-    grid-column: 1 / -1;
-}
-
-.steppy-index-onboarding > a {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 24px;
-    align-items: end;
-    padding: 36px 36px 32px;
-    border-radius: var(--oce-radius-lg);
-    text-decoration: none;
-    color: #fff;
-    background:
-        radial-gradient(circle at 88% 110%, rgba(255, 255, 255, 0.18), transparent 55%),
-        linear-gradient(135deg, #1b5e20 0%, #2e7d32 45%, #43a047 100%);
-    box-shadow: var(--oce-shadow-md);
+    margin: -1px;
     overflow: hidden;
-    isolation: isolate;
-    transition: transform 250ms ease, box-shadow 250ms ease;
-}
-
-.steppy-index-onboarding > a::before {
-    /* Translucent OptimCE clover ornament — absolute positioned giant glyph */
-    content: "";
-    position: absolute;
-    inset: -20% -10% auto auto;
-    width: 360px;
-    height: 360px;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 354'><path fill='%23ffffff' d='m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z'/><path fill='%23ffffff' d='m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z'/><path fill='%23ffffff' d='M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28'/><path fill='%23ffffff' d='m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6'/><path fill='%23ffffff' d='M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z'/></svg>");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    opacity: 0.10;
-    z-index: -1;
-    pointer-events: none;
-    transform: rotate(-8deg);
-}
-
-.steppy-index-onboarding > a::after {
-    content: "→";
-    position: absolute;
-    bottom: 32px;
-    right: 36px;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.16);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: 400;
-    transition: transform 250ms cubic-bezier(0.34, 1.56, 0.64, 1), background 200ms ease;
-}
-
-.steppy-index-onboarding > a:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--oce-shadow-lg);
-}
-
-.steppy-index-onboarding > a:hover::after {
-    transform: translateX(4px);
-    background: rgba(255, 255, 255, 0.26);
-}
-
-.steppy-index-onboarding > a > div { /* inner content stack */
-    max-width: 56ch;
-}
-
-.steppy-index-onboarding .steppy-index-eyebrow {
-    color: rgba(255, 255, 255, 0.78);
-}
-
-.steppy-index-onboarding .steppy-index-title {
-    color: #fff;
-}
-
-.steppy-index-onboarding .steppy-index-meta {
-    color: rgba(255, 255, 255, 0.86);
-    background: rgba(255, 255, 255, 0.14);
-    border-color: rgba(255, 255, 255, 0.24);
-}
-
-/* Group cards */
-.steppy-index-group > a,
-.steppy-index-list > li:not(.steppy-index-onboarding):not(.steppy-index-group) > a {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 28px 26px 24px;
-    background: var(--oce-card);
-    border: 1px solid var(--oce-border);
-    border-radius: var(--oce-radius-md);
-    text-decoration: none;
-    color: var(--oce-ink);
-    box-shadow: var(--oce-shadow-sm);
-    transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
-    overflow: hidden;
-    min-height: 168px;
-}
-
-.steppy-index-group > a::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: linear-gradient(180deg, var(--oce-primary), var(--oce-primary-dark));
-    transform: scaleY(0.4);
-    transform-origin: top;
-    transition: transform 250ms cubic-bezier(0.65, 0, 0.35, 1);
-}
-
-.steppy-index-group > a:hover::before { transform: scaleY(1); }
-
-.steppy-index-group > a:hover,
-.steppy-index-list > li:not(.steppy-index-onboarding):not(.steppy-index-group) > a:hover {
-    transform: translateY(-2px);
-    border-color: var(--oce-primary-light);
-    box-shadow: var(--oce-shadow-md);
-}
-
-.steppy-index-eyebrow {
-    font-family: var(--font-body);
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--oce-primary-dark);
-    line-height: 1;
-}
-
-:root[data-theme="dark"] .steppy-index-eyebrow { color: var(--oce-primary-light); }
-
-.steppy-index-onboarding .steppy-index-eyebrow {
-    color: rgba(255, 255, 255, 0.78);
-}
-
-.steppy-index-title {
-    font-family: var(--font-display);
-    font-variation-settings: 'opsz' 48, 'SOFT' 30;
-    font-weight: 500;
-    font-size: 26px;
-    letter-spacing: -0.015em;
-    line-height: 1.15;
-    color: inherit;
-    display: block;
-}
-
-.steppy-index-onboarding .steppy-index-title {
-    font-size: clamp(32px, 3.2vw, 42px);
-    line-height: 1.05;
-}
-
-.steppy-index-desc {
-    display: block;
-    font-size: 14px;
-    color: var(--oce-text-muted);
-    line-height: 1.55;
-    max-width: 48ch;
-}
-
-.steppy-index-onboarding .steppy-index-desc {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 16px;
-    max-width: 52ch;
-}
-
-.steppy-index-meta {
-    align-self: flex-start;
-    font-family: var(--font-mono);
-    font-size: 11px;
-    letter-spacing: 0.02em;
-    color: var(--oce-text-muted);
-    background: var(--oce-paper-deep);
-    border: 1px solid var(--oce-border);
-    border-radius: 999px;
-    padding: 4px 10px;
-    line-height: 1.4;
-}
-
-.steppy-index-group > a > .steppy-index-meta {
-    position: absolute;
-    top: 22px;
-    right: 22px;
-}
-
-/* ── Onboarding landing (timeline) ───────────────────────────────────── */
-
-.steppy-onboarding-page {
-    max-width: 760px;
-    margin: 0 auto;
-}
-
-.steppy-onboarding-hero {
-    margin-bottom: 56px;
-    position: relative;
-}
-
-.steppy-onboarding-hero h1 {
-    font-family: var(--font-display);
-    font-variation-settings: 'opsz' 96, 'SOFT' 50;
-    font-weight: 500;
-    font-size: clamp(36px, 5vw, 52px);
-    line-height: 1.04;
-    letter-spacing: -0.02em;
-    color: var(--oce-ink);
-    margin: 0 0 16px;
-}
-
-.steppy-onboarding-description {
-    font-size: 18px;
-    line-height: 1.55;
-    color: var(--oce-text-muted);
-    max-width: 56ch;
-    margin: 0 0 32px;
-}
-
-.steppy-onboarding-cta {
-    margin: 0;
-}
-
-.steppy-onboarding-start {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 14px 24px 14px 26px;
-    background: linear-gradient(135deg, var(--oce-primary-dark), var(--oce-primary));
-    color: #fff;
-    text-decoration: none;
-    font-family: var(--font-body);
-    font-weight: 600;
-    font-size: 15px;
-    letter-spacing: 0.005em;
-    border-radius: 999px;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 4px 16px rgba(27, 94, 32, 0.3);
-    transition: transform 200ms ease, box-shadow 200ms ease;
-}
-
-.steppy-onboarding-start::after {
-    content: "→";
-    font-size: 18px;
-    transition: transform 200ms cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.steppy-onboarding-start:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 8px 24px rgba(27, 94, 32, 0.4);
-}
-
-.steppy-onboarding-start:hover::after { transform: translateX(4px); }
-
-/* Vertical timeline */
-.steppy-onboarding-steps {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    counter-reset: step;
-}
-
-.steppy-onboarding-steps::before {
-    content: "";
-    position: absolute;
-    left: 19px;
-    top: 24px;
-    bottom: 24px;
-    width: 2px;
-    background: linear-gradient(
-        180deg,
-        var(--oce-primary) 0%,
-        var(--oce-primary-light) 30%,
-        var(--oce-border-strong) 100%
-    );
-    border-radius: 2px;
-}
-
-.steppy-onboarding-steps > li {
-    position: relative;
-    margin: 0;
-    padding: 0;
-}
-
-.steppy-onboarding-steps > li + li { margin-top: 12px; }
-
-.steppy-onboarding-steps > li > a {
-    position: relative;
-    display: grid;
-    grid-template-columns: 40px 1fr auto;
-    gap: 18px;
-    align-items: center;
-    padding: 16px 22px 16px 0;
-    text-decoration: none;
-    color: var(--oce-ink);
-    border-radius: var(--oce-radius-md);
-    transition: background 180ms ease, transform 180ms ease;
-}
-
-.steppy-onboarding-steps > li > a:hover {
-    background: var(--oce-card);
-    box-shadow: var(--oce-shadow-sm);
-    transform: translateX(4px);
-}
-
-.steppy-onboarding-step-number {
-    position: relative;
-    z-index: 1;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: var(--oce-card);
-    border: 2px solid var(--oce-primary);
-    color: var(--oce-primary-dark);
-    font-family: var(--font-display);
-    font-variation-settings: 'opsz' 18, 'SOFT' 30;
-    font-weight: 600;
-    font-size: 16px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 180ms ease, color 180ms ease, transform 200ms cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.steppy-onboarding-steps > li > a:hover .steppy-onboarding-step-number {
-    background: var(--oce-primary-dark);
-    color: #fff;
-    transform: scale(1.08);
-}
-
-.steppy-onboarding-step-title {
-    font-family: var(--font-display);
-    font-variation-settings: 'opsz' 36, 'SOFT' 30;
-    font-weight: 500;
-    font-size: 19px;
-    line-height: 1.3;
-    letter-spacing: -0.01em;
-    color: var(--oce-ink);
-}
-
-.steppy-onboarding-step-go {
-    font-family: var(--font-body);
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--oce-text-soft);
-    transition: color 150ms ease, transform 200ms ease;
-}
-
-.steppy-onboarding-steps > li > a:hover .steppy-onboarding-step-go {
-    color: var(--oce-primary-dark);
-}
-
-/* ── Group landing (re-uses index card grid) ─────────────────────────── */
-
-.steppy-group-page {
-    max-width: 1080px;
-    margin: 0 auto;
-}
-
-.steppy-group-hero {
-    margin-bottom: 48px;
-}
-
-.steppy-group-hero-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-family: var(--font-body);
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--oce-primary-dark);
-    margin-bottom: 16px;
-}
-
-.steppy-group-hero-eyebrow::before {
-    content: "";
-    width: 24px;
-    height: 1px;
-    background: currentColor;
-}
-
-.steppy-group-hero h1 {
-    font-family: var(--font-display);
-    font-variation-settings: 'opsz' 96, 'SOFT' 50;
-    font-weight: 500;
-    font-size: clamp(34px, 4.4vw, 48px);
-    line-height: 1.06;
-    letter-spacing: -0.02em;
-    color: var(--oce-ink);
-    margin: 0 0 16px;
-}
-
-.steppy-group-hero p {
-    font-size: 17px;
-    color: var(--oce-text-muted);
-    max-width: 56ch;
-    line-height: 1.55;
-    margin: 0;
-}
-
-.steppy-guide-grid {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 18px;
-}
-
-@media (min-width: 720px) {
-    .steppy-guide-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-.steppy-guide-grid > li > a {
-    position: relative;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    gap: 14px;
-    padding: 26px 24px 22px;
-    background: var(--oce-card);
-    border: 1px solid var(--oce-border);
-    border-radius: var(--oce-radius-md);
-    text-decoration: none;
-    color: var(--oce-ink);
-    box-shadow: var(--oce-shadow-sm);
-    transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
-    min-height: 140px;
-    overflow: hidden;
-}
-
-.steppy-guide-grid > li > a::after {
-    content: "";
-    position: absolute;
-    inset: auto -10% -50% auto;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: radial-gradient(circle, var(--oce-primary-soft) 0%, transparent 60%);
-    opacity: 0;
-    transition: opacity 250ms ease;
-    pointer-events: none;
-}
-
-.steppy-guide-grid > li > a:hover {
-    transform: translateY(-2px);
-    border-color: var(--oce-primary-light);
-    box-shadow: var(--oce-shadow-md);
-}
-
-.steppy-guide-grid > li > a:hover::after { opacity: 1; }
-
-.steppy-guide-grid-eyebrow {
-    font-family: var(--font-body);
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--oce-text-soft);
-}
-
-.steppy-guide-grid-title {
-    font-family: var(--font-display);
-    font-variation-settings: 'opsz' 36, 'SOFT' 30;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    color: var(--oce-ink);
-}
-
-.steppy-guide-grid-go {
-    font-family: var(--font-body);
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--oce-primary-dark);
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-}
-
-:root[data-theme="dark"] .steppy-guide-grid-go { color: var(--oce-primary-light); }
-
-.steppy-guide-grid-go::after {
-    content: "→";
-    transition: transform 200ms cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.steppy-guide-grid > li > a:hover .steppy-guide-grid-go::after { transform: translateX(4px); }
-
-.steppy-index-empty {
-    color: var(--oce-text-muted);
-    font-style: italic;
-    margin-top: 32px;
-}
-
-/* ── Onboarding strip (per-guide) ────────────────────────────────────── */
-
-.steppy-onboarding-strip {
-    max-width: 980px;
-    margin: 32px auto 0;
-    padding: 14px 22px;
-    background: var(--oce-card);
-    border: 1px solid var(--oce-border);
-    border-radius: 999px;
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    flex-wrap: wrap;
-    box-shadow: var(--oce-shadow-sm);
-    font-family: var(--font-body);
-    font-size: 13px;
-}
-
-.steppy-onboarding-strip-progress {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    color: var(--oce-text-muted);
-}
-
-.steppy-onboarding-strip-progress a {
-    color: var(--oce-primary-dark);
-    text-decoration: none;
-    font-weight: 600;
-    border-bottom: 1px solid transparent;
-    transition: border-color 150ms ease;
-}
-:root[data-theme="dark"] .steppy-onboarding-strip-progress a { color: var(--oce-primary-light); }
-
-.steppy-onboarding-strip-progress a:hover { border-bottom-color: currentColor; }
-
-.steppy-onboarding-strip-progress::before {
-    content: "";
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--oce-primary);
-    box-shadow: 0 0 0 4px var(--oce-primary-soft);
-    animation: oce-pulse 2.4s ease-out infinite;
-}
-
-@keyframes oce-pulse {
-    0%, 100% { box-shadow: 0 0 0 4px var(--oce-primary-soft); }
-    50%      { box-shadow: 0 0 0 7px transparent; }
-}
-
-.steppy-onboarding-strip-position {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--oce-text-soft);
-    padding: 3px 8px;
-    border-radius: 999px;
-    background: var(--oce-paper-deep);
-    border: 1px solid var(--oce-border);
-}
-
-.steppy-onboarding-strip-nav {
-    margin-left: auto;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.steppy-onboarding-prev,
-.steppy-onboarding-next {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 7px 14px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 12.5px;
-    letter-spacing: 0.005em;
-    background: var(--oce-paper-deep);
-    color: var(--oce-ink);
-    border: 1px solid var(--oce-border);
-    transition: background 150ms ease, color 150ms ease, border-color 150ms ease, transform 150ms ease;
-    max-width: 220px;
-    overflow: hidden;
+    clip: rect(0 0 0 0);
     white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.steppy-onboarding-prev:hover,
-.steppy-onboarding-next:hover {
-    background: var(--oce-ink);
-    color: var(--oce-paper);
-    border-color: var(--oce-ink);
-    transform: translateY(-1px);
-}
-
-.steppy-onboarding-next {
-    background: var(--oce-primary-dark);
-    color: #fff;
-    border-color: var(--oce-primary-dark);
-}
-
-.steppy-onboarding-next:hover {
-    background: var(--oce-ink);
-    border-color: var(--oce-ink);
-}
-
-.steppy-onboarding-disabled {
-    opacity: 0.4;
-    pointer-events: none;
-    color: var(--oce-text-soft);
-}
-
-/* ── Guide content (preserve `.steppy-step` etc. structure) ──────────── */
-
-.steppy-guide {
-    line-height: 1.65;
-    color: var(--oce-text);
-    max-width: 980px;
-    margin: 32px auto 0;
-    background: var(--oce-card);
-    padding: 48px 56px;
-    border: 1px solid var(--oce-border);
-    border-radius: var(--oce-radius-md);
-    box-shadow: var(--oce-shadow-md);
-    position: relative;
-}
-
-.steppy-guide::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 24px;
-    right: 24px;
-    height: 3px;
-    background: linear-gradient(90deg, var(--oce-primary-dark), var(--oce-primary), var(--oce-primary-light));
-    border-radius: 0 0 3px 3px;
-}
-
-.steppy-guide h1 {
-    font-family: var(--font-display);
-    font-variation-settings: 'opsz' 96, 'SOFT' 30;
-    font-weight: 500;
-    font-size: clamp(28px, 3.6vw, 38px);
-    letter-spacing: -0.018em;
-    line-height: 1.1;
-    color: var(--oce-ink);
-    margin: 0 0 14px;
-    border: 0;
-    padding: 0;
-}
-
-.steppy-guide .steppy-role-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    background: var(--oce-primary-soft);
-    color: var(--oce-primary-dark);
-    padding: 5px 14px;
-    border-radius: 999px;
-    border: 1px solid var(--oce-primary-light);
-    font-family: var(--font-body);
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    margin-bottom: 36px;
-}
-
-:root[data-theme="dark"] .steppy-guide .steppy-role-badge {
-    background: var(--oce-primary-soft);
-    color: var(--oce-primary-light);
-    border-color: var(--oce-primary-dark);
-}
-
-.steppy-guide .steppy-role-badge::before {
-    content: "";
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--oce-primary);
 }
 
 .steppy-guide .steppy-step {
-    margin-bottom: 56px;
-    page-break-inside: avoid;
+    display: grid;
+    grid-template-columns: minmax(260px, 340px) minmax(0, 1fr);
+    gap: 28px 36px;
+    align-items: start;
+    margin: 0 0 20px;
+    padding: 28px;
+    border-radius: var(--oce-radius-lg);
+    border: 1px solid var(--oce-border);
+    background: var(--oce-card);
+    scroll-margin-top: 72px;
 }
 
+.steppy-guide .steppy-step-body { position: sticky; top: 76px; }
+
 .steppy-guide .steppy-step h2 {
-    font-family: var(--font-display);
-    font-variation-settings: 'opsz' 36, 'SOFT' 30;
-    font-weight: 500;
-    font-size: 24px;
-    letter-spacing: -0.012em;
-    color: var(--oce-ink);
-    margin-bottom: 16px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    gap: 14px;
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
 }
 
 .steppy-guide .steppy-step-number {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    background: var(--oce-primary-dark);
-    color: #ffffff;
-    border-radius: 50%;
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: 16px;
-    margin-right: 14px;
-    flex-shrink: 0;
-    box-shadow: 0 2px 6px rgba(27, 94, 32, 0.25);
+    flex: none;
+    display: inline-grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    background: var(--role);
+    color: var(--role-on);
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 800;
 }
 
 .steppy-guide .steppy-step-subtitle {
-    font-family: var(--font-display);
-    font-style: italic;
-    font-size: 16px;
-    color: var(--oce-text-muted);
-    font-weight: 400;
-    margin-top: -8px;
-    margin-bottom: 14px;
-    margin-left: 50px;
+    margin: 10px 0 0 52px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: var(--role);
 }
 
 .steppy-guide .steppy-step-content {
-    font-size: 16px;
-    color: var(--oce-text);
-    margin-bottom: 22px;
-    margin-left: 50px;
-    line-height: 1.75;
-    max-width: 70ch;
+    margin: 12px 0 0 52px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+.steppy-guide .steppy-step-content p { margin: 0 0 10px; }
+.steppy-guide .steppy-step-content p:last-child { margin-bottom: 0; }
+
+.steppy-guide .steppy-stages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    border-radius: var(--oce-radius-md);
+    background: var(--oce-stage);
 }
 
+/* The stage shrinks to its screenshot, so cursor.js's coordinates line up. */
 .steppy-guide .steppy-stage {
     position: relative;
     line-height: 0;
-    margin-left: 50px;
+    max-width: 100%;
     border-radius: var(--oce-radius-sm);
-    overflow: hidden;
 }
 
 .steppy-guide .steppy-stage img {
@@ -1357,7 +1022,7 @@ a.steppy-site-title:hover { color: var(--oce-primary-dark); }
     height: auto;
     border: 1px solid var(--oce-border);
     border-radius: var(--oce-radius-sm);
-    box-shadow: 0 4px 16px rgba(14, 31, 18, 0.10);
+    box-shadow: 0 6px 24px rgba(15, 46, 20, 0.12);
     display: block;
     position: relative;
     z-index: var(--steppy-z-screenshot);
@@ -1425,27 +1090,125 @@ a.steppy-site-title:hover { color: var(--oce-primary-dark); }
 
 .steppy-guide .steppy-kbd.visible { opacity: 1; }
 
+/* ── Onboarding strip (a guide opened from the "Premiers pas" path) ──── */
+
+.steppy-onboarding-strip {
+    max-width: calc(var(--oce-wrap) - 2 * var(--oce-gutter));
+    margin: 24px auto 0;
+    padding: 12px 14px 12px 22px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 18px;
+    border-radius: 999px;
+    background: var(--role-soft);
+    font-size: 14px;
+}
+.steppy-onboarding-strip-progress { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.steppy-onboarding-strip-progress a { color: var(--role); font-weight: 800; text-decoration: none; }
+.steppy-onboarding-strip-progress a:hover { text-decoration: underline; }
+.steppy-onboarding-strip-position { color: var(--oce-text-muted); font-weight: 600; font-variant-numeric: tabular-nums; }
+.steppy-onboarding-strip-nav { margin-left: auto; display: flex; flex-wrap: wrap; gap: 8px; }
+.steppy-onboarding-prev,
+.steppy-onboarding-next {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 18px;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    max-width: 340px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.steppy-onboarding-prev { background: var(--oce-card); color: var(--oce-ink); border: 1px solid var(--oce-border); }
+.steppy-onboarding-next { background: var(--role); color: var(--role-on); }
+.steppy-onboarding-disabled { opacity: 0.5; cursor: default; }
+
+/* ── Onboarding path page (timeline) ─────────────────────────────────── */
+
+.steppy-onboarding-page { max-width: 900px; }
+
+.steppy-onboarding-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.steppy-onboarding-steps::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    left: 37px;
+    width: 3px;
+    border-radius: 2px;
+    background: var(--role-soft);
+}
+.steppy-onboarding-steps > li { position: relative; }
+.steppy-onboarding-steps > li + li { margin-top: 10px; }
+.steppy-onboarding-steps > li > a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: 64px;
+    padding: 12px 20px 12px 14px;
+    border-radius: var(--oce-radius-md);
+    border: 1px solid var(--oce-border);
+    background: var(--oce-card);
+    color: var(--oce-ink);
+    text-decoration: none;
+    transition: border-color 150ms ease, transform 150ms ease;
+}
+.steppy-onboarding-steps > li > a:hover { border-color: var(--role); transform: translateX(3px); }
+.steppy-onboarding-step-number {
+    position: relative;
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    background: var(--role);
+    color: var(--role-on);
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 800;
+}
+.steppy-onboarding-step-title { flex: 1; font-weight: 700; }
+.steppy-onboarding-step-go { color: var(--role); font-weight: 700; font-size: 14px; }
+.steppy-onboarding-step-go::after { content: " →"; }
+
+/* ── Footer ──────────────────────────────────────────────────────────── */
+
+.steppy-site-footer {
+    max-width: var(--oce-wrap);
+    margin: 0 auto;
+    padding: 0 var(--oce-gutter) 40px;
+    color: var(--oce-text-muted);
+    font-size: 14px;
+}
+.steppy-site-footer p { margin: 0; padding-top: 28px; border-top: 1px solid var(--oce-border); }
+
 /* ── Print ───────────────────────────────────────────────────────────── */
 
 @media print {
-    body { background: #ffffff; }
+    body { background: #ffffff; color: #000000; }
 
+    .oce-band { background: #ffffff; color: #000000; }
     .steppy-site-header,
     .steppy-site-footer,
-    .oce-theme-toggle,
-    .steppy-locale-select,
-    .steppy-layout-switch,
-    .steppy-mode-switch,
+    .oce-guide-switches,
+    .oce-progress,
+    .oce-tabs,
     .steppy-onboarding-strip { display: none; }
+    .oce-lede, .oce-eyebrow, .oce-audience-label { color: #333333; }
 
-    .steppy-guide {
-        box-shadow: none;
-        border: none;
-        padding: 0;
-        max-width: 100%;
-    }
-
-    .steppy-guide::before { display: none; }
+    .steppy-guide .steppy-step { break-inside: avoid; border: 0; padding: 0 0 24px; grid-template-columns: 1fr; }
+    .steppy-guide .steppy-step-body { position: static; }
+    .steppy-guide .steppy-stages { background: none; padding: 0; }
 
     .steppy-guide .steppy-cursor,
     .steppy-guide .steppy-ripple,
@@ -1454,64 +1217,67 @@ a.steppy-site-title:hover { color: var(--oce-primary-dark); }
 
 /* ── Responsive ──────────────────────────────────────────────────────── */
 
+@media (max-width: 960px) {
+    .steppy-guide .steppy-step { grid-template-columns: minmax(0, 1fr); padding: 22px; }
+    .steppy-guide .steppy-step-body { position: static; }
+}
+
 @media (max-width: 768px) {
-    /* The breadcrumb takes flex-basis:100% below, so the header wraps onto a
-       second row and gets TALLER than the desktop 73px despite the smaller
-       padding and logo: 14x2 + 32 + 12 gap + ~15 breadcrumb + 1 border. */
-    :root { --oce-header-h: 92px; }
+    :root { --oce-gutter: 16px; --oce-header-h: 128px; }
 
-    .steppy-site-header {
-        padding: 14px 18px;
-        gap: 12px;
-    }
+    .steppy-site-header { padding: 12px var(--oce-gutter); gap: 10px 12px; }
+    .oce-logo { width: 32px; height: 29px; }
+    .steppy-site-title { font-size: 17px; }
+    .steppy-breadcrumb { order: 3; flex-basis: 100%; font-size: 13px; }
+    .steppy-header-actions { gap: 6px; }
+    /* Only the globe on a phone: the select still opens the OS picker. */
+    .steppy-locale-select select { width: 44px; padding: 0; color: transparent; }
+    .steppy-locale-select select option { color: var(--oce-ink); }
+    .steppy-locale-select-icon { left: 50%; transform: translate(-50%, -50%); color: var(--oce-band-ink); }
+    .steppy-locale-select-chevron { display: none; }
 
-    .oce-logo { width: 32px; height: 32px; }
-    .steppy-site-title { font-size: 16px; }
-    .steppy-breadcrumb { font-size: 12px; flex-basis: 100%; }
-    .steppy-header-actions { margin-left: auto; }
+    .oce-band-inner { padding-top: 20px; }
+    .oce-lede { font-size: 17px; }
 
-    .steppy-main { padding: 32px 16px 64px; }
+    /* Tabs scroll sideways rather than wrap into a ragged block. */
+    .oce-tabs { flex-wrap: nowrap; overflow-x: auto; margin: 24px calc(-1 * var(--oce-gutter)) 0; padding: 0 var(--oce-gutter); scrollbar-width: none; }
+    .oce-tab { flex: none; min-height: 48px; padding: 0 16px; font-size: 15px; }
 
-    .steppy-index-onboarding > a {
-        padding: 28px 24px 24px;
-    }
-    .steppy-index-onboarding > a::after {
-        bottom: 24px;
-        right: 24px;
-        width: 40px;
-        height: 40px;
-    }
+    .oce-home, .oce-group { padding-top: 24px; }
+    .oce-ladder { padding: 18px; }
+    .oce-ladder-sum { font-size: 15px; }
+    .oce-rung { padding-right: 4px; }
+    .oce-rung::after { left: 32px; }
+    .oce-rung-mark { width: 30px; height: 30px; font-size: 13px; }
+    .oce-rung::after { top: 14px; }
+    .oce-rung-name { font-size: 13px; line-height: 1.25; }
+    .oce-rung-count { font-size: 12px; }
 
-    .steppy-index-group > a > .steppy-index-meta {
-        position: static;
-        margin-top: 6px;
-    }
+    .oce-role-secs { gap: 48px; margin-top: 32px; }
+    .oce-role-head h2 { font-size: 30px; }
+    .oce-tour-text { padding: 24px; }
+    .oce-tour-shot { padding: 0 0 0 24px; }
+    .oce-tour-shot img { height: 170px; }
+    .oce-cards, .oce-cards--wide, .oce-module-cards { grid-template-columns: minmax(0, 1fr); }
+    .oce-module-head h3 { font-size: 22px; }
 
-    .steppy-onboarding-strip {
-        border-radius: var(--oce-radius-md);
-        padding: 12px 16px;
-    }
+    .oce-progress-inner { padding: 10px var(--oce-gutter); }
+    .steppy-main { padding: 20px var(--oce-gutter) 64px; }
+    .steppy-guide .steppy-step { padding: 16px; gap: 16px; }
+    .steppy-guide .steppy-step h2 { font-size: 20px; }
+    .steppy-guide .steppy-step-number { width: 32px; height: 32px; font-size: 14px; }
+    .steppy-guide .steppy-step-subtitle,
+    .steppy-guide .steppy-step-content { margin-left: 0; }
+    .steppy-guide .steppy-stages { padding: 12px; }
+
+    .steppy-onboarding-strip { border-radius: var(--oce-radius-md); padding: 12px 14px; }
     .steppy-onboarding-strip-nav { margin-left: 0; width: 100%; justify-content: space-between; }
     .steppy-onboarding-prev,
     .steppy-onboarding-next { max-width: 48%; }
+}
 
-    .steppy-guide {
-        padding: 28px 22px;
-        margin: 16px;
-    }
-
-    .steppy-guide .steppy-step-content,
-    .steppy-guide .steppy-step-subtitle,
-    .steppy-guide .steppy-stage {
-        margin-left: 0;
-    }
-
-    .steppy-guide .steppy-step h2 { font-size: 20px; }
-    .steppy-guide .steppy-step-number {
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
-    }
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; animation: none !important; }
 }
 /* textStyles (steppy.guide.config.ts) */
 :root {

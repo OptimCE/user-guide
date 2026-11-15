@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Generate a document from the CRM — OptimCE — User guides</title>
-    <meta name="description" content="Add a document to a dossier, check the data pre-filled from the CRM and generate it.">
+    <meta name="description" content="Check the data pre-filled from the CRM for a procedure&#39;s document and generate it.">
     <link rel="canonical" href="https://guide.optimce.be/admin-doc-document-generate/en.html">
     <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/admin-doc-document-generate/fr.html">
     <link rel="alternate" hreflang="en" href="https://guide.optimce.be/admin-doc-document-generate/en.html">
@@ -13,11 +13,13 @@
     <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/admin-doc-document-generate/fr.html">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Generate a document from the CRM">
-    <meta property="og:description" content="Add a document to a dossier, check the data pre-filled from the CRM and generate it.">
+    <meta property="og:description" content="Check the data pre-filled from the CRM for a procedure&#39;s document and generate it.">
     <meta property="og:url" content="https://guide.optimce.be/admin-doc-document-generate/en.html">
     <meta property="og:site_name" content="OptimCE — User guides">
     <meta property="og:image" content="https://guide.optimce.be/assets/admin-doc-document-generate/en/desktop/step-14.png">
     <meta name="twitter:card" content="summary_large_image">
+    <script type="application/json" id="steppy-detect-config">{"breakpoints": {"desktop": 1024, "mobile": 0}, "defaultLayout": "desktop", "defaultLocale": "fr", "hrefFor": {"de": "./de.html", "en": "./en.html", "fr": "./fr.html", "nl": "./nl.html"}, "layout": true, "layouts": ["desktop", "mobile"], "locale": true, "locales": ["fr", "en", "nl", "de"], "pageLocale": "en", "storageKeys": {"layout": "steppy:layout", "locale": "steppy:locale"}}</script>
+    <script src="../assets/steppy-detect.js"></script>
     <link rel="stylesheet" href="../assets/guides.css">
     <script>
       (function () {
@@ -26,33 +28,25 @@
           var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
           document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
         } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
-        // Remember the language of the file we just loaded: interactive.html is one
-        // URL for every locale and opens in this language when no ?lang= is given.
-        try { localStorage.setItem("oce-lang", "en"); } catch (e) {}
       })();
     </script>
 </head>
-<body data-active-layout="desktop">
-    <header class="steppy-site-header">
-        <a class="oce-logo-link" href="../index.en.html" aria-label="OptimCE — User guides">
-            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
-                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
-                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
-                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
-                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
-                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
-            </svg>
-        </a>
-        <a class="steppy-site-title" href="../index.en.html">OptimCE — User guides</a>
-        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
-            <a href="../index.en.html">Home</a>
-            <span class="steppy-breadcrumb-sep">›</span>
-            <a href="../administrative-document/en.html">Administrative documents</a>
-            <span class="steppy-breadcrumb-sep">›</span>
-            <span aria-current="page">Generate a document from the CRM</span>
-        </nav>
-
-        <div class="steppy-header-actions">
+<body class="oce-page-guide oce-role--manager" data-active-layout="desktop">
+    <div class="oce-band oce-band--compact">
+<header class="steppy-site-header">
+    <a class="oce-logo-link" href="../index.en.html" aria-label="OptimCE — User guides">
+        <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+            <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+            <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+            <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+            <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+            <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+        </svg>
+    </a>
+    <a class="steppy-site-title" href="../index.en.html">OptimCE — User guides</a>
+    <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
+<a href="../index.en.html">Home</a><span class="steppy-breadcrumb-sep" aria-hidden="true">›</span><a href="../manager/en.html">Manager</a><span class="steppy-breadcrumb-sep" aria-hidden="true">›</span><a href="../administrative-document/en.html">Administrative documents</a>    </nav>
+    <div class="steppy-header-actions">
 <label class="steppy-locale-select">
     <span class="steppy-visually-hidden">Language</span>
     <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
@@ -63,8 +57,20 @@
   (function () {
     var sel = document.querySelector(".steppy-locale-select select");
     if (!sel) return;
+    // A pick is the reader's own choice: store it under steppy-detect.js's key
+    // (autoDetect.storageKeys.locale) so detection never overrides it. That
+    // script only sees link clicks, not a <select>. Storage blocked → carry it
+    // as ?lang= instead, as steppy-detect.js does for its links.
     sel.addEventListener("change", function () {
-      if (sel.value) window.location.href = sel.value;
+      if (!sel.value) return;
+      var href = sel.value, loc = sel.options[sel.selectedIndex].lang, key = null;
+      try { key = JSON.parse(document.getElementById("steppy-detect-config").textContent).storageKeys.locale; } catch (e) {}
+      if (key && loc) {
+        var stored = false;
+        try { localStorage.setItem(key, loc); stored = true; } catch (e) {}
+        if (!stored) href += (href.indexOf("?") === -1 ? "?" : "&") + "lang=" + encodeURIComponent(loc);
+      }
+      window.location.href = href;
     });
     // Back from the language just picked can restore this page from the
     // bfcache with that option still showing — snap it back to this page's own.
@@ -73,32 +79,37 @@
       if (own) sel.value = own.value;
     });
   })();
-</script>            <button type="button" class="oce-theme-toggle" aria-label="Toggle theme">
-                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
-            </button>
+</script>        <button type="button" class="oce-theme-toggle" aria-label="Toggle light/dark theme" title="Toggle light/dark theme">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+    </div>
+</header>
+        <div class="oce-band-inner">
+            <p class="oce-eyebrow">Guide · Administrative documents</p>
+            <p class="oce-display oce-guide-title" aria-hidden="true">Generate a document from the CRM</p>
+<p class="oce-lede">Check the data pre-filled from the CRM for a procedure's document and generate it.</p><p class="oce-audience"><span class="oce-audience-label">For</span> <span class="oce-chip oce-role--manager"><span class="oce-dot" aria-hidden="true"></span>Manager</span><span class="oce-chip oce-role--admin"><span class="oce-dot" aria-hidden="true"></span>Administrator</span></p>            <div class="oce-guide-switches">
+                <nav class="steppy-mode-switch" aria-label="Guide mode">
+                    <ul>
+                        <li><span aria-current="true">Step by step</span></li>
+                        <li><a href="./interactive.html?lang=en">Interactive</a></li>
+                    </ul>
+                </nav>
+                <nav class="steppy-layout-switch" aria-label="Screen">
+                    <ul>
+                        <li><button type="button" data-layout="desktop" aria-current="true">Desktop</button></li>
+                        <li><button type="button" data-layout="mobile" >Mobile</button></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav class="steppy-mode-switch" aria-label="Guide mode">
-            <ul>
-                <li>
-                    <span aria-current="true">Step by step</span>
-                </li>
-                <li>
-                    <a href="./interactive.html?lang=en">Interactive</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="steppy-layout-switch" aria-label="Layout">
-            <ul>
-                <li>
-                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
-                </li>
-                <li>
-                    <button type="button" data-layout="mobile" >Mobile</button>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    </div>
+    <div class="oce-progress" aria-hidden="true">
+        <div class="oce-progress-inner">
+            <span class="oce-progress-label">Step <span data-oce-step>1</span> of <span data-oce-total></span></span>
+            <span class="oce-progress-track"><span class="oce-progress-fill"></span></span>
+        </div>
+    </div>
 
 
     <main class="steppy-main">
@@ -106,221 +117,149 @@
             
 <div class="steppy-guide">
     <h1>Generate a document from the CRM</h1>
-    <div class="steppy-role-badge">
-        <span class="i18n-fr">Guide utilisateur</span>
-        <span class="i18n-en">User guide</span>
-        <span class="i18n-nl">Gebruikershandleiding</span>
-        <span class="i18n-de">Benutzerhandbuch</span>
-    </div>
 
     <div class="steppy-step" data-step-index="1">
-        <h2>
-            <span class="steppy-step-number">1</span>
-            <span>Open the administrative documents</span>
-        </h2>
-        <div class="steppy-step-subtitle">Navigation</div>
-        <div class="steppy-step-content">In the sidebar, click &quot;Administrative documents&quot; to find your dossiers.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/desktop/step-14.png" alt="1. Open the administrative documents" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">1</span>
+                <span>Open the administrative documents</span>
+            </h2>
+            <div class="steppy-step-subtitle">Navigation</div>
+            <div class="steppy-step-content">In the sidebar, click &quot;Administrative documents&quot; to find your procedures.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-document-generate/en/desktop/step-14.png" alt="1. Open the administrative documents" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="2">
-        <h2>
-            <span class="steppy-step-number">2</span>
-            <span>Open the dossier</span>
-        </h2>
-        <div class="steppy-step-subtitle">Administrative documents</div>
-        <div class="steppy-step-content">Click the dossier row to open its page. Documents are always added inside a dossier.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/desktop/step-20.png" alt="2. Open the dossier" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">2</span>
+                <span>Open the procedure</span>
+            </h2>
+            <div class="steppy-step-subtitle">Procedures</div>
+            <div class="steppy-step-content">Click the procedure whose documents you are preparing to open its page.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-document-generate/en/desktop/step-20.png" alt="2. Open the procedure" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="3">
-        <h2>
-            <span class="steppy-step-number">3</span>
-            <span>An empty dossier</span>
-        </h2>
-        <div class="steppy-step-subtitle">Dossier documents</div>
-        <div class="steppy-step-content">The &quot;Documents&quot; tab lists the dossier's pieces. A freshly created dossier holds none.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/desktop/step-22.png" alt="3. An empty dossier" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">3</span>
+                <span>The documents to generate</span>
+            </h2>
+            <div class="steppy-step-subtitle">Documents</div>
+            <div class="steppy-step-content">The official forms are generated from the CRM's data. The generate icon appears on every document whose template the regulator provides: click it on the document to prepare — here, Annex 6.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-document-generate/en/desktop/step-22.png" alt="3. The documents to generate" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="4">
-        <h2>
-            <span class="steppy-step-number">4</span>
-            <span>Add a document</span>
-        </h2>
-        <div class="steppy-step-subtitle">Dossier documents</div>
-        <div class="steppy-step-content">Click &quot;Add document&quot; to choose which regulatory form to prepare.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/desktop/step-23.png" alt="4. Add a document" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">4</span>
+                <span>Generate the document</span>
+            </h2>
+            <div class="steppy-step-subtitle">Documents</div>
+            <div class="steppy-step-content">Click the generate icon. OptimCE gathers the data of the community and its members to fill the form.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-document-generate/en/desktop/step-23.png" alt="4. Generate the document" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="5">
-        <h2>
-            <span class="steppy-step-number">5</span>
-            <span>Choose the form</span>
-        </h2>
-        <div class="steppy-step-subtitle">Add document</div>
-        <div class="steppy-step-content">The list holds the forms published by the regulator for your region. Each one knows which CRM data it has to carry.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/desktop/step-25.png" alt="5. Choose the form" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">5</span>
+                <span>Check the data</span>
+            </h2>
+            <div class="steppy-step-subtitle">Generate the document</div>
+            <div class="steppy-step-content">Nothing is filed without your review. The fields are pre-filled from the CRM and stay editable: what you approve here is exactly what gets frozen into the document.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-document-generate/en/desktop/step-25.png" alt="5. Check the data" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="6">
-        <h2>
-            <span class="steppy-step-number">6</span>
-            <span>Create the document</span>
-        </h2>
-        <div class="steppy-step-subtitle">Add document</div>
-        <div class="steppy-step-content">Submit: the document joins the dossier, still without any content.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/desktop/step-27.png" alt="6. Create the document" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">6</span>
+                <span>Correct a value</span>
+            </h2>
+            <div class="steppy-step-subtitle">Generate the document</div>
+            <div class="steppy-step-content">A correction made here applies to this document only. If a value is wrong everywhere, fix it in the CRM instead and reload the form.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-document-generate/en/desktop/step-26.png" alt="6. Correct a value" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="7">
-        <h2>
-            <span class="steppy-step-number">7</span>
-            <span>A draft is waiting</span>
-        </h2>
-        <div class="steppy-step-subtitle">Dossier documents</div>
-        <div class="steppy-step-content">The document is created with the status &quot;Draft&quot;. It has no content yet: the icons offer to generate it from the CRM or to upload your own file.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/desktop/step-29.png" alt="7. A draft is waiting" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">7</span>
+                <span>Start the generation</span>
+            </h2>
+            <div class="steppy-step-subtitle">Generate the document</div>
+            <div class="steppy-step-content">The generation runs in the background. You can carry on working: the document shows &quot;Generating&quot; and updates on its own.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-document-generate/en/desktop/step-27.png" alt="7. Start the generation" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="8">
-        <h2>
-            <span class="steppy-step-number">8</span>
-            <span>Generate the document</span>
-        </h2>
-        <div class="steppy-step-subtitle">Dossier documents</div>
-        <div class="steppy-step-content">Click the generate icon. OptimCE gathers the data of the community, the operation and its members to fill the form.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/desktop/step-30.png" alt="8. Generate the document" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">8</span>
+                <span>The document is ready</span>
+            </h2>
+            <div class="steppy-step-subtitle">Documents</div>
+            <div class="steppy-step-content">Once the generation finishes, the document turns &quot;Ready&quot; and can be downloaded. It is a draft, stamped with a watermark: the final version is generated when sending, from what you approved. Nothing is overwritten: every generation adds a version, with the frozen data that produced it.</div>
         </div>
-    </div>
-    <div class="steppy-step" data-step-index="9">
-        <h2>
-            <span class="steppy-step-number">9</span>
-            <span>Check the data</span>
-        </h2>
-        <div class="steppy-step-subtitle">Generate the document</div>
-        <div class="steppy-step-content">Nothing is filed without your review. The fields are pre-filled from the CRM and stay editable: what you approve here is exactly what gets frozen into the document.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/desktop/step-32.png" alt="9. Check the data" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="10">
-        <h2>
-            <span class="steppy-step-number">10</span>
-            <span>Correct a value</span>
-        </h2>
-        <div class="steppy-step-subtitle">Generate the document</div>
-        <div class="steppy-step-content">A correction made here applies to this document only. If a value is wrong everywhere, fix it in the CRM instead and reload the form.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/desktop/step-33.png" alt="10. Correct a value" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="11">
-        <h2>
-            <span class="steppy-step-number">11</span>
-            <span>Start the generation</span>
-        </h2>
-        <div class="steppy-step-subtitle">Generate the document</div>
-        <div class="steppy-step-content">The generation runs in the background. You can carry on working: the document card shows &quot;Generating&quot; and updates on its own.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/desktop/step-34.png" alt="11. Start the generation" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="12">
-        <h2>
-            <span class="steppy-step-number">12</span>
-            <span>The document is ready</span>
-        </h2>
-        <div class="steppy-step-subtitle">Dossier documents</div>
-        <div class="steppy-step-content">Once the generation finishes, the document carries a downloadable version. Nothing is overwritten: every generation adds a new version.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/desktop/step-36.png" alt="12. The document is ready" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="13">
-        <h2>
-            <span class="steppy-step-number">13</span>
-            <span>Look at the versions</span>
-        </h2>
-        <div class="steppy-step-subtitle">Dossier documents</div>
-        <div class="steppy-step-content">The &quot;Versions&quot; icon opens the document's full history.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/desktop/step-37.png" alt="13. Look at the versions" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="14">
-        <h2>
-            <span class="steppy-step-number">14</span>
-            <span>A record of what was produced</span>
-        </h2>
-        <div class="steppy-step-subtitle">Document versions</div>
-        <div class="steppy-step-content">Every version records when it was produced and by whom. Generated versions additionally keep the exact data that was used.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/desktop/step-39.png" alt="14. A record of what was produced" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="15">
-        <h2>
-            <span class="steppy-step-number">15</span>
-            <span>See the frozen data</span>
-        </h2>
-        <div class="steppy-step-subtitle">Document versions</div>
-        <div class="steppy-step-content">Open the snapshot to re-read the data exactly as it was at filing time. A later change in the CRM never rewrites what was submitted.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/desktop/step-40.png" alt="15. See the frozen data" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-document-generate/en/desktop/step-29.png" alt="8. The document is ready" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
 </div>
@@ -329,323 +268,212 @@
             
 <div class="steppy-guide">
     <h1>Generate a document from the CRM</h1>
-    <div class="steppy-role-badge">
-        <span class="i18n-fr">Guide utilisateur</span>
-        <span class="i18n-en">User guide</span>
-        <span class="i18n-nl">Gebruikershandleiding</span>
-        <span class="i18n-de">Benutzerhandbuch</span>
-    </div>
 
     <div class="steppy-step" data-step-index="1">
-        <h2>
-            <span class="steppy-step-number">1</span>
-            <span>Open the administrative documents</span>
-        </h2>
-        <div class="steppy-step-subtitle">Navigation</div>
-        <div class="steppy-step-content">Tap the menu icon to open the drawer, then &quot;Administrative documents&quot;.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/mobile/step-17.png" alt="1. Open the administrative documents" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">1</span>
+                <span>Open the administrative documents</span>
+            </h2>
+            <div class="steppy-step-subtitle">Navigation</div>
+            <div class="steppy-step-content">Tap the menu icon to open the drawer, then &quot;Administrative documents&quot;.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-document-generate/en/mobile/step-17.png" alt="1. Open the administrative documents" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="2">
-        <h2>
-            <span class="steppy-step-number">2</span>
-            <span>Open the dossier</span>
-        </h2>
-        <div class="steppy-step-subtitle">Administrative documents</div>
-        <div class="steppy-step-content">Click the dossier row to open its page. Documents are always added inside a dossier.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/mobile/step-20.png" alt="2. Open the dossier" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">2</span>
+                <span>Open the procedure</span>
+            </h2>
+            <div class="steppy-step-subtitle">Procedures</div>
+            <div class="steppy-step-content">Click the procedure whose documents you are preparing to open its page.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-document-generate/en/mobile/step-20.png" alt="2. Open the procedure" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="3">
-        <h2>
-            <span class="steppy-step-number">3</span>
-            <span>An empty dossier</span>
-        </h2>
-        <div class="steppy-step-subtitle">Dossier documents</div>
-        <div class="steppy-step-content">The &quot;Documents&quot; tab lists the dossier's pieces. A freshly created dossier holds none.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/mobile/step-22.png" alt="3. An empty dossier" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">3</span>
+                <span>The documents to generate</span>
+            </h2>
+            <div class="steppy-step-subtitle">Documents</div>
+            <div class="steppy-step-content">The official forms are generated from the CRM's data. The generate icon appears on every document whose template the regulator provides: click it on the document to prepare — here, Annex 6.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-document-generate/en/mobile/step-22.png" alt="3. The documents to generate" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="4">
-        <h2>
-            <span class="steppy-step-number">4</span>
-            <span>Add a document</span>
-        </h2>
-        <div class="steppy-step-subtitle">Dossier documents</div>
-        <div class="steppy-step-content">Click &quot;Add document&quot; to choose which regulatory form to prepare.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/mobile/step-23.png" alt="4. Add a document" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">4</span>
+                <span>Generate the document</span>
+            </h2>
+            <div class="steppy-step-subtitle">Documents</div>
+            <div class="steppy-step-content">Click the generate icon. OptimCE gathers the data of the community and its members to fill the form.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-document-generate/en/mobile/step-23.png" alt="4. Generate the document" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="5">
-        <h2>
-            <span class="steppy-step-number">5</span>
-            <span>Choose the form</span>
-        </h2>
-        <div class="steppy-step-subtitle">Add document</div>
-        <div class="steppy-step-content">The list holds the forms published by the regulator for your region. Each one knows which CRM data it has to carry.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/mobile/step-25.png" alt="5. Choose the form" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">5</span>
+                <span>Check the data</span>
+            </h2>
+            <div class="steppy-step-subtitle">Generate the document</div>
+            <div class="steppy-step-content">Nothing is filed without your review. The fields are pre-filled from the CRM and stay editable: what you approve here is exactly what gets frozen into the document.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-document-generate/en/mobile/step-25.png" alt="5. Check the data" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="6">
-        <h2>
-            <span class="steppy-step-number">6</span>
-            <span>Create the document</span>
-        </h2>
-        <div class="steppy-step-subtitle">Add document</div>
-        <div class="steppy-step-content">Submit: the document joins the dossier, still without any content.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/mobile/step-27.png" alt="6. Create the document" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">6</span>
+                <span>Correct a value</span>
+            </h2>
+            <div class="steppy-step-subtitle">Generate the document</div>
+            <div class="steppy-step-content">A correction made here applies to this document only. If a value is wrong everywhere, fix it in the CRM instead and reload the form.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-document-generate/en/mobile/step-26.png" alt="6. Correct a value" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="7">
-        <h2>
-            <span class="steppy-step-number">7</span>
-            <span>A draft is waiting</span>
-        </h2>
-        <div class="steppy-step-subtitle">Dossier documents</div>
-        <div class="steppy-step-content">The document is created with the status &quot;Draft&quot;. It has no content yet: the icons offer to generate it from the CRM or to upload your own file.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/mobile/step-29.png" alt="7. A draft is waiting" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">7</span>
+                <span>Start the generation</span>
+            </h2>
+            <div class="steppy-step-subtitle">Generate the document</div>
+            <div class="steppy-step-content">The generation runs in the background. You can carry on working: the document shows &quot;Generating&quot; and updates on its own.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-document-generate/en/mobile/step-27.png" alt="7. Start the generation" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="8">
-        <h2>
-            <span class="steppy-step-number">8</span>
-            <span>Generate the document</span>
-        </h2>
-        <div class="steppy-step-subtitle">Dossier documents</div>
-        <div class="steppy-step-content">Click the generate icon. OptimCE gathers the data of the community, the operation and its members to fill the form.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/mobile/step-30.png" alt="8. Generate the document" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">8</span>
+                <span>The document is ready</span>
+            </h2>
+            <div class="steppy-step-subtitle">Documents</div>
+            <div class="steppy-step-content">Once the generation finishes, the document turns &quot;Ready&quot; and can be downloaded. It is a draft, stamped with a watermark: the final version is generated when sending, from what you approved. Nothing is overwritten: every generation adds a version, with the frozen data that produced it.</div>
         </div>
-    </div>
-    <div class="steppy-step" data-step-index="9">
-        <h2>
-            <span class="steppy-step-number">9</span>
-            <span>Check the data</span>
-        </h2>
-        <div class="steppy-step-subtitle">Generate the document</div>
-        <div class="steppy-step-content">Nothing is filed without your review. The fields are pre-filled from the CRM and stay editable: what you approve here is exactly what gets frozen into the document.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/mobile/step-32.png" alt="9. Check the data" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="10">
-        <h2>
-            <span class="steppy-step-number">10</span>
-            <span>Correct a value</span>
-        </h2>
-        <div class="steppy-step-subtitle">Generate the document</div>
-        <div class="steppy-step-content">A correction made here applies to this document only. If a value is wrong everywhere, fix it in the CRM instead and reload the form.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/mobile/step-33.png" alt="10. Correct a value" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="11">
-        <h2>
-            <span class="steppy-step-number">11</span>
-            <span>Start the generation</span>
-        </h2>
-        <div class="steppy-step-subtitle">Generate the document</div>
-        <div class="steppy-step-content">The generation runs in the background. You can carry on working: the document card shows &quot;Generating&quot; and updates on its own.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/mobile/step-34.png" alt="11. Start the generation" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="12">
-        <h2>
-            <span class="steppy-step-number">12</span>
-            <span>The document is ready</span>
-        </h2>
-        <div class="steppy-step-subtitle">Dossier documents</div>
-        <div class="steppy-step-content">Once the generation finishes, the document carries a downloadable version. Nothing is overwritten: every generation adds a new version.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/mobile/step-36.png" alt="12. The document is ready" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="13">
-        <h2>
-            <span class="steppy-step-number">13</span>
-            <span>Look at the versions</span>
-        </h2>
-        <div class="steppy-step-subtitle">Dossier documents</div>
-        <div class="steppy-step-content">The &quot;Versions&quot; icon opens the document's full history.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/mobile/step-37.png" alt="13. Look at the versions" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="14">
-        <h2>
-            <span class="steppy-step-number">14</span>
-            <span>A record of what was produced</span>
-        </h2>
-        <div class="steppy-step-subtitle">Document versions</div>
-        <div class="steppy-step-content">Every version records when it was produced and by whom. Generated versions additionally keep the exact data that was used.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/mobile/step-39.png" alt="14. A record of what was produced" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="15">
-        <h2>
-            <span class="steppy-step-number">15</span>
-            <span>See the frozen data</span>
-        </h2>
-        <div class="steppy-step-subtitle">Document versions</div>
-        <div class="steppy-step-content">Open the snapshot to re-read the data exactly as it was at filing time. A later change in the CRM never rewrites what was submitted.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-document-generate/en/mobile/step-40.png" alt="15. See the frozen data" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-document-generate/en/mobile/step-29.png" alt="8. The document is ready" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
 </div>
 
         </div>    </main>
 
-    <footer class="steppy-site-footer">
-        <p>Generated by Steppy.</p>
-    </footer>
-
-    <script>
-      (function () {
-        function bind() {
-          var btn = document.querySelector(".oce-theme-toggle");
-          if (!btn) return;
-          btn.addEventListener("click", function () {
-            var current = document.documentElement.getAttribute("data-theme") || "light";
-            var next = current === "dark" ? "light" : "dark";
-            document.documentElement.setAttribute("data-theme", next);
-            try { localStorage.setItem("oce-theme", next); } catch (e) {}
-          });
-        }
-        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
-        else bind();
-      })();
-    </script>
-    <script>
-      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"}}, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-14.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-14.png", "subtitle": "Navigation", "text": "In the sidebar, click \"Administrative documents\" to find your dossiers.", "title": "Open the administrative documents", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 73, "width": 988, "x": 260, "y": 554}, "selector": "[data-testid=\"dossier-list__row--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 73, "width": 988, "x": 260, "y": 554}, "selector": "[data-testid=\"dossier-list__row--0\"]"}}, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-20.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-20.png", "subtitle": "Administrative documents", "text": "Click the dossier row to open its page. Documents are always added inside a dossier.", "title": "Open the dossier", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-22.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-22.png", "subtitle": "Dossier documents", "text": "The \"Documents\" tab lists the dossier\u0027s pieces. A freshly created dossier holds none.", "title": "An empty dossier", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 138.734375, "x": 1109.265625, "y": 385}, "selector": "[data-testid=\"dossier-documents-panel__btn--add\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 138.734375, "x": 1109.265625, "y": 385}, "selector": "[data-testid=\"dossier-documents-panel__btn--add\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-23.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-23.png", "subtitle": "Dossier documents", "text": "Click \"Add document\" to choose which regulatory form to prepare.", "title": "Add a document", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 470, "x": 485, "y": 397}, "selector": "[data-testid=\"document-create-dialog__select--doc-type\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 470, "x": 485, "y": 397}, "selector": "[data-testid=\"document-create-dialog__select--doc-type\"]"}}, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-25.png", "subtitle": "Add document", "text": "The list holds the forms published by the regulator for your region. Each one knows which CRM data it has to carry.", "title": "Choose the form", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 56.03125, "x": 898.96875, "y": 545}, "selector": "[data-testid=\"document-create-dialog__btn--submit\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 56.03125, "x": 898.96875, "y": 545}, "selector": "[data-testid=\"document-create-dialog__btn--submit\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-27.png", "subtitle": "Add document", "text": "Submit: the document joins the dossier, still without any content.", "title": "Create the document", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-29.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-29.png", "subtitle": "Dossier documents", "text": "The document is created with the status \"Draft\". It has no content yet: the icons offer to generate it from the CRM or to upload your own file.", "title": "A draft is waiting", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1167, "y": 453.5}, "selector": "[data-testid=\"dossier-documents-panel__btn--generate-1\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1167, "y": 453.5}, "selector": "[data-testid=\"dossier-documents-panel__btn--generate-1\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-30.png", "subtitle": "Dossier documents", "text": "Click the generate icon. OptimCE gathers the data of the community, the operation and its members to fill the form.", "title": "Generate the document", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-32.png", "subtitle": "Generate the document", "text": "Nothing is filed without your review. The fields are pre-filled from the CRM and stay editable: what you approve here is exactly what gets frozen into the document.", "title": "Check the data", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 39.328125, "width": 437, "x": 726, "y": 281.328125}, "selector": "[data-testid=\"generate-dialog__field--community_name\"]"}, "value": "Test Community"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 39.328125, "width": 437, "x": 726, "y": 281.328125}, "selector": "[data-testid=\"generate-dialog__field--community_name\"]"}, "value": "Test Community"}, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-33.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-33.png", "subtitle": "Generate the document", "text": "A correction made here applies to this document only. If a value is wrong everywhere, fix it in the CRM instead and reload the form.", "title": "Correct a value", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 91.953125, "x": 1071.046875, "y": 813.296875}, "selector": "[data-testid=\"generate-dialog__btn--submit\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 91.953125, "x": 1071.046875, "y": 813.296875}, "selector": "[data-testid=\"generate-dialog__btn--submit\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-34.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-34.png", "subtitle": "Generate the document", "text": "The generation runs in the background. You can carry on working: the document card shows \"Generating\" and updates on its own.", "title": "Start the generation", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-36.png", "viewport": {"height": 900, "width": 1440}}], "index": 12, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-36.png", "subtitle": "Dossier documents", "text": "Once the generation finishes, the document carries a downloadable version. Nothing is overwritten: every generation adds a new version.", "title": "The document is ready", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1095, "y": 453.5}, "selector": "[data-testid=\"dossier-documents-panel__btn--detail-1\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1095, "y": 453.5}, "selector": "[data-testid=\"dossier-documents-panel__btn--detail-1\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-37.png", "viewport": {"height": 900, "width": 1440}}], "index": 13, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-37.png", "subtitle": "Dossier documents", "text": "The \"Versions\" icon opens the document\u0027s full history.", "title": "Look at the versions", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-39.png", "viewport": {"height": 900, "width": 1440}}], "index": 14, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-39.png", "subtitle": "Document versions", "text": "Every version records when it was produced and by whom. Generated versions additionally keep the exact data that was used.", "title": "A record of what was produced", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1003, "y": 488}, "selector": "[data-testid=\"document-detail-dialog__btn--snapshot-1\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1003, "y": 488}, "selector": "[data-testid=\"document-detail-dialog__btn--snapshot-1\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-40.png", "viewport": {"height": 900, "width": 1440}}], "index": 15, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-40.png", "subtitle": "Document versions", "text": "Open the snapshot to re-read the data exactly as it was at filing time. A later change in the CRM never rewrites what was submitted.", "title": "See the frozen data", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"}}, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-17.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-17.png", "subtitle": "Navigation", "text": "Tap the menu icon to open the drawer, then \"Administrative documents\".", "title": "Open the administrative documents", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 105, "width": 642.140625, "x": 34, "y": 705}, "selector": "[data-testid=\"dossier-list__row--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 105, "width": 642.140625, "x": 34, "y": 705}, "selector": "[data-testid=\"dossier-list__row--0\"]"}}, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-20.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-20.png", "subtitle": "Administrative documents", "text": "Click the dossier row to open its page. Documents are always added inside a dossier.", "title": "Open the dossier", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-22.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-22.png", "subtitle": "Dossier documents", "text": "The \"Documents\" tab lists the dossier\u0027s pieces. A freshly created dossier holds none.", "title": "An empty dossier", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 138.734375, "x": 217.265625, "y": 693}, "selector": "[data-testid=\"dossier-documents-panel__btn--add\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 138.734375, "x": 217.265625, "y": 693}, "selector": "[data-testid=\"dossier-documents-panel__btn--add\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-23.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-23.png", "subtitle": "Dossier documents", "text": "Click \"Add document\" to choose which regulatory form to prepare.", "title": "Add a document", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 364, "x": 13, "y": 117}, "selector": "[data-testid=\"document-create-dialog__select--doc-type\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 364, "x": 13, "y": 117}, "selector": "[data-testid=\"document-create-dialog__select--doc-type\"]"}}, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-25.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-25.png", "subtitle": "Add document", "text": "The list holds the forms published by the regulator for your region. Each one knows which CRM data it has to carry.", "title": "Choose the form", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 56.03125, "x": 320.96875, "y": 265}, "selector": "[data-testid=\"document-create-dialog__btn--submit\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 56.03125, "x": 320.96875, "y": 265}, "selector": "[data-testid=\"document-create-dialog__btn--submit\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-27.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-27.png", "subtitle": "Add document", "text": "Submit: the document joins the dossier, still without any content.", "title": "Create the document", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-29.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-29.png", "subtitle": "Dossier documents", "text": "The document is created with the status \"Draft\". It has no content yet: the icons offer to generate it from the CRM or to upload your own file.", "title": "A draft is waiting", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 83, "y": 813}, "selector": "[data-testid=\"dossier-documents-panel__btn--generate-1\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 83, "y": 813}, "selector": "[data-testid=\"dossier-documents-panel__btn--generate-1\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-30.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-30.png", "subtitle": "Dossier documents", "text": "Click the generate icon. OptimCE gathers the data of the community, the operation and its members to fill the form.", "title": "Generate the document", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-32.png", "viewport": {"height": 844, "width": 390}}], "index": 9, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-32.png", "subtitle": "Generate the document", "text": "Nothing is filed without your review. The fields are pre-filled from the CRM and stay editable: what you approve here is exactly what gets frozen into the document.", "title": "Check the data", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 39.328125, "width": 364, "x": 13, "y": 410.984375}, "selector": "[data-testid=\"generate-dialog__field--community_name\"]"}, "value": "Test Community"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 39.328125, "width": 364, "x": 13, "y": 410.984375}, "selector": "[data-testid=\"generate-dialog__field--community_name\"]"}, "value": "Test Community"}, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-33.png", "viewport": {"height": 844, "width": 390}}], "index": 10, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-33.png", "subtitle": "Generate the document", "text": "A correction made here applies to this document only. If a value is wrong everywhere, fix it in the CRM instead and reload the form.", "title": "Correct a value", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 91.953125, "x": 285.046875, "y": 788.609375}, "selector": "[data-testid=\"generate-dialog__btn--submit\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 91.953125, "x": 285.046875, "y": 788.609375}, "selector": "[data-testid=\"generate-dialog__btn--submit\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-34.png", "viewport": {"height": 844, "width": 390}}], "index": 11, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-34.png", "subtitle": "Generate the document", "text": "The generation runs in the background. You can carry on working: the document card shows \"Generating\" and updates on its own.", "title": "Start the generation", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-36.png", "viewport": {"height": 844, "width": 390}}], "index": 12, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-36.png", "subtitle": "Dossier documents", "text": "Once the generation finishes, the document carries a downloadable version. Nothing is overwritten: every generation adds a new version.", "title": "The document is ready", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 47, "y": 813}, "selector": "[data-testid=\"dossier-documents-panel__btn--detail-1\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 47, "y": 813}, "selector": "[data-testid=\"dossier-documents-panel__btn--detail-1\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-37.png", "viewport": {"height": 844, "width": 390}}], "index": 13, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-37.png", "subtitle": "Dossier documents", "text": "The \"Versions\" icon opens the document\u0027s full history.", "title": "Look at the versions", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-39.png", "viewport": {"height": 844, "width": 390}}], "index": 14, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-39.png", "subtitle": "Document versions", "text": "Every version records when it was produced and by whom. Generated versions additionally keep the exact data that was used.", "title": "A record of what was produced", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 313.0625, "y": 290}, "selector": "[data-testid=\"document-detail-dialog__btn--snapshot-1\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 313.0625, "y": 290}, "selector": "[data-testid=\"document-detail-dialog__btn--snapshot-1\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-40.png", "viewport": {"height": 844, "width": 390}}], "index": 15, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-40.png", "subtitle": "Document versions", "text": "Open the snapshot to re-read the data exactly as it was at filing time. A later change in the CRM never rewrites what was submitted.", "title": "See the frozen data", "viewport": {"height": 844, "width": 390}}]};
-      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
-      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+<footer class="steppy-site-footer">
+    <p>OptimCE · Generated by Steppy.</p>
+</footer>
+<script>
+  (function () {
+    function bind() {
+      var btn = document.querySelector(".oce-theme-toggle");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        var current = document.documentElement.getAttribute("data-theme") || "light";
+        var next = current === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        try { localStorage.setItem("oce-theme", next); } catch (e) {}
+      });
+    }
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+    else bind();
+  })();
+</script>
+<script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"}}, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-14.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-14.png", "subtitle": "Navigation", "text": "In the sidebar, click \"Administrative documents\" to find your procedures.", "title": "Open the administrative documents", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 40, "width": 634.421875, "x": 273, "y": 480}, "selector": "[data-testid=\"procedure-dashboard__row--2\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 40, "width": 634.421875, "x": 273, "y": 480}, "selector": "[data-testid=\"procedure-dashboard__row--2\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-20.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-20.png", "subtitle": "Procedures", "text": "Click the procedure whose documents you are preparing to open its page.", "title": "Open the procedure", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-22.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-22.png", "subtitle": "Documents", "text": "The official forms are generated from the CRM\u0027s data. The generate icon appears on every document whose template the regulator provides: click it on the document to prepare \u2014 here, Annex 6.", "title": "The documents to generate", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1185, "y": 485.5}, "selector": "[data-testid=\"dossier-documents-panel__btn--generate-1\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1185, "y": 485.5}, "selector": "[data-testid=\"dossier-documents-panel__btn--generate-1\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-23.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-23.png", "subtitle": "Documents", "text": "Click the generate icon. OptimCE gathers the data of the community and its members to fill the form.", "title": "Generate the document", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-25.png", "subtitle": "Generate the document", "text": "Nothing is filed without your review. The fields are pre-filled from the CRM and stay editable: what you approve here is exactly what gets frozen into the document.", "title": "Check the data", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 39.328125, "width": 437, "x": 726, "y": 361.328125}, "selector": "[data-testid=\"generate-dialog__field--community_name\"]"}, "value": "Test Community"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 39.328125, "width": 437, "x": 726, "y": 361.328125}, "selector": "[data-testid=\"generate-dialog__field--community_name\"]"}, "value": "Test Community"}, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-26.png", "subtitle": "Generate the document", "text": "A correction made here applies to this document only. If a value is wrong everywhere, fix it in the CRM instead and reload the form.", "title": "Correct a value", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 91.953125, "x": 1071.046875, "y": 792.25}, "selector": "[data-testid=\"generate-dialog__btn--submit\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 91.953125, "x": 1071.046875, "y": 792.25}, "selector": "[data-testid=\"generate-dialog__btn--submit\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-27.png", "subtitle": "Generate the document", "text": "The generation runs in the background. You can carry on working: the document shows \"Generating\" and updates on its own.", "title": "Start the generation", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-29.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/admin-doc-document-generate/en/desktop/step-29.png", "subtitle": "Documents", "text": "Once the generation finishes, the document turns \"Ready\" and can be downloaded. It is a draft, stamped with a watermark: the final version is generated when sending, from what you approved. Nothing is overwritten: every generation adds a version, with the frozen data that produced it.", "title": "The document is ready", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"}}, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-17.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-17.png", "subtitle": "Navigation", "text": "Tap the menu icon to open the drawer, then \"Administrative documents\".", "title": "Open the administrative documents", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 56, "width": 296, "x": 47, "y": 728}, "selector": "[data-testid=\"procedure-dashboard__row--2\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 56, "width": 296, "x": 47, "y": 728}, "selector": "[data-testid=\"procedure-dashboard__row--2\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-20.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-20.png", "subtitle": "Procedures", "text": "Click the procedure whose documents you are preparing to open its page.", "title": "Open the procedure", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-22.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-22.png", "subtitle": "Documents", "text": "The official forms are generated from the CRM\u0027s data. The generate icon appears on every document whose template the regulator provides: click it on the document to prepare \u2014 here, Annex 6.", "title": "The documents to generate", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 29, "y": 774}, "selector": "[data-testid=\"dossier-documents-panel__btn--generate-1\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 29, "y": 774}, "selector": "[data-testid=\"dossier-documents-panel__btn--generate-1\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-23.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-23.png", "subtitle": "Documents", "text": "Click the generate icon. OptimCE gathers the data of the community and its members to fill the form.", "title": "Generate the document", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-25.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-25.png", "subtitle": "Generate the document", "text": "Nothing is filed without your review. The fields are pre-filled from the CRM and stay editable: what you approve here is exactly what gets frozen into the document.", "title": "Check the data", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 39.328125, "width": 364, "x": 13, "y": 514.984375}, "selector": "[data-testid=\"generate-dialog__field--community_name\"]"}, "value": "Test Community"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 39.328125, "width": 364, "x": 13, "y": 514.984375}, "selector": "[data-testid=\"generate-dialog__field--community_name\"]"}, "value": "Test Community"}, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-26.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-26.png", "subtitle": "Generate the document", "text": "A correction made here applies to this document only. If a value is wrong everywhere, fix it in the CRM instead and reload the form.", "title": "Correct a value", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 91.953125, "x": 285.046875, "y": 788.5625}, "selector": "[data-testid=\"generate-dialog__btn--submit\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 91.953125, "x": 285.046875, "y": 788.5625}, "selector": "[data-testid=\"generate-dialog__btn--submit\"] button"}}, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-27.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-27.png", "subtitle": "Generate the document", "text": "The generation runs in the background. You can carry on working: the document shows \"Generating\" and updates on its own.", "title": "Start the generation", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-29.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/admin-doc-document-generate/en/mobile/step-29.png", "subtitle": "Documents", "text": "Once the generation finishes, the document turns \"Ready\" and can be downloaded. It is a draft, stamped with a watermark: the final version is generated when sending, from what you approved. Nothing is overwritten: every generation adds a version, with the frozen data that produced it.", "title": "The document is ready", "viewport": {"height": 844, "width": 390}}]};
+      window.__STEPPY_ACTIVE_LAYOUT__ = (window.SteppyDetect && window.SteppyDetect.layout) || "desktop";
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[window.__STEPPY_ACTIVE_LAYOUT__] || [];
       window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
     </script>
     <script>
+      // "Step N of M" bar: follows the step nearest the top of the viewport, in
+      // the layout currently shown (the desktop and mobile fragments are both in
+      // the page, one hidden). The bar is decoration: aria-hidden.
       (function () {
-        const persistKey = 'steppy:active-layout';
-        const manualKey = 'steppy:layout-manual';
-        const layouts = ["desktop", "mobile"];
-        const defaultLayout = "desktop";
-        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
-        const desktopLayout = layouts.indexOf('desktop') !== -1
-          ? 'desktop'
-          : (layouts[0] || defaultLayout);
-        const mql = window.matchMedia('(max-width: 768px)');
-
-        function readStorage(key) {
-          try { return localStorage.getItem(key); } catch (_) { return null; }
+        var bar = document.querySelector(".oce-progress");
+        if (!bar || !("IntersectionObserver" in window)) return;
+        var nEl = bar.querySelector("[data-oce-step]");
+        var totalEl = bar.querySelector("[data-oce-total]");
+        var fill = bar.querySelector(".oce-progress-fill");
+        var observer = null;
+        function setStep(i, total) {
+          nEl.textContent = String(i);
+          totalEl.textContent = String(total);
+          fill.style.width = (total ? Math.round(i / total * 100) : 0) + "%";
         }
-        function writeStorage(key, value) {
-          try { localStorage.setItem(key, value); } catch (_) {}
+        function watch() {
+          if (observer) observer.disconnect();
+          var scope = document.querySelector('.steppy-layout[data-layout="' + window.__STEPPY_ACTIVE_LAYOUT__ + '"]') || document;
+          var steps = Array.prototype.slice.call(scope.querySelectorAll(".steppy-step"));
+          if (!steps.length) { bar.hidden = true; return; }
+          bar.hidden = false;
+          setStep(1, steps.length);
+          observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) setStep(steps.indexOf(e.target) + 1, steps.length);
+            });
+          }, { rootMargin: "-45% 0px -50% 0px" });
+          steps.forEach(function (s) { observer.observe(s); });
         }
-        function viewportLayout() {
-          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
-        }
-
-        function applyLayout(name) {
-          if (layouts.indexOf(name) === -1) return;
-          document.body.setAttribute('data-active-layout', name);
-          document.querySelectorAll('.steppy-layout').forEach(function (el) {
-            if (el.getAttribute('data-layout') === name) {
-              el.classList.add('steppy-layout-active');
-            } else {
-              el.classList.remove('steppy-layout-active');
-            }
-          });
-          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
-            if (b.getAttribute('data-layout') === name) {
-              b.setAttribute('aria-current', 'true');
-            } else {
-              b.removeAttribute('aria-current');
-            }
-          });
-          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
-            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
-            window.__STEPPY_ACTIVE_LAYOUT__ = name;
-          }
-          writeStorage(persistKey, name);
-          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
-        }
-
-        const persisted = readStorage(persistKey);
-        const manual = readStorage(manualKey) === '1';
-        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
-          ? persisted
-          : viewportLayout();
-        applyLayout(initial);
-
-        function onViewportChange() {
-          if (readStorage(manualKey) === '1') return;
-          applyLayout(viewportLayout());
-        }
-        if (typeof mql.addEventListener === 'function') {
-          mql.addEventListener('change', onViewportChange);
-        } else if (typeof mql.addListener === 'function') {
-          mql.addListener(onViewportChange);
-        }
-
-        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
-          b.addEventListener('click', function () {
-            writeStorage(manualKey, '1');
-            applyLayout(b.getAttribute('data-layout'));
-          });
-        });
+        watch();
+        document.addEventListener("steppy:layout-change", watch);
       })();
     </script>
     <script src="../assets/cursor.js" defer></script>

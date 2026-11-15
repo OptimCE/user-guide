@@ -1,0 +1,1589 @@
+{
+  "version": "1.1",
+  "slug": "onboarding-welcome-community",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Bienvenue — vous avez déjà une communauté",
+    "en": "Welcome — you already have a community",
+    "nl": "Welkom — u hebt al een gemeenschap",
+    "de": "Willkommen — Sie haben bereits eine Gemeinschaft"
+  },
+  "locales": [
+    "fr",
+    "en",
+    "nl",
+    "de"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Bienvenue sur OptimCE",
+        "en": "Welcome to OptimCE",
+        "nl": "Welkom bij OptimCE",
+        "de": "Willkommen bei OptimCE"
+      },
+      "text": {
+        "fr": "OptimCE vous aide à partager l'énergie au sein d'une communauté d'énergie. Vous faites déjà partie d'une communauté : sa carte, dans **« Mes communautés »**, indique le rôle que vous y avez.",
+        "en": "OptimCE helps you share energy within an energy community. You already belong to a community: its card, under **\"My communities\"**, shows the role you hold there.",
+        "nl": "OptimCE helpt u energie te delen binnen een energiegemeenschap. U maakt al deel uit van een gemeenschap: haar kaart, onder **“Mijn gemeenschappen”**, toont de rol die u er hebt.",
+        "de": "OptimCE hilft Ihnen, Energie innerhalb einer Energiegemeinschaft zu teilen. Sie gehören bereits einer Gemeinschaft an: Ihre Karte unter **„Meine Gemeinschaften“** zeigt die Rolle, die Sie dort haben."
+      },
+      "subtitle": {
+        "fr": "Page d'accueil",
+        "en": "Home page",
+        "nl": "Startpagina",
+        "de": "Startseite"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/desktop/step-08.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/mobile/step-08.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/desktop/step-08.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/mobile/step-08.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/desktop/step-08.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/mobile/step-08.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/desktop/step-08.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/mobile/step-08.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Ce qui vous attend",
+        "en": "What needs you",
+        "nl": "Wat op u wacht",
+        "de": "Was auf Sie wartet"
+      },
+      "text": {
+        "fr": "Le haut de la page liste ce qui demande une action de votre part, dans toutes vos communautés : une invitation à accepter, une information qui manque dans votre fiche, des notifications non lues. Quand il affiche « Rien ne vous attend pour le moment. Tout est en ordre. », vous n'avez rien à faire.",
+        "en": "The top of the page lists what needs an action from you, across all your communities: an invitation to accept, a detail missing from your record, unread notifications. When it reads \"Nothing needs you right now. Everything is in order.\", there is nothing to do.",
+        "nl": "Bovenaan de pagina staat wat een actie van u vraagt, in al uw gemeenschappen: een uitnodiging om te aanvaarden, een gegeven dat in uw fiche ontbreekt, ongelezen meldingen. Staat er “Er wacht niets op u. Alles is in orde.”, dan hoeft u niets te doen.",
+        "de": "Oben auf der Seite steht, was eine Aktion von Ihnen erfordert, in all Ihren Gemeinschaften: eine anzunehmende Einladung, eine fehlende Angabe in Ihrem Datensatz, ungelesene Benachrichtigungen. Steht dort „Im Moment wartet nichts auf Sie. Alles ist in Ordnung.“, ist nichts zu tun."
+      },
+      "subtitle": {
+        "fr": "Page d'accueil",
+        "en": "Home page",
+        "nl": "Startpagina",
+        "de": "Startseite"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/desktop/step-10.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/mobile/step-10.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Ouvrir votre communauté",
+        "en": "Open your community",
+        "nl": "Uw gemeenschap openen",
+        "de": "Ihre Gemeinschaft öffnen"
+      },
+      "text": {
+        "fr": "**« Ouvrir ma communauté »** vous emmène dans votre communauté : son tableau de bord et ses menus. La première fois, une visite propre à votre rôle vous y fera faire le tour.",
+        "en": "**\"Open my community\"** takes you into your community: its dashboard and its menus. The first time, a tour for your role will show you around.",
+        "nl": "**“Mijn gemeenschap openen”** brengt u naar uw gemeenschap: haar dashboard en haar menu's. De eerste keer leidt een rondleiding voor uw rol u er rond.",
+        "de": "**„Meine Gemeinschaft öffnen“** bringt Sie in Ihre Gemeinschaft: ihr Dashboard und ihre Menüs. Beim ersten Mal führt Sie eine Tour für Ihre Rolle herum."
+      },
+      "subtitle": {
+        "fr": "Page d'accueil",
+        "en": "Home page",
+        "nl": "Startpagina",
+        "de": "Startseite"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/desktop/step-12.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/mobile/step-12.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Tout ce qui vous concerne",
+        "en": "Everything about you",
+        "nl": "Alles wat u aanbelangt",
+        "de": "Alles, was Sie betrifft"
+      },
+      "text": {
+        "fr": "Plus bas, la page d'accueil rassemble, pour toutes vos communautés à la fois, **« Mon énergie »**, **« Mes documents »**, **« Mes factures à payer »** et **« Ce qui a été déclaré à mon sujet »**. Vous n'avez pas besoin d'ouvrir chaque communauté pour les voir.",
+        "en": "Further down, the home page gathers, for all your communities at once, **\"My energy\"**, **\"My documents\"**, **\"My invoices to pay\"** and **\"What has been filed about me\"**. You do not need to open each community to see them.",
+        "nl": "Verderop verzamelt de startpagina, voor al uw gemeenschappen tegelijk, **“Mijn energie”**, **“Mijn documenten”**, **“Mijn te betalen facturen”** en **“Wat er over mij is ingediend”**. U hoeft niet elke gemeenschap te openen om ze te zien.",
+        "de": "Weiter unten bündelt die Startseite für all Ihre Gemeinschaften zugleich **„Meine Energie“**, **„Meine Dokumente“**, **„Meine offenen Rechnungen“** und **„Was über mich eingereicht wurde“**. Sie müssen nicht jede Gemeinschaft öffnen, um sie zu sehen."
+      },
+      "subtitle": {
+        "fr": "Page d'accueil",
+        "en": "Home page",
+        "nl": "Startpagina",
+        "de": "Startseite"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/mobile/step-14.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/mobile/step-14.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/mobile/step-14.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/mobile/step-14.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Votre profil",
+        "en": "Your profile",
+        "nl": "Uw profiel",
+        "de": "Ihr Profil"
+      },
+      "text": {
+        "fr": "La section **« Profil »** de la barre latérale vous suit partout : accueil, profil, invitations, vos communautés et les communautés publiques.",
+        "en": "The sidebar's **\"Profile\"** section is always there: home, profile, invitations, your communities and the public communities.",
+        "nl": "De sectie **“Profiel”** van de zijbalk is er altijd: start, profiel, uitnodigingen, uw gemeenschappen en de openbare gemeenschappen.",
+        "de": "Der Abschnitt **„Profil“** der Seitenleiste ist immer da: Start, Profil, Einladungen, Ihre Gemeinschaften und die öffentlichen Gemeinschaften."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ],
+            "content": {
+              "title": "Votre profil",
+              "text": "La section **« Profil »** du menu regroupe l'accueil, votre profil, vos invitations, vos communautés et les communautés publiques.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ],
+            "content": {
+              "title": "Your profile",
+              "text": "The menu's **\"Profile\"** section holds the home page, your profile, your invitations, your communities and the public communities.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ],
+            "content": {
+              "title": "Uw profiel",
+              "text": "De sectie **“Profiel”** van het menu bevat de startpagina, uw profiel, uw uitnodigingen, uw gemeenschappen en de openbare gemeenschappen.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/desktop/step-17.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ],
+            "content": {
+              "title": "Ihr Profil",
+              "text": "Der Abschnitt **„Profil“** des Menüs enthält die Startseite, Ihr Profil, Ihre Einladungen, Ihre Gemeinschaften und die öffentlichen Gemeinschaften.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir vos invitations",
+        "en": "Open your invitations",
+        "nl": "Uw uitnodigingen openen",
+        "de": "Ihre Einladungen öffnen"
+      },
+      "text": {
+        "fr": "Cliquez sur **« Invitations »**.",
+        "en": "Click **\"Invitations\"**.",
+        "nl": "Klik op **“Uitnodigingen”**.",
+        "de": "Klicken Sie auf **„Einladungen“**."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 181.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--users_invitations\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 181.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--users_invitations\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir vos invitations",
+              "text": "Touchez **« Invitations »**.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 181.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--users_invitations\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 181.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--users_invitations\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open your invitations",
+              "text": "Tap **\"Invitations\"**.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 181.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--users_invitations\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 181.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--users_invitations\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Uw uitnodigingen openen",
+              "text": "Tik op **“Uitnodigingen”**.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/desktop/step-18.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 181.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--users_invitations\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 181.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"sidebar-element__link--users_invitations\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ihre Einladungen öffnen",
+              "text": "Tippen Sie auf **„Einladungen“**.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Vos invitations",
+        "en": "Your invitations",
+        "nl": "Uw uitnodigingen",
+        "de": "Ihre Einladungen"
+      },
+      "text": {
+        "fr": "Quand une autre communauté vous invite, ou quand on vous propose de gérer la vôtre, l'invitation arrive ici — l'onglet **« Membres »** pour devenir membre, **« Gestionnaire »** pour gérer — et la page d'accueil vous la signale.",
+        "en": "When another community invites you, or you are asked to help run yours, the invitation lands here — the **\"Members\"** tab to become a member, **\"Manager\"** to help run it — and your home page points it out.",
+        "nl": "Wanneer een andere gemeenschap u uitnodigt, of men u vraagt de uwe mee te beheren, komt de uitnodiging hier terecht — het tabblad **“Leden”** om lid te worden, **“Manager”** om mee te beheren — en uw startpagina wijst u erop.",
+        "de": "Wenn eine andere Gemeinschaft Sie einlädt oder man Sie bittet, Ihre mitzuverwalten, landet die Einladung hier — die Registerkarte **„Mitglieder“**, um Mitglied zu werden, **„Manager“**, um mitzuverwalten — und Ihre Startseite weist Sie darauf hin."
+      },
+      "subtitle": {
+        "fr": "Mes invitations",
+        "en": "My invitations",
+        "nl": "Mijn uitnodigingen",
+        "de": "Meine Einladungen"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-8",
+      "index": 8,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 500,
+      "title": {
+        "fr": "Besoin d'aide ?",
+        "en": "Need help?",
+        "nl": "Hulp nodig?",
+        "de": "Brauchen Sie Hilfe?"
+      },
+      "text": {
+        "fr": "En bas de la barre latérale, **« Guide utilisateur »** ouvre l'aide, à tout moment et depuis n'importe quelle page. Cliquez dessus.",
+        "en": "At the bottom of the sidebar, **\"User guide\"** opens the help, at any time and from any page. Click it.",
+        "nl": "Onderaan de zijbalk opent **“Gebruikershandleiding”** de hulp, op elk moment en vanaf elke pagina. Klik erop.",
+        "de": "Unten in der Seitenleiste öffnet **„Benutzerhandbuch“** die Hilfe, jederzeit und von jeder Seite aus. Klicken Sie darauf."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 828,
+                      "width": 51,
+                      "height": 30
+                    },
+                    "selector": "[data-testid=\"navbar__btn--user-guide\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 766,
+                      "width": 284,
+                      "height": 33
+                    },
+                    "selector": "[data-testid=\"navbar__btn--user-guide\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Besoin d'aide ?",
+              "text": "En bas du menu, **« Guide utilisateur »** ouvre l'aide, à tout moment et depuis n'importe quelle page. Touchez-le.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 828,
+                      "width": 51,
+                      "height": 30
+                    },
+                    "selector": "[data-testid=\"navbar__btn--user-guide\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 766,
+                      "width": 284,
+                      "height": 33
+                    },
+                    "selector": "[data-testid=\"navbar__btn--user-guide\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Need help?",
+              "text": "At the bottom of the menu, **\"User guide\"** opens the help, at any time and from any page. Tap it.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 828,
+                      "width": 51,
+                      "height": 30
+                    },
+                    "selector": "[data-testid=\"navbar__btn--user-guide\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 766,
+                      "width": 284,
+                      "height": 33
+                    },
+                    "selector": "[data-testid=\"navbar__btn--user-guide\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Hulp nodig?",
+              "text": "Onderaan het menu opent **“Gebruikershandleiding”** de hulp, op elk moment en vanaf elke pagina. Tik erop.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 828,
+                      "width": 51,
+                      "height": 30
+                    },
+                    "selector": "[data-testid=\"navbar__btn--user-guide\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/mobile/step-29.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 766,
+                      "width": 284,
+                      "height": 33
+                    },
+                    "selector": "[data-testid=\"navbar__btn--user-guide\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Brauchen Sie Hilfe?",
+              "text": "Unten im Menü öffnet **„Benutzerhandbuch“** die Hilfe, jederzeit und von jeder Seite aus. Tippen Sie darauf.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-9",
+      "index": 9,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Le guide en ligne",
+        "en": "The online guide",
+        "nl": "De online handleiding",
+        "de": "Das Online-Handbuch"
+      },
+      "text": {
+        "fr": "**« Ouvrir le guide d'utilisation en ligne »** ouvre le guide dans un nouvel onglet : chaque tâche de l'application y est décrite pas à pas, avec des captures d'écran, et peut aussi être rejouée en animation.",
+        "en": "**\"Open the online user guide\"** opens the guide in a new tab: every task in the application is described there step by step, with screenshots, and can also be played as an animation.",
+        "nl": "**“De online gebruikershandleiding openen”** opent de handleiding in een nieuw tabblad: elke taak in de applicatie wordt er stap voor stap beschreven, met schermafbeeldingen, en kan ook als animatie worden afgespeeld.",
+        "de": "**„Online-Benutzerhandbuch öffnen“** öffnet das Handbuch in einem neuen Tab: Jede Aufgabe der Anwendung wird dort Schritt für Schritt mit Bildschirmfotos beschrieben und lässt sich auch als Animation abspielen."
+      },
+      "subtitle": {
+        "fr": "Aide",
+        "en": "Help",
+        "nl": "Help",
+        "de": "Hilfe"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/desktop/step-31.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/mobile/step-31.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-10",
+      "index": 10,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Les visites guidées",
+        "en": "Guided tours",
+        "nl": "Rondleidingen",
+        "de": "Geführte Touren"
+      },
+      "text": {
+        "fr": "**« Visites guidées »** liste les visites comme celle-ci : elles vous montrent une tâche directement dans l'application. Vous y trouverez celles de votre rôle dans votre communauté ; relancez-en une quand vous en avez besoin. Fermez cette fenêtre pour commencer.",
+        "en": "**\"Guided tours\"** lists tours like this one: they show you a task right inside the application. You will find the ones for your role in your community here; start one again whenever you need it. Close this window to get started.",
+        "nl": "**“Rondleidingen”** toont rondleidingen zoals deze: ze laten u een taak rechtstreeks in de applicatie zien. U vindt hier die voor uw rol in uw gemeenschap; start er een opnieuw wanneer u die nodig hebt. Sluit dit venster om te beginnen.",
+        "de": "**„Geführte Touren“** listet Touren wie diese auf: Sie zeigen Ihnen eine Aufgabe direkt in der Anwendung. Hier finden Sie die Touren Ihrer Rolle in Ihrer Gemeinschaft; starten Sie eine erneut, wann immer Sie sie brauchen. Schließen Sie dieses Fenster, um zu beginnen."
+      },
+      "subtitle": {
+        "fr": "Aide",
+        "en": "Help",
+        "nl": "Help",
+        "de": "Hilfe"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/fr/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/en/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/nl/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/desktop/step-32.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/onboarding-welcome-community/de/mobile/step-32.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

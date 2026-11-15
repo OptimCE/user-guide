@@ -1,0 +1,1241 @@
+{
+  "version": "1.1",
+  "slug": "signature-manager-follows",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Suivre les demandes de signature",
+    "en": "Follow the signature requests",
+    "nl": "De handtekeningverzoeken volgen",
+    "de": "Die Signaturanfragen verfolgen"
+  },
+  "locales": [
+    "fr",
+    "en",
+    "nl",
+    "de"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les signatures",
+        "en": "Open the signatures",
+        "nl": "De handtekeningen openen",
+        "de": "Die Unterschriften öffnen"
+      },
+      "text": {
+        "fr": "Dans la barre latérale, cliquez sur « Signatures » : toutes les demandes de signature de la communauté y sont réunies.",
+        "en": "In the sidebar, click \"Signatures\": every signature request of the community is gathered there.",
+        "nl": "Klik in de zijbalk op “Handtekeningen”: alle handtekeningverzoeken van de gemeenschap staan daar samen.",
+        "de": "Klicken Sie in der Seitenleiste auf „Unterschriften“: Dort sind alle Signaturanfragen der Gemeinschaft versammelt."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/fr/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 474,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--signatures-community\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 474,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--signatures-community\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir les signatures",
+              "text": "Touchez l'icône du menu pour ouvrir le tiroir, puis « Signatures ».",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/en/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 474,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--signatures-community\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 474,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--signatures-community\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the signatures",
+              "text": "Tap the menu icon to open the drawer, then \"Signatures\".",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 474,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--signatures-community\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 474,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--signatures-community\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De handtekeningen openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en daarna op “Handtekeningen”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 474,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--signatures-community\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 474,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--signatures-community\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Die Unterschriften öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Unterschriften“.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Les demandes de la communauté",
+        "en": "The community's requests",
+        "nl": "De verzoeken van de gemeenschap",
+        "de": "Die Anfragen der Gemeinschaft"
+      },
+      "text": {
+        "fr": "Chaque demande de signature y figure avec le document, son origine, son avancement, son échéance et son statut. Le filtre du haut ne garde que les demandes d'un statut.",
+        "en": "Every signature request is listed with its document, its origin, its progress, its deadline and its status. The filter at the top keeps only the requests of one status.",
+        "nl": "Elk handtekeningverzoek staat er met het document, de herkomst, de voortgang, de vervaldatum en de status. De filter bovenaan houdt alleen de verzoeken met één status over.",
+        "de": "Jede Signaturanfrage ist mit ihrem Dokument, ihrer Herkunft, ihrem Fortschritt, ihrer Frist und ihrem Status aufgeführt. Der Filter oben zeigt nur die Anfragen eines Status."
+      },
+      "subtitle": {
+        "fr": "Signatures",
+        "en": "Signatures",
+        "nl": "Handtekeningen",
+        "de": "Unterschriften"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Où en est la demande",
+        "en": "Where the request stands",
+        "nl": "Hoe ver het verzoek staat",
+        "de": "Wie weit die Anfrage ist"
+      },
+      "text": {
+        "fr": "L'**« Avancement »** compte les signatures reçues : ici **« 0 sur 1 signés »**, le participant n'a pas encore signé.",
+        "en": "The **\"Progress\"** counts the signatures received: here **\"0 of 1 signed\"**, the participant has not signed yet.",
+        "nl": "De **“Voortgang”** telt de ontvangen handtekeningen: hier **“0 van 1 ondertekend”**, de deelnemer heeft nog niet ondertekend.",
+        "de": "Der **„Fortschritt“** zählt die erhaltenen Unterschriften: hier **„0 von 1 unterschrieben“**, der Teilnehmer hat noch nicht unterschrieben."
+      },
+      "subtitle": {
+        "fr": "Avancement",
+        "en": "Progress",
+        "nl": "Voortgang",
+        "de": "Fortschritt"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/fr/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/fr/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/en/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/en/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/nl/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/nl/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/de/desktop/step-21.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/de/mobile/step-21.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Relancer le signataire",
+        "en": "Remind the signer",
+        "nl": "De ondertekenaar herinneren",
+        "de": "Die unterzeichnende Person erinnern"
+      },
+      "text": {
+        "fr": "Cliquez sur **« Relancer »** : chaque signataire qui n'a pas encore signé reçoit un rappel par notification et par e-mail.",
+        "en": "Click **\"Send a reminder\"**: every signer who has not signed yet gets a reminder by notification and by email.",
+        "nl": "Klik op **“Herinneren”**: elke ondertekenaar die nog niet heeft ondertekend, krijgt een herinnering via een melding en een e-mail.",
+        "de": "Klicken Sie auf **„Erinnern“**: Jede unterzeichnende Person, die noch nicht unterschrieben hat, erhält eine Erinnerung per Benachrichtigung und per E-Mail."
+      },
+      "subtitle": {
+        "fr": "Relance",
+        "en": "Reminder",
+        "nl": "Herinnering",
+        "de": "Erinnerung"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1210,
+                      "y": 321,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"signature-follow__button--remind-0\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/fr/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 253.734375,
+                      "y": 509,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"signature-follow__button--remind-0\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1210,
+                      "y": 321,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"signature-follow__button--remind-0\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/en/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 253.6875,
+                      "y": 519,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"signature-follow__button--remind-0\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1210,
+                      "y": 331,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"signature-follow__button--remind-0\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 254.390625,
+                      "y": 547,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"signature-follow__button--remind-0\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1210,
+                      "y": 321,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"signature-follow__button--remind-0\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 253.96875,
+                      "y": 519,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"signature-follow__button--remind-0\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 6000,
+      "title": {
+        "fr": "Ouvrir la demande",
+        "en": "Open the request",
+        "nl": "Het verzoek openen",
+        "de": "Die Anfrage öffnen"
+      },
+      "text": {
+        "fr": "Cliquez sur **« Ouvrir le détail »** pour voir la demande en entier.",
+        "en": "Click **\"Open the details\"** to see the whole request.",
+        "nl": "Klik op **“Details openen”** om het volledige verzoek te zien.",
+        "de": "Klicken Sie auf **„Details öffnen“**, um die ganze Anfrage zu sehen."
+      },
+      "subtitle": {
+        "fr": "Signatures",
+        "en": "Signatures",
+        "nl": "Handtekeningen",
+        "de": "Unterschriften"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/fr/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1282,
+                      "y": 329,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"signature-follow__button--open-0\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/fr/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 325.734375,
+                      "y": 533,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"signature-follow__button--open-0\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/en/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1282,
+                      "y": 329,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"signature-follow__button--open-0\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/en/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 325.6875,
+                      "y": 543,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"signature-follow__button--open-0\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/nl/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1282,
+                      "y": 339,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"signature-follow__button--open-0\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/nl/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 326.390625,
+                      "y": 571,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"signature-follow__button--open-0\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/de/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1282,
+                      "y": 329,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"signature-follow__button--open-0\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/de/mobile/step-25.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 325.96875,
+                      "y": 543,
+                      "width": 32,
+                      "height": 32
+                    },
+                    "selector": "[data-testid=\"signature-follow__button--open-0\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Les signataires",
+        "en": "The signers",
+        "nl": "De ondertekenaars",
+        "de": "Die Unterzeichnenden"
+      },
+      "text": {
+        "fr": "Le haut de la page donne le statut de la demande et son échéance. Sous **« Signataires »**, chacun est listé avec ce qu'il a fait : invité, consulté, signé ou refusé.",
+        "en": "The top of the page gives the request's status and its deadline. Under **\"Signers\"**, each one is listed with what they have done: invited, viewed, signed or declined.",
+        "nl": "Bovenaan de pagina staan de status van het verzoek en de vervaldatum. Onder **“Ondertekenaars”** staat elke persoon met wat hij heeft gedaan: uitgenodigd, bekeken, ondertekend of geweigerd.",
+        "de": "Oben auf der Seite stehen der Status der Anfrage und ihre Frist. Unter **„Unterzeichnende“** ist jede Person mit dem aufgeführt, was sie getan hat: eingeladen, angesehen, unterschrieben oder abgelehnt."
+      },
+      "subtitle": {
+        "fr": "Demande de signature",
+        "en": "Signature request",
+        "nl": "Handtekeningverzoek",
+        "de": "Signaturanfrage"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/fr/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/fr/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/en/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/en/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/nl/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/nl/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/de/desktop/step-27.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/de/mobile/step-27.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-7",
+      "index": 7,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "L'historique",
+        "en": "The history",
+        "nl": "De geschiedenis",
+        "de": "Der Verlauf"
+      },
+      "text": {
+        "fr": "L'**« Historique »** retrace chaque étape, relance comprise. **« Journal intègre »** confirme que personne ne l'a modifié. Le document signé n'apparaît qu'une fois que tout le monde a signé.",
+        "en": "The **\"History\"** traces every step, the reminder included. **\"Log intact\"** confirms that nobody has changed it. The signed document only appears once everyone has signed.",
+        "nl": "De **“Geschiedenis”** toont elke stap, de herinnering inbegrepen. **“Logboek intact”** bevestigt dat niemand het heeft gewijzigd. Het ondertekende document verschijnt pas wanneer iedereen heeft ondertekend.",
+        "de": "Der **„Verlauf“** zeigt jeden Schritt, die Erinnerung eingeschlossen. **„Protokoll unversehrt“** bestätigt, dass ihn niemand verändert hat. Das unterschriebene Dokument erscheint erst, wenn alle unterschrieben haben."
+      },
+      "subtitle": {
+        "fr": "Historique",
+        "en": "History",
+        "nl": "Geschiedenis",
+        "de": "Verlauf"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/fr/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/fr/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/en/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/en/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/nl/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/nl/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/de/desktop/step-28.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-manager-follows/de/mobile/step-28.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Déposer un dossier et suivre son échéance — OptimCE — Guides utilisateur</title>
-    <meta name="description" content="Enregistrer le dépôt d&#39;un dossier auprès de l&#39;autorité, suivre l&#39;échéance réglementaire et la clôturer.">
+    <title>Envoyer une démarche et suivre son échéance — OptimCE — Guides utilisateur</title>
+    <meta name="description" content="Envoyer une démarche prête, voir le délai du régulateur démarrer et le retrouver dans l&#39;agenda des échéances.">
     <link rel="canonical" href="https://guide.optimce.be/admin-doc-submit-deadline/fr.html">
     <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/admin-doc-submit-deadline/fr.html">
     <link rel="alternate" hreflang="en" href="https://guide.optimce.be/admin-doc-submit-deadline/en.html">
@@ -12,12 +12,14 @@
     <link rel="alternate" hreflang="de" href="https://guide.optimce.be/admin-doc-submit-deadline/de.html">
     <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/admin-doc-submit-deadline/fr.html">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Déposer un dossier et suivre son échéance">
-    <meta property="og:description" content="Enregistrer le dépôt d&#39;un dossier auprès de l&#39;autorité, suivre l&#39;échéance réglementaire et la clôturer.">
+    <meta property="og:title" content="Envoyer une démarche et suivre son échéance">
+    <meta property="og:description" content="Envoyer une démarche prête, voir le délai du régulateur démarrer et le retrouver dans l&#39;agenda des échéances.">
     <meta property="og:url" content="https://guide.optimce.be/admin-doc-submit-deadline/fr.html">
     <meta property="og:site_name" content="OptimCE — Guides utilisateur">
     <meta property="og:image" content="https://guide.optimce.be/assets/admin-doc-submit-deadline/fr/desktop/step-14.png">
     <meta name="twitter:card" content="summary_large_image">
+    <script type="application/json" id="steppy-detect-config">{"breakpoints": {"desktop": 1024, "mobile": 0}, "defaultLayout": "desktop", "defaultLocale": "fr", "hrefFor": {"de": "./de.html", "en": "./en.html", "fr": "./fr.html", "nl": "./nl.html"}, "layout": true, "layouts": ["desktop", "mobile"], "locale": true, "locales": ["fr", "en", "nl", "de"], "pageLocale": "fr", "storageKeys": {"layout": "steppy:layout", "locale": "steppy:locale"}}</script>
+    <script src="../assets/steppy-detect.js"></script>
     <link rel="stylesheet" href="../assets/guides.css">
     <script>
       (function () {
@@ -26,33 +28,25 @@
           var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
           document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
         } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
-        // Remember the language of the file we just loaded: interactive.html is one
-        // URL for every locale and opens in this language when no ?lang= is given.
-        try { localStorage.setItem("oce-lang", "fr"); } catch (e) {}
       })();
     </script>
 </head>
-<body data-active-layout="desktop">
-    <header class="steppy-site-header">
-        <a class="oce-logo-link" href="../index.html" aria-label="OptimCE — Guides utilisateur">
-            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
-                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
-                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
-                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
-                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
-                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
-            </svg>
-        </a>
-        <a class="steppy-site-title" href="../index.html">OptimCE — Guides utilisateur</a>
-        <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
-            <a href="../index.html">Accueil</a>
-            <span class="steppy-breadcrumb-sep">›</span>
-            <a href="../administrative-document/fr.html">Documents administratifs</a>
-            <span class="steppy-breadcrumb-sep">›</span>
-            <span aria-current="page">Déposer un dossier et suivre son échéance</span>
-        </nav>
-
-        <div class="steppy-header-actions">
+<body class="oce-page-guide oce-role--manager" data-active-layout="desktop">
+    <div class="oce-band oce-band--compact">
+<header class="steppy-site-header">
+    <a class="oce-logo-link" href="../index.html" aria-label="OptimCE — Guides utilisateur">
+        <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+            <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+            <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+            <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+            <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+            <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+        </svg>
+    </a>
+    <a class="steppy-site-title" href="../index.html">OptimCE — Guides utilisateur</a>
+    <nav class="steppy-breadcrumb" aria-label="Fil d'Ariane">
+<a href="../index.html">Accueil</a><span class="steppy-breadcrumb-sep" aria-hidden="true">›</span><a href="../manager/fr.html">Gestionnaire</a><span class="steppy-breadcrumb-sep" aria-hidden="true">›</span><a href="../administrative-document/fr.html">Documents administratifs</a>    </nav>
+    <div class="steppy-header-actions">
 <label class="steppy-locale-select">
     <span class="steppy-visually-hidden">Langue</span>
     <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
@@ -63,8 +57,20 @@
   (function () {
     var sel = document.querySelector(".steppy-locale-select select");
     if (!sel) return;
+    // A pick is the reader's own choice: store it under steppy-detect.js's key
+    // (autoDetect.storageKeys.locale) so detection never overrides it. That
+    // script only sees link clicks, not a <select>. Storage blocked → carry it
+    // as ?lang= instead, as steppy-detect.js does for its links.
     sel.addEventListener("change", function () {
-      if (sel.value) window.location.href = sel.value;
+      if (!sel.value) return;
+      var href = sel.value, loc = sel.options[sel.selectedIndex].lang, key = null;
+      try { key = JSON.parse(document.getElementById("steppy-detect-config").textContent).storageKeys.locale; } catch (e) {}
+      if (key && loc) {
+        var stored = false;
+        try { localStorage.setItem(key, loc); stored = true; } catch (e) {}
+        if (!stored) href += (href.indexOf("?") === -1 ? "?" : "&") + "lang=" + encodeURIComponent(loc);
+      }
+      window.location.href = href;
     });
     // Back from the language just picked can restore this page from the
     // bfcache with that option still showing — snap it back to this page's own.
@@ -73,226 +79,187 @@
       if (own) sel.value = own.value;
     });
   })();
-</script>            <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème">
-                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
-            </button>
+</script>        <button type="button" class="oce-theme-toggle" aria-label="Basculer le thème clair/sombre" title="Basculer le thème clair/sombre">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+    </div>
+</header>
+        <div class="oce-band-inner">
+            <p class="oce-eyebrow">Guide · Documents administratifs</p>
+            <p class="oce-display oce-guide-title" aria-hidden="true">Envoyer une démarche et suivre son échéance</p>
+<p class="oce-lede">Envoyer une démarche prête, voir le délai du régulateur démarrer et le retrouver dans l'agenda des échéances.</p><p class="oce-audience"><span class="oce-audience-label">Pour</span> <span class="oce-chip oce-role--manager"><span class="oce-dot" aria-hidden="true"></span>Gestionnaire</span><span class="oce-chip oce-role--admin"><span class="oce-dot" aria-hidden="true"></span>Administrateur</span></p>            <div class="oce-guide-switches">
+                <nav class="steppy-mode-switch" aria-label="Mode du guide">
+                    <ul>
+                        <li><span aria-current="true">Pas à pas</span></li>
+                        <li><a href="./interactive.html?lang=fr">Interactif</a></li>
+                    </ul>
+                </nav>
+                <nav class="steppy-layout-switch" aria-label="Écran">
+                    <ul>
+                        <li><button type="button" data-layout="desktop" aria-current="true">Ordinateur</button></li>
+                        <li><button type="button" data-layout="mobile" >Mobile</button></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav class="steppy-mode-switch" aria-label="Guide mode">
-            <ul>
-                <li>
-                    <span aria-current="true">Pas à pas</span>
-                </li>
-                <li>
-                    <a href="./interactive.html?lang=fr">Interactif</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="steppy-layout-switch" aria-label="Layout">
-            <ul>
-                <li>
-                    <button type="button" data-layout="desktop" aria-current="true">Desktop</button>
-                </li>
-                <li>
-                    <button type="button" data-layout="mobile" >Mobile</button>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    </div>
+    <div class="oce-progress" aria-hidden="true">
+        <div class="oce-progress-inner">
+            <span class="oce-progress-label">Étape <span data-oce-step>1</span> sur <span data-oce-total></span></span>
+            <span class="oce-progress-track"><span class="oce-progress-fill"></span></span>
+        </div>
+    </div>
 
 
     <main class="steppy-main">
         <div class="steppy-layout steppy-layout-active" data-layout="desktop">
             
 <div class="steppy-guide">
-    <h1>Déposer un dossier et suivre son échéance</h1>
-    <div class="steppy-role-badge">
-        <span class="i18n-fr">Guide utilisateur</span>
-        <span class="i18n-en">User guide</span>
-        <span class="i18n-nl">Gebruikershandleiding</span>
-        <span class="i18n-de">Benutzerhandbuch</span>
-    </div>
+    <h1>Envoyer une démarche et suivre son échéance</h1>
 
     <div class="steppy-step" data-step-index="1">
-        <h2>
-            <span class="steppy-step-number">1</span>
-            <span>Ouvrir les documents administratifs</span>
-        </h2>
-        <div class="steppy-step-subtitle">Navigation</div>
-        <div class="steppy-step-content">Dans la barre latérale, cliquez sur « Documents administratifs ».</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-14.png" alt="1. Ouvrir les documents administratifs" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">1</span>
+                <span>Ouvrir les documents administratifs</span>
+            </h2>
+            <div class="steppy-step-subtitle">Navigation</div>
+            <div class="steppy-step-content">Dans la barre latérale, cliquez sur « Documents administratifs ».</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-14.png" alt="1. Ouvrir les documents administratifs" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="2">
-        <h2>
-            <span class="steppy-step-number">2</span>
-            <span>Ouvrir le dossier</span>
-        </h2>
-        <div class="steppy-step-subtitle">Documents administratifs</div>
-        <div class="steppy-step-content">Ouvrez le dossier dont vous voulez enregistrer le dépôt.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-20.png" alt="2. Ouvrir le dossier" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">2</span>
+                <span>Prête à envoyer</span>
+            </h2>
+            <div class="steppy-step-subtitle">Démarches</div>
+            <div class="steppy-step-content">Chaque ligne donne la prochaine action et son échéance, sans ouvrir la démarche. Ici, toutes les pièces sont prêtes : il reste à envoyer l'actualisation avant la date indiquée.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-20.png" alt="2. Prête à envoyer" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="3">
-        <h2>
-            <span class="steppy-step-number">3</span>
-            <span>Un dossier en préparation</span>
-        </h2>
-        <div class="steppy-step-subtitle">Suivi des dossiers</div>
-        <div class="steppy-step-content">Tant que le dossier est « En préparation », rien n'est attendu de vous par le régulateur. Les boutons en haut ne proposent que les changements de statut légitimes à ce stade.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-22.png" alt="3. Un dossier en préparation" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">3</span>
+                <span>Envoyer</span>
+            </h2>
+            <div class="steppy-step-subtitle">Démarches</div>
+            <div class="steppy-step-content">Le bouton principal propose la seule action utile maintenant. La démarche étant prête, c'est « Envoyer ».</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-23.png" alt="3. Envoyer" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="4">
-        <h2>
-            <span class="steppy-step-number">4</span>
-            <span>Marquer le dossier comme soumis</span>
-        </h2>
-        <div class="steppy-step-subtitle">Suivi des dossiers</div>
-        <div class="steppy-step-content">Vous déposez le dossier auprès de l'autorité par vos moyens habituels ; ici, vous enregistrez que ce dépôt a eu lieu.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-23.png" alt="4. Marquer le dossier comme soumis" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">4</span>
+                <span>Ce qu'il faut envoyer</span>
+            </h2>
+            <div class="steppy-step-subtitle">Envoyer</div>
+            <div class="steppy-step-content">OptimCE n'envoie rien lui-même. Il prépare le destinataire, l'objet avec sa référence, un texte à copier et les pièces à joindre ; vous envoyez par votre messagerie ou par le formulaire en ligne du régulateur.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-25.png" alt="4. Ce qu'il faut envoyer" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="5">
-        <h2>
-            <span class="steppy-step-number">5</span>
-            <span>La date de dépôt</span>
-        </h2>
-        <div class="steppy-step-subtitle">Changer le statut</div>
-        <div class="steppy-step-content">La date de dépôt n'est pas une formalité : c'est elle qui fait courir les délais réglementaires. Choisissez la date réelle du dépôt.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-25.png" alt="5. La date de dépôt" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">5</span>
+                <span>Marquer comme envoyé</span>
+            </h2>
+            <div class="steppy-step-subtitle">Envoyer</div>
+            <div class="steppy-step-content">Indiquez la date et le canal d'envoi, joignez au besoin le courriel envoyé, puis « Marquer comme envoyé ». La démarche est alors figée : un changement arrivé ensuite ira dans une nouvelle démarche.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-26.png" alt="5. Marquer comme envoyé" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="6">
-        <h2>
-            <span class="steppy-step-number">6</span>
-            <span>Le dossier est soumis</span>
-        </h2>
-        <div class="steppy-step-subtitle">Suivi des dossiers</div>
-        <div class="steppy-step-content">Le statut change et les actions proposées changent avec lui : un dossier soumis peut être déclaré complet, corrigé, ou devenir caduc.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-27.png" alt="6. Le dossier est soumis" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">6</span>
+                <span>Le délai du régulateur court</span>
+            </h2>
+            <div class="steppy-step-subtitle">Échéances</div>
+            <div class="steppy-step-content">L'envoi démarre le délai de contrôle de complétude de la CWaPE, compté en jours ouvrables wallons. La prochaine action devient « Ajouter une réponse » : vous y noterez son accusé ou sa demande de compléments.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-28.png" alt="6. Le délai du régulateur court" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="7">
-        <h2>
-            <span class="steppy-step-number">7</span>
-            <span>Voir les échéances</span>
-        </h2>
-        <div class="steppy-step-subtitle">Suivi des dossiers</div>
-        <div class="steppy-step-content">L'onglet « Échéances » montre ce que le dépôt vient de déclencher.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-28.png" alt="7. Voir les échéances" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">7</span>
+                <span>Toutes les échéances</span>
+            </h2>
+            <div class="steppy-step-subtitle">Documents administratifs</div>
+            <div class="steppy-step-content">L'onglet « Échéances » réunit les délais de toutes les démarches : les vôtres comme ceux du régulateur ou du gestionnaire de réseau.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-30.png" alt="7. Toutes les échéances" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="8">
-        <h2>
-            <span class="steppy-step-number">8</span>
-            <span>Une échéance est apparue</span>
-        </h2>
-        <div class="steppy-step-subtitle">Échéances</div>
-        <div class="steppy-step-content">Vous n'encodez jamais une échéance à la main : OptimCE la calcule à partir du type de dossier, de la région et de la date que vous venez d'enregistrer.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-30.png" alt="8. Une échéance est apparue" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">8</span>
+                <span>L'agenda des échéances</span>
+            </h2>
+            <div class="steppy-step-subtitle">Échéances</div>
+            <div class="steppy-step-content">Chaque échéance indique qui doit agir et pour quand ; les dépassées remontent en rouge. Elle se clôt d'elle-même quand la réponse attendue est enregistrée dans la démarche.</div>
         </div>
-    </div>
-    <div class="steppy-step" data-step-index="9">
-        <h2>
-            <span class="steppy-step-number">9</span>
-            <span>Toutes les échéances</span>
-        </h2>
-        <div class="steppy-step-subtitle">Documents administratifs</div>
-        <div class="steppy-step-content">L'onglet « Échéances » de la page principale rassemble les échéances de tous les dossiers, pour savoir d'un coup d'œil ce qui arrive à terme.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-32.png" alt="9. Toutes les échéances" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="10">
-        <h2>
-            <span class="steppy-step-number">10</span>
-            <span>Le tableau des échéances</span>
-        </h2>
-        <div class="steppy-step-subtitle">Échéances</div>
-        <div class="steppy-step-content">Chaque ligne renvoie à son dossier et indique la date limite. Le filtre affiche par défaut les échéances encore ouvertes.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-34.png" alt="10. Le tableau des échéances" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="11">
-        <h2>
-            <span class="steppy-step-number">11</span>
-            <span>Clôturer une échéance</span>
-        </h2>
-        <div class="steppy-step-subtitle">Échéances</div>
-        <div class="steppy-step-content">Quand l'obligation est remplie, marquez l'échéance comme respectée. Elle quitte la liste des échéances ouvertes sans disparaître de l'historique.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-35.png" alt="11. Clôturer une échéance" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="12">
-        <h2>
-            <span class="steppy-step-number">12</span>
-            <span>Confirmer</span>
-        </h2>
-        <div class="steppy-step-subtitle">Échéances</div>
-        <div class="steppy-step-content">Confirmez : l'échéance passe au statut « Respectée » et le tableau des échéances ouvertes se vide.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-36.png" alt="12. Confirmer" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="13">
-        <h2>
-            <span class="steppy-step-number">13</span>
-            <span>Plus rien en attente</span>
-        </h2>
-        <div class="steppy-step-subtitle">Échéances</div>
-        <div class="steppy-step-content">Le tableau ne montre plus d'échéance ouverte. L'historique du dossier, lui, garde la trace de ce qui a été fait et quand.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-37.png" alt="13. Plus rien en attente" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-submit-deadline/fr/desktop/step-32.png" alt="8. L'agenda des échéances" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
 </div>
@@ -300,296 +267,213 @@
         </div>        <div class="steppy-layout" data-layout="mobile">
             
 <div class="steppy-guide">
-    <h1>Déposer un dossier et suivre son échéance</h1>
-    <div class="steppy-role-badge">
-        <span class="i18n-fr">Guide utilisateur</span>
-        <span class="i18n-en">User guide</span>
-        <span class="i18n-nl">Gebruikershandleiding</span>
-        <span class="i18n-de">Benutzerhandbuch</span>
-    </div>
+    <h1>Envoyer une démarche et suivre son échéance</h1>
 
     <div class="steppy-step" data-step-index="1">
-        <h2>
-            <span class="steppy-step-number">1</span>
-            <span>Ouvrir les documents administratifs</span>
-        </h2>
-        <div class="steppy-step-subtitle">Navigation</div>
-        <div class="steppy-step-content">Touchez l'icône du menu pour ouvrir le tiroir, puis « Documents administratifs ».</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-17.png" alt="1. Ouvrir les documents administratifs" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">1</span>
+                <span>Ouvrir les documents administratifs</span>
+            </h2>
+            <div class="steppy-step-subtitle">Navigation</div>
+            <div class="steppy-step-content">Touchez l'icône du menu pour ouvrir le tiroir, puis « Documents administratifs ».</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-17.png" alt="1. Ouvrir les documents administratifs" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="2">
-        <h2>
-            <span class="steppy-step-number">2</span>
-            <span>Ouvrir le dossier</span>
-        </h2>
-        <div class="steppy-step-subtitle">Documents administratifs</div>
-        <div class="steppy-step-content">Ouvrez le dossier dont vous voulez enregistrer le dépôt.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-20.png" alt="2. Ouvrir le dossier" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">2</span>
+                <span>Prête à envoyer</span>
+            </h2>
+            <div class="steppy-step-subtitle">Démarches</div>
+            <div class="steppy-step-content">Chaque ligne donne la prochaine action et son échéance, sans ouvrir la démarche. Ici, toutes les pièces sont prêtes : il reste à envoyer l'actualisation avant la date indiquée.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-20.png" alt="2. Prête à envoyer" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="3">
-        <h2>
-            <span class="steppy-step-number">3</span>
-            <span>Un dossier en préparation</span>
-        </h2>
-        <div class="steppy-step-subtitle">Suivi des dossiers</div>
-        <div class="steppy-step-content">Tant que le dossier est « En préparation », rien n'est attendu de vous par le régulateur. Les boutons en haut ne proposent que les changements de statut légitimes à ce stade.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-22.png" alt="3. Un dossier en préparation" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">3</span>
+                <span>Envoyer</span>
+            </h2>
+            <div class="steppy-step-subtitle">Démarches</div>
+            <div class="steppy-step-content">Le bouton principal propose la seule action utile maintenant. La démarche étant prête, c'est « Envoyer ».</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-23.png" alt="3. Envoyer" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="4">
-        <h2>
-            <span class="steppy-step-number">4</span>
-            <span>Marquer le dossier comme soumis</span>
-        </h2>
-        <div class="steppy-step-subtitle">Suivi des dossiers</div>
-        <div class="steppy-step-content">Vous déposez le dossier auprès de l'autorité par vos moyens habituels ; ici, vous enregistrez que ce dépôt a eu lieu.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-23.png" alt="4. Marquer le dossier comme soumis" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">4</span>
+                <span>Ce qu'il faut envoyer</span>
+            </h2>
+            <div class="steppy-step-subtitle">Envoyer</div>
+            <div class="steppy-step-content">OptimCE n'envoie rien lui-même. Il prépare le destinataire, l'objet avec sa référence, un texte à copier et les pièces à joindre ; vous envoyez par votre messagerie ou par le formulaire en ligne du régulateur.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-25.png" alt="4. Ce qu'il faut envoyer" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="5">
-        <h2>
-            <span class="steppy-step-number">5</span>
-            <span>La date de dépôt</span>
-        </h2>
-        <div class="steppy-step-subtitle">Changer le statut</div>
-        <div class="steppy-step-content">La date de dépôt n'est pas une formalité : c'est elle qui fait courir les délais réglementaires. Choisissez la date réelle du dépôt.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-25.png" alt="5. La date de dépôt" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">5</span>
+                <span>Marquer comme envoyé</span>
+            </h2>
+            <div class="steppy-step-subtitle">Envoyer</div>
+            <div class="steppy-step-content">Indiquez la date et le canal d'envoi, joignez au besoin le courriel envoyé, puis « Marquer comme envoyé ». La démarche est alors figée : un changement arrivé ensuite ira dans une nouvelle démarche.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-26.png" alt="5. Marquer comme envoyé" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="6">
-        <h2>
-            <span class="steppy-step-number">6</span>
-            <span>Le dossier est soumis</span>
-        </h2>
-        <div class="steppy-step-subtitle">Suivi des dossiers</div>
-        <div class="steppy-step-content">Le statut change et les actions proposées changent avec lui : un dossier soumis peut être déclaré complet, corrigé, ou devenir caduc.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-27.png" alt="6. Le dossier est soumis" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">6</span>
+                <span>Le délai du régulateur court</span>
+            </h2>
+            <div class="steppy-step-subtitle">Échéances</div>
+            <div class="steppy-step-content">L'envoi démarre le délai de contrôle de complétude de la CWaPE, compté en jours ouvrables wallons. La prochaine action devient « Ajouter une réponse » : vous y noterez son accusé ou sa demande de compléments.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-28.png" alt="6. Le délai du régulateur court" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="7">
-        <h2>
-            <span class="steppy-step-number">7</span>
-            <span>Voir les échéances</span>
-        </h2>
-        <div class="steppy-step-subtitle">Suivi des dossiers</div>
-        <div class="steppy-step-content">L'onglet « Échéances » montre ce que le dépôt vient de déclencher.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-28.png" alt="7. Voir les échéances" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">7</span>
+                <span>Toutes les échéances</span>
+            </h2>
+            <div class="steppy-step-subtitle">Documents administratifs</div>
+            <div class="steppy-step-content">L'onglet « Échéances » réunit les délais de toutes les démarches : les vôtres comme ceux du régulateur ou du gestionnaire de réseau.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-30.png" alt="7. Toutes les échéances" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
     <div class="steppy-step" data-step-index="8">
-        <h2>
-            <span class="steppy-step-number">8</span>
-            <span>Une échéance est apparue</span>
-        </h2>
-        <div class="steppy-step-subtitle">Échéances</div>
-        <div class="steppy-step-content">Vous n'encodez jamais une échéance à la main : OptimCE la calcule à partir du type de dossier, de la région et de la date que vous venez d'enregistrer.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-30.png" alt="8. Une échéance est apparue" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">8</span>
+                <span>L'agenda des échéances</span>
+            </h2>
+            <div class="steppy-step-subtitle">Échéances</div>
+            <div class="steppy-step-content">Chaque échéance indique qui doit agir et pour quand ; les dépassées remontent en rouge. Elle se clôt d'elle-même quand la réponse attendue est enregistrée dans la démarche.</div>
         </div>
-    </div>
-    <div class="steppy-step" data-step-index="9">
-        <h2>
-            <span class="steppy-step-number">9</span>
-            <span>Toutes les échéances</span>
-        </h2>
-        <div class="steppy-step-subtitle">Documents administratifs</div>
-        <div class="steppy-step-content">L'onglet « Échéances » de la page principale rassemble les échéances de tous les dossiers, pour savoir d'un coup d'œil ce qui arrive à terme.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-32.png" alt="9. Toutes les échéances" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="10">
-        <h2>
-            <span class="steppy-step-number">10</span>
-            <span>Le tableau des échéances</span>
-        </h2>
-        <div class="steppy-step-subtitle">Échéances</div>
-        <div class="steppy-step-content">Chaque ligne renvoie à son dossier et indique la date limite. Le filtre affiche par défaut les échéances encore ouvertes.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-34.png" alt="10. Le tableau des échéances" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="11">
-        <h2>
-            <span class="steppy-step-number">11</span>
-            <span>Clôturer une échéance</span>
-        </h2>
-        <div class="steppy-step-subtitle">Échéances</div>
-        <div class="steppy-step-content">Quand l'obligation est remplie, marquez l'échéance comme respectée. Elle quitte la liste des échéances ouvertes sans disparaître de l'historique.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-35.png" alt="11. Clôturer une échéance" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="12">
-        <h2>
-            <span class="steppy-step-number">12</span>
-            <span>Confirmer</span>
-        </h2>
-        <div class="steppy-step-subtitle">Échéances</div>
-        <div class="steppy-step-content">Confirmez : l'échéance passe au statut « Respectée » et le tableau des échéances ouvertes se vide.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-36.png" alt="12. Confirmer" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
-        </div>
-    </div>
-    <div class="steppy-step" data-step-index="13">
-        <h2>
-            <span class="steppy-step-number">13</span>
-            <span>Plus rien en attente</span>
-        </h2>
-        <div class="steppy-step-subtitle">Échéances</div>
-        <div class="steppy-step-content">Le tableau ne montre plus d'échéance ouverte. L'historique du dossier, lui, garde la trace de ce qui a été fait et quand.</div>
-        <div class="steppy-stage" data-frame-index="0">
-            <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-37.png" alt="13. Plus rien en attente" loading="lazy">
-            <div class="steppy-cursor" aria-hidden="true"></div>
-            <div class="steppy-ripple" aria-hidden="true"></div>
-            <div class="steppy-kbd" aria-hidden="true"></div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/admin-doc-submit-deadline/fr/mobile/step-32.png" alt="8. L'agenda des échéances" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
         </div>
     </div>
 </div>
 
         </div>    </main>
 
-    <footer class="steppy-site-footer">
-        <p>Généré par Steppy.</p>
-    </footer>
-
-    <script>
-      (function () {
-        function bind() {
-          var btn = document.querySelector(".oce-theme-toggle");
-          if (!btn) return;
-          btn.addEventListener("click", function () {
-            var current = document.documentElement.getAttribute("data-theme") || "light";
-            var next = current === "dark" ? "light" : "dark";
-            document.documentElement.setAttribute("data-theme", next);
-            try { localStorage.setItem("oce-theme", next); } catch (e) {}
-          });
-        }
-        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
-        else bind();
-      })();
-    </script>
-    <script>
-      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-14.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-14.png", "subtitle": "Navigation", "text": "Dans la barre lat\u00e9rale, cliquez sur \u00ab Documents administratifs \u00bb.", "title": "Ouvrir les documents administratifs", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 73, "width": 988, "x": 260, "y": 554}, "selector": "[data-testid=\"dossier-list__row--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 73, "width": 988, "x": 260, "y": 554}, "selector": "[data-testid=\"dossier-list__row--0\"]"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-20.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-20.png", "subtitle": "Documents administratifs", "text": "Ouvrez le dossier dont vous voulez enregistrer le d\u00e9p\u00f4t.", "title": "Ouvrir le dossier", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-22.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-22.png", "subtitle": "Suivi des dossiers", "text": "Tant que le dossier est \u00ab En pr\u00e9paration \u00bb, rien n\u0027est attendu de vous par le r\u00e9gulateur. Les boutons en haut ne proposent que les changements de statut l\u00e9gitimes \u00e0 ce stade.", "title": "Un dossier en pr\u00e9paration", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 90.25, "x": 263, "y": 222}, "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 90.25, "x": 263, "y": 222}, "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-23.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-23.png", "subtitle": "Suivi des dossiers", "text": "Vous d\u00e9posez le dossier aupr\u00e8s de l\u0027autorit\u00e9 par vos moyens habituels ; ici, vous enregistrez que ce d\u00e9p\u00f4t a eu lieu.", "title": "Marquer le dossier comme soumis", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-25.png", "subtitle": "Changer le statut", "text": "La date de d\u00e9p\u00f4t n\u0027est pas une formalit\u00e9 : c\u0027est elle qui fait courir les d\u00e9lais r\u00e9glementaires. Choisissez la date r\u00e9elle du d\u00e9p\u00f4t.", "title": "La date de d\u00e9p\u00f4t", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-27.png", "subtitle": "Suivi des dossiers", "text": "Le statut change et les actions propos\u00e9es changent avec lui : un dossier soumis peut \u00eatre d\u00e9clar\u00e9 complet, corrig\u00e9, ou devenir caduc.", "title": "Le dossier est soumis", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 57, "width": 110.234375, "x": 360.578125, "y": 298}, "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 57, "width": 110.234375, "x": 360.578125, "y": 298}, "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-28.png", "subtitle": "Suivi des dossiers", "text": "L\u0027onglet \u00ab \u00c9ch\u00e9ances \u00bb montre ce que le d\u00e9p\u00f4t vient de d\u00e9clencher.", "title": "Voir les \u00e9ch\u00e9ances", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-30.png", "subtitle": "\u00c9ch\u00e9ances", "text": "Vous n\u0027encodez jamais une \u00e9ch\u00e9ance \u00e0 la main : OptimCE la calcule \u00e0 partir du type de dossier, de la r\u00e9gion et de la date que vous venez d\u0027enregistrer.", "title": "Une \u00e9ch\u00e9ance est apparue", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 57, "width": 110.234375, "x": 338.4375, "y": 146}, "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 57, "width": 110.234375, "x": 338.4375, "y": 146}, "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-32.png", "subtitle": "Documents administratifs", "text": "L\u0027onglet \u00ab \u00c9ch\u00e9ances \u00bb de la page principale rassemble les \u00e9ch\u00e9ances de tous les dossiers, pour savoir d\u0027un coup d\u0027\u0153il ce qui arrive \u00e0 terme.", "title": "Toutes les \u00e9ch\u00e9ances", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-34.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-34.png", "subtitle": "\u00c9ch\u00e9ances", "text": "Chaque ligne renvoie \u00e0 son dossier et indique la date limite. Le filtre affiche par d\u00e9faut les \u00e9ch\u00e9ances encore ouvertes.", "title": "Le tableau des \u00e9ch\u00e9ances", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1097.234375, "y": 466}, "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1097.234375, "y": 466}, "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-35.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-35.png", "subtitle": "\u00c9ch\u00e9ances", "text": "Quand l\u0027obligation est remplie, marquez l\u0027\u00e9ch\u00e9ance comme respect\u00e9e. Elle quitte la liste des \u00e9ch\u00e9ances ouvertes sans dispara\u00eetre de l\u0027historique.", "title": "Cl\u00f4turer une \u00e9ch\u00e9ance", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 75.875, "x": 954.578125, "y": 481}, "selector": null}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 75.875, "x": 954.578125, "y": 481}, "selector": null}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-36.png", "viewport": {"height": 900, "width": 1440}}], "index": 12, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-36.png", "subtitle": "\u00c9ch\u00e9ances", "text": "Confirmez : l\u0027\u00e9ch\u00e9ance passe au statut \u00ab Respect\u00e9e \u00bb et le tableau des \u00e9ch\u00e9ances ouvertes se vide.", "title": "Confirmer", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-37.png", "viewport": {"height": 900, "width": 1440}}], "index": 13, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-37.png", "subtitle": "\u00c9ch\u00e9ances", "text": "Le tableau ne montre plus d\u0027\u00e9ch\u00e9ance ouverte. L\u0027historique du dossier, lui, garde la trace de ce qui a \u00e9t\u00e9 fait et quand.", "title": "Plus rien en attente", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-17.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-17.png", "subtitle": "Navigation", "text": "Touchez l\u0027ic\u00f4ne du menu pour ouvrir le tiroir, puis \u00ab Documents administratifs \u00bb.", "title": "Ouvrir les documents administratifs", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 105, "width": 628.15625, "x": 34, "y": 705}, "selector": "[data-testid=\"dossier-list__row--0\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 105, "width": 628.15625, "x": 34, "y": 705}, "selector": "[data-testid=\"dossier-list__row--0\"]"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-20.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-20.png", "subtitle": "Documents administratifs", "text": "Ouvrez le dossier dont vous voulez enregistrer le d\u00e9p\u00f4t.", "title": "Ouvrir le dossier", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-22.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-22.png", "subtitle": "Suivi des dossiers", "text": "Tant que le dossier est \u00ab En pr\u00e9paration \u00bb, rien n\u0027est attendu de vous par le r\u00e9gulateur. Les boutons en haut ne proposent que les changements de statut l\u00e9gitimes \u00e0 ce stade.", "title": "Un dossier en pr\u00e9paration", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 90.25, "x": 33, "y": 534}, "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 35, "width": 90.25, "x": 33, "y": 534}, "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-23.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-23.png", "subtitle": "Suivi des dossiers", "text": "Vous d\u00e9posez le dossier aupr\u00e8s de l\u0027autorit\u00e9 par vos moyens habituels ; ici, vous enregistrez que ce d\u00e9p\u00f4t a eu lieu.", "title": "Marquer le dossier comme soumis", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-25.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-25.png", "subtitle": "Changer le statut", "text": "La date de d\u00e9p\u00f4t n\u0027est pas une formalit\u00e9 : c\u0027est elle qui fait courir les d\u00e9lais r\u00e9glementaires. Choisissez la date r\u00e9elle du d\u00e9p\u00f4t.", "title": "La date de d\u00e9p\u00f4t", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-27.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-27.png", "subtitle": "Suivi des dossiers", "text": "Le statut change et les actions propos\u00e9es changent avec lui : un dossier soumis peut \u00eatre d\u00e9clar\u00e9 complet, corrig\u00e9, ou devenir caduc.", "title": "Le dossier est soumis", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 57, "width": 110.234375, "x": 134.578125, "y": 649}, "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 57, "width": 110.234375, "x": 134.578125, "y": 649}, "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-28.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-28.png", "subtitle": "Suivi des dossiers", "text": "L\u0027onglet \u00ab \u00c9ch\u00e9ances \u00bb montre ce que le d\u00e9p\u00f4t vient de d\u00e9clencher.", "title": "Voir les \u00e9ch\u00e9ances", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-30.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-30.png", "subtitle": "\u00c9ch\u00e9ances", "text": "Vous n\u0027encodez jamais une \u00e9ch\u00e9ance \u00e0 la main : OptimCE la calcule \u00e0 partir du type de dossier, de la r\u00e9gion et de la date que vous venez d\u0027enregistrer.", "title": "Une \u00e9ch\u00e9ance est apparue", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 57, "width": 110.234375, "x": 112.4375, "y": 284}, "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 57, "width": 110.234375, "x": 112.4375, "y": 284}, "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-32.png", "viewport": {"height": 844, "width": 390}}], "index": 9, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-32.png", "subtitle": "Documents administratifs", "text": "L\u0027onglet \u00ab \u00c9ch\u00e9ances \u00bb de la page principale rassemble les \u00e9ch\u00e9ances de tous les dossiers, pour savoir d\u0027un coup d\u0027\u0153il ce qui arrive \u00e0 terme.", "title": "Toutes les \u00e9ch\u00e9ances", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-34.png", "viewport": {"height": 844, "width": 390}}], "index": 10, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-34.png", "subtitle": "\u00c9ch\u00e9ances", "text": "Chaque ligne renvoie \u00e0 son dossier et indique la date limite. Le filtre affiche par d\u00e9faut les \u00e9ch\u00e9ances encore ouvertes.", "title": "Le tableau des \u00e9ch\u00e9ances", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 276.453125, "y": 757}, "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 276.453125, "y": 757}, "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-35.png", "viewport": {"height": 844, "width": 390}}], "index": 11, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-35.png", "subtitle": "\u00c9ch\u00e9ances", "text": "Quand l\u0027obligation est remplie, marquez l\u0027\u00e9ch\u00e9ance comme respect\u00e9e. Elle quitte la liste des \u00e9ch\u00e9ances ouvertes sans dispara\u00eetre de l\u0027historique.", "title": "Cl\u00f4turer une \u00e9ch\u00e9ance", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 75.875, "x": 293.125, "y": 475}, "selector": null}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 75.875, "x": 293.125, "y": 475}, "selector": null}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-36.png", "viewport": {"height": 844, "width": 390}}], "index": 12, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-36.png", "subtitle": "\u00c9ch\u00e9ances", "text": "Confirmez : l\u0027\u00e9ch\u00e9ance passe au statut \u00ab Respect\u00e9e \u00bb et le tableau des \u00e9ch\u00e9ances ouvertes se vide.", "title": "Confirmer", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-37.png", "viewport": {"height": 844, "width": 390}}], "index": 13, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-37.png", "subtitle": "\u00c9ch\u00e9ances", "text": "Le tableau ne montre plus d\u0027\u00e9ch\u00e9ance ouverte. L\u0027historique du dossier, lui, garde la trace de ce qui a \u00e9t\u00e9 fait et quand.", "title": "Plus rien en attente", "viewport": {"height": 844, "width": 390}}]};
-      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__["desktop"] || [];
-      window.__STEPPY_ACTIVE_LAYOUT__ = "desktop";
+<footer class="steppy-site-footer">
+    <p>OptimCE · Généré par Steppy.</p>
+</footer>
+<script>
+  (function () {
+    function bind() {
+      var btn = document.querySelector(".oce-theme-toggle");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        var current = document.documentElement.getAttribute("data-theme") || "light";
+        var next = current === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        try { localStorage.setItem("oce-theme", next); } catch (e) {}
+      });
+    }
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+    else bind();
+  })();
+</script>
+<script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-14.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-14.png", "subtitle": "Navigation", "text": "Dans la barre lat\u00e9rale, cliquez sur \u00ab Documents administratifs \u00bb.", "title": "Ouvrir les documents administratifs", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-20.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-20.png", "subtitle": "D\u00e9marches", "text": "Chaque ligne donne la prochaine action et son \u00e9ch\u00e9ance, sans ouvrir la d\u00e9marche. Ici, toutes les pi\u00e8ces sont pr\u00eates : il reste \u00e0 envoyer l\u0027actualisation avant la date indiqu\u00e9e.", "title": "Pr\u00eate \u00e0 envoyer", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 107.609375, "x": 932.4375, "y": 60}, "selector": "[data-testid=\"procedure-detail__btn--primary\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 107.609375, "x": 932.4375, "y": 60}, "selector": "[data-testid=\"procedure-detail__btn--primary\"] button"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-23.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-23.png", "subtitle": "D\u00e9marches", "text": "Le bouton principal propose la seule action utile maintenant. La d\u00e9marche \u00e9tant pr\u00eate, c\u0027est \u00ab Envoyer \u00bb.", "title": "Envoyer", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-25.png", "subtitle": "Envoyer", "text": "OptimCE n\u0027envoie rien lui-m\u00eame. Il pr\u00e9pare le destinataire, l\u0027objet avec sa r\u00e9f\u00e9rence, un texte \u00e0 copier et les pi\u00e8ces \u00e0 joindre ; vous envoyez par votre messagerie ou par le formulaire en ligne du r\u00e9gulateur.", "title": "Ce qu\u0027il faut envoyer", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 227.890625, "x": 855.109375, "y": 792.4375}, "selector": "[data-testid=\"procedure-send-dialog__btn--submit\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 227.890625, "x": 855.109375, "y": 792.4375}, "selector": "[data-testid=\"procedure-send-dialog__btn--submit\"] button"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-26.png", "subtitle": "Envoyer", "text": "Indiquez la date et le canal d\u0027envoi, joignez au besoin le courriel envoy\u00e9, puis \u00ab Marquer comme envoy\u00e9 \u00bb. La d\u00e9marche est alors fig\u00e9e : un changement arriv\u00e9 ensuite ira dans une nouvelle d\u00e9marche.", "title": "Marquer comme envoy\u00e9", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-28.png", "subtitle": "\u00c9ch\u00e9ances", "text": "L\u0027envoi d\u00e9marre le d\u00e9lai de contr\u00f4le de compl\u00e9tude de la CWaPE, compt\u00e9 en jours ouvrables wallons. La prochaine action devient \u00ab Ajouter une r\u00e9ponse \u00bb : vous y noterez son accus\u00e9 ou sa demande de compl\u00e9ments.", "title": "Le d\u00e9lai du r\u00e9gulateur court", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 57, "width": 110.234375, "x": 548.828125, "y": 146}, "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 57, "width": 110.234375, "x": 548.828125, "y": 146}, "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-30.png", "subtitle": "Documents administratifs", "text": "L\u0027onglet \u00ab \u00c9ch\u00e9ances \u00bb r\u00e9unit les d\u00e9lais de toutes les d\u00e9marches : les v\u00f4tres comme ceux du r\u00e9gulateur ou du gestionnaire de r\u00e9seau.", "title": "Toutes les \u00e9ch\u00e9ances", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-32.png", "subtitle": "\u00c9ch\u00e9ances", "text": "Chaque \u00e9ch\u00e9ance indique qui doit agir et pour quand ; les d\u00e9pass\u00e9es remontent en rouge. Elle se cl\u00f4t d\u0027elle-m\u00eame quand la r\u00e9ponse attendue est enregistr\u00e9e dans la d\u00e9marche.", "title": "L\u0027agenda des \u00e9ch\u00e9ances", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 436}, "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-17.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-17.png", "subtitle": "Navigation", "text": "Touchez l\u0027ic\u00f4ne du menu pour ouvrir le tiroir, puis \u00ab Documents administratifs \u00bb.", "title": "Ouvrir les documents administratifs", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-20.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-20.png", "subtitle": "D\u00e9marches", "text": "Chaque ligne donne la prochaine action et son \u00e9ch\u00e9ance, sans ouvrir la d\u00e9marche. Ici, toutes les pi\u00e8ces sont pr\u00eates : il reste \u00e0 envoyer l\u0027actualisation avant la date indiqu\u00e9e.", "title": "Pr\u00eate \u00e0 envoyer", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 107.609375, "x": 16, "y": 233}, "selector": "[data-testid=\"procedure-detail__btn--primary\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 107.609375, "x": 16, "y": 233}, "selector": "[data-testid=\"procedure-detail__btn--primary\"] button"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-23.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-23.png", "subtitle": "D\u00e9marches", "text": "Le bouton principal propose la seule action utile maintenant. La d\u00e9marche \u00e9tant pr\u00eate, c\u0027est \u00ab Envoyer \u00bb.", "title": "Envoyer", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-25.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-25.png", "subtitle": "Envoyer", "text": "OptimCE n\u0027envoie rien lui-m\u00eame. Il pr\u00e9pare le destinataire, l\u0027objet avec sa r\u00e9f\u00e9rence, un texte \u00e0 copier et les pi\u00e8ces \u00e0 joindre ; vous envoyez par votre messagerie ou par le formulaire en ligne du r\u00e9gulateur.", "title": "Ce qu\u0027il faut envoyer", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 227.890625, "x": 149.109375, "y": 789.4375}, "selector": "[data-testid=\"procedure-send-dialog__btn--submit\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 227.890625, "x": 149.109375, "y": 789.4375}, "selector": "[data-testid=\"procedure-send-dialog__btn--submit\"] button"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-26.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-26.png", "subtitle": "Envoyer", "text": "Indiquez la date et le canal d\u0027envoi, joignez au besoin le courriel envoy\u00e9, puis \u00ab Marquer comme envoy\u00e9 \u00bb. La d\u00e9marche est alors fig\u00e9e : un changement arriv\u00e9 ensuite ira dans une nouvelle d\u00e9marche.", "title": "Marquer comme envoy\u00e9", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-28.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-28.png", "subtitle": "\u00c9ch\u00e9ances", "text": "L\u0027envoi d\u00e9marre le d\u00e9lai de contr\u00f4le de compl\u00e9tude de la CWaPE, compt\u00e9 en jours ouvrables wallons. La prochaine action devient \u00ab Ajouter une r\u00e9ponse \u00bb : vous y noterez son accus\u00e9 ou sa demande de compl\u00e9ments.", "title": "Le d\u00e9lai du r\u00e9gulateur court", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 57, "width": 110.234375, "x": 263.828125, "y": 264}, "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 57, "width": 110.234375, "x": 263.828125, "y": 264}, "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"}}, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-30.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-30.png", "subtitle": "Documents administratifs", "text": "L\u0027onglet \u00ab \u00c9ch\u00e9ances \u00bb r\u00e9unit les d\u00e9lais de toutes les d\u00e9marches : les v\u00f4tres comme ceux du r\u00e9gulateur ou du gestionnaire de r\u00e9seau.", "title": "Toutes les \u00e9ch\u00e9ances", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-32.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-32.png", "subtitle": "\u00c9ch\u00e9ances", "text": "Chaque \u00e9ch\u00e9ance indique qui doit agir et pour quand ; les d\u00e9pass\u00e9es remontent en rouge. Elle se cl\u00f4t d\u0027elle-m\u00eame quand la r\u00e9ponse attendue est enregistr\u00e9e dans la d\u00e9marche.", "title": "L\u0027agenda des \u00e9ch\u00e9ances", "viewport": {"height": 844, "width": 390}}]};
+      window.__STEPPY_ACTIVE_LAYOUT__ = (window.SteppyDetect && window.SteppyDetect.layout) || "desktop";
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[window.__STEPPY_ACTIVE_LAYOUT__] || [];
       window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
     </script>
     <script>
+      // "Step N of M" bar: follows the step nearest the top of the viewport, in
+      // the layout currently shown (the desktop and mobile fragments are both in
+      // the page, one hidden). The bar is decoration: aria-hidden.
       (function () {
-        const persistKey = 'steppy:active-layout';
-        const manualKey = 'steppy:layout-manual';
-        const layouts = ["desktop", "mobile"];
-        const defaultLayout = "desktop";
-        const mobileLayout = layouts.indexOf('mobile') !== -1 ? 'mobile' : null;
-        const desktopLayout = layouts.indexOf('desktop') !== -1
-          ? 'desktop'
-          : (layouts[0] || defaultLayout);
-        const mql = window.matchMedia('(max-width: 768px)');
-
-        function readStorage(key) {
-          try { return localStorage.getItem(key); } catch (_) { return null; }
+        var bar = document.querySelector(".oce-progress");
+        if (!bar || !("IntersectionObserver" in window)) return;
+        var nEl = bar.querySelector("[data-oce-step]");
+        var totalEl = bar.querySelector("[data-oce-total]");
+        var fill = bar.querySelector(".oce-progress-fill");
+        var observer = null;
+        function setStep(i, total) {
+          nEl.textContent = String(i);
+          totalEl.textContent = String(total);
+          fill.style.width = (total ? Math.round(i / total * 100) : 0) + "%";
         }
-        function writeStorage(key, value) {
-          try { localStorage.setItem(key, value); } catch (_) {}
+        function watch() {
+          if (observer) observer.disconnect();
+          var scope = document.querySelector('.steppy-layout[data-layout="' + window.__STEPPY_ACTIVE_LAYOUT__ + '"]') || document;
+          var steps = Array.prototype.slice.call(scope.querySelectorAll(".steppy-step"));
+          if (!steps.length) { bar.hidden = true; return; }
+          bar.hidden = false;
+          setStep(1, steps.length);
+          observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) setStep(steps.indexOf(e.target) + 1, steps.length);
+            });
+          }, { rootMargin: "-45% 0px -50% 0px" });
+          steps.forEach(function (s) { observer.observe(s); });
         }
-        function viewportLayout() {
-          return (mql.matches && mobileLayout) ? mobileLayout : desktopLayout;
-        }
-
-        function applyLayout(name) {
-          if (layouts.indexOf(name) === -1) return;
-          document.body.setAttribute('data-active-layout', name);
-          document.querySelectorAll('.steppy-layout').forEach(function (el) {
-            if (el.getAttribute('data-layout') === name) {
-              el.classList.add('steppy-layout-active');
-            } else {
-              el.classList.remove('steppy-layout-active');
-            }
-          });
-          document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
-            if (b.getAttribute('data-layout') === name) {
-              b.setAttribute('aria-current', 'true');
-            } else {
-              b.removeAttribute('aria-current');
-            }
-          });
-          if (window.__STEPPY_STEPS_BY_LAYOUT__) {
-            window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[name] || [];
-            window.__STEPPY_ACTIVE_LAYOUT__ = name;
-          }
-          writeStorage(persistKey, name);
-          document.dispatchEvent(new CustomEvent('steppy:layout-change', { detail: { layout: name } }));
-        }
-
-        const persisted = readStorage(persistKey);
-        const manual = readStorage(manualKey) === '1';
-        const initial = (manual && persisted && layouts.indexOf(persisted) !== -1)
-          ? persisted
-          : viewportLayout();
-        applyLayout(initial);
-
-        function onViewportChange() {
-          if (readStorage(manualKey) === '1') return;
-          applyLayout(viewportLayout());
-        }
-        if (typeof mql.addEventListener === 'function') {
-          mql.addEventListener('change', onViewportChange);
-        } else if (typeof mql.addListener === 'function') {
-          mql.addListener(onViewportChange);
-        }
-
-        document.querySelectorAll('.steppy-layout-switch button').forEach(function (b) {
-          b.addEventListener('click', function () {
-            writeStorage(manualKey, '1');
-            applyLayout(b.getAttribute('data-layout'));
-          });
-        });
+        watch();
+        document.addEventListener("steppy:layout-change", watch);
       })();
     </script>
     <script src="../assets/cursor.js" defer></script>

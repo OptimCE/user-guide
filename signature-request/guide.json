@@ -1,0 +1,1197 @@
+{
+  "version": "1.1",
+  "slug": "signature-request",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Demander une signature électronique",
+    "en": "Request an electronic signature",
+    "nl": "Een elektronische handtekening vragen",
+    "de": "Eine elektronische Unterschrift anfordern"
+  },
+  "locales": [
+    "fr",
+    "en",
+    "nl",
+    "de"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les documents administratifs",
+        "en": "Open the administrative documents",
+        "nl": "Administratieve documenten openen",
+        "de": "Verwaltungsdokumente öffnen"
+      },
+      "text": {
+        "fr": "Dans la barre latérale, cliquez sur « Documents administratifs » pour retrouver vos démarches.",
+        "en": "In the sidebar, click \"Administrative documents\" to find your procedures.",
+        "nl": "Klik in de zijbalk op “Administratieve documenten” om uw procedures terug te vinden.",
+        "de": "Klicken Sie in der Seitenleiste auf „Verwaltungsdokumente“, um Ihre Verfahren zu finden."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/fr/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir les documents administratifs",
+              "text": "Touchez l'icône du menu pour ouvrir le tiroir, puis « Documents administratifs ».",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/en/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the administrative documents",
+              "text": "Tap the menu icon to open the drawer, then \"Administrative documents\".",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Administratieve documenten openen",
+              "text": "Tik op het menupictogram om de navigatielade te openen en daarna op “Administratieve documenten”.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 436,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--community\"] a[href=\"/administrative-document\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Verwaltungsdokumente öffnen",
+              "text": "Tippen Sie auf das Menüsymbol, um das Navigationsmenü zu öffnen, und dann auf „Verwaltungsdokumente“.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Ouvrir la démarche",
+        "en": "Open the procedure",
+        "nl": "De procedure openen",
+        "de": "Das Verfahren öffnen"
+      },
+      "text": {
+        "fr": "Cliquez sur la démarche qui contient la pièce à faire signer pour ouvrir sa fiche.",
+        "en": "Click the procedure that holds the document to be signed to open its page.",
+        "nl": "Klik op de procedure met het document dat ondertekend moet worden om de pagina ervan te openen.",
+        "de": "Klicken Sie auf das Verfahren mit der zu unterschreibenden Unterlage, um seine Seite zu öffnen."
+      },
+      "subtitle": {
+        "fr": "Démarches",
+        "en": "Procedures",
+        "nl": "Procedures",
+        "de": "Verfahren"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 273,
+                      "y": 432,
+                      "width": 775,
+                      "height": 40
+                    },
+                    "selector": "[data-testid=\"procedure-dashboard__row--3\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 47,
+                      "y": 743,
+                      "width": 296,
+                      "height": 56
+                    },
+                    "selector": "[data-testid=\"procedure-dashboard__row--3\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 273,
+                      "y": 432,
+                      "width": 745.59375,
+                      "height": 40
+                    },
+                    "selector": "[data-testid=\"procedure-dashboard__row--3\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 47,
+                      "y": 743,
+                      "width": 296,
+                      "height": 56
+                    },
+                    "selector": "[data-testid=\"procedure-dashboard__row--3\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 273,
+                      "y": 432,
+                      "width": 759.421875,
+                      "height": 40
+                    },
+                    "selector": "[data-testid=\"procedure-dashboard__row--3\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 47,
+                      "y": 759,
+                      "width": 296,
+                      "height": 72
+                    },
+                    "selector": "[data-testid=\"procedure-dashboard__row--3\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 273,
+                      "y": 432,
+                      "width": 725.984375,
+                      "height": 40
+                    },
+                    "selector": "[data-testid=\"procedure-dashboard__row--3\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 47,
+                      "y": 759,
+                      "width": 296,
+                      "height": 72
+                    },
+                    "selector": "[data-testid=\"procedure-dashboard__row--3\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "scroll",
+      "interactive": true,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "La pièce à faire signer",
+        "en": "The document to be signed",
+        "nl": "Het te ondertekenen document",
+        "de": "Die zu unterschreibende Unterlage"
+      },
+      "text": {
+        "fr": "Une fois générée, la déclaration sur l'honneur d'un participant (l'annexe 8) attend sa signature. Plutôt que de l'imprimer et de la renvoyer, le participant peut la **signer électroniquement** dans l'application.",
+        "en": "Once generated, a participant's sworn statement (Annex 8) is waiting for their signature. Instead of printing it and sending it back, the participant can **sign it electronically** in the app.",
+        "nl": "Na het genereren wacht de verklaring op erewoord van een deelnemer (bijlage 8) op zijn handtekening. In plaats van ze af te drukken en terug te sturen, kan de deelnemer ze **elektronisch ondertekenen** in de applicatie.",
+        "de": "Nach der Erzeugung wartet die eidesstattliche Erklärung eines Teilnehmers (Anlage 8) auf seine Unterschrift. Statt sie auszudrucken und zurückzusenden, kann der Teilnehmer sie in der Anwendung **elektronisch unterschreiben**."
+      },
+      "subtitle": {
+        "fr": "Pièces",
+        "en": "Documents",
+        "nl": "Documenten",
+        "de": "Unterlagen"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/fr/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 242,
+                      "y": 701,
+                      "width": 1024,
+                      "height": 75
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__row--2\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/fr/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 339,
+                      "width": 358,
+                      "height": 166
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__row--2\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/en/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 242,
+                      "y": 701,
+                      "width": 1024,
+                      "height": 75
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__row--2\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/en/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 339,
+                      "width": 358,
+                      "height": 166
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__row--2\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/nl/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 242,
+                      "y": 761,
+                      "width": 1024,
+                      "height": 75
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__row--2\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/nl/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 339,
+                      "width": 358,
+                      "height": 166
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__row--2\"]"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/de/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 242,
+                      "y": 761,
+                      "width": 1024,
+                      "height": 75
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__row--2\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/de/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "hover",
+                  "target": {
+                    "bbox": {
+                      "x": 16,
+                      "y": 339,
+                      "width": 358,
+                      "height": 166
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__row--2\"]"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 6000,
+      "title": {
+        "fr": "Demander la signature",
+        "en": "Request the signature",
+        "nl": "De handtekening vragen",
+        "de": "Die Unterschrift anfordern"
+      },
+      "text": {
+        "fr": "Cliquez sur **« Demander la signature »**. Le participant est invité à signer : il reçoit une notification et un e-mail, et le document apparaît dans son menu « À signer ».",
+        "en": "Click **\"Request signature\"**. The participant is invited to sign: they receive a notification and an email, and the document appears in their \"To sign\" menu.",
+        "nl": "Klik op **“Handtekening vragen”**. De deelnemer wordt uitgenodigd om te ondertekenen: hij krijgt een melding en een e-mail, en het document verschijnt in zijn menu “Te ondertekenen”.",
+        "de": "Klicken Sie auf **„Unterschrift anfordern“**. Der Teilnehmer wird zum Unterschreiben eingeladen: Er erhält eine Benachrichtigung und eine E-Mail, und das Dokument erscheint in seinem Menü „Zu unterschreiben“."
+      },
+      "subtitle": {
+        "fr": "Signature électronique",
+        "en": "Electronic signature",
+        "nl": "Elektronische handtekening",
+        "de": "Elektronische Unterschrift"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 956.59375,
+                      "y": 721,
+                      "width": 188.40625,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__button--request-signature-2\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/fr/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 457,
+                      "width": 188.40625,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__button--request-signature-2\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 986.890625,
+                      "y": 721,
+                      "width": 158.109375,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__button--request-signature-2\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/en/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 457,
+                      "width": 158.109375,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__button--request-signature-2\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 963.921875,
+                      "y": 781,
+                      "width": 181.078125,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__button--request-signature-2\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/nl/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 457,
+                      "width": 181.078125,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__button--request-signature-2\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 958.75,
+                      "y": 781,
+                      "width": 186.25,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__button--request-signature-2\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/de/mobile/step-23.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 29,
+                      "y": 457,
+                      "width": 186.25,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"dossier-documents-panel__button--request-signature-2\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "wait-for",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "La signature est demandée",
+        "en": "The signature is requested",
+        "nl": "De handtekening is gevraagd",
+        "de": "Die Unterschrift ist angefordert"
+      },
+      "text": {
+        "fr": "La pièce affiche **« Signature demandée »**. Quand le participant aura signé, elle passera à « Signé électroniquement » et le PDF signé deviendra sa version finale, sans rien à téléverser.",
+        "en": "The document shows **\"Signature requested\"**. Once the participant has signed, it switches to \"Signed electronically\" and the signed PDF becomes its final version, with nothing to upload.",
+        "nl": "Het document toont **“Handtekening gevraagd”**. Zodra de deelnemer heeft ondertekend, wordt dat “Elektronisch ondertekend” en wordt de ondertekende pdf de definitieve versie, zonder iets te uploaden.",
+        "de": "Die Unterlage zeigt **„Unterschrift angefordert“**. Sobald der Teilnehmer unterschrieben hat, wechselt sie zu „Elektronisch unterschrieben“, und das unterschriebene PDF wird ihre endgültige Version, ohne dass Sie etwas hochladen müssen."
+      },
+      "subtitle": {
+        "fr": "Signature électronique",
+        "en": "Electronic signature",
+        "nl": "Elektronische handtekening",
+        "de": "Elektronische Unterschrift"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/fr/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/fr/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/en/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/en/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/nl/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/de/desktop/step-24.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-6",
+      "index": 6,
+      "action": "wait-for",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Suivre la demande",
+        "en": "Follow the request",
+        "nl": "Het verzoek volgen",
+        "de": "Die Anfrage verfolgen"
+      },
+      "text": {
+        "fr": "Le lien **« Suivre »** ouvre la page de la demande : qui doit signer, où il en est, et son historique. Toutes les demandes de la communauté sont aussi dans le menu « Signatures ».",
+        "en": "The **\"Follow\"** link opens the request's page: who has to sign, where they stand, and its history. Every request of the community is also in the \"Signatures\" menu.",
+        "nl": "De link **“Volgen”** opent de pagina van het verzoek: wie moet ondertekenen, hoe ver het staat en de geschiedenis ervan. Alle verzoeken van de gemeenschap staan ook in het menu “Handtekeningen”.",
+        "de": "Der Link **„Verfolgen“** öffnet die Seite der Anfrage: wer unterschreiben muss, wie weit es ist, und ihren Verlauf. Alle Anfragen der Gemeinschaft finden Sie auch im Menü „Unterschriften“."
+      },
+      "subtitle": {
+        "fr": "Signature électronique",
+        "en": "Electronic signature",
+        "nl": "Elektronische handtekening",
+        "de": "Elektronische Unterschrift"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/fr/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/fr/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/en/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/nl/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/de/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/signature-request/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

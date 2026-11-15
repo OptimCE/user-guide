@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OptimCE — User guides</title>
-    <meta name="description" content="Step-by-step guides for OptimCE: run an energy community — its members, meters, allocation keys, sharing operations and billing.">
+    <meta name="description" content="Step-by-step guides for OptimCE, by role: member, manager and administrator of an energy community — members, meters, allocation keys, sharing operations and billing.">
     <link rel="canonical" href="https://guide.optimce.be/index.en.html">
     <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/">
     <link rel="alternate" hreflang="en" href="https://guide.optimce.be/index.en.html">
@@ -13,10 +13,12 @@
     <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="OptimCE — User guides">
-    <meta property="og:description" content="Step-by-step guides for OptimCE: run an energy community — its members, meters, allocation keys, sharing operations and billing.">
+    <meta property="og:description" content="Step-by-step guides for OptimCE, by role: member, manager and administrator of an energy community — members, meters, allocation keys, sharing operations and billing.">
     <meta property="og:url" content="https://guide.optimce.be/index.en.html">
     <meta property="og:site_name" content="OptimCE — User guides">
     <meta name="twitter:card" content="summary">
+    <script type="application/json" id="steppy-detect-config">{"breakpoints": null, "defaultLayout": null, "defaultLocale": "fr", "hrefFor": {"de": "./index.de.html", "en": "./index.en.html", "fr": "./index.html", "nl": "./index.nl.html"}, "layout": true, "layouts": [], "locale": true, "locales": ["fr", "en", "nl", "de"], "pageLocale": "en", "storageKeys": {"layout": "steppy:layout", "locale": "steppy:locale"}}</script>
+    <script src="assets/steppy-detect.js"></script>
     <link rel="stylesheet" href="./assets/guides.css">
     <script>
       (function () {
@@ -25,26 +27,24 @@
           var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
           document.documentElement.setAttribute("data-theme", savedTheme || (prefersDark ? "dark" : "light"));
         } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
-        // The file we just loaded IS the language choice — record it so
-        // interactive.html (one URL for every locale) opens in the same one.
-        try { localStorage.setItem("oce-lang", "en"); } catch (e) {}
+        document.documentElement.classList.add("oce-js");
       })();
     </script>
 </head>
-<body>
-    <header class="steppy-site-header">
-        <a class="oce-logo-link" href="./index.en.html" aria-label="OptimCE — User guides">
-            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
-                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
-                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
-                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
-                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
-                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
-            </svg>
-        </a>
-        <span class="steppy-site-title">OptimCE — User guides</span>
-
-        <div class="steppy-header-actions">
+<body class="oce-page-home">
+    <div class="oce-band">
+<header class="steppy-site-header">
+    <a class="oce-logo-link" href="index.en.html" aria-label="OptimCE — User guides">
+        <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+            <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+            <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+            <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+            <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+            <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+        </svg>
+    </a>
+    <a class="steppy-site-title" href="index.en.html">OptimCE — User guides</a>
+    <div class="steppy-header-actions">
 <label class="steppy-locale-select">
     <span class="steppy-visually-hidden">Language</span>
     <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
@@ -55,8 +55,20 @@
   (function () {
     var sel = document.querySelector(".steppy-locale-select select");
     if (!sel) return;
+    // A pick is the reader's own choice: store it under steppy-detect.js's key
+    // (autoDetect.storageKeys.locale) so detection never overrides it. That
+    // script only sees link clicks, not a <select>. Storage blocked → carry it
+    // as ?lang= instead, as steppy-detect.js does for its links.
     sel.addEventListener("change", function () {
-      if (sel.value) window.location.href = sel.value;
+      if (!sel.value) return;
+      var href = sel.value, loc = sel.options[sel.selectedIndex].lang, key = null;
+      try { key = JSON.parse(document.getElementById("steppy-detect-config").textContent).storageKeys.locale; } catch (e) {}
+      if (key && loc) {
+        var stored = false;
+        try { localStorage.setItem(key, loc); stored = true; } catch (e) {}
+        if (!stored) href += (href.indexOf("?") === -1 ? "?" : "&") + "lang=" + encodeURIComponent(loc);
+      }
+      window.location.href = href;
     });
     // Back from the language just picked can restore this page from the
     // bfcache with that option still showing — snap it back to this page's own.
@@ -65,134 +77,408 @@
       if (own) sel.value = own.value;
     });
   })();
-</script>            <button type="button" class="oce-theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">
-                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                </svg>
-                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <circle cx="12" cy="12" r="4"/>
-                    <path d="M12 2v2"/><path d="M12 20v2"/>
-                    <path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/>
-                    <path d="M2 12h2"/><path d="M20 12h2"/>
-                    <path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
-                </svg>
-            </button>
+</script>        <button type="button" class="oce-theme-toggle" aria-label="Toggle light/dark theme" title="Toggle light/dark theme">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+    </div>
+</header>
+        <div class="oce-band-inner">
+            <p class="oce-eyebrow">User guides · 65 guides</p>
+            <h1 class="oce-display">Learn OptimCE at your own pace, one role at a time.</h1>
+            <p class="oce-lede">Each role adds its guides to those of the one before: an administrator does everything a manager does, who does everything a member does. Pick yours.</p>
+            <nav class="oce-tabs" aria-label="Your role">
+                <a class="oce-tab oce-role--everyone" href="#role-everyone" data-role="everyone"><span class="oce-dot" aria-hidden="true"></span>Everyone</a>
+                <a class="oce-tab oce-role--member" href="#role-member" data-role="member"><span class="oce-dot" aria-hidden="true"></span>Member</a>
+                <a class="oce-tab oce-role--manager" href="#role-manager" data-role="manager"><span class="oce-dot" aria-hidden="true"></span>Manager</a>
+                <a class="oce-tab oce-role--admin" href="#role-admin" data-role="admin"><span class="oce-dot" aria-hidden="true"></span>Administrator</a>
+            </nav>
         </div>
-    </header>
+    </div>
 
-    <main class="steppy-main">
-        <section class="steppy-index">
-            <div class="steppy-hero">
-                <div class="steppy-hero-eyebrow">Documentation</div>
-                <h1>OptimCE — User guides</h1>
-                <p class="steppy-hero-lede">Step-by-step guides to configure an energy community: login, member management, allocation keys, meters, and sharing operations.</p>
+    <main class="oce-home" data-active="everyone">
+        <section class="oce-ladder" aria-live="polite">
+            <p class="oce-ladder-sum oce-role--everyone" data-role="everyone">As a visitor, you can use <strong>10 guides</strong>.</p>
+            <p class="oce-ladder-sum oce-role--member" data-role="member">As a member, you can use <strong>18 guides</strong>.</p>
+            <p class="oce-ladder-sum oce-role--manager" data-role="manager">As a manager, you can use <strong>60 guides</strong>.</p>
+            <p class="oce-ladder-sum oce-role--admin" data-role="admin">As an administrator, you can use <strong>65 guides</strong>.</p>
+            <ol class="oce-rungs">
+                <li class="oce-rung oce-role--everyone" data-role="everyone">
+                    <span class="oce-rung-mark" aria-hidden="true">0</span>
+                    <span class="oce-rung-text"><span class="oce-rung-name">Everyone</span><span class="oce-rung-count">+10 guides</span></span>
+                </li>
+                <li class="oce-rung oce-role--member" data-role="member">
+                    <span class="oce-rung-mark" aria-hidden="true">1</span>
+                    <span class="oce-rung-text"><span class="oce-rung-name">Member</span><span class="oce-rung-count">+8 guides</span></span>
+                </li>
+                <li class="oce-rung oce-role--manager" data-role="manager">
+                    <span class="oce-rung-mark" aria-hidden="true">2</span>
+                    <span class="oce-rung-text"><span class="oce-rung-name">Manager</span><span class="oce-rung-count">+42 guides</span></span>
+                </li>
+                <li class="oce-rung oce-role--admin" data-role="admin">
+                    <span class="oce-rung-mark" aria-hidden="true">3</span>
+                    <span class="oce-rung-text"><span class="oce-rung-name">Administrator</span><span class="oce-rung-count">+5 guides</span></span>
+                </li>
+            </ol>
+        </section>
+
+        <div class="oce-role-secs">
+<section class="oce-role-sec oce-role--everyone" id="role-everyone" data-role="everyone" aria-labelledby="h-everyone">
+            <header class="oce-role-head">
+                <p class="oce-inherited-note">Included in your role</p>
+                <h2 id="h-everyone"><a href="./everyone/en.html">Everyone</a><span class="oce-count">10 guides</span></h2>
+<p>Before or outside a community: sign in, manage your account, find or create a community.</p>            </header>
+
+<div class="oce-tour">
+                <a class="oce-tour-link" href="./onboarding-welcome/en.html">
+                    <span class="oce-tour-text">
+                        <span class="oce-tour-eyebrow">Start here · guided tour</span>
+                        <span class="oce-tour-title">Welcome to OptimCE</span>
+                        <span class="oce-tour-cta">Start the tour</span>
+                    </span>
+                    <span class="oce-tour-shot"><img src="./assets/onboarding-welcome/en/desktop/step-08.png" alt="" loading="lazy" width="1440" height="900"></span>
+                </a>
+                <ul class="oce-tour-more">
+                    <li><a href="./onboarding-welcome-community/en.html">Welcome — you already have a community</a></li>
+                </ul>
             </div>
 
-            <ul class="steppy-index-list">
-                <li class="steppy-index-onboarding">
-                    <a href="./getting-started/en.html">
-                        <div>
-                            <span class="steppy-index-eyebrow">Guided walkthrough</span>
-                            <span class="steppy-index-title">Getting started</span>
-                            <span class="steppy-index-desc">The recommended path to discover the application end-to-end, in 11 steps.</span>
-                        </div>
-                        <span class="steppy-index-meta">11 steps</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./welcome-tours/en.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Welcome tours</span>
-                        <span class="steppy-index-desc">One tour per role: when you arrive, then when you become a member, a manager or an administrator.</span>
-                        <span class="steppy-index-meta">4 guides</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./account/en.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Account</span>
-                        <span class="steppy-index-desc">Sign in and manage your profile.</span>
-                        <span class="steppy-index-meta">4 guides</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./dashboard/en.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Home and dashboard</span>
-                        <span class="steppy-index-desc">Find your way after signing in: the personal home page and a community dashboard.</span>
-                        <span class="steppy-index-meta">3 guides</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./community/en.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Community</span>
-                        <span class="steppy-index-desc">Activate a community and inspect shared allocation keys and meters.</span>
-                        <span class="steppy-index-meta">9 guides</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./keys/en.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Allocation keys</span>
-                        <span class="steppy-index-desc">Create allocation keys (form or wizard).</span>
-                        <span class="steppy-index-meta">5 guides</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./members/en.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Members</span>
-                        <span class="steppy-index-desc">Manage community members.</span>
-                        <span class="steppy-index-meta">6 guides</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./meters/en.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Meters</span>
-                        <span class="steppy-index-desc">Create and configure meters.</span>
-                        <span class="steppy-index-meta">5 guides</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./sharing/en.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Sharing operations</span>
-                        <span class="steppy-index-desc">Create and inspect sharing operations.</span>
-                        <span class="steppy-index-meta">5 guides</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./annexes/en.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Annexe services</span>
-                        <span class="steppy-index-desc">Manage annexe service subscriptions and generate allocation keys via the OLAGSA algorithm.</span>
-                        <span class="steppy-index-meta">7 guides</span>
-                    </a>
-                </li>
-            </ul>
+            <section class="oce-module" aria-labelledby="h-account">
+                <div class="oce-module-head">
+                    <h3 id="h-account"><a href="./account/en.html">Account</a></h3>
+                    <span class="oce-count">4 guides</span>
+                </div>
+<p class="oce-module-desc">Sign in, update your profile and choose your notifications.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./auth-login/en.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Sign in</span></a></li>
+                    <li><a class="oce-card" href="./profile-update/en.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Update your profile</span></a></li>
+                    <li><a class="oce-card" href="./notification-view/en.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">View your notifications</span></a></li>
+                    <li><a class="oce-card" href="./notification-preferences/en.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Choose your notifications</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-communities">
+                <div class="oce-module-head">
+                    <h3 id="h-communities"><a href="./communities/en.html">Home and communities</a></h3>
+                    <span class="oce-count">4 guides</span>
+                </div>
+<p class="oce-module-desc">Read your home page, enter a community, create one or explore the public communities.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./home-overview/en.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Your home page</span></a></li>
+                    <li><a class="oce-card" href="./community-activate/en.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Activate a community</span></a></li>
+                    <li><a class="oce-card" href="./community-create/en.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Create a community</span></a></li>
+                    <li><a class="oce-card" href="./public-communities-browse/en.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Explore the public communities directory</span></a></li>
+                </ul>
+            </section>
         </section>
+<section class="oce-role-sec oce-role--member" id="role-member" data-role="member" aria-labelledby="h-member">
+            <header class="oce-role-head">
+                <p class="oce-inherited-note">Included in your role</p>
+                <h2 id="h-member"><a href="./member/en.html">Member</a><span class="oce-count">8 guides</span></h2>
+<p>You belong to a community: follow your energy, your invoices and what has been filed about you.</p>            </header>
+
+<div class="oce-tour">
+                <a class="oce-tour-link" href="./onboarding-member/en.html">
+                    <span class="oce-tour-text">
+                        <span class="oce-tour-eyebrow">Start here · guided tour</span>
+                        <span class="oce-tour-title">You are a member</span>
+                        <span class="oce-tour-cta">Start the tour</span>
+                    </span>
+                    <span class="oce-tour-shot"><img src="./assets/onboarding-member/en/desktop/step-09.png" alt="" loading="lazy" width="1440" height="900"></span>
+                </a>
+            </div>
+
+            <section class="oce-module" aria-labelledby="h-member-community">
+                <div class="oce-module-head">
+                    <h3 id="h-member-community"><a href="./member-community/en.html">My community</a></h3>
+                    <span class="oce-count">3 guides</span>
+                </div>
+<p class="oce-module-desc">The member dashboard, your record, your meter and the managers to contact.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./dashboard-member-tour/en.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">The member dashboard</span></a></li>
+                    <li><a class="oce-card" href="./member-self-views/en.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Consult your own record and meter</span></a></li>
+                    <li><a class="oce-card" href="./community-managers-view/en.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">See your community's managers</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-member-modules">
+                <div class="oce-module-head">
+                    <h3 id="h-member-modules"><a href="./member-modules/en.html">My modules</a></h3>
+                    <span class="oce-count">4 guides</span>
+                </div>
+<p class="oce-module-desc">Your invoice, the filings that name you, the documents to sign and the production of your sharing operation.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./billing-member-view/en.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">View your own bill</span></a></li>
+                    <li><a class="oce-card" href="./admin-doc-my-filings/en.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">See what has been filed about you</span></a></li>
+                    <li><a class="oce-card" href="./signature-sign/en.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Sign a document in the app</span></a></li>
+                    <li><a class="oce-card" href="./live-data-member-view/en.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">See my operation's production</span></a></li>
+                </ul>
+            </section>
+        </section>
+<section class="oce-role-sec oce-role--manager" id="role-manager" data-role="manager" aria-labelledby="h-manager">
+            <header class="oce-role-head">
+                <p class="oce-inherited-note">Included in your role</p>
+                <h2 id="h-manager"><a href="./manager/en.html">Manager</a><span class="oce-count">42 guides</span></h2>
+<p>Run the community day to day: members, meters, allocation keys, sharing operations and modules.</p>            </header>
+
+<div class="oce-tour">
+                <a class="oce-tour-link" href="./onboarding-manager/en.html">
+                    <span class="oce-tour-text">
+                        <span class="oce-tour-eyebrow">Start here · guided tour</span>
+                        <span class="oce-tour-title">You are a manager</span>
+                        <span class="oce-tour-cta">Start the tour</span>
+                    </span>
+                    <span class="oce-tour-shot"><img src="./assets/onboarding-manager/en/desktop/step-10.png" alt="" loading="lazy" width="1440" height="900"></span>
+                </a>
+                <ul class="oce-tour-more">
+                    <li><a href="./getting-started/en.html">Getting started — set up a community end to end · 11 guides</a></li>
+                </ul>
+            </div>
+
+            <section class="oce-module" aria-labelledby="h-dashboard">
+                <div class="oce-module-head">
+                    <h3 id="h-dashboard"><a href="./dashboard/en.html">Dashboard and tracking</a></h3>
+                    <span class="oce-count">2 guides</span>
+                </div>
+<p class="oce-module-desc">The community dashboard and the audit log.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./dashboard-manager-tour/en.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">The manager dashboard</span></a></li>
+                    <li><a class="oce-card" href="./audit-log-inspect/en.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Consult the audit log</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-keys">
+                <div class="oce-module-head">
+                    <h3 id="h-keys"><a href="./keys/en.html">Allocation keys</a></h3>
+                    <span class="oce-count">6 guides</span>
+                </div>
+<p class="oce-module-desc">Create, edit, check and delete allocation keys.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./key-create-wizard/en.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Create an allocation key (wizard)</span></a></li>
+                    <li><a class="oce-card" href="./key-create-gridform/en.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Create an allocation key (form)</span></a></li>
+                    <li><a class="oce-card" href="./key-update/en.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Edit an allocation key</span></a></li>
+                    <li><a class="oce-card" href="./key-delete/en.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Delete an allocation key</span></a></li>
+                    <li><a class="oce-card" href="./key-helper-tour/en.html"><span class="oce-card-num" aria-hidden="true">05</span><span class="oce-card-title">Contextual help — the (i) icon</span></a></li>
+                    <li><a class="oce-card" href="./community-join-inspect-key/en.html"><span class="oce-card-num" aria-hidden="true">06</span><span class="oce-card-title">Join a community — verify the allocation key</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-members">
+                <div class="oce-module-head">
+                    <h3 id="h-members"><a href="./members/en.html">Members</a></h3>
+                    <span class="oce-count">5 guides</span>
+                </div>
+<p class="oce-module-desc">Add members, individuals or companies, edit them, deactivate them and attach their documents.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./member-create/en.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Create a member</span></a></li>
+                    <li><a class="oce-card" href="./member-create-company/en.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Create a company member</span></a></li>
+                    <li><a class="oce-card" href="./member-update/en.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Edit a member</span></a></li>
+                    <li><a class="oce-card" href="./member-status-lifecycle/en.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Deactivate and reactivate a member</span></a></li>
+                    <li><a class="oce-card" href="./member-document-upload/en.html"><span class="oce-card-num" aria-hidden="true">05</span><span class="oce-card-title">Upload a document to a member</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-meters">
+                <div class="oce-module-head">
+                    <h3 id="h-meters"><a href="./meters/en.html">Meters</a></h3>
+                    <span class="oce-count">6 guides</span>
+                </div>
+<p class="oce-module-desc">Create and configure meters, fix their addresses and deactivate them.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./meter-create/en.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Create a meter</span></a></li>
+                    <li><a class="oce-card" href="./meter-update/en.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Edit a meter</span></a></li>
+                    <li><a class="oce-card" href="./meter-data-update/en.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Update meter data</span></a></li>
+                    <li><a class="oce-card" href="./meter-address-repair/en.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Fix meter addresses</span></a></li>
+                    <li><a class="oce-card" href="./meter-deactivate/en.html"><span class="oce-card-num" aria-hidden="true">05</span><span class="oce-card-title">Deactivate a meter</span></a></li>
+                    <li><a class="oce-card" href="./community-join-inspect-meter/en.html"><span class="oce-card-num" aria-hidden="true">06</span><span class="oce-card-title">Join a community — verify the meter</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-sharing">
+                <div class="oce-module-head">
+                    <h3 id="h-sharing"><a href="./sharing/en.html">Sharing operations</a></h3>
+                    <span class="oce-count">5 guides</span>
+                </div>
+<p class="oce-module-desc">Create, inspect and edit sharing operations, add meters to them and make them public.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./sharing-op-create/en.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Create a sharing operation</span></a></li>
+                    <li><a class="oce-card" href="./sharing-op-inspect/en.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Inspect a sharing operation</span></a></li>
+                    <li><a class="oce-card" href="./sharing-op-add-meter/en.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Add a meter to a sharing operation</span></a></li>
+                    <li><a class="oce-card" href="./sharing-op-set-public/en.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Make a sharing operation public</span></a></li>
+                    <li><a class="oce-card" href="./sharing-op-update/en.html"><span class="oce-card-num" aria-hidden="true">05</span><span class="oce-card-title">Edit a sharing operation</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-news">
+                <div class="oce-module-head">
+                    <h3 id="h-news"><a href="./news/en.html">News</a></h3>
+                    <span class="oce-count">2 guides</span>
+                </div>
+<p class="oce-module-desc">Publish news and polls on the community board.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./news-create/en.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Publish a news</span></a></li>
+                    <li><a class="oce-card" href="./news-poll-create/en.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Create a poll</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-key-generation">
+                <div class="oce-module-head">
+                    <h3 id="h-key-generation"><a href="./key-generation/en.html">Key generation and simulation</a></h3>
+                    <span class="oce-count">4 guides</span>
+                </div>
+<p class="oce-module-desc">Generate keys with the OLAGSA algorithm and test a key against real data.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./algorithm-generate/en.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Generate keys (OLAGSA)</span></a></li>
+                    <li><a class="oce-card" href="./algorithm-delete-key/en.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Delete a generated key</span></a></li>
+                    <li><a class="oce-card" href="./algorithm-delete-generation/en.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Delete a generation</span></a></li>
+                    <li><a class="oce-card" href="./simulation-run/en.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Simulate an allocation key</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-billing">
+                <div class="oce-module-head">
+                    <h3 id="h-billing"><a href="./billing/en.html">Billing</a></h3>
+                    <span class="oce-count">1 guide</span>
+                </div>
+<p class="oce-module-desc">Price shared energy, generate invoices and track payments.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./billing-tarification-pay/en.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Bill a sharing operation, from tariff to payment</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-administrative-document">
+                <div class="oce-module-head">
+                    <h3 id="h-administrative-document"><a href="./administrative-document/en.html">Administrative documents</a></h3>
+                    <span class="oce-count">7 guides</span>
+                </div>
+<p class="oce-module-desc">Track the dossiers filed with the CWaPE and the grid operator, their documents, their electronic signatures and their deadlines.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./admin-doc-dossier-create/en.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Open a procedure</span></a></li>
+                    <li><a class="oce-card" href="./admin-doc-document-generate/en.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Generate a document from the CRM</span></a></li>
+                    <li><a class="oce-card" href="./admin-doc-upload-version/en.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Attach a file to a document</span></a></li>
+                    <li><a class="oce-card" href="./admin-doc-submit-deadline/en.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Send a procedure and follow its deadline</span></a></li>
+                    <li><a class="oce-card" href="./signature-request/en.html"><span class="oce-card-num" aria-hidden="true">05</span><span class="oce-card-title">Request an electronic signature</span></a></li>
+                    <li><a class="oce-card" href="./signature-manager-follows/en.html"><span class="oce-card-num" aria-hidden="true">06</span><span class="oce-card-title">Follow the signature requests</span></a></li>
+                    <li><a class="oce-card" href="./signature-signed-evidence/en.html"><span class="oce-card-num" aria-hidden="true">07</span><span class="oce-card-title">Find a signed document and its evidence</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-live-data">
+                <div class="oce-module-head">
+                    <h3 id="h-live-data"><a href="./live-data/en.html">Live data</a></h3>
+                    <span class="oce-count">3 guides</span>
+                </div>
+<p class="oce-module-desc">Follow, quarter-hour by quarter-hour, what the devices at members’ premises measure, and manage those devices.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./live-data-explore/en.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Discover Live data</span></a></li>
+                    <li><a class="oce-card" href="./live-data-device-enrol/en.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Connect a device</span></a></li>
+                    <li><a class="oce-card" href="./live-data-sharing-operations/en.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Follow sharing within an operation</span></a></li>
+                </ul>
+            </section>
+        </section>
+<section class="oce-role-sec oce-role--admin" id="role-admin" data-role="admin" aria-labelledby="h-admin">
+            <header class="oce-role-head">
+                <p class="oce-inherited-note">Included in your role</p>
+                <h2 id="h-admin"><a href="./admin/en.html">Administrator</a><span class="oce-count">5 guides</span></h2>
+<p>What only an administrator can do: enable modules, invite managers, change roles and edit the legal details.</p>            </header>
+
+<div class="oce-tour">
+                <a class="oce-tour-link" href="./onboarding-admin/en.html">
+                    <span class="oce-tour-text">
+                        <span class="oce-tour-eyebrow">Start here · guided tour</span>
+                        <span class="oce-tour-title">You are an administrator</span>
+                        <span class="oce-tour-cta">Start the tour</span>
+                    </span>
+                    <span class="oce-tour-shot"><img src="./assets/onboarding-admin/en/desktop/step-12.png" alt="" loading="lazy" width="1440" height="900"></span>
+                </a>
+            </div>
+
+            <section class="oce-module" aria-labelledby="h-admin-community">
+                <div class="oce-module-head">
+                    <h3 id="h-admin-community"><a href="./admin-community/en.html">Users and details</a></h3>
+                    <span class="oce-count">2 guides</span>
+                </div>
+<p class="oce-module-desc">Invite managers, change roles and complete the community's profile.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./community-users-manage/en.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Manage the community's users</span></a></li>
+                    <li><a class="oce-card" href="./community-info-update/en.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Update community info</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-admin-modules">
+                <div class="oce-module-head">
+                    <h3 id="h-admin-modules"><a href="./admin-modules/en.html">Modules</a></h3>
+                    <span class="oce-count">2 guides</span>
+                </div>
+<p class="oce-module-desc">Subscribe to an annexe service or unsubscribe from it.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./annexes-subscribe/en.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Subscribe to an annexe service</span></a></li>
+                    <li><a class="oce-card" href="./annexes-unsubscribe/en.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Unsubscribe from an annexe service</span></a></li>
+                </ul>
+            </section>
+        </section>
+        </div>
     </main>
 
-    <footer class="steppy-site-footer">
-        <p>Generated by Steppy.</p>
-    </footer>
+<footer class="steppy-site-footer">
+    <p>OptimCE · Generated by Steppy.</p>
+</footer>
+<script>
+  (function () {
+    function bind() {
+      var btn = document.querySelector(".oce-theme-toggle");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        var current = document.documentElement.getAttribute("data-theme") || "light";
+        var next = current === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        try { localStorage.setItem("oce-theme", next); } catch (e) {}
+      });
+    }
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+    else bind();
+  })();
+</script>
 
     <script>
       (function () {
-        function bind() {
-          var btn = document.querySelector(".oce-theme-toggle");
-          if (!btn) return;
-          btn.addEventListener("click", function () {
-            var current = document.documentElement.getAttribute("data-theme") || "light";
-            var next = current === "dark" ? "light" : "dark";
-            document.documentElement.setAttribute("data-theme", next);
-            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+        var root = document.querySelector(".oce-home");
+        if (!root) return;
+        var order = ["everyone", "member", "manager", "admin"];
+        var tabs = Array.prototype.slice.call(document.querySelectorAll(".oce-tab"));
+        var secs = Array.prototype.slice.call(document.querySelectorAll(".oce-role-sec"));
+        var rungs = Array.prototype.slice.call(document.querySelectorAll(".oce-rung"));
+        var sums = Array.prototype.slice.call(document.querySelectorAll(".oce-ladder-sum"));
+        var tablist = document.querySelector(".oce-tabs");
+        tablist.setAttribute("role", "tablist");
+        tabs.forEach(function (tab) {
+          tab.setAttribute("role", "tab");
+          tab.setAttribute("aria-controls", "role-" + tab.getAttribute("data-role"));
+        });
+        // "#manager" (what the breadcrumbs link to, matches no id so the page
+        // does not jump) or "#role-manager" (the no-JS anchor).
+        function roleFromHash() { return (location.hash || "").replace(/^#(role-)?/, ""); }
+        function activate(role, remember) {
+          var ai = order.indexOf(role);
+          if (ai < 0) return;
+          root.setAttribute("data-active", role);
+          tabs.forEach(function (tab) {
+            var on = tab.getAttribute("data-role") === role;
+            tab.setAttribute("aria-selected", on ? "true" : "false");
+            tab.tabIndex = on ? 0 : -1;
           });
+          secs.forEach(function (sec) {
+            var ri = order.indexOf(sec.getAttribute("data-role"));
+            sec.hidden = ri > ai;
+            sec.style.order = String(ai - ri);
+            sec.classList.toggle("is-active", ri === ai);
+            sec.classList.toggle("is-inherited", ri < ai);
+          });
+          rungs.forEach(function (rung) {
+            var ri = order.indexOf(rung.getAttribute("data-role"));
+            rung.classList.toggle("is-reached", ri <= ai);
+            rung.classList.toggle("is-current", ri === ai);
+          });
+          sums.forEach(function (sum) { sum.hidden = sum.getAttribute("data-role") !== role; });
+          if (remember) {
+            try { localStorage.setItem("oce-role", role); } catch (e) {}
+            try { history.replaceState(null, "", "#" + role); } catch (e) {}
+          }
         }
-        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
-        else bind();
+        tabs.forEach(function (tab, i) {
+          tab.addEventListener("click", function (ev) {
+            ev.preventDefault();
+            activate(tab.getAttribute("data-role"), true);
+          });
+          tab.addEventListener("keydown", function (ev) {
+            var step = ev.key === "ArrowRight" ? 1 : ev.key === "ArrowLeft" ? -1 : 0;
+            if (!step) return;
+            ev.preventDefault();
+            var next = tabs[(i + step + tabs.length) % tabs.length];
+            next.focus();
+            activate(next.getAttribute("data-role"), true);
+          });
+        });
+        var fromHash = roleFromHash();
+        var saved = null;
+        try { saved = localStorage.getItem("oce-role"); } catch (e) {}
+        activate(order.indexOf(fromHash) >= 0 ? fromHash : (order.indexOf(saved) >= 0 ? saved : order[0]), false);
+        window.addEventListener("hashchange", function () {
+          var h = roleFromHash();
+          if (order.indexOf(h) >= 0) activate(h, true);
+        });
       })();
     </script>
 </body>

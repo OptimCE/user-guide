@@ -1,11 +1,20 @@
 {
   "step": 30,
   "screenshot": "step-30.png",
-  "action": "assert",
+  "action": "click",
   "viewport": {
     "width": 1440,
     "height": 900
   },
   "device_scale_factor": 1,
-  "target": null
+  "target": {
+    "kind": "single",
+    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]",
+    "bbox": {
+      "x": 487.625,
+      "y": 146,
+      "width": 84.5625,
+      "height": 57
+    }
+  }
 }

@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>De handtekeningverzoeken volgen — OptimCE — Gebruikershandleidingen</title>
+    <meta name="description" content="Zien hoe ver elk handtekeningverzoek van de gemeenschap staat, een ondertekenaar herinneren en de geschiedenis van een verzoek lezen.">
+    <link rel="canonical" href="https://guide.optimce.be/signature-manager-follows/nl.html">
+    <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/signature-manager-follows/fr.html">
+    <link rel="alternate" hreflang="en" href="https://guide.optimce.be/signature-manager-follows/en.html">
+    <link rel="alternate" hreflang="nl" href="https://guide.optimce.be/signature-manager-follows/nl.html">
+    <link rel="alternate" hreflang="de" href="https://guide.optimce.be/signature-manager-follows/de.html">
+    <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/signature-manager-follows/fr.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="De handtekeningverzoeken volgen">
+    <meta property="og:description" content="Zien hoe ver elk handtekeningverzoek van de gemeenschap staat, een ondertekenaar herinneren en de geschiedenis van een verzoek lezen.">
+    <meta property="og:url" content="https://guide.optimce.be/signature-manager-follows/nl.html">
+    <meta property="og:site_name" content="OptimCE — Gebruikershandleidingen">
+    <meta property="og:image" content="https://guide.optimce.be/assets/signature-manager-follows/nl/desktop/step-14.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/json" id="steppy-detect-config">{"breakpoints": {"desktop": 1024, "mobile": 0}, "defaultLayout": "desktop", "defaultLocale": "fr", "hrefFor": {"de": "./de.html", "en": "./en.html", "fr": "./fr.html", "nl": "./nl.html"}, "layout": true, "layouts": ["desktop", "mobile"], "locale": true, "locales": ["fr", "en", "nl", "de"], "pageLocale": "nl", "storageKeys": {"layout": "steppy:layout", "locale": "steppy:locale"}}</script>
+    <script src="../assets/steppy-detect.js"></script>
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+      })();
+    </script>
+</head>
+<body class="oce-page-guide oce-role--manager" data-active-layout="desktop">
+    <div class="oce-band oce-band--compact">
+<header class="steppy-site-header">
+    <a class="oce-logo-link" href="../index.nl.html" aria-label="OptimCE — Gebruikershandleidingen">
+        <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+            <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+            <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+            <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+            <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+            <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+        </svg>
+    </a>
+    <a class="steppy-site-title" href="../index.nl.html">OptimCE — Gebruikershandleidingen</a>
+    <nav class="steppy-breadcrumb" aria-label="Kruimelpad">
+<a href="../index.nl.html">Startpagina</a><span class="steppy-breadcrumb-sep" aria-hidden="true">›</span><a href="../manager/nl.html">Manager</a><span class="steppy-breadcrumb-sep" aria-hidden="true">›</span><a href="../administrative-document/nl.html">Administratieve documenten</a>    </nav>
+    <div class="steppy-header-actions">
+<label class="steppy-locale-select">
+    <span class="steppy-visually-hidden">Taal</span>
+    <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <select autocomplete="off">        <option value="./fr.html" lang="fr">Français</option>        <option value="./en.html" lang="en">English</option>        <option value="./nl.html" lang="nl" selected>Nederlands</option>        <option value="./de.html" lang="de">Deutsch</option>    </select>
+    <svg class="steppy-locale-select-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</label>
+<script>
+  (function () {
+    var sel = document.querySelector(".steppy-locale-select select");
+    if (!sel) return;
+    // A pick is the reader's own choice: store it under steppy-detect.js's key
+    // (autoDetect.storageKeys.locale) so detection never overrides it. That
+    // script only sees link clicks, not a <select>. Storage blocked → carry it
+    // as ?lang= instead, as steppy-detect.js does for its links.
+    sel.addEventListener("change", function () {
+      if (!sel.value) return;
+      var href = sel.value, loc = sel.options[sel.selectedIndex].lang, key = null;
+      try { key = JSON.parse(document.getElementById("steppy-detect-config").textContent).storageKeys.locale; } catch (e) {}
+      if (key && loc) {
+        var stored = false;
+        try { localStorage.setItem(key, loc); stored = true; } catch (e) {}
+        if (!stored) href += (href.indexOf("?") === -1 ? "?" : "&") + "lang=" + encodeURIComponent(loc);
+      }
+      window.location.href = href;
+    });
+    // Back from the language just picked can restore this page from the
+    // bfcache with that option still showing — snap it back to this page's own.
+    window.addEventListener("pageshow", function () {
+      var own = sel.querySelector("option[selected]");
+      if (own) sel.value = own.value;
+    });
+  })();
+</script>        <button type="button" class="oce-theme-toggle" aria-label="Licht/donker thema wisselen" title="Licht/donker thema wisselen">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+    </div>
+</header>
+        <div class="oce-band-inner">
+            <p class="oce-eyebrow">Handleiding · Administratieve documenten</p>
+            <p class="oce-display oce-guide-title" aria-hidden="true">De handtekeningverzoeken volgen</p>
+<p class="oce-lede">Zien hoe ver elk handtekeningverzoek van de gemeenschap staat, een ondertekenaar herinneren en de geschiedenis van een verzoek lezen.</p><p class="oce-audience"><span class="oce-audience-label">Voor</span> <span class="oce-chip oce-role--manager"><span class="oce-dot" aria-hidden="true"></span>Manager</span><span class="oce-chip oce-role--admin"><span class="oce-dot" aria-hidden="true"></span>Beheerder</span></p>            <div class="oce-guide-switches">
+                <nav class="steppy-mode-switch" aria-label="Weergave">
+                    <ul>
+                        <li><span aria-current="true">Stap voor stap</span></li>
+                        <li><a href="./interactive.html?lang=nl">Interactief</a></li>
+                    </ul>
+                </nav>
+                <nav class="steppy-layout-switch" aria-label="Scherm">
+                    <ul>
+                        <li><button type="button" data-layout="desktop" aria-current="true">Computer</button></li>
+                        <li><button type="button" data-layout="mobile" >Mobiel</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="oce-progress" aria-hidden="true">
+        <div class="oce-progress-inner">
+            <span class="oce-progress-label">Stap <span data-oce-step>1</span> van <span data-oce-total></span></span>
+            <span class="oce-progress-track"><span class="oce-progress-fill"></span></span>
+        </div>
+    </div>
+
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>De handtekeningverzoeken volgen</h1>
+
+    <div class="steppy-step" data-step-index="1">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">1</span>
+                <span>De handtekeningen openen</span>
+            </h2>
+            <div class="steppy-step-subtitle">Navigatie</div>
+            <div class="steppy-step-content">Klik in de zijbalk op “Handtekeningen”: alle handtekeningverzoeken van de gemeenschap staan daar samen.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-manager-follows/nl/desktop/step-14.png" alt="1. De handtekeningen openen" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">2</span>
+                <span>De verzoeken van de gemeenschap</span>
+            </h2>
+            <div class="steppy-step-subtitle">Handtekeningen</div>
+            <div class="steppy-step-content">Elk handtekeningverzoek staat er met het document, de herkomst, de voortgang, de vervaldatum en de status. De filter bovenaan houdt alleen de verzoeken met één status over.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-manager-follows/nl/desktop/step-20.png" alt="2. De verzoeken van de gemeenschap" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">3</span>
+                <span>Hoe ver het verzoek staat</span>
+            </h2>
+            <div class="steppy-step-subtitle">Voortgang</div>
+            <div class="steppy-step-content">De <strong>“Voortgang”</strong> telt de ontvangen handtekeningen: hier <strong>“0 van 1 ondertekend”</strong>, de deelnemer heeft nog niet ondertekend.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-manager-follows/nl/desktop/step-21.png" alt="3. Hoe ver het verzoek staat" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">4</span>
+                <span>De ondertekenaar herinneren</span>
+            </h2>
+            <div class="steppy-step-subtitle">Herinnering</div>
+            <div class="steppy-step-content">Klik op <strong>“Herinneren”</strong>: elke ondertekenaar die nog niet heeft ondertekend, krijgt een herinnering via een melding en een e-mail.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-manager-follows/nl/desktop/step-23.png" alt="4. De ondertekenaar herinneren" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">5</span>
+                <span>Het verzoek openen</span>
+            </h2>
+            <div class="steppy-step-subtitle">Handtekeningen</div>
+            <div class="steppy-step-content">Klik op <strong>“Details openen”</strong> om het volledige verzoek te zien.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-manager-follows/nl/desktop/step-25.png" alt="5. Het verzoek openen" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">6</span>
+                <span>De ondertekenaars</span>
+            </h2>
+            <div class="steppy-step-subtitle">Handtekeningverzoek</div>
+            <div class="steppy-step-content">Bovenaan de pagina staan de status van het verzoek en de vervaldatum. Onder <strong>“Ondertekenaars”</strong> staat elke persoon met wat hij heeft gedaan: uitgenodigd, bekeken, ondertekend of geweigerd.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-manager-follows/nl/desktop/step-27.png" alt="6. De ondertekenaars" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">7</span>
+                <span>De geschiedenis</span>
+            </h2>
+            <div class="steppy-step-subtitle">Geschiedenis</div>
+            <div class="steppy-step-content">De <strong>“Geschiedenis”</strong> toont elke stap, de herinnering inbegrepen. <strong>“Logboek intact”</strong> bevestigt dat niemand het heeft gewijzigd. Het ondertekende document verschijnt pas wanneer iedereen heeft ondertekend.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-manager-follows/nl/desktop/step-28.png" alt="7. De geschiedenis" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>De handtekeningverzoeken volgen</h1>
+
+    <div class="steppy-step" data-step-index="1">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">1</span>
+                <span>De handtekeningen openen</span>
+            </h2>
+            <div class="steppy-step-subtitle">Navigatie</div>
+            <div class="steppy-step-content">Tik op het menupictogram om de navigatielade te openen en daarna op “Handtekeningen”.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-manager-follows/nl/mobile/step-17.png" alt="1. De handtekeningen openen" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">2</span>
+                <span>De verzoeken van de gemeenschap</span>
+            </h2>
+            <div class="steppy-step-subtitle">Handtekeningen</div>
+            <div class="steppy-step-content">Elk handtekeningverzoek staat er met het document, de herkomst, de voortgang, de vervaldatum en de status. De filter bovenaan houdt alleen de verzoeken met één status over.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-manager-follows/nl/mobile/step-20.png" alt="2. De verzoeken van de gemeenschap" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">3</span>
+                <span>Hoe ver het verzoek staat</span>
+            </h2>
+            <div class="steppy-step-subtitle">Voortgang</div>
+            <div class="steppy-step-content">De <strong>“Voortgang”</strong> telt de ontvangen handtekeningen: hier <strong>“0 van 1 ondertekend”</strong>, de deelnemer heeft nog niet ondertekend.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-manager-follows/nl/mobile/step-21.png" alt="3. Hoe ver het verzoek staat" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">4</span>
+                <span>De ondertekenaar herinneren</span>
+            </h2>
+            <div class="steppy-step-subtitle">Herinnering</div>
+            <div class="steppy-step-content">Klik op <strong>“Herinneren”</strong>: elke ondertekenaar die nog niet heeft ondertekend, krijgt een herinnering via een melding en een e-mail.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-manager-follows/nl/mobile/step-23.png" alt="4. De ondertekenaar herinneren" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">5</span>
+                <span>Het verzoek openen</span>
+            </h2>
+            <div class="steppy-step-subtitle">Handtekeningen</div>
+            <div class="steppy-step-content">Klik op <strong>“Details openen”</strong> om het volledige verzoek te zien.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-manager-follows/nl/mobile/step-25.png" alt="5. Het verzoek openen" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">6</span>
+                <span>De ondertekenaars</span>
+            </h2>
+            <div class="steppy-step-subtitle">Handtekeningverzoek</div>
+            <div class="steppy-step-content">Bovenaan de pagina staan de status van het verzoek en de vervaldatum. Onder <strong>“Ondertekenaars”</strong> staat elke persoon met wat hij heeft gedaan: uitgenodigd, bekeken, ondertekend of geweigerd.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-manager-follows/nl/mobile/step-27.png" alt="6. De ondertekenaars" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">7</span>
+                <span>De geschiedenis</span>
+            </h2>
+            <div class="steppy-step-subtitle">Geschiedenis</div>
+            <div class="steppy-step-content">De <strong>“Geschiedenis”</strong> toont elke stap, de herinnering inbegrepen. <strong>“Logboek intact”</strong> bevestigt dat niemand het heeft gewijzigd. Het ondertekende document verschijnt pas wanneer iedereen heeft ondertekend.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-manager-follows/nl/mobile/step-28.png" alt="7. De geschiedenis" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+<footer class="steppy-site-footer">
+    <p>OptimCE · Gegenereerd door Steppy.</p>
+</footer>
+<script>
+  (function () {
+    function bind() {
+      var btn = document.querySelector(".oce-theme-toggle");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        var current = document.documentElement.getAttribute("data-theme") || "light";
+        var next = current === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        try { localStorage.setItem("oce-theme", next); } catch (e) {}
+      });
+    }
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+    else bind();
+  })();
+</script>
+<script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 474}, "selector": "[data-testid=\"navbar__menu--signatures-community\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 474}, "selector": "[data-testid=\"navbar__menu--signatures-community\"]"}}, "screenshot": "../assets/signature-manager-follows/nl/desktop/step-14.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/signature-manager-follows/nl/desktop/step-14.png", "subtitle": "Navigatie", "text": "Klik in de zijbalk op \u201cHandtekeningen\u201d: alle handtekeningverzoeken van de gemeenschap staan daar samen.", "title": "De handtekeningen openen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/signature-manager-follows/nl/desktop/step-20.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/signature-manager-follows/nl/desktop/step-20.png", "subtitle": "Handtekeningen", "text": "Elk handtekeningverzoek staat er met het document, de herkomst, de voortgang, de vervaldatum en de status. De filter bovenaan houdt alleen de verzoeken met \u00e9\u00e9n status over.", "title": "De verzoeken van de gemeenschap", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/signature-manager-follows/nl/desktop/step-21.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/signature-manager-follows/nl/desktop/step-21.png", "subtitle": "Voortgang", "text": "De **\u201cVoortgang\u201d** telt de ontvangen handtekeningen: hier **\u201c0 van 1 ondertekend\u201d**, de deelnemer heeft nog niet ondertekend.", "title": "Hoe ver het verzoek staat", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1210, "y": 331}, "selector": "[data-testid=\"signature-follow__button--remind-0\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1210, "y": 331}, "selector": "[data-testid=\"signature-follow__button--remind-0\"] button"}}, "screenshot": "../assets/signature-manager-follows/nl/desktop/step-23.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/signature-manager-follows/nl/desktop/step-23.png", "subtitle": "Herinnering", "text": "Klik op **\u201cHerinneren\u201d**: elke ondertekenaar die nog niet heeft ondertekend, krijgt een herinnering via een melding en een e-mail.", "title": "De ondertekenaar herinneren", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1282, "y": 339}, "selector": "[data-testid=\"signature-follow__button--open-0\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 1282, "y": 339}, "selector": "[data-testid=\"signature-follow__button--open-0\"] button"}}, "screenshot": "../assets/signature-manager-follows/nl/desktop/step-25.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/signature-manager-follows/nl/desktop/step-25.png", "subtitle": "Handtekeningen", "text": "Klik op **\u201cDetails openen\u201d** om het volledige verzoek te zien.", "title": "Het verzoek openen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/signature-manager-follows/nl/desktop/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/signature-manager-follows/nl/desktop/step-27.png", "subtitle": "Handtekeningverzoek", "text": "Bovenaan de pagina staan de status van het verzoek en de vervaldatum. Onder **\u201cOndertekenaars\u201d** staat elke persoon met wat hij heeft gedaan: uitgenodigd, bekeken, ondertekend of geweigerd.", "title": "De ondertekenaars", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/signature-manager-follows/nl/desktop/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/signature-manager-follows/nl/desktop/step-28.png", "subtitle": "Geschiedenis", "text": "De **\u201cGeschiedenis\u201d** toont elke stap, de herinnering inbegrepen. **\u201cLogboek intact\u201d** bevestigt dat niemand het heeft gewijzigd. Het ondertekende document verschijnt pas wanneer iedereen heeft ondertekend.", "title": "De geschiedenis", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 474}, "selector": "[data-testid=\"navbar__menu--signatures-community\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 474}, "selector": "[data-testid=\"navbar__menu--signatures-community\"]"}}, "screenshot": "../assets/signature-manager-follows/nl/mobile/step-17.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/signature-manager-follows/nl/mobile/step-17.png", "subtitle": "Navigatie", "text": "Tik op het menupictogram om de navigatielade te openen en daarna op \u201cHandtekeningen\u201d.", "title": "De handtekeningen openen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/signature-manager-follows/nl/mobile/step-20.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/signature-manager-follows/nl/mobile/step-20.png", "subtitle": "Handtekeningen", "text": "Elk handtekeningverzoek staat er met het document, de herkomst, de voortgang, de vervaldatum en de status. De filter bovenaan houdt alleen de verzoeken met \u00e9\u00e9n status over.", "title": "De verzoeken van de gemeenschap", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/signature-manager-follows/nl/mobile/step-21.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/signature-manager-follows/nl/mobile/step-21.png", "subtitle": "Voortgang", "text": "De **\u201cVoortgang\u201d** telt de ontvangen handtekeningen: hier **\u201c0 van 1 ondertekend\u201d**, de deelnemer heeft nog niet ondertekend.", "title": "Hoe ver het verzoek staat", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 254.390625, "y": 547}, "selector": "[data-testid=\"signature-follow__button--remind-0\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 254.390625, "y": 547}, "selector": "[data-testid=\"signature-follow__button--remind-0\"] button"}}, "screenshot": "../assets/signature-manager-follows/nl/mobile/step-23.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/signature-manager-follows/nl/mobile/step-23.png", "subtitle": "Herinnering", "text": "Klik op **\u201cHerinneren\u201d**: elke ondertekenaar die nog niet heeft ondertekend, krijgt een herinnering via een melding en een e-mail.", "title": "De ondertekenaar herinneren", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 326.390625, "y": 571}, "selector": "[data-testid=\"signature-follow__button--open-0\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 32, "width": 32, "x": 326.390625, "y": 571}, "selector": "[data-testid=\"signature-follow__button--open-0\"] button"}}, "screenshot": "../assets/signature-manager-follows/nl/mobile/step-25.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/signature-manager-follows/nl/mobile/step-25.png", "subtitle": "Handtekeningen", "text": "Klik op **\u201cDetails openen\u201d** om het volledige verzoek te zien.", "title": "Het verzoek openen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/signature-manager-follows/nl/mobile/step-27.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/signature-manager-follows/nl/mobile/step-27.png", "subtitle": "Handtekeningverzoek", "text": "Bovenaan de pagina staan de status van het verzoek en de vervaldatum. Onder **\u201cOndertekenaars\u201d** staat elke persoon met wat hij heeft gedaan: uitgenodigd, bekeken, ondertekend of geweigerd.", "title": "De ondertekenaars", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/signature-manager-follows/nl/mobile/step-28.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/signature-manager-follows/nl/mobile/step-28.png", "subtitle": "Geschiedenis", "text": "De **\u201cGeschiedenis\u201d** toont elke stap, de herinnering inbegrepen. **\u201cLogboek intact\u201d** bevestigt dat niemand het heeft gewijzigd. Het ondertekende document verschijnt pas wanneer iedereen heeft ondertekend.", "title": "De geschiedenis", "viewport": {"height": 844, "width": 390}}]};
+      window.__STEPPY_ACTIVE_LAYOUT__ = (window.SteppyDetect && window.SteppyDetect.layout) || "desktop";
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[window.__STEPPY_ACTIVE_LAYOUT__] || [];
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      // "Step N of M" bar: follows the step nearest the top of the viewport, in
+      // the layout currently shown (the desktop and mobile fragments are both in
+      // the page, one hidden). The bar is decoration: aria-hidden.
+      (function () {
+        var bar = document.querySelector(".oce-progress");
+        if (!bar || !("IntersectionObserver" in window)) return;
+        var nEl = bar.querySelector("[data-oce-step]");
+        var totalEl = bar.querySelector("[data-oce-total]");
+        var fill = bar.querySelector(".oce-progress-fill");
+        var observer = null;
+        function setStep(i, total) {
+          nEl.textContent = String(i);
+          totalEl.textContent = String(total);
+          fill.style.width = (total ? Math.round(i / total * 100) : 0) + "%";
+        }
+        function watch() {
+          if (observer) observer.disconnect();
+          var scope = document.querySelector('.steppy-layout[data-layout="' + window.__STEPPY_ACTIVE_LAYOUT__ + '"]') || document;
+          var steps = Array.prototype.slice.call(scope.querySelectorAll(".steppy-step"));
+          if (!steps.length) { bar.hidden = true; return; }
+          bar.hidden = false;
+          setStep(1, steps.length);
+          observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) setStep(steps.indexOf(e.target) + 1, steps.length);
+            });
+          }, { rootMargin: "-45% 0px -50% 0px" });
+          steps.forEach(function (s) { observer.observe(s); });
+        }
+        watch();
+        document.addEventListener("steppy:layout-change", watch);
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

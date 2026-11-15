@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Een document ondertekenen in de applicatie — OptimCE — Gebruikershandleidingen</title>
+    <meta name="description" content="Een document openen dat op uw handtekening wacht, het invullen en elektronisch ondertekenen, zonder het af te drukken.">
+    <link rel="canonical" href="https://guide.optimce.be/signature-sign/nl.html">
+    <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/signature-sign/fr.html">
+    <link rel="alternate" hreflang="en" href="https://guide.optimce.be/signature-sign/en.html">
+    <link rel="alternate" hreflang="nl" href="https://guide.optimce.be/signature-sign/nl.html">
+    <link rel="alternate" hreflang="de" href="https://guide.optimce.be/signature-sign/de.html">
+    <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/signature-sign/fr.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Een document ondertekenen in de applicatie">
+    <meta property="og:description" content="Een document openen dat op uw handtekening wacht, het invullen en elektronisch ondertekenen, zonder het af te drukken.">
+    <meta property="og:url" content="https://guide.optimce.be/signature-sign/nl.html">
+    <meta property="og:site_name" content="OptimCE — Gebruikershandleidingen">
+    <meta property="og:image" content="https://guide.optimce.be/assets/signature-sign/nl/desktop/step-14.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/json" id="steppy-detect-config">{"breakpoints": {"desktop": 1024, "mobile": 0}, "defaultLayout": "desktop", "defaultLocale": "fr", "hrefFor": {"de": "./de.html", "en": "./en.html", "fr": "./fr.html", "nl": "./nl.html"}, "layout": true, "layouts": ["desktop", "mobile"], "locale": true, "locales": ["fr", "en", "nl", "de"], "pageLocale": "nl", "storageKeys": {"layout": "steppy:layout", "locale": "steppy:locale"}}</script>
+    <script src="../assets/steppy-detect.js"></script>
+    <link rel="stylesheet" href="../assets/guides.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("oce-theme");
+          var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+        } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
+      })();
+    </script>
+</head>
+<body class="oce-page-guide oce-role--member" data-active-layout="desktop">
+    <div class="oce-band oce-band--compact">
+<header class="steppy-site-header">
+    <a class="oce-logo-link" href="../index.nl.html" aria-label="OptimCE — Gebruikershandleidingen">
+        <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+            <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+            <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+            <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+            <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+            <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+        </svg>
+    </a>
+    <a class="steppy-site-title" href="../index.nl.html">OptimCE — Gebruikershandleidingen</a>
+    <nav class="steppy-breadcrumb" aria-label="Kruimelpad">
+<a href="../index.nl.html">Startpagina</a><span class="steppy-breadcrumb-sep" aria-hidden="true">›</span><a href="../member/nl.html">Lid</a><span class="steppy-breadcrumb-sep" aria-hidden="true">›</span><a href="../member-modules/nl.html">Mijn modules</a>    </nav>
+    <div class="steppy-header-actions">
+<label class="steppy-locale-select">
+    <span class="steppy-visually-hidden">Taal</span>
+    <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    <select autocomplete="off">        <option value="./fr.html" lang="fr">Français</option>        <option value="./en.html" lang="en">English</option>        <option value="./nl.html" lang="nl" selected>Nederlands</option>        <option value="./de.html" lang="de">Deutsch</option>    </select>
+    <svg class="steppy-locale-select-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+</label>
+<script>
+  (function () {
+    var sel = document.querySelector(".steppy-locale-select select");
+    if (!sel) return;
+    // A pick is the reader's own choice: store it under steppy-detect.js's key
+    // (autoDetect.storageKeys.locale) so detection never overrides it. That
+    // script only sees link clicks, not a <select>. Storage blocked → carry it
+    // as ?lang= instead, as steppy-detect.js does for its links.
+    sel.addEventListener("change", function () {
+      if (!sel.value) return;
+      var href = sel.value, loc = sel.options[sel.selectedIndex].lang, key = null;
+      try { key = JSON.parse(document.getElementById("steppy-detect-config").textContent).storageKeys.locale; } catch (e) {}
+      if (key && loc) {
+        var stored = false;
+        try { localStorage.setItem(key, loc); stored = true; } catch (e) {}
+        if (!stored) href += (href.indexOf("?") === -1 ? "?" : "&") + "lang=" + encodeURIComponent(loc);
+      }
+      window.location.href = href;
+    });
+    // Back from the language just picked can restore this page from the
+    // bfcache with that option still showing — snap it back to this page's own.
+    window.addEventListener("pageshow", function () {
+      var own = sel.querySelector("option[selected]");
+      if (own) sel.value = own.value;
+    });
+  })();
+</script>        <button type="button" class="oce-theme-toggle" aria-label="Licht/donker thema wisselen" title="Licht/donker thema wisselen">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+    </div>
+</header>
+        <div class="oce-band-inner">
+            <p class="oce-eyebrow">Handleiding · Mijn modules</p>
+            <p class="oce-display oce-guide-title" aria-hidden="true">Een document ondertekenen in de applicatie</p>
+<p class="oce-lede">Een document openen dat op uw handtekening wacht, het invullen en elektronisch ondertekenen, zonder het af te drukken.</p><p class="oce-audience"><span class="oce-audience-label">Voor</span> <span class="oce-chip oce-role--member"><span class="oce-dot" aria-hidden="true"></span>Lid</span><span class="oce-chip oce-role--manager"><span class="oce-dot" aria-hidden="true"></span>Manager</span><span class="oce-chip oce-role--admin"><span class="oce-dot" aria-hidden="true"></span>Beheerder</span></p>            <div class="oce-guide-switches">
+                <nav class="steppy-mode-switch" aria-label="Weergave">
+                    <ul>
+                        <li><span aria-current="true">Stap voor stap</span></li>
+                        <li><a href="./interactive.html?lang=nl">Interactief</a></li>
+                    </ul>
+                </nav>
+                <nav class="steppy-layout-switch" aria-label="Scherm">
+                    <ul>
+                        <li><button type="button" data-layout="desktop" aria-current="true">Computer</button></li>
+                        <li><button type="button" data-layout="mobile" >Mobiel</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="oce-progress" aria-hidden="true">
+        <div class="oce-progress-inner">
+            <span class="oce-progress-label">Stap <span data-oce-step>1</span> van <span data-oce-total></span></span>
+            <span class="oce-progress-track"><span class="oce-progress-fill"></span></span>
+        </div>
+    </div>
+
+
+    <main class="steppy-main">
+        <div class="steppy-layout steppy-layout-active" data-layout="desktop">
+            
+<div class="steppy-guide">
+    <h1>Een document ondertekenen in de applicatie</h1>
+
+    <div class="steppy-step" data-step-index="1">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">1</span>
+                <span>“Te ondertekenen” openen</span>
+            </h2>
+            <div class="steppy-step-subtitle">Navigatie</div>
+            <div class="steppy-step-content">Wanneer een document op uw handtekening wacht, toont de zijbalk “Te ondertekenen”, met het aantal te ondertekenen documenten. Klik erop.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/desktop/step-14.png" alt="1. “Te ondertekenen” openen" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">2</span>
+                <span>De te ondertekenen documenten</span>
+            </h2>
+            <div class="steppy-step-subtitle">Te ondertekenen</div>
+            <div class="steppy-step-content">Onder <strong>“Wachtend op uw handtekening”</strong> vermeldt elk document van welke gemeenschap het komt, in welke hoedanigheid u ondertekent en tot wanneer. De reeds ondertekende documenten staan verderop.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/desktop/step-20.png" alt="2. De te ondertekenen documenten" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">3</span>
+                <span>Het document openen</span>
+            </h2>
+            <div class="steppy-step-subtitle">Te ondertekenen</div>
+            <div class="steppy-step-content">Klik op <strong>“Ondertekenen”</strong> om het document te openen.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/desktop/step-21.png" alt="3. Het document openen" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">4</span>
+                <span>Het document lezen</span>
+            </h2>
+            <div class="steppy-step-subtitle">Handtekening</div>
+            <div class="steppy-step-content">Het volledige document wordt getoond: lees het voordat u ondertekent. De plaats van uw handtekening is erop omkaderd, en <strong>“Naar mijn handtekening”</strong> brengt u erheen.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/desktop/step-23.png" alt="4. Het document lezen" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">5</span>
+                <span>Voor wie u ondertekent</span>
+            </h2>
+            <div class="steppy-step-subtitle">Handtekening</div>
+            <div class="steppy-step-content">Onder de titel vermeldt de applicatie in welke hoedanigheid u ondertekent. Wanneer u voor een deelnemer ondertekent, is dat <strong>“In naam en voor rekening van”</strong> die deelnemer: de ondertekende pdf vermeldt uw naam en de zijne.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/desktop/step-24.png" alt="5. Voor wie u ondertekent" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">6</span>
+                <span>De velden invullen</span>
+            </h2>
+            <div class="steppy-step-subtitle">In te vullen</div>
+            <div class="steppy-step-content">Vul onder <strong>“In te vullen”</strong> de velden in die het document vraagt, hier de plaats. De datum wordt bij het ondertekenen vanzelf ingevuld.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/desktop/step-26.png" alt="6. De velden invullen" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">7</span>
+                <span>Kiezen hoe u ondertekent</span>
+            </h2>
+            <div class="steppy-step-subtitle">Uw handtekening</div>
+            <div class="steppy-step-content">Kies onder <strong>“Uw handtekening”</strong> of u uw naam wilt <strong>“Typen”</strong> of uw handtekening met de vinger of de muis wilt <strong>“Tekenen”</strong>.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/desktop/step-27.png" alt="7. Kiezen hoe u ondertekent" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">8</span>
+                <span>Uw naam typen</span>
+            </h2>
+            <div class="steppy-step-subtitle">Uw handtekening</div>
+            <div class="steppy-step-content">Typ <strong>uw naam, zoals hij zal verschijnen</strong> op het document. Het voorbeeld eronder toont de handtekening die wordt aangebracht.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/desktop/step-28.png" alt="8. Uw naam typen" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">9</span>
+                <span>Uw akkoord geven</span>
+            </h2>
+            <div class="steppy-step-subtitle">Uw handtekening</div>
+            <div class="steppy-step-content">Lees de akkoordtekst en vink hem aan: u bevestigt dat u dit document elektronisch ondertekent. De knop <strong>“Ondertekenen”</strong> wordt actief zodra alles is ingevuld.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/desktop/step-29.png" alt="9. Uw akkoord geven" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">10</span>
+                <span>Ondertekenen</span>
+            </h2>
+            <div class="steppy-step-subtitle">Uw handtekening</div>
+            <div class="steppy-step-content">Klik op <strong>“Ondertekenen”</strong>. Als u zich meer dan enkele minuten geleden hebt aangemeld, vraagt de applicatie u eerst om opnieuw aan te melden: zo wordt bewezen dat u het echt bent. Wat u hebt voorbereid, blijft bewaard.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/desktop/step-30.png" alt="10. Ondertekenen" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">11</span>
+                <span>Het document is ondertekend</span>
+            </h2>
+            <div class="steppy-step-subtitle">Handtekening</div>
+            <div class="steppy-step-content">Uw handtekening wordt aangebracht en het document binnen enkele seconden verzegeld. De beheerder ontvangt het rechtstreeks in het dossier, en u vindt het terug in “Te ondertekenen”, bij de reeds ondertekende documenten.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/desktop/step-32.png" alt="11. Het document is ondertekend" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>        <div class="steppy-layout" data-layout="mobile">
+            
+<div class="steppy-guide">
+    <h1>Een document ondertekenen in de applicatie</h1>
+
+    <div class="steppy-step" data-step-index="1">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">1</span>
+                <span>“Te ondertekenen” openen</span>
+            </h2>
+            <div class="steppy-step-subtitle">Navigatie</div>
+            <div class="steppy-step-content">Tik op het menupictogram om de navigatielade te openen en daarna op “Te ondertekenen”.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/mobile/step-17.png" alt="1. “Te ondertekenen” openen" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="2">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">2</span>
+                <span>De te ondertekenen documenten</span>
+            </h2>
+            <div class="steppy-step-subtitle">Te ondertekenen</div>
+            <div class="steppy-step-content">Onder <strong>“Wachtend op uw handtekening”</strong> vermeldt elk document van welke gemeenschap het komt, in welke hoedanigheid u ondertekent en tot wanneer. De reeds ondertekende documenten staan verderop.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/mobile/step-20.png" alt="2. De te ondertekenen documenten" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="3">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">3</span>
+                <span>Het document openen</span>
+            </h2>
+            <div class="steppy-step-subtitle">Te ondertekenen</div>
+            <div class="steppy-step-content">Klik op <strong>“Ondertekenen”</strong> om het document te openen.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/mobile/step-21.png" alt="3. Het document openen" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="4">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">4</span>
+                <span>Het document lezen</span>
+            </h2>
+            <div class="steppy-step-subtitle">Handtekening</div>
+            <div class="steppy-step-content">Het volledige document wordt getoond: lees het voordat u ondertekent. De plaats van uw handtekening is erop omkaderd, en <strong>“Naar mijn handtekening”</strong> brengt u erheen.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/mobile/step-23.png" alt="4. Het document lezen" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="5">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">5</span>
+                <span>Voor wie u ondertekent</span>
+            </h2>
+            <div class="steppy-step-subtitle">Handtekening</div>
+            <div class="steppy-step-content">Onder de titel vermeldt de applicatie in welke hoedanigheid u ondertekent. Wanneer u voor een deelnemer ondertekent, is dat <strong>“In naam en voor rekening van”</strong> die deelnemer: de ondertekende pdf vermeldt uw naam en de zijne.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/mobile/step-24.png" alt="5. Voor wie u ondertekent" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="6">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">6</span>
+                <span>De velden invullen</span>
+            </h2>
+            <div class="steppy-step-subtitle">In te vullen</div>
+            <div class="steppy-step-content">Vul onder <strong>“In te vullen”</strong> de velden in die het document vraagt, hier de plaats. De datum wordt bij het ondertekenen vanzelf ingevuld.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/mobile/step-26.png" alt="6. De velden invullen" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="7">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">7</span>
+                <span>Kiezen hoe u ondertekent</span>
+            </h2>
+            <div class="steppy-step-subtitle">Uw handtekening</div>
+            <div class="steppy-step-content">Kies onder <strong>“Uw handtekening”</strong> of u uw naam wilt <strong>“Typen”</strong> of uw handtekening met de vinger of de muis wilt <strong>“Tekenen”</strong>.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/mobile/step-27.png" alt="7. Kiezen hoe u ondertekent" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="8">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">8</span>
+                <span>Uw naam typen</span>
+            </h2>
+            <div class="steppy-step-subtitle">Uw handtekening</div>
+            <div class="steppy-step-content">Typ <strong>uw naam, zoals hij zal verschijnen</strong> op het document. Het voorbeeld eronder toont de handtekening die wordt aangebracht.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/mobile/step-28.png" alt="8. Uw naam typen" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="9">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">9</span>
+                <span>Uw akkoord geven</span>
+            </h2>
+            <div class="steppy-step-subtitle">Uw handtekening</div>
+            <div class="steppy-step-content">Lees de akkoordtekst en vink hem aan: u bevestigt dat u dit document elektronisch ondertekent. De knop <strong>“Ondertekenen”</strong> wordt actief zodra alles is ingevuld.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/mobile/step-29.png" alt="9. Uw akkoord geven" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="10">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">10</span>
+                <span>Ondertekenen</span>
+            </h2>
+            <div class="steppy-step-subtitle">Uw handtekening</div>
+            <div class="steppy-step-content">Klik op <strong>“Ondertekenen”</strong>. Als u zich meer dan enkele minuten geleden hebt aangemeld, vraagt de applicatie u eerst om opnieuw aan te melden: zo wordt bewezen dat u het echt bent. Wat u hebt voorbereid, blijft bewaard.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/mobile/step-30.png" alt="10. Ondertekenen" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+    <div class="steppy-step" data-step-index="11">
+        <div class="steppy-step-body">
+            <h2>
+                <span class="steppy-step-number">11</span>
+                <span>Het document is ondertekend</span>
+            </h2>
+            <div class="steppy-step-subtitle">Handtekening</div>
+            <div class="steppy-step-content">Uw handtekening wordt aangebracht en het document binnen enkele seconden verzegeld. De beheerder ontvangt het rechtstreeks in het dossier, en u vindt het terug in “Te ondertekenen”, bij de reeds ondertekende documenten.</div>
+        </div>
+        <div class="steppy-stages">
+            <div class="steppy-stage" data-frame-index="0">
+                <img src="../assets/signature-sign/nl/mobile/step-32.png" alt="11. Het document is ondertekend" loading="lazy">
+                <div class="steppy-cursor" aria-hidden="true"></div>
+                <div class="steppy-ripple" aria-hidden="true"></div>
+                <div class="steppy-kbd" aria-hidden="true"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>    </main>
+
+<footer class="steppy-site-footer">
+    <p>OptimCE · Gegenereerd door Steppy.</p>
+</footer>
+<script>
+  (function () {
+    function bind() {
+      var btn = document.querySelector(".oce-theme-toggle");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        var current = document.documentElement.getAttribute("data-theme") || "light";
+        var next = current === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        try { localStorage.setItem("oce-theme", next); } catch (e) {}
+      });
+    }
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+    else bind();
+  })();
+</script>
+<script>
+      window.__STEPPY_STEPS_BY_LAYOUT__ = {"desktop": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 143.5}, "selector": "[data-testid=\"navbar__menu--signatures\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 243, "x": 8, "y": 143.5}, "selector": "[data-testid=\"navbar__menu--signatures\"]"}}, "screenshot": "../assets/signature-sign/nl/desktop/step-14.png", "viewport": {"height": 900, "width": 1440}}], "index": 1, "screenshot": "../assets/signature-sign/nl/desktop/step-14.png", "subtitle": "Navigatie", "text": "Wanneer een document op uw handtekening wacht, toont de zijbalk \u201cTe ondertekenen\u201d, met het aantal te ondertekenen documenten. Klik erop.", "title": "\u201cTe ondertekenen\u201d openen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/signature-sign/nl/desktop/step-20.png", "viewport": {"height": 900, "width": 1440}}], "index": 2, "screenshot": "../assets/signature-sign/nl/desktop/step-20.png", "subtitle": "Te ondertekenen", "text": "Onder **\u201cWachtend op uw handtekening\u201d** vermeldt elk document van welke gemeenschap het komt, in welke hoedanigheid u ondertekent en tot wanneer. De reeds ondertekende documenten staan verderop.", "title": "De te ondertekenen documenten", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 153.9375, "x": 1095.0625, "y": 214.5}, "selector": "[data-testid=\"signature-inbox__button--sign-0\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 153.9375, "x": 1095.0625, "y": 214.5}, "selector": "[data-testid=\"signature-inbox__button--sign-0\"] button"}}, "screenshot": "../assets/signature-sign/nl/desktop/step-21.png", "viewport": {"height": 900, "width": 1440}}], "index": 3, "screenshot": "../assets/signature-sign/nl/desktop/step-21.png", "subtitle": "Te ondertekenen", "text": "Klik op **\u201cOndertekenen\u201d** om het document te openen.", "title": "Het document openen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/signature-sign/nl/desktop/step-23.png", "viewport": {"height": 900, "width": 1440}}], "index": 4, "screenshot": "../assets/signature-sign/nl/desktop/step-23.png", "subtitle": "Handtekening", "text": "Het volledige document wordt getoond: lees het voordat u ondertekent. De plaats van uw handtekening is erop omkaderd, en **\u201cNaar mijn handtekening\u201d** brengt u erheen.", "title": "Het document lezen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/signature-sign/nl/desktop/step-24.png", "viewport": {"height": 900, "width": 1440}}], "index": 5, "screenshot": "../assets/signature-sign/nl/desktop/step-24.png", "subtitle": "Handtekening", "text": "Onder de titel vermeldt de applicatie in welke hoedanigheid u ondertekent. Wanneer u voor een deelnemer ondertekent, is dat **\u201cIn naam en voor rekening van\u201d** die deelnemer: de ondertekende pdf vermeldt uw naam en de zijne.", "title": "Voor wie u ondertekent", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 318, "x": 995, "y": 357}, "selector": "[data-testid=\"signature-sign__field--place\"]"}, "value": "Namur"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 318, "x": 995, "y": 357}, "selector": "[data-testid=\"signature-sign__field--place\"]"}, "value": "Namur"}, "screenshot": "../assets/signature-sign/nl/desktop/step-26.png", "viewport": {"height": 900, "width": 1440}}], "index": 6, "screenshot": "../assets/signature-sign/nl/desktop/step-26.png", "subtitle": "In te vullen", "text": "Vul onder **\u201cIn te vullen\u201d** de velden in die het document vraagt, hier de plaats. De datum wordt bij het ondertekenen vanzelf ingevuld.", "title": "De velden invullen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 37, "width": 152, "x": 1000, "y": 508}, "selector": "[data-testid=\"signature-sign__tab--typed\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 37, "width": 152, "x": 1000, "y": 508}, "selector": "[data-testid=\"signature-sign__tab--typed\"]"}}, "screenshot": "../assets/signature-sign/nl/desktop/step-27.png", "viewport": {"height": 900, "width": 1440}}], "index": 7, "screenshot": "../assets/signature-sign/nl/desktop/step-27.png", "subtitle": "Uw handtekening", "text": "Kies onder **\u201cUw handtekening\u201d** of u uw naam wilt **\u201cTypen\u201d** of uw handtekening met de vinger of de muis wilt **\u201cTekenen\u201d**.", "title": "Kiezen hoe u ondertekent", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 318, "x": 995, "y": 590}, "selector": "[data-testid=\"signature-sign__typed-name\"]"}, "value": "Demo Two"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 318, "x": 995, "y": 590}, "selector": "[data-testid=\"signature-sign__typed-name\"]"}, "value": "Demo Two"}, "screenshot": "../assets/signature-sign/nl/desktop/step-28.png", "viewport": {"height": 900, "width": 1440}}], "index": 8, "screenshot": "../assets/signature-sign/nl/desktop/step-28.png", "subtitle": "Uw handtekening", "text": "Typ **uw naam, zoals hij zal verschijnen** op het document. Het voorbeeld eronder toont de handtekening die wordt aangebracht.", "title": "Uw naam typen", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 80, "width": 290, "x": 1023, "y": 736}, "selector": "[data-testid=\"signature-sign__consent-text\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 80, "width": 290, "x": 1023, "y": 736}, "selector": "[data-testid=\"signature-sign__consent-text\"]"}}, "screenshot": "../assets/signature-sign/nl/desktop/step-29.png", "viewport": {"height": 900, "width": 1440}}], "index": 9, "screenshot": "../assets/signature-sign/nl/desktop/step-29.png", "subtitle": "Uw handtekening", "text": "Lees de akkoordtekst en vink hem aan: u bevestigt dat u dit document elektronisch ondertekent. De knop **\u201cOndertekenen\u201d** wordt actief zodra alles is ingevuld.", "title": "Uw akkoord geven", "viewport": {"height": 900, "width": 1440}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 318, "x": 995, "y": 832}, "selector": "[data-testid=\"signature-sign__button--sign\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 318, "x": 995, "y": 832}, "selector": "[data-testid=\"signature-sign__button--sign\"] button"}}, "screenshot": "../assets/signature-sign/nl/desktop/step-30.png", "viewport": {"height": 900, "width": 1440}}], "index": 10, "screenshot": "../assets/signature-sign/nl/desktop/step-30.png", "subtitle": "Uw handtekening", "text": "Klik op **\u201cOndertekenen\u201d**. Als u zich meer dan enkele minuten geleden hebt aangemeld, vraagt de applicatie u eerst om opnieuw aan te melden: zo wordt bewezen dat u het echt bent. Wat u hebt voorbereid, blijft bewaard.", "title": "Ondertekenen", "viewport": {"height": 900, "width": 1440}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/signature-sign/nl/desktop/step-32.png", "viewport": {"height": 900, "width": 1440}}], "index": 11, "screenshot": "../assets/signature-sign/nl/desktop/step-32.png", "subtitle": "Handtekening", "text": "Uw handtekening wordt aangebracht en het document binnen enkele seconden verzegeld. De beheerder ontvangt het rechtstreeks in het dossier, en u vindt het terug in \u201cTe ondertekenen\u201d, bij de reeds ondertekende documenten.", "title": "Het document is ondertekend", "viewport": {"height": 900, "width": 1440}}], "mobile": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 143.5}, "selector": "[data-testid=\"navbar__menu--signatures\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 36, "width": 284, "x": 8, "y": 143.5}, "selector": "[data-testid=\"navbar__menu--signatures\"]"}}, "screenshot": "../assets/signature-sign/nl/mobile/step-17.png", "viewport": {"height": 844, "width": 390}}], "index": 1, "screenshot": "../assets/signature-sign/nl/mobile/step-17.png", "subtitle": "Navigatie", "text": "Tik op het menupictogram om de navigatielade te openen en daarna op \u201cTe ondertekenen\u201d.", "title": "\u201cTe ondertekenen\u201d openen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/signature-sign/nl/mobile/step-20.png", "viewport": {"height": 844, "width": 390}}], "index": 2, "screenshot": "../assets/signature-sign/nl/mobile/step-20.png", "subtitle": "Te ondertekenen", "text": "Onder **\u201cWachtend op uw handtekening\u201d** vermeldt elk document van welke gemeenschap het komt, in welke hoedanigheid u ondertekent en tot wanneer. De reeds ondertekende documenten staan verderop.", "title": "De te ondertekenen documenten", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 153.9375, "x": 33, "y": 498}, "selector": "[data-testid=\"signature-inbox__button--sign-0\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 153.9375, "x": 33, "y": 498}, "selector": "[data-testid=\"signature-inbox__button--sign-0\"] button"}}, "screenshot": "../assets/signature-sign/nl/mobile/step-21.png", "viewport": {"height": 844, "width": 390}}], "index": 3, "screenshot": "../assets/signature-sign/nl/mobile/step-21.png", "subtitle": "Te ondertekenen", "text": "Klik op **\u201cOndertekenen\u201d** om het document te openen.", "title": "Het document openen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/signature-sign/nl/mobile/step-23.png", "viewport": {"height": 844, "width": 390}}], "index": 4, "screenshot": "../assets/signature-sign/nl/mobile/step-23.png", "subtitle": "Handtekening", "text": "Het volledige document wordt getoond: lees het voordat u ondertekent. De plaats van uw handtekening is erop omkaderd, en **\u201cNaar mijn handtekening\u201d** brengt u erheen.", "title": "Het document lezen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/signature-sign/nl/mobile/step-24.png", "viewport": {"height": 844, "width": 390}}], "index": 5, "screenshot": "../assets/signature-sign/nl/mobile/step-24.png", "subtitle": "Handtekening", "text": "Onder de titel vermeldt de applicatie in welke hoedanigheid u ondertekent. Wanneer u voor een deelnemer ondertekent, is dat **\u201cIn naam en voor rekening van\u201d** die deelnemer: de ondertekende pdf vermeldt uw naam en de zijne.", "title": "Voor wie u ondertekent", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 324, "x": 33, "y": 400.625}, "selector": "[data-testid=\"signature-sign__field--place\"]"}, "value": "Namur"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 324, "x": 33, "y": 400.625}, "selector": "[data-testid=\"signature-sign__field--place\"]"}, "value": "Namur"}, "screenshot": "../assets/signature-sign/nl/mobile/step-26.png", "viewport": {"height": 844, "width": 390}}], "index": 6, "screenshot": "../assets/signature-sign/nl/mobile/step-26.png", "subtitle": "In te vullen", "text": "Vul onder **\u201cIn te vullen\u201d** de velden in die het document vraagt, hier de plaats. De datum wordt bij het ondertekenen vanzelf ingevuld.", "title": "De velden invullen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 37, "width": 155, "x": 38, "y": 551.625}, "selector": "[data-testid=\"signature-sign__tab--typed\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 37, "width": 155, "x": 38, "y": 551.625}, "selector": "[data-testid=\"signature-sign__tab--typed\"]"}}, "screenshot": "../assets/signature-sign/nl/mobile/step-27.png", "viewport": {"height": 844, "width": 390}}], "index": 7, "screenshot": "../assets/signature-sign/nl/mobile/step-27.png", "subtitle": "Uw handtekening", "text": "Kies onder **\u201cUw handtekening\u201d** of u uw naam wilt **\u201cTypen\u201d** of uw handtekening met de vinger of de muis wilt **\u201cTekenen\u201d**.", "title": "Kiezen hoe u ondertekent", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 324, "x": 33, "y": 633.625}, "selector": "[data-testid=\"signature-sign__typed-name\"]"}, "value": "Demo Two"}, "frames": [{"cursor": {"kind": "type", "target": {"bbox": {"height": 42, "width": 324, "x": 33, "y": 633.625}, "selector": "[data-testid=\"signature-sign__typed-name\"]"}, "value": "Demo Two"}, "screenshot": "../assets/signature-sign/nl/mobile/step-28.png", "viewport": {"height": 844, "width": 390}}], "index": 8, "screenshot": "../assets/signature-sign/nl/mobile/step-28.png", "subtitle": "Uw handtekening", "text": "Typ **uw naam, zoals hij zal verschijnen** op het document. Het voorbeeld eronder toont de handtekening die wordt aangebracht.", "title": "Uw naam typen", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 80, "width": 296, "x": 61, "y": 763.625}, "selector": "[data-testid=\"signature-sign__consent-text\"]"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 80, "width": 296, "x": 61, "y": 763.625}, "selector": "[data-testid=\"signature-sign__consent-text\"]"}}, "screenshot": "../assets/signature-sign/nl/mobile/step-29.png", "viewport": {"height": 844, "width": 390}}], "index": 9, "screenshot": "../assets/signature-sign/nl/mobile/step-29.png", "subtitle": "Uw handtekening", "text": "Lees de akkoordtekst en vink hem aan: u bevestigt dat u dit document elektronisch ondertekent. De knop **\u201cOndertekenen\u201d** wordt actief zodra alles is ingevuld.", "title": "Uw akkoord geven", "viewport": {"height": 844, "width": 390}}, {"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 324, "x": 33, "y": 718.625}, "selector": "[data-testid=\"signature-sign__button--sign\"] button"}}, "frames": [{"cursor": {"kind": "click", "target": {"bbox": {"height": 42, "width": 324, "x": 33, "y": 718.625}, "selector": "[data-testid=\"signature-sign__button--sign\"] button"}}, "screenshot": "../assets/signature-sign/nl/mobile/step-30.png", "viewport": {"height": 844, "width": 390}}], "index": 10, "screenshot": "../assets/signature-sign/nl/mobile/step-30.png", "subtitle": "Uw handtekening", "text": "Klik op **\u201cOndertekenen\u201d**. Als u zich meer dan enkele minuten geleden hebt aangemeld, vraagt de applicatie u eerst om opnieuw aan te melden: zo wordt bewezen dat u het echt bent. Wat u hebt voorbereid, blijft bewaard.", "title": "Ondertekenen", "viewport": {"height": 844, "width": 390}}, {"cursor": null, "frames": [{"cursor": null, "screenshot": "../assets/signature-sign/nl/mobile/step-32.png", "viewport": {"height": 844, "width": 390}}], "index": 11, "screenshot": "../assets/signature-sign/nl/mobile/step-32.png", "subtitle": "Handtekening", "text": "Uw handtekening wordt aangebracht en het document binnen enkele seconden verzegeld. De beheerder ontvangt het rechtstreeks in het dossier, en u vindt het terug in \u201cTe ondertekenen\u201d, bij de reeds ondertekende documenten.", "title": "Het document is ondertekend", "viewport": {"height": 844, "width": 390}}]};
+      window.__STEPPY_ACTIVE_LAYOUT__ = (window.SteppyDetect && window.SteppyDetect.layout) || "desktop";
+      window.__STEPPY_STEPS__ = window.__STEPPY_STEPS_BY_LAYOUT__[window.__STEPPY_ACTIVE_LAYOUT__] || [];
+      window.__STEPPY_TIMINGS__ = {"action_ms": 300, "post_action_ms": 150, "pre_action_ms": 200, "travel_speed_px_per_ms": 1.5};
+    </script>
+    <script>
+      // "Step N of M" bar: follows the step nearest the top of the viewport, in
+      // the layout currently shown (the desktop and mobile fragments are both in
+      // the page, one hidden). The bar is decoration: aria-hidden.
+      (function () {
+        var bar = document.querySelector(".oce-progress");
+        if (!bar || !("IntersectionObserver" in window)) return;
+        var nEl = bar.querySelector("[data-oce-step]");
+        var totalEl = bar.querySelector("[data-oce-total]");
+        var fill = bar.querySelector(".oce-progress-fill");
+        var observer = null;
+        function setStep(i, total) {
+          nEl.textContent = String(i);
+          totalEl.textContent = String(total);
+          fill.style.width = (total ? Math.round(i / total * 100) : 0) + "%";
+        }
+        function watch() {
+          if (observer) observer.disconnect();
+          var scope = document.querySelector('.steppy-layout[data-layout="' + window.__STEPPY_ACTIVE_LAYOUT__ + '"]') || document;
+          var steps = Array.prototype.slice.call(scope.querySelectorAll(".steppy-step"));
+          if (!steps.length) { bar.hidden = true; return; }
+          bar.hidden = false;
+          setStep(1, steps.length);
+          observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) setStep(steps.indexOf(e.target) + 1, steps.length);
+            });
+          }, { rootMargin: "-45% 0px -50% 0px" });
+          steps.forEach(function (s) { observer.observe(s); });
+        }
+        watch();
+        document.addEventListener("steppy:layout-change", watch);
+      })();
+    </script>
+    <script src="../assets/cursor.js" defer></script>
+</body>
+</html>

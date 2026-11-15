@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OptimCE — Gebruikershandleidingen</title>
-    <meta name="description" content="Stapsgewijze handleidingen voor OptimCE: een energiegemeenschap beheren — haar leden, meters, verdeelsleutels, deeloperaties en facturatie.">
+    <meta name="description" content="Stapsgewijze handleidingen voor OptimCE, per rol: lid, manager en beheerder van een energiegemeenschap — leden, meters, verdeelsleutels, deeloperaties en facturatie.">
     <link rel="canonical" href="https://guide.optimce.be/index.nl.html">
     <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/">
     <link rel="alternate" hreflang="en" href="https://guide.optimce.be/index.en.html">
@@ -13,10 +13,12 @@
     <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="OptimCE — Gebruikershandleidingen">
-    <meta property="og:description" content="Stapsgewijze handleidingen voor OptimCE: een energiegemeenschap beheren — haar leden, meters, verdeelsleutels, deeloperaties en facturatie.">
+    <meta property="og:description" content="Stapsgewijze handleidingen voor OptimCE, per rol: lid, manager en beheerder van een energiegemeenschap — leden, meters, verdeelsleutels, deeloperaties en facturatie.">
     <meta property="og:url" content="https://guide.optimce.be/index.nl.html">
     <meta property="og:site_name" content="OptimCE — Gebruikershandleidingen">
     <meta name="twitter:card" content="summary">
+    <script type="application/json" id="steppy-detect-config">{"breakpoints": null, "defaultLayout": null, "defaultLocale": "fr", "hrefFor": {"de": "./index.de.html", "en": "./index.en.html", "fr": "./index.html", "nl": "./index.nl.html"}, "layout": true, "layouts": [], "locale": true, "locales": ["fr", "en", "nl", "de"], "pageLocale": "nl", "storageKeys": {"layout": "steppy:layout", "locale": "steppy:locale"}}</script>
+    <script src="assets/steppy-detect.js"></script>
     <link rel="stylesheet" href="./assets/guides.css">
     <script>
       (function () {
@@ -25,26 +27,24 @@
           var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
           document.documentElement.setAttribute("data-theme", savedTheme || (prefersDark ? "dark" : "light"));
         } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
-        // The file we just loaded IS the language choice — record it so
-        // interactive.html (one URL for every locale) opens in the same one.
-        try { localStorage.setItem("oce-lang", "nl"); } catch (e) {}
+        document.documentElement.classList.add("oce-js");
       })();
     </script>
 </head>
-<body>
-    <header class="steppy-site-header">
-        <a class="oce-logo-link" href="./index.nl.html" aria-label="OptimCE — Gebruikershandleidingen">
-            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
-                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
-                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
-                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
-                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
-                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
-            </svg>
-        </a>
-        <span class="steppy-site-title">OptimCE — Gebruikershandleidingen</span>
-
-        <div class="steppy-header-actions">
+<body class="oce-page-home">
+    <div class="oce-band">
+<header class="steppy-site-header">
+    <a class="oce-logo-link" href="index.nl.html" aria-label="OptimCE — Gebruikershandleidingen">
+        <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+            <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+            <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+            <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+            <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+            <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+        </svg>
+    </a>
+    <a class="steppy-site-title" href="index.nl.html">OptimCE — Gebruikershandleidingen</a>
+    <div class="steppy-header-actions">
 <label class="steppy-locale-select">
     <span class="steppy-visually-hidden">Taal</span>
     <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
@@ -55,8 +55,20 @@
   (function () {
     var sel = document.querySelector(".steppy-locale-select select");
     if (!sel) return;
+    // A pick is the reader's own choice: store it under steppy-detect.js's key
+    // (autoDetect.storageKeys.locale) so detection never overrides it. That
+    // script only sees link clicks, not a <select>. Storage blocked → carry it
+    // as ?lang= instead, as steppy-detect.js does for its links.
     sel.addEventListener("change", function () {
-      if (sel.value) window.location.href = sel.value;
+      if (!sel.value) return;
+      var href = sel.value, loc = sel.options[sel.selectedIndex].lang, key = null;
+      try { key = JSON.parse(document.getElementById("steppy-detect-config").textContent).storageKeys.locale; } catch (e) {}
+      if (key && loc) {
+        var stored = false;
+        try { localStorage.setItem(key, loc); stored = true; } catch (e) {}
+        if (!stored) href += (href.indexOf("?") === -1 ? "?" : "&") + "lang=" + encodeURIComponent(loc);
+      }
+      window.location.href = href;
     });
     // Back from the language just picked can restore this page from the
     // bfcache with that option still showing — snap it back to this page's own.
@@ -65,134 +77,408 @@
       if (own) sel.value = own.value;
     });
   })();
-</script>            <button type="button" class="oce-theme-toggle" aria-label="Licht/donker thema wisselen" title="Thema wisselen">
-                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                </svg>
-                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <circle cx="12" cy="12" r="4"/>
-                    <path d="M12 2v2"/><path d="M12 20v2"/>
-                    <path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/>
-                    <path d="M2 12h2"/><path d="M20 12h2"/>
-                    <path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
-                </svg>
-            </button>
+</script>        <button type="button" class="oce-theme-toggle" aria-label="Licht/donker thema wisselen" title="Licht/donker thema wisselen">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+    </div>
+</header>
+        <div class="oce-band-inner">
+            <p class="oce-eyebrow">Gebruikershandleidingen · 65 handleidingen</p>
+            <h1 class="oce-display">Leer OptimCE in uw eigen tempo, rol na rol.</h1>
+            <p class="oce-lede">Elke rol voegt zijn handleidingen toe aan die van de vorige: een beheerder doet alles wat een manager doet, en een manager alles wat een lid doet. Kies de uwe.</p>
+            <nav class="oce-tabs" aria-label="Uw rol">
+                <a class="oce-tab oce-role--everyone" href="#role-everyone" data-role="everyone"><span class="oce-dot" aria-hidden="true"></span>Iedereen</a>
+                <a class="oce-tab oce-role--member" href="#role-member" data-role="member"><span class="oce-dot" aria-hidden="true"></span>Lid</a>
+                <a class="oce-tab oce-role--manager" href="#role-manager" data-role="manager"><span class="oce-dot" aria-hidden="true"></span>Manager</a>
+                <a class="oce-tab oce-role--admin" href="#role-admin" data-role="admin"><span class="oce-dot" aria-hidden="true"></span>Beheerder</a>
+            </nav>
         </div>
-    </header>
+    </div>
 
-    <main class="steppy-main">
-        <section class="steppy-index">
-            <div class="steppy-hero">
-                <div class="steppy-hero-eyebrow">Documentatie</div>
-                <h1>OptimCE — Gebruikershandleidingen</h1>
-                <p class="steppy-hero-lede">Stapsgewijze handleidingen om een energiegemeenschap in te richten: aanmelden, ledenbeheer, verdeelsleutels, meters en deeloperaties.</p>
+    <main class="oce-home" data-active="everyone">
+        <section class="oce-ladder" aria-live="polite">
+            <p class="oce-ladder-sum oce-role--everyone" data-role="everyone">Als bezoeker kunt u <strong>10 handleidingen</strong> gebruiken.</p>
+            <p class="oce-ladder-sum oce-role--member" data-role="member">Als lid kunt u <strong>18 handleidingen</strong> gebruiken.</p>
+            <p class="oce-ladder-sum oce-role--manager" data-role="manager">Als manager kunt u <strong>60 handleidingen</strong> gebruiken.</p>
+            <p class="oce-ladder-sum oce-role--admin" data-role="admin">Als beheerder kunt u <strong>65 handleidingen</strong> gebruiken.</p>
+            <ol class="oce-rungs">
+                <li class="oce-rung oce-role--everyone" data-role="everyone">
+                    <span class="oce-rung-mark" aria-hidden="true">0</span>
+                    <span class="oce-rung-text"><span class="oce-rung-name">Iedereen</span><span class="oce-rung-count">+10 handleidingen</span></span>
+                </li>
+                <li class="oce-rung oce-role--member" data-role="member">
+                    <span class="oce-rung-mark" aria-hidden="true">1</span>
+                    <span class="oce-rung-text"><span class="oce-rung-name">Lid</span><span class="oce-rung-count">+8 handleidingen</span></span>
+                </li>
+                <li class="oce-rung oce-role--manager" data-role="manager">
+                    <span class="oce-rung-mark" aria-hidden="true">2</span>
+                    <span class="oce-rung-text"><span class="oce-rung-name">Manager</span><span class="oce-rung-count">+42 handleidingen</span></span>
+                </li>
+                <li class="oce-rung oce-role--admin" data-role="admin">
+                    <span class="oce-rung-mark" aria-hidden="true">3</span>
+                    <span class="oce-rung-text"><span class="oce-rung-name">Beheerder</span><span class="oce-rung-count">+5 handleidingen</span></span>
+                </li>
+            </ol>
+        </section>
+
+        <div class="oce-role-secs">
+<section class="oce-role-sec oce-role--everyone" id="role-everyone" data-role="everyone" aria-labelledby="h-everyone">
+            <header class="oce-role-head">
+                <p class="oce-inherited-note">Inbegrepen in uw rol</p>
+                <h2 id="h-everyone"><a href="./everyone/nl.html">Iedereen</a><span class="oce-count">10 handleidingen</span></h2>
+<p>Vóór of buiten een gemeenschap: aanmelden, uw account beheren, een gemeenschap vinden of aanmaken.</p>            </header>
+
+<div class="oce-tour">
+                <a class="oce-tour-link" href="./onboarding-welcome/nl.html">
+                    <span class="oce-tour-text">
+                        <span class="oce-tour-eyebrow">Begin hier · rondleiding</span>
+                        <span class="oce-tour-title">Welkom bij OptimCE</span>
+                        <span class="oce-tour-cta">Rondleiding starten</span>
+                    </span>
+                    <span class="oce-tour-shot"><img src="./assets/onboarding-welcome/nl/desktop/step-08.png" alt="" loading="lazy" width="1440" height="900"></span>
+                </a>
+                <ul class="oce-tour-more">
+                    <li><a href="./onboarding-welcome-community/nl.html">Welkom — u hebt al een gemeenschap</a></li>
+                </ul>
             </div>
 
-            <ul class="steppy-index-list">
-                <li class="steppy-index-onboarding">
-                    <a href="./getting-started/nl.html">
-                        <div>
-                            <span class="steppy-index-eyebrow">Begeleid traject</span>
-                            <span class="steppy-index-title">Eerste stappen</span>
-                            <span class="steppy-index-desc">Het aanbevolen traject om de applicatie van begin tot eind te ontdekken, in 11 stappen.</span>
-                        </div>
-                        <span class="steppy-index-meta">11 stappen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./welcome-tours/nl.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Welkomstrondleidingen</span>
-                        <span class="steppy-index-desc">Eén rondleiding per rol: bij uw aankomst, en daarna wanneer u lid, manager of beheerder wordt.</span>
-                        <span class="steppy-index-meta">4 handleidingen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./account/nl.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Account</span>
-                        <span class="steppy-index-desc">Aanmelden en profielbeheer.</span>
-                        <span class="steppy-index-meta">4 handleidingen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./dashboard/nl.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Startpagina en dashboard</span>
-                        <span class="steppy-index-desc">Uw weg vinden na het aanmelden: de persoonlijke startpagina en het dashboard van een gemeenschap.</span>
-                        <span class="steppy-index-meta">3 handleidingen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./community/nl.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Gemeenschap</span>
-                        <span class="steppy-index-desc">Een gemeenschap activeren en de gedeelde verdeelsleutels en meters bekijken.</span>
-                        <span class="steppy-index-meta">9 handleidingen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./keys/nl.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Verdeelsleutels</span>
-                        <span class="steppy-index-desc">Verdeelsleutels aanmaken (formulier of wizard).</span>
-                        <span class="steppy-index-meta">5 handleidingen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./members/nl.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Leden</span>
-                        <span class="steppy-index-desc">De leden van de gemeenschap beheren.</span>
-                        <span class="steppy-index-meta">6 handleidingen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./meters/nl.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Meters</span>
-                        <span class="steppy-index-desc">Meters aanmaken en configureren.</span>
-                        <span class="steppy-index-meta">5 handleidingen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./sharing/nl.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Deeloperaties</span>
-                        <span class="steppy-index-desc">Deeloperaties aanmaken en inspecteren.</span>
-                        <span class="steppy-index-meta">5 handleidingen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./annexes/nl.html">
-                        <span class="steppy-index-eyebrow">Module</span>
-                        <span class="steppy-index-title">Annexdiensten</span>
-                        <span class="steppy-index-desc">Abonnementen op annexdiensten beheren en verdeelsleutels genereren met het OLAGSA-algoritme.</span>
-                        <span class="steppy-index-meta">7 handleidingen</span>
-                    </a>
-                </li>
-            </ul>
+            <section class="oce-module" aria-labelledby="h-account">
+                <div class="oce-module-head">
+                    <h3 id="h-account"><a href="./account/nl.html">Account</a></h3>
+                    <span class="oce-count">4 handleidingen</span>
+                </div>
+<p class="oce-module-desc">Aanmelden, uw profiel bijwerken en uw meldingen instellen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./auth-login/nl.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Aanmelden</span></a></li>
+                    <li><a class="oce-card" href="./profile-update/nl.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Uw profiel bijwerken</span></a></li>
+                    <li><a class="oce-card" href="./notification-view/nl.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Uw meldingen bekijken</span></a></li>
+                    <li><a class="oce-card" href="./notification-preferences/nl.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Uw meldingen instellen</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-communities">
+                <div class="oce-module-head">
+                    <h3 id="h-communities"><a href="./communities/nl.html">Startpagina en gemeenschappen</a></h3>
+                    <span class="oce-count">4 handleidingen</span>
+                </div>
+<p class="oce-module-desc">Uw startpagina lezen, een gemeenschap openen, er een aanmaken of de openbare gemeenschappen verkennen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./home-overview/nl.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Uw startpagina</span></a></li>
+                    <li><a class="oce-card" href="./community-activate/nl.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Een gemeenschap activeren</span></a></li>
+                    <li><a class="oce-card" href="./community-create/nl.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Een gemeenschap aanmaken</span></a></li>
+                    <li><a class="oce-card" href="./public-communities-browse/nl.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Openbare gemeenschappen verkennen</span></a></li>
+                </ul>
+            </section>
         </section>
+<section class="oce-role-sec oce-role--member" id="role-member" data-role="member" aria-labelledby="h-member">
+            <header class="oce-role-head">
+                <p class="oce-inherited-note">Inbegrepen in uw rol</p>
+                <h2 id="h-member"><a href="./member/nl.html">Lid</a><span class="oce-count">8 handleidingen</span></h2>
+<p>U maakt deel uit van een gemeenschap: volg uw energie, uw facturen en wat er over u is ingediend.</p>            </header>
+
+<div class="oce-tour">
+                <a class="oce-tour-link" href="./onboarding-member/nl.html">
+                    <span class="oce-tour-text">
+                        <span class="oce-tour-eyebrow">Begin hier · rondleiding</span>
+                        <span class="oce-tour-title">U bent lid</span>
+                        <span class="oce-tour-cta">Rondleiding starten</span>
+                    </span>
+                    <span class="oce-tour-shot"><img src="./assets/onboarding-member/nl/desktop/step-09.png" alt="" loading="lazy" width="1440" height="900"></span>
+                </a>
+            </div>
+
+            <section class="oce-module" aria-labelledby="h-member-community">
+                <div class="oce-module-head">
+                    <h3 id="h-member-community"><a href="./member-community/nl.html">Mijn gemeenschap</a></h3>
+                    <span class="oce-count">3 handleidingen</span>
+                </div>
+<p class="oce-module-desc">Het ledendashboard, uw fiche, uw meter en de managers die u kunt contacteren.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./dashboard-member-tour/nl.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Het ledendashboard</span></a></li>
+                    <li><a class="oce-card" href="./member-self-views/nl.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Uw eigen fiche en meter raadplegen</span></a></li>
+                    <li><a class="oce-card" href="./community-managers-view/nl.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">De beheerders van uw gemeenschap bekijken</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-member-modules">
+                <div class="oce-module-head">
+                    <h3 id="h-member-modules"><a href="./member-modules/nl.html">Mijn modules</a></h3>
+                    <span class="oce-count">4 handleidingen</span>
+                </div>
+<p class="oce-module-desc">Uw factuur, de aangiftes over u, de te ondertekenen documenten en de productie van uw deelactiviteit.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./billing-member-view/nl.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Uw factuur bekijken</span></a></li>
+                    <li><a class="oce-card" href="./admin-doc-my-filings/nl.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Zien wat er over u is ingediend</span></a></li>
+                    <li><a class="oce-card" href="./signature-sign/nl.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Een document ondertekenen in de applicatie</span></a></li>
+                    <li><a class="oce-card" href="./live-data-member-view/nl.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">De productie van mijn deelactiviteit bekijken</span></a></li>
+                </ul>
+            </section>
+        </section>
+<section class="oce-role-sec oce-role--manager" id="role-manager" data-role="manager" aria-labelledby="h-manager">
+            <header class="oce-role-head">
+                <p class="oce-inherited-note">Inbegrepen in uw rol</p>
+                <h2 id="h-manager"><a href="./manager/nl.html">Manager</a><span class="oce-count">42 handleidingen</span></h2>
+<p>De gemeenschap dagelijks runnen: leden, meters, verdeelsleutels, deeloperaties en modules.</p>            </header>
+
+<div class="oce-tour">
+                <a class="oce-tour-link" href="./onboarding-manager/nl.html">
+                    <span class="oce-tour-text">
+                        <span class="oce-tour-eyebrow">Begin hier · rondleiding</span>
+                        <span class="oce-tour-title">U bent manager</span>
+                        <span class="oce-tour-cta">Rondleiding starten</span>
+                    </span>
+                    <span class="oce-tour-shot"><img src="./assets/onboarding-manager/nl/desktop/step-10.png" alt="" loading="lazy" width="1440" height="900"></span>
+                </a>
+                <ul class="oce-tour-more">
+                    <li><a href="./getting-started/nl.html">Eerste stappen — een gemeenschap van A tot Z inrichten · 11 handleidingen</a></li>
+                </ul>
+            </div>
+
+            <section class="oce-module" aria-labelledby="h-dashboard">
+                <div class="oce-module-head">
+                    <h3 id="h-dashboard"><a href="./dashboard/nl.html">Dashboard en opvolging</a></h3>
+                    <span class="oce-count">2 handleidingen</span>
+                </div>
+<p class="oce-module-desc">Het dashboard van de gemeenschap en het auditlogboek.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./dashboard-manager-tour/nl.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Het beheerdersdashboard</span></a></li>
+                    <li><a class="oce-card" href="./audit-log-inspect/nl.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Het auditlogboek raadplegen</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-keys">
+                <div class="oce-module-head">
+                    <h3 id="h-keys"><a href="./keys/nl.html">Verdeelsleutels</a></h3>
+                    <span class="oce-count">6 handleidingen</span>
+                </div>
+<p class="oce-module-desc">Verdeelsleutels aanmaken, bewerken, controleren en verwijderen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./key-create-wizard/nl.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Een verdeelsleutel aanmaken (wizard)</span></a></li>
+                    <li><a class="oce-card" href="./key-create-gridform/nl.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Een verdeelsleutel aanmaken (formulier)</span></a></li>
+                    <li><a class="oce-card" href="./key-update/nl.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Een verdeelsleutel bewerken</span></a></li>
+                    <li><a class="oce-card" href="./key-delete/nl.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Een verdeelsleutel verwijderen</span></a></li>
+                    <li><a class="oce-card" href="./key-helper-tour/nl.html"><span class="oce-card-num" aria-hidden="true">05</span><span class="oce-card-title">Contextuele hulp — het (i)-pictogram</span></a></li>
+                    <li><a class="oce-card" href="./community-join-inspect-key/nl.html"><span class="oce-card-num" aria-hidden="true">06</span><span class="oce-card-title">Lid worden van een gemeenschap — de verdeelsleutel controleren</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-members">
+                <div class="oce-module-head">
+                    <h3 id="h-members"><a href="./members/nl.html">Leden</a></h3>
+                    <span class="oce-count">5 handleidingen</span>
+                </div>
+<p class="oce-module-desc">Leden toevoegen, particulieren of bedrijven, ze wijzigen, deactiveren en hun documenten toevoegen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./member-create/nl.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Een lid aanmaken</span></a></li>
+                    <li><a class="oce-card" href="./member-create-company/nl.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Een bedrijf als lid aanmaken</span></a></li>
+                    <li><a class="oce-card" href="./member-update/nl.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Een lid wijzigen</span></a></li>
+                    <li><a class="oce-card" href="./member-status-lifecycle/nl.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Een lid deactiveren en opnieuw activeren</span></a></li>
+                    <li><a class="oce-card" href="./member-document-upload/nl.html"><span class="oce-card-num" aria-hidden="true">05</span><span class="oce-card-title">Een document aan een lid toevoegen</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-meters">
+                <div class="oce-module-head">
+                    <h3 id="h-meters"><a href="./meters/nl.html">Meters</a></h3>
+                    <span class="oce-count">6 handleidingen</span>
+                </div>
+<p class="oce-module-desc">Meters aanmaken en configureren, hun adressen corrigeren en ze deactiveren.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./meter-create/nl.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Een meter aanmaken</span></a></li>
+                    <li><a class="oce-card" href="./meter-update/nl.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Een meter wijzigen</span></a></li>
+                    <li><a class="oce-card" href="./meter-data-update/nl.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">De metergegevens wijzigen</span></a></li>
+                    <li><a class="oce-card" href="./meter-address-repair/nl.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">De adressen van meters corrigeren</span></a></li>
+                    <li><a class="oce-card" href="./meter-deactivate/nl.html"><span class="oce-card-num" aria-hidden="true">05</span><span class="oce-card-title">Een meter deactiveren</span></a></li>
+                    <li><a class="oce-card" href="./community-join-inspect-meter/nl.html"><span class="oce-card-num" aria-hidden="true">06</span><span class="oce-card-title">Lid worden van een gemeenschap — de meter controleren</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-sharing">
+                <div class="oce-module-head">
+                    <h3 id="h-sharing"><a href="./sharing/nl.html">Deeloperaties</a></h3>
+                    <span class="oce-count">5 handleidingen</span>
+                </div>
+<p class="oce-module-desc">Deeloperaties aanmaken, inspecteren en bewerken, er meters aan toevoegen en ze openbaar maken.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./sharing-op-create/nl.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Een deeloperatie aanmaken</span></a></li>
+                    <li><a class="oce-card" href="./sharing-op-inspect/nl.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Een deeloperatie inspecteren</span></a></li>
+                    <li><a class="oce-card" href="./sharing-op-add-meter/nl.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Een meter aan een deeloperatie toevoegen</span></a></li>
+                    <li><a class="oce-card" href="./sharing-op-set-public/nl.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Een deeloperatie openbaar maken</span></a></li>
+                    <li><a class="oce-card" href="./sharing-op-update/nl.html"><span class="oce-card-num" aria-hidden="true">05</span><span class="oce-card-title">Een deeloperatie bewerken</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-news">
+                <div class="oce-module-head">
+                    <h3 id="h-news"><a href="./news/nl.html">Nieuws</a></h3>
+                    <span class="oce-count">2 handleidingen</span>
+                </div>
+<p class="oce-module-desc">Nieuwsberichten en peilingen publiceren op het prikbord van de gemeenschap.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./news-create/nl.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Een nieuwsbericht publiceren</span></a></li>
+                    <li><a class="oce-card" href="./news-poll-create/nl.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Een peiling aanmaken</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-key-generation">
+                <div class="oce-module-head">
+                    <h3 id="h-key-generation"><a href="./key-generation/nl.html">Sleutelgeneratie en simulatie</a></h3>
+                    <span class="oce-count">4 handleidingen</span>
+                </div>
+<p class="oce-module-desc">Sleutels genereren met het OLAGSA-algoritme en een sleutel testen met echte gegevens.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./algorithm-generate/nl.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Verdeelsleutels genereren (OLAGSA)</span></a></li>
+                    <li><a class="oce-card" href="./algorithm-delete-key/nl.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Een gegenereerde sleutel verwijderen</span></a></li>
+                    <li><a class="oce-card" href="./algorithm-delete-generation/nl.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Een generatie verwijderen</span></a></li>
+                    <li><a class="oce-card" href="./simulation-run/nl.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Een verdeelsleutel simuleren</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-billing">
+                <div class="oce-module-head">
+                    <h3 id="h-billing"><a href="./billing/nl.html">Facturatie</a></h3>
+                    <span class="oce-count">1 handleiding</span>
+                </div>
+<p class="oce-module-desc">Tarieven bepalen voor gedeelde energie, facturen genereren en betalingen opvolgen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./billing-tarification-pay/nl.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Een deeloperatie factureren, van tarief tot betaling</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-administrative-document">
+                <div class="oce-module-head">
+                    <h3 id="h-administrative-document"><a href="./administrative-document/nl.html">Administratieve documenten</a></h3>
+                    <span class="oce-count">7 handleidingen</span>
+                </div>
+<p class="oce-module-desc">De dossiers opvolgen die bij de CWaPE en de netbeheerder zijn ingediend, met hun documenten, elektronische handtekeningen en termijnen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./admin-doc-dossier-create/nl.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Een procedure openen</span></a></li>
+                    <li><a class="oce-card" href="./admin-doc-document-generate/nl.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Een document genereren vanuit het CRM</span></a></li>
+                    <li><a class="oce-card" href="./admin-doc-upload-version/nl.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Een bestand bij een document voegen</span></a></li>
+                    <li><a class="oce-card" href="./admin-doc-submit-deadline/nl.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Een procedure versturen en de termijn opvolgen</span></a></li>
+                    <li><a class="oce-card" href="./signature-request/nl.html"><span class="oce-card-num" aria-hidden="true">05</span><span class="oce-card-title">Een elektronische handtekening vragen</span></a></li>
+                    <li><a class="oce-card" href="./signature-manager-follows/nl.html"><span class="oce-card-num" aria-hidden="true">06</span><span class="oce-card-title">De handtekeningverzoeken volgen</span></a></li>
+                    <li><a class="oce-card" href="./signature-signed-evidence/nl.html"><span class="oce-card-num" aria-hidden="true">07</span><span class="oce-card-title">Een ondertekend document en het bewijs ervan terugvinden</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-live-data">
+                <div class="oce-module-head">
+                    <h3 id="h-live-data"><a href="./live-data/nl.html">Live gegevens</a></h3>
+                    <span class="oce-count">3 handleidingen</span>
+                </div>
+<p class="oce-module-desc">Per kwartier volgen wat de bij de leden geïnstalleerde apparaten meten, en die apparaten beheren.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./live-data-explore/nl.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Live gegevens ontdekken</span></a></li>
+                    <li><a class="oce-card" href="./live-data-device-enrol/nl.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Een apparaat koppelen</span></a></li>
+                    <li><a class="oce-card" href="./live-data-sharing-operations/nl.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Het delen binnen een deelactiviteit volgen</span></a></li>
+                </ul>
+            </section>
+        </section>
+<section class="oce-role-sec oce-role--admin" id="role-admin" data-role="admin" aria-labelledby="h-admin">
+            <header class="oce-role-head">
+                <p class="oce-inherited-note">Inbegrepen in uw rol</p>
+                <h2 id="h-admin"><a href="./admin/nl.html">Beheerder</a><span class="oce-count">5 handleidingen</span></h2>
+<p>Wat alleen een beheerder kan: modules activeren, managers uitnodigen, rollen wijzigen en de juridische gegevens bewerken.</p>            </header>
+
+<div class="oce-tour">
+                <a class="oce-tour-link" href="./onboarding-admin/nl.html">
+                    <span class="oce-tour-text">
+                        <span class="oce-tour-eyebrow">Begin hier · rondleiding</span>
+                        <span class="oce-tour-title">U bent beheerder</span>
+                        <span class="oce-tour-cta">Rondleiding starten</span>
+                    </span>
+                    <span class="oce-tour-shot"><img src="./assets/onboarding-admin/nl/desktop/step-12.png" alt="" loading="lazy" width="1440" height="900"></span>
+                </a>
+            </div>
+
+            <section class="oce-module" aria-labelledby="h-admin-community">
+                <div class="oce-module-head">
+                    <h3 id="h-admin-community"><a href="./admin-community/nl.html">Gebruikers en gegevens</a></h3>
+                    <span class="oce-count">2 handleidingen</span>
+                </div>
+<p class="oce-module-desc">Managers uitnodigen, rollen wijzigen en de fiche van de gemeenschap aanvullen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./community-users-manage/nl.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">De gebruikers van de gemeenschap beheren</span></a></li>
+                    <li><a class="oce-card" href="./community-info-update/nl.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">De gemeenschapsinfo bijwerken</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-admin-modules">
+                <div class="oce-module-head">
+                    <h3 id="h-admin-modules"><a href="./admin-modules/nl.html">Modules</a></h3>
+                    <span class="oce-count">2 handleidingen</span>
+                </div>
+<p class="oce-module-desc">Zich abonneren op een annexdienst of het abonnement opzeggen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./annexes-subscribe/nl.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Abonneren op een annexdienst</span></a></li>
+                    <li><a class="oce-card" href="./annexes-unsubscribe/nl.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Een annexdienst opzeggen</span></a></li>
+                </ul>
+            </section>
+        </section>
+        </div>
     </main>
 
-    <footer class="steppy-site-footer">
-        <p>Gegenereerd door Steppy.</p>
-    </footer>
+<footer class="steppy-site-footer">
+    <p>OptimCE · Gegenereerd door Steppy.</p>
+</footer>
+<script>
+  (function () {
+    function bind() {
+      var btn = document.querySelector(".oce-theme-toggle");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        var current = document.documentElement.getAttribute("data-theme") || "light";
+        var next = current === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        try { localStorage.setItem("oce-theme", next); } catch (e) {}
+      });
+    }
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+    else bind();
+  })();
+</script>
 
     <script>
       (function () {
-        function bind() {
-          var btn = document.querySelector(".oce-theme-toggle");
-          if (!btn) return;
-          btn.addEventListener("click", function () {
-            var current = document.documentElement.getAttribute("data-theme") || "light";
-            var next = current === "dark" ? "light" : "dark";
-            document.documentElement.setAttribute("data-theme", next);
-            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+        var root = document.querySelector(".oce-home");
+        if (!root) return;
+        var order = ["everyone", "member", "manager", "admin"];
+        var tabs = Array.prototype.slice.call(document.querySelectorAll(".oce-tab"));
+        var secs = Array.prototype.slice.call(document.querySelectorAll(".oce-role-sec"));
+        var rungs = Array.prototype.slice.call(document.querySelectorAll(".oce-rung"));
+        var sums = Array.prototype.slice.call(document.querySelectorAll(".oce-ladder-sum"));
+        var tablist = document.querySelector(".oce-tabs");
+        tablist.setAttribute("role", "tablist");
+        tabs.forEach(function (tab) {
+          tab.setAttribute("role", "tab");
+          tab.setAttribute("aria-controls", "role-" + tab.getAttribute("data-role"));
+        });
+        // "#manager" (what the breadcrumbs link to, matches no id so the page
+        // does not jump) or "#role-manager" (the no-JS anchor).
+        function roleFromHash() { return (location.hash || "").replace(/^#(role-)?/, ""); }
+        function activate(role, remember) {
+          var ai = order.indexOf(role);
+          if (ai < 0) return;
+          root.setAttribute("data-active", role);
+          tabs.forEach(function (tab) {
+            var on = tab.getAttribute("data-role") === role;
+            tab.setAttribute("aria-selected", on ? "true" : "false");
+            tab.tabIndex = on ? 0 : -1;
           });
+          secs.forEach(function (sec) {
+            var ri = order.indexOf(sec.getAttribute("data-role"));
+            sec.hidden = ri > ai;
+            sec.style.order = String(ai - ri);
+            sec.classList.toggle("is-active", ri === ai);
+            sec.classList.toggle("is-inherited", ri < ai);
+          });
+          rungs.forEach(function (rung) {
+            var ri = order.indexOf(rung.getAttribute("data-role"));
+            rung.classList.toggle("is-reached", ri <= ai);
+            rung.classList.toggle("is-current", ri === ai);
+          });
+          sums.forEach(function (sum) { sum.hidden = sum.getAttribute("data-role") !== role; });
+          if (remember) {
+            try { localStorage.setItem("oce-role", role); } catch (e) {}
+            try { history.replaceState(null, "", "#" + role); } catch (e) {}
+          }
         }
-        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
-        else bind();
+        tabs.forEach(function (tab, i) {
+          tab.addEventListener("click", function (ev) {
+            ev.preventDefault();
+            activate(tab.getAttribute("data-role"), true);
+          });
+          tab.addEventListener("keydown", function (ev) {
+            var step = ev.key === "ArrowRight" ? 1 : ev.key === "ArrowLeft" ? -1 : 0;
+            if (!step) return;
+            ev.preventDefault();
+            var next = tabs[(i + step + tabs.length) % tabs.length];
+            next.focus();
+            activate(next.getAttribute("data-role"), true);
+          });
+        });
+        var fromHash = roleFromHash();
+        var saved = null;
+        try { saved = localStorage.getItem("oce-role"); } catch (e) {}
+        activate(order.indexOf(fromHash) >= 0 ? fromHash : (order.indexOf(saved) >= 0 ? saved : order[0]), false);
+        window.addEventListener("hashchange", function () {
+          var h = roleFromHash();
+          if (order.indexOf(h) >= 0) activate(h, true);
+        });
       })();
     </script>
 </body>

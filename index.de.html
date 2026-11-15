@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OptimCE — Benutzeranleitungen</title>
-    <meta name="description" content="Schritt-für-Schritt-Anleitungen für OptimCE: eine Energiegemeinschaft verwalten — ihre Mitglieder, Zähler, Verteilungsschlüssel, Teilungsoperationen und Abrechnung.">
+    <meta name="description" content="Schritt-für-Schritt-Anleitungen für OptimCE, nach Rolle: Mitglied, Manager und Administrator einer Energiegemeinschaft — Mitglieder, Zähler, Verteilungsschlüssel, Teilungsoperationen und Abrechnung.">
     <link rel="canonical" href="https://guide.optimce.be/index.de.html">
     <link rel="alternate" hreflang="fr" href="https://guide.optimce.be/">
     <link rel="alternate" hreflang="en" href="https://guide.optimce.be/index.en.html">
@@ -13,10 +13,12 @@
     <link rel="alternate" hreflang="x-default" href="https://guide.optimce.be/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="OptimCE — Benutzeranleitungen">
-    <meta property="og:description" content="Schritt-für-Schritt-Anleitungen für OptimCE: eine Energiegemeinschaft verwalten — ihre Mitglieder, Zähler, Verteilungsschlüssel, Teilungsoperationen und Abrechnung.">
+    <meta property="og:description" content="Schritt-für-Schritt-Anleitungen für OptimCE, nach Rolle: Mitglied, Manager und Administrator einer Energiegemeinschaft — Mitglieder, Zähler, Verteilungsschlüssel, Teilungsoperationen und Abrechnung.">
     <meta property="og:url" content="https://guide.optimce.be/index.de.html">
     <meta property="og:site_name" content="OptimCE — Benutzeranleitungen">
     <meta name="twitter:card" content="summary">
+    <script type="application/json" id="steppy-detect-config">{"breakpoints": null, "defaultLayout": null, "defaultLocale": "fr", "hrefFor": {"de": "./index.de.html", "en": "./index.en.html", "fr": "./index.html", "nl": "./index.nl.html"}, "layout": true, "layouts": [], "locale": true, "locales": ["fr", "en", "nl", "de"], "pageLocale": "de", "storageKeys": {"layout": "steppy:layout", "locale": "steppy:locale"}}</script>
+    <script src="assets/steppy-detect.js"></script>
     <link rel="stylesheet" href="./assets/guides.css">
     <script>
       (function () {
@@ -25,26 +27,24 @@
           var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
           document.documentElement.setAttribute("data-theme", savedTheme || (prefersDark ? "dark" : "light"));
         } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
-        // The file we just loaded IS the language choice — record it so
-        // interactive.html (one URL for every locale) opens in the same one.
-        try { localStorage.setItem("oce-lang", "de"); } catch (e) {}
+        document.documentElement.classList.add("oce-js");
       })();
     </script>
 </head>
-<body>
-    <header class="steppy-site-header">
-        <a class="oce-logo-link" href="./index.de.html" aria-label="OptimCE — Benutzeranleitungen">
-            <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
-                <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
-                <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
-                <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
-                <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
-                <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
-            </svg>
-        </a>
-        <span class="steppy-site-title">OptimCE — Benutzeranleitungen</span>
-
-        <div class="steppy-header-actions">
+<body class="oce-page-home">
+    <div class="oce-band">
+<header class="steppy-site-header">
+    <a class="oce-logo-link" href="index.de.html" aria-label="OptimCE — Benutzeranleitungen">
+        <svg class="oce-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 354" role="img" aria-label="OptimCE">
+            <path fill="#2e7d32" d="m170 146-6-10a121 121 0 0 1-12-61q4-43 32-56 20-7 42 2a44 44 0 0 1 26 46q-4 33-36 57-13 10-30 16l-15 7z"/>
+            <path fill="#63b967" d="m297 188-8-1c-15-3-29-11-51-30l-19-18q-6-5 8-15l23-17q38-24 68-16 14 4 23 17 8 12 10 26v11a48 48 0 0 1-44 43z"/>
+            <path fill="#78c17a" fill-opacity=".9" d="M260 309q-17-2-29-11-23-20-12-65c2-10 5-17 11-30l11-31q1-2 4 1l27 17q27 20 38 45a52 52 0 0 1-1 46 51 51 0 0 1-49 28"/>
+            <path fill="#1b5e20" d="m134 309-13-2a44 44 0 0 1-25-18 51 51 0 0 1-8-33q3-25 21-38 13-9 35-10a198 198 0 0 1 52 5l17 1 2 1v4l-4 15-6 16q-12 30-31 45l-12 8a56 56 0 0 1-28 6"/>
+            <path fill="#43a047" d="M121 199q-30-3-50-22c-21-20-24-47-9-67q12-15 29-21l12-1 12 1q12 4 22 15 20 21 26 57l3 38z"/>
+        </svg>
+    </a>
+    <a class="steppy-site-title" href="index.de.html">OptimCE — Benutzeranleitungen</a>
+    <div class="steppy-header-actions">
 <label class="steppy-locale-select">
     <span class="steppy-visually-hidden">Sprache</span>
     <svg class="steppy-locale-select-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
@@ -55,8 +55,20 @@
   (function () {
     var sel = document.querySelector(".steppy-locale-select select");
     if (!sel) return;
+    // A pick is the reader's own choice: store it under steppy-detect.js's key
+    // (autoDetect.storageKeys.locale) so detection never overrides it. That
+    // script only sees link clicks, not a <select>. Storage blocked → carry it
+    // as ?lang= instead, as steppy-detect.js does for its links.
     sel.addEventListener("change", function () {
-      if (sel.value) window.location.href = sel.value;
+      if (!sel.value) return;
+      var href = sel.value, loc = sel.options[sel.selectedIndex].lang, key = null;
+      try { key = JSON.parse(document.getElementById("steppy-detect-config").textContent).storageKeys.locale; } catch (e) {}
+      if (key && loc) {
+        var stored = false;
+        try { localStorage.setItem(key, loc); stored = true; } catch (e) {}
+        if (!stored) href += (href.indexOf("?") === -1 ? "?" : "&") + "lang=" + encodeURIComponent(loc);
+      }
+      window.location.href = href;
     });
     // Back from the language just picked can restore this page from the
     // bfcache with that option still showing — snap it back to this page's own.
@@ -65,134 +77,408 @@
       if (own) sel.value = own.value;
     });
   })();
-</script>            <button type="button" class="oce-theme-toggle" aria-label="Helles/dunkles Design umschalten" title="Design wechseln">
-                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                </svg>
-                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <circle cx="12" cy="12" r="4"/>
-                    <path d="M12 2v2"/><path d="M12 20v2"/>
-                    <path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/>
-                    <path d="M2 12h2"/><path d="M20 12h2"/>
-                    <path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
-                </svg>
-            </button>
+</script>        <button type="button" class="oce-theme-toggle" aria-label="Helles/dunkles Design umschalten" title="Helles/dunkles Design umschalten">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+    </div>
+</header>
+        <div class="oce-band-inner">
+            <p class="oce-eyebrow">Benutzeranleitungen · 65 Anleitungen</p>
+            <h1 class="oce-display">Lernen Sie OptimCE in Ihrem Tempo, Rolle für Rolle.</h1>
+            <p class="oce-lede">Jede Rolle fügt ihre Anleitungen zu denen der vorherigen hinzu: Ein Administrator kann alles, was ein Manager kann, und ein Manager alles, was ein Mitglied kann. Wählen Sie Ihre.</p>
+            <nav class="oce-tabs" aria-label="Ihre Rolle">
+                <a class="oce-tab oce-role--everyone" href="#role-everyone" data-role="everyone"><span class="oce-dot" aria-hidden="true"></span>Alle</a>
+                <a class="oce-tab oce-role--member" href="#role-member" data-role="member"><span class="oce-dot" aria-hidden="true"></span>Mitglied</a>
+                <a class="oce-tab oce-role--manager" href="#role-manager" data-role="manager"><span class="oce-dot" aria-hidden="true"></span>Manager</a>
+                <a class="oce-tab oce-role--admin" href="#role-admin" data-role="admin"><span class="oce-dot" aria-hidden="true"></span>Administrator</a>
+            </nav>
         </div>
-    </header>
+    </div>
 
-    <main class="steppy-main">
-        <section class="steppy-index">
-            <div class="steppy-hero">
-                <div class="steppy-hero-eyebrow">Dokumentation</div>
-                <h1>OptimCE — Benutzeranleitungen</h1>
-                <p class="steppy-hero-lede">Schritt-für-Schritt-Anleitungen zur Einrichtung einer Energiegemeinschaft: Anmeldung, Mitgliederverwaltung, Verteilungsschlüssel, Zähler und Teilungsoperationen.</p>
+    <main class="oce-home" data-active="everyone">
+        <section class="oce-ladder" aria-live="polite">
+            <p class="oce-ladder-sum oce-role--everyone" data-role="everyone">Als Besucher können Sie <strong>10 Anleitungen</strong> nutzen.</p>
+            <p class="oce-ladder-sum oce-role--member" data-role="member">Als Mitglied können Sie <strong>18 Anleitungen</strong> nutzen.</p>
+            <p class="oce-ladder-sum oce-role--manager" data-role="manager">Als Manager können Sie <strong>60 Anleitungen</strong> nutzen.</p>
+            <p class="oce-ladder-sum oce-role--admin" data-role="admin">Als Administrator können Sie <strong>65 Anleitungen</strong> nutzen.</p>
+            <ol class="oce-rungs">
+                <li class="oce-rung oce-role--everyone" data-role="everyone">
+                    <span class="oce-rung-mark" aria-hidden="true">0</span>
+                    <span class="oce-rung-text"><span class="oce-rung-name">Alle</span><span class="oce-rung-count">+10 Anleitungen</span></span>
+                </li>
+                <li class="oce-rung oce-role--member" data-role="member">
+                    <span class="oce-rung-mark" aria-hidden="true">1</span>
+                    <span class="oce-rung-text"><span class="oce-rung-name">Mitglied</span><span class="oce-rung-count">+8 Anleitungen</span></span>
+                </li>
+                <li class="oce-rung oce-role--manager" data-role="manager">
+                    <span class="oce-rung-mark" aria-hidden="true">2</span>
+                    <span class="oce-rung-text"><span class="oce-rung-name">Manager</span><span class="oce-rung-count">+42 Anleitungen</span></span>
+                </li>
+                <li class="oce-rung oce-role--admin" data-role="admin">
+                    <span class="oce-rung-mark" aria-hidden="true">3</span>
+                    <span class="oce-rung-text"><span class="oce-rung-name">Administrator</span><span class="oce-rung-count">+5 Anleitungen</span></span>
+                </li>
+            </ol>
+        </section>
+
+        <div class="oce-role-secs">
+<section class="oce-role-sec oce-role--everyone" id="role-everyone" data-role="everyone" aria-labelledby="h-everyone">
+            <header class="oce-role-head">
+                <p class="oce-inherited-note">In Ihrer Rolle enthalten</p>
+                <h2 id="h-everyone"><a href="./everyone/de.html">Alle</a><span class="oce-count">10 Anleitungen</span></h2>
+<p>Vor oder außerhalb einer Gemeinschaft: anmelden, Ihr Konto verwalten, eine Gemeinschaft finden oder erstellen.</p>            </header>
+
+<div class="oce-tour">
+                <a class="oce-tour-link" href="./onboarding-welcome/de.html">
+                    <span class="oce-tour-text">
+                        <span class="oce-tour-eyebrow">Hier beginnen · Rundgang</span>
+                        <span class="oce-tour-title">Willkommen bei OptimCE</span>
+                        <span class="oce-tour-cta">Rundgang starten</span>
+                    </span>
+                    <span class="oce-tour-shot"><img src="./assets/onboarding-welcome/de/desktop/step-08.png" alt="" loading="lazy" width="1440" height="900"></span>
+                </a>
+                <ul class="oce-tour-more">
+                    <li><a href="./onboarding-welcome-community/de.html">Willkommen — Sie haben bereits eine Gemeinschaft</a></li>
+                </ul>
             </div>
 
-            <ul class="steppy-index-list">
-                <li class="steppy-index-onboarding">
-                    <a href="./getting-started/de.html">
-                        <div>
-                            <span class="steppy-index-eyebrow">Geführter Rundgang</span>
-                            <span class="steppy-index-title">Erste Schritte</span>
-                            <span class="steppy-index-desc">Der empfohlene Weg, die Anwendung von Anfang bis Ende kennenzulernen, in 11 Schritten.</span>
-                        </div>
-                        <span class="steppy-index-meta">11 Schritte</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./welcome-tours/de.html">
-                        <span class="steppy-index-eyebrow">Modul</span>
-                        <span class="steppy-index-title">Willkommenstouren</span>
-                        <span class="steppy-index-desc">Eine Tour pro Rolle: bei Ihrer Ankunft und dann, wenn Sie Mitglied, Manager oder Administrator werden.</span>
-                        <span class="steppy-index-meta">4 Anleitungen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./account/de.html">
-                        <span class="steppy-index-eyebrow">Modul</span>
-                        <span class="steppy-index-title">Konto</span>
-                        <span class="steppy-index-desc">Anmeldung und Profilverwaltung.</span>
-                        <span class="steppy-index-meta">4 Anleitungen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./dashboard/de.html">
-                        <span class="steppy-index-eyebrow">Modul</span>
-                        <span class="steppy-index-title">Startseite und Übersicht</span>
-                        <span class="steppy-index-desc">Sich nach der Anmeldung zurechtfinden: die persönliche Startseite und die Übersicht einer Gemeinschaft.</span>
-                        <span class="steppy-index-meta">3 Anleitungen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./community/de.html">
-                        <span class="steppy-index-eyebrow">Modul</span>
-                        <span class="steppy-index-title">Gemeinschaft</span>
-                        <span class="steppy-index-desc">Eine Gemeinschaft aktivieren und die gemeinsam genutzten Verteilungsschlüssel und Zähler einsehen.</span>
-                        <span class="steppy-index-meta">9 Anleitungen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./keys/de.html">
-                        <span class="steppy-index-eyebrow">Modul</span>
-                        <span class="steppy-index-title">Verteilungsschlüssel</span>
-                        <span class="steppy-index-desc">Verteilungsschlüssel erstellen (Formular oder Assistent).</span>
-                        <span class="steppy-index-meta">5 Anleitungen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./members/de.html">
-                        <span class="steppy-index-eyebrow">Modul</span>
-                        <span class="steppy-index-title">Mitglieder</span>
-                        <span class="steppy-index-desc">Die Mitglieder der Gemeinschaft verwalten.</span>
-                        <span class="steppy-index-meta">6 Anleitungen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./meters/de.html">
-                        <span class="steppy-index-eyebrow">Modul</span>
-                        <span class="steppy-index-title">Zähler</span>
-                        <span class="steppy-index-desc">Zähler anlegen und konfigurieren.</span>
-                        <span class="steppy-index-meta">5 Anleitungen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./sharing/de.html">
-                        <span class="steppy-index-eyebrow">Modul</span>
-                        <span class="steppy-index-title">Teilungsoperationen</span>
-                        <span class="steppy-index-desc">Teilungsoperationen erstellen und im Detail ansehen.</span>
-                        <span class="steppy-index-meta">5 Anleitungen</span>
-                    </a>
-                </li>
-                <li class="steppy-index-group">
-                    <a href="./annexes/de.html">
-                        <span class="steppy-index-eyebrow">Modul</span>
-                        <span class="steppy-index-title">Zusatzdienste</span>
-                        <span class="steppy-index-desc">Abonnements für Zusatzdienste verwalten und Verteilungsschlüssel mit dem OLAGSA-Algorithmus generieren.</span>
-                        <span class="steppy-index-meta">7 Anleitungen</span>
-                    </a>
-                </li>
-            </ul>
+            <section class="oce-module" aria-labelledby="h-account">
+                <div class="oce-module-head">
+                    <h3 id="h-account"><a href="./account/de.html">Konto</a></h3>
+                    <span class="oce-count">4 Anleitungen</span>
+                </div>
+<p class="oce-module-desc">Anmelden, Ihr Profil aktualisieren und Ihre Benachrichtigungen einstellen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./auth-login/de.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Anmelden</span></a></li>
+                    <li><a class="oce-card" href="./profile-update/de.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Ihr Profil aktualisieren</span></a></li>
+                    <li><a class="oce-card" href="./notification-view/de.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Ihre Benachrichtigungen ansehen</span></a></li>
+                    <li><a class="oce-card" href="./notification-preferences/de.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Ihre Benachrichtigungen einstellen</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-communities">
+                <div class="oce-module-head">
+                    <h3 id="h-communities"><a href="./communities/de.html">Startseite und Gemeinschaften</a></h3>
+                    <span class="oce-count">4 Anleitungen</span>
+                </div>
+<p class="oce-module-desc">Ihre Startseite lesen, eine Gemeinschaft öffnen, eine erstellen oder die öffentlichen Gemeinschaften erkunden.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./home-overview/de.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Ihre Startseite</span></a></li>
+                    <li><a class="oce-card" href="./community-activate/de.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Gemeinschaft aktivieren</span></a></li>
+                    <li><a class="oce-card" href="./community-create/de.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Gemeinschaft erstellen</span></a></li>
+                    <li><a class="oce-card" href="./public-communities-browse/de.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Öffentliche Gemeinschaften erkunden</span></a></li>
+                </ul>
+            </section>
         </section>
+<section class="oce-role-sec oce-role--member" id="role-member" data-role="member" aria-labelledby="h-member">
+            <header class="oce-role-head">
+                <p class="oce-inherited-note">In Ihrer Rolle enthalten</p>
+                <h2 id="h-member"><a href="./member/de.html">Mitglied</a><span class="oce-count">8 Anleitungen</span></h2>
+<p>Sie gehören einer Gemeinschaft an: Verfolgen Sie Ihre Energie, Ihre Rechnungen und was über Sie eingereicht wurde.</p>            </header>
+
+<div class="oce-tour">
+                <a class="oce-tour-link" href="./onboarding-member/de.html">
+                    <span class="oce-tour-text">
+                        <span class="oce-tour-eyebrow">Hier beginnen · Rundgang</span>
+                        <span class="oce-tour-title">Sie sind Mitglied</span>
+                        <span class="oce-tour-cta">Rundgang starten</span>
+                    </span>
+                    <span class="oce-tour-shot"><img src="./assets/onboarding-member/de/desktop/step-09.png" alt="" loading="lazy" width="1440" height="900"></span>
+                </a>
+            </div>
+
+            <section class="oce-module" aria-labelledby="h-member-community">
+                <div class="oce-module-head">
+                    <h3 id="h-member-community"><a href="./member-community/de.html">Meine Gemeinschaft</a></h3>
+                    <span class="oce-count">3 Anleitungen</span>
+                </div>
+<p class="oce-module-desc">Die Mitgliederübersicht, Ihr Datensatz, Ihr Zähler und die Manager, an die Sie sich wenden können.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./dashboard-member-tour/de.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Die Übersicht für Mitglieder</span></a></li>
+                    <li><a class="oce-card" href="./member-self-views/de.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Ihren Datensatz und Zähler einsehen</span></a></li>
+                    <li><a class="oce-card" href="./community-managers-view/de.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Manager Ihrer Gemeinschaft ansehen</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-member-modules">
+                <div class="oce-module-head">
+                    <h3 id="h-member-modules"><a href="./member-modules/de.html">Meine Module</a></h3>
+                    <span class="oce-count">4 Anleitungen</span>
+                </div>
+<p class="oce-module-desc">Ihre Rechnung, die über Sie eingereichten Vorgänge, die zu unterschreibenden Dokumente und die Erzeugung Ihres Teilungsvorgangs.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./billing-member-view/de.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Ihre Rechnung einsehen</span></a></li>
+                    <li><a class="oce-card" href="./admin-doc-my-filings/de.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Sehen, was über Sie eingereicht wurde</span></a></li>
+                    <li><a class="oce-card" href="./signature-sign/de.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Ein Dokument in der Anwendung unterschreiben</span></a></li>
+                    <li><a class="oce-card" href="./live-data-member-view/de.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Erzeugung meines Teilungsvorgangs ansehen</span></a></li>
+                </ul>
+            </section>
+        </section>
+<section class="oce-role-sec oce-role--manager" id="role-manager" data-role="manager" aria-labelledby="h-manager">
+            <header class="oce-role-head">
+                <p class="oce-inherited-note">In Ihrer Rolle enthalten</p>
+                <h2 id="h-manager"><a href="./manager/de.html">Manager</a><span class="oce-count">42 Anleitungen</span></h2>
+<p>Die Gemeinschaft im Alltag führen: Mitglieder, Zähler, Verteilungsschlüssel, Teilungsoperationen und Module.</p>            </header>
+
+<div class="oce-tour">
+                <a class="oce-tour-link" href="./onboarding-manager/de.html">
+                    <span class="oce-tour-text">
+                        <span class="oce-tour-eyebrow">Hier beginnen · Rundgang</span>
+                        <span class="oce-tour-title">Sie sind Manager</span>
+                        <span class="oce-tour-cta">Rundgang starten</span>
+                    </span>
+                    <span class="oce-tour-shot"><img src="./assets/onboarding-manager/de/desktop/step-10.png" alt="" loading="lazy" width="1440" height="900"></span>
+                </a>
+                <ul class="oce-tour-more">
+                    <li><a href="./getting-started/de.html">Erste Schritte — eine Gemeinschaft von A bis Z einrichten · 11 Anleitungen</a></li>
+                </ul>
+            </div>
+
+            <section class="oce-module" aria-labelledby="h-dashboard">
+                <div class="oce-module-head">
+                    <h3 id="h-dashboard"><a href="./dashboard/de.html">Übersicht und Nachverfolgung</a></h3>
+                    <span class="oce-count">2 Anleitungen</span>
+                </div>
+<p class="oce-module-desc">Die Übersicht der Gemeinschaft und das Audit-Protokoll.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./dashboard-manager-tour/de.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Die Übersicht für Manager</span></a></li>
+                    <li><a class="oce-card" href="./audit-log-inspect/de.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Audit-Protokoll einsehen</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-keys">
+                <div class="oce-module-head">
+                    <h3 id="h-keys"><a href="./keys/de.html">Verteilungsschlüssel</a></h3>
+                    <span class="oce-count">6 Anleitungen</span>
+                </div>
+<p class="oce-module-desc">Verteilungsschlüssel erstellen, bearbeiten, prüfen und löschen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./key-create-wizard/de.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Verteilungsschlüssel erstellen (Assistent)</span></a></li>
+                    <li><a class="oce-card" href="./key-create-gridform/de.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Verteilungsschlüssel erstellen (Formular)</span></a></li>
+                    <li><a class="oce-card" href="./key-update/de.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Verteilungsschlüssel bearbeiten</span></a></li>
+                    <li><a class="oce-card" href="./key-delete/de.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Verteilungsschlüssel löschen</span></a></li>
+                    <li><a class="oce-card" href="./key-helper-tour/de.html"><span class="oce-card-num" aria-hidden="true">05</span><span class="oce-card-title">Kontexthilfe — das (i)-Symbol</span></a></li>
+                    <li><a class="oce-card" href="./community-join-inspect-key/de.html"><span class="oce-card-num" aria-hidden="true">06</span><span class="oce-card-title">Einer Gemeinschaft beitreten — Verteilungsschlüssel prüfen</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-members">
+                <div class="oce-module-head">
+                    <h3 id="h-members"><a href="./members/de.html">Mitglieder</a></h3>
+                    <span class="oce-count">5 Anleitungen</span>
+                </div>
+<p class="oce-module-desc">Mitglieder hinzufügen, Privatpersonen oder Unternehmen, sie bearbeiten, deaktivieren und ihre Dokumente anhängen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./member-create/de.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Mitglied anlegen</span></a></li>
+                    <li><a class="oce-card" href="./member-create-company/de.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Unternehmen als Mitglied anlegen</span></a></li>
+                    <li><a class="oce-card" href="./member-update/de.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Mitglied bearbeiten</span></a></li>
+                    <li><a class="oce-card" href="./member-status-lifecycle/de.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Mitglied deaktivieren und reaktivieren</span></a></li>
+                    <li><a class="oce-card" href="./member-document-upload/de.html"><span class="oce-card-num" aria-hidden="true">05</span><span class="oce-card-title">Dokument zu einem Mitglied hinzufügen</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-meters">
+                <div class="oce-module-head">
+                    <h3 id="h-meters"><a href="./meters/de.html">Zähler</a></h3>
+                    <span class="oce-count">6 Anleitungen</span>
+                </div>
+<p class="oce-module-desc">Zähler anlegen und konfigurieren, ihre Adressen korrigieren und sie deaktivieren.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./meter-create/de.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Zähler anlegen</span></a></li>
+                    <li><a class="oce-card" href="./meter-update/de.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Zähler bearbeiten</span></a></li>
+                    <li><a class="oce-card" href="./meter-data-update/de.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Zählerdaten bearbeiten</span></a></li>
+                    <li><a class="oce-card" href="./meter-address-repair/de.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Zähleradressen korrigieren</span></a></li>
+                    <li><a class="oce-card" href="./meter-deactivate/de.html"><span class="oce-card-num" aria-hidden="true">05</span><span class="oce-card-title">Zähler deaktivieren</span></a></li>
+                    <li><a class="oce-card" href="./community-join-inspect-meter/de.html"><span class="oce-card-num" aria-hidden="true">06</span><span class="oce-card-title">Einer Gemeinschaft beitreten — Zähler prüfen</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-sharing">
+                <div class="oce-module-head">
+                    <h3 id="h-sharing"><a href="./sharing/de.html">Teilungsoperationen</a></h3>
+                    <span class="oce-count">5 Anleitungen</span>
+                </div>
+<p class="oce-module-desc">Teilungsoperationen erstellen, ansehen und bearbeiten, Zähler hinzufügen und sie öffentlich machen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./sharing-op-create/de.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Teilungsoperation erstellen</span></a></li>
+                    <li><a class="oce-card" href="./sharing-op-inspect/de.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Teilungsoperation im Detail ansehen</span></a></li>
+                    <li><a class="oce-card" href="./sharing-op-add-meter/de.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Zähler zu einer Teilungsoperation hinzufügen</span></a></li>
+                    <li><a class="oce-card" href="./sharing-op-set-public/de.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Teilungsoperation öffentlich machen</span></a></li>
+                    <li><a class="oce-card" href="./sharing-op-update/de.html"><span class="oce-card-num" aria-hidden="true">05</span><span class="oce-card-title">Teilungsoperation bearbeiten</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-news">
+                <div class="oce-module-head">
+                    <h3 id="h-news"><a href="./news/de.html">Aktuelles</a></h3>
+                    <span class="oce-count">2 Anleitungen</span>
+                </div>
+<p class="oce-module-desc">Beiträge und Umfragen am Schwarzen Brett der Gemeinschaft veröffentlichen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./news-create/de.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Beitrag veröffentlichen</span></a></li>
+                    <li><a class="oce-card" href="./news-poll-create/de.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Umfrage erstellen</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-key-generation">
+                <div class="oce-module-head">
+                    <h3 id="h-key-generation"><a href="./key-generation/de.html">Schlüsselgenerierung und Simulation</a></h3>
+                    <span class="oce-count">4 Anleitungen</span>
+                </div>
+<p class="oce-module-desc">Schlüssel mit dem OLAGSA-Algorithmus generieren und einen Schlüssel mit echten Daten testen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./algorithm-generate/de.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Verteilungsschlüssel generieren (OLAGSA)</span></a></li>
+                    <li><a class="oce-card" href="./algorithm-delete-key/de.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Generierten Schlüssel löschen</span></a></li>
+                    <li><a class="oce-card" href="./algorithm-delete-generation/de.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Generierung löschen</span></a></li>
+                    <li><a class="oce-card" href="./simulation-run/de.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Verteilungsschlüssel simulieren</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-billing">
+                <div class="oce-module-head">
+                    <h3 id="h-billing"><a href="./billing/de.html">Abrechnung</a></h3>
+                    <span class="oce-count">1 Anleitung</span>
+                </div>
+<p class="oce-module-desc">Tarife für geteilte Energie festlegen, Rechnungen erstellen und Zahlungen verfolgen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./billing-tarification-pay/de.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Teilungsoperation abrechnen, vom Tarif bis zur Zahlung</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-administrative-document">
+                <div class="oce-module-head">
+                    <h3 id="h-administrative-document"><a href="./administrative-document/de.html">Verwaltungsdokumente</a></h3>
+                    <span class="oce-count">7 Anleitungen</span>
+                </div>
+<p class="oce-module-desc">Die bei der CWaPE und dem Netzbetreiber eingereichten Dossiers mit ihren Dokumenten, elektronischen Unterschriften und Fristen verfolgen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./admin-doc-dossier-create/de.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Ein Verfahren eröffnen</span></a></li>
+                    <li><a class="oce-card" href="./admin-doc-document-generate/de.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Eine Unterlage aus dem CRM erzeugen</span></a></li>
+                    <li><a class="oce-card" href="./admin-doc-upload-version/de.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Eine Datei an eine Unterlage anhängen</span></a></li>
+                    <li><a class="oce-card" href="./admin-doc-submit-deadline/de.html"><span class="oce-card-num" aria-hidden="true">04</span><span class="oce-card-title">Ein Verfahren senden und seine Frist verfolgen</span></a></li>
+                    <li><a class="oce-card" href="./signature-request/de.html"><span class="oce-card-num" aria-hidden="true">05</span><span class="oce-card-title">Eine elektronische Unterschrift anfordern</span></a></li>
+                    <li><a class="oce-card" href="./signature-manager-follows/de.html"><span class="oce-card-num" aria-hidden="true">06</span><span class="oce-card-title">Die Signaturanfragen verfolgen</span></a></li>
+                    <li><a class="oce-card" href="./signature-signed-evidence/de.html"><span class="oce-card-num" aria-hidden="true">07</span><span class="oce-card-title">Ein unterschriebenes Dokument und seinen Nachweis finden</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-live-data">
+                <div class="oce-module-head">
+                    <h3 id="h-live-data"><a href="./live-data/de.html">Live-Daten</a></h3>
+                    <span class="oce-count">3 Anleitungen</span>
+                </div>
+<p class="oce-module-desc">Viertelstündlich verfolgen, was die bei den Mitgliedern installierten Geräte messen, und diese Geräte verwalten.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./live-data-explore/de.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Live-Daten entdecken</span></a></li>
+                    <li><a class="oce-card" href="./live-data-device-enrol/de.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Gerät verbinden</span></a></li>
+                    <li><a class="oce-card" href="./live-data-sharing-operations/de.html"><span class="oce-card-num" aria-hidden="true">03</span><span class="oce-card-title">Teilen innerhalb eines Teilungsvorgangs verfolgen</span></a></li>
+                </ul>
+            </section>
+        </section>
+<section class="oce-role-sec oce-role--admin" id="role-admin" data-role="admin" aria-labelledby="h-admin">
+            <header class="oce-role-head">
+                <p class="oce-inherited-note">In Ihrer Rolle enthalten</p>
+                <h2 id="h-admin"><a href="./admin/de.html">Administrator</a><span class="oce-count">5 Anleitungen</span></h2>
+<p>Was nur ein Administrator kann: Module aktivieren, Manager einladen, Rollen ändern und die rechtlichen Angaben bearbeiten.</p>            </header>
+
+<div class="oce-tour">
+                <a class="oce-tour-link" href="./onboarding-admin/de.html">
+                    <span class="oce-tour-text">
+                        <span class="oce-tour-eyebrow">Hier beginnen · Rundgang</span>
+                        <span class="oce-tour-title">Sie sind Administrator</span>
+                        <span class="oce-tour-cta">Rundgang starten</span>
+                    </span>
+                    <span class="oce-tour-shot"><img src="./assets/onboarding-admin/de/desktop/step-12.png" alt="" loading="lazy" width="1440" height="900"></span>
+                </a>
+            </div>
+
+            <section class="oce-module" aria-labelledby="h-admin-community">
+                <div class="oce-module-head">
+                    <h3 id="h-admin-community"><a href="./admin-community/de.html">Benutzer und Angaben</a></h3>
+                    <span class="oce-count">2 Anleitungen</span>
+                </div>
+<p class="oce-module-desc">Manager einladen, Rollen ändern und das Profil der Gemeinschaft vervollständigen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./community-users-manage/de.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Benutzer der Gemeinschaft verwalten</span></a></li>
+                    <li><a class="oce-card" href="./community-info-update/de.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Gemeinschaftsinfo aktualisieren</span></a></li>
+                </ul>
+            </section>
+            <section class="oce-module" aria-labelledby="h-admin-modules">
+                <div class="oce-module-head">
+                    <h3 id="h-admin-modules"><a href="./admin-modules/de.html">Module</a></h3>
+                    <span class="oce-count">2 Anleitungen</span>
+                </div>
+<p class="oce-module-desc">Einen Zusatzdienst abonnieren oder abbestellen.</p>                <ul class="oce-cards">
+                    <li><a class="oce-card" href="./annexes-subscribe/de.html"><span class="oce-card-num" aria-hidden="true">01</span><span class="oce-card-title">Zusatzdienst abonnieren</span></a></li>
+                    <li><a class="oce-card" href="./annexes-unsubscribe/de.html"><span class="oce-card-num" aria-hidden="true">02</span><span class="oce-card-title">Zusatzdienst abbestellen</span></a></li>
+                </ul>
+            </section>
+        </section>
+        </div>
     </main>
 
-    <footer class="steppy-site-footer">
-        <p>Erstellt mit Steppy.</p>
-    </footer>
+<footer class="steppy-site-footer">
+    <p>OptimCE · Erstellt mit Steppy.</p>
+</footer>
+<script>
+  (function () {
+    function bind() {
+      var btn = document.querySelector(".oce-theme-toggle");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        var current = document.documentElement.getAttribute("data-theme") || "light";
+        var next = current === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        try { localStorage.setItem("oce-theme", next); } catch (e) {}
+      });
+    }
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
+    else bind();
+  })();
+</script>
 
     <script>
       (function () {
-        function bind() {
-          var btn = document.querySelector(".oce-theme-toggle");
-          if (!btn) return;
-          btn.addEventListener("click", function () {
-            var current = document.documentElement.getAttribute("data-theme") || "light";
-            var next = current === "dark" ? "light" : "dark";
-            document.documentElement.setAttribute("data-theme", next);
-            try { localStorage.setItem("oce-theme", next); } catch (e) {}
+        var root = document.querySelector(".oce-home");
+        if (!root) return;
+        var order = ["everyone", "member", "manager", "admin"];
+        var tabs = Array.prototype.slice.call(document.querySelectorAll(".oce-tab"));
+        var secs = Array.prototype.slice.call(document.querySelectorAll(".oce-role-sec"));
+        var rungs = Array.prototype.slice.call(document.querySelectorAll(".oce-rung"));
+        var sums = Array.prototype.slice.call(document.querySelectorAll(".oce-ladder-sum"));
+        var tablist = document.querySelector(".oce-tabs");
+        tablist.setAttribute("role", "tablist");
+        tabs.forEach(function (tab) {
+          tab.setAttribute("role", "tab");
+          tab.setAttribute("aria-controls", "role-" + tab.getAttribute("data-role"));
+        });
+        // "#manager" (what the breadcrumbs link to, matches no id so the page
+        // does not jump) or "#role-manager" (the no-JS anchor).
+        function roleFromHash() { return (location.hash || "").replace(/^#(role-)?/, ""); }
+        function activate(role, remember) {
+          var ai = order.indexOf(role);
+          if (ai < 0) return;
+          root.setAttribute("data-active", role);
+          tabs.forEach(function (tab) {
+            var on = tab.getAttribute("data-role") === role;
+            tab.setAttribute("aria-selected", on ? "true" : "false");
+            tab.tabIndex = on ? 0 : -1;
           });
+          secs.forEach(function (sec) {
+            var ri = order.indexOf(sec.getAttribute("data-role"));
+            sec.hidden = ri > ai;
+            sec.style.order = String(ai - ri);
+            sec.classList.toggle("is-active", ri === ai);
+            sec.classList.toggle("is-inherited", ri < ai);
+          });
+          rungs.forEach(function (rung) {
+            var ri = order.indexOf(rung.getAttribute("data-role"));
+            rung.classList.toggle("is-reached", ri <= ai);
+            rung.classList.toggle("is-current", ri === ai);
+          });
+          sums.forEach(function (sum) { sum.hidden = sum.getAttribute("data-role") !== role; });
+          if (remember) {
+            try { localStorage.setItem("oce-role", role); } catch (e) {}
+            try { history.replaceState(null, "", "#" + role); } catch (e) {}
+          }
         }
-        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
-        else bind();
+        tabs.forEach(function (tab, i) {
+          tab.addEventListener("click", function (ev) {
+            ev.preventDefault();
+            activate(tab.getAttribute("data-role"), true);
+          });
+          tab.addEventListener("keydown", function (ev) {
+            var step = ev.key === "ArrowRight" ? 1 : ev.key === "ArrowLeft" ? -1 : 0;
+            if (!step) return;
+            ev.preventDefault();
+            var next = tabs[(i + step + tabs.length) % tabs.length];
+            next.focus();
+            activate(next.getAttribute("data-role"), true);
+          });
+        });
+        var fromHash = roleFromHash();
+        var saved = null;
+        try { saved = localStorage.getItem("oce-role"); } catch (e) {}
+        activate(order.indexOf(fromHash) >= 0 ? fromHash : (order.indexOf(saved) >= 0 ? saved : order[0]), false);
+        window.addEventListener("hashchange", function () {
+          var h = roleFromHash();
+          if (order.indexOf(h) >= 0) activate(h, true);
+        });
       })();
     </script>
 </body>

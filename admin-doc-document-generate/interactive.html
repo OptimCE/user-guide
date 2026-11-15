@@ -3,15 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Générer un document depuis le CRM — OptimCE — Guides utilisateur</title>
-    <meta name="description" content="Ajouter un document à un dossier, vérifier les données pré-remplies depuis le CRM et le générer.">
+    <title>Générer une pièce depuis le CRM — OptimCE — Guides utilisateur</title>
+    <meta name="description" content="Vérifier les données pré-remplies depuis le CRM pour une pièce d&#39;une démarche et la générer.">
     <link rel="canonical" href="https://guide.optimce.be/admin-doc-document-generate/fr.html">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Générer un document depuis le CRM">
-    <meta property="og:description" content="Ajouter un document à un dossier, vérifier les données pré-remplies depuis le CRM et le générer.">
+    <meta property="og:title" content="Générer une pièce depuis le CRM">
+    <meta property="og:description" content="Vérifier les données pré-remplies depuis le CRM pour une pièce d&#39;une démarche et la générer.">
     <meta property="og:url" content="https://guide.optimce.be/admin-doc-document-generate/fr.html">
     <meta property="og:site_name" content="OptimCE — Guides utilisateur">
     <meta name="twitter:card" content="summary">
+    <script type="application/json" id="steppy-detect-config">{"breakpoints": {"desktop": 1024, "mobile": 0}, "defaultLayout": "desktop", "defaultLocale": "fr", "hrefFor": {}, "layout": true, "layouts": ["desktop", "mobile"], "locale": true, "locales": ["fr", "en", "nl", "de"], "pageLocale": null, "storageKeys": {"layout": "steppy:layout", "locale": "steppy:locale"}}</script>
+    <script src="../assets/steppy-detect.js"></script>
     <link rel="stylesheet" href="../assets/guides.css">
     <script>
       (function () {
@@ -20,15 +22,14 @@
           var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
           document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
         } catch (e) { document.documentElement.setAttribute("data-theme", "light"); }
-        // Language: ?lang= (the step-by-step page links here with it), else the
-        // last page the reader opened (oce-lang), else the default. Set <html lang>
-        // now so the chrome never flashes in the wrong language.
+        // Language: ?lang= (the step-by-step page links here with it), else what
+        // steppy-detect.js picked (the reader's stored pick, then the browser's
+        // languages), else the default. Set <html lang> now so the chrome never
+        // flashes in the wrong language.
         var locs = ["fr", "en", "nl", "de"];
         var lang = null;
         try { lang = new URLSearchParams(window.location.search).get("lang"); } catch (e) {}
-        if (locs.indexOf(lang) === -1) {
-          try { lang = localStorage.getItem("oce-lang"); } catch (e) { lang = null; }
-        }
+        if (locs.indexOf(lang) === -1) lang = window.SteppyDetect ? window.SteppyDetect.locale : null;
         if (locs.indexOf(lang) === -1) lang = "fr";
         document.documentElement.setAttribute("lang", lang);
       })();
@@ -98,7 +99,7 @@
         <nav class="steppy-breadcrumb" aria-label="Breadcrumb">
             <a href="../index.html" data-oce-href="home"><span class="i18n-fr">Accueil</span><span class="i18n-en">Home</span><span class="i18n-nl">Startpagina</span><span class="i18n-de">Startseite</span></a>
             <span class="steppy-breadcrumb-sep">›</span>
-            <span aria-current="page"><span class="i18n-fr">Générer un document depuis le CRM</span><span class="i18n-en">Generate a document from the CRM</span><span class="i18n-nl">Een document genereren vanuit het CRM</span><span class="i18n-de">Dokument aus dem CRM erzeugen</span></span>
+            <span aria-current="page"><span class="i18n-fr">Générer une pièce depuis le CRM</span><span class="i18n-en">Generate a document from the CRM</span><span class="i18n-nl">Een document genereren vanuit het CRM</span><span class="i18n-de">Eine Unterlage aus dem CRM erzeugen</span></span>
         </nav>
 
         <div class="steppy-header-actions">
@@ -133,10 +134,11 @@
       // Runs before the deferred player module upgrades <steppy-guide>, so the
       // player starts in the language the head script picked. Afterwards the
       // player's own language <select> is the picker: follow its steppy:locale
-      // event so the chrome, links, title and ?lang= stay in step.
+      // event so the chrome, links, title and ?lang= stay in step
+      // (steppy-detect.js stores the reader's pick from the same event).
       (function () {
         var defaultLocale = "fr";
-        var titles = {"fr": "G\u00e9n\u00e9rer un document depuis le CRM \u2014 OptimCE \u2014 Guides utilisateur", "en": "Generate a document from the CRM \u2014 OptimCE \u2014 User guides", "nl": "Een document genereren vanuit het CRM \u2014 OptimCE \u2014 Gebruikershandleidingen", "de": "Dokument aus dem CRM erzeugen \u2014 OptimCE \u2014 Benutzeranleitungen"};
+        var titles = {"fr": "G\u00e9n\u00e9rer une pi\u00e8ce depuis le CRM \u2014 OptimCE \u2014 Guides utilisateur", "en": "Generate a document from the CRM \u2014 OptimCE \u2014 User guides", "nl": "Een document genereren vanuit het CRM \u2014 OptimCE \u2014 Gebruikershandleidingen", "de": "Eine Unterlage aus dem CRM erzeugen \u2014 OptimCE \u2014 Benutzeranleitungen"};
         var themeLabels = {"de": "Design wechseln", "en": "Toggle theme", "fr": "Basculer le th\u00e8me", "nl": "Thema wisselen"};
         var guide = document.querySelector("steppy-guide");
 
@@ -149,7 +151,6 @@
           document.querySelectorAll('[data-oce-href="stepbystep"]').forEach(function (a) { a.setAttribute("href", "./" + loc + ".html"); });
           var toggle = document.querySelector(".oce-theme-toggle");
           if (toggle) toggle.setAttribute("aria-label", themeLabels[loc]);
-          try { localStorage.setItem("oce-lang", loc); } catch (e) {}
         }
 
         var initial = document.documentElement.getAttribute("lang") || defaultLocale;

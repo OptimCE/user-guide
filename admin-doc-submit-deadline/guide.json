@@ -4,10 +4,10 @@
   "mode": "interactive",
   "role": "admin",
   "title": {
-    "fr": "Déposer un dossier et suivre son échéance",
-    "en": "File a dossier and follow its deadline",
-    "nl": "Een dossier indienen en de termijn opvolgen",
-    "de": "Dossier einreichen und Frist verfolgen"
+    "fr": "Envoyer une démarche et suivre son échéance",
+    "en": "Send a procedure and follow its deadline",
+    "nl": "Een procedure versturen en de termijn opvolgen",
+    "de": "Ein Verfahren senden und seine Frist verfolgen"
   },
   "locales": [
     "fr",
@@ -272,27 +272,27 @@
     {
       "id": "step-2",
       "index": 2,
-      "action": "click",
-      "interactive": true,
-      "screenshotWhen": "before",
-      "waitAfter": 1500,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 500,
       "title": {
-        "fr": "Ouvrir le dossier",
-        "en": "Open the dossier",
-        "nl": "Het dossier openen",
-        "de": "Das Dossier öffnen"
+        "fr": "Prête à envoyer",
+        "en": "Ready to send",
+        "nl": "Klaar om te versturen",
+        "de": "Versandbereit"
       },
       "text": {
-        "fr": "Ouvrez le dossier dont vous voulez enregistrer le dépôt.",
-        "en": "Open the dossier whose filing you want to record.",
-        "nl": "Open het dossier waarvan u de indiening wilt vastleggen.",
-        "de": "Öffnen Sie das Dossier, dessen Einreichung Sie erfassen möchten."
+        "fr": "Chaque ligne donne la prochaine action et son échéance, sans ouvrir la démarche. Ici, toutes les pièces sont prêtes : il reste à envoyer l'actualisation avant la date indiquée.",
+        "en": "Every row gives the next action and its due date without opening the procedure. Here every document is ready: the update is left to send before the date shown.",
+        "nl": "Elke rij toont de volgende actie en haar termijn, zonder de procedure te openen. Hier zijn alle documenten klaar: de bijwerking moet nog worden verstuurd vóór de vermelde datum.",
+        "de": "Jede Zeile nennt die nächste Aktion und ihre Frist, ohne das Verfahren zu öffnen. Hier sind alle Unterlagen bereit: Die Aktualisierung muss nur noch vor dem angegebenen Datum gesendet werden."
       },
       "subtitle": {
-        "fr": "Documents administratifs",
-        "en": "Administrative documents",
-        "nl": "Administratieve documenten",
-        "de": "Verwaltungsdokumente"
+        "fr": "Démarches",
+        "en": "Procedures",
+        "nl": "Procedures",
+        "de": "Verfahren"
       },
       "captures": {
         "fr": {
@@ -304,18 +304,7 @@
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 260,
-                      "y": 554,
-                      "width": 988,
-                      "height": 73
-                    },
-                    "selector": "[data-testid=\"dossier-list__row--0\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
@@ -327,18 +316,7 @@
                   "width": 390,
                   "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 34,
-                      "y": 705,
-                      "width": 628.15625,
-                      "height": 105
-                    },
-                    "selector": "[data-testid=\"dossier-list__row--0\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -352,18 +330,7 @@
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 260,
-                      "y": 554,
-                      "width": 988,
-                      "height": 73
-                    },
-                    "selector": "[data-testid=\"dossier-list__row--0\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
@@ -375,18 +342,7 @@
                   "width": 390,
                   "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 34,
-                      "y": 705,
-                      "width": 642.140625,
-                      "height": 105
-                    },
-                    "selector": "[data-testid=\"dossier-list__row--0\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -400,18 +356,7 @@
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 260,
-                      "y": 554,
-                      "width": 988,
-                      "height": 73
-                    },
-                    "selector": "[data-testid=\"dossier-list__row--0\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
@@ -423,18 +368,7 @@
                   "width": 390,
                   "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 34,
-                      "y": 705,
-                      "width": 764.15625,
-                      "height": 105
-                    },
-                    "selector": "[data-testid=\"dossier-list__row--0\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -448,18 +382,7 @@
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 260,
-                      "y": 554,
-                      "width": 988,
-                      "height": 73
-                    },
-                    "selector": "[data-testid=\"dossier-list__row--0\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
@@ -471,18 +394,7 @@
                   "width": 390,
                   "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 34,
-                      "y": 725,
-                      "width": 819.9375,
-                      "height": 85
-                    },
-                    "selector": "[data-testid=\"dossier-list__row--0\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -492,159 +404,27 @@
     {
       "id": "step-3",
       "index": 3,
-      "action": "assert",
-      "interactive": false,
-      "screenshotWhen": "after",
-      "waitAfter": 500,
-      "title": {
-        "fr": "Un dossier en préparation",
-        "en": "A dossier in preparation",
-        "nl": "Een dossier in voorbereiding",
-        "de": "Ein Dossier in Vorbereitung"
-      },
-      "text": {
-        "fr": "Tant que le dossier est « En préparation », rien n'est attendu de vous par le régulateur. Les boutons en haut ne proposent que les changements de statut légitimes à ce stade.",
-        "en": "While the dossier is \"In preparation\", the regulator expects nothing from you. The buttons at the top only offer the status changes that make sense at this stage.",
-        "nl": "Zolang het dossier “In voorbereiding” is, verwacht de regulator niets van u. De knoppen bovenaan bieden alleen de statuswijzigingen aan die in dit stadium zijn toegestaan.",
-        "de": "Solange das Dossier „In Vorbereitung“ ist, erwartet die Regulierungsbehörde nichts von Ihnen. Die Schaltflächen oben bieten nur die Statusänderungen an, die in diesem Stadium zulässig sind."
-      },
-      "subtitle": {
-        "fr": "Suivi des dossiers",
-        "en": "Tracking dossiers",
-        "nl": "Dossieropvolging",
-        "de": "Dossierverfolgung"
-      },
-      "captures": {
-        "fr": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-22.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-22.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        },
-        "en": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-22.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-22.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        },
-        "nl": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-22.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-22.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        },
-        "de": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-22.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-22.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "id": "step-4",
-      "index": 4,
       "action": "click",
       "interactive": true,
       "screenshotWhen": "before",
       "waitAfter": 1000,
       "title": {
-        "fr": "Marquer le dossier comme soumis",
-        "en": "Mark the dossier as submitted",
-        "nl": "Het dossier als ingediend markeren",
-        "de": "Das Dossier als eingereicht markieren"
+        "fr": "Envoyer",
+        "en": "Send",
+        "nl": "Versturen",
+        "de": "Senden"
       },
       "text": {
-        "fr": "Vous déposez le dossier auprès de l'autorité par vos moyens habituels ; ici, vous enregistrez que ce dépôt a eu lieu.",
-        "en": "You file the dossier with the authority through your usual channel; here you record that the filing happened.",
-        "nl": "U dient het dossier via uw gebruikelijke kanalen in bij de bevoegde overheid; hier legt u vast dat die indiening heeft plaatsgevonden.",
-        "de": "Sie reichen das Dossier auf Ihrem üblichen Weg bei der Behörde ein; hier erfassen Sie, dass diese Einreichung stattgefunden hat."
+        "fr": "Le bouton principal propose la seule action utile maintenant. La démarche étant prête, c'est « Envoyer ».",
+        "en": "The main button offers the one action that matters now. The procedure being ready, it is \"Send\".",
+        "nl": "De hoofdknop biedt de enige actie aan die nu telt. Omdat de procedure klaar is, is dat “Versturen”.",
+        "de": "Die Hauptschaltfläche bietet die einzige Aktion an, die jetzt zählt. Da das Verfahren bereit ist, lautet sie „Senden“."
       },
       "subtitle": {
-        "fr": "Suivi des dossiers",
-        "en": "Tracking dossiers",
-        "nl": "Dossieropvolging",
-        "de": "Dossierverfolgung"
+        "fr": "Démarches",
+        "en": "Procedures",
+        "nl": "Procedures",
+        "de": "Verfahren"
       },
       "captures": {
         "fr": {
@@ -660,12 +440,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 263,
-                      "y": 222,
-                      "width": 90.25,
-                      "height": 35
+                      "x": 932.4375,
+                      "y": 60,
+                      "width": 107.609375,
+                      "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"
+                    "selector": "[data-testid=\"procedure-detail__btn--primary\"] button"
                   }
                 }
               }
@@ -683,12 +463,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 33,
-                      "y": 534,
-                      "width": 90.25,
-                      "height": 35
+                      "x": 16,
+                      "y": 233,
+                      "width": 107.609375,
+                      "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"
+                    "selector": "[data-testid=\"procedure-detail__btn--primary\"] button"
                   }
                 }
               }
@@ -708,12 +488,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 263,
-                      "y": 222,
-                      "width": 110.203125,
-                      "height": 35
+                      "x": 983.609375,
+                      "y": 60,
+                      "width": 86.1875,
+                      "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"
+                    "selector": "[data-testid=\"procedure-detail__btn--primary\"] button"
                   }
                 }
               }
@@ -731,12 +511,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 33,
-                      "y": 534,
-                      "width": 110.203125,
-                      "height": 35
+                      "x": 16,
+                      "y": 197,
+                      "width": 86.1875,
+                      "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"
+                    "selector": "[data-testid=\"procedure-detail__btn--primary\"] button"
                   }
                 }
               }
@@ -756,12 +536,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 263,
-                      "y": 222,
-                      "width": 108.265625,
-                      "height": 35
+                      "x": 944.625,
+                      "y": 60,
+                      "width": 119.40625,
+                      "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"
+                    "selector": "[data-testid=\"procedure-detail__btn--primary\"] button"
                   }
                 }
               }
@@ -779,12 +559,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 33,
-                      "y": 534,
-                      "width": 108.265625,
-                      "height": 35
+                      "x": 16,
+                      "y": 261,
+                      "width": 119.40625,
+                      "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"
+                    "selector": "[data-testid=\"procedure-detail__btn--primary\"] button"
                   }
                 }
               }
@@ -804,12 +584,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 263,
-                      "y": 222,
-                      "width": 114.890625,
-                      "height": 35
+                      "x": 953.265625,
+                      "y": 60,
+                      "width": 104.03125,
+                      "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"
+                    "selector": "[data-testid=\"procedure-detail__btn--primary\"] button"
                   }
                 }
               }
@@ -827,12 +607,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 33,
-                      "y": 534,
-                      "width": 114.890625,
-                      "height": 35
+                      "x": 16,
+                      "y": 261,
+                      "width": 104.03125,
+                      "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-detail__btn--transition-2\"] button"
+                    "selector": "[data-testid=\"procedure-detail__btn--primary\"] button"
                   }
                 }
               }
@@ -842,29 +622,29 @@
       }
     },
     {
-      "id": "step-5",
-      "index": 5,
-      "action": "custom",
+      "id": "step-4",
+      "index": 4,
+      "action": "assert",
       "interactive": false,
       "screenshotWhen": "after",
       "waitAfter": 0,
       "title": {
-        "fr": "La date de dépôt",
-        "en": "The filing date",
-        "nl": "De datum van indiening",
-        "de": "Das Übermittlungsdatum"
+        "fr": "Ce qu'il faut envoyer",
+        "en": "What to send",
+        "nl": "Wat u verstuurt",
+        "de": "Was zu senden ist"
       },
       "text": {
-        "fr": "La date de dépôt n'est pas une formalité : c'est elle qui fait courir les délais réglementaires. Choisissez la date réelle du dépôt.",
-        "en": "The filing date is not a formality: it is what starts the regulatory clocks. Pick the date the dossier was really filed.",
-        "nl": "De datum van indiening is geen formaliteit: vanaf die datum lopen de reglementaire termijnen. Kies de werkelijke datum van de indiening.",
-        "de": "Das Übermittlungsdatum ist keine Formalität: Mit ihm beginnen die regulatorischen Fristen zu laufen. Wählen Sie das tatsächliche Datum der Einreichung."
+        "fr": "OptimCE n'envoie rien lui-même. Il prépare le destinataire, l'objet avec sa référence, un texte à copier et les pièces à joindre ; vous envoyez par votre messagerie ou par le formulaire en ligne du régulateur.",
+        "en": "OptimCE sends nothing itself. It prepares the recipient, the subject with its reference, a text to copy and the documents to attach; you send them from your mailbox or the regulator's online form.",
+        "nl": "OptimCE verstuurt zelf niets. Het bereidt de bestemmeling voor, het onderwerp met zijn referentie, een tekst om te kopiëren en de bij te voegen documenten; u verstuurt ze via uw mailbox of het onlineformulier van de regulator.",
+        "de": "OptimCE sendet selbst nichts. Es bereitet den Empfänger vor, den Betreff mit seiner Referenz, einen Text zum Kopieren und die anzuhängenden Unterlagen; Sie senden sie über Ihr Postfach oder das Online-Formular der Regulierungsbehörde."
       },
       "subtitle": {
-        "fr": "Changer le statut",
-        "en": "Change status",
-        "nl": "Status wijzigen",
-        "de": "Status ändern"
+        "fr": "Envoyer",
+        "en": "Send",
+        "nl": "Versturen",
+        "de": "Senden"
       },
       "captures": {
         "fr": {
@@ -974,6 +754,226 @@
       }
     },
     {
+      "id": "step-5",
+      "index": 5,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Marquer comme envoyé",
+        "en": "Mark as sent",
+        "nl": "Markeren als verstuurd",
+        "de": "Als gesendet markieren"
+      },
+      "text": {
+        "fr": "Indiquez la date et le canal d'envoi, joignez au besoin le courriel envoyé, puis « Marquer comme envoyé ». La démarche est alors figée : un changement arrivé ensuite ira dans une nouvelle démarche.",
+        "en": "Give the date and the channel, attach the email you sent if you like, then \"Mark as sent\". The procedure is then frozen: a change arriving later goes into a new procedure.",
+        "nl": "Vul de datum en het kanaal in, voeg desgewenst de verstuurde e-mail bij en kies dan “Markeren als verstuurd”. De procedure ligt dan vast: een wijziging die later binnenkomt, gaat naar een nieuwe procedure.",
+        "de": "Geben Sie Datum und Kanal an, hängen Sie bei Bedarf die gesendete E-Mail an und wählen Sie dann „Als gesendet markieren“. Das Verfahren ist danach eingefroren: Eine später eintreffende Änderung kommt in ein neues Verfahren."
+      },
+      "subtitle": {
+        "fr": "Envoyer",
+        "en": "Send",
+        "nl": "Versturen",
+        "de": "Senden"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 855.109375,
+                      "y": 792.4375,
+                      "width": 227.890625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"procedure-send-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 149.109375,
+                      "y": 789.4375,
+                      "width": 227.890625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"procedure-send-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 939.96875,
+                      "y": 792.4375,
+                      "width": 143.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"procedure-send-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 233.96875,
+                      "y": 789.4375,
+                      "width": 143.03125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"procedure-send-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 865.1875,
+                      "y": 792.4375,
+                      "width": 217.8125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"procedure-send-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 159.1875,
+                      "y": 789.4375,
+                      "width": 217.8125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"procedure-send-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-26.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 861.4375,
+                      "y": 792.4375,
+                      "width": 221.5625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"procedure-send-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 155.4375,
+                      "y": 789.4375,
+                      "width": 221.5625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"procedure-send-dialog__btn--submit\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
       "id": "step-6",
       "index": 6,
       "action": "assert",
@@ -981,29 +981,29 @@
       "screenshotWhen": "after",
       "waitAfter": 0,
       "title": {
-        "fr": "Le dossier est soumis",
-        "en": "The dossier is submitted",
-        "nl": "Het dossier is ingediend",
-        "de": "Das Dossier ist eingereicht"
+        "fr": "Le délai du régulateur court",
+        "en": "The regulator's delay is running",
+        "nl": "De termijn van de regulator loopt",
+        "de": "Die Frist der Regulierungsbehörde läuft"
       },
       "text": {
-        "fr": "Le statut change et les actions proposées changent avec lui : un dossier soumis peut être déclaré complet, corrigé, ou devenir caduc.",
-        "en": "The status changes and the available actions change with it: a submitted dossier can be declared complete, corrected, or lapse.",
-        "nl": "De status verandert en de voorgestelde acties veranderen mee: een ingediend dossier kan volledig worden verklaard, worden gecorrigeerd of vervallen.",
-        "de": "Der Status ändert sich und mit ihm die angebotenen Aktionen: Ein eingereichtes Dossier kann für vollständig erklärt, korrigiert werden oder verfallen."
+        "fr": "L'envoi démarre le délai de contrôle de complétude de la CWaPE, compté en jours ouvrables wallons. La prochaine action devient « Ajouter une réponse » : vous y noterez son accusé ou sa demande de compléments.",
+        "en": "Sending starts the CWaPE's completeness-check delay, counted in Walloon working days. The next action becomes \"Add a response\": that is where you record its acknowledgement or its request for more information.",
+        "nl": "Het versturen start de termijn voor de volledigheidscontrole door de CWaPE, geteld in Waalse werkdagen. De volgende actie wordt “Een antwoord toevoegen”: daar noteert u de bevestiging of het verzoek om aanvullingen.",
+        "de": "Der Versand startet die Frist für die Vollständigkeitsprüfung der CWaPE, gezählt in wallonischen Werktagen. Die nächste Aktion wird „Antwort hinzufügen“: Dort erfassen Sie deren Bestätigung oder Nachforderung."
       },
       "subtitle": {
-        "fr": "Suivi des dossiers",
-        "en": "Tracking dossiers",
-        "nl": "Dossieropvolging",
-        "de": "Dossierverfolgung"
+        "fr": "Échéances",
+        "en": "Deadlines",
+        "nl": "Termijnen",
+        "de": "Fristen"
       },
       "captures": {
         "fr": {
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-27.png",
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-28.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1015,7 +1015,7 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-27.png",
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-28.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -1029,7 +1029,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-27.png",
+                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-28.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1041,7 +1041,7 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-27.png",
+                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-28.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -1055,7 +1055,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-27.png",
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-28.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1067,7 +1067,7 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-27.png",
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-28.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -1081,7 +1081,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-27.png",
+                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-28.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1093,7 +1093,7 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-27.png",
+                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-28.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -1113,29 +1113,29 @@
       "screenshotWhen": "before",
       "waitAfter": 1500,
       "title": {
-        "fr": "Voir les échéances",
-        "en": "See the deadlines",
-        "nl": "De termijnen bekijken",
-        "de": "Die Fristen anzeigen"
+        "fr": "Toutes les échéances",
+        "en": "Every deadline",
+        "nl": "Alle termijnen",
+        "de": "Alle Fristen"
       },
       "text": {
-        "fr": "L'onglet « Échéances » montre ce que le dépôt vient de déclencher.",
-        "en": "The \"Deadlines\" tab shows what the filing has just triggered.",
-        "nl": "Het tabblad “Termijnen” toont wat de indiening zojuist in gang heeft gezet.",
-        "de": "Die Registerkarte „Fristen“ zeigt, was die Einreichung soeben ausgelöst hat."
+        "fr": "L'onglet « Échéances » réunit les délais de toutes les démarches : les vôtres comme ceux du régulateur ou du gestionnaire de réseau.",
+        "en": "The \"Deadlines\" tab gathers the delays of every procedure: yours as well as the regulator's or the grid operator's.",
+        "nl": "Het tabblad “Termijnen” bundelt de termijnen van alle procedures: die van u en die van de regulator of de netbeheerder.",
+        "de": "Der Reiter „Fristen“ bündelt die Fristen aller Verfahren: Ihre eigenen ebenso wie die der Regulierungsbehörde oder des Netzbetreibers."
       },
       "subtitle": {
-        "fr": "Suivi des dossiers",
-        "en": "Tracking dossiers",
-        "nl": "Dossieropvolging",
-        "de": "Dossierverfolgung"
+        "fr": "Documents administratifs",
+        "en": "Administrative documents",
+        "nl": "Administratieve documenten",
+        "de": "Verwaltungsdokumente"
       },
       "captures": {
         "fr": {
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-28.png",
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-30.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1144,12 +1144,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 360.578125,
-                      "y": 298,
+                      "x": 548.828125,
+                      "y": 146,
                       "width": 110.234375,
                       "height": 57
                     },
-                    "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"
+                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
                   }
                 }
               }
@@ -1158,7 +1158,7 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-28.png",
+                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-30.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -1167,12 +1167,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 134.578125,
-                      "y": 649,
+                      "x": 263.828125,
+                      "y": 264,
                       "width": 110.234375,
                       "height": 57
                     },
-                    "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"
+                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
                   }
                 }
               }
@@ -1183,7 +1183,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-28.png",
+                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-30.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1192,12 +1192,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 360.578125,
-                      "y": 298,
+                      "x": 499.53125,
+                      "y": 146,
                       "width": 107.0625,
                       "height": 57
                     },
-                    "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"
+                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
                   }
                 }
               }
@@ -1206,7 +1206,7 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-28.png",
+                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-30.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -1215,12 +1215,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 134.578125,
-                      "y": 649,
+                      "x": 266.53125,
+                      "y": 264,
                       "width": 107.0625,
                       "height": 57
                     },
-                    "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"
+                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
                   }
                 }
               }
@@ -1231,7 +1231,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-28.png",
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-30.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1240,12 +1240,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 371.421875,
-                      "y": 298,
+                      "x": 508.03125,
+                      "y": 146,
                       "width": 107.40625,
                       "height": 57
                     },
-                    "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"
+                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
                   }
                 }
               }
@@ -1254,7 +1254,7 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-28.png",
+                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-30.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -1263,12 +1263,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 145.421875,
-                      "y": 649,
+                      "x": 267.03125,
+                      "y": 264,
                       "width": 107.40625,
                       "height": 57
                     },
-                    "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"
+                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
                   }
                 }
               }
@@ -1279,7 +1279,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-28.png",
+                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-30.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1288,12 +1288,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 362.96875,
-                      "y": 298,
+                      "x": 487.625,
+                      "y": 146,
                       "width": 84.5625,
                       "height": 57
                     },
-                    "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"
+                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
                   }
                 }
               }
@@ -1302,7 +1302,7 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-28.png",
+                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-30.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -1311,12 +1311,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 136.96875,
-                      "y": 649,
+                      "x": 261.625,
+                      "y": 264,
                       "width": 84.5625,
                       "height": 57
                     },
-                    "selector": "[data-testid=\"dossier-detail__tab--deadlines\"]"
+                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
                   }
                 }
               }
@@ -1333,16 +1333,16 @@
       "screenshotWhen": "after",
       "waitAfter": 0,
       "title": {
-        "fr": "Une échéance est apparue",
-        "en": "A deadline has appeared",
-        "nl": "Er is een termijn verschenen",
-        "de": "Eine Frist ist erschienen"
+        "fr": "L'agenda des échéances",
+        "en": "The deadline agenda",
+        "nl": "De agenda van de termijnen",
+        "de": "Die Fristenübersicht"
       },
       "text": {
-        "fr": "Vous n'encodez jamais une échéance à la main : OptimCE la calcule à partir du type de dossier, de la région et de la date que vous venez d'enregistrer.",
-        "en": "You never enter a deadline by hand: OptimCE derives it from the dossier type, the region and the date you have just recorded.",
-        "nl": "U voert een termijn nooit handmatig in: OptimCE berekent hem op basis van het dossiertype, het gewest en de datum die u zojuist hebt vastgelegd.",
-        "de": "Sie erfassen eine Frist nie von Hand: OptimCE berechnet sie aus dem Dossiertyp, der Region und dem Datum, das Sie soeben erfasst haben."
+        "fr": "Chaque échéance indique qui doit agir et pour quand ; les dépassées remontent en rouge. Elle se clôt d'elle-même quand la réponse attendue est enregistrée dans la démarche.",
+        "en": "Every deadline says who has to act and by when; overdue ones rise to the top in red. It closes by itself when the expected response is recorded in the procedure.",
+        "nl": "Elke termijn vermeldt wie moet handelen en tegen wanneer; verstreken termijnen komen in het rood bovenaan. Hij wordt vanzelf afgesloten zodra het verwachte antwoord in de procedure is vastgelegd.",
+        "de": "Jede Frist zeigt, wer handeln muss und bis wann; überschrittene stehen rot oben. Sie schließt sich von selbst, sobald die erwartete Antwort im Verfahren erfasst ist."
       },
       "subtitle": {
         "fr": "Échéances",
@@ -1355,155 +1355,12 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-30.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-30.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        },
-        "en": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-30.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-30.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        },
-        "nl": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-30.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-30.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        },
-        "de": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-30.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-30.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "id": "step-9",
-      "index": 9,
-      "action": "click",
-      "interactive": true,
-      "screenshotWhen": "before",
-      "waitAfter": 1500,
-      "title": {
-        "fr": "Toutes les échéances",
-        "en": "Every deadline",
-        "nl": "Alle termijnen",
-        "de": "Alle Fristen"
-      },
-      "text": {
-        "fr": "L'onglet « Échéances » de la page principale rassemble les échéances de tous les dossiers, pour savoir d'un coup d'œil ce qui arrive à terme.",
-        "en": "The \"Deadlines\" tab of the main page gathers the deadlines of every dossier, so you can see at a glance what is coming due.",
-        "nl": "Het tabblad “Termijnen” van de hoofdpagina bundelt de termijnen van alle dossiers, zodat u in één oogopslag ziet wat binnenkort vervalt.",
-        "de": "Die Registerkarte „Fristen“ der Hauptseite fasst die Fristen aller Dossiers zusammen, damit Sie auf einen Blick sehen, was demnächst fällig wird."
-      },
-      "subtitle": {
-        "fr": "Documents administratifs",
-        "en": "Administrative documents",
-        "nl": "Administratieve documenten",
-        "de": "Verwaltungsdokumente"
-      },
-      "captures": {
-        "fr": {
-          "desktop": {
-            "frames": [
-              {
                 "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-32.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 338.4375,
-                      "y": 146,
-                      "width": 110.234375,
-                      "height": 57
-                    },
-                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
@@ -1515,18 +1372,7 @@
                   "width": 390,
                   "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 112.4375,
-                      "y": 284,
-                      "width": 110.234375,
-                      "height": 57
-                    },
-                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -1540,18 +1386,7 @@
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 338.4375,
-                      "y": 146,
-                      "width": 107.0625,
-                      "height": 57
-                    },
-                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
@@ -1563,18 +1398,7 @@
                   "width": 390,
                   "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 112.4375,
-                      "y": 284,
-                      "width": 107.0625,
-                      "height": 57
-                    },
-                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -1588,18 +1412,7 @@
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 338.4375,
-                      "y": 146,
-                      "width": 107.40625,
-                      "height": 57
-                    },
-                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
@@ -1611,18 +1424,7 @@
                   "width": 390,
                   "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 112.4375,
-                      "y": 264,
-                      "width": 107.40625,
-                      "height": 57
-                    },
-                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -1636,18 +1438,7 @@
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 338.4375,
-                      "y": 146,
-                      "width": 84.5625,
-                      "height": 57
-                    },
-                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
@@ -1655,713 +1446,6 @@
             "frames": [
               {
                 "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-32.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 112.4375,
-                      "y": 284,
-                      "width": 84.5625,
-                      "height": 57
-                    },
-                    "selector": "[data-testid=\"administrative-document-hub__tab--deadlines\"]"
-                  }
-                }
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "id": "step-10",
-      "index": 10,
-      "action": "assert",
-      "interactive": false,
-      "screenshotWhen": "after",
-      "waitAfter": 0,
-      "title": {
-        "fr": "Le tableau des échéances",
-        "en": "The deadline board",
-        "nl": "Het overzicht van de termijnen",
-        "de": "Die Fristenübersicht"
-      },
-      "text": {
-        "fr": "Chaque ligne renvoie à son dossier et indique la date limite. Le filtre affiche par défaut les échéances encore ouvertes.",
-        "en": "Every row links back to its dossier and shows the due date. The filter shows the still-open deadlines by default.",
-        "nl": "Elke rij verwijst naar het bijbehorende dossier en vermeldt de vervaldatum. De filter toont standaard de termijnen die nog openstaan.",
-        "de": "Jede Zeile verweist auf ihr Dossier und zeigt das Fälligkeitsdatum. Der Filter zeigt standardmäßig die noch offenen Fristen."
-      },
-      "subtitle": {
-        "fr": "Échéances",
-        "en": "Deadlines",
-        "nl": "Termijnen",
-        "de": "Fristen"
-      },
-      "captures": {
-        "fr": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-34.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-34.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        },
-        "en": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-34.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-34.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        },
-        "nl": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-34.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-34.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        },
-        "de": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-34.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-34.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "id": "step-11",
-      "index": 11,
-      "action": "click",
-      "interactive": true,
-      "screenshotWhen": "before",
-      "waitAfter": 1000,
-      "title": {
-        "fr": "Clôturer une échéance",
-        "en": "Close a deadline",
-        "nl": "Een termijn afsluiten",
-        "de": "Eine Frist abschließen"
-      },
-      "text": {
-        "fr": "Quand l'obligation est remplie, marquez l'échéance comme respectée. Elle quitte la liste des échéances ouvertes sans disparaître de l'historique.",
-        "en": "Once the obligation is fulfilled, mark the deadline as met. It leaves the open list without disappearing from the record.",
-        "nl": "Wanneer aan de verplichting is voldaan, markeert u de termijn als nagekomen. Hij verdwijnt uit de lijst van openstaande termijnen, maar blijft in de historiek bewaard.",
-        "de": "Sobald die Verpflichtung erfüllt ist, markieren Sie die Frist als erfüllt. Sie verschwindet aus der Liste der offenen Fristen, bleibt aber im Verlauf erhalten."
-      },
-      "subtitle": {
-        "fr": "Échéances",
-        "en": "Deadlines",
-        "nl": "Termijnen",
-        "de": "Fristen"
-      },
-      "captures": {
-        "fr": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-35.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 1097.234375,
-                      "y": 466,
-                      "width": 32,
-                      "height": 32
-                    },
-                    "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"
-                  }
-                }
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-35.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 276.453125,
-                      "y": 757,
-                      "width": 32,
-                      "height": 32
-                    },
-                    "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"
-                  }
-                }
-              }
-            ]
-          }
-        },
-        "en": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-35.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 1083.09375,
-                      "y": 466,
-                      "width": 32,
-                      "height": 32
-                    },
-                    "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"
-                  }
-                }
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-35.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 276.40625,
-                      "y": 761,
-                      "width": 32,
-                      "height": 32
-                    },
-                    "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"
-                  }
-                }
-              }
-            ]
-          }
-        },
-        "nl": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-35.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 1092.96875,
-                      "y": 466,
-                      "width": 32,
-                      "height": 32
-                    },
-                    "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"
-                  }
-                }
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-35.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 275.6875,
-                      "y": 813,
-                      "width": 32,
-                      "height": 32
-                    },
-                    "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"
-                  }
-                }
-              }
-            ]
-          }
-        },
-        "de": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-35.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 1087.90625,
-                      "y": 466,
-                      "width": 32,
-                      "height": 32
-                    },
-                    "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"
-                  }
-                }
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-35.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 274.65625,
-                      "y": 765,
-                      "width": 32,
-                      "height": 32
-                    },
-                    "selector": "[data-testid=\"deadline-dashboard__btn--met-1\"] button"
-                  }
-                }
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "id": "step-12",
-      "index": 12,
-      "action": "confirm",
-      "interactive": true,
-      "screenshotWhen": "after",
-      "waitAfter": 2000,
-      "title": {
-        "fr": "Confirmer",
-        "en": "Confirm",
-        "nl": "Bevestigen",
-        "de": "Bestätigen"
-      },
-      "text": {
-        "fr": "Confirmez : l'échéance passe au statut « Respectée » et le tableau des échéances ouvertes se vide.",
-        "en": "Confirm: the deadline moves to \"Met\" and the open-deadline board empties.",
-        "nl": "Bevestig: de termijn krijgt de status “Nagekomen” en het overzicht van de openstaande termijnen wordt leeg.",
-        "de": "Bestätigen Sie: Die Frist erhält den Status „Erfüllt“ und die Übersicht der offenen Fristen leert sich."
-      },
-      "subtitle": {
-        "fr": "Échéances",
-        "en": "Deadlines",
-        "nl": "Termijnen",
-        "de": "Fristen"
-      },
-      "captures": {
-        "fr": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-36.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 954.578125,
-                      "y": 481,
-                      "width": 75.875,
-                      "height": 42
-                    }
-                  }
-                }
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-36.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 293.125,
-                      "y": 475,
-                      "width": 75.875,
-                      "height": 42
-                    }
-                  }
-                }
-              }
-            ]
-          }
-        },
-        "en": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-36.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 928.640625,
-                      "y": 481,
-                      "width": 83.984375,
-                      "height": 42
-                    }
-                  }
-                }
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-36.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 285.015625,
-                      "y": 465,
-                      "width": 83.984375,
-                      "height": 42
-                    }
-                  }
-                }
-              }
-            ]
-          }
-        },
-        "nl": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-36.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 970.953125,
-                      "y": 481,
-                      "width": 105,
-                      "height": 42
-                    }
-                  }
-                }
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-36.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 264,
-                      "y": 477,
-                      "width": 105,
-                      "height": 42
-                    }
-                  }
-                }
-              }
-            ]
-          }
-        },
-        "de": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-36.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 950.65625,
-                      "y": 481,
-                      "width": 102.640625,
-                      "height": 42
-                    }
-                  }
-                }
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-36.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 266.359375,
-                      "y": 477,
-                      "width": 102.640625,
-                      "height": 42
-                    }
-                  }
-                }
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "id": "step-13",
-      "index": 13,
-      "action": "assert",
-      "interactive": false,
-      "screenshotWhen": "after",
-      "waitAfter": 0,
-      "title": {
-        "fr": "Plus rien en attente",
-        "en": "Nothing pending",
-        "nl": "Niets meer in afwachting",
-        "de": "Nichts mehr ausstehend"
-      },
-      "text": {
-        "fr": "Le tableau ne montre plus d'échéance ouverte. L'historique du dossier, lui, garde la trace de ce qui a été fait et quand.",
-        "en": "The board shows no open deadline any more. The dossier history still keeps a record of what was done and when.",
-        "nl": "Het overzicht toont geen openstaande termijn meer. De historiek van het dossier houdt wel bij wat er is gedaan en wanneer.",
-        "de": "Die Übersicht zeigt keine offene Frist mehr. Der Verlauf des Dossiers hält jedoch fest, was wann getan wurde."
-      },
-      "subtitle": {
-        "fr": "Échéances",
-        "en": "Deadlines",
-        "nl": "Termijnen",
-        "de": "Fristen"
-      },
-      "captures": {
-        "fr": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/fr/desktop/step-37.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/fr/mobile/step-37.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        },
-        "en": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/en/desktop/step-37.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/en/mobile/step-37.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        },
-        "nl": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/nl/desktop/step-37.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/nl/mobile/step-37.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        },
-        "de": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/de/desktop/step-37.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-submit-deadline/de/mobile/step-37.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844

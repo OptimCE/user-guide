@@ -4,10 +4,10 @@
   "mode": "interactive",
   "role": "admin",
   "title": {
-    "fr": "Créer un dossier administratif",
-    "en": "Create an administrative dossier",
-    "nl": "Een administratief dossier aanmaken",
-    "de": "Verwaltungsdossier anlegen"
+    "fr": "Ouvrir une démarche",
+    "en": "Open a procedure",
+    "nl": "Een procedure openen",
+    "de": "Ein Verfahren eröffnen"
   },
   "locales": [
     "fr",
@@ -277,16 +277,16 @@
       "screenshotWhen": "after",
       "waitAfter": 500,
       "title": {
-        "fr": "Aucun dossier pour le moment",
-        "en": "No dossier yet",
-        "nl": "Nog geen dossier",
-        "de": "Noch kein Dossier"
+        "fr": "Les démarches, par ordre d'urgence",
+        "en": "Procedures, most urgent first",
+        "nl": "Procedures, de dringendste eerst",
+        "de": "Verfahren, das Dringendste zuerst"
       },
       "text": {
-        "fr": "Cette page suit les dossiers déposés auprès de la CWaPE et du gestionnaire de réseau. Chaque dossier concerne une seule opération de partage : une communauté qui en exploite plusieurs dépose un dossier par opération.",
-        "en": "This page tracks the dossiers filed with the CWaPE and the grid operator. Every dossier concerns exactly one sharing operation: a community running several operations files one dossier per operation.",
-        "nl": "Op deze pagina volgt u de dossiers op die bij de CWaPE en de netbeheerder zijn ingediend. Elk dossier betreft één enkele deeloperatie: een gemeenschap die er meerdere beheert, dient per operatie een dossier in.",
-        "de": "Diese Seite verfolgt die bei der CWaPE und dem Netzbetreiber eingereichten Dossiers. Jedes Dossier betrifft genau eine Teilungsoperation: Eine Gemeinschaft, die mehrere betreibt, reicht pro Operation ein Dossier ein."
+        "fr": "L'onglet « Démarches » s'ouvre par défaut : ce qu'il faut faire, et pour quand, auprès de la CWaPE et du gestionnaire de réseau. Les démarches nées d'un changement dans le CRM y arrivent d'elles-mêmes. Une communauté qui vient d'activer le module confirme d'abord son état de départ, comme le demande le bandeau.",
+        "en": "The \"Procedures\" tab opens by default: what to do, and by when, with the CWaPE and the grid operator. Procedures born from a change in the CRM arrive here on their own. A community that has just activated the module first confirms its starting state, as the banner asks.",
+        "nl": "Het tabblad “Procedures” opent standaard: wat er moet gebeuren, en tegen wanneer, bij de CWaPE en de netbeheerder. Procedures die uit een wijziging in het CRM voortkomen, verschijnen hier vanzelf. Een gemeenschap die de module net heeft geactiveerd, bevestigt eerst haar beginsituatie, zoals de banner vraagt.",
+        "de": "Der Reiter „Verfahren“ öffnet sich standardmäßig: was zu tun ist und bis wann, bei der CWaPE und beim Netzbetreiber. Verfahren, die aus einer Änderung im CRM entstehen, erscheinen hier von selbst. Eine Gemeinschaft, die das Modul gerade aktiviert hat, bestätigt zuerst ihre Ausgangslage, wie das Banner verlangt."
       },
       "subtitle": {
         "fr": "Documents administratifs",
@@ -409,22 +409,22 @@
       "screenshotWhen": "before",
       "waitAfter": 1000,
       "title": {
-        "fr": "Créer un dossier",
-        "en": "Create a dossier",
-        "nl": "Dossier aanmaken",
-        "de": "Dossier anlegen"
+        "fr": "Ouvrir une démarche à la main",
+        "en": "Open a procedure by hand",
+        "nl": "Een procedure met de hand openen",
+        "de": "Ein Verfahren von Hand eröffnen"
       },
       "text": {
-        "fr": "Cliquez sur « Nouveau dossier » pour ouvrir le formulaire de création.",
-        "en": "Click \"New dossier\" to open the creation form.",
-        "nl": "Klik op “Nieuw dossier” om het aanmaakformulier te openen.",
-        "de": "Klicken Sie auf „Neues Dossier“, um das Formular zum Anlegen zu öffnen."
+        "fr": "La plupart des démarches s'ouvrent seules. Celles qu'aucun changement du CRM ne déclenche encore — l'autorisation d'une nouvelle opération, la fin d'un partage, l'actualisation des informations de la communauté — s'ouvrent avec « Nouvelle démarche ».",
+        "en": "Most procedures open on their own. Those no change in the CRM triggers yet — authorising a new operation, ending a sharing, updating the community's information — open with \"New procedure\".",
+        "nl": "De meeste procedures openen vanzelf. Die welke nog door geen enkele wijziging in het CRM worden gestart — de machtiging van een nieuwe operatie, het einde van een deling, de bijwerking van de gegevens van de gemeenschap — opent u met “Nieuwe procedure”.",
+        "de": "Die meisten Verfahren eröffnen sich von selbst. Diejenigen, die noch keine Änderung im CRM auslöst — die Genehmigung einer neuen Operation, das Ende einer Teilung, die Aktualisierung der Angaben der Gemeinschaft —, eröffnen Sie mit „Neues Verfahren“."
       },
       "subtitle": {
-        "fr": "Nouveau dossier",
-        "en": "New dossier",
-        "nl": "Nieuw dossier",
-        "de": "Neues Dossier"
+        "fr": "Nouvelle démarche",
+        "en": "New procedure",
+        "nl": "Nieuwe procedure",
+        "de": "Neues Verfahren"
       },
       "captures": {
         "fr": {
@@ -440,12 +440,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 1076.65625,
-                      "y": 233,
-                      "width": 171.34375,
+                      "x": 1057.296875,
+                      "y": 339,
+                      "width": 190.703125,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-list__btn--create\"] button"
+                    "selector": "[data-testid=\"procedure-dashboard__btn--create\"] button"
                   }
                 }
               }
@@ -463,12 +463,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 34,
-                      "y": 419,
-                      "width": 171.34375,
+                      "x": 82,
+                      "y": 682,
+                      "width": 190.703125,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-list__btn--create\"] button"
+                    "selector": "[data-testid=\"procedure-dashboard__btn--create\"] button"
                   }
                 }
               }
@@ -488,12 +488,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 1109.125,
-                      "y": 233,
-                      "width": 138.875,
+                      "x": 1086.46875,
+                      "y": 339,
+                      "width": 161.53125,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-list__btn--create\"] button"
+                    "selector": "[data-testid=\"procedure-dashboard__btn--create\"] button"
                   }
                 }
               }
@@ -511,12 +511,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 34,
-                      "y": 399,
-                      "width": 138.875,
+                      "x": 82,
+                      "y": 658,
+                      "width": 161.53125,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-list__btn--create\"] button"
+                    "selector": "[data-testid=\"procedure-dashboard__btn--create\"] button"
                   }
                 }
               }
@@ -536,12 +536,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 1095.609375,
-                      "y": 233,
-                      "width": 152.390625,
+                      "x": 1064.53125,
+                      "y": 339,
+                      "width": 183.46875,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-list__btn--create\"] button"
+                    "selector": "[data-testid=\"procedure-dashboard__btn--create\"] button"
                   }
                 }
               }
@@ -559,12 +559,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 34,
-                      "y": 399,
-                      "width": 152.390625,
+                      "x": 82,
+                      "y": 682,
+                      "width": 183.46875,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-list__btn--create\"] button"
+                    "selector": "[data-testid=\"procedure-dashboard__btn--create\"] button"
                   }
                 }
               }
@@ -584,12 +584,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 1094.65625,
-                      "y": 233,
-                      "width": 153.34375,
+                      "x": 1077.28125,
+                      "y": 339,
+                      "width": 170.71875,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-list__btn--create\"] button"
+                    "selector": "[data-testid=\"procedure-dashboard__btn--create\"] button"
                   }
                 }
               }
@@ -607,12 +607,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 34,
-                      "y": 419,
-                      "width": 153.34375,
+                      "x": 82,
+                      "y": 682,
+                      "width": 170.71875,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-list__btn--create\"] button"
+                    "selector": "[data-testid=\"procedure-dashboard__btn--create\"] button"
                   }
                 }
               }
@@ -624,34 +624,34 @@
     {
       "id": "step-4",
       "index": 4,
-      "action": "select-option",
+      "action": "click",
       "interactive": true,
       "screenshotWhen": "after",
       "waitAfter": 700,
       "title": {
-        "fr": "Choisir le type de dossier",
-        "en": "Choose the dossier type",
-        "nl": "Type dossier kiezen",
-        "de": "Dossiertyp wählen"
+        "fr": "Choisir le type de démarche",
+        "en": "Choose the type of procedure",
+        "nl": "Soort procedure kiezen",
+        "de": "Art des Verfahrens wählen"
       },
       "text": {
-        "fr": "Le type détermine les échéances réglementaires qui seront calculées ensuite. Ici, une notification de création de communauté.",
-        "en": "The type decides which regulatory deadlines are derived later. Here, a community creation notification.",
-        "nl": "Het type bepaalt welke wettelijke termijnen daarna worden berekend. Hier een kennisgeving van oprichting van een gemeenschap.",
-        "de": "Der Typ bestimmt, welche regulatorischen Fristen anschließend berechnet werden. Hier eine Gründungsmeldung für eine Gemeinschaft."
+        "fr": "La liste reprend le catalogue de votre régulateur. Ici, l'autorisation d'une nouvelle opération de partage : elle se dépose auprès du gestionnaire de réseau, qui la transmet à la CWaPE.",
+        "en": "The list is your regulator's catalogue. Here, the authorisation of a new sharing operation: it is filed with the grid operator, who passes it on to the CWaPE.",
+        "nl": "De lijst neemt de catalogus van uw regulator over. Hier de machtiging van een nieuwe deeloperatie: die dient u in bij de netbeheerder, die haar aan de CWaPE bezorgt.",
+        "de": "Die Liste übernimmt den Katalog Ihrer Regulierungsbehörde. Hier die Genehmigung einer neuen Teilungsoperation: Sie wird beim Netzbetreiber eingereicht, der sie an die CWaPE weiterleitet."
       },
       "subtitle": {
-        "fr": "Nouveau dossier",
-        "en": "New dossier",
-        "nl": "Nieuw dossier",
-        "de": "Neues Dossier"
+        "fr": "Nouvelle démarche",
+        "en": "New procedure",
+        "nl": "Nieuwe procedure",
+        "de": "Neues Verfahren"
       },
       "captures": {
         "fr": {
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-23.png",
+                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-24.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -660,12 +660,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 469,
-                      "y": 291.8125,
-                      "width": 502,
-                      "height": 42
+                      "x": 486,
+                      "y": 484.40625,
+                      "width": 167.28125,
+                      "height": 24
                     },
-                    "selector": "[data-testid=\"dossier-create-dialog__select--type\"]"
+                    "selector": "[data-testid=\"dossier-create-dialog__option--PARTAGE_AUTORISATION\"]"
                   }
                 }
               }
@@ -674,7 +674,7 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-23.png",
+                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-24.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -683,12 +683,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 13,
-                      "y": 117,
-                      "width": 364,
-                      "height": 42
+                      "x": 30,
+                      "y": 216,
+                      "width": 167.28125,
+                      "height": 24
                     },
-                    "selector": "[data-testid=\"dossier-create-dialog__select--type\"]"
+                    "selector": "[data-testid=\"dossier-create-dialog__option--PARTAGE_AUTORISATION\"]"
                   }
                 }
               }
@@ -699,7 +699,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-23.png",
+                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-24.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -708,12 +708,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 469,
-                      "y": 291.8125,
-                      "width": 502,
-                      "height": 42
+                      "x": 486,
+                      "y": 606.40625,
+                      "width": 151.140625,
+                      "height": 24
                     },
-                    "selector": "[data-testid=\"dossier-create-dialog__select--type\"]"
+                    "selector": "[data-testid=\"dossier-create-dialog__option--PARTAGE_AUTORISATION\"]"
                   }
                 }
               }
@@ -722,7 +722,7 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-23.png",
+                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-24.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -731,12 +731,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 13,
-                      "y": 117,
-                      "width": 364,
-                      "height": 42
+                      "x": 30,
+                      "y": 338,
+                      "width": 151.140625,
+                      "height": 24
                     },
-                    "selector": "[data-testid=\"dossier-create-dialog__select--type\"]"
+                    "selector": "[data-testid=\"dossier-create-dialog__option--PARTAGE_AUTORISATION\"]"
                   }
                 }
               }
@@ -747,7 +747,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-23.png",
+                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-24.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -756,12 +756,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 469,
-                      "y": 291.8125,
-                      "width": 502,
-                      "height": 42
+                      "x": 486,
+                      "y": 484.40625,
+                      "width": 111.265625,
+                      "height": 24
                     },
-                    "selector": "[data-testid=\"dossier-create-dialog__select--type\"]"
+                    "selector": "[data-testid=\"dossier-create-dialog__option--PARTAGE_AUTORISATION\"]"
                   }
                 }
               }
@@ -770,7 +770,7 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-23.png",
+                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-24.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -779,12 +779,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 13,
-                      "y": 117,
-                      "width": 364,
-                      "height": 42
+                      "x": 17,
+                      "y": 216,
+                      "width": 111.265625,
+                      "height": 24
                     },
-                    "selector": "[data-testid=\"dossier-create-dialog__select--type\"]"
+                    "selector": "[data-testid=\"dossier-create-dialog__option--PARTAGE_AUTORISATION\"]"
                   }
                 }
               }
@@ -795,7 +795,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-23.png",
+                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-24.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -804,12 +804,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 469,
-                      "y": 291.8125,
-                      "width": 502,
-                      "height": 42
+                      "x": 486,
+                      "y": 584.8125,
+                      "width": 156.140625,
+                      "height": 24
                     },
-                    "selector": "[data-testid=\"dossier-create-dialog__select--type\"]"
+                    "selector": "[data-testid=\"dossier-create-dialog__option--PARTAGE_AUTORISATION\"]"
                   }
                 }
               }
@@ -818,7 +818,7 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-23.png",
+                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-24.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -827,12 +827,12 @@
                   "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 13,
-                      "y": 117,
-                      "width": 364,
-                      "height": 42
+                      "x": 30,
+                      "y": 326,
+                      "width": 156.140625,
+                      "height": 24
                     },
-                    "selector": "[data-testid=\"dossier-create-dialog__select--type\"]"
+                    "selector": "[data-testid=\"dossier-create-dialog__option--PARTAGE_AUTORISATION\"]"
                   }
                 }
               }
@@ -855,23 +855,23 @@
         "de": "Teilungsoperation wählen"
       },
       "text": {
-        "fr": "Sélectionnez l'opération de partage concernée. C'est elle qui fournira les membres et les compteurs repris dans les documents du dossier.",
-        "en": "Pick the sharing operation the filing is about. It supplies the members and meters that the dossier's documents will list.",
-        "nl": "Selecteer de betrokken deeloperatie. Zij levert de leden en meters die in de documenten van het dossier worden opgenomen.",
-        "de": "Wählen Sie die betreffende Teilungsoperation. Sie liefert die Mitglieder und Zähler, die in den Dokumenten des Dossiers aufgeführt werden."
+        "fr": "Une démarche de partage concerne une seule opération. C'est elle qui fournit les membres et les compteurs repris dans ses pièces. La date d'effet souhaitée est facultative.",
+        "en": "A sharing procedure concerns exactly one operation. It supplies the members and meters its documents list. The desired effective date is optional.",
+        "nl": "Een procedure over delen betreft één enkele operatie. Zij levert de leden en meters die in de documenten worden opgenomen. De gewenste ingangsdatum is facultatief.",
+        "de": "Ein Teilungsverfahren betrifft genau eine Operation. Sie liefert die Mitglieder und Zähler, die in seinen Unterlagen aufgeführt werden. Das gewünschte Wirksamkeitsdatum ist optional."
       },
       "subtitle": {
-        "fr": "Nouveau dossier",
-        "en": "New dossier",
-        "nl": "Nieuw dossier",
-        "de": "Neues Dossier"
+        "fr": "Nouvelle démarche",
+        "en": "New procedure",
+        "nl": "Nieuwe procedure",
+        "de": "Neues Verfahren"
       },
       "captures": {
         "fr": {
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-24.png",
+                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-25.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -881,7 +881,7 @@
                   "target": {
                     "bbox": {
                       "x": 469,
-                      "y": 373.8125,
+                      "y": 426.40625,
                       "width": 502,
                       "height": 42
                     },
@@ -894,7 +894,7 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-24.png",
+                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-25.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -919,7 +919,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-24.png",
+                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-25.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -929,7 +929,7 @@
                   "target": {
                     "bbox": {
                       "x": 469,
-                      "y": 373.8125,
+                      "y": 426.40625,
                       "width": 502,
                       "height": 42
                     },
@@ -942,7 +942,7 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-24.png",
+                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-25.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -967,7 +967,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-24.png",
+                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-25.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -977,7 +977,7 @@
                   "target": {
                     "bbox": {
                       "x": 469,
-                      "y": 373.8125,
+                      "y": 426.40625,
                       "width": 502,
                       "height": 42
                     },
@@ -990,7 +990,7 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-24.png",
+                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-25.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -1015,7 +1015,7 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-24.png",
+                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-25.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
@@ -1025,7 +1025,7 @@
                   "target": {
                     "bbox": {
                       "x": 469,
-                      "y": 373.8125,
+                      "y": 416.8125,
                       "width": 502,
                       "height": 42
                     },
@@ -1038,7 +1038,7 @@
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-24.png",
+                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-25.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
@@ -1064,27 +1064,27 @@
     {
       "id": "step-6",
       "index": 6,
-      "action": "fill",
+      "action": "click",
       "interactive": true,
-      "screenshotWhen": "after",
-      "waitAfter": 0,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
       "title": {
-        "fr": "Titre et référence",
-        "en": "Title and reference",
-        "nl": "Titel en referentie",
-        "de": "Bezeichnung und Aktenzeichen"
+        "fr": "Créer",
+        "en": "Create",
+        "nl": "Aanmaken",
+        "de": "Anlegen"
       },
       "text": {
-        "fr": "Le titre est libre : il vous sert à retrouver le dossier. La référence est celle attribuée par l'autorité — elle identifie le dossier de façon unique et reste modifiable plus tard.",
-        "en": "The title is free text — it is how you will recognise the dossier. The reference is the one assigned by the authority; it identifies the dossier uniquely and stays editable later.",
-        "nl": "De titel is vrij te kiezen: hij helpt u het dossier terug te vinden. De referentie is die welke de bevoegde instantie heeft toegekend — ze identificeert het dossier op unieke wijze en kan later nog worden gewijzigd.",
-        "de": "Die Bezeichnung ist frei wählbar: Sie hilft Ihnen, das Dossier wiederzufinden. Das Aktenzeichen ist das von der Behörde vergebene — es identifiziert das Dossier eindeutig und bleibt später änderbar."
+        "fr": "Validez : OptimCE ouvre la démarche en brouillon et affiche sa fiche.",
+        "en": "Submit: OptimCE opens the procedure as a draft and shows its page.",
+        "nl": "Bevestig: OptimCE opent de procedure als concept en toont de pagina ervan.",
+        "de": "Bestätigen Sie: OptimCE eröffnet das Verfahren als Entwurf und zeigt seine Seite an."
       },
       "subtitle": {
-        "fr": "Nouveau dossier",
-        "en": "New dossier",
-        "nl": "Nieuw dossier",
-        "de": "Neues Dossier"
+        "fr": "Nouvelle démarche",
+        "en": "New procedure",
+        "nl": "Nieuwe procedure",
+        "de": "Neues Verfahren"
       },
       "captures": {
         "fr": {
@@ -1097,17 +1097,16 @@
                   "height": 900
                 },
                 "cursor": {
-                  "kind": "type",
+                  "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 469,
-                      "y": 561,
-                      "width": 502,
+                      "x": 906.359375,
+                      "y": 597.59375,
+                      "width": 64.640625,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-create-dialog__input--external-ref\"]"
-                  },
-                  "value": "CWAPE-2026-0042"
+                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
+                  }
                 }
               }
             ]
@@ -1121,17 +1120,16 @@
                   "height": 844
                 },
                 "cursor": {
-                  "kind": "type",
+                  "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 13,
-                      "y": 386.1875,
-                      "width": 364,
+                      "x": 312.359375,
+                      "y": 370.1875,
+                      "width": 64.640625,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-create-dialog__input--external-ref\"]"
-                  },
-                  "value": "CWAPE-2026-0042"
+                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
+                  }
                 }
               }
             ]
@@ -1147,17 +1145,16 @@
                   "height": 900
                 },
                 "cursor": {
-                  "kind": "type",
+                  "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 469,
-                      "y": 561,
-                      "width": 502,
+                      "x": 898.234375,
+                      "y": 597.59375,
+                      "width": 72.765625,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-create-dialog__input--external-ref\"]"
-                  },
-                  "value": "CWAPE-2026-0042"
+                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
+                  }
                 }
               }
             ]
@@ -1171,17 +1168,16 @@
                   "height": 844
                 },
                 "cursor": {
-                  "kind": "type",
+                  "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 13,
-                      "y": 386.1875,
-                      "width": 364,
+                      "x": 304.234375,
+                      "y": 370.1875,
+                      "width": 72.765625,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-create-dialog__input--external-ref\"]"
-                  },
-                  "value": "CWAPE-2026-0042"
+                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
+                  }
                 }
               }
             ]
@@ -1197,17 +1193,16 @@
                   "height": 900
                 },
                 "cursor": {
-                  "kind": "type",
+                  "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 469,
-                      "y": 561,
-                      "width": 502,
+                      "x": 868.09375,
+                      "y": 597.59375,
+                      "width": 102.90625,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-create-dialog__input--external-ref\"]"
-                  },
-                  "value": "CWAPE-2026-0042"
+                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
+                  }
                 }
               }
             ]
@@ -1221,17 +1216,16 @@
                   "height": 844
                 },
                 "cursor": {
-                  "kind": "type",
+                  "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 13,
-                      "y": 386.1875,
-                      "width": 364,
+                      "x": 274.09375,
+                      "y": 389.375,
+                      "width": 102.90625,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-create-dialog__input--external-ref\"]"
-                  },
-                  "value": "CWAPE-2026-0042"
+                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
+                  }
                 }
               }
             ]
@@ -1247,17 +1241,16 @@
                   "height": 900
                 },
                 "cursor": {
-                  "kind": "type",
+                  "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 469,
-                      "y": 561,
-                      "width": 502,
+                      "x": 884.765625,
+                      "y": 607.1875,
+                      "width": 86.234375,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-create-dialog__input--external-ref\"]"
-                  },
-                  "value": "CWAPE-2026-0042"
+                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
+                  }
                 }
               }
             ]
@@ -1271,17 +1264,16 @@
                   "height": 844
                 },
                 "cursor": {
-                  "kind": "type",
+                  "kind": "click",
                   "target": {
                     "bbox": {
-                      "x": 13,
-                      "y": 386.1875,
-                      "width": 364,
+                      "x": 290.765625,
+                      "y": 389.375,
+                      "width": 86.234375,
                       "height": 42
                     },
-                    "selector": "[data-testid=\"dossier-create-dialog__input--external-ref\"]"
-                  },
-                  "value": "CWAPE-2026-0042"
+                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
+                  }
                 }
               }
             ]
@@ -1292,73 +1284,51 @@
     {
       "id": "step-7",
       "index": 7,
-      "action": "click",
-      "interactive": true,
-      "screenshotWhen": "before",
-      "waitAfter": 1500,
+      "action": "assert",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
       "title": {
-        "fr": "Créer",
-        "en": "Create",
-        "nl": "Aanmaken",
-        "de": "Anlegen"
+        "fr": "La fiche de la démarche",
+        "en": "The procedure page",
+        "nl": "De pagina van de procedure",
+        "de": "Die Seite des Verfahrens"
       },
       "text": {
-        "fr": "Validez : le dossier est créé et vient s'ajouter au tableau de suivi.",
-        "en": "Submit: the dossier is created and joins the tracking table.",
-        "nl": "Bevestig: het dossier wordt aangemaakt en komt in de opvolgingstabel terecht.",
-        "de": "Bestätigen Sie: Das Dossier wird angelegt und in die Dossierliste aufgenommen."
+        "fr": "En haut, le destinataire et la seule action utile maintenant. Dessous, les étapes prévues par le régulateur, chacune avec son délai légal : l'étape en cours est mise en évidence.",
+        "en": "At the top, the recipient and the one action that matters now. Below, the steps the regulator sets out, each with its legal delay: the current step is highlighted.",
+        "nl": "Bovenaan de bestemmeling en de enige actie die nu telt. Daaronder de stappen die de regulator voorschrijft, elk met haar wettelijke termijn: de huidige stap is gemarkeerd.",
+        "de": "Oben der Empfänger und die einzige Aktion, die jetzt zählt. Darunter die Schritte, die die Regulierungsbehörde vorsieht, jeweils mit ihrer gesetzlichen Frist: Der aktuelle Schritt ist hervorgehoben."
       },
       "subtitle": {
-        "fr": "Nouveau dossier",
-        "en": "New dossier",
-        "nl": "Nieuw dossier",
-        "de": "Neues Dossier"
+        "fr": "Démarches",
+        "en": "Procedures",
+        "nl": "Procedures",
+        "de": "Verfahren"
       },
       "captures": {
         "fr": {
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-27.png",
+                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-28.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 906.359375,
-                      "y": 650.1875,
-                      "width": 64.640625,
-                      "height": 42
-                    },
-                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-27.png",
+                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-28.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 312.359375,
-                      "y": 475.375,
-                      "width": 64.640625,
-                      "height": 42
-                    },
-                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -1367,46 +1337,24 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-27.png",
+                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-28.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 898.234375,
-                      "y": 650.1875,
-                      "width": 72.765625,
-                      "height": 42
-                    },
-                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-27.png",
+                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-28.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 304.234375,
-                      "y": 475.375,
-                      "width": 72.765625,
-                      "height": 42
-                    },
-                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -1415,46 +1363,24 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-27.png",
+                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-28.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 868.09375,
-                      "y": 650.1875,
-                      "width": 102.90625,
-                      "height": 42
-                    },
-                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-27.png",
+                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-28.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 274.09375,
-                      "y": 494.5625,
-                      "width": 102.90625,
-                      "height": 42
-                    },
-                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -1463,46 +1389,24 @@
           "desktop": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-27.png",
+                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-28.png",
                 "captureSize": {
                   "width": 1440,
                   "height": 900
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 884.765625,
-                      "y": 650.1875,
-                      "width": 86.234375,
-                      "height": 42
-                    },
-                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
-                  }
-                }
+                "cursor": null
               }
             ]
           },
           "mobile": {
             "frames": [
               {
-                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-27.png",
+                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-28.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
                 },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 290.765625,
-                      "y": 494.5625,
-                      "width": 86.234375,
-                      "height": 42
-                    },
-                    "selector": "[data-testid=\"dossier-create-dialog__btn--submit\"] button"
-                  }
-                }
+                "cursor": null
               }
             ]
           }
@@ -1517,22 +1421,22 @@
       "screenshotWhen": "after",
       "waitAfter": 0,
       "title": {
-        "fr": "Le dossier est créé",
-        "en": "The dossier is created",
-        "nl": "Het dossier is aangemaakt",
-        "de": "Das Dossier ist angelegt"
+        "fr": "Les pièces à fournir",
+        "en": "The documents to provide",
+        "nl": "De te leveren documenten",
+        "de": "Die einzureichenden Unterlagen"
       },
       "text": {
-        "fr": "Le dossier apparaît dans le tableau avec le statut « En préparation ». Tant qu'il n'est pas soumis, il reste modifiable et aucune échéance ne court.",
-        "en": "The dossier shows up in the table with the status \"In preparation\". Until it is submitted it stays editable and no deadline is running.",
-        "nl": "Het dossier verschijnt in de tabel met de status “In voorbereiding”. Zolang het niet is ingediend, blijft het bewerkbaar en loopt er geen enkele termijn.",
-        "de": "Das Dossier erscheint in der Tabelle mit dem Status „In Vorbereitung“. Solange es nicht eingereicht ist, bleibt es bearbeitbar, und es läuft keine Frist."
+        "fr": "La démarche liste d'office les pièces que le régulateur attend, une par membre quand il le faut. Chacune se génère depuis le CRM ou se joint en fichier ; une fois toutes prêtes, la démarche est prête à envoyer.",
+        "en": "The procedure lists the documents the regulator expects right away, one per member where needed. Each is generated from the CRM or attached as a file; once all are ready, the procedure is ready to send.",
+        "nl": "De procedure somt meteen de documenten op die de regulator verwacht, waar nodig één per lid. Elk document wordt vanuit het CRM gegenereerd of als bestand bijgevoegd; zodra ze allemaal klaar zijn, is de procedure klaar om te versturen.",
+        "de": "Das Verfahren listet sofort die Unterlagen auf, die die Regulierungsbehörde erwartet, bei Bedarf eine pro Mitglied. Jede wird aus dem CRM erzeugt oder als Datei angehängt; sind alle bereit, ist das Verfahren versandbereit."
       },
       "subtitle": {
-        "fr": "Suivi des dossiers",
-        "en": "Tracking dossiers",
-        "nl": "Opvolging van dossiers",
-        "de": "Dossierverfolgung"
+        "fr": "Démarches",
+        "en": "Procedures",
+        "nl": "Procedures",
+        "de": "Verfahren"
       },
       "captures": {
         "fr": {
@@ -1630,358 +1534,6 @@
             "frames": [
               {
                 "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-29.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "id": "step-9",
-      "index": 9,
-      "action": "click",
-      "interactive": true,
-      "screenshotWhen": "before",
-      "waitAfter": 1500,
-      "title": {
-        "fr": "Ouvrir le dossier",
-        "en": "Open the dossier",
-        "nl": "Dossier openen",
-        "de": "Dossier öffnen"
-      },
-      "text": {
-        "fr": "Cliquez n'importe où sur la ligne pour ouvrir la fiche du dossier.",
-        "en": "Click anywhere on the row to open the dossier page.",
-        "nl": "Klik ergens op de rij om de dossierpagina te openen.",
-        "de": "Klicken Sie an einer beliebigen Stelle auf die Zeile, um die Dossierseite zu öffnen."
-      },
-      "subtitle": {
-        "fr": "Suivi des dossiers",
-        "en": "Tracking dossiers",
-        "nl": "Opvolging van dossiers",
-        "de": "Dossierverfolgung"
-      },
-      "captures": {
-        "fr": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-30.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 260,
-                      "y": 530,
-                      "width": 988,
-                      "height": 53
-                    },
-                    "selector": "[data-testid=\"dossier-list__row--0\"]"
-                  }
-                }
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-30.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 34,
-                      "y": 725,
-                      "width": 628.15625,
-                      "height": 85
-                    },
-                    "selector": "[data-testid=\"dossier-list__row--0\"]"
-                  }
-                }
-              }
-            ]
-          }
-        },
-        "en": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-30.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 260,
-                      "y": 530,
-                      "width": 988,
-                      "height": 53
-                    },
-                    "selector": "[data-testid=\"dossier-list__row--0\"]"
-                  }
-                }
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-30.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 34,
-                      "y": 725,
-                      "width": 642.140625,
-                      "height": 85
-                    },
-                    "selector": "[data-testid=\"dossier-list__row--0\"]"
-                  }
-                }
-              }
-            ]
-          }
-        },
-        "nl": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-30.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 260,
-                      "y": 554,
-                      "width": 988,
-                      "height": 73
-                    },
-                    "selector": "[data-testid=\"dossier-list__row--0\"]"
-                  }
-                }
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-30.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 34,
-                      "y": 725,
-                      "width": 764.15625,
-                      "height": 85
-                    },
-                    "selector": "[data-testid=\"dossier-list__row--0\"]"
-                  }
-                }
-              }
-            ]
-          }
-        },
-        "de": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-30.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 260,
-                      "y": 530,
-                      "width": 988,
-                      "height": 53
-                    },
-                    "selector": "[data-testid=\"dossier-list__row--0\"]"
-                  }
-                }
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-30.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": {
-                  "kind": "click",
-                  "target": {
-                    "bbox": {
-                      "x": 34,
-                      "y": 737,
-                      "width": 819.9375,
-                      "height": 73
-                    },
-                    "selector": "[data-testid=\"dossier-list__row--0\"]"
-                  }
-                }
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "id": "step-10",
-      "index": 10,
-      "action": "assert",
-      "interactive": false,
-      "screenshotWhen": "after",
-      "waitAfter": 0,
-      "title": {
-        "fr": "La fiche du dossier",
-        "en": "The dossier page",
-        "nl": "De dossierpagina",
-        "de": "Die Dossierseite"
-      },
-      "text": {
-        "fr": "La fiche rassemble tout ce qui concerne le dossier : ses documents, ses échéances et l'historique de ses changements de statut. Les boutons en haut proposent les seuls changements de statut autorisés à cet instant.",
-        "en": "The dossier page gathers everything about the filing: its documents, its deadlines and the history of its status changes. The buttons at the top offer only the status changes that are legal right now.",
-        "nl": "De pagina bundelt alles over het dossier: de documenten, de termijnen en de historiek van de statuswijzigingen. De knoppen bovenaan bieden alleen de statuswijzigingen aan die op dat moment zijn toegestaan.",
-        "de": "Die Seite bündelt alles rund um das Dossier: seine Dokumente, seine Fristen und den Verlauf seiner Statusänderungen. Die Schaltflächen oben bieten nur die Statusänderungen an, die in diesem Moment zulässig sind."
-      },
-      "subtitle": {
-        "fr": "Suivi des dossiers",
-        "en": "Tracking dossiers",
-        "nl": "Opvolging van dossiers",
-        "de": "Dossierverfolgung"
-      },
-      "captures": {
-        "fr": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-dossier-create/fr/desktop/step-32.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-dossier-create/fr/mobile/step-32.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        },
-        "en": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-dossier-create/en/desktop/step-32.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-dossier-create/en/mobile/step-32.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        },
-        "nl": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-dossier-create/nl/desktop/step-32.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-dossier-create/nl/mobile/step-32.png",
-                "captureSize": {
-                  "width": 390,
-                  "height": 844
-                },
-                "cursor": null
-              }
-            ]
-          }
-        },
-        "de": {
-          "desktop": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-dossier-create/de/desktop/step-32.png",
-                "captureSize": {
-                  "width": 1440,
-                  "height": 900
-                },
-                "cursor": null
-              }
-            ]
-          },
-          "mobile": {
-            "frames": [
-              {
-                "screenshot": "../assets/admin-doc-dossier-create/de/mobile/step-32.png",
                 "captureSize": {
                   "width": 390,
                   "height": 844
