@@ -177,6 +177,32 @@
       }
     },
     {
+      "slug": "export-my-data",
+      "title": {
+        "fr": "Exporter mes données",
+        "en": "Export my data",
+        "nl": "Mijn gegevens exporteren",
+        "de": "Meine Daten exportieren"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "data-export-mine-guide.md",
+      "group": "account",
+      "onboardingIndex": null,
+      "layouts": [
+        "desktop",
+        "mobile"
+      ],
+      "pages": {
+        "fr": "export-my-data/fr.html",
+        "en": "export-my-data/en.html",
+        "nl": "export-my-data/nl.html",
+        "de": "export-my-data/de.html"
+      }
+    },
+    {
       "slug": "home-overview",
       "title": {
         "fr": "Sa page d'accueil",
@@ -1659,6 +1685,32 @@
       }
     },
     {
+      "slug": "export-community-data",
+      "title": {
+        "fr": "Exporter les données de la communauté",
+        "en": "Export the community's data",
+        "nl": "De gegevens van de gemeenschap exporteren",
+        "de": "Daten der Gemeinschaft exportieren"
+      },
+      "modes": [
+        "stepbystep",
+        "interactive"
+      ],
+      "scenario": "data-export-community-guide.md",
+      "group": "admin-community",
+      "onboardingIndex": null,
+      "layouts": [
+        "desktop",
+        "mobile"
+      ],
+      "pages": {
+        "fr": "export-community-data/fr.html",
+        "en": "export-community-data/en.html",
+        "nl": "export-community-data/nl.html",
+        "de": "export-community-data/de.html"
+      }
+    },
+    {
       "slug": "annexes-subscribe",
       "title": {
         "fr": "S'abonner à un service annexe",
@@ -1746,16 +1798,17 @@
         "de": "Konto"
       },
       "description": {
-        "fr": "Se connecter, mettre à jour son profil et choisir ses notifications.",
-        "en": "Sign in, update your profile and choose your notifications.",
-        "nl": "Aanmelden, uw profiel bijwerken en uw meldingen instellen.",
-        "de": "Anmelden, Ihr Profil aktualisieren und Ihre Benachrichtigungen einstellen."
+        "fr": "Se connecter, mettre à jour son profil, choisir ses notifications et exporter ses données.",
+        "en": "Sign in, update your profile, choose your notifications and export your data.",
+        "nl": "Aanmelden, uw profiel bijwerken, uw meldingen instellen en uw gegevens exporteren.",
+        "de": "Anmelden, Ihr Profil aktualisieren, Ihre Benachrichtigungen einstellen und Ihre Daten exportieren."
       },
       "guides": [
         "auth-login",
         "profile-update",
         "notification-view",
-        "notification-preferences"
+        "notification-preferences",
+        "export-my-data"
       ],
       "pages": {
         "fr": "account/fr.html",
@@ -2196,14 +2249,15 @@
         "de": "Benutzer und Angaben"
       },
       "description": {
-        "fr": "Inviter des gestionnaires, changer les rôles et compléter la fiche de la communauté.",
-        "en": "Invite managers, change roles and complete the community's profile.",
-        "nl": "Managers uitnodigen, rollen wijzigen en de fiche van de gemeenschap aanvullen.",
-        "de": "Manager einladen, Rollen ändern und das Profil der Gemeinschaft vervollständigen."
+        "fr": "Inviter des gestionnaires, changer les rôles, compléter la fiche de la communauté et exporter ses données.",
+        "en": "Invite managers, change roles, complete the community's profile and export its data.",
+        "nl": "Managers uitnodigen, rollen wijzigen, de fiche van de gemeenschap aanvullen en haar gegevens exporteren.",
+        "de": "Manager einladen, Rollen ändern, das Profil der Gemeinschaft vervollständigen und ihre Daten exportieren."
       },
       "guides": [
         "community-users-manage",
-        "community-info-update"
+        "community-info-update",
+        "export-community-data"
       ],
       "pages": {
         "fr": "admin-community/fr.html",
@@ -2323,10 +2377,10 @@
             "de": "Konto"
           },
           "description": {
-            "fr": "Se connecter, mettre à jour son profil et choisir ses notifications.",
-            "en": "Sign in, update your profile and choose your notifications.",
-            "nl": "Aanmelden, uw profiel bijwerken en uw meldingen instellen.",
-            "de": "Anmelden, Ihr Profil aktualisieren und Ihre Benachrichtigungen einstellen."
+            "fr": "Se connecter, mettre à jour son profil, choisir ses notifications et exporter ses données.",
+            "en": "Sign in, update your profile, choose your notifications and export your data.",
+            "nl": "Aanmelden, uw profiel bijwerken, uw meldingen instellen en uw gegevens exporteren.",
+            "de": "Anmelden, Ihr Profil aktualisieren, Ihre Benachrichtigungen einstellen und Ihre Daten exportieren."
           },
           "path": "/account",
           "children": [
@@ -2373,6 +2427,17 @@
                 "de": "Ihre Benachrichtigungen einstellen"
               },
               "path": "/notification-preferences"
+            },
+            {
+              "kind": "guide",
+              "slug": "export-my-data",
+              "title": {
+                "fr": "Exporter mes données",
+                "en": "Export my data",
+                "nl": "Mijn gegevens exporteren",
+                "de": "Meine Daten exportieren"
+              },
+              "path": "/export-my-data"
             }
           ]
         },
@@ -3306,10 +3371,10 @@
             "de": "Benutzer und Angaben"
           },
           "description": {
-            "fr": "Inviter des gestionnaires, changer les rôles et compléter la fiche de la communauté.",
-            "en": "Invite managers, change roles and complete the community's profile.",
-            "nl": "Managers uitnodigen, rollen wijzigen en de fiche van de gemeenschap aanvullen.",
-            "de": "Manager einladen, Rollen ändern und das Profil der Gemeinschaft vervollständigen."
+            "fr": "Inviter des gestionnaires, changer les rôles, compléter la fiche de la communauté et exporter ses données.",
+            "en": "Invite managers, change roles, complete the community's profile and export its data.",
+            "nl": "Managers uitnodigen, rollen wijzigen, de fiche van de gemeenschap aanvullen en haar gegevens exporteren.",
+            "de": "Manager einladen, Rollen ändern, das Profil der Gemeinschaft vervollständigen und ihre Daten exportieren."
           },
           "path": "/admin-community",
           "children": [
@@ -3334,6 +3399,17 @@
                 "de": "Gemeinschaftsinfo aktualisieren"
               },
               "path": "/community-info-update"
+            },
+            {
+              "kind": "guide",
+              "slug": "export-community-data",
+              "title": {
+                "fr": "Exporter les données de la communauté",
+                "en": "Export the community's data",
+                "nl": "De gegevens van de gemeenschap exporteren",
+                "de": "Daten der Gemeinschaft exportieren"
+              },
+              "path": "/export-community-data"
             }
           ]
         },

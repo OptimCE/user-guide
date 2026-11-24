@@ -1,0 +1,1085 @@
+{
+  "version": "1.1",
+  "slug": "data-export-community-guide",
+  "mode": "interactive",
+  "role": "admin",
+  "title": {
+    "fr": "Exporter les données de la communauté",
+    "en": "Export the community's data",
+    "nl": "De gegevens van de gemeenschap exporteren",
+    "de": "Daten der Gemeinschaft exportieren"
+  },
+  "locales": [
+    "fr",
+    "en",
+    "nl",
+    "de"
+  ],
+  "defaultLocale": "fr",
+  "layouts": [
+    "desktop",
+    "mobile"
+  ],
+  "defaultLayout": "desktop",
+  "cursor": {
+    "pre_action_ms": 200,
+    "action_ms": 300,
+    "post_action_ms": 150,
+    "travel_speed_px_per_ms": 1.5
+  },
+  "defaultTemplate": "overlay",
+  "steps": [
+    {
+      "id": "step-1",
+      "index": 1,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1000,
+      "title": {
+        "fr": "Ouvrir les exports",
+        "en": "Open the exports",
+        "nl": "De exports openen",
+        "de": "Die Exporte öffnen"
+      },
+      "text": {
+        "fr": "Dans la section « Gestion » de la barre latérale, cliquez sur « Exports des données ». Seul un administrateur de la communauté voit cette entrée.",
+        "en": "In the \"Management\" section of the sidebar, click \"Data exports\". Only an administrator of the community sees this entry.",
+        "nl": "Klik in het onderdeel “Beheer” van de zijbalk op “Gegevensexports”. Alleen een beheerder van de gemeenschap ziet dit item.",
+        "de": "Klicken Sie im Bereich „Verwaltung“ der Seitenleiste auf „Datenexporte“. Nur ein Administrator der Gemeinschaft sieht diesen Eintrag."
+      },
+      "subtitle": {
+        "fr": "Navigation",
+        "en": "Navigation",
+        "nl": "Navigatie",
+        "de": "Navigation"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/fr/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 614.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/communities/exports\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/fr/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 614.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/communities/exports\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Ouvrir les exports",
+              "text": "Touchez l'icône du menu en haut à gauche, puis, dans la section « Gestion », « Exports des données ». Seul un administrateur de la communauté voit cette entrée.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/en/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 614.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/communities/exports\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/en/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 614.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/communities/exports\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Open the exports",
+              "text": "Tap the menu icon in the top-left, then, in the \"Management\" section, \"Data exports\". Only an administrator of the community sees this entry.",
+              "subtitle": "Navigation"
+            }
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/nl/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 614.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/communities/exports\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/nl/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 614.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/communities/exports\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "De exports openen",
+              "text": "Tik linksboven op het menupictogram en vervolgens, in het onderdeel “Beheer”, op “Gegevensexports”. Alleen een beheerder van de gemeenschap ziet dit item.",
+              "subtitle": "Navigatie"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/de/desktop/step-14.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 614.5,
+                      "width": 243,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/communities/exports\"]"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/de/mobile/step-17.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 8,
+                      "y": 614.5,
+                      "width": 284,
+                      "height": 36
+                    },
+                    "selector": "[data-testid=\"navbar__menu--management\"] a[href=\"/communities/exports\"]"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Die Exporte öffnen",
+              "text": "Tippen Sie oben links auf das Menüsymbol und dann im Bereich „Verwaltung“ auf „Datenexporte“. Nur ein Administrator der Gemeinschaft sieht diesen Eintrag.",
+              "subtitle": "Navigation"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "step-2",
+      "index": 2,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Demander l'export",
+        "en": "Ask for the export",
+        "nl": "De export aanvragen",
+        "de": "Den Export anfordern"
+      },
+      "text": {
+        "fr": "Cliquez sur « Exporter les données de la communauté ». L'archive rassemble ses membres, ses compteurs et leurs consommations, ses opérations de partage, ses clés de répartition, ses documents, ses factures et les agrégats de ses compteurs communicants. Elle ne contient ni les notifications de chacun, ni la courbe individuelle d'un membre. Comme pour un export personnel, une connexion récente est demandée.",
+        "en": "Click \"Export the community's data\". The archive gathers its members, meters and their consumption, sharing operations, allocation keys, documents, invoices and the aggregates of its smart meters. It contains neither anyone's notifications nor a member's individual curve. As for a personal export, a recent sign-in is required.",
+        "nl": "Klik op “De gegevens van de gemeenschap exporteren”. Het archief bundelt de leden, de meters en hun verbruik, de deeloperaties, de verdeelsleutels, de documenten, de facturen en de geaggregeerde gegevens van de slimme meters. Het bevat geen persoonlijke meldingen en geen individuele curve van een lid. Net als bij een persoonlijke export is een recente aanmelding vereist.",
+        "de": "Klicken Sie auf „Daten der Gemeinschaft exportieren“. Das Archiv enthält die Mitglieder, die Zähler und ihren Verbrauch, die Teilungsoperationen, die Verteilungsschlüssel, die Dokumente, die Rechnungen und die zusammengefassten Werte der intelligenten Zähler. Es enthält weder persönliche Benachrichtigungen noch den individuellen Lastgang eines Mitglieds. Wie bei einem persönlichen Export ist eine frische Anmeldung erforderlich."
+      },
+      "subtitle": {
+        "fr": "Toute la communauté",
+        "en": "The whole community",
+        "nl": "De hele gemeenschap",
+        "de": "Die ganze Gemeinschaft"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/fr/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1035.03125,
+                      "y": 168,
+                      "width": 341.96875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--request\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/fr/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 457,
+                      "width": 324,
+                      "height": 66
+                    },
+                    "selector": "[data-testid=\"data-export__btn--request\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/en/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1117.578125,
+                      "y": 159,
+                      "width": 259.421875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--request\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/en/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 409,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--request\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/nl/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 992.0625,
+                      "y": 159,
+                      "width": 384.9375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--request\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/nl/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 437,
+                      "width": 324,
+                      "height": 66
+                    },
+                    "selector": "[data-testid=\"data-export__btn--request\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/de/desktop/step-20.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1062.6875,
+                      "y": 168,
+                      "width": 314.3125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--request\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/de/mobile/step-20.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 457,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--request\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-3",
+      "index": 3,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Lire l'avertissement",
+        "en": "Read the warning",
+        "nl": "De waarschuwing lezen",
+        "de": "Die Warnung lesen"
+      },
+      "text": {
+        "fr": "Le fichier contiendra les données personnelles de tous les membres : vous en êtes responsable. Conservez-le en lieu sûr, ne le partagez qu'avec les personnes qui en ont besoin et supprimez-le quand vous n'en avez plus l'usage. Les autres administrateurs sont prévenus de votre demande et la voient dans la liste, mais seul vous pourrez télécharger le fichier. Cliquez sur « Exporter » pour confirmer.",
+        "en": "The file will contain the personal data of every member: you are responsible for it. Keep it somewhere safe, share it only with the people who need it, and delete it once you no longer need it. The other administrators are told of your request and see it in the list, but only you can download the file. Click \"Export\" to confirm.",
+        "nl": "Het bestand bevat de persoonsgegevens van alle leden: u bent er verantwoordelijk voor. Bewaar het op een veilige plaats, deel het alleen met wie het nodig heeft en verwijder het zodra u het niet meer nodig hebt. De andere beheerders worden van uw aanvraag op de hoogte gebracht en zien ze in de lijst, maar alleen u kunt het bestand downloaden. Klik op “Exporteren” om te bevestigen.",
+        "de": "Die Datei enthält die personenbezogenen Daten aller Mitglieder: Sie sind dafür verantwortlich. Bewahren Sie sie sicher auf, teilen Sie sie nur mit Personen, die sie benötigen, und löschen Sie sie, sobald Sie sie nicht mehr brauchen. Die anderen Administratoren werden über Ihre Anfrage informiert und sehen sie in der Liste, doch nur Sie können die Datei herunterladen. Klicken Sie zur Bestätigung auf „Exportieren“."
+      },
+      "subtitle": {
+        "fr": "Données personnelles",
+        "en": "Personal data",
+        "nl": "Persoonsgegevens",
+        "de": "Personenbezogene Daten"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/fr/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 859.015625,
+                      "y": 541,
+                      "width": 111.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--warning-confirm\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/fr/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 21,
+                      "y": 329,
+                      "width": 111.984375,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--warning-confirm\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/en/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 873.34375,
+                      "y": 531,
+                      "width": 97.65625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--warning-confirm\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/en/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 21,
+                      "y": 269,
+                      "width": 97.65625,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--warning-confirm\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/nl/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 841.3125,
+                      "y": 541,
+                      "width": 129.6875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--warning-confirm\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/nl/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 21,
+                      "y": 309,
+                      "width": 129.6875,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--warning-confirm\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/de/desktop/step-22.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 837.046875,
+                      "y": 541,
+                      "width": 133.953125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--warning-confirm\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/de/mobile/step-22.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 21,
+                      "y": 309,
+                      "width": 133.953125,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--warning-confirm\"] button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-4",
+      "index": 4,
+      "action": "wait-for",
+      "interactive": false,
+      "screenshotWhen": "after",
+      "waitAfter": 0,
+      "title": {
+        "fr": "Attendre « Prêt »",
+        "en": "Wait for \"Ready\"",
+        "nl": "Wachten op “Klaar”",
+        "de": "Auf „Bereit“ warten"
+      },
+      "text": {
+        "fr": "La liste montre chaque export de la communauté : qui l'a demandé, quand, et son état. Celui-ci passe de « En préparation » à « Prêt » de lui-même ; vous en êtes aussi prévenu par une notification et un e-mail. Le fichier reste disponible sept jours.",
+        "en": "The list shows every export of the community: who asked for it, when, and its state. This one goes from \"In preparation\" to \"Ready\" by itself; a notification and an email also tell you. The file stays available for seven days.",
+        "nl": "De lijst toont elke export van de gemeenschap: wie hem heeft aangevraagd, wanneer, en de status. Deze export gaat vanzelf van “In voorbereiding” naar “Klaar”; u wordt ook verwittigd met een melding en een e-mail. Het bestand blijft zeven dagen beschikbaar.",
+        "de": "Die Liste zeigt jeden Export der Gemeinschaft: wer ihn angefordert hat, wann und seinen Status. Dieser wechselt von selbst von „In Vorbereitung“ zu „Bereit“; eine Benachrichtigung und eine E-Mail teilen es Ihnen ebenfalls mit. Die Datei bleibt sieben Tage verfügbar."
+      },
+      "subtitle": {
+        "fr": "La liste des exports",
+        "en": "The list of exports",
+        "nl": "De lijst van exports",
+        "de": "Die Liste der Exporte"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/fr/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/fr/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/en/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/en/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/nl/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/nl/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/de/desktop/step-23.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": null
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/de/mobile/step-24.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": null
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "step-5",
+      "index": 5,
+      "action": "click",
+      "interactive": true,
+      "screenshotWhen": "before",
+      "waitAfter": 1500,
+      "title": {
+        "fr": "Télécharger l'archive",
+        "en": "Download the archive",
+        "nl": "Het archief downloaden",
+        "de": "Das Archiv herunterladen"
+      },
+      "text": {
+        "fr": "Cliquez sur « Télécharger » : le fichier ZIP s'enregistre sur votre ordinateur. Il contient un dossier par service, des fichiers JSON et CSV, et un manifest.json qui décrit chacun d'eux. Un autre administrateur voit cet export dans la liste, sans bouton « Télécharger ».",
+        "en": "Click \"Download\": the ZIP file is saved to your computer. It holds one folder per service, JSON and CSV files, and a manifest.json that describes each of them. Another administrator sees this export in the list, without a \"Download\" button.",
+        "nl": "Klik op “Downloaden”: het ZIP-bestand wordt op uw computer opgeslagen. Het bevat één map per dienst, JSON- en CSV-bestanden en een manifest.json dat elk ervan beschrijft. Een andere beheerder ziet deze export in de lijst, zonder knop “Downloaden”.",
+        "de": "Klicken Sie auf „Herunterladen“: Die ZIP-Datei wird auf Ihrem Computer gespeichert. Sie enthält einen Ordner je Dienst, JSON- und CSV-Dateien und eine manifest.json, die jede davon beschreibt. Ein anderer Administrator sieht diesen Export in der Liste, ohne die Schaltfläche „Herunterladen“."
+      },
+      "subtitle": {
+        "fr": "Réservé au demandeur",
+        "en": "For the requester only",
+        "nl": "Alleen voor de aanvrager",
+        "de": "Nur für den Antragsteller"
+      },
+      "captures": {
+        "fr": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/fr/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1129.9375,
+                      "y": 313,
+                      "width": 117.0625,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"data-export__btn--download-desktop--0\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/fr/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 723,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--download-mobile--0\"] button"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Télécharger l'archive",
+              "text": "Touchez « Télécharger » : le fichier ZIP s'enregistre sur votre appareil. Il contient un dossier par service, des fichiers JSON et CSV, et un manifest.json qui décrit chacun d'eux. Un autre administrateur voit cet export dans la liste, sans bouton « Télécharger ».",
+              "subtitle": "Réservé au demandeur"
+            }
+          }
+        },
+        "en": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/en/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1130.046875,
+                      "y": 295,
+                      "width": 108.765625,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"data-export__btn--download-desktop--0\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/en/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 651,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--download-mobile--0\"] button"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Download the archive",
+              "text": "Tap \"Download\": the ZIP file is saved to your device. It holds one folder per service, JSON and CSV files, and a manifest.json that describes each of them. Another administrator sees this export in the list, without a \"Download\" button.",
+              "subtitle": "For the requester only"
+            }
+          }
+        },
+        "nl": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/nl/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1124.8125,
+                      "y": 295,
+                      "width": 124.375,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"data-export__btn--download-desktop--0\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/nl/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 703,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--download-mobile--0\"] button"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Het archief downloaden",
+              "text": "Tik op “Downloaden”: het ZIP-bestand wordt op uw toestel opgeslagen. Het bevat één map per dienst, JSON- en CSV-bestanden en een manifest.json dat elk ervan beschrijft. Een andere beheerder ziet deze export in de lijst, zonder knop “Downloaden”.",
+              "subtitle": "Alleen voor de aanvrager"
+            }
+          }
+        },
+        "de": {
+          "desktop": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/de/desktop/step-25.png",
+                "captureSize": {
+                  "width": 1440,
+                  "height": 900
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 1096.421875,
+                      "y": 313,
+                      "width": 135.859375,
+                      "height": 35
+                    },
+                    "selector": "[data-testid=\"data-export__btn--download-desktop--0\"] button"
+                  }
+                }
+              }
+            ]
+          },
+          "mobile": {
+            "frames": [
+              {
+                "screenshot": "../assets/export-community-data/de/mobile/step-26.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "click",
+                  "target": {
+                    "bbox": {
+                      "x": 33,
+                      "y": 699,
+                      "width": 324,
+                      "height": 42
+                    },
+                    "selector": "[data-testid=\"data-export__btn--download-mobile--0\"] button"
+                  }
+                }
+              }
+            ],
+            "content": {
+              "title": "Das Archiv herunterladen",
+              "text": "Tippen Sie auf „Herunterladen“: Die ZIP-Datei wird auf Ihrem Gerät gespeichert. Sie enthält einen Ordner je Dienst, JSON- und CSV-Dateien und eine manifest.json, die jede davon beschreibt. Ein anderer Administrator sieht diesen Export in der Liste, ohne die Schaltfläche „Herunterladen“.",
+              "subtitle": "Nur für den Antragsteller"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

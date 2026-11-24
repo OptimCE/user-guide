@@ -263,10 +263,10 @@
         "de": "Informationsseite der Gemeinschaft"
       },
       "text": {
-        "fr": "La page affiche les informations actuelles de la communauté : nom, description, site web et adresse du siège social. Cliquez sur **Modifier** pour passer en mode édition.",
-        "en": "The page shows the community's current information: name, description, website, and registered office address. Click **Edit** to switch to edit mode.",
-        "nl": "De pagina toont de huidige gegevens van de gemeenschap: naam, beschrijving, website en adres van de hoofdzetel. Klik op **Bewerken** om naar de bewerkingsmodus over te schakelen.",
-        "de": "Die Seite zeigt die aktuellen Informationen der Gemeinschaft: Name, Beschreibung, Website und Adresse des Hauptsitzes. Klicken Sie auf **Bearbeiten**, um in den Bearbeitungsmodus zu wechseln."
+        "fr": "La page affiche les informations actuelles de la communauté : nom, description, site web, adresse du siège social et contact public. Cliquez sur **Modifier** pour passer en mode édition.",
+        "en": "The page shows the community's current information: name, description, website, registered office address and public contact. Click **Edit** to switch to edit mode.",
+        "nl": "De pagina toont de huidige gegevens van de gemeenschap: naam, beschrijving, website, adres van de hoofdzetel en openbaar contact. Klik op **Bewerken** om naar de bewerkingsmodus over te schakelen.",
+        "de": "Die Seite zeigt die aktuellen Informationen der Gemeinschaft: Name, Beschreibung, Website, Adresse des Hauptsitzes und öffentlicher Kontakt. Klicken Sie auf **Bearbeiten**, um in den Bearbeitungsmodus zu wechseln."
       },
       "subtitle": {
         "fr": "Mode consultation",
@@ -395,10 +395,10 @@
         "de": "Informationen eingeben"
       },
       "text": {
-        "fr": "Remplissez les champs : **Description**, **Site web** (URL complète commençant par https://) et les champs de l'adresse du siège social — rue, numéro, code postal et commune. Les quatre champs d'adresse doivent être renseignés ensemble ou laissés vides.",
-        "en": "Fill in the fields: **Description**, **Website** (full URL starting with https://) and the registered office address fields — street, number, postcode, and city. All four address fields must be filled together or left empty.",
-        "nl": "Vul de velden in: **Beschrijving**, **Website** (volledige URL die begint met https://) en de adresvelden van de hoofdzetel — straat, nummer, postcode en gemeente. De vier adresvelden moeten samen worden ingevuld of allemaal leeg blijven.",
-        "de": "Füllen Sie die Felder aus: **Beschreibung**, **Website** (vollständige URL, die mit https:// beginnt) und die Adressfelder des Hauptsitzes — Straße, Nummer, Postleitzahl und Ort. Die vier Adressfelder müssen entweder alle ausgefüllt oder alle leer gelassen werden."
+        "fr": "Remplissez les champs : **Description**, **Site web** (URL complète commençant par https://) et les champs de l'adresse du siège social — rue, numéro, code postal et commune. Les quatre champs d'adresse doivent être renseignés ensemble ou laissés vides. Dans **Contact public**, l'e-mail et le téléphone que vous saisissez sont publiés dans l'annuaire des communautés, pour qu'on puisse vous écrire ou vous appeler en un clic ; laissez-les vides pour ne rien publier.",
+        "en": "Fill in the fields: **Description**, **Website** (full URL starting with https://) and the registered office address fields — street, number, postcode, and city. All four address fields must be filled together or left empty. Under **Public contact**, the e-mail and phone you enter are published in the communities directory, so people can e-mail or call you in one click; leave them empty to publish nothing.",
+        "nl": "Vul de velden in: **Beschrijving**, **Website** (volledige URL die begint met https://) en de adresvelden van de hoofdzetel — straat, nummer, postcode en gemeente. De vier adresvelden moeten samen worden ingevuld of allemaal leeg blijven. Onder **Openbaar contact** worden het e-mailadres en het telefoonnummer die u invult gepubliceerd in de gids van gemeenschappen, zodat men u met één klik kan mailen of bellen; laat ze leeg om niets te publiceren.",
+        "de": "Füllen Sie die Felder aus: **Beschreibung**, **Website** (vollständige URL, die mit https:// beginnt) und die Adressfelder des Hauptsitzes — Straße, Nummer, Postleitzahl und Ort. Die vier Adressfelder müssen entweder alle ausgefüllt oder alle leer gelassen werden. Unter **Öffentlicher Kontakt** werden die E-Mail-Adresse und die Telefonnummer, die Sie eingeben, im Verzeichnis der Gemeinschaften veröffentlicht, damit man Ihnen mit einem Klick schreiben oder Sie anrufen kann; lassen Sie sie leer, um nichts zu veröffentlichen."
       },
       "subtitle": {
         "fr": "Édition des données de la communauté",
@@ -422,7 +422,7 @@
                     {
                       "bbox": {
                         "x": 350,
-                        "y": 260,
+                        "y": 210,
                         "width": 1024,
                         "height": 114
                       },
@@ -432,7 +432,7 @@
                     {
                       "bbox": {
                         "x": 350,
-                        "y": 414,
+                        "y": 364,
                         "width": 1024,
                         "height": 42
                       },
@@ -442,7 +442,7 @@
                     {
                       "bbox": {
                         "x": 350,
-                        "y": 686,
+                        "y": 636,
                         "width": 504,
                         "height": 42
                       },
@@ -452,7 +452,7 @@
                     {
                       "bbox": {
                         "x": 870,
-                        "y": 686,
+                        "y": 636,
                         "width": 244,
                         "height": 42
                       },
@@ -462,7 +462,7 @@
                     {
                       "bbox": {
                         "x": 350,
-                        "y": 762,
+                        "y": 712,
                         "width": 244,
                         "height": 42
                       },
@@ -472,12 +472,32 @@
                     {
                       "bbox": {
                         "x": 610,
-                        "y": 762,
+                        "y": 712,
                         "width": 764,
                         "height": 42
                       },
                       "selector": "[data-testid=\"community-info__input--city\"]",
                       "value": "Bruxelles"
+                    },
+                    {
+                      "bbox": {
+                        "x": 350,
+                        "y": 868.1875,
+                        "width": 592.328125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--contact-email\"]",
+                      "value": "contact@test-community.be"
+                    },
+                    {
+                      "bbox": {
+                        "x": 954.328125,
+                        "y": 868.1875,
+                        "width": 419.671875,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--contact-phone\"]",
+                      "value": "+32 2 123 45 67"
                     }
                   ]
                 }
@@ -498,7 +518,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 217,
+                        "y": -1,
                         "width": 318,
                         "height": 114
                       },
@@ -508,7 +528,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 371,
+                        "y": 153,
                         "width": 318,
                         "height": 42
                       },
@@ -518,7 +538,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 643,
+                        "y": 425,
                         "width": 318,
                         "height": 42
                       },
@@ -528,7 +548,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 719,
+                        "y": 501,
                         "width": 150.984375,
                         "height": 42
                       },
@@ -538,7 +558,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 813,
+                        "y": 595,
                         "width": 95.328125,
                         "height": 42
                       },
@@ -548,12 +568,44 @@
                     {
                       "bbox": {
                         "x": 147.328125,
-                        "y": 813,
+                        "y": 595,
                         "width": 206.671875,
                         "height": 42
                       },
                       "selector": "[data-testid=\"community-info__input--city\"]",
                       "value": "Bruxelles"
+                    },
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 808.75,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--contact-email\"]",
+                      "value": "contact@test-community.be"
+                    }
+                  ]
+                }
+              },
+              {
+                "screenshot": "../assets/community-info-update/fr/mobile/step-22-b.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 400.75,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--contact-phone\"]",
+                      "value": "+32 2 123 45 67"
                     }
                   ]
                 }
@@ -576,7 +628,7 @@
                     {
                       "bbox": {
                         "x": 350,
-                        "y": 260,
+                        "y": 210,
                         "width": 1024,
                         "height": 114
                       },
@@ -586,7 +638,7 @@
                     {
                       "bbox": {
                         "x": 350,
-                        "y": 414,
+                        "y": 364,
                         "width": 1024,
                         "height": 42
                       },
@@ -596,7 +648,7 @@
                     {
                       "bbox": {
                         "x": 350,
-                        "y": 686,
+                        "y": 636,
                         "width": 504,
                         "height": 42
                       },
@@ -606,7 +658,7 @@
                     {
                       "bbox": {
                         "x": 870,
-                        "y": 686,
+                        "y": 636,
                         "width": 244,
                         "height": 42
                       },
@@ -616,7 +668,7 @@
                     {
                       "bbox": {
                         "x": 350,
-                        "y": 762,
+                        "y": 712,
                         "width": 244,
                         "height": 42
                       },
@@ -626,12 +678,32 @@
                     {
                       "bbox": {
                         "x": 610,
-                        "y": 762,
+                        "y": 712,
                         "width": 764,
                         "height": 42
                       },
                       "selector": "[data-testid=\"community-info__input--city\"]",
                       "value": "Bruxelles"
+                    },
+                    {
+                      "bbox": {
+                        "x": 350,
+                        "y": 868.1875,
+                        "width": 592.328125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--contact-email\"]",
+                      "value": "contact@test-community.be"
+                    },
+                    {
+                      "bbox": {
+                        "x": 954.328125,
+                        "y": 868.1875,
+                        "width": 419.671875,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--contact-phone\"]",
+                      "value": "+32 2 123 45 67"
                     }
                   ]
                 }
@@ -652,7 +724,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 235,
+                        "y": -1,
                         "width": 318,
                         "height": 114
                       },
@@ -662,7 +734,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 389,
+                        "y": 153,
                         "width": 318,
                         "height": 42
                       },
@@ -672,7 +744,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 661,
+                        "y": 425,
                         "width": 318,
                         "height": 42
                       },
@@ -682,7 +754,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 737,
+                        "y": 501,
                         "width": 150.984375,
                         "height": 42
                       },
@@ -692,7 +764,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 813,
+                        "y": 577,
                         "width": 95.328125,
                         "height": 42
                       },
@@ -702,12 +774,44 @@
                     {
                       "bbox": {
                         "x": 147.328125,
-                        "y": 813,
+                        "y": 577,
                         "width": 206.671875,
                         "height": 42
                       },
                       "selector": "[data-testid=\"community-info__input--city\"]",
                       "value": "Bruxelles"
+                    },
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 771.5625,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--contact-email\"]",
+                      "value": "contact@test-community.be"
+                    }
+                  ]
+                }
+              },
+              {
+                "screenshot": "../assets/community-info-update/en/mobile/step-22-b.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 400.5625,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--contact-phone\"]",
+                      "value": "+32 2 123 45 67"
                     }
                   ]
                 }
@@ -730,7 +834,7 @@
                     {
                       "bbox": {
                         "x": 350,
-                        "y": 260,
+                        "y": 210,
                         "width": 1024,
                         "height": 114
                       },
@@ -740,7 +844,7 @@
                     {
                       "bbox": {
                         "x": 350,
-                        "y": 414,
+                        "y": 364,
                         "width": 1024,
                         "height": 42
                       },
@@ -750,7 +854,7 @@
                     {
                       "bbox": {
                         "x": 350,
-                        "y": 686,
+                        "y": 636,
                         "width": 504,
                         "height": 42
                       },
@@ -760,7 +864,7 @@
                     {
                       "bbox": {
                         "x": 870,
-                        "y": 686,
+                        "y": 636,
                         "width": 244,
                         "height": 42
                       },
@@ -770,7 +874,7 @@
                     {
                       "bbox": {
                         "x": 350,
-                        "y": 762,
+                        "y": 712,
                         "width": 244,
                         "height": 42
                       },
@@ -780,12 +884,32 @@
                     {
                       "bbox": {
                         "x": 610,
-                        "y": 762,
+                        "y": 712,
                         "width": 764,
                         "height": 42
                       },
                       "selector": "[data-testid=\"community-info__input--city\"]",
                       "value": "Bruxelles"
+                    },
+                    {
+                      "bbox": {
+                        "x": 350,
+                        "y": 868.1875,
+                        "width": 592.328125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--contact-email\"]",
+                      "value": "contact@test-community.be"
+                    },
+                    {
+                      "bbox": {
+                        "x": 954.328125,
+                        "y": 868.1875,
+                        "width": 419.671875,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--contact-phone\"]",
+                      "value": "+32 2 123 45 67"
                     }
                   ]
                 }
@@ -806,7 +930,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 235,
+                        "y": -1,
                         "width": 318,
                         "height": 114
                       },
@@ -816,7 +940,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 389,
+                        "y": 153,
                         "width": 318,
                         "height": 42
                       },
@@ -826,7 +950,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 661,
+                        "y": 425,
                         "width": 318,
                         "height": 42
                       },
@@ -836,7 +960,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 737,
+                        "y": 501,
                         "width": 150.984375,
                         "height": 42
                       },
@@ -846,7 +970,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 813,
+                        "y": 577,
                         "width": 95.328125,
                         "height": 42
                       },
@@ -856,12 +980,44 @@
                     {
                       "bbox": {
                         "x": 147.328125,
-                        "y": 813,
+                        "y": 577,
                         "width": 206.671875,
                         "height": 42
                       },
                       "selector": "[data-testid=\"community-info__input--city\"]",
                       "value": "Bruxelles"
+                    },
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 771.5625,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--contact-email\"]",
+                      "value": "contact@test-community.be"
+                    }
+                  ]
+                }
+              },
+              {
+                "screenshot": "../assets/community-info-update/nl/mobile/step-22-b.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 400.5625,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--contact-phone\"]",
+                      "value": "+32 2 123 45 67"
                     }
                   ]
                 }
@@ -884,7 +1040,7 @@
                     {
                       "bbox": {
                         "x": 350,
-                        "y": 260,
+                        "y": 191,
                         "width": 1024,
                         "height": 114
                       },
@@ -894,7 +1050,7 @@
                     {
                       "bbox": {
                         "x": 350,
-                        "y": 414,
+                        "y": 345,
                         "width": 1024,
                         "height": 42
                       },
@@ -904,7 +1060,7 @@
                     {
                       "bbox": {
                         "x": 350,
-                        "y": 686,
+                        "y": 617,
                         "width": 504,
                         "height": 42
                       },
@@ -914,7 +1070,7 @@
                     {
                       "bbox": {
                         "x": 870,
-                        "y": 686,
+                        "y": 617,
                         "width": 244,
                         "height": 42
                       },
@@ -924,7 +1080,7 @@
                     {
                       "bbox": {
                         "x": 350,
-                        "y": 762,
+                        "y": 693,
                         "width": 244,
                         "height": 42
                       },
@@ -934,12 +1090,32 @@
                     {
                       "bbox": {
                         "x": 610,
-                        "y": 762,
+                        "y": 693,
                         "width": 764,
                         "height": 42
                       },
                       "selector": "[data-testid=\"community-info__input--city\"]",
                       "value": "Bruxelles"
+                    },
+                    {
+                      "bbox": {
+                        "x": 350,
+                        "y": 868.375,
+                        "width": 592.328125,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--contact-email\"]",
+                      "value": "contact@test-community.be"
+                    },
+                    {
+                      "bbox": {
+                        "x": 954.328125,
+                        "y": 868.375,
+                        "width": 419.671875,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--contact-phone\"]",
+                      "value": "+32 2 123 45 67"
                     }
                   ]
                 }
@@ -960,7 +1136,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 235,
+                        "y": -1,
                         "width": 318,
                         "height": 114
                       },
@@ -970,7 +1146,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 389,
+                        "y": 153,
                         "width": 318,
                         "height": 42
                       },
@@ -980,7 +1156,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 661,
+                        "y": 425,
                         "width": 318,
                         "height": 42
                       },
@@ -990,7 +1166,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 737,
+                        "y": 501,
                         "width": 150.984375,
                         "height": 42
                       },
@@ -1000,7 +1176,7 @@
                     {
                       "bbox": {
                         "x": 36,
-                        "y": 813,
+                        "y": 577,
                         "width": 95.328125,
                         "height": 42
                       },
@@ -1010,12 +1186,44 @@
                     {
                       "bbox": {
                         "x": 147.328125,
-                        "y": 813,
+                        "y": 577,
                         "width": 206.671875,
                         "height": 42
                       },
                       "selector": "[data-testid=\"community-info__input--city\"]",
                       "value": "Bruxelles"
+                    },
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 790.75,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--contact-email\"]",
+                      "value": "contact@test-community.be"
+                    }
+                  ]
+                }
+              },
+              {
+                "screenshot": "../assets/community-info-update/de/mobile/step-22-b.png",
+                "captureSize": {
+                  "width": 390,
+                  "height": 844
+                },
+                "cursor": {
+                  "kind": "type-multi",
+                  "targets": [
+                    {
+                      "bbox": {
+                        "x": 36,
+                        "y": 400.75,
+                        "width": 318,
+                        "height": 42
+                      },
+                      "selector": "[data-testid=\"community-info__input--contact-phone\"]",
+                      "value": "+32 2 123 45 67"
                     }
                   ]
                 }
@@ -1039,10 +1247,10 @@
         "de": "Informationen aktualisiert"
       },
       "text": {
-        "fr": "De retour en mode consultation, la fiche affiche la description, le site web et l'adresse tels que vous les avez saisis — les modifications ont bien été enregistrées côté serveur.",
-        "en": "Back in view mode, the page shows the description, website, and address exactly as you entered them — the changes have been successfully saved server-side.",
-        "nl": "Terug in de weergavemodus toont de fiche de beschrijving, de website en het adres precies zoals u ze hebt ingevoerd — de wijzigingen zijn wel degelijk op de server opgeslagen.",
-        "de": "Zurück im Ansichtsmodus zeigt die Seite die Beschreibung, die Website und die Adresse genau so an, wie Sie sie eingegeben haben — die Änderungen wurden serverseitig gespeichert."
+        "fr": "De retour en mode consultation, la fiche affiche la description, le site web, l'adresse et le contact public tels que vous les avez saisis — les modifications ont bien été enregistrées côté serveur.",
+        "en": "Back in view mode, the page shows the description, website, address and public contact exactly as you entered them — the changes have been successfully saved server-side.",
+        "nl": "Terug in de weergavemodus toont de fiche de beschrijving, de website, het adres en het openbaar contact precies zoals u ze hebt ingevoerd — de wijzigingen zijn wel degelijk op de server opgeslagen.",
+        "de": "Zurück im Ansichtsmodus zeigt die Seite die Beschreibung, die Website, die Adresse und den öffentlichen Kontakt genau so an, wie Sie sie eingegeben haben — die Änderungen wurden serverseitig gespeichert."
       },
       "subtitle": {
         "fr": "Confirmation",
